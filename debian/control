@@ -1,0 +1,28 @@
+Source: ubuntu-smoother
+Section: utils
+Priority: optional
+Maintainer: Mirko Brombin <send@mirko.pm>
+Build-Depends: 
+            build-essential,
+            debhelper,
+            python3,
+            meson,
+            libadwaita-1-dev,
+            gettext,
+            desktop-file-utils,
+            make
+Homepage: https://github.com/mirkobrombin/ubuntu-smoother/
+Vcs-Browser: hhttps://github.com/mirkobrombin/ubuntu-smoother
+Vcs-Git: https://github.com/mirkobrombin/ubuntu-smoother.git
+Rules-Requires-Root: no
+
+Package: ubuntu-smoother
+Architecture: any
+Depends: ${python3:Depends},
+         ${misc:Depends},
+         python3,
+         python3-gi,
+         libadwaita-1,
+         gir1.2-gtk-4.0,
+         gir1.2-adw-1
+Description: This utility is meant to be used in Ubuntu Vanilla GNOME as a first-setup wizard.
