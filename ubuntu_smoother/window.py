@@ -18,6 +18,7 @@ from gi.repository import Gtk, Gio, Adw
 
 from ubuntu_smoother.models.preset import Preset
 from ubuntu_smoother.models.config import Config
+from ubuntu_smoother.utils.configurator import Configurator
 
 
 @Gtk.Template(resource_path='/pm/mirko/UbuntuSmoother/gtk/window.ui')
@@ -33,6 +34,11 @@ class UbuntuSmootherWindow(Adw.ApplicationWindow):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+        self.__config = Config(
+            snap=Preset.snap,
+            flatpak=Preset.flatpak,
+            apport=Preset.apport
+        )
         self.__buiild_ui()
         self.__connect_signals()
 
@@ -43,8 +49,24 @@ class UbuntuSmootherWindow(Adw.ApplicationWindow):
 
     def __connect_signals(self):
         self.btn_start.connect('clicked', self.__on_btn_start_clicked)
+        self.btn_save.connect('clicked', self.on_btn_save_clicked)
+        self.switch_snap.connect('state-set', self.__on_switch_snap_state_set)
+        self.switch_flatpak.connect('state-set', self.__on_switch_flatpak_state_set)
+        self.switch_apport.connect('state-set', self.__on_switch_apport_state_set)
 
     def __on_btn_start_clicked(self, widget):
         index = int(self.carousel.get_position())
         next_page = self.carousel.get_nth_page(index + 1)
         self.carousel.scroll_to(next_page, True)
+
+    def __on_switch_snap_state_set(self, widget, state):
+        self.__config.snap = state
+
+    def __on_switch_flatpak_state_set(self, widget, state):
+        self.__config.flatpak = state
+
+    def __on_switch_apport_state_set(self, widget, state):
+        self.__config.apport = state
+
+    def on_btn_save_clicked(self, widget):
+        Configurator(self.__config, fake=True).apply()
