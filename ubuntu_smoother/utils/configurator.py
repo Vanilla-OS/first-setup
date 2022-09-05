@@ -1,6 +1,7 @@
 import os
 import time
 import logging
+import subprocess
 
 from ubuntu_smoother.utils import checks
 from ubuntu_smoother.utils.apt import Apt
@@ -21,6 +22,8 @@ class Configurator:
         self.__enable_snap() if self.config.snap else self.__disable_snap()
         self.__enable_flatpak() if self.config.flatpak else self.__disable_flatpak()
         self.__enable_apport() if self.config.apport else self.__disable_apport()
+        if self.config.distrobox:
+            self.__enable_distrobox()
 
     def __fake(self, msg: str):
         time.sleep(1)
@@ -74,6 +77,16 @@ class Configurator:
 
         if checks.is_apport_installed():
             Apt.purge(['apport'])
+    
+    def __enable_distrobox(self):
+        if self.fake:
+            return self.__fake("Fake: Distrobox enabled")
+
+        Apt.install(['curl', 'podman'])
+        Apt.update()
+
+        proc = subprocess.run(['curl', '-s', 'https://raw.githubusercontent.com/89luca89/distrobox/main/install'], stdout=subprocess.PIPE)
+        proc = subprocess.run(['sudo', 'sh'], input=proc.stdout, stdout=subprocess.PIPE)
 
     def __disable_on_startup(self):
         if self.fake:
@@ -82,18 +95,3 @@ class Configurator:
         autostart_file = os.path.expanduser("~/.config/autostart/ubuntu-smoother.desktop")
         if os.path.exists(autostart_file):
             os.remove(autostart_file)
-
-    def __enable_on_startup(self):
-        if self.fake:
-            return self.__fake("Fake: Enable on startup")
-
-        autostart_file = os.path.expanduser("~/.config/autostart/ubuntu-smoother.desktop")
-        if not os.path.exists(autostart_file):
-            with open(autostart_file, "w") as f:
-                f.write("[Desktop Entry]")
-                f.write("Type=Application")
-                f.write("Name=Ubuntu Smoother")
-                f.write("Exec=ubuntu-smoother")
-                f.write("Terminal=false")
-                f.write("X-GNOME-Autostart-enabled=true")
-                

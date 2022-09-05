@@ -33,6 +33,7 @@ class UbuntuSmootherWindow(Adw.ApplicationWindow):
     switch_snap = Gtk.Template.Child()
     switch_flatpak = Gtk.Template.Child()
     switch_apport = Gtk.Template.Child()
+    switch_distrobox = Gtk.Template.Child()
     page_welcome = -1
     page_configuration = 0
     page_progress = 1
@@ -44,7 +45,8 @@ class UbuntuSmootherWindow(Adw.ApplicationWindow):
         self.__config = Config(
             snap=Preset.snap,
             flatpak=Preset.flatpak,
-            apport=Preset.apport
+            apport=Preset.apport,
+            distrobox=Preset.distrobox
         )
         self.__buiild_ui()
         self.__connect_signals()
@@ -53,6 +55,7 @@ class UbuntuSmootherWindow(Adw.ApplicationWindow):
         self.switch_snap.set_active(Preset.snap)
         self.switch_flatpak.set_active(Preset.flatpak)
         self.switch_apport.set_active(Preset.apport)
+        self.switch_distrobox.set_active(Preset.distrobox)
 
     def __connect_signals(self):
         self.btn_start.connect('clicked', self.__on_btn_start_clicked)
@@ -63,6 +66,8 @@ class UbuntuSmootherWindow(Adw.ApplicationWindow):
             'state-set', self.__on_switch_flatpak_state_set)
         self.switch_apport.connect(
             'state-set', self.__on_switch_apport_state_set)
+        self.switch_distrobox.connect(
+            'state-set', self.__on_switch_distrobox_state_set)
 
     def __show_page(self, page: int):
         _page = self.carousel.get_nth_page(page + 1)
@@ -89,6 +94,9 @@ class UbuntuSmootherWindow(Adw.ApplicationWindow):
 
     def __on_switch_apport_state_set(self, widget, state):
         self.__config.apport = state
+
+    def __on_switch_distrobox_state_set(self, widget, state):
+        self.__config.distrobox = state
 
     def on_btn_close_clicked(self, widget):
         self.get_application().quit()

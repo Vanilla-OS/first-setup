@@ -68,6 +68,7 @@
                           <object class="AdwActionRow">
                             <property name="title">Snap</property>
                             <property name="subtitle">Will replace GNOME Software with Snap store if the only package manager.</property>
+                            <property name="activatable-widget">switch_snap</property>
                             <child>
                               <object class="GtkSwitch" id="switch_snap">
                                 <property name="valign">center</property>
@@ -79,6 +80,7 @@
                           <object class="AdwActionRow">
                             <property name="title">Flatpak</property>
                             <property name="subtitle">Will also configure the Flathub repository.</property>
+                            <property name="activatable-widget">switch_flatpak</property>
                             <child>
                               <object class="GtkSwitch" id="switch_flatpak">
                                 <property name="valign">center</property>
@@ -95,8 +97,21 @@
                           <object class="AdwActionRow">
                             <property name="title">Apport</property>
                             <property name="subtitle">Do you want to keep the Bug Reporter utility?</property>
+                            <property name="activatable-widget">switch_apport</property>
                             <child>
                               <object class="GtkSwitch" id="switch_apport">
+                                <property name="valign">center</property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="AdwActionRow">
+                            <property name="title">Distrobox</property>
+                            <property name="subtitle">Allows you to create containers with different distributions.</property>
+                            <property name="activatable-widget">switch_distrobox</property>
+                            <child>
+                              <object class="GtkSwitch" id="switch_distrobox">
                                 <property name="valign">center</property>
                               </object>
                             </child>
