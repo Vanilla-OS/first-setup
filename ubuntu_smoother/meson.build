@@ -25,6 +25,14 @@ configure_file(
   install_dir: get_option('bindir')
 )
 
+configure_file(
+  input: 'ubuntu-smoother-processor.in',
+  output: 'ubuntu-smoother-processor',
+  configuration: conf,
+  install: true,
+  install_dir: get_option('bindir')
+)
+
 subdir('utils')
 subdir('models')
 

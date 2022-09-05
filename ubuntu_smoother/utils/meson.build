@@ -9,6 +9,7 @@ sources = [
   'snap.py',
   'configurator.py',
   'run_async.py',
+  'processor.py',
 ]
 
 install_data(sources, install_dir: utilsdir)

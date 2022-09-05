@@ -4,7 +4,7 @@ import subprocess
 class Apt:
 
     @staticmethod
-    def install(self, packages: list):
+    def install(packages: list):
         subprocess.run(
             ['sudo', 'apt', 'install'] + packages,
             env={'DEBIAN_FRONTEND': 'noninteractive'},
@@ -12,7 +12,7 @@ class Apt:
         )
 
     @staticmethod
-    def remove(self, packages: list):
+    def remove(packages: list):
         subprocess.run(
             ['sudo', 'apt', 'remove'] + packages,
             env={'DEBIAN_FRONTEND': 'noninteractive'},
@@ -20,7 +20,7 @@ class Apt:
         )
 
     @staticmethod
-    def purge(self, packages: list):
+    def purge(packages: list):
         subprocess.run(
             ['sudo', 'apt', 'purge'] + packages,
             env={'DEBIAN_FRONTEND': 'noninteractive'},
@@ -28,7 +28,7 @@ class Apt:
         )
 
     @staticmethod
-    def update(self):
+    def update():
         subprocess.run(
             ['sudo', 'apt', 'update'],
             env={'DEBIAN_FRONTEND': 'noninteractive'},
@@ -36,7 +36,7 @@ class Apt:
         )
 
     @staticmethod
-    def upgrade(self):
+    def upgrade():
         subprocess.run(
             ['sudo', 'apt', 'upgrade'],
             env={'DEBIAN_FRONTEND': 'noninteractive'},

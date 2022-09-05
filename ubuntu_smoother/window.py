@@ -18,7 +18,7 @@ from gi.repository import Gtk, Gio, Adw
 
 from ubuntu_smoother.models.preset import Preset
 from ubuntu_smoother.models.config import Config
-from ubuntu_smoother.utils.configurator import Configurator
+from ubuntu_smoother.utils.processor import Processor
 from ubuntu_smoother.utils.run_async import RunAsync
 
 
@@ -72,14 +72,14 @@ class UbuntuSmootherWindow(Adw.ApplicationWindow):
         self.__show_page(self.page_configuration)
 
     def on_btn_save_clicked(self, widget):
-        def on_done(*args):
+        def on_done(result, error=None):
             self.spinner.stop()
             self.__show_page(self.page_done)
 
         self.__show_page(self.page_progress)
         self.spinner.start()
 
-        RunAsync(Configurator(self.__config, fake=True).apply, on_done)
+        RunAsync(Processor(self.__config).run, on_done)
 
     def __on_switch_snap_state_set(self, widget, state):
         self.__config.snap = state
