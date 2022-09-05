@@ -51,8 +51,10 @@ class UbuntuSmootherWindow(Adw.ApplicationWindow):
         self.btn_start.connect('clicked', self.__on_btn_start_clicked)
         self.btn_save.connect('clicked', self.on_btn_save_clicked)
         self.switch_snap.connect('state-set', self.__on_switch_snap_state_set)
-        self.switch_flatpak.connect('state-set', self.__on_switch_flatpak_state_set)
-        self.switch_apport.connect('state-set', self.__on_switch_apport_state_set)
+        self.switch_flatpak.connect(
+            'state-set', self.__on_switch_flatpak_state_set)
+        self.switch_apport.connect(
+            'state-set', self.__on_switch_apport_state_set)
 
     def __on_btn_start_clicked(self, widget):
         index = int(self.carousel.get_position())

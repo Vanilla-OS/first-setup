@@ -4,4 +4,3 @@ class Config:
         self.snap = snap
         self.flatpak = flatpak
         self.apport = apport
-        

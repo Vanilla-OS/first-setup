@@ -14,16 +14,14 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+from ubuntu_smoother.window import UbuntuSmootherWindow
+from gi.repository import Gtk, Gio, Adw
 import sys
 import gi
 import logging
 
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
-
-from gi.repository import Gtk, Gio, Adw
-
-from ubuntu_smoother.window import UbuntuSmootherWindow
 
 
 logging.basicConfig(level=logging.INFO)
@@ -62,7 +60,7 @@ class UbuntuSmootherApplication(Adw.Application):
         self.add_action(action)
         if shortcuts:
             self.set_accels_for_action(f"app.{name}", shortcuts)
-    
+
     def close(self, *args):
         """Close the application."""
         self.quit()
