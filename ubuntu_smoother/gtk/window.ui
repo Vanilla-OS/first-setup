@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <requires lib="libadwaita" version="1.0" />
+  <template class="UbuntuSmootherWindow" parent="AdwApplicationWindow">
+    <property name="default-width">800</property>
+    <property name="default-height">600</property>
+    <property name="title">Ubuntu Smoother</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="AdwHeaderBar">
+            <property name="title_widget">
+              <object class="AdwCarouselIndicatorDots">
+                <property name="carousel">carousel</property>
+                <property name="orientation">horizontal</property>
+              </object>
+            </property>
+            <style>
+              <class name="flat" />
+            </style>
+          </object>
+        </child>
+        <child>
+          <object class="AdwCarousel" id="carousel">
+            <property name="vexpand">True</property>
+            <property name="hexpand">True</property>
+            <property name="allow_scroll_wheel">True</property>
+            <property name="allow_mouse_drag">True</property>
+            <property name="allow_long_swipes">True</property>
+            <child>
+              <object class="AdwStatusPage">
+                <property name="icon-name">pm.mirko.UbuntuSmoother</property>
+                <property name="title">Welcome!</property>
+                <property name="description">Make your choices, this wizard will take care of everything.</property>
+                <property name="halign">fill</property>
+                <property name="valign">fill</property>
+                <property name="hexpand">true</property>
+                <child>
+                  <object class="GtkButton">
+                    <property name="label">Let's Start</property>
+                    <property name="halign">center</property>
+                    <style>
+                      <class name="pill" />
+                      <class name="suggested-action" />
+                    </style>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <property name="vexpand">True</property>
+                <property name="hexpand">True</property>
+                <property name="valign">center</property>
+                <child>
+                  <object class="AdwPreferencesPage">
+                    <child>
+                      <object class="AdwPreferencesGroup">
+                        <property name="title">How Will you Install the Software?</property>
+                        <child>
+                          <object class="AdwActionRow">
+                            <property name="title">Snap</property>
+                            <property name="subtitle">Will replace GNOME Software with Snap store if the only package manager.</property>
+                            <child>
+                              <object class="GtkSwitch">
+                                <property name="valign">center</property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="AdwActionRow">
+                            <property name="title">Flatpak</property>
+                            <property name="subtitle">Will also configure the Flathub repository.</property>
+                            <child>
+                              <object class="GtkSwitch">
+                                <property name="valign">center</property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwPreferencesGroup">
+                        <property name="title">Extra</property>
+                        <child>
+                          <object class="AdwActionRow">
+                            <property name="title">Apport</property>
+                            <property name="subtitle">Do you want to keep the Bug Reporter utility?</property>
+                            <child>
+                              <object class="GtkSwitch">
+                                <property name="valign">center</property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton">
+                    <property name="label">Save Changes</property>
+                    <property name="halign">center</property>
+                    <style>
+                      <class name="pill" />
+                      <class name="suggested-action" />
+                    </style>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

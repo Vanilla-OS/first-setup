@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Ubuntu Smoother
+Exec=ubuntu-smoother
+Icon=pm.mirko.UbuntuSmoother
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true
