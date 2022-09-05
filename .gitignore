@@ -1,3 +1,6 @@
 .vscode/
 mesonbuild/
 build/
+debian/files
+debian/ubuntu-smoother*
+debian/.debhelper
