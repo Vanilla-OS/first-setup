@@ -38,7 +38,7 @@
                 <property name="valign">fill</property>
                 <property name="hexpand">true</property>
                 <child>
-                  <object class="GtkButton">
+                  <object class="GtkButton" id="btn_start">
                     <property name="label">Let's Start</property>
                     <property name="halign">center</property>
                     <style>
@@ -65,7 +65,7 @@
                             <property name="title">Snap</property>
                             <property name="subtitle">Will replace GNOME Software with Snap store if the only package manager.</property>
                             <child>
-                              <object class="GtkSwitch">
+                              <object class="GtkSwitch" id="switch_snap">
                                 <property name="valign">center</property>
                               </object>
                             </child>
@@ -76,7 +76,7 @@
                             <property name="title">Flatpak</property>
                             <property name="subtitle">Will also configure the Flathub repository.</property>
                             <child>
-                              <object class="GtkSwitch">
+                              <object class="GtkSwitch" id="switch_flatpak">
                                 <property name="valign">center</property>
                               </object>
                             </child>
@@ -92,7 +92,7 @@
                             <property name="title">Apport</property>
                             <property name="subtitle">Do you want to keep the Bug Reporter utility?</property>
                             <child>
-                              <object class="GtkSwitch">
+                              <object class="GtkSwitch" id="switch_apport">
                                 <property name="valign">center</property>
                               </object>
                             </child>
@@ -103,7 +103,7 @@
                   </object>
                 </child>
                 <child>
-                  <object class="GtkButton">
+                  <object class="GtkButton" id="btn_save">
                     <property name="label">Save Changes</property>
                     <property name="halign">center</property>
                     <style>

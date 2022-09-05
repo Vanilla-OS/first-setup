@@ -25,6 +25,9 @@ configure_file(
   install_dir: get_option('bindir')
 )
 
+subdir('utils')
+subdir('models')
+
 ubuntu_smoother_sources = [
   '__init__.py',
   'main.py',

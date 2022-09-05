@@ -1,0 +1,13 @@
+pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
+utilsdir = join_paths(pkgdatadir, 'ubuntu_smoother/utils')
+
+sources = [
+  '__init__.py',
+  'checks.py',
+  'apt.py',
+  'flatpak.py',
+  'snap.py',
+  'configurator.py',
+]
+
+install_data(sources, install_dir: utilsdir)
