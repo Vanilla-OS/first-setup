@@ -26,9 +26,11 @@
           <object class="AdwCarousel" id="carousel">
             <property name="vexpand">True</property>
             <property name="hexpand">True</property>
-            <property name="allow_scroll_wheel">True</property>
-            <property name="allow_mouse_drag">True</property>
-            <property name="allow_long_swipes">True</property>
+            <property name="allow_scroll_wheel">False</property>
+            <property name="allow_mouse_drag">False</property>
+            <property name="allow_long_swipes">False</property>
+
+            <!-- Welcome -->
             <child>
               <object class="AdwStatusPage">
                 <property name="icon-name">pm.mirko.UbuntuSmoother</property>
@@ -49,6 +51,8 @@
                 </child>
               </object>
             </child>
+            
+            <!-- Configuration -->
             <child>
               <object class="GtkBox">
                 <property name="orientation">vertical</property>
@@ -105,6 +109,45 @@
                 <child>
                   <object class="GtkButton" id="btn_save">
                     <property name="label">Save Changes</property>
+                    <property name="halign">center</property>
+                    <style>
+                      <class name="pill" />
+                      <class name="suggested-action" />
+                    </style>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+            <!-- Progress -->
+            <child>
+              <object class="AdwStatusPage">
+                <property name="title">Please Wait…</property>
+                <property name="description">The changes are being applied.</property>
+                <property name="halign">fill</property>
+                <property name="valign">fill</property>
+                <property name="hexpand">true</property>
+                <child>
+                  <object class="GtkSpinner" id="spinner">
+                    <property name="valign">center</property>
+                    <property name="halign">center</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+            <!-- Done -->
+            <child>
+              <object class="AdwStatusPage">
+                <property name="icon-name">emblem-default-symbolic</property>
+                <property name="title">Done!</property>
+                <property name="description">You can now enjoy your new Ubuntu experience.</property>
+                <property name="halign">fill</property>
+                <property name="valign">fill</property>
+                <property name="hexpand">true</property>
+                <child>
+                  <object class="GtkButton" id="btn_close">
+                    <property name="label">Close</property>
                     <property name="halign">center</property>
                     <style>
                       <class name="pill" />
