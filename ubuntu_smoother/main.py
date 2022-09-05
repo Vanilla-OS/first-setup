@@ -16,6 +16,7 @@
 
 import sys
 import gi
+import logging
 
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
@@ -23,6 +24,9 @@ gi.require_version('Adw', '1')
 from gi.repository import Gtk, Gio, Adw
 
 from ubuntu_smoother.window import UbuntuSmootherWindow
+
+
+logging.basicConfig(level=logging.INFO)
 
 
 class UbuntuSmootherApplication(Adw.Application):
