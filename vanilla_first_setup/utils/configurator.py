@@ -70,12 +70,14 @@ class Configurator:
         if not checks.is_apport_installed():
             Apt.install(['apport'])
             Apt.update()
+            subprocess.run(['sudo', 'systemctl', 'start', 'apport.service'])
 
     def __disable_apport(self):
         if self.fake:
             return self.__fake("Fake: Apport disabled")
 
         if checks.is_apport_installed():
+            subprocess.run(['sudo', 'systemctl', 'stop', 'apport.service'])
             Apt.purge(['apport'])
     
     def __enable_distrobox(self):
