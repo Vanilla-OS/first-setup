@@ -1,6 +1,6 @@
 #!@PYTHON@
 
-# sugar-cubes-processor.in
+# vanilla-first-setup-processor.in
 #
 # Copyright 2022 mirkobrombin
 #
@@ -29,13 +29,13 @@ localedir = '@localedir@'
 
 sys.path.insert(1, pkgdatadir)
 signal.signal(signal.SIGINT, signal.SIG_DFL)
-locale.bindtextdomain('sugar_cubes', localedir)
-locale.textdomain('sugar_cubes')
-gettext.install('sugar_cubes', localedir)
+locale.bindtextdomain('vanilla_first_setup', localedir)
+locale.textdomain('vanilla_first_setup')
+gettext.install('vanilla_first_setup', localedir)
 
 if __name__ == '__main__':
-    from sugar_cubes.utils.configurator import Configurator
-    from sugar_cubes.models.config import Config
+    from vanilla_first_setup.utils.configurator import Configurator
+    from vanilla_first_setup.models.config import Config
 
     parser = argparse.ArgumentParser()
     parser.add_argument('config', help='The configuration string (e.g. snap::True|flatpak::False|apport::True)')

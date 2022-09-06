@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Sugar Cubes
-Exec=sugar-cubes
-Icon=io.github.vanilla-os.SugarCubes
-Terminal=false
-Type=Application
-Categories=GTK;
-StartupNotify=true

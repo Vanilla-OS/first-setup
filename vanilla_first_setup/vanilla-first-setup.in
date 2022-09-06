@@ -1,6 +1,6 @@
 #!@PYTHON@
 
-# sugar-cubes.in
+# vanilla-first-setup.in
 #
 # Copyright 2022 mirkobrombin
 #
@@ -28,16 +28,16 @@ localedir = '@localedir@'
 
 sys.path.insert(1, pkgdatadir)
 signal.signal(signal.SIGINT, signal.SIG_DFL)
-locale.bindtextdomain('sugar_cubes', localedir)
-locale.textdomain('sugar_cubes')
-gettext.install('sugar_cubes', localedir)
+locale.bindtextdomain('vanilla_first_setup', localedir)
+locale.textdomain('vanilla_first_setup')
+gettext.install('vanilla_first_setup', localedir)
 
 if __name__ == '__main__':
     import gi
 
     from gi.repository import Gio
-    resource = Gio.Resource.load(os.path.join(pkgdatadir, 'sugar-cubes.gresource'))
+    resource = Gio.Resource.load(os.path.join(pkgdatadir, 'vanilla-first-setup.gresource'))
     resource._register()
 
-    from sugar_cubes import main
+    from vanilla_first_setup import main
     sys.exit(main.main(VERSION))

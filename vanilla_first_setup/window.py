@@ -14,17 +14,19 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from gi.repository import Gtk, Gio, Adw
+import time
+from gi.repository import Gtk, Gio, GLib, Adw
 
-from sugar_cubes.models.preset import Preset
-from sugar_cubes.models.config import Config
-from sugar_cubes.utils.processor import Processor
-from sugar_cubes.utils.run_async import RunAsync
+from vanilla_first_setup.models.preset import Preset
+from vanilla_first_setup.models.config import Config
+from vanilla_first_setup.utils.processor import Processor
+from vanilla_first_setup.utils.run_async import RunAsync
+from vanilla_first_setup.utils.welcome_langs import welcome
 
 
-@Gtk.Template(resource_path='/pm/mirko/SugarCubes/gtk/window.ui')
-class SugarCubesWindow(Adw.ApplicationWindow):
-    __gtype_name__ = 'SugarCubesWindow'
+@Gtk.Template(resource_path='/pm/mirko/FirstSetup/gtk/window.ui')
+class FirstSetupWindow(Adw.ApplicationWindow):
+    __gtype_name__ = 'FirstSetupWindow'
 
     carousel = Gtk.Template.Child()
     btn_start = Gtk.Template.Child()
@@ -34,11 +36,12 @@ class SugarCubesWindow(Adw.ApplicationWindow):
     switch_flatpak = Gtk.Template.Child()
     switch_apport = Gtk.Template.Child()
     switch_distrobox = Gtk.Template.Child()
+    spinner = Gtk.Template.Child()
+    status_welcome = Gtk.Template.Child()
     page_welcome = -1
     page_configuration = 0
     page_progress = 1
     page_done = 2
-    spinner = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -50,6 +53,7 @@ class SugarCubesWindow(Adw.ApplicationWindow):
         )
         self.__buiild_ui()
         self.__connect_signals()
+        self.__start_welcome_animation()
 
     def __buiild_ui(self):
         self.switch_snap.set_active(Preset.snap)
@@ -100,3 +104,11 @@ class SugarCubesWindow(Adw.ApplicationWindow):
 
     def on_btn_close_clicked(self, widget):
         self.get_application().quit()
+
+    def __start_welcome_animation(self):
+        def change_langs():
+            for lang in welcome:
+                GLib.idle_add(self.status_welcome.set_title, lang )
+                time.sleep(1.5)
+
+        RunAsync(change_langs, None)

@@ -1,6 +1,6 @@
 desktop_file = i18n.merge_file(
-  input: 'io.github.vanilla-os.SugarCubes.desktop.in',
-  output: 'io.github.vanilla-os.SugarCubes.desktop',
+  input: 'io.github.vanilla-os.FirstSetup.desktop.in',
+  output: 'io.github.vanilla-os.FirstSetup.desktop',
   type: 'desktop',
   po_dir: '../po',
   install: true,
@@ -15,8 +15,8 @@ if desktop_utils.found()
 endif
 
 appstream_file = i18n.merge_file(
-  input: 'io.github.vanilla-os.SugarCubes.appdata.xml.in',
-  output: 'io.github.vanilla-os.SugarCubes.appdata.xml',
+  input: 'io.github.vanilla-os.FirstSetup.appdata.xml.in',
+  output: 'io.github.vanilla-os.FirstSetup.appdata.xml',
   po_dir: '../po',
   install: true,
   install_dir: join_paths(get_option('datadir'), 'appdata')
@@ -29,7 +29,7 @@ if appstream_util.found()
   )
 endif
 
-install_data('io.github.vanilla-os.SugarCubes.gschema.xml',
+install_data('io.github.vanilla-os.FirstSetup.gschema.xml',
   install_dir: join_paths(get_option('datadir'), 'glib-2.0/schemas')
 )
 

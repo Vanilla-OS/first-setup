@@ -8,11 +8,11 @@ class Processor:
 
     def run(self):
         proc = subprocess.run(
-            ["pkexec", "sugar-cubes-processor", self.__config.get_str()], 
+            ["pkexec", "vanilla-first-setup-processor", self.__config.get_str()], 
             check=True
         )
         
         if proc.returncode != 0:
-            return False, "Error executing the Sugar Cubes Processor"
+            return False, "Error executing the Vanilla OS First Setup Processor"
 
         return True

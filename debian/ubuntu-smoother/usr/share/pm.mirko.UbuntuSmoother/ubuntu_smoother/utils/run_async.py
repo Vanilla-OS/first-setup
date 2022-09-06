@@ -23,7 +23,7 @@ import logging
 
 from gi.repository import GLib
 
-logger = logging.getLogger("SugarCubes::Async")
+logger = logging.getLogger("FirstSetup::Async")
 
 
 class RunAsync(threading.Thread):

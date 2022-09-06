@@ -14,7 +14,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from sugar_cubes.window import SugarCubesWindow
+from vanilla_first_setup.window import FirstSetupWindow
 from gi.repository import Gtk, Gio, Adw
 import sys
 import gi
@@ -27,11 +27,11 @@ gi.require_version('Adw', '1')
 logging.basicConfig(level=logging.INFO)
 
 
-class SugarCubesApplication(Adw.Application):
+class FirstSetupApplication(Adw.Application):
     """The main application singleton class."""
 
     def __init__(self):
-        super().__init__(application_id='io.github.vanilla-os.SugarCubes',
+        super().__init__(application_id='io.github.vanilla-os.FirstSetup',
                          flags=Gio.ApplicationFlags.FLAGS_NONE)
         self.create_action('quit', self.close, ['<primary>q'])
 
@@ -43,7 +43,7 @@ class SugarCubesApplication(Adw.Application):
         """
         win = self.props.active_window
         if not win:
-            win = SugarCubesWindow(application=self)
+            win = FirstSetupWindow(application=self)
         win.present()
 
     def create_action(self, name, callback, shortcuts=None):
@@ -68,5 +68,5 @@ class SugarCubesApplication(Adw.Application):
 
 def main(version):
     """The application's entry point."""
-    app = SugarCubesApplication()
+    app = FirstSetupApplication()
     return app.run(sys.argv)

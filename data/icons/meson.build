@@ -1,4 +1,4 @@
-application_id = 'io.github.vanilla-os.SugarCubes'
+application_id = 'io.github.vanilla-os.FirstSetup'
 
 scalable_dir = join_paths('hicolor', 'scalable', 'apps')
 install_data(

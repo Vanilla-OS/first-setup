@@ -2,5 +2,5 @@
 mesonbuild/
 build/
 debian/files
-debian/sugar-cubes*
+debian/vanilla-first-setup*
 debian/.debhelper

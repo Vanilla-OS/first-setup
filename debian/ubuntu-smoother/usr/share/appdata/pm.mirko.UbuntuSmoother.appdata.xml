@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-  <id>pm.mirko.SugarCubes.desktop</id>
+  <id>pm.mirko.FirstSetup.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-only</project_license>
-  <name translatable="no">Sugar Cubes</name>
+  <name translatable="no">Vanilla OS First Setup</name>
   <summary>Tweak your Ubuntu Vanilla GNOME installation.</summary>
   <developer_name translatable="no">Mirko Brombin</developer_name>
   <description>
     <p>No description</p>
   </description>
   <screenshots/>
-  <translation type="gettext">pm.mirko.SugarCubes</translation>
+  <translation type="gettext">pm.mirko.FirstSetup</translation>
   <content_rating type="oars-1.1"/>
   <recommends>
     <control>pointing</control>

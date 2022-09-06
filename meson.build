@@ -1,4 +1,4 @@
-project('io.github.vanilla-os.SugarCubes',
+project('io.github.vanilla-os.FirstSetup',
           version: '0.0.3',
     meson_version: '>= 0.59.0',
   default_options: [ 'warning_level=2',
@@ -11,7 +11,7 @@ i18n = import('i18n')
 gnome = import('gnome')
 
 subdir('data')
-subdir('sugar_cubes')
+subdir('vanilla_first_setup')
 subdir('po')
 
 gnome.post_install(

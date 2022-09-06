@@ -3,13 +3,13 @@ import time
 import logging
 import subprocess
 
-from sugar_cubes.utils import checks
-from sugar_cubes.utils.apt import Apt
-from sugar_cubes.utils.flatpak import Flatpak
-from sugar_cubes.utils.snap import Snap
+from vanilla_first_setup.utils import checks
+from vanilla_first_setup.utils.apt import Apt
+from vanilla_first_setup.utils.flatpak import Flatpak
+from vanilla_first_setup.utils.snap import Snap
 
 
-logger = logging.getLogger("SugarCubes::Configurator")
+logger = logging.getLogger("FirstSetup::Configurator")
 
 
 class Configurator:
@@ -92,6 +92,6 @@ class Configurator:
         if self.fake:
             return self.__fake("Fake: Disable on startup")
 
-        autostart_file = os.path.expanduser("~/.config/autostart/sugar-cubes.desktop")
+        autostart_file = os.path.expanduser("~/.config/autostart/vanilla-first-setup.desktop")
         if os.path.exists(autostart_file):
             os.remove(autostart_file)

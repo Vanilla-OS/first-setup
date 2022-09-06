@@ -1,9 +1,9 @@
 pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
-moduledir = join_paths(pkgdatadir, 'sugar_cubes')
+moduledir = join_paths(pkgdatadir, 'vanilla_first_setup')
 gnome = import('gnome')
 
-gnome.compile_resources('sugar-cubes',
-  'sugar-cubes.gresource.xml',
+gnome.compile_resources('vanilla-first-setup',
+  'vanilla-first-setup.gresource.xml',
   gresource_bundle: true,
   install: true,
   install_dir: pkgdatadir,
@@ -18,16 +18,16 @@ conf.set('localedir', join_paths(get_option('prefix'), get_option('localedir')))
 conf.set('pkgdatadir', pkgdatadir)
 
 configure_file(
-  input: 'sugar-cubes.in',
-  output: 'sugar-cubes',
+  input: 'vanilla-first-setup.in',
+  output: 'vanilla-first-setup',
   configuration: conf,
   install: true,
   install_dir: get_option('bindir')
 )
 
 configure_file(
-  input: 'sugar-cubes-processor.in',
-  output: 'sugar-cubes-processor',
+  input: 'vanilla-first-setup-processor.in',
+  output: 'vanilla-first-setup-processor',
   configuration: conf,
   install: true,
   install_dir: get_option('bindir')
@@ -36,10 +36,10 @@ configure_file(
 subdir('utils')
 subdir('models')
 
-sugar_cubes_sources = [
+vanilla_first_setup_sources = [
   '__init__.py',
   'main.py',
   'window.py',
 ]
 
-install_data(sugar_cubes_sources, install_dir: moduledir)
+install_data(vanilla_first_setup_sources, install_dir: moduledir)

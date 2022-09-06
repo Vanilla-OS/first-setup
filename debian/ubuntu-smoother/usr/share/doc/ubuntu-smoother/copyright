@@ -1,6 +1,6 @@
 Format: http://dep.debian.net/deps/dep5
-Upstream-Name: Sugar Cubes
-Source: https://github.com/mirko-brombin/sugar-cubes
+Upstream-Name: Vanilla OS First Setup
+Source: https://github.com/mirko-brombin/vanilla-first-setup
 
 Files: *
 Copyright: 2022 Mirko Brombin <send@mirko.pm>

@@ -16,15 +16,15 @@
 
 from gi.repository import Gtk, Gio, Adw
 
-from sugar_cubes.models.preset import Preset
-from sugar_cubes.models.config import Config
-from sugar_cubes.utils.processor import Processor
-from sugar_cubes.utils.run_async import RunAsync
+from vanilla_first_setup.models.preset import Preset
+from vanilla_first_setup.models.config import Config
+from vanilla_first_setup.utils.processor import Processor
+from vanilla_first_setup.utils.run_async import RunAsync
 
 
-@Gtk.Template(resource_path='/pm/mirko/SugarCubes/gtk/window.ui')
-class SugarCubesWindow(Adw.ApplicationWindow):
-    __gtype_name__ = 'SugarCubesWindow'
+@Gtk.Template(resource_path='/pm/mirko/FirstSetup/gtk/window.ui')
+class FirstSetupWindow(Adw.ApplicationWindow):
+    __gtype_name__ = 'FirstSetupWindow'
 
     carousel = Gtk.Template.Child()
     btn_start = Gtk.Template.Child()
