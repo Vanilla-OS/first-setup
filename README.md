@@ -1,6 +1,6 @@
 <div align="center">
-    <h1>Ubuntu Smoother</h1>
-    <p>This utility is meant to be used in <a href="https://github.com/mirkobrombin/ubuntu-vanilla-gnome">Ubuntu Vanilla GNOME</a> 
+    <h1>Sugar Cubes</h1>
+    <p>This utility is meant to be used in <a href="https://github.com/vanilla-os">Vanilla OS</a> 
     as a first-setup wizard. It's purpose is to help the user to configure the 
     system to his needs, e.g. by configuring snap, flatpak, flathub, etc.</p>
     <img src="data/screenshot-1.png">
@@ -28,5 +28,5 @@ sudo ninja -C build install
 
 ## Run
 ```bash
-ubuntu-smoother
+sugar-cubes
 ```

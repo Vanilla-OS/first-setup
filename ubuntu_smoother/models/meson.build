@@ -1,5 +1,5 @@
 pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
-modelsdir = join_paths(pkgdatadir, 'ubuntu_smoother/models')
+modelsdir = join_paths(pkgdatadir, 'sugar_cubes/models')
 
 sources = [
   '__init__.py',

@@ -1,1 +1,1 @@
-i18n.gettext('ubuntu-smoother', preset: 'glib')
+i18n.gettext('sugar-cubes', preset: 'glib')

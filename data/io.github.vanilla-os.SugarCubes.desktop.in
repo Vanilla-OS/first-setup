@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=Ubuntu Smoother
-Exec=ubuntu-smoother
-Icon=pm.mirko.UbuntuSmoother
+Name=Sugar Cubes
+Exec=sugar-cubes
+Icon=io.github.vanilla-os.SugarCubes
 Terminal=false
 Type=Application
 Categories=GTK;

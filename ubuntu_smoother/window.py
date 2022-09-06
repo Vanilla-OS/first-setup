@@ -16,15 +16,15 @@
 
 from gi.repository import Gtk, Gio, Adw
 
-from ubuntu_smoother.models.preset import Preset
-from ubuntu_smoother.models.config import Config
-from ubuntu_smoother.utils.processor import Processor
-from ubuntu_smoother.utils.run_async import RunAsync
+from sugar_cubes.models.preset import Preset
+from sugar_cubes.models.config import Config
+from sugar_cubes.utils.processor import Processor
+from sugar_cubes.utils.run_async import RunAsync
 
 
-@Gtk.Template(resource_path='/pm/mirko/UbuntuSmoother/gtk/window.ui')
-class UbuntuSmootherWindow(Adw.ApplicationWindow):
-    __gtype_name__ = 'UbuntuSmootherWindow'
+@Gtk.Template(resource_path='/pm/mirko/SugarCubes/gtk/window.ui')
+class SugarCubesWindow(Adw.ApplicationWindow):
+    __gtype_name__ = 'SugarCubesWindow'
 
     carousel = Gtk.Template.Child()
     btn_start = Gtk.Template.Child()

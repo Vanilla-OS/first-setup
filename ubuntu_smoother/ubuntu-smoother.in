@@ -1,6 +1,6 @@
 #!@PYTHON@
 
-# ubuntu-smoother.in
+# sugar-cubes.in
 #
 # Copyright 2022 mirkobrombin
 #
@@ -28,16 +28,16 @@ localedir = '@localedir@'
 
 sys.path.insert(1, pkgdatadir)
 signal.signal(signal.SIGINT, signal.SIG_DFL)
-locale.bindtextdomain('ubuntu_smoother', localedir)
-locale.textdomain('ubuntu_smoother')
-gettext.install('ubuntu_smoother', localedir)
+locale.bindtextdomain('sugar_cubes', localedir)
+locale.textdomain('sugar_cubes')
+gettext.install('sugar_cubes', localedir)
 
 if __name__ == '__main__':
     import gi
 
     from gi.repository import Gio
-    resource = Gio.Resource.load(os.path.join(pkgdatadir, 'ubuntu-smoother.gresource'))
+    resource = Gio.Resource.load(os.path.join(pkgdatadir, 'sugar-cubes.gresource'))
     resource._register()
 
-    from ubuntu_smoother import main
+    from sugar_cubes import main
     sys.exit(main.main(VERSION))

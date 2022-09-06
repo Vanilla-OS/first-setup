@@ -2,10 +2,10 @@
 <interface>
   <requires lib="gtk" version="4.0"/>
   <requires lib="libadwaita" version="1.0" />
-  <template class="UbuntuSmootherWindow" parent="AdwApplicationWindow">
+  <template class="SugarCubesWindow" parent="AdwApplicationWindow">
     <property name="default-width">800</property>
     <property name="default-height">600</property>
-    <property name="title">Ubuntu Smoother</property>
+    <property name="title">Sugar Cubes</property>
     <child>
       <object class="GtkBox">
         <property name="orientation">vertical</property>
@@ -33,7 +33,7 @@
             <!-- Welcome -->
             <child>
               <object class="AdwStatusPage">
-                <property name="icon-name">pm.mirko.UbuntuSmoother</property>
+                <property name="icon-name">io.github.vanilla-os.SugarCubes</property>
                 <property name="title">Welcome!</property>
                 <property name="description">Make your choices, this wizard will take care of everything.</property>
                 <property name="halign">fill</property>

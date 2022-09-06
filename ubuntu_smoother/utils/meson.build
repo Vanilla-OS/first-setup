@@ -1,5 +1,5 @@
 pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
-utilsdir = join_paths(pkgdatadir, 'ubuntu_smoother/utils')
+utilsdir = join_paths(pkgdatadir, 'sugar_cubes/utils')
 
 sources = [
   '__init__.py',

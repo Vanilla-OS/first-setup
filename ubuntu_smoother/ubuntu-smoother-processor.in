@@ -1,6 +1,6 @@
 #!@PYTHON@
 
-# ubuntu-smoother-processor.in
+# sugar-cubes-processor.in
 #
 # Copyright 2022 mirkobrombin
 #
@@ -29,13 +29,13 @@ localedir = '@localedir@'
 
 sys.path.insert(1, pkgdatadir)
 signal.signal(signal.SIGINT, signal.SIG_DFL)
-locale.bindtextdomain('ubuntu_smoother', localedir)
-locale.textdomain('ubuntu_smoother')
-gettext.install('ubuntu_smoother', localedir)
+locale.bindtextdomain('sugar_cubes', localedir)
+locale.textdomain('sugar_cubes')
+gettext.install('sugar_cubes', localedir)
 
 if __name__ == '__main__':
-    from ubuntu_smoother.utils.configurator import Configurator
-    from ubuntu_smoother.models.config import Config
+    from sugar_cubes.utils.configurator import Configurator
+    from sugar_cubes.models.config import Config
 
     parser = argparse.ArgumentParser()
     parser.add_argument('config', help='The configuration string (e.g. snap::True|flatpak::False|apport::True)')

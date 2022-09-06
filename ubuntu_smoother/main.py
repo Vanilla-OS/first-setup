@@ -14,7 +14,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from ubuntu_smoother.window import UbuntuSmootherWindow
+from sugar_cubes.window import SugarCubesWindow
 from gi.repository import Gtk, Gio, Adw
 import sys
 import gi
@@ -27,11 +27,11 @@ gi.require_version('Adw', '1')
 logging.basicConfig(level=logging.INFO)
 
 
-class UbuntuSmootherApplication(Adw.Application):
+class SugarCubesApplication(Adw.Application):
     """The main application singleton class."""
 
     def __init__(self):
-        super().__init__(application_id='pm.mirko.UbuntuSmoother',
+        super().__init__(application_id='io.github.vanilla-os.SugarCubes',
                          flags=Gio.ApplicationFlags.FLAGS_NONE)
         self.create_action('quit', self.close, ['<primary>q'])
 
@@ -43,7 +43,7 @@ class UbuntuSmootherApplication(Adw.Application):
         """
         win = self.props.active_window
         if not win:
-            win = UbuntuSmootherWindow(application=self)
+            win = SugarCubesWindow(application=self)
         win.present()
 
     def create_action(self, name, callback, shortcuts=None):
@@ -68,5 +68,5 @@ class UbuntuSmootherApplication(Adw.Application):
 
 def main(version):
     """The application's entry point."""
-    app = UbuntuSmootherApplication()
+    app = SugarCubesApplication()
     return app.run(sys.argv)

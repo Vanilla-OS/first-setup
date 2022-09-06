@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Sugar Cubes
+Exec=sugar-cubes
+Icon=pm.mirko.SugarCubes
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-	<id>pm.mirko.UbuntuSmoother.desktop</id>
+	<id>io.github.vanilla-os.SugarCubes.desktop</id>
 	<metadata_license>CC0-1.0</metadata_license>
     <project_license>GPL-3.0-only</project_license>
-    <name translatable="no">Ubuntu Smoother</name>
+    <name translatable="no">Sugar Cubes</name>
     <summary>Tweak your Ubuntu Vanilla GNOME installation.</summary>
     <developer_name translatable="no">Mirko Brombin</developer_name>
 	<description>
 	  <p>No description</p>
 	</description>
     <screenshots></screenshots>
-    <translation type="gettext">pm.mirko.UbuntuSmoother</translation>
+    <translation type="gettext">io.github.vanilla-os.SugarCubes</translation>
     <content_rating type="oars-1.1"/>
     <recommends>
       <control>pointing</control>

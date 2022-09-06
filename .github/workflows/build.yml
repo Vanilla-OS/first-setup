@@ -35,4 +35,4 @@ jobs:
           prerelease: false
           automatic_release_tag: ${{ steps.get_version.outputs.VERSION }}
           title: ${{ steps.get_version.outputs.VERSION }}
-          files: ../ubuntu-smoother_*.deb
+          files: ../sugar-cubes_*.deb

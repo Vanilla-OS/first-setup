@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="sugar-cubes">
+	<schema id="io.github.vanilla-os.SugarCubes" path="/pm/mirko/SugarCubes/">
+	</schema>
+</schemalist>

@@ -1,0 +1,43 @@
+#!/usr/bin/python3
+
+# sugar-cubes.in
+#
+# Copyright 2022 mirkobrombin
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundationat version 3 of the License.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+import os
+import sys
+import signal
+import locale
+import gettext
+
+VERSION = '0.0.1'
+pkgdatadir = '/usr/share/pm.mirko.SugarCubes'
+localedir = '/usr/share/locale'
+
+sys.path.insert(1, pkgdatadir)
+signal.signal(signal.SIGINT, signal.SIG_DFL)
+locale.bindtextdomain('sugar_cubes', localedir)
+locale.textdomain('sugar_cubes')
+gettext.install('sugar_cubes', localedir)
+
+if __name__ == '__main__':
+    import gi
+
+    from gi.repository import Gio
+    resource = Gio.Resource.load(os.path.join(pkgdatadir, 'sugar-cubes.gresource'))
+    resource._register()
+
+    from sugar_cubes import main
+    sys.exit(main.main(VERSION))

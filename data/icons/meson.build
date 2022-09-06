@@ -1,4 +1,4 @@
-application_id = 'pm.mirko.UbuntuSmoother'
+application_id = 'io.github.vanilla-os.SugarCubes'
 
 scalable_dir = join_paths('hicolor', 'scalable', 'apps')
 install_data(

@@ -1,4 +1,4 @@
-Source: ubuntu-smoother
+Source: sugar-cubes
 Section: utils
 Priority: optional
 Maintainer: Mirko Brombin <send@mirko.pm>
@@ -11,12 +11,12 @@ Build-Depends:
             gettext,
             desktop-file-utils,
             make
-Homepage: https://github.com/mirkobrombin/ubuntu-smoother/
-Vcs-Browser: hhttps://github.com/mirkobrombin/ubuntu-smoother
-Vcs-Git: https://github.com/mirkobrombin/ubuntu-smoother.git
+Homepage: https://github.com/mirkobrombin/sugar-cubes/
+Vcs-Browser: hhttps://github.com/mirkobrombin/sugar-cubes
+Vcs-Git: https://github.com/mirkobrombin/sugar-cubes.git
 Rules-Requires-Root: no
 
-Package: ubuntu-smoother
+Package: sugar-cubes
 Architecture: any
 Depends: python3,
          python3-gi,

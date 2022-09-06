@@ -2,5 +2,5 @@
 mesonbuild/
 build/
 debian/files
-debian/ubuntu-smoother*
+debian/sugar-cubes*
 debian/.debhelper

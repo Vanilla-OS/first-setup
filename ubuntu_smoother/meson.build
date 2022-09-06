@@ -1,9 +1,9 @@
 pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
-moduledir = join_paths(pkgdatadir, 'ubuntu_smoother')
+moduledir = join_paths(pkgdatadir, 'sugar_cubes')
 gnome = import('gnome')
 
-gnome.compile_resources('ubuntu-smoother',
-  'ubuntu-smoother.gresource.xml',
+gnome.compile_resources('sugar-cubes',
+  'sugar-cubes.gresource.xml',
   gresource_bundle: true,
   install: true,
   install_dir: pkgdatadir,
@@ -18,16 +18,16 @@ conf.set('localedir', join_paths(get_option('prefix'), get_option('localedir')))
 conf.set('pkgdatadir', pkgdatadir)
 
 configure_file(
-  input: 'ubuntu-smoother.in',
-  output: 'ubuntu-smoother',
+  input: 'sugar-cubes.in',
+  output: 'sugar-cubes',
   configuration: conf,
   install: true,
   install_dir: get_option('bindir')
 )
 
 configure_file(
-  input: 'ubuntu-smoother-processor.in',
-  output: 'ubuntu-smoother-processor',
+  input: 'sugar-cubes-processor.in',
+  output: 'sugar-cubes-processor',
   configuration: conf,
   install: true,
   install_dir: get_option('bindir')
@@ -36,10 +36,10 @@ configure_file(
 subdir('utils')
 subdir('models')
 
-ubuntu_smoother_sources = [
+sugar_cubes_sources = [
   '__init__.py',
   'main.py',
   'window.py',
 ]
 
-install_data(ubuntu_smoother_sources, install_dir: moduledir)
+install_data(sugar_cubes_sources, install_dir: moduledir)
