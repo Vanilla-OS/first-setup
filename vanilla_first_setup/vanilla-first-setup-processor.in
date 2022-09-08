@@ -22,6 +22,11 @@ import signal
 import locale
 import gettext
 import argparse
+import logging
+
+
+logging.basicConfig(level=logging.INFO)
+
 
 VERSION = '@VERSION@'
 pkgdatadir = '@pkgdatadir@'
@@ -33,13 +38,16 @@ locale.bindtextdomain('vanilla_first_setup', localedir)
 locale.textdomain('vanilla_first_setup')
 gettext.install('vanilla_first_setup', localedir)
 
+
 if __name__ == '__main__':
     from vanilla_first_setup.utils.configurator import Configurator
     from vanilla_first_setup.models.config import Config
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('config', help='The configuration string (e.g. snap::True|flatpak::False|apport::True)')
+    parser.add_argument(
+        'config', help='The configuration string (e.g. snap::True|flatpak::False|apport::True)')
     args = parser.parse_args()
-    
+
     config = Config.from_str(args.config)
+    print(config.get_str())
     Configurator(config).apply()

@@ -91,16 +91,16 @@ class FirstSetupWindow(Adw.ApplicationWindow):
         RunAsync(Processor(self.__config).run, on_done)
 
     def __on_switch_snap_state_set(self, widget, state):
-        self.__config.snap = state
+        self.__config.set_val('snap', state)
 
     def __on_switch_flatpak_state_set(self, widget, state):
-        self.__config.flatpak = state
+        self.__config.set_val('flatpak', state)
 
     def __on_switch_apport_state_set(self, widget, state):
-        self.__config.apport = state
+        self.__config.set_val('apport', state)
 
     def __on_switch_distrobox_state_set(self, widget, state):
-        self.__config.distrobox = state
+        self.__config.set_val('distrobox', state)
 
     def on_btn_close_clicked(self, widget):
         self.get_application().quit()

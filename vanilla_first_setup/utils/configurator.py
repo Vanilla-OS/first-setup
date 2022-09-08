@@ -19,6 +19,7 @@ class Configurator:
         self.fake = fake
 
     def apply(self):
+        logging.info(f"Applying config: {self.config.get_str()}")
         self.__enable_snap() if self.config.snap else self.__disable_snap()
         self.__enable_flatpak() if self.config.flatpak else self.__disable_flatpak()
         self.__enable_apport() if self.config.apport else self.__disable_apport()
