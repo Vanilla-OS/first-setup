@@ -22,6 +22,7 @@ class Configurator:
         logging.info(f"Applying config: {self.config.get_str()}")
         self.__enable_snap() if self.config.snap else self.__disable_snap()
         self.__enable_flatpak() if self.config.flatpak else self.__disable_flatpak()
+        self.__enable_appimage() if self.config.appimage else self.__disable_appimage()
         self.__enable_apport() if self.config.apport else self.__disable_apport()
         if self.config.distrobox:
             self.__enable_distrobox()
@@ -63,6 +64,19 @@ class Configurator:
 
         if checks.is_flatpak_installed():
             Apt.purge(['flatpak'])
+    
+    def __enable_appimage(self):
+        if self.fake:
+            return self.__fake("Fake: AppImage enabled")
+
+        Apt.install(['fuse2'])
+        Apt.update()
+    
+    def __disable_appimage(self):
+        if self.fake:
+            return self.__fake("Fake: AppImage disabled")
+
+        # Apt.purge(['libfuse2']) # NOTE: we should not remove libfuse2, it may be needed by other packages at this point
 
     def __enable_apport(self):
         if self.fake:

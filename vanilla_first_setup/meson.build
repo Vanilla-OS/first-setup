@@ -35,6 +35,7 @@ configure_file(
 
 subdir('utils')
 subdir('models')
+subdir('dialogs')
 
 vanilla_first_setup_sources = [
   '__init__.py',

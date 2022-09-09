@@ -1,5 +1,5 @@
 project('io.github.vanilla-os.FirstSetup',
-          version: '0.0.6',
+          version: '0.0.7',
     meson_version: '>= 0.59.0',
   default_options: [ 'warning_level=2',
                      'werror=false',

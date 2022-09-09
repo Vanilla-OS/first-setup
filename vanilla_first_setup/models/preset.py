@@ -1,6 +1,7 @@
 class Preset:
 
-    snap: bool = True
+    snap: bool = False
     flatpak: bool = True
-    apport: bool = True
+    appimage: bool = False
+    apport: bool = False
     distrobox: bool = True

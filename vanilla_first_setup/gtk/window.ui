@@ -3,8 +3,8 @@
   <requires lib="gtk" version="4.0"/>
   <requires lib="libadwaita" version="1.0" />
   <template class="FirstSetupWindow" parent="AdwApplicationWindow">
-    <property name="default-width">800</property>
-    <property name="default-height">600</property>
+    <property name="default-width">750</property>
+    <property name="default-height">630</property>
     <property name="title">Vanilla OS First Setup</property>
     <child>
       <object class="GtkBox">
@@ -54,36 +54,57 @@
             
             <!-- Configuration -->
             <child>
-              <object class="GtkBox">
-                <property name="orientation">vertical</property>
-                <property name="vexpand">True</property>
-                <property name="hexpand">True</property>
-                <property name="valign">center</property>
+              <object class="AdwStatusPage">
+                <property name="icon-name">package-x-generic-symbolic</property>
+                <property name="title">Choose the Package Manager</property>
+                <property name="description">Choose one or more package managers from the following options.</property>
+                <property name="halign">fill</property>
+                <property name="valign">fill</property>
+                <property name="hexpand">true</property>
                 <child>
-                  <object class="AdwPreferencesPage">
+                  <object class="GtkBox">
+                    <property name="orientation">vertical</property>
+                    <property name="vexpand">True</property>
+                    <property name="hexpand">True</property>
+                    <property name="valign">center</property>
                     <child>
-                      <object class="AdwPreferencesGroup">
-                        <property name="title">How Will you Install the Software?</property>
+                      <object class="AdwPreferencesPage">
                         <child>
-                          <object class="AdwActionRow">
-                            <property name="title">Snap</property>
-                            <property name="subtitle">Will replace GNOME Software with Snap store if the only package manager.</property>
-                            <property name="activatable-widget">switch_snap</property>
+                          <object class="AdwPreferencesGroup">
                             <child>
-                              <object class="GtkSwitch" id="switch_snap">
-                                <property name="valign">center</property>
+                              <object class="AdwActionRow">
+                                <property name="title">Flatpak</property>
+                                <property name="subtitle">Will also configure the Flathub repository.</property>
+                                <property name="activatable-widget">switch_flatpak</property>
+                                <child>
+                                  <object class="GtkSwitch" id="switch_flatpak">
+                                    <property name="valign">center</property>
+                                  </object>
+                                </child>
                               </object>
                             </child>
-                          </object>
-                        </child>
-                        <child>
-                          <object class="AdwActionRow">
-                            <property name="title">Flatpak</property>
-                            <property name="subtitle">Will also configure the Flathub repository.</property>
-                            <property name="activatable-widget">switch_flatpak</property>
                             <child>
-                              <object class="GtkSwitch" id="switch_flatpak">
-                                <property name="valign">center</property>
+                              <object class="AdwActionRow">
+                                <property name="title">Snap</property>
+                                <property name="subtitle">Uses the Snapcraft repository. Default in Ubuntu.</property>
+                                <property name="activatable-widget">switch_snap</property>
+                                <child>
+                                  <object class="GtkSwitch" id="switch_snap">
+                                    <property name="valign">center</property>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="AdwActionRow">
+                                <property name="title">Appimage</property>
+                                <property name="subtitle">Will install the necessary dependencies to run Appimages.</property>
+                                <property name="activatable-widget">switch_appimage</property>
+                                <child>
+                                  <object class="GtkSwitch" id="switch_appimage">
+                                    <property name="valign">center</property>
+                                  </object>
+                                </child>
                               </object>
                             </child>
                           </object>
@@ -91,44 +112,121 @@
                       </object>
                     </child>
                     <child>
-                      <object class="AdwPreferencesGroup">
-                        <property name="title">Extra</property>
+                      <object class="GtkButton" id="btn_next">
+                        <property name="label">Next</property>
+                        <property name="halign">center</property>
+                        <style>
+                          <class name="pill" />
+                          <class name="suggested-action" />
+                        </style>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+            <!-- Sub-System -->
+            <child>
+              <object class="AdwStatusPage">
+                <property name="icon-name">utilities-terminal-symbolic</property>
+                <property name="title">Sub-System</property>
+                <property name="description">Access a minimal mutable Ubuntu installation integrated with Vanilla OS.</property>
+                <property name="halign">fill</property>
+                <property name="valign">fill</property>
+                <property name="hexpand">true</property>
+                <child>
+                  <object class="GtkBox">
+                    <property name="orientation">vertical</property>
+                    <property name="vexpand">True</property>
+                    <property name="hexpand">True</property>
+                    <property name="halign">fill</property>
+                    <property name="valign">center</property>
+                    <property name="spacing">10</property>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="valign">center</property>
+                        <property name="spacing">10</property>
+                        <property name="halign">center</property>
                         <child>
-                          <object class="AdwActionRow">
-                            <property name="title">Apport</property>
-                            <property name="subtitle">Do you want to keep the Bug Reporter utility?</property>
-                            <property name="activatable-widget">switch_apport</property>
-                            <child>
-                              <object class="GtkSwitch" id="switch_apport">
-                                <property name="valign">center</property>
-                              </object>
-                            </child>
+                          <object class="GtkButton" id="btn_no_subsystem">
+                            <property name="label">No</property>
+                            <property name="halign">center</property>
+                            <style>
+                              <class name="pill" />
+                            </style>
                           </object>
                         </child>
                         <child>
-                          <object class="AdwActionRow">
-                            <property name="title">Distrobox</property>
-                            <property name="subtitle">Allows you to create containers with different distributions.</property>
-                            <property name="activatable-widget">switch_distrobox</property>
-                            <child>
-                              <object class="GtkSwitch" id="switch_distrobox">
-                                <property name="valign">center</property>
-                              </object>
-                            </child>
+                          <object class="GtkButton" id="btn_use_subsystem">
+                            <property name="label">Yes, enable it</property>
+                            <property name="halign">center</property>
+                            <style>
+                              <class name="pill" />
+                              <class name="suggested-action" />
+                            </style>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="btn_info_subsystem">
+                            <property name="icon-name">dialog-information-symbolic</property>
+                            <style>
+                              <class name="flat" />
+                            </style>
                           </object>
                         </child>
                       </object>
                     </child>
                   </object>
                 </child>
+              </object>
+            </child>
+            
+            <!-- Extra -->
+            <child>
+              <object class="AdwStatusPage">
+                <property name="icon-name">applications-utilities-symbolic</property>
+                <property name="title">Extra Settings</property>
+                <property name="description">The following are optional settings, leave them as they are if you don't know what they do.</property>
+                <property name="halign">fill</property>
+                <property name="valign">fill</property>
+                <property name="hexpand">true</property>
                 <child>
-                  <object class="GtkButton" id="btn_save">
-                    <property name="label">Save Changes</property>
-                    <property name="halign">center</property>
-                    <style>
-                      <class name="pill" />
-                      <class name="suggested-action" />
-                    </style>
+                  <object class="GtkBox">
+                    <property name="orientation">vertical</property>
+                    <property name="vexpand">True</property>
+                    <property name="hexpand">True</property>
+                    <property name="valign">center</property>
+                    <child>
+                      <object class="AdwPreferencesPage">
+                        <child>
+                          <object class="AdwPreferencesGroup">
+                            <child>
+                              <object class="AdwActionRow">
+                                <property name="title">Apport</property>
+                                <property name="subtitle">If enabled, the Bug Reporter utility will be installed.</property>
+                                <property name="activatable-widget">switch_apport</property>
+                                <child>
+                                  <object class="GtkSwitch" id="switch_apport">
+                                    <property name="valign">center</property>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="btn_save">
+                        <property name="label">Save Changes</property>
+                        <property name="halign">center</property>
+                        <style>
+                          <class name="pill" />
+                          <class name="suggested-action" />
+                        </style>
+                      </object>
+                    </child>
                   </object>
                 </child>
               </object>
@@ -156,7 +254,7 @@
               <object class="AdwStatusPage">
                 <property name="icon-name">emblem-default-symbolic</property>
                 <property name="title">Done!</property>
-                <property name="description">You can now enjoy your new Ubuntu experience.</property>
+                <property name="description">You can now enjoy your Vanila OS experience.</property>
                 <property name="halign">fill</property>
                 <property name="valign">fill</property>
                 <property name="hexpand">true</property>

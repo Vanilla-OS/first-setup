@@ -2,5 +2,6 @@
 <gresources>
   <gresource prefix="/pm/mirko/FirstSetup">
     <file>gtk/window.ui</file>
+    <file>gtk/dialog-subsystem.ui</file>
   </gresource>
 </gresources>
