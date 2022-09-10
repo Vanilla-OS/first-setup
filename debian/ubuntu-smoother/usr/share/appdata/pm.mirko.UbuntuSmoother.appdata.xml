@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-  <id>pm.mirko.FirstSetup.desktop</id>
+  <id>io.github.vanilla-os.FirstSetup.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-only</project_license>
   <name translatable="no">Vanilla OS First Setup</name>
@@ -10,7 +10,7 @@
     <p>No description</p>
   </description>
   <screenshots/>
-  <translation type="gettext">pm.mirko.FirstSetup</translation>
+  <translation type="gettext">io.github.vanilla-os.FirstSetup</translation>
   <content_rating type="oars-1.1"/>
   <recommends>
     <control>pointing</control>

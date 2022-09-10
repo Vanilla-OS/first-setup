@@ -17,7 +17,7 @@
 from gi.repository import Gtk, Adw
 
 
-@Gtk.Template(resource_path='/pm/mirko/FirstSetup/gtk/dialog-subsystem.ui')
+@Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/dialog-subsystem.ui')
 class SubSystemDialog(Adw.Window):
     __gtype_name__ = 'SubSystemDialog'
 

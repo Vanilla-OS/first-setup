@@ -28,13 +28,16 @@ from vanilla_first_setup.dialogs.subsystem import SubSystemDialog
 from vanilla_first_setup.dialogs.prop_drivers import ProprietaryDriverDialog
 
 
-@Gtk.Template(resource_path='/pm/mirko/FirstSetup/gtk/window.ui')
+@Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/window.ui')
 class FirstSetupWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'FirstSetupWindow'
 
     carousel = Gtk.Template.Child()
-    btn_start = Gtk.Template.Child()
-    btn_next = Gtk.Template.Child()
+    btn_go_theme = Gtk.Template.Child()
+    btn_light = Gtk.Template.Child()
+    btn_dark = Gtk.Template.Child()
+    btn_go_package = Gtk.Template.Child()
+    btn_go_subsystem = Gtk.Template.Child()
     btn_save = Gtk.Template.Child()
     btn_reboot = Gtk.Template.Child()
     btn_no_subsystem = Gtk.Template.Child()
@@ -50,13 +53,15 @@ class FirstSetupWindow(Adw.ApplicationWindow):
     spinner = Gtk.Template.Child()
     status_welcome = Gtk.Template.Child()
     status_nvidia = Gtk.Template.Child()
+
     page_welcome = -1
-    page_configuration = 0
-    page_subsystem = 1
-    page_nvidia_drivers = 2
-    page_extras = 3
-    page_progress = 4
-    page_done = 5
+    page_theme = 0
+    page_configuration = 1
+    page_subsystem = 2
+    page_nvidia_drivers = 3
+    page_extras = 4
+    page_progress = 5
+    page_done = 6
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -82,11 +87,18 @@ class FirstSetupWindow(Adw.ApplicationWindow):
         self.switch_appimage.set_active(Preset.appimage)
         self.switch_apport.set_active(Preset.apport)
 
+        self.btn_dark.set_group(self.btn_light)
+
     def __connect_signals(self):
-        self.btn_start.connect('clicked', self.__on_btn_start_clicked)
-        self.btn_next.connect('clicked', self.__on_btn_next_clicked)
+        self.btn_go_theme.connect('clicked', self.__show_page, self.page_theme)
+        self.btn_go_package.connect('clicked', self.__show_page, self.page_configuration)
+        self.btn_go_subsystem.connect('clicked', self.__show_page, self.page_subsystem)
+
         self.btn_save.connect('clicked', self.on_btn_save_clicked)
         self.btn_reboot.connect('clicked', self.on_btn_reboot_clicked)
+
+        self.btn_light.connect('toggled', self.__set_theme, "light")
+        self.btn_dark.connect('toggled', self.__set_theme, "dark")
 
         self.btn_no_subsystem.connect('clicked', self.on_btn_subsystem_clicked, False)
         self.btn_use_subsystem.connect('clicked', self.on_btn_subsystem_clicked, True)
@@ -102,25 +114,26 @@ class FirstSetupWindow(Adw.ApplicationWindow):
         self.switch_apport.connect(
             'state-set', self.__on_switch_apport_state_set)
 
-    def __show_page(self, page: int):
+    def __show_page(self, widget=None, page: int=-1):
         _page = self.carousel.get_nth_page(page + 1)
         self.carousel.scroll_to(_page, True)
-
-    def __on_btn_start_clicked(self, widget):
-        self.__show_page(self.page_configuration)
     
-    def __on_btn_next_clicked(self, widget):
-        self.__show_page(self.page_subsystem)
-
     def on_btn_save_clicked(self, widget):
         def on_done(result, error=None):
             self.spinner.stop()
-            self.__show_page(self.page_done)
+            self.__show_page(page=self.page_done)
 
-        self.__show_page(self.page_progress)
+        self.__show_page(page=self.page_progress)
         self.spinner.start()
 
         RunAsync(Processor(self.__config).run, on_done)
+    
+    def __set_theme(self, widget, theme: str):
+        self.__config.set_val('theme', theme)
+        pref = "prefer-dark" if theme == "dark" else "default"
+        gtk = "Adwaita-dark" if theme == "dark" else "Adwaita"
+        Gio.Settings.new("org.gnome.desktop.interface").set_string("color-scheme", pref)
+        Gio.Settings.new("org.gnome.desktop.interface").set_string("gtk-theme", gtk)
 
     def __on_switch_snap_state_set(self, widget, state):
         self.__config.set_val('snap', state)
@@ -139,14 +152,14 @@ class FirstSetupWindow(Adw.ApplicationWindow):
 
     def on_btn_subsystem_clicked(self, widget, state):
         self.__config.set_val('distrobox', state)
-        self.__show_page(self.page_nvidia_drivers if self.__has_nvidia else self.page_extras)
+        self.__show_page(page=self.page_nvidia_drivers if self.__has_nvidia else self.page_extras)
     
     def __on_btn_info_subsystem_clicked(self, widget):
         SubSystemDialog(self).show()
     
     def on_btn_prop_nvidia_clicked(self, widget, state):
         self.__config.set_val('nvidia', state)
-        self.__show_page(self.page_extras)
+        self.__show_page(page=self.page_extras)
 
     def __on_btn_info_prop_nvidia_clicked(self, widget):
         ProprietaryDriverDialog(self).show()

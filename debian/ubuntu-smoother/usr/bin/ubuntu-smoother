@@ -23,7 +23,7 @@ import locale
 import gettext
 
 VERSION = '0.0.1'
-pkgdatadir = '/usr/share/pm.mirko.FirstSetup'
+pkgdatadir = '/usr/share/io.github.vanilla-os.FirstSetup'
 localedir = '/usr/share/locale'
 
 sys.path.insert(1, pkgdatadir)

@@ -31,7 +31,7 @@ class FirstSetupApplication(Adw.Application):
     """The main application singleton class."""
 
     def __init__(self):
-        super().__init__(application_id='pm.mirko.FirstSetup',
+        super().__init__(application_id='io.github.vanilla-os.FirstSetup',
                          flags=Gio.ApplicationFlags.FLAGS_NONE)
         self.create_action('quit', self.close, ['<primary>q'])
 

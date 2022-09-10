@@ -13,7 +13,7 @@ class Config:
         appimage: bool, 
         apport: bool, 
         distrobox: bool,
-        nvidia: bool
+        nvidia: bool,
     ):
         self.snap = snap
         self.flatpak = flatpak
@@ -27,7 +27,7 @@ class Config:
             "snap", "flatpak", "appimage", "apport", "distrobox", "nvidia"
         ]
         vals = [
-            self.snap, self.flatpak, self.appimage, self.apport, self.distrobox, self.nvidia
+            self.snap, self.flatpak, self.appimage, self.apport, self.distrobox, self.nvidia, self.theme
         ]
         return "|".join([f"{key}::{val}" for key, val in zip(keys, vals)])
     
@@ -69,5 +69,5 @@ class Config:
             appimage=get_bool(appimage),
             apport=get_bool(apport),
             distrobox=get_bool(distrobox),
-            nvidia=get_bool(nvidia)
+            nvidia=get_bool(nvidia),
         )

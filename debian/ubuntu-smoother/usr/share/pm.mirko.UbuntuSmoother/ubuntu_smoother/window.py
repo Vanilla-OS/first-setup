@@ -22,7 +22,7 @@ from vanilla_first_setup.utils.processor import Processor
 from vanilla_first_setup.utils.run_async import RunAsync
 
 
-@Gtk.Template(resource_path='/pm/mirko/FirstSetup/gtk/window.ui')
+@Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/window.ui')
 class FirstSetupWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'FirstSetupWindow'
 

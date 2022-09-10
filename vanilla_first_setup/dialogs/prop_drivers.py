@@ -17,7 +17,7 @@
 from gi.repository import Gtk, Adw
 
 
-@Gtk.Template(resource_path='/pm/mirko/FirstSetup/gtk/dialog-prop-nvidia.ui')
+@Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/dialog-prop-nvidia.ui')
 class ProprietaryDriverDialog(Adw.Window):
     __gtype_name__ = 'ProprietaryDriverDialog'
 

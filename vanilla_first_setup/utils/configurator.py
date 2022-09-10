@@ -3,6 +3,8 @@ import time
 import logging
 import subprocess
 
+from gi.repository import Gio
+
 from vanilla_first_setup.utils import checks
 from vanilla_first_setup.utils.apt import Apt
 from vanilla_first_setup.utils.flatpak import Flatpak
@@ -111,7 +113,7 @@ class Configurator:
         if self.fake:
             return self.__fake("Fake: Nvidia enabled")
 
-        proc.subprocess.run(['sudo', 'ubuntu-drivers', 'install', '--recommended'])
+        subprocess.run(['sudo', 'ubuntu-drivers', 'install', '--recommended'])
 
     def __disable_on_startup(self):
         if self.fake:
