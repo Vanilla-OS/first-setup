@@ -27,7 +27,7 @@ class Config:
             "snap", "flatpak", "appimage", "apport", "distrobox", "nvidia"
         ]
         vals = [
-            self.snap, self.flatpak, self.appimage, self.apport, self.distrobox, self.nvidia, self.theme
+            self.snap, self.flatpak, self.appimage, self.apport, self.distrobox, self.nvidia
         ]
         return "|".join([f"{key}::{val}" for key, val in zip(keys, vals)])
     
