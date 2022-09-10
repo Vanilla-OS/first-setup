@@ -317,7 +317,7 @@
                 <property name="hexpand">true</property>
                 <child>
                   <object class="GtkButton" id="btn_reboot">
-                    <property name="label">Restart</property>
+                    <property name="label">Reboot Now</property>
                     <property name="halign">center</property>
                     <style>
                       <class name="pill" />
