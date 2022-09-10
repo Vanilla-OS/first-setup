@@ -123,7 +123,4 @@ class Configurator:
 
     @staticmethod
     def reboot():
-        if self.fake:
-            return self.__fake("Fake: Reboot")
-
         subprocess.run(['gnome-session-quit', '--reboot'])
