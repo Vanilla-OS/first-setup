@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Vanilla OS First Setup
-Exec=vanilla-first-setup
-Icon=io.github.vanilla-os.FirstSetup
-Terminal=false
-Type=Application
-Categories=GTK;
-StartupNotify=true

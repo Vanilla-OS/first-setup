@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<schemalist gettext-domain="vanilla-first-setup">
-	<schema id="io.github.vanilla-os.FirstSetup" path="/io/github/vanilla-os/FirstSetup/">
-	</schema>
-</schemalist>
