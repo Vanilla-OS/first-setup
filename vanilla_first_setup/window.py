@@ -21,6 +21,7 @@ from vanilla_first_setup.models.preset import Preset
 from vanilla_first_setup.models.config import Config
 from vanilla_first_setup.utils.processor import Processor
 from vanilla_first_setup.utils.run_async import RunAsync
+from vanilla_first_setup.utils.configurator import Configurator
 from vanilla_first_setup.utils.welcome_langs import welcome
 from vanilla_first_setup.utils.checks import has_nvidia_gpu
 from vanilla_first_setup.dialogs.subsystem import SubSystemDialog
@@ -35,7 +36,7 @@ class FirstSetupWindow(Adw.ApplicationWindow):
     btn_start = Gtk.Template.Child()
     btn_next = Gtk.Template.Child()
     btn_save = Gtk.Template.Child()
-    btn_close = Gtk.Template.Child()
+    btn_reboot = Gtk.Template.Child()
     btn_no_subsystem = Gtk.Template.Child()
     btn_use_subsystem = Gtk.Template.Child()
     btn_info_subsystem = Gtk.Template.Child()
@@ -85,7 +86,7 @@ class FirstSetupWindow(Adw.ApplicationWindow):
         self.btn_start.connect('clicked', self.__on_btn_start_clicked)
         self.btn_next.connect('clicked', self.__on_btn_next_clicked)
         self.btn_save.connect('clicked', self.on_btn_save_clicked)
-        self.btn_close.connect('clicked', self.on_btn_close_clicked)
+        self.btn_reboot.connect('clicked', self.on_btn_reboot_clicked)
 
         self.btn_no_subsystem.connect('clicked', self.on_btn_subsystem_clicked, False)
         self.btn_use_subsystem.connect('clicked', self.on_btn_subsystem_clicked, True)
@@ -133,8 +134,8 @@ class FirstSetupWindow(Adw.ApplicationWindow):
     def __on_switch_distrobox_state_set(self, widget, state):
         self.__config.set_val('distrobox', state)
 
-    def on_btn_close_clicked(self, widget):
-        self.get_application().quit()
+    def on_btn_reboot_clicked(self, widget):
+        Configurator.reboot()
 
     def on_btn_subsystem_clicked(self, widget, state):
         self.__config.set_val('distrobox', state)

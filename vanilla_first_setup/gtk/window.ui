@@ -311,13 +311,13 @@
               <object class="AdwStatusPage">
                 <property name="icon-name">emblem-default-symbolic</property>
                 <property name="title">Done!</property>
-                <property name="description">You can now enjoy your Vanila OS experience.</property>
+                <property name="description">Restart your PC to enjoy your Vanila OS experience.</property>
                 <property name="halign">fill</property>
                 <property name="valign">fill</property>
                 <property name="hexpand">true</property>
                 <child>
-                  <object class="GtkButton" id="btn_close">
-                    <property name="label">Close</property>
+                  <object class="GtkButton" id="btn_reboot">
+                    <property name="label">Restart</property>
                     <property name="halign">center</property>
                     <style>
                       <class name="pill" />

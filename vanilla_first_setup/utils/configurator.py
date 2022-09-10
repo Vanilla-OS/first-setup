@@ -32,7 +32,7 @@ class Configurator:
     def __fake(self, msg: str):
         time.sleep(1)
         logger.info(f"Fake: {msg}")
-
+    
     def __enable_snap(self):
         if self.fake:
             return self.__fake("Fake: Snap enabled")
@@ -120,3 +120,10 @@ class Configurator:
         autostart_file = os.path.expanduser("~/.config/autostart/vanilla-first-setup.desktop")
         if os.path.exists(autostart_file):
             os.remove(autostart_file)
+
+    @staticmethod
+    def reboot():
+        if self.fake:
+            return self.__fake("Fake: Reboot")
+
+        subprocess.run(['gnome-session-quit', '--reboot'])
