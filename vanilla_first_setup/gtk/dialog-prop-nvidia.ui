@@ -25,7 +25,7 @@
                     <property name="wrap">True</property>
                     <property name="label">A proprietary driver has private code that neither Vanilla OS nor Ubuntu developers can't review. 
                     
-Security and other updates are dependent on the driver vendor.
+Security and other updates are dependent on the driver vendor.</property>
                   </object>
                 </child>
             </object>
