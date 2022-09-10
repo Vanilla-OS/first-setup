@@ -52,10 +52,10 @@
               </object>
             </child>
             
-            <!-- Configuration -->
+            <!-- Package Manager -->
             <child>
               <object class="AdwStatusPage">
-                <property name="icon-name">package-x-generic-symbolic</property>
+                <property name="icon-name">vanilla-package-symbolic</property>
                 <property name="title">Choose the Package Manager</property>
                 <property name="description">Choose one or more package managers from the following options.</property>
                 <property name="halign">fill</property>
@@ -129,7 +129,7 @@
             <!-- Sub-System -->
             <child>
               <object class="AdwStatusPage">
-                <property name="icon-name">utilities-terminal-symbolic</property>
+                <property name="icon-name">vanilla-container-terminal-symbolic</property>
                 <property name="title">Sub-System</property>
                 <property name="description">Access a minimal mutable Ubuntu installation integrated with Vanilla OS.</property>
                 <property name="halign">fill</property>
@@ -242,7 +242,7 @@
             <!-- Extra -->
             <child>
               <object class="AdwStatusPage">
-                <property name="icon-name">applications-utilities-symbolic</property>
+                <property name="icon-name">vanilla-puzzle-piece-symbolic</property>
                 <property name="title">Extra Settings</property>
                 <property name="description">The following are optional settings, leave them as they are if you don't know what they do.</property>
                 <property name="halign">fill</property>
