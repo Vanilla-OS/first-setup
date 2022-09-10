@@ -23,11 +23,9 @@
                     <property name="margin-end">10</property>
                     <property name="margin-bottom">20</property>
                     <property name="wrap">True</property>
-                    <property name="label">The Sub-System is a container that allows you to install deb packages without altering the system. It is useful for installing software without having to enter in read-write mode. 
+                    <property name="label">A proprietary driver has private code that neither Vanilla OS nor Ubuntu developers can't review. 
                     
-You don't need to enter in the container to install packages, just use the apx command (wrapper around the apt inside the container) to install new programs and automatically make them available in your Vanilla OS installation. 
-
-This features uses distrobox as backend.</property>
+Security and other updates are dependent on the driver vendor.
                   </object>
                 </child>
             </object>
