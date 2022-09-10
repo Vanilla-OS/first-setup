@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk" version="4.0"/>
+    <requires lib="libadwaita" version="1.0"/>
+    <template class="ProprietaryDriverDialog" parent="AdwWindow">
+        <property name="title" translatable="yes">Info About Proprietary Drivers</property>
+        <property name="default-width">500</property>
+        <property name="modal">True</property>
+        <child>
+            <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <child>
+                    <object class="AdwHeaderBar">
+                        <style>
+                            <class name="flat"/>
+                        </style>
+                    </object>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="margin-top">10</property>
+                    <property name="margin-start">10</property>
+                    <property name="margin-end">10</property>
+                    <property name="margin-bottom">20</property>
+                    <property name="wrap">True</property>
+                    <property name="label">The Sub-System is a container that allows you to install deb packages without altering the system. It is useful for installing software without having to enter in read-write mode. 
+                    
+You don't need to enter in the container to install packages, just use the apx command (wrapper around the apt inside the container) to install new programs and automatically make them available in your Vanilla OS installation. 
+
+This features uses distrobox as backend.</property>
+                  </object>
+                </child>
+            </object>
+        </child>
+    </template>
+</interface>

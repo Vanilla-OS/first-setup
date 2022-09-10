@@ -5,3 +5,4 @@ class Preset:
     appimage: bool = False
     apport: bool = False
     distrobox: bool = True
+    nvidia: bool = False

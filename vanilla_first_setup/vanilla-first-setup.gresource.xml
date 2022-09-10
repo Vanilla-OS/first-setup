@@ -3,5 +3,6 @@
   <gresource prefix="/pm/mirko/FirstSetup">
     <file>gtk/window.ui</file>
     <file>gtk/dialog-subsystem.ui</file>
+    <file>gtk/dialog-prop-nvidia.ui</file>
   </gresource>
 </gresources>

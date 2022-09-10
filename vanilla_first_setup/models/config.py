@@ -6,17 +6,30 @@ logger = logging.getLogger("FirstSetup::Config")
 
 class Config:
 
-    def __init__(self, snap: bool, flatpak: bool, appimage: bool, apport: bool, distrobox: bool):
+    def __init__(
+        self, 
+        snap: bool, 
+        flatpak: bool, 
+        appimage: bool, 
+        apport: bool, 
+        distrobox: bool,
+        nvidia: bool
+    ):
         self.snap = snap
         self.flatpak = flatpak
         self.appimage = appimage
         self.apport = apport
         self.distrobox = distrobox
+        self.nvidia = nvidia
 
     def get_str(self) -> str:
-        return "snap::{0}|flatpak::{1}|appimage::{2}|apport::{3}|distrobox::{4}".format(
-            self.snap, self.flatpak, self.appimage, self.apport, self.distrobox
-        )
+        keys = [
+            "snap", "flatpak", "appimage", "apport", "distrobox", "nvidia"
+        ]
+        vals = [
+            self.snap, self.flatpak, self.appimage, self.apport, self.distrobox, self.nvidia
+        ]
+        return "|".join([f"{key}::{val}" for key, val in zip(keys, vals)])
     
     def set_val(self, key: str, val: bool):
         if key == "snap":
@@ -29,6 +42,8 @@ class Config:
             self.apport = val
         elif key == "distrobox":
             self.distrobox = val
+        elif key == "nvidia":
+            self.nvidia = val
         else:
             return
             
@@ -46,11 +61,13 @@ class Config:
         appimage = items[2].split('::')[1]
         apport = items[3].split('::')[1]
         distrobox = items[4].split('::')[1]
+        nvidia = items[5].split('::')[1]
 
         return cls(
             snap=get_bool(snap),
             flatpak=get_bool(flatpak),
             appimage=get_bool(appimage),
             apport=get_bool(apport),
-            distrobox=get_bool(distrobox)
+            distrobox=get_bool(distrobox),
+            nvidia=get_bool(nvidia)
         )

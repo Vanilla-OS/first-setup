@@ -4,6 +4,7 @@ dialogsdir = join_paths(pkgdatadir, 'vanilla_first_setup/dialogs')
 sources = [
   '__init__.py',
   'subsystem.py',
+  'prop_drivers.py',
 ]
 
 install_data(sources, install_dir: dialogsdir)

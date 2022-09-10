@@ -182,6 +182,63 @@
               </object>
             </child>
             
+            <!-- Proprietary Nvidia Drivers -->
+            <child>
+              <object class="AdwStatusPage" id="status_nvidia">
+                <property name="icon-name">video-display-symbolic</property>
+                <property name="title">Proprietary Nvidia Drivers</property>
+                <property name="description">Want to use Nvidia proprietary drivers for better performance and compatibility?</property>
+                <property name="halign">fill</property>
+                <property name="valign">fill</property>
+                <property name="hexpand">true</property>
+                <property name="visible">false</property>
+                <child>
+                  <object class="GtkBox">
+                    <property name="orientation">vertical</property>
+                    <property name="vexpand">True</property>
+                    <property name="hexpand">True</property>
+                    <property name="halign">fill</property>
+                    <property name="valign">center</property>
+                    <property name="spacing">10</property>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="valign">center</property>
+                        <property name="spacing">10</property>
+                        <property name="halign">center</property>
+                        <child>
+                          <object class="GtkButton" id="btn_no_prop_nvidia">
+                            <property name="label">No</property>
+                            <property name="halign">center</property>
+                            <style>
+                              <class name="pill" />
+                            </style>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="btn_use_prop_nvidia">
+                            <property name="label">Yes, install</property>
+                            <property name="halign">center</property>
+                            <style>
+                              <class name="pill" />
+                              <class name="suggested-action" />
+                            </style>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="btn_info_prop_nvidia">
+                            <property name="icon-name">dialog-information-symbolic</property>
+                            <style>
+                              <class name="flat" />
+                            </style>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            
             <!-- Extra -->
             <child>
               <object class="AdwStatusPage">

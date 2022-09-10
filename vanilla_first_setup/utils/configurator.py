@@ -26,6 +26,8 @@ class Configurator:
         self.__enable_apport() if self.config.apport else self.__disable_apport()
         if self.config.distrobox:
             self.__enable_distrobox()
+        if self.config.nvidia:
+            self.__enable_nvidia()
 
     def __fake(self, msg: str):
         time.sleep(1)
@@ -104,6 +106,12 @@ class Configurator:
 
         proc = subprocess.run(['curl', '-s', 'https://raw.githubusercontent.com/89luca89/distrobox/main/install'], stdout=subprocess.PIPE)
         proc = subprocess.run(['sudo', 'sh'], input=proc.stdout, stdout=subprocess.PIPE)
+
+    def __enable_nvidia(self):
+        if self.fake:
+            return self.__fake("Fake: Nvidia enabled")
+
+        proc.subprocess.run(['sudo', 'ubuntu-drivers', 'install', '--recommended'])
 
     def __disable_on_startup(self):
         if self.fake:
