@@ -124,7 +124,7 @@ class FirstSetupApplication(Adw.Application):
 
 def main(version):
     """The application's entry point."""
-    if os.env.get("USERNAME") in ["ubuntu", "vanillaos", "vanilla-os"]:
+    if os.environ.get("USERNAME") in ["ubuntu", "vanillaos", "vanilla-os"]:
         logging.warning("Running in Live mode, closing...")
         sys.exit(0)
 
