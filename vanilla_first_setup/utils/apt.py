@@ -1,13 +1,17 @@
+import os
 import subprocess
 
 
 class Apt:
 
+    env = os.environ.copy()
+    env['DEBIAN_FRONTEND'] = 'noninteractive'
+
     @staticmethod
     def install(packages: list):
         subprocess.run(
             ['sudo', 'apt', 'install'] + packages + ['-y'],
-            env={'DEBIAN_FRONTEND': 'noninteractive'},
+            env=Apt.env,
             check=True
         )
 
@@ -15,7 +19,7 @@ class Apt:
     def remove(packages: list):
         subprocess.run(
             ['sudo', 'apt', 'remove'] + packages + ['-y'],
-            env={'DEBIAN_FRONTEND': 'noninteractive'},
+            env=Apt.env,
             check=True
         )
 
@@ -23,7 +27,7 @@ class Apt:
     def purge(packages: list):
         subprocess.run(
             ['sudo', 'apt', 'purge'] + packages + ['-y'],
-            env={'DEBIAN_FRONTEND': 'noninteractive'},
+            env=Apt.env,
             check=True
         )
 
@@ -31,7 +35,7 @@ class Apt:
     def update():
         subprocess.run(
             ['sudo', 'apt', 'update'],
-            env={'DEBIAN_FRONTEND': 'noninteractive'},
+            env=Apt.env,
             check=True
         )
 
@@ -39,6 +43,6 @@ class Apt:
     def upgrade():
         subprocess.run(
             ['sudo', 'apt', 'upgrade', '-y'],
-            env={'DEBIAN_FRONTEND': 'noninteractive'},
+            env=Apt.env,
             check=True
         )
