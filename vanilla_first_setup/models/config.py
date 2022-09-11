@@ -12,22 +12,22 @@ class Config:
         flatpak: bool, 
         appimage: bool, 
         apport: bool, 
-        distrobox: bool,
+        apx: bool,
         nvidia: bool,
     ):
         self.snap = snap
         self.flatpak = flatpak
         self.appimage = appimage
         self.apport = apport
-        self.distrobox = distrobox
+        self.apx = apx
         self.nvidia = nvidia
 
     def get_str(self) -> str:
         keys = [
-            "snap", "flatpak", "appimage", "apport", "distrobox", "nvidia"
+            "snap", "flatpak", "appimage", "apport", "apx", "nvidia"
         ]
         vals = [
-            self.snap, self.flatpak, self.appimage, self.apport, self.distrobox, self.nvidia
+            self.snap, self.flatpak, self.appimage, self.apport, self.apx, self.nvidia
         ]
         return "|".join([f"{key}::{val}" for key, val in zip(keys, vals)])
     
@@ -40,8 +40,8 @@ class Config:
             self.appimage = val
         elif key == "apport":
             self.apport = val
-        elif key == "distrobox":
-            self.distrobox = val
+        elif key == "apx":
+            self.apx = val
         elif key == "nvidia":
             self.nvidia = val
         else:
@@ -60,7 +60,7 @@ class Config:
         flatpak = items[1].split('::')[1]
         appimage = items[2].split('::')[1]
         apport = items[3].split('::')[1]
-        distrobox = items[4].split('::')[1]
+        apx = items[4].split('::')[1]
         nvidia = items[5].split('::')[1]
 
         return cls(
@@ -68,6 +68,6 @@ class Config:
             flatpak=get_bool(flatpak),
             appimage=get_bool(appimage),
             apport=get_bool(apport),
-            distrobox=get_bool(distrobox),
+            apx=get_bool(apx),
             nvidia=get_bool(nvidia),
         )

@@ -70,7 +70,7 @@ class FirstSetupWindow(Adw.ApplicationWindow):
             flatpak=Preset.flatpak,
             appimage=Preset.appimage,
             apport=Preset.apport,
-            distrobox=Preset.distrobox,
+            apx=Preset.apx,
             nvidia=Preset.nvidia,
         )
         self.__has_nvidia = has_nvidia_gpu()
@@ -144,14 +144,14 @@ class FirstSetupWindow(Adw.ApplicationWindow):
     def __on_switch_apport_state_set(self, widget, state):
         self.__config.set_val('apport', state)
 
-    def __on_switch_distrobox_state_set(self, widget, state):
-        self.__config.set_val('distrobox', state)
+    def __on_switch_apx_state_set(self, widget, state):
+        self.__config.set_val('apx', state)
 
     def on_btn_reboot_clicked(self, widget):
         Configurator.reboot()
 
     def on_btn_subsystem_clicked(self, widget, state):
-        self.__config.set_val('distrobox', state)
+        self.__config.set_val('apx', state)
         self.__show_page(page=self.page_nvidia_drivers if self.__has_nvidia else self.page_extras)
     
     def __on_btn_info_subsystem_clicked(self, widget):

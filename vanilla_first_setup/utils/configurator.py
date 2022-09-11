@@ -26,8 +26,8 @@ class Configurator:
         self.__enable_flatpak() if self.config.flatpak else self.__disable_flatpak()
         self.__enable_appimage() if self.config.appimage else self.__disable_appimage()
         self.__enable_apport() if self.config.apport else self.__disable_apport()
-        if self.config.distrobox:
-            self.__enable_distrobox()
+        if self.config.apx:
+            self.__enable_apx()
         if self.config.nvidia:
             self.__enable_nvidia()
 
@@ -99,11 +99,11 @@ class Configurator:
             subprocess.run(['sudo', 'systemctl', 'stop', 'apport.service'])
             Apt.purge(['apport'])
     
-    def __enable_distrobox(self):
+    def __enable_apx(self):
         if self.fake:
-            return self.__fake("Fake: Distrobox enabled")
+            return self.__fake("Fake: apx enabled")
 
-        Apt.install(['curl', 'podman'])
+        Apt.install(['curl', 'podman', 'apx'])
         Apt.update()
 
         proc = subprocess.run(['curl', '-s', 'https://raw.githubusercontent.com/89luca89/distrobox/main/install'], stdout=subprocess.PIPE)

@@ -4,5 +4,5 @@ class Preset:
     flatpak: bool = True
     appimage: bool = False
     apport: bool = False
-    distrobox: bool = True
+    apx: bool = True
     nvidia: bool = False
