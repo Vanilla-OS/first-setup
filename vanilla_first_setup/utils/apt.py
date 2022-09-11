@@ -6,7 +6,7 @@ class Apt:
     @staticmethod
     def install(packages: list):
         subprocess.run(
-            ['sudo', 'apt', 'install'] + packages,
+            ['sudo', 'apt', 'install'] + packages + ['-y'],
             env={'DEBIAN_FRONTEND': 'noninteractive'},
             check=True
         )
@@ -14,7 +14,7 @@ class Apt:
     @staticmethod
     def remove(packages: list):
         subprocess.run(
-            ['sudo', 'apt', 'remove'] + packages,
+            ['sudo', 'apt', 'remove'] + packages + ['-y'],
             env={'DEBIAN_FRONTEND': 'noninteractive'},
             check=True
         )
@@ -22,7 +22,7 @@ class Apt:
     @staticmethod
     def purge(packages: list):
         subprocess.run(
-            ['sudo', 'apt', 'purge'] + packages,
+            ['sudo', 'apt', 'purge'] + packages + ['-y'],
             env={'DEBIAN_FRONTEND': 'noninteractive'},
             check=True
         )
@@ -38,7 +38,7 @@ class Apt:
     @staticmethod
     def upgrade():
         subprocess.run(
-            ['sudo', 'apt', 'upgrade'],
+            ['sudo', 'apt', 'upgrade', '-y'],
             env={'DEBIAN_FRONTEND': 'noninteractive'},
             check=True
         )
