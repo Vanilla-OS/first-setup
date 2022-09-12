@@ -8,7 +8,7 @@ class Snap:
     @staticmethod
     def install(packages: list):
         subprocess.run(
-            ['snap', 'install'] + packages,
+            ['sudo', 'snap', 'install'] + packages,
             env=Snap.env,
             check=True,
             stdout=subprocess.PIPE,
@@ -18,7 +18,7 @@ class Snap:
     @staticmethod
     def remove(packages: list):
         subprocess.run(
-            ['snap', 'remove'] + packages,
+            ['sudo', 'snap', 'remove'] + packages,
             env=Snap.env,
             check=True,
             stdout=subprocess.PIPE,
