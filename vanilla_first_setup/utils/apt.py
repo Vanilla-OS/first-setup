@@ -12,7 +12,9 @@ class Apt:
         subprocess.run(
             ['sudo', 'apt', 'install'] + packages + ['-y'],
             env=Apt.env,
-            check=True
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE
         )
 
     @staticmethod
@@ -20,7 +22,9 @@ class Apt:
         subprocess.run(
             ['sudo', 'apt', 'remove'] + packages + ['-y'],
             env=Apt.env,
-            check=True
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE
         )
 
     @staticmethod
@@ -28,7 +32,9 @@ class Apt:
         subprocess.run(
             ['sudo', 'apt', 'purge'] + packages + ['-y'],
             env=Apt.env,
-            check=True
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE
         )
 
     @staticmethod
@@ -36,7 +42,9 @@ class Apt:
         subprocess.run(
             ['sudo', 'apt', 'update'],
             env=Apt.env,
-            check=True
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE
         )
 
     @staticmethod
@@ -44,5 +52,7 @@ class Apt:
         subprocess.run(
             ['sudo', 'apt', 'upgrade', '-y'],
             env=Apt.env,
-            check=True
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE
         )
