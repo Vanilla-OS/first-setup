@@ -1,4 +1,8 @@
+import logging
 import subprocess
+
+
+logger = logging.getLogger("FirstSetup::Processor")
 
 
 class Processor:
@@ -7,6 +11,8 @@ class Processor:
         self.__config = config
 
     def run(self):
+        logger.info(f"Spawning processor with config: {self.__config.get_str()}")
+
         proc = subprocess.run(
             ["pkexec", "vanilla-first-setup-processor", self.__config.get_str()], 
             check=True
