@@ -90,43 +90,56 @@ class FirstSetupWindow(Adw.ApplicationWindow):
         self.btn_dark.set_group(self.btn_light)
 
     def __connect_signals(self):
+        # go to pages
         self.btn_go_theme.connect('clicked', self.__show_page, self.page_theme)
         self.btn_go_package.connect('clicked', self.__show_page, self.page_configuration)
         self.btn_go_subsystem.connect('clicked', self.__show_page, self.page_subsystem)
 
-        self.btn_save.connect('clicked', self.on_btn_save_clicked)
-        self.btn_reboot.connect('clicked', self.on_btn_reboot_clicked)
+        # save
+        self.btn_save.connect('clicked', self.__on_btn_save_clicked)
 
+        # reboot
+        self.btn_reboot.connect('clicked', self.__on_btn_reboot_clicked)
+
+        # theme
         self.btn_light.connect('toggled', self.__set_theme, "light")
         self.btn_dark.connect('toggled', self.__set_theme, "dark")
 
-        self.btn_no_subsystem.connect('clicked', self.on_btn_subsystem_clicked, False)
-        self.btn_use_subsystem.connect('clicked', self.on_btn_subsystem_clicked, True)
+        # subsystem
+        self.btn_no_subsystem.connect('clicked', self.__on_btn_subsystem_clicked, False)
+        self.btn_use_subsystem.connect('clicked', self.__on_btn_subsystem_clicked, True)
         self.btn_info_subsystem.connect('clicked', self.__on_btn_info_subsystem_clicked)
 
-        self.btn_no_prop_nvidia.connect('clicked', self.on_btn_prop_nvidia_clicked, False)
-        self.btn_use_prop_nvidia.connect('clicked', self.on_btn_prop_nvidia_clicked, True)
+        # nvidia
+        self.btn_no_prop_nvidia.connect('clicked', self.__on_btn_prop_nvidia_clicked, False)
+        self.btn_use_prop_nvidia.connect('clicked', self.__on_btn_prop_nvidia_clicked, True)
         self.btn_info_prop_nvidia.connect('clicked', self.__on_btn_info_prop_nvidia_clicked)
 
+        # snap
         self.switch_snap.connect('state-set', self.__on_switch_snap_state_set)
-        self.switch_flatpak.connect(
-            'state-set', self.__on_switch_flatpak_state_set)
-        self.switch_apport.connect(
-            'state-set', self.__on_switch_apport_state_set)
+
+        # flatpak
+        self.switch_flatpak.connect('state-set', self.__on_switch_flatpak_state_set)
+
+        # appimage
+        self.switch_appimage.connect('state-set', self.__on_switch_appimage_state_set)
+
+        # apport
+        self.switch_apport.connect('state-set', self.__on_switch_apport_state_set)
 
     def __show_page(self, widget=None, page: int=-1):
         _page = self.carousel.get_nth_page(page + 1)
         self.carousel.scroll_to(_page, True)
     
-    def on_btn_save_clicked(self, widget):
-        def on_done(result, error=None):
+    def __on_btn_save_clicked(self, widget):
+        def __on_done(result, error=None):
             self.spinner.stop()
             self.__show_page(page=self.page_done)
 
         self.__show_page(page=self.page_progress)
         self.spinner.start()
 
-        RunAsync(Processor(self.__config).run, on_done)
+        RunAsync(Processor(self.__config).run, __on_done)
     
     def __set_theme(self, widget, theme: str):
         self.__config.set_val('theme', theme)
@@ -141,23 +154,29 @@ class FirstSetupWindow(Adw.ApplicationWindow):
     def __on_switch_flatpak_state_set(self, widget, state):
         self.__config.set_val('flatpak', state)
 
+    def __on_switch_appimage_state_set(self, widget, state):
+        self.__config.set_val('appimage', state)
+
     def __on_switch_apport_state_set(self, widget, state):
         self.__config.set_val('apport', state)
 
     def __on_switch_apx_state_set(self, widget, state):
         self.__config.set_val('apx', state)
 
-    def on_btn_reboot_clicked(self, widget):
+    def __on_btn_reboot_clicked(self, widget):
         Configurator.reboot()
 
-    def on_btn_subsystem_clicked(self, widget, state):
+    def __on_btn_subsystem_clicked(self, widget, state):
         self.__config.set_val('apx', state)
         self.__show_page(page=self.page_nvidia_drivers if self.__has_nvidia else self.page_extras)
+
+        if not self.__has_nvidia:
+            self.__on_btn_save_clicked()
     
     def __on_btn_info_subsystem_clicked(self, widget):
         SubSystemDialog(self).show()
     
-    def on_btn_prop_nvidia_clicked(self, widget, state):
+    def __on_btn_prop_nvidia_clicked(self, widget, state):
         self.__config.set_val('nvidia', state)
         self.__show_page(page=self.page_extras)
 
