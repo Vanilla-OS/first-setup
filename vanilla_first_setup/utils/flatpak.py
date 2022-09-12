@@ -7,30 +7,32 @@ class Flatpak:
 
     @staticmethod
     def install(packages: list):
-        subprocess.run(
+        proc = subprocess.Popen(
             ['flatpak', 'install', '--user'] + packages,
             env=Flatpak.env,
-            check=True,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE
         )
+        proc.communicate(input=b'y\n')
 
     @staticmethod
     def remove(packages: list):
-        subprocess.run(
+        proc = subprocess.Popen(
             ['flatpak', 'remove', '--user'] + packages,
             env=Flatpak.env,
-            check=True,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE
         )
+        proc.communicate(input=b'y\n')
 
     @staticmethod
     def add_repo(repo: str):
-        subprocess.run(
-            ['flatpak', 'remote-add', '--user', '--if-not-exists', repo],
+        proc = subprocess.Popen(
+            ['flatpak', 'remote-add', 'test', '--user', '--if-not-exists', repo],
             env=Flatpak.env,
-            check=True,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE
         )
+        proc.communicate(input=b'y\n')
+
+        
