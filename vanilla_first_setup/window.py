@@ -54,14 +54,7 @@ class FirstSetupWindow(Adw.ApplicationWindow):
     status_welcome = Gtk.Template.Child()
     status_nvidia = Gtk.Template.Child()
 
-    page_welcome = -1
-    page_theme = 0
-    page_configuration = 1
-    page_subsystem = 2
-    page_nvidia_drivers = 3
-    page_extras = 4
-    page_progress = 5
-    page_done = 6
+    pages = ["welcome", "theme", "package", "subsystem", "nvidia", "extras", "progress", "done"]
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -81,6 +74,8 @@ class FirstSetupWindow(Adw.ApplicationWindow):
     def __buiild_ui(self):
         if self.__has_nvidia:
             self.status_nvidia.set_visible(True)
+        else:
+            self.pages.remove('nvidia')
 
         self.switch_snap.set_active(Preset.snap)
         self.switch_flatpak.set_active(Preset.flatpak)
@@ -91,9 +86,9 @@ class FirstSetupWindow(Adw.ApplicationWindow):
 
     def __connect_signals(self):
         # go to pages
-        self.btn_go_theme.connect('clicked', self.__show_page, self.page_theme)
-        self.btn_go_package.connect('clicked', self.__show_page, self.page_configuration)
-        self.btn_go_subsystem.connect('clicked', self.__show_page, self.page_subsystem)
+        self.btn_go_theme.connect('clicked', self.__show_page, 'theme')
+        self.btn_go_package.connect('clicked', self.__show_page, 'package')
+        self.btn_go_subsystem.connect('clicked', self.__show_page, 'subsystem')
 
         # save
         self.btn_save.connect('clicked', self.__on_btn_save_clicked)
@@ -126,17 +121,13 @@ class FirstSetupWindow(Adw.ApplicationWindow):
 
         # apport
         self.switch_apport.connect('state-set', self.__on_switch_apport_state_set)
-
-    def __show_page(self, widget=None, page: int=-1):
-        _page = self.carousel.get_nth_page(page + 1)
-        self.carousel.scroll_to(_page, True)
     
     def __on_btn_save_clicked(self, widget):
         def __on_done(result, error=None):
             self.spinner.stop()
-            self.__show_page(page=self.page_done)
+            self.__show_page(page='done')
 
-        self.__show_page(page=self.page_progress)
+        self.__show_page(page='progress')
         self.spinner.start()
 
         RunAsync(Processor(self.__config).run, __on_done)
@@ -168,17 +159,14 @@ class FirstSetupWindow(Adw.ApplicationWindow):
 
     def __on_btn_subsystem_clicked(self, widget, state):
         self.__config.set_val('apx', state)
-        self.__show_page(page=self.page_nvidia_drivers if self.__has_nvidia else self.page_extras)
-
-        if not self.__has_nvidia:
-            self.__on_btn_save_clicked()
+        self.__show_page(page='nvidia' if self.__has_nvidia else 'extras')
     
     def __on_btn_info_subsystem_clicked(self, widget):
         SubSystemDialog(self).show()
     
     def __on_btn_prop_nvidia_clicked(self, widget, state):
         self.__config.set_val('nvidia', state)
-        self.__show_page(page=self.page_extras)
+        self.__show_page(page='extras')
 
     def __on_btn_info_prop_nvidia_clicked(self, widget):
         ProprietaryDriverDialog(self).show()
@@ -190,3 +178,10 @@ class FirstSetupWindow(Adw.ApplicationWindow):
                 time.sleep(1.5)
 
         RunAsync(change_langs, None)
+
+    def __get_page(self, page: str):
+        return self.pages.index(page)
+
+    def __show_page(self, widget=None, page: str='welcome'):
+        _page = self.carousel.get_nth_page(self.__get_page(page))
+        self.carousel.scroll_to(_page, True)
