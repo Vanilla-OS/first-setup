@@ -4,3 +4,5 @@ build/
 debian/files
 debian/vanilla-first-setup*
 debian/.debhelper
+*/__pycache__
+*.pyc
