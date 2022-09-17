@@ -119,7 +119,7 @@ class Configurator:
         if self.fake:
             return self.__fake("Fake: Disable on startup")
 
-        autostart_file = os.path.expanduser("~/.config/autostart/vanilla-first-setup.desktop")
+        autostart_file = os.path.expanduser("~/.config/autostart/io.github.vanilla-os.FirstSetup.desktop")
         if os.path.exists(autostart_file):
             os.remove(autostart_file)
 
