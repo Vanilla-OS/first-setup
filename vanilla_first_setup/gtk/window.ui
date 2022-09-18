@@ -66,7 +66,7 @@
                     <property name="halign">center</property>
                     <child>
                       <object class="GtkCheckButton" id="btn_light">
-                        <property name="tooltip-text">Light</property>
+                        <property name="tooltip-text">Default</property>
                         <property name="halign">center</property>
                         <property name="active">True</property>
                         <style>
@@ -91,8 +91,7 @@
                 </child>
                 <child>
                   <object class="AdwStatusPage">
-                    <property name="title">Light or Dark?</property>
-                    <property name="description">Choose your preferred theme.</property>
+                    <property name="title">Style</property>
                     <property name="halign">fill</property>
                     <property name="valign">fill</property>
                     <property name="hexpand">true</property>
@@ -115,7 +114,7 @@
             <child>
               <object class="AdwStatusPage">
                 <property name="icon-name">vanilla-package-symbolic</property>
-                <property name="title">Choose the Package Manager</property>
+                <property name="title">Package Manager</property>
                 <property name="description">Choose one or more package managers from the following options.</property>
                 <property name="halign">fill</property>
                 <property name="valign">fill</property>
@@ -209,7 +208,7 @@
                         <property name="halign">center</property>
                         <child>
                           <object class="GtkButton" id="btn_no_subsystem">
-                            <property name="label">No</property>
+                            <property name="label">Skip</property>
                             <property name="halign">center</property>
                             <style>
                               <class name="pill" />
@@ -218,7 +217,7 @@
                         </child>
                         <child>
                           <object class="GtkButton" id="btn_use_subsystem">
-                            <property name="label">Yes, enable it</property>
+                            <property name="label">Enable</property>
                             <property name="halign">center</property>
                             <style>
                               <class name="pill" />
@@ -245,8 +244,8 @@
             <child>
               <object class="AdwStatusPage" id="status_nvidia">
                 <property name="icon-name">video-display-symbolic</property>
-                <property name="title">Proprietary Nvidia Drivers</property>
-                <property name="description">Want to use Nvidia proprietary drivers for better performance and compatibility?</property>
+                <property name="title">NVIDIA Drivers</property>
+                <property name="description">Choose whether to install proprietary NVIDIA drivers for better compatibility and performance.</property>
                 <property name="halign">fill</property>
                 <property name="valign">fill</property>
                 <property name="hexpand">true</property>
@@ -266,7 +265,7 @@
                         <property name="halign">center</property>
                         <child>
                           <object class="GtkButton" id="btn_no_prop_nvidia">
-                            <property name="label">No</property>
+                            <property name="label">Skip</property>
                             <property name="halign">center</property>
                             <style>
                               <class name="pill" />
@@ -275,7 +274,7 @@
                         </child>
                         <child>
                           <object class="GtkButton" id="btn_use_prop_nvidia">
-                            <property name="label">Yes, install</property>
+                            <property name="label">Install</property>
                             <property name="halign">center</property>
                             <style>
                               <class name="pill" />
