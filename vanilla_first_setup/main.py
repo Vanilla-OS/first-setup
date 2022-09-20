@@ -23,7 +23,7 @@ gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
 
 from gi.repository import Gtk, Gdk, Gio, Adw
-from vanilla_first_setup.window import FirstSetupWindow
+from vanilla_first_setup.window import VanillaWindow
 
 
 logging.basicConfig(level=logging.INFO)
@@ -99,7 +99,7 @@ class FirstSetupApplication(Adw.Application):
 
         win = self.props.active_window
         if not win:
-            win = FirstSetupWindow(application=self)
+            win = VanillaWindow(application=self)
         win.present()
 
     def create_action(self, name, callback, shortcuts=None):

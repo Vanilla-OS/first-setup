@@ -40,7 +40,8 @@ class RunAsync(threading.Thread):
         self.source_id = None
         assert threading.current_thread() is threading.main_thread()
 
-        super(RunAsync, self).__init__(target=self.__target, args=args, kwargs=kwargs)
+        super(RunAsync, self).__init__(
+            target=self.__target, args=args, kwargs=kwargs)
 
         self.task_func = task_func
 
@@ -59,7 +60,7 @@ class RunAsync(threading.Thread):
             result = self.task_func(*args, **kwargs)
         except Exception as exception:
             logger.error("Error while running async job: "
-                          f"{self.task_func}\nException: {exception}")
+                         f"{self.task_func}\nException: {exception}")
 
             error = exception
             _ex_type, _ex_value, trace = sys.exc_info()

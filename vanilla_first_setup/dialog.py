@@ -1,4 +1,4 @@
-# subsystem.py
+# dialog.py
 #
 # Copyright 2022 mirkobrombin
 #
@@ -17,10 +17,14 @@
 from gi.repository import Gtk, Adw
 
 
-@Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/dialog-subsystem.ui')
-class SubSystemDialog(Adw.Window):
-    __gtype_name__ = 'SubSystemDialog'
+@Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/dialog.ui')
+class VanillaDialog(Adw.Window):
+    __gtype_name__ = 'VanillaDialog'
 
-    def __init__(self, window, **kwargs):
+    label_text = Gtk.Template.Child()
+
+    def __init__(self, window, title, text, **kwargs):
         super().__init__(**kwargs)
         self.set_transient_for(window)
+        self.set_title(title)
+        self.label_text.set_text(text)

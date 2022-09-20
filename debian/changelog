@@ -1,5 +1,6 @@
-vanilla-first-setup (0.1.9) jammy; urgency=low
+vanilla-first-setup (1.0.0) jammy; urgency=low
 
-  * First release
+  * Rewrite from scratch to support custom recipes and
+    to be more modular.
 
- -- Mirko Brombin <send@mirko.pm>  Mon, 05 Sep 2022 20:42:00 +0000
+ -- Mirko Brombin <send@mirko.pm>  Thu, 20 Sep 2022 22:01:00 +0000

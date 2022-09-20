@@ -34,13 +34,15 @@ configure_file(
 )
 
 subdir('utils')
-subdir('models')
-subdir('dialogs')
+subdir('defaults')
+subdir('layouts')
+subdir('views')
 
 vanilla_first_setup_sources = [
   '__init__.py',
   'main.py',
   'window.py',
+  'dialog.py',
 ]
 
 install_data(vanilla_first_setup_sources, install_dir: moduledir)

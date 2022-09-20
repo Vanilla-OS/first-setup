@@ -1,4 +1,4 @@
-# prop_nvidia.py
+# progress.py
 #
 # Copyright 2022 mirkobrombin
 #
@@ -17,10 +17,10 @@
 from gi.repository import Gtk, Adw
 
 
-@Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/dialog-prop-nvidia.ui')
-class ProprietaryDriverDialog(Adw.Window):
-    __gtype_name__ = 'ProprietaryDriverDialog'
+@Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/progress.ui')
+class VanillaProgress(Adw.Bin):
+    __gtype_name__ = 'VanillaProgress'
 
     def __init__(self, window, **kwargs):
         super().__init__(**kwargs)
-        self.set_transient_for(window)
+        self.__window = window

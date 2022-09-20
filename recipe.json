@@ -1,0 +1,136 @@
+{
+    "log_file": "/etc/vanilla/first-setup.log",
+    "distro_name": "Vanilla OS",
+    "distro_logo": "io.github.vanilla-os.FirstSetup", 
+    "steps": {
+        "welcome": {
+            "template": "welcome"
+        },
+        "theme": {
+            "template": "theme"
+        },
+        "packages": {
+            "template": "preferences",
+            "icon": "vanilla-package-symbolic",
+            "title": "Package Manager",
+            "description": "Choose one or more package managers to install",
+            "preferences": [
+                {
+                    "id": "flatpak",
+                    "title": "Flatpak",
+                    "subtitle": "Will also configure the Flathub repository.",
+                    "default": true
+                },
+                {
+                    "id": "snap",
+                    "title": "Snap",
+                    "subtitle": "Uses the Snapcraft repository. Default in Ubuntu."
+                },
+                {
+                    "id": "appimage",
+                    "title": "AppImage",
+                    "subtitle": "Will install the necessary dependencies to run AppImages."
+                }
+            ],
+            "final": [
+                {
+                    "if": "flatpak",
+                    "type": "command",
+                    "commands": [
+                        "sudo apt install -y flatpak",
+                        "flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo"
+                    ]
+                },
+                {
+                    "if": "snap",
+                    "type": "command",
+                    "commands": ["sudo apt install -y snapd"]
+                },
+                {
+                    "if": "appimage",
+                    "type": "command",
+                    "commands": ["sudo apt install -y fuse2"]
+                }
+            ]
+        },
+        "subsystem": {
+            "template": "yes-no",
+            "icon": "vanilla-container-terminal-symbolic",
+            "title": "Sub System",
+            "description": "Access a minimal mutable Ubuntu installation integrated with Vanilla OS.",
+            "buttons": {
+                "yes": "Enable",
+                "no": "Skip",
+                "info": {
+                    "type": "text",
+                    "title": "What is Sub System?",
+                    "text": "The Sub-System is a container that allows you to install deb packages without altering the system. It is useful for installing software without having to enter in read-write mode.\n\nYou don't need to enter in the container to install packages, just use the apx command (wrapper around the apt inside the container) to install new programs and automatically make them available in your Vanilla OS installation.\n\nThis features uses distrobox as backend."
+                }
+            },
+            "final": [
+                {
+                    "if": "subsystem",
+                    "type": "command",
+                    "commands": [
+                        "sudo apt install -y apx",
+                        "curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sudo sh"
+                    ]
+                }
+            ]
+        },
+        "nvidia": {
+            "template": "yes-no",
+            "icon": "video-display-symbolic",
+            "title": "NVIDIA® Drivers",
+            "description": "Choose whether to install proprietary NVIDIA drivers for better compatibility and performance.",
+            "buttons": {
+                "yes": "Yes, install",
+                "no": "Skip",
+                "info": {
+                    "type": "text",
+                    "title": "About Proprietary Drivers",
+                    "text": "A proprietary driver has private code that neither Vanilla OS nor Ubuntu developers can't review.\n\nSecurity and other updates are dependent on the driver vendor."
+                }
+            },
+            "final": [
+                {
+                    "if": "nvidia",
+                    "type": "command",
+                    "commands": ["sudo ubuntu-drivers install --recommended"]
+                }
+            ]
+        },
+        "extra": {
+            "template": "preferences",
+            "icon": "vanilla-puzzle-piece-symbolic",
+            "title": "Extra Settings",
+            "description": "The following are optional settings, leave them as they are if you don't know what they do.",
+            "preferences": [
+                {
+                    "id": "apport",
+                    "title": "Apport",
+                    "subtitle": "Apport is a crash reporting system that helps us improve the stability of the system."
+                }
+            ],
+            "final": [
+                {
+                    "if": "apport",
+                    "type": "command",
+                    "commands": [
+                        "sudo apt install -y apport",
+                        "systemctl enable apport.service || true"
+                    ]
+                },
+                {
+                    "if": "apport",
+                    "condition": false,
+                    "type": "command",
+                    "commands": [
+                        "sudo apt remove -y apport",
+                        "systemctl disable apport.service || true"
+                    ]
+                }
+            ]
+        }
+    }
+}

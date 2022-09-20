@@ -30,3 +30,8 @@ sudo ninja -C build install
 ```bash
 vanilla-first-setup
 ```
+
+### Using custom recipes
+Place a new recipe in `/etc/vanilla-first-setup/recipe.json` or launch the
+utility with the `VANILLA_CUSTOM_RECIPE` environment variable set to the path
+of the recipe.
