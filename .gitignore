@@ -2,7 +2,8 @@
 mesonbuild/
 build/
 debian/files
-debian/vanilla-first-setup*
+debian/vanilla-first-setup.debhelper.log
+debian/vanilla-first-setup
 debian/.debhelper
 */__pycache__
 *.pyc
