@@ -105,6 +105,9 @@
         },
         "nvidia": {
             "template": "yes-no",
+            "display-conditions": [
+                "lspci | grep -i '.* vga .* nvidia .*'"
+            ],
             "icon": "video-display-symbolic",
             "title": "NVIDIA® Drivers",
             "description": "Choose whether to install proprietary NVIDIA drivers for better compatibility and performance.",
