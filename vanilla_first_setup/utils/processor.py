@@ -57,9 +57,13 @@ class Processor:
 
             # write the output to the log file so the packager can see what
             # happened during the installation process
-            with open(log_path, 'a') as log:
-                log.write(proc.stdout.decode('utf-8'))
-                log.flush()
+            try:
+                with open(log_path, 'a') as log:
+                    log.write(proc.stdout.decode('utf-8'))
+                    log.flush()
+            except Exception as e:
+                logger.warning("failed to write to the log file: %s" % e)
+                logger.warning("the output of the commands is: %s" % proc.stdout)
 
             if proc.returncode != 0:
                 logger.critical(

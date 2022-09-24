@@ -63,8 +63,8 @@ class Builder:
             try:
                 open(log_path, 'a').close()
             except OSError:
-                logger.critical("failed to create log file: %s" % log_path)
-                sys.exit(1)
+                logger.warning("failed to create log file: %s" % log_path)
+                logging.warning("No log will be stored.")
 
         for key, step in self.__recipe.raw["steps"].items():
             if step["template"] in templates:
