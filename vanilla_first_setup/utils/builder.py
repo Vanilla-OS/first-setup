@@ -17,6 +17,7 @@
 import os
 import sys
 import logging
+import subprocess
 import json
 
 from gi.repository import Gio
@@ -67,6 +68,24 @@ class Builder:
                 logging.warning("No log will be stored.")
 
         for key, step in self.__recipe.raw["steps"].items():
+            if step.get("display-conditions"):
+                _condition_met = False
+                for command in step["display-conditions"]:
+                    try:
+                        logger.info("Performing display-condition: %s" % command)
+                        output = subprocess.check_output(command, shell=True, stderr=subprocess.STDOUT)
+                        if output.decode("utf-8") == "" or output.decode("utf-8") == "1":
+                            logger.info("Step %s skipped due to display-conditions" % key)
+                            break
+                    except subprocess.CalledProcessError as e:
+                        logger.info("Step %s skipped due to display-conditions" % key)
+                        break
+                else:
+                    _condition_met = True
+
+                if not _condition_met:
+                    continue
+
             if step["template"] in templates:
                 _widget = templates[step["template"]](self.__window, self.distro_info, key, step)
                 self.__register_widgets.append(_widget)
