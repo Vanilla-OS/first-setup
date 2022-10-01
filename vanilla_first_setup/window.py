@@ -32,6 +32,7 @@ class VanillaWindow(Adw.ApplicationWindow):
 
     carousel = Gtk.Template.Child()
     btn_back = Gtk.Template.Child()
+    toasts = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -102,3 +103,8 @@ class VanillaWindow(Adw.ApplicationWindow):
         cur_index = self.carousel.get_position()
         page = self.carousel.get_nth_page(cur_index - 1)
         self.carousel.scroll_to(page, True)
+    
+    def toast(self, message, timeout=3):
+        toast = Adw.Toast.new(message)
+        toast.props.timeout = timeout
+        self.toasts.add_toast(toast)

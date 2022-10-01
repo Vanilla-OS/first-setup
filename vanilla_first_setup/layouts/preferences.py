@@ -18,6 +18,7 @@ import time
 from gi.repository import Gtk, Gio, GLib, Adw
 
 from vanilla_first_setup.utils.run_async import RunAsync
+from vanilla_first_setup.dialog import VanillaDialog
 
 
 @Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/layout-preferences.ui')
@@ -38,7 +39,7 @@ class VanillaLayoutPreferences(Adw.Bin):
         self.__build_ui()
 
         # signals
-        self.btn_next.connect("clicked", self.__window.next)
+        self.btn_next.connect("clicked", self.__next_step)
 
     def __build_ui(self):
         self.status_page.set_icon_name(self.__step["icon"])
@@ -58,11 +59,35 @@ class VanillaLayoutPreferences(Adw.Bin):
             self.prefs_list.add(_action_row)
 
             self.__register_widgets.append((item["id"], _switcher))
+            
+    def __next_step(self, widget):
+        ws = self.__step.get("without_selection", {})
+
+        if not any([x[1].get_active() for x in self.__register_widgets]):
+            if not ws.get("allowed", True):
+                self.__window.toast("Please select at least one option.")
+                return
+
+            if ws.get("message", None):
+                dialog = VanillaDialog(
+                    self.__window,
+                    ws.get("title", "No selection"),
+                    ws.get("message"),
+                )
+                dialog.show()
+        self.__window.next()
 
     def get_finals(self):
+        ws = self.__step.get("without_selection", {})
         finals = {"vars": {}, "funcs": [x for x in self.__step["final"]]}
 
         for _id, switcher in self.__register_widgets:
             finals["vars"][_id] = switcher.get_active()
+
+        if not any([x[1].get_active() for x in self.__register_widgets]) \
+            and ws.get("allowed", True) \
+            and ws.get("final", None):
+            finals["vars"]["_managed"] = True
+            finals["funcs"].extend(ws["final"])
 
         return finals

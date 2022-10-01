@@ -30,12 +30,16 @@
           </object>
         </child>
         <child>
-          <object class="AdwCarousel" id="carousel">
-            <property name="vexpand">True</property>
-            <property name="hexpand">True</property>
-            <property name="allow_scroll_wheel">False</property>
-            <property name="allow_mouse_drag">False</property>
-            <property name="allow_long_swipes">False</property>
+          <object class="AdwToastOverlay" id="toasts">
+            <child>
+              <object class="AdwCarousel" id="carousel">
+                <property name="vexpand">True</property>
+                <property name="hexpand">True</property>
+                <property name="allow_scroll_wheel">False</property>
+                <property name="allow_mouse_drag">False</property>
+                <property name="allow_long_swipes">False</property>
+              </object>
+            </child>
           </object>
         </child>
       </object>
