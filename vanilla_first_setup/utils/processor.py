@@ -46,8 +46,10 @@ class Processor:
             # setting the file executable
             os.chmod(f.name, 0o755)
 
-            # here we run the file trough pkexec to get root privileges
-            # log the output to the log file
+            # fake the process if VANILLA_FAKE is set
+            if "VANILLA_FAKE" in os.environ:
+                    return True
+                
             proc = subprocess.run(
                 ["pkexec", "sh", f.name],
                 check=True,
