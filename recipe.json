@@ -61,7 +61,7 @@
                     "type": "command",
                     "commands": [
                         "sudo apt install -y snapd",
-                        "gsettings set org.gnome.software packaging-format-preference '[\"snap\", \"flatpak\", \"deb\"]'"
+                        "gsettings set org.gnome.software packaging-format-preference '[\"flatpak\", \"snap\", \"deb\"]'"
                     ]
                 },
                 {
