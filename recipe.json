@@ -124,7 +124,7 @@
         "nvidia": {
             "template": "yes-no",
             "display-conditions": [
-                "lspci | grep -i '.* vga .* nvidia .*'"
+                "lspci | grep -i '.* nvidia .*'"
             ],
             "icon": "video-display-symbolic",
             "title": "NVIDIA® Drivers",
