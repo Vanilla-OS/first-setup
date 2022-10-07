@@ -67,7 +67,7 @@
                 {
                     "if": "appimage",
                     "type": "command",
-                    "commands": ["sudo apt install -y fuse2"]
+                    "commands": ["sudo apt install -y fuse2 libfuse2"]
                 }
             ]
         },
