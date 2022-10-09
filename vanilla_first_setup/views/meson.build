@@ -5,6 +5,7 @@ sources = [
   '__init__.py',
   'done.py',
   'progress.py',
+  'tour.py',
 ]
 
 install_data(sources, install_dir: viewsdir)

@@ -14,13 +14,47 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from gi.repository import Gtk, Adw
+import time
+from gi.repository import Gtk, GLib, Adw
+
+from vanilla_first_setup.utils.run_async import RunAsync
+
+from vanilla_first_setup.views.tour import VanillaTour
 
 
 @Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/progress.ui')
-class VanillaProgress(Adw.Bin):
+class VanillaProgress(Gtk.Box):
     __gtype_name__ = 'VanillaProgress'
 
-    def __init__(self, window, **kwargs):
+    carousel_tour = Gtk.Template.Child()
+    progressbar = Gtk.Template.Child()
+
+    def __init__(self, window, tour: dict, **kwargs):
         super().__init__(**kwargs)
         self.__window = window
+        self.__tour = tour
+        self.__build_ui()
+
+    def __build_ui(self):
+        for _, tour in self.__tour.items():
+            self.carousel_tour.append(VanillaTour(self.__window, tour))
+
+        self.__start_tour()
+
+    def __switch_tour(self, *args):
+        cur_index = self.carousel_tour.get_position()
+        page = self.carousel_tour.get_nth_page(cur_index + 1)
+
+        if page is None:
+            page = self.carousel_tour.get_nth_page(0)
+
+        self.carousel_tour.scroll_to(page, True)
+
+    def __start_tour(self):
+        def run_async():
+            while True:
+                GLib.idle_add(self.progressbar.pulse)
+                GLib.idle_add(self.__switch_tour)
+                time.sleep(5)
+
+        RunAsync(run_async, "tour_loop")

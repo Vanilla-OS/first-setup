@@ -2,24 +2,27 @@
 <interface>
     <requires lib="gtk" version="4.0"/>
     <requires lib="libadwaita" version="1.0" />
-    <template class="VanillaProgress" parent="AdwBin">
-        <property name="halign">fill</property>
-        <property name="valign">fill</property>
-        <property name="hexpand">true</property>
+    <template class="VanillaProgress" parent="GtkBox">
+        <property name="orientation">vertical</property>
         <child>
-            <object class="AdwStatusPage" id="status_page">
-                <property name="title">Please Wait…</property>
-                <property name="description">The changes are being applied.</property>
+            <object class="AdwCarousel" id="carousel_tour">
                 <property name="halign">fill</property>
                 <property name="valign">fill</property>
                 <property name="hexpand">true</property>
-                <child>
-                    <object class="GtkSpinner" id="spinner">
-                        <property name="valign">center</property>
-                        <property name="halign">center</property>
-                        <property name="spinning">true</property>
-                    </object>
-                </child>
+                <property name="vexpand">true</property>
+                <property name="allow_scroll_wheel">False</property>
+                <property name="allow_mouse_drag">False</property>
+                <property name="allow_long_swipes">False</property>
+            </object>
+        </child>
+        <child>
+            <object class="GtkProgressBar" id="progressbar">
+              <property name="text">The changes are being applied. Please Wait…</property>
+              <property name="show-text">true</property>
+              <property name="margin-top">20</property>
+              <property name="margin-start">20</property>
+              <property name="margin-bottom">20</property>
+              <property name="margin-end">20</property>
             </object>
         </child>
     </template>
