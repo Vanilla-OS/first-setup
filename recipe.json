@@ -10,6 +10,20 @@
         "sudo apt update", 
         "sudo apt install -f"
     ],
+    "tour": {
+        "almost": {
+             "icon": "security-medium-symbolic",
+             "title": "On-Demand Immutability",
+             "description": "Vanilla OS features On-Demand Immutability, which blind your system against undesired modifications, being still fully accessible by you.",
+             "read_more_link": "https://documentation.vanillaos.org/docs/almost/"
+        },
+        "apx": {
+             "icon": "vanilla-container-terminal-symbolic",
+             "title": "Sub-System Ready To Go",
+             "description": "Vanilla OS comes with Apx, a new package manager which install the software in an integrated container to prevent host compromise.",
+             "read_more_link": "https://documentation.vanillaos.org/docs/apx/"
+        }
+    },
     "steps": {
         "welcome": {
             "template": "welcome"
@@ -24,7 +38,7 @@
             "description": "Choose one or more package managers to install",
             "without_selection": {
                 "allowed": true,
-                "message": "You have chosen not to install any package manager, you will only be able to install packages using apx.\n\nGNOME Software will be disabled if you choose to enable the immutability feature later.",
+                "message": "You have chosen not to install any package manager, you will only be able to install packages using the package manager (apx).\n\nGNOME Software will be disabled since it is not compatible with the On-Demand Immutability.",
                 "title": "No package manager selected",
                 "final": [
                     {
@@ -76,31 +90,6 @@
                     "if": "appimage",
                     "type": "command",
                     "commands": ["sudo apt install -y fuse2 libfuse2"]
-                }
-            ]
-        },
-        "immutability": {
-            "template": "yes-no",
-            "icon": "security-medium-symbolic",
-            "title": "On-Demand Immutability",
-            "description": "Choose whether to protect your system from deterioration by making it immutable.",
-            "buttons": {
-                "yes": "Enable",
-                "no": "Skip",
-                "info": {
-                    "type": "text",
-                    "title": "What is On-Demand Immutability?",
-                    "text": "Immutability makes it impossible to modify system files, preventing them from being compromised.\n\nImmutable On-Demand mode is a file attribute-based system that lets you turn OS immutability on and off on the fly, without having to reboot. You can use the command line tool 'almost' to change its operation, check its status, change the default mode and much more.\n\nThis system does not require the use of special file systems and is entirely managed by the Almost tool, developed by the Vanilla OS Team."
-                }
-            },
-            "final": [
-                {
-                    "if": "immutability",
-                    "type": "command",
-                    "commands": [
-                        "sudo apt install -y almost almost-extras",
-                        "sudo almost enter rw"
-                    ]
                 }
             ]
         },
