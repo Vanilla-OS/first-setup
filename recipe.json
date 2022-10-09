@@ -98,7 +98,7 @@
                     "if": "subsystem",
                     "type": "command",
                     "commands": [
-                        "sudo apt install -y apx",
+                        "sudo apt install -y apx podman",
                         "curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sudo sh"
                     ]
                 }
