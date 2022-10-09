@@ -27,7 +27,7 @@ class Processor:
 
     @staticmethod
     def run(log_path, pre_run, post_run, commands):
-        command = pre_run + commands + post_run
+        commands = pre_run + commands + post_run
 
         logger.info("processing the following commands: \n%s" %
                     '\n'.join(commands))
