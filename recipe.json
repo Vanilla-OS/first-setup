@@ -79,31 +79,6 @@
                 }
             ]
         },
-        "subsystem": {
-            "template": "yes-no",
-            "icon": "vanilla-container-terminal-symbolic",
-            "title": "Sub System",
-            "description": "Access a minimal mutable Ubuntu installation integrated with Vanilla OS.",
-            "buttons": {
-                "yes": "Enable",
-                "no": "Skip",
-                "info": {
-                    "type": "text",
-                    "title": "What is Sub System?",
-                    "text": "The Sub-System is a container that allows you to install deb packages without altering the system. It is useful for installing software without having to enter the read-write mode.\n\nYou don't need to enter the container to install packages, just use the apx command (wrapper around the apt inside the container) to install new programs and automatically make them available in your Vanilla OS installation.\n\nThis features uses distrobox as backend."
-                }
-            },
-            "final": [
-                {
-                    "if": "subsystem",
-                    "type": "command",
-                    "commands": [
-                        "sudo apt install -y apx podman",
-                        "curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sudo sh"
-                    ]
-                }
-            ]
-        },
         "immutability": {
             "template": "yes-no",
             "icon": "security-medium-symbolic",
