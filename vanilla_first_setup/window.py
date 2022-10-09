@@ -69,7 +69,12 @@ class VanillaWindow(Adw.ApplicationWindow):
             commands = Parser.parse(finals)
 
             # process the commands
-            return Processor.run(self.recipe["log_file"], commands)
+            return Processor.run(
+                self.recipe.get("log_file", "/tmp/vanilla_first_setup.log"), 
+                self.recipe.get("pre_run", []),
+                self.recipe.get("post_run"),
+                commands
+            )
 
         def on_done(result, *args):
             self.__view_done.set_result(result)

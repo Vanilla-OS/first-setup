@@ -26,7 +26,9 @@ logger = logging.getLogger("FirstSetup::Processor")
 class Processor:
 
     @staticmethod
-    def run(log_path, commands):
+    def run(log_path, pre_run, post_run, commands):
+        command = pre_run + commands + post_run
+
         logger.info("processing the following commands: \n%s" %
                     '\n'.join(commands))
 
@@ -65,7 +67,8 @@ class Processor:
                     log.flush()
             except Exception as e:
                 logger.warning("failed to write to the log file: %s" % e)
-                logger.warning("the output of the commands is: %s" % proc.stdout)
+                logger.warning("the output of the commands is: %s" %
+                                 proc.stdout.decode('utf-8'))
 
             if proc.returncode != 0:
                 logger.critical(

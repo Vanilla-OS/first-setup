@@ -2,6 +2,14 @@
     "log_file": "/etc/vanilla/first-setup.log",
     "distro_name": "Vanilla OS",
     "distro_logo": "io.github.vanilla-os.FirstSetup", 
+    "pre_run": [
+        "sudo apt update", 
+        "sudo apt install -f"
+    ],
+    "post_run": [
+        "sudo apt update", 
+        "sudo apt install -f"
+    ],
     "steps": {
         "welcome": {
             "template": "welcome"
@@ -115,7 +123,7 @@
                     "if": "immutability",
                     "type": "command",
                     "commands": [
-                        "sudo apt install -y almost",
+                        "sudo apt install -y almost almost-extras",
                         "sudo almost enter rw"
                     ]
                 }
