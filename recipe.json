@@ -3,12 +3,12 @@
     "distro_name": "Vanilla OS",
     "distro_logo": "io.github.vanilla-os.FirstSetup", 
     "pre_run": [
-        "sudo apt update", 
-        "sudo apt install -f"
+        "sudo apx --sys update", 
+        "sudo apx --sys install -f"
     ],
     "post_run": [
-        "sudo apt update", 
-        "sudo apt install -f"
+        "sudo apx --sys update", 
+        "sudo apx --sys install -f"
     ],
     "tour": {
         "almost": {
@@ -45,7 +45,7 @@
                         "if": "warp::immutability",
                         "type": "command",
                         "commands": [
-                            "sudo apt remove -y gnome-software"
+                            "sudo apx --sys remove -y gnome-software"
                         ]
                     }
                 ]
@@ -73,7 +73,7 @@
                     "if": "flatpak",
                     "type": "command",
                     "commands": [
-                        "sudo apt install -y flatpak gnome-software-plugin-flatpak",
+                        "sudo apx --sys install -y flatpak gnome-software-plugin-flatpak",
                         "flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo",
                         "gsettings set org.gnome.software packaging-format-preference '[\"flatpak\", \"snap\", \"deb\"]'"
                     ]
@@ -82,14 +82,14 @@
                     "if": "snap",
                     "type": "command",
                     "commands": [
-                        "sudo apt install -y snapd",
+                        "sudo apx --sys install -y snapd",
                         "gsettings set org.gnome.software packaging-format-preference '[\"flatpak\", \"snap\", \"deb\"]'"
                     ]
                 },
                 {
                     "if": "appimage",
                     "type": "command",
-                    "commands": ["sudo apt install -y fuse2 libfuse2"]
+                    "commands": ["sudo apx --sys install -y fuse2 libfuse2"]
                 }
             ]
         },
@@ -135,7 +135,7 @@
                     "if": "apport",
                     "type": "command",
                     "commands": [
-                        "sudo apt install -y apport",
+                        "sudo apx --sys install -y apport",
                         "systemctl enable apport.service || true"
                     ]
                 },
@@ -144,7 +144,7 @@
                     "condition": false,
                     "type": "command",
                     "commands": [
-                        "sudo apt remove -y apport",
+                        "sudo apx --sys remove -y apport",
                         "systemctl disable apport.service || true"
                     ]
                 }
