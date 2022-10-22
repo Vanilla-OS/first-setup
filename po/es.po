@@ -19,88 +19,88 @@ msgstr ""
 
 #: data/io.github.vanilla-os.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr ""
+msgstr "Primera instalación del sistema operativo vainilla"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Ubuntu Vanilla GNOME installation."
-msgstr ""
+msgstr "Modifica la instalación de Ubuntu Vainilla GNOME."
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr ""
+msgstr "Sin descripción"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr ""
+msgstr "Primera versión"
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
-msgstr ""
+msgstr "Por defecto"
 
 #: vanilla_first_setup/gtk/default-theme.ui:29
 msgid "Dark"
-msgstr ""
+msgstr "Oscuro"
 
 #: vanilla_first_setup/gtk/default-theme.ui:42
 msgid "Color Scheme"
-msgstr ""
+msgstr "Esquema de color"
 
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
-msgstr ""
+msgstr "Selecciona un esquema de color para tu sistema."
 
 #: vanilla_first_setup/gtk/default-theme.ui:49
 msgid "Next"
-msgstr ""
+msgstr "Siguiente"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Informations"
-msgstr ""
+msgstr "Mostrando Información"
 
 #: vanilla_first_setup/gtk/progress.ui:20
 msgid "The changes are being applied. Please Wait…"
-msgstr ""
+msgstr "Los cambios están siendo aplicandos. Por favor espera..."
 
 #: vanilla_first_setup/gtk/window.ui:25
 msgid "Back"
-msgstr ""
+msgstr "Atrás"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:12
 msgid "Welcome!"
-msgstr ""
+msgstr "¡Bienvenido!"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:13
 msgid "Make your choices, this wizard will take care of everything."
-msgstr ""
+msgstr "Marca tus opciones, este asistente se encargara de todo."
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "All done!"
-msgstr ""
+msgstr "¡Todo listo!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your PC to enjoy your Vanila OS experience."
-msgstr ""
+msgstr "Reinicia tu computadora para disfrutar de tu experiencia en el sistema operativo vainilla"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
-msgstr ""
+msgstr "Si, actívalo"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
-msgstr ""
+msgstr "Leer más"
 
 #: vanilla_first_setup/layouts/preferences.py:68
 msgid "Please select at least one option."
-msgstr ""
+msgstr "Por favor selecciona al menos una opción."
 
 #: vanilla_first_setup/views/done.py:34
 msgid "Restart your PC to enjoy your {} experience."
-msgstr ""
+msgstr "Reinicia tu computadora para disfrutar de tu {} experiencia."
 
 #: vanilla_first_setup/views/done.py:45
 msgid "Something went wrong"
-msgstr ""
+msgstr "Algo salió mal"
 
 #: vanilla_first_setup/views/done.py:46
 msgid "Please contact the distribution developers."
-msgstr ""
+msgstr "Por favor, póngase en contacto con los desarrolladores de la distribución."
