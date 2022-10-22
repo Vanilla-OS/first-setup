@@ -1,4 +1,5 @@
 <div align="center">
+    <img src="data/icons/hicolor/scalable/apps/io.github.vanilla-os.FirstSetup.svg" height="64">
     <h1>Vanilla OS First Setup</h1>
     <p>This utility is meant to be used in <a href="https://github.com/vanilla-os">Vanilla OS</a>
     as a first-setup wizard. Its purpose is to help the user to configure the
