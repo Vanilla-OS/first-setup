@@ -43,7 +43,7 @@ msgstr "Scuro"
 
 #: vanilla_first_setup/gtk/default-theme.ui:42
 msgid "Color Scheme"
-msgstr ""
+msgstr "Combinazione di Colori"
 
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
@@ -51,7 +51,7 @@ msgstr "Scegli una combinazione di colori per il tuo sistema."
 
 #: vanilla_first_setup/gtk/default-theme.ui:49
 msgid "Next"
-msgstr ""
+msgstr "Avanti"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Informations"
@@ -63,7 +63,7 @@ msgstr "Le modifiche vengono applicate. Attendere prego…"
 
 #: vanilla_first_setup/gtk/window.ui:25
 msgid "Back"
-msgstr ""
+msgstr "Indietro"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:12
 msgid "Welcome!"
