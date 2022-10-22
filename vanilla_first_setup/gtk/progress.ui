@@ -17,12 +17,12 @@
         </child>
         <child>
             <object class="GtkProgressBar" id="progressbar">
-              <property name="text">The changes are being applied. Please Wait…</property>
+              <property name="text" translatable="true">The changes are being applied. Please Wait…</property>
               <property name="show-text">true</property>
-              <property name="margin-top">20</property>
-              <property name="margin-start">20</property>
-              <property name="margin-bottom">20</property>
-              <property name="margin-end">20</property>
+              <property name="margin-top">40</property>
+              <property name="margin-start">40</property>
+              <property name="margin-bottom">40</property>
+              <property name="margin-end">40</property>
             </object>
         </child>
     </template>

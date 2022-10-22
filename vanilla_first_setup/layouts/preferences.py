@@ -65,7 +65,7 @@ class VanillaLayoutPreferences(Adw.Bin):
 
         if not any([x[1].get_active() for x in self.__register_widgets]):
             if not ws.get("allowed", True):
-                self.__window.toast("Please select at least one option.")
+                self.__window.toast(_("Please select at least one option."))
                 return
 
             if ws.get("message", None):

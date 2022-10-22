@@ -31,7 +31,7 @@ class VanillaDone(Adw.Bin):
         self.__window = window
         
         self.status_page.set_description(
-            "Restart your PC to enjoy your {} experience.".format(
+            _("Restart your PC to enjoy your {} experience.").format(
                 self.__window.recipe["distro_name"]
             )
         )
@@ -42,8 +42,8 @@ class VanillaDone(Adw.Bin):
     def set_result(self, result):
         if not result:
             self.status_page.set_icon_name("dialog-error-symbolic")
-            self.status_page.set_title("Something went wrong")
-            self.status_page.set_description("Please contact the distribution developers.")
+            self.status_page.set_title(_("Something went wrong"))
+            self.status_page.set_description(_("Please contact the distribution developers."))
             self.btn_reboot.set_visible(False)
             self.btn_close.set_visible(True)
 

@@ -1,0 +1,106 @@
+# Bulgarian translations for vanilla-first-setup package.
+# Copyright (C) 2022 THE vanilla-first-setup'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the vanilla-first-setup package.
+# Automatically generated, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vanilla-first-setup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-22 22:16+0200\n"
+"PO-Revision-Date: 2022-10-22 22:16+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: data/io.github.vanilla-os.FirstSetup.desktop.in:3
+msgid "Vanilla OS First Setup"
+msgstr ""
+
+#: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
+msgid "Tweak your Ubuntu Vanilla GNOME installation."
+msgstr ""
+
+#: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
+msgid "No description"
+msgstr ""
+
+#: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:26
+msgid "First release"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-theme.ui:17
+msgid "Default"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-theme.ui:29
+msgid "Dark"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-theme.ui:42
+msgid "Color Scheme"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-theme.ui:43
+msgid "Choose a color scheme for your system."
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-theme.ui:49
+msgid "Next"
+msgstr ""
+
+#: vanilla_first_setup/gtk/dialog.ui:6
+msgid "Showing Informations"
+msgstr ""
+
+#: vanilla_first_setup/gtk/progress.ui:20
+msgid "The changes are being applied. Please Wait…"
+msgstr ""
+
+#: vanilla_first_setup/gtk/window.ui:25
+msgid "Back"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-welcome.ui:12
+msgid "Welcome!"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-welcome.ui:13
+msgid "Make your choices, this wizard will take care of everything."
+msgstr ""
+
+#: vanilla_first_setup/gtk/done.ui:12
+msgid "All done!"
+msgstr ""
+
+#: vanilla_first_setup/gtk/done.ui:13
+msgid "Restart your PC to enjoy your Vanila OS experience."
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-yes-no.ui:36
+msgid "Yes, enable it"
+msgstr ""
+
+#: vanilla_first_setup/gtk/tour.ui:27
+msgid "Read More"
+msgstr ""
+
+#: vanilla_first_setup/layouts/preferences.py:68
+msgid "Please select at least one option."
+msgstr ""
+
+#: vanilla_first_setup/views/done.py:34
+msgid "Restart your PC to enjoy your {} experience."
+msgstr ""
+
+#: vanilla_first_setup/views/done.py:45
+msgid "Something went wrong"
+msgstr ""
+
+#: vanilla_first_setup/views/done.py:46
+msgid "Please contact the distribution developers."
+msgstr ""
