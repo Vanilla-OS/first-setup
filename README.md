@@ -4,6 +4,9 @@
     <p>This utility is meant to be used in <a href="https://github.com/vanilla-os">Vanilla OS</a>
     as a first-setup wizard. Its purpose is to help the user to configure the
     system to their needs, e.g. by configuring snap, flatpak, flathub, etc.</p>
+    <hr />
+    <a href="https://gitlocalize.com/repo/8092/whole_project?utm_source=badge"> <img src="https://gitlocalize.com/repo/8092/whole_project/badge.svg" /> </a>
+    <br />
     <img src="data/screenshot-1.png">
 </div>
 
