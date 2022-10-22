@@ -19,7 +19,7 @@ msgstr ""
 
 #: data/io.github.vanilla-os.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr "Primera instalación del sistema operativo vainilla"
+msgstr "Primera instalación del sistema operativo Vainilla"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Ubuntu Vanilla GNOME installation."
@@ -55,7 +55,7 @@ msgstr "Siguiente"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Informations"
-msgstr "Mostrando Información"
+msgstr "Mostrando información"
 
 #: vanilla_first_setup/gtk/progress.ui:20
 msgid "The changes are being applied. Please Wait…"
@@ -79,7 +79,7 @@ msgstr "¡Todo listo!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your PC to enjoy your Vanila OS experience."
-msgstr "Reinicia tu computadora para disfrutar de tu experiencia en el sistema operativo vainilla"
+msgstr "Reinicia tu computadora para disfrutar de tu experiencia en el sistema operativo Vainilla"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
