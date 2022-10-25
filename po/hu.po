@@ -59,7 +59,7 @@ msgstr "Információk megjelenítése"
 
 #: vanilla_first_setup/gtk/progress.ui:20
 msgid "The changes are being applied. Please Wait…"
-msgstr "A változtatások beállítása folyamatban van. Kérem várjon…"
+msgstr "A változtatások beállítása folyamatban van. Kérem, várjon…"
 
 #: vanilla_first_setup/gtk/window.ui:25
 msgid "Back"
@@ -79,7 +79,7 @@ msgstr "Készen vagyunk!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your PC to enjoy your Vanila OS experience."
-msgstr "Indítsa újra a számítógépét, hogy élvezze a Vanila OS élményt."
+msgstr "Indítsa újra a számítógépét, hogy élvezze Vanila OS élményét."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
@@ -91,11 +91,11 @@ msgstr "Több"
 
 #: vanilla_first_setup/layouts/preferences.py:68
 msgid "Please select at least one option."
-msgstr "Kérjük, válasszon legalább egy lehetőséget."
+msgstr "Kérem, válasszon legalább egy lehetőséget."
 
 #: vanilla_first_setup/views/done.py:34
 msgid "Restart your PC to enjoy your {} experience."
-msgstr "Indítsa újra a számítógépét, hogy élvezze {} élményt."
+msgstr "Indítsa újra a számítógépét, hogy élvezze {} élményét."
 
 #: vanilla_first_setup/views/done.py:45
 msgid "Something went wrong"
