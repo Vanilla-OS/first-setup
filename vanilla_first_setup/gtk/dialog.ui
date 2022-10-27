@@ -3,7 +3,7 @@
     <requires lib="gtk" version="4.0"/>
     <requires lib="libadwaita" version="1.0"/>
     <template class="VanillaDialog" parent="AdwWindow">
-        <property name="title" translatable="yes">Showing Informations</property>
+        <property name="title" translatable="yes">Showing Information</property>
         <property name="default-width">500</property>
         <property name="modal">True</property>
         <child>
