@@ -31,7 +31,7 @@ class VanillaDone(Adw.Bin):
         self.__window = window
         
         self.status_page.set_description(
-            _("Restart your PC to enjoy your {} experience.").format(
+            _("Restart your device to enjoy your {} experience.").format(
                 self.__window.recipe["distro_name"]
             )
         )
