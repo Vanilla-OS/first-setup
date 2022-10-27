@@ -4,7 +4,7 @@
 	<metadata_license>CC0-1.0</metadata_license>
     <project_license>GPL-3.0-only</project_license>
     <name translatable="no">Vanilla OS First Setup</name>
-    <summary>Tweak your Ubuntu Vanilla GNOME installation.</summary>
+    <summary>Tweak your Vanilla OS installation.</summary>
     <developer_name translatable="no">Mirko Brombin</developer_name>
 	<description>
 	  <p>No description</p>
