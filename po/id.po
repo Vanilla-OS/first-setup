@@ -75,11 +75,11 @@ msgstr "Tentukan pilihan Anda, wizard ini akan mengurus semuanya."
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "All done!"
-msgstr ""
+msgstr "Semua selesai!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your PC to enjoy your Vanila OS experience."
-msgstr ""
+msgstr "Restart PC Anda untuk menikmati pengalaman Vanila OS Anda."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
