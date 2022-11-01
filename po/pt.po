@@ -19,7 +19,7 @@ msgstr ""
 
 #: data/io.github.vanilla-os.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr ""
+msgstr "Primeira configuração do Vanilla OS"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Ubuntu Vanilla GNOME installation."
@@ -27,27 +27,27 @@ msgstr "Ajuste a sua instalação do Ubuntu Vanilla GNOME."
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr ""
+msgstr "Sem descrição"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr ""
+msgstr "Primeiro lançamento"
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
-msgstr ""
+msgstr "Predefinição"
 
 #: vanilla_first_setup/gtk/default-theme.ui:29
 msgid "Dark"
-msgstr ""
+msgstr "Escuro"
 
 #: vanilla_first_setup/gtk/default-theme.ui:42
 msgid "Color Scheme"
-msgstr ""
+msgstr "Esquema de cores"
 
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
-msgstr ""
+msgstr "Escolha um esquema de cores para o seu sistema."
 
 #: vanilla_first_setup/gtk/default-theme.ui:49
 msgid "Next"
@@ -67,15 +67,15 @@ msgstr "Anterior"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:12
 msgid "Welcome!"
-msgstr ""
+msgstr "Bem-vindo!"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:13
 msgid "Make your choices, this wizard will take care of everything."
-msgstr ""
+msgstr "Faça suas escolhas, este assistente cuidará de tudo."
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "All done!"
-msgstr ""
+msgstr "Tudo feito!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your PC to enjoy your Vanila OS experience."
@@ -91,7 +91,7 @@ msgstr "Ler Mais"
 
 #: vanilla_first_setup/layouts/preferences.py:68
 msgid "Please select at least one option."
-msgstr ""
+msgstr "Selecione pelo menos uma opção."
 
 #: vanilla_first_setup/views/done.py:34
 msgid "Restart your PC to enjoy your {} experience."
