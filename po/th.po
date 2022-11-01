@@ -23,23 +23,23 @@ msgstr "การตั้งค่า Vanilla OS ครั้งแรก"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Ubuntu Vanilla GNOME installation."
-msgstr ""
+msgstr "ปรับแต่งการติดตั้ง Ubuntu Vanilla GNOME ของคุณ"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr ""
+msgstr "ไม่มีคำอธิบาย"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr ""
+msgstr "การเปิดตัวครั้งแรก"
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
-msgstr ""
+msgstr "ค่าเริ่มต้น"
 
 #: vanilla_first_setup/gtk/default-theme.ui:29
 msgid "Dark"
-msgstr ""
+msgstr "มืด"
 
 #: vanilla_first_setup/gtk/default-theme.ui:42
 msgid "Color Scheme"
@@ -51,15 +51,15 @@ msgstr "เลือกโครงสีสำหรับระบบของ
 
 #: vanilla_first_setup/gtk/default-theme.ui:49
 msgid "Next"
-msgstr ""
+msgstr "ต่อไป"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Informations"
-msgstr ""
+msgstr "กำลังแสดงข้อมูล"
 
 #: vanilla_first_setup/gtk/progress.ui:20
 msgid "The changes are being applied. Please Wait…"
-msgstr ""
+msgstr "กำลังนำการเปลี่ยนแปลงไปใช้ โปรดรอ…"
 
 #: vanilla_first_setup/gtk/window.ui:25
 msgid "Back"
@@ -67,7 +67,7 @@ msgstr "ย้อนกลับ"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:12
 msgid "Welcome!"
-msgstr ""
+msgstr "ยินดีต้อนรับ!"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:13
 msgid "Make your choices, this wizard will take care of everything."
@@ -75,7 +75,7 @@ msgstr "เลือกตัวเลือกเหล่านี้ ตั�
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "All done!"
-msgstr ""
+msgstr "เสร็จหมดแล้ว!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your PC to enjoy your Vanila OS experience."
@@ -83,19 +83,19 @@ msgstr "รีสตาร์ทคอมพิวเตอร์ของคุ
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
-msgstr ""
+msgstr "ใช่ เปิดใช้งานมัน"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
-msgstr ""
+msgstr "อ่านเพิ่มเติม"
 
 #: vanilla_first_setup/layouts/preferences.py:68
 msgid "Please select at least one option."
-msgstr ""
+msgstr "โปรดเลือกอย่างน้อยหนึ่งตัวเลือก"
 
 #: vanilla_first_setup/views/done.py:34
 msgid "Restart your PC to enjoy your {} experience."
-msgstr ""
+msgstr "รีสตาร์ทพีซีของคุณเพื่อเพลิดเพลินกับประสบการณ์ {} ของคุณ"
 
 #: vanilla_first_setup/views/done.py:45
 msgid "Something went wrong"
