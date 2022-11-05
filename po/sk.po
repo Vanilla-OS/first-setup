@@ -3,19 +3,21 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-22 22:16+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-11-05 19:41+0000\n"
+"Last-Translator: Viktor <viktor@grigel.one>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/sk/>\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: data/io.github.vanilla-os.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -27,7 +29,7 @@ msgstr "Vylaďte si inštaláciu Ubuntu Vanilla GNOME."
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr "Bez popisu"
+msgstr "Žiaden popis"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:26
 msgid "First release"
@@ -35,7 +37,7 @@ msgstr "Prvé vydanie"
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
-msgstr "Predvolené"
+msgstr "Predvolený"
 
 #: vanilla_first_setup/gtk/default-theme.ui:29
 msgid "Dark"
@@ -51,7 +53,7 @@ msgstr "Zvoľte si vzhľad systému."
 
 #: vanilla_first_setup/gtk/default-theme.ui:49
 msgid "Next"
-msgstr "Ďalšie"
+msgstr "Ďalej"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Informations"
