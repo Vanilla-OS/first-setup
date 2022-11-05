@@ -55,7 +55,7 @@ msgstr "Volgende"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Informations"
-msgstr "Informatie weergeven"
+msgstr "Informatie aan het weergeven"
 
 #: vanilla_first_setup/gtk/progress.ui:20
 msgid "The changes are being applied. Please Wait…"
