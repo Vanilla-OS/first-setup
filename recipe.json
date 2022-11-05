@@ -114,7 +114,7 @@
                 {
                     "if": "nvidia",
                     "type": "command",
-                    "commands": ["sudo ubuntu-drivers install --recommended"]
+                    "commands": ["sudo _ubuntu-drivers install --recommended"]
                 }
             ]
         },
