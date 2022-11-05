@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-22 22:16+0200\n"
-"PO-Revision-Date: 2022-11-05 19:41+0000\n"
+"PO-Revision-Date: 2022-11-06 00:07+0000\n"
 "Last-Translator: sherichev <s9erx2@yandex.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ru/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: data/io.github.vanilla-os.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr "Первая настройка Vanilla OS"
+msgstr "Первоначальная настройка Vanilla OS"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Ubuntu Vanilla GNOME installation."
@@ -54,7 +54,7 @@ msgstr "Выберите цветовую схему для вашей сист�
 
 #: vanilla_first_setup/gtk/default-theme.ui:49
 msgid "Next"
-msgstr "Следующий"
+msgstr "Далее"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Informations"
@@ -74,7 +74,7 @@ msgstr "Добро пожаловать!"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:13
 msgid "Make your choices, this wizard will take care of everything."
-msgstr "Сделайте свой выбор, этот мастер позаботится обо всем."
+msgstr "Сделайте свой выбор, этот мастер по настройке обо всем позаботится."
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "All done!"
@@ -82,7 +82,7 @@ msgstr "Все сделано!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your PC to enjoy your Vanila OS experience."
-msgstr "Перезагрузите компьютер, чтобы насладиться работой с Vanila OS."
+msgstr "Перезагрузите компьютер, чтобы насладиться работой с Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
@@ -90,7 +90,7 @@ msgstr "Да, включить"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
-msgstr "Читать далее"
+msgstr "Подробнее"
 
 #: vanilla_first_setup/layouts/preferences.py:68
 msgid "Please select at least one option."
@@ -98,7 +98,7 @@ msgstr "Пожалуйста, выберите хотя бы один вариа
 
 #: vanilla_first_setup/views/done.py:34
 msgid "Restart your PC to enjoy your {} experience."
-msgstr "Перезагрузите компьютер, чтобы насладиться опытом {}."
+msgstr "Перезагрузите компьютер, чтобы насладиться работой {}."
 
 #: vanilla_first_setup/views/done.py:45
 msgid "Something went wrong"
@@ -106,4 +106,4 @@ msgstr "Что-то пошло не так"
 
 #: vanilla_first_setup/views/done.py:46
 msgid "Please contact the distribution developers."
-msgstr "Обратитесь к разработчикам дистрибутива."
+msgstr "Пожалуйста, обратитесь к разработчикам дистрибутива."
