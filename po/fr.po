@@ -27,11 +27,11 @@ msgstr "Ajustez votre installation de Vanilla OS."
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr "Pas de description"
+msgstr "Aucune description"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr "Première sortie"
+msgstr "Première version"
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -43,7 +43,7 @@ msgstr "Sombre"
 
 #: vanilla_first_setup/gtk/default-theme.ui:42
 msgid "Color Scheme"
-msgstr "Thème de couleur"
+msgstr "Palette de couleurs"
 
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
@@ -79,7 +79,7 @@ msgstr "Terminé !"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your PC to enjoy your Vanila OS experience."
-msgstr "Redémarrez votre appareil pour profiter de votre expérience Vanila OS."
+msgstr "Redémarrez votre appareil pour profiter de votre expérience Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
