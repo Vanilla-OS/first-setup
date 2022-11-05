@@ -95,7 +95,7 @@ msgstr "Wybierz co najmniej jedną opcję."
 
 #: vanilla_first_setup/views/done.py:34
 msgid "Restart your PC to enjoy your {} experience."
-msgstr "Uruchom ponownie komputer, aby cieszyć się {}."
+msgstr "Uruchom ponownie komputer, aby cieszyć się z {}."
 
 #: vanilla_first_setup/views/done.py:45
 msgid "Something went wrong"
