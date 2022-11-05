@@ -47,7 +47,7 @@ msgstr "Palette de couleurs"
 
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
-msgstr "Choisissez un thème de couleur pour votre système."
+msgstr "Choisissez une palette de couleurs pour votre système."
 
 #: vanilla_first_setup/gtk/default-theme.ui:49
 msgid "Next"
