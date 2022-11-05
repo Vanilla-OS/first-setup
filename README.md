@@ -5,7 +5,9 @@
     as a first-setup wizard. Its purpose is to help the user to configure the
     system to their needs, e.g. by configuring snap, flatpak, flathub, etc.</p>
     <hr />
-    <a href="https://gitlocalize.com/repo/8092/whole_project?utm_source=badge"> <img src="https://gitlocalize.com/repo/8092/whole_project/badge.svg" /> </a>
+    <a href="https://hosted.weblate.org/engage/vanilla-os/">
+<img src="https://hosted.weblate.org/widgets/vanilla-os/-/control-center/svg-badge.svg" alt="Stato traduzione" />
+</a>
     <br />
     <img src="data/screenshot-1.png">
 </div>
