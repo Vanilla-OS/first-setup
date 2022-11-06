@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-22 22:16+0200\n"
-"PO-Revision-Date: 2022-11-05 21:12+0000\n"
-"Last-Translator: Mirko Brombin <send@mirko.pm>\n"
+"PO-Revision-Date: 2022-11-06 12:07+0000\n"
+"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/it/>\n"
 "Language: it\n"
@@ -45,7 +45,7 @@ msgstr "Scuro"
 
 #: vanilla_first_setup/gtk/default-theme.ui:42
 msgid "Color Scheme"
-msgstr "Combinazione di Colori"
+msgstr "Combinazione di colori"
 
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
