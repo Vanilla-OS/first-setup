@@ -129,6 +129,11 @@
             "buttons": {
                 "yes": "Yes, install",
                 "no": "Skip",
+                "info": {
+                    "type": "text",
+                    "title": "About Open VM Tools",
+                    "text": "Open VM tools can be utilised when used in GNOME-Boxes."
+                }
             },
             "final": [
                 {
