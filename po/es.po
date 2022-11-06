@@ -3,19 +3,21 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-22 22:16+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-11-06 12:07+0000\n"
+"Last-Translator: Jehu Marcos Herrera Puentes <jehuherrerap@hotmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/es/>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: data/io.github.vanilla-os.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -23,7 +25,7 @@ msgstr "Primera instalación de Vanilla OS"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Ubuntu Vanilla GNOME installation."
-msgstr "Modifica la instalación de Ubuntu Vanilla GNOME."
+msgstr "Modifique la instalación de Ubuntu Vanilla GNOME."
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -31,7 +33,7 @@ msgstr "Sin descripción"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr "Primera versión"
+msgstr "Primer lanzamiento"
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -43,11 +45,11 @@ msgstr "Oscuro"
 
 #: vanilla_first_setup/gtk/default-theme.ui:42
 msgid "Color Scheme"
-msgstr "Esquema de color"
+msgstr "Paleta de colores"
 
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
-msgstr "Selecciona un esquema de color para tu sistema."
+msgstr "Seleccione una paleta de colores para el sistema."
 
 #: vanilla_first_setup/gtk/default-theme.ui:49
 msgid "Next"
@@ -59,7 +61,7 @@ msgstr "Mostrando información"
 
 #: vanilla_first_setup/gtk/progress.ui:20
 msgid "The changes are being applied. Please Wait…"
-msgstr "Los cambios están siendo aplicandos. Espera por favor..."
+msgstr "Los cambios están siendo aplicados. Por favor espere…"
 
 #: vanilla_first_setup/gtk/window.ui:25
 msgid "Back"
@@ -71,7 +73,7 @@ msgstr "¡Bienvenido!"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:13
 msgid "Make your choices, this wizard will take care of everything."
-msgstr "Marca tus opciones, este asistente se encargara de todo."
+msgstr "Marque sus opciones, el asistente se encargará de todo."
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "All done!"
@@ -79,11 +81,11 @@ msgstr "¡Todo listo!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your PC to enjoy your Vanila OS experience."
-msgstr "Reinicia tu ordenador para disfrutar de tu experiencia en Vanilla OS"
+msgstr "Reinicie su ordenador para disfrutar su experiencia en Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
-msgstr "Si, actívalo"
+msgstr "Sí, habilitar"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
@@ -91,11 +93,11 @@ msgstr "Leer más"
 
 #: vanilla_first_setup/layouts/preferences.py:68
 msgid "Please select at least one option."
-msgstr "Por favor selecciona al menos una opción."
+msgstr "Por favor, seleccione al menos una opción."
 
 #: vanilla_first_setup/views/done.py:34
 msgid "Restart your PC to enjoy your {} experience."
-msgstr "Reinicia tu ordenador para disfrutar de tu {} experiencia."
+msgstr "Reinicie su ordenador para disfrutar su {} experiencia."
 
 #: vanilla_first_setup/views/done.py:45
 msgid "Something went wrong"
