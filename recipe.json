@@ -121,7 +121,7 @@
         "vm": {
             "template": "yes-no",
             "display-conditions": [
-                "lspci | grep -i '.* qxl .*'"
+                "grep 'hypervisor' /proc/cpuinfo"
             ],
             "icon": "application-x-appliance-symbolic",
             "title": "Open VM Tools",
