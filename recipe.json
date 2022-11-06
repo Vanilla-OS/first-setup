@@ -132,7 +132,7 @@
                 "info": {
                     "type": "text",
                     "title": "About Open VM Tools",
-                    "text": "Open VM tools can be utilised when used in GNOME-Boxes."
+                    "text": "Open VM Tools can be used in GNOME Boxes."
                 }
             },
             "final": [
