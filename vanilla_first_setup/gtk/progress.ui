@@ -31,7 +31,6 @@
         </child>
         <child>
             <object class="GtkProgressBar" id="progressbar">
-              <property name="show-text">true</property>
               <property name="margin-top">40</property>
               <property name="margin-start">40</property>
               <property name="margin-bottom">40</property>
