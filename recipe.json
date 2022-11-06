@@ -118,6 +118,26 @@
                 }
             ]
         },
+        "vm": {
+            "template": "yes-no",
+            "display-conditions": [
+                "lspci | grep -i '.* qxl .*'"
+            ],
+            "icon": "application-x-appliance-symbolic",
+            "title": "Open VM Tools",
+            "description": "Choose whether to install open-vm tools for Virtual Machine.",
+            "buttons": {
+                "yes": "Yes, install",
+                "no": "Skip",
+            },
+            "final": [
+                {
+                    "if": "vm",
+                    "type": "command",
+                    "commands": ["sudo apx --sys install -y open-vm-tools"]
+                }
+            ]
+        },
         "extra": {
             "template": "preferences",
             "icon": "vanilla-puzzle-piece-symbolic",
