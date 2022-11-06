@@ -31,6 +31,8 @@ class VanillaWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'VanillaWindow'
 
     carousel = Gtk.Template.Child()
+    carousel_indicator_dots = Gtk.Template.Child()
+    headerbar = Gtk.Template.Child()
     btn_back = Gtk.Template.Child()
     toasts = Gtk.Template.Child()
 
@@ -85,9 +87,13 @@ class VanillaWindow(Adw.ApplicationWindow):
 
         if page not in [self.__view_progress, self.__view_done]:
             self.btn_back.set_visible(cur_index != 0.0)
+            self.carousel_indicator_dots.set_visible(cur_index != 0.0)
+            self.headerbar.set_show_end_title_buttons(cur_index != 0.0)
             return
 
         self.btn_back.set_visible(False)
+        self.carousel_indicator_dots.set_visible(False)
+        self.headerbar.set_show_end_title_buttons(False)
 
         # keep the btn_back button locked if this is the last page
         if page == self.__view_done:
