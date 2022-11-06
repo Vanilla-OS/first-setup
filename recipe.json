@@ -125,7 +125,7 @@
             ],
             "icon": "application-x-appliance-symbolic",
             "title": "Open VM Tools",
-            "description": "Choose whether to install open-vm tools for Virtual Machine.",
+            "description": "Choose whether to install Open VM Tools for the virtual machine.",
             "buttons": {
                 "yes": "Yes, install",
                 "no": "Skip",
