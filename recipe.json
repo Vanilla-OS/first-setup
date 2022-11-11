@@ -127,7 +127,8 @@
             "title": "Open VM Tools",
             "description": "Choose whether to install Open VM Tools for the virtual machine.",
             "buttons": {
-                "yes": "Yes, install",
+                "buttons": {
+                "yes": "Install",
                 "no": "Skip",
                 "info": {
                     "type": "text",
@@ -143,9 +144,31 @@
                 }
             ]
         },
+        "codecs": {
+            "template": "yes-no",
+            "icon": "vanilla-puzzle-piece-symbolic",
+            "title": "Restricted Codecs",
+            "description": "Choose whether to install Restricted codecs and Fonts.",
+            "buttons": {
+                "yes": "Install",
+                "no": "Skip",
+                "info": {
+                    "type": "text",
+                    "title": "About Restricted Codecs",
+                    "text": "Installs ubuntu-restricted-extras and ubuntu-restricted-addons."
+                }
+            },
+            "final": [
+                {
+                    "if": "codecs",
+                    "type": "command",
+                    "commands": ["sudo apx --sys install -y ubuntu-restricted-addons ubuntu-restricted-extras"]
+                }
+            ]
+        },
         "extra": {
             "template": "preferences",
-            "icon": "vanilla-puzzle-piece-symbolic",
+            "icon": "dialog-warning-symbolic",
             "title": "Extra Settings",
             "description": "The following are optional settings, leave them as they are if you don't know what they do.",
             "preferences": [
