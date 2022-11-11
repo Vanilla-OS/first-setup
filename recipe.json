@@ -127,7 +127,6 @@
             "title": "Open VM Tools",
             "description": "Choose whether to install Open VM Tools for the virtual machine.",
             "buttons": {
-                "buttons": {
                 "yes": "Install",
                 "no": "Skip",
                 "info": {
