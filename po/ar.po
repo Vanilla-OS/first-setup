@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-22 22:16+0200\n"
-"PO-Revision-Date: 2022-11-12 19:49+0000\n"
+"PO-Revision-Date: 2022-11-15 19:47+0000\n"
 "Last-Translator: عثمان محامدي <othmahammedi@proton.me>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ar/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: data/io.github.vanilla-os.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr "الإعداد الأولي لتوزيعة فانيلا"
+msgstr "الإعداد الأولي لنظام التشغيل فانيلا"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Ubuntu Vanilla GNOME installation."
