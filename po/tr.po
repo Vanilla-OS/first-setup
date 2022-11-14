@@ -3,19 +3,21 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-22 22:16+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-11-15 19:47+0000\n"
+"Last-Translator: E-Akcaer <gurbetcii_@hotmail.com>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/tr/>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #: data/io.github.vanilla-os.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -75,15 +77,16 @@ msgstr "Seçimlerinizi yapın, bu sihirbaz sizin için her şeyi halledecektir."
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "All done!"
-msgstr "Hepsi tamam!"
+msgstr "Her şey tamam!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your PC to enjoy your Vanila OS experience."
 msgstr "Vanila OS deneyiminizin keyfini çıkarmak için bilgisayarınızı yeniden başlatın."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
+#, fuzzy
 msgid "Yes, enable it"
-msgstr "Evet, etkinleştir"
+msgstr "Evet, kabul ediyorum"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
@@ -91,7 +94,7 @@ msgstr "Devamını oku"
 
 #: vanilla_first_setup/layouts/preferences.py:68
 msgid "Please select at least one option."
-msgstr "Lütfen en az bir seçenek belirleyiniz."
+msgstr "Lütfen en azından bir seçeneği seçin."
 
 #: vanilla_first_setup/views/done.py:34
 msgid "Restart your PC to enjoy your {} experience."
@@ -99,8 +102,8 @@ msgstr "{} deneyiminizin keyfini çıkarmak için bilgisayarınızı yeniden ba�
 
 #: vanilla_first_setup/views/done.py:45
 msgid "Something went wrong"
-msgstr "Bir şeyler yanlış gitti"
+msgstr "Bazı şeyler yolunda gitmedi"
 
 #: vanilla_first_setup/views/done.py:46
 msgid "Please contact the distribution developers."
-msgstr "Lütfen dağıtım geliştiricileri ile iletişime geçin."
+msgstr "Lütfen dağıtım geliştiricileri ile irtibata geçin."
