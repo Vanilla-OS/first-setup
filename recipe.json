@@ -65,7 +65,8 @@
                 {
                     "id": "appimage",
                     "title": "AppImage",
-                    "subtitle": "Will install the necessary dependencies to run AppImages."
+                    "subtitle": "Will install the necessary dependencies to run AppImages.",
+                    "default": true
                 }
             ],
             "final": [
