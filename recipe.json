@@ -3,12 +3,12 @@
     "distro_name": "Vanilla OS",
     "distro_logo": "io.github.vanilla-os.FirstSetup", 
     "pre_run": [
-        "sudo apt update", 
-        "sudo apt install -f"
+        "apt update", 
+        "apt install -f"
     ],
     "post_run": [
-        "sudo apt update", 
-        "sudo apt install -f"
+        "apt update", 
+        "apt install -f"
     ],
     "tour": {
         "abroot": {
@@ -45,7 +45,7 @@
                         "if": "warp::immutability",
                         "type": "command",
                         "commands": [
-                            "sudo apt remove -y gnome-software"
+                            "apt remove -y gnome-software"
                         ]
                     }
                 ]
@@ -74,8 +74,8 @@
                     "if": "flatpak",
                     "type": "command",
                     "commands": [
-                        "sudo apt install -y flatpak gnome-software-plugin-flatpak",
-                        "flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo",
+                        "apt install -y flatpak gnome-software-plugin-flatpak",
+                        "!noSudo flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo",
                         "gsettings set org.gnome.software packaging-format-preference '[\"flatpak\", \"snap\", \"deb\"]'"
                     ]
                 },
@@ -83,14 +83,14 @@
                     "if": "snap",
                     "type": "command",
                     "commands": [
-                        "sudo apt install -y snapd",
+                        "apt install -y snapd",
                         "gsettings set org.gnome.software packaging-format-preference '[\"flatpak\", \"snap\", \"deb\"]'"
                     ]
                 },
                 {
                     "if": "appimage",
                     "type": "command",
-                    "commands": ["sudo apt install -y fuse2 libfuse2"]
+                    "commands": ["apt install -y fuse2 libfuse2"]
                 }
             ]
         },
@@ -115,7 +115,7 @@
                 {
                     "if": "nvidia",
                     "type": "command",
-                    "commands": ["sudo _ubuntu-drivers install --recommended"]
+                    "commands": ["_ubuntu-drivers install --recommended"]
                 }
             ]
         },
@@ -140,7 +140,7 @@
                 {
                     "if": "vm",
                     "type": "command",
-                    "commands": ["sudo apt install -y open-vm-tools"]
+                    "commands": ["apt install -y open-vm-tools"]
                 }
             ]
         },
@@ -162,7 +162,7 @@
                 {
                     "if": "codecs",
                     "type": "command",
-                    "commands": ["sudo apt install -y ubuntu-restricted-addons ubuntu-restricted-extras"]
+                    "commands": ["apt install -y ubuntu-restricted-addons ubuntu-restricted-extras"]
                 }
             ]
         },
@@ -183,7 +183,7 @@
                     "if": "apport",
                     "type": "command",
                     "commands": [
-                        "sudo apt install -y apport",
+                        "apt install -y apport",
                         "systemctl enable apport.service || true"
                     ]
                 },
@@ -192,7 +192,7 @@
                     "condition": false,
                     "type": "command",
                     "commands": [
-                        "sudo apt remove -y apport",
+                        "apt remove -y apport",
                         "systemctl disable apport.service || true"
                     ]
                 }
