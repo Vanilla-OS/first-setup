@@ -3,19 +3,19 @@
     "distro_name": "Vanilla OS",
     "distro_logo": "io.github.vanilla-os.FirstSetup", 
     "pre_run": [
-        "sudo apx --sys update", 
-        "sudo apx --sys install -f"
+        "sudo apt update", 
+        "sudo apt install -f"
     ],
     "post_run": [
-        "sudo apx --sys update", 
-        "sudo apx --sys install -f"
+        "sudo apt update", 
+        "sudo apt install -f"
     ],
     "tour": {
-        "almost": {
+        "abroot": {
              "icon": "security-medium-symbolic",
-             "title": "On-Demand Immutability",
-             "description": "Vanilla OS features On-Demand Immutability, which blind your system against undesired modifications, being still fully accessible by you.",
-             "read_more_link": "https://documentation.vanillaos.org/docs/almost/"
+             "title": "Immutable and Atomic",
+             "description": "Vanilla OS is immutable and atomic Linux distribution. It is based on Ubuntu and uses ABRoot to provide atomic transactions.",
+             "read_more_link": "https://documentation.vanillaos.org/docs/abroot/"
         },
         "apx": {
              "icon": "vanilla-container-terminal-symbolic",
@@ -45,7 +45,7 @@
                         "if": "warp::immutability",
                         "type": "command",
                         "commands": [
-                            "sudo apx --sys remove -y gnome-software"
+                            "sudo apt remove -y gnome-software"
                         ]
                     }
                 ]
@@ -53,7 +53,7 @@
             "preferences": [
                 {
                     "id": "flatpak",
-                    "title": "Flatpak",
+                    "title": "Flatpak and Flathub",
                     "subtitle": "Will also configure the Flathub repository.",
                     "default": true
                 },
@@ -74,7 +74,7 @@
                     "if": "flatpak",
                     "type": "command",
                     "commands": [
-                        "sudo apx --sys install -y flatpak gnome-software-plugin-flatpak",
+                        "sudo apt install -y flatpak gnome-software-plugin-flatpak",
                         "flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo",
                         "gsettings set org.gnome.software packaging-format-preference '[\"flatpak\", \"snap\", \"deb\"]'"
                     ]
@@ -83,14 +83,14 @@
                     "if": "snap",
                     "type": "command",
                     "commands": [
-                        "sudo apx --sys install -y snapd",
+                        "sudo apt install -y snapd",
                         "gsettings set org.gnome.software packaging-format-preference '[\"flatpak\", \"snap\", \"deb\"]'"
                     ]
                 },
                 {
                     "if": "appimage",
                     "type": "command",
-                    "commands": ["sudo apx --sys install -y fuse2 libfuse2"]
+                    "commands": ["sudo apt install -y fuse2 libfuse2"]
                 }
             ]
         },
@@ -140,7 +140,7 @@
                 {
                     "if": "vm",
                     "type": "command",
-                    "commands": ["sudo apx --sys install -y open-vm-tools"]
+                    "commands": ["sudo apt install -y open-vm-tools"]
                 }
             ]
         },
@@ -162,7 +162,7 @@
                 {
                     "if": "codecs",
                     "type": "command",
-                    "commands": ["sudo apx --sys install -y ubuntu-restricted-addons ubuntu-restricted-extras"]
+                    "commands": ["sudo apt install -y ubuntu-restricted-addons ubuntu-restricted-extras"]
                 }
             ]
         },
@@ -183,7 +183,7 @@
                     "if": "apport",
                     "type": "command",
                     "commands": [
-                        "sudo apx --sys install -y apport",
+                        "sudo apt install -y apport",
                         "systemctl enable apport.service || true"
                     ]
                 },
@@ -192,7 +192,7 @@
                     "condition": false,
                     "type": "command",
                     "commands": [
-                        "sudo apx --sys remove -y apport",
+                        "sudo apt remove -y apport",
                         "systemctl disable apport.service || true"
                     ]
                 }
