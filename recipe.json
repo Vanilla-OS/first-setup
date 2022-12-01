@@ -14,13 +14,13 @@
         "abroot": {
              "icon": "security-medium-symbolic",
              "title": "Immutable and Atomic",
-             "description": "Vanilla OS is immutable and atomic Linux distribution. It is based on Ubuntu and uses ABRoot to provide atomic transactions.",
+             "description": "Vanilla OS is an immutable and atomic Linux distribution. It is based on Ubuntu and uses ABRoot to provide atomic transactions.",
              "read_more_link": "https://documentation.vanillaos.org/docs/abroot/"
         },
         "apx": {
              "icon": "vanilla-container-terminal-symbolic",
              "title": "Sub-System Ready To Go",
-             "description": "Vanilla OS comes with Apx, a new package manager which install the software in an integrated container to prevent host compromise.",
+             "description": "Vanilla OS comes with Apx, a new package manager which installs software in integrated containers to prevent host compromise.",
              "read_more_link": "https://documentation.vanillaos.org/docs/apx/"
         }
     },
@@ -148,7 +148,7 @@
             "template": "yes-no",
             "icon": "vanilla-puzzle-piece-symbolic",
             "title": "Restricted Codecs",
-            "description": "Choose whether to install Restricted codecs and Fonts.",
+            "description": "Choose whether to install restricted codecs and fonts.",
             "buttons": {
                 "yes": "Install",
                 "no": "Skip",
