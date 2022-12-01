@@ -29,6 +29,7 @@ class Processor:
     @staticmethod
     def run(log_path, pre_run, post_run, commands):
         commands = pre_run + commands + post_run
+        out_run = ""
         abroot_bin = shutil.which("abroot")
 
         logger.info("processing the following commands: \n%s" %
@@ -44,6 +45,11 @@ class Processor:
             for command in commands:
                 if command.startswith("!noSudo"):
                     command = command.replace("!noSudo", "sudo -u $USER")
+                
+                # outRun band is used to run a command outside of the main
+                # shell script.
+                if command.startswith("!outRun"):
+                    out_run += command.replace("!outRun", "") + "\n"
 
                 f.write(f"{command}\n")
 
@@ -88,5 +94,10 @@ class Processor:
             "~/.config/autostart/io.github.vanilla-os.FirstSetup.desktop")
         if os.path.exists(autostart_file):
             os.remove(autostart_file)
+
+        # run the outRun commands
+        if out_run:
+            logger.info("running outRun commands: \n%s" % out_run)
+            subprocess.run(out_run, shell=True)
 
         return True
