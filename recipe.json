@@ -75,8 +75,8 @@
                     "type": "command",
                     "commands": [
                         "apt install -y flatpak gnome-software-plugin-flatpak",
-                        "!noSudo flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo",
-                        "gsettings set org.gnome.software packaging-format-preference '[\"flatpak\", \"snap\", \"deb\"]'"
+                        "gsettings set org.gnome.software packaging-format-preference '[\"flatpak\", \"snap\", \"deb\"]'",
+                        "!outRun echo '[Desktop Entry]\nType=Application\nExec=kgx -e bash -c \"echo 'Configuring Flathub..' && flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo && rm -f ~/.config/autostart/flathub.desktop && echo 'Flathub installed successfully' || echo 'Failed installing Flathub. Are you connected to the internet?'\"\nName=Flatpak Flathub\nComment=Add Flathub repository to Flatpak\n' > ~/.config/autostart/flathub.desktop"
                     ]
                 },
                 {
