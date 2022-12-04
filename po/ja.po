@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-22 22:16+0200\n"
-"PO-Revision-Date: 2022-10-22 22:16+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-12-04 04:13+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #: data/io.github.vanilla-os.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -27,23 +29,23 @@ msgstr ""
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr ""
+msgstr "説明なし"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr ""
+msgstr "最初のリリース"
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
-msgstr ""
+msgstr "デフォルト"
 
 #: vanilla_first_setup/gtk/default-theme.ui:29
 msgid "Dark"
-msgstr ""
+msgstr "ダーク"
 
 #: vanilla_first_setup/gtk/default-theme.ui:42
 msgid "Color Scheme"
-msgstr ""
+msgstr "カラースキーム"
 
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
@@ -51,7 +53,7 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/default-theme.ui:49
 msgid "Next"
-msgstr ""
+msgstr "次へ"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Informations"
@@ -75,7 +77,7 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "All done!"
-msgstr ""
+msgstr "すべて完了しました！"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your PC to enjoy your Vanila OS experience."
@@ -83,7 +85,7 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
-msgstr ""
+msgstr "はい、有効にします"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
@@ -91,7 +93,7 @@ msgstr ""
 
 #: vanilla_first_setup/layouts/preferences.py:68
 msgid "Please select at least one option."
-msgstr ""
+msgstr "最低でもひとつはオプションを選択してください。"
 
 #: vanilla_first_setup/views/done.py:34
 msgid "Restart your PC to enjoy your {} experience."
@@ -99,8 +101,8 @@ msgstr ""
 
 #: vanilla_first_setup/views/done.py:45
 msgid "Something went wrong"
-msgstr ""
+msgstr "問題が発生しました"
 
 #: vanilla_first_setup/views/done.py:46
 msgid "Please contact the distribution developers."
-msgstr ""
+msgstr "ディストリビューションの開発者にご連絡ください。"
