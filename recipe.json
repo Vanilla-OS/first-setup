@@ -111,7 +111,10 @@
                 {
                     "if": "nvidia",
                     "type": "command",
-                    "commands": ["_ubuntu-drivers install --recommended"]
+                    "commands": [
+                        "apt install -y linux-headers-$(uname -r)",
+                        "ubuntu-drivers install --recommended"
+                    ]
                 }
             ]
         },
