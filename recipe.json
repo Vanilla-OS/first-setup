@@ -86,7 +86,7 @@
                 {
                     "if": "appimage",
                     "type": "command",
-                    "commands": ["apt install -y fuse2 libfuse2"]
+                    "commands": ["apt install -y fuse3 libfuse2"]
                 }
             ]
         },
