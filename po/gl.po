@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-22 22:16+0200\n"
-"PO-Revision-Date: 2022-11-26 09:47+0000\n"
-"Last-Translator: Martín (Martín M. Silva) <mouzosilvam@gmail.com>\n"
+"PO-Revision-Date: 2022-12-10 23:50+0000\n"
+"Last-Translator: Martin Meizoso <martinmeizoso@gmail.com>\n"
 "Language-Team: Galician <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/gl/>\n"
 "Language: gl\n"
@@ -21,11 +21,11 @@ msgstr ""
 
 #: data/io.github.vanilla-os.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr ""
+msgstr "Instalación de Vanilla OS"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Ubuntu Vanilla GNOME installation."
-msgstr ""
+msgstr "Axusta a túa instalación de Ubuntu Vanilla Gnome."
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -49,7 +49,7 @@ msgstr "Esquema de cores"
 
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
-msgstr ""
+msgstr "Elixe o esquema de cores para o teu sistema."
 
 #: vanilla_first_setup/gtk/default-theme.ui:49
 msgid "Next"
@@ -57,23 +57,23 @@ msgstr "Seguinte"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Informations"
-msgstr ""
+msgstr "Amosando Informacións"
 
 #: vanilla_first_setup/gtk/progress.ui:20
 msgid "The changes are being applied. Please Wait…"
-msgstr ""
+msgstr "Os cambios están sendo aplicados. Por favor agarde…"
 
 #: vanilla_first_setup/gtk/window.ui:25
 msgid "Back"
-msgstr ""
+msgstr "Atrás"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:12
 msgid "Welcome!"
-msgstr ""
+msgstr "Benvido!"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:13
 msgid "Make your choices, this wizard will take care of everything."
-msgstr ""
+msgstr "Fai as túas eleccións, o asistente farase cargo de todo."
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "All done!"
@@ -81,7 +81,7 @@ msgstr "Todo feito!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your PC to enjoy your Vanila OS experience."
-msgstr ""
+msgstr "Reinicia o teu PC para desfrutar a túa experiencia de Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
@@ -89,7 +89,7 @@ msgstr "Si, actívao"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
-msgstr ""
+msgstr "Leer Maís"
 
 #: vanilla_first_setup/layouts/preferences.py:68
 msgid "Please select at least one option."
@@ -97,7 +97,7 @@ msgstr "Seleccione polo menos unha opción."
 
 #: vanilla_first_setup/views/done.py:34
 msgid "Restart your PC to enjoy your {} experience."
-msgstr ""
+msgstr "Reinicia o teu PC para ter a túa experiencia {}."
 
 #: vanilla_first_setup/views/done.py:45
 msgid "Something went wrong"
