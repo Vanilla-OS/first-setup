@@ -72,6 +72,7 @@ class VanillaLayoutApplications(Adw.Bin):
             _header_bar.set_show_start_title_buttons(False)
 
             _apps_list = Adw.PreferencesGroup()
+            _apps_list.set_description("The following list includes only applications available in your preferred package manager.")
             _apps_page = Adw.PreferencesPage()
             _apps_page.add(_apps_list)
 
@@ -80,6 +81,7 @@ class VanillaLayoutApplications(Adw.Bin):
             _box.append(_apps_page)
 
             _selection_dialog.set_content(_box)
+            _selection_dialog.set_default_size(500, 600)
             selection_dialogs.append(_selection_dialog)
 
             _action_row = Adw.ActionRow(

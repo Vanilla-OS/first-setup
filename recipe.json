@@ -38,32 +38,116 @@
                     "default": true,
                     "applications" : [
                         {
-                            "name" : "Calendar",
-                            "icon" :  "org.gnome.Calendar-symbolic"
+                            "name" : "Calculator",
+                            "icon" :  "org.gnome.Calculator",
+                            "flatpak-id" : "org.gnome.Calculator",
+                            "snap-id" : "gnome-calculator"
                         },
                         {
-                            "name" : "Calculator",
-                            "icon" :  "org.gnome.Calculator-symbolic"
+                            "name" : "Calendar",
+                            "icon" :  "org.gnome.Calendar",
+                            "flatpak-id" : "org.gnome.Calendar"
+                        },
+                        {
+                            "name" : "Characters",
+                            "icon" :  "org.gnome.Characters",
+                            "flatpak-id" : "org.gnome.Characters",
+                            "snap-id" : "gnome-characters"
                         },
                         {
                             "name" : "Cheese",
-                            "icon" :  "org.gnome.Cheese-symbolic"
+                            "icon" :  "org.gnome.Cheese",
+                            "flatpak-id" : "org.gnome.Cheese",
+                            "snap-id" : "cheese"
+                        },
+                        {
+                            "name" : "Clocks",
+                            "icon" :  "org.gnome.clocks",
+                            "flatpak-id" : "org.gnome.clocks",
+                            "snap-id" : "gnome-clocks"
+                        },
+                        {
+                            "name" : "Contacts",
+                            "icon" :  "org.gnome.Contacts",
+                            "flatpak-id" : "org.gnome.Contacts",
+                            "snap-id" : "gnome-contacts"
+                        },
+                        {
+                            "name" : "Disk Usage Analyzer",
+                            "icon" :  "org.gnome.baobab",
+                            "flatpak-id" : "org.gnome.baobab"
+                        },
+                        {
+                            "name" : "Document Viewer",
+                            "icon" :  "org.gnome.Evince",
+                            "flatpak-id" : "org.gnome.Evince",
+                            "snap-id" : "evince"
+                        },
+                        {
+                            "name" : "Extensions",
+                            "icon" :  "org.gnome.Extensions",
+                            "flatpak-id" : "org.gnome.Extensions"
+                        },
+                        {
+                            "name" : "Fonts",
+                            "icon" :  "org.gnome.font-viewer",
+                            "flatpak-id" : "org.gnome.font-viewer"
+                        },
+                        {
+                            "name" : "Image Viewer",
+                            "icon" :  "org.gnome.eog",
+                            "flatpak-id" : "org.gnome.eog",
+                            "snap-id" : "eog"
+                        },
+                        {
+                            "name" : "Logs",
+                            "icon" :  "org.gnome.Logs",
+                            "flatpak-id" : "org.gnome.Logs",
+                            "snap-id" : "gnome-logs"
+                        },
+                        {
+                            "name" : "Maps",
+                            "icon" :  "org.gnome.Maps",
+                            "flatpak-id" : "org.gnome.Maps"
+                        },
+                        {
+                            "name" : "Music",
+                            "icon" :  "org.gnome.Music",
+                            "flatpak-id" : "org.gnome.Music"
+                        },
+                        {
+                            "name" : "Photos",
+                            "icon" :  "org.gnome.Photos",
+                            "flatpak-id" : "org.gnome.Photos"
+                        },
+                        {
+                            "name" : "Text Editor",
+                            "icon" :  "org.gnome.TextEditor",
+                            "flatpak-id" : "org.gnome.TextEditor"
+                        },
+                        {
+                            "name" : "Videos",
+                            "icon" :  "org.gnome.Totem",
+                            "flatpak-id" : "org.gnome.Totem"
+                        },
+                        {
+                            "name" : "Weather",
+                            "icon" :  "org.gnome.Weather",
+                            "flatpak-id" : "org.gnome.Weather",
+                            "snap-id" : "gnome-weather"
                         }
                     ]
                 },
                 {
                     "id": "utilities",
                     "title": "Common Utilities",
-                    "subtitle": "Useful utilities like Disks or Fonts.",
+                    "subtitle": "Useful utilities like Bottles.",
                     "default": true,
                     "applications" : [
                         {
-                            "name" : "Disks",
-                            "icon" :  "org.gnome.DiskUtility-symbolic"
-                        },
-                        {
-                            "name" : "Fonts",
-                            "icon" :  "org.gnome.font-viewer-symbolic"
+                            "name" : "Bottles",
+                            "icon" :  "com.usebottles.bottles",
+                            "flatpak-id" : "com.usebottles.bottles"
                         }
                     ]
                 }
