@@ -53,7 +53,7 @@
             "preferences": [
                 {
                     "id": "flatpak",
-                    "title": "Flatpak and Flathub",
+                    "title": "Flatpak",
                     "subtitle": "Manage and configure Flatpaks and the Flathub repository.",
                     "default": true
                 },
