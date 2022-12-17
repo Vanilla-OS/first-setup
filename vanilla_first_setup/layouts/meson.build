@@ -5,6 +5,7 @@ sources = [
   '__init__.py',
   'preferences.py',
   'yes_no.py',
+  'applications.py'
 ]
 
 install_data(sources, install_dir: layoutsdir)

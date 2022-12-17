@@ -12,6 +12,7 @@
 
     <file>gtk/layout-preferences.ui</file>
     <file>gtk/layout-yes-no.ui</file>
+    <file>gtk/layout-applications.ui</file>
   </gresource>
   <gresource prefix="/io/github/vanilla-os/FirstSetup/icons/scalable/actions/">
     <file preprocess="xml-stripblanks">../data/icons/hicolor/symbolic/actions/vanilla-package-symbolic.svg</file>

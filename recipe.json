@@ -25,6 +25,63 @@
         }
     },
     "steps": {
+        "apps": {
+            "template": "applications",
+            "icon": "org.gnome.Software-symbolic",
+            "title": "Applications",
+            "description": "Choose which applications to install.",
+            "bundles": [
+                {
+                    "id": "essential-apps",
+                    "title": "Essential Applications",
+                    "subtitle": "Core GNOME apps like Calendar or Calculator.",
+                    "default": true,
+                    "applications" : [
+                        {
+                            "name" : "Calendar",
+                            "icon" :  "org.gnome.Calendar-symbolic"
+                        },
+                        {
+                            "name" : "Calculator",
+                            "icon" :  "org.gnome.Calculator-symbolic"
+                        },
+                        {
+                            "name" : "Cheese",
+                            "icon" :  "org.gnome.Cheese-symbolic"
+                        }
+                    ]
+                },
+                {
+                    "id": "utilities",
+                    "title": "Common Utilities",
+                    "subtitle": "Useful utilities like Disks or Fonts.",
+                    "default": true,
+                    "applications" : [
+                        {
+                            "name" : "Disks",
+                            "icon" :  "org.gnome.DiskUtility-symbolic"
+                        },
+                        {
+                            "name" : "Fonts",
+                            "icon" :  "org.gnome.font-viewer-symbolic"
+                        }
+                    ]
+                }
+            ],
+            "final": [
+                {
+                    "if": "essential-apps",
+                    "type": "command",
+                    "commands": ["flatpak install org.gnome.Geary || snap install snapd"]
+                },
+                {
+                    "if": "utilities",
+                    "type": "command",
+                    "commands": ["flatpak install org.gnome.Geary || snap install snapd"]
+                }
+            ]
+        },
+        
         "welcome": {
             "template": "welcome"
         },

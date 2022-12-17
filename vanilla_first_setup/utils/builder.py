@@ -18,9 +18,6 @@ import os
 import sys
 import logging
 import subprocess
-import json
-
-from gi.repository import Gio
 
 from vanilla_first_setup.utils.recipe import RecipeLoader
 
@@ -29,6 +26,7 @@ from vanilla_first_setup.defaults.theme import VanillaDefaultTheme
 
 from vanilla_first_setup.layouts.preferences import VanillaLayoutPreferences
 from vanilla_first_setup.layouts.yes_no import VanillaLayoutYesNo
+from vanilla_first_setup.layouts.applications import VanillaLayoutApplications
 
 
 logger = logging.getLogger("FirstSetup::Builder")
@@ -38,7 +36,8 @@ templates = {
     "welcome": VanillaDefaultWelcome,
     "theme": VanillaDefaultTheme,
     "preferences": VanillaLayoutPreferences,
-    "yes-no": VanillaLayoutYesNo
+    "yes-no": VanillaLayoutYesNo,
+    "applications": VanillaLayoutApplications
 }
 
 

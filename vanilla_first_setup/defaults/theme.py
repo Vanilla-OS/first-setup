@@ -14,8 +14,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import time
-from gi.repository import Gtk, Gio, GLib, Adw
+from gi.repository import Gtk, Gio
 
 
 @Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/default-theme.ui')

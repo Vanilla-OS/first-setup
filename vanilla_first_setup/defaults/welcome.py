@@ -15,7 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import time
-from gi.repository import Gtk, Gio, GLib, Adw
+from gi.repository import Gtk, GLib, Adw
 
 from vanilla_first_setup.utils.run_async import RunAsync
 
