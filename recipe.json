@@ -54,18 +54,18 @@
                 {
                     "id": "flatpak",
                     "title": "Flatpak and Flathub",
-                    "subtitle": "Will also configure the Flathub repository.",
+                    "subtitle": "Manage and configure the status of Flatpaks and the Flathub repository.",
                     "default": true
                 },
                 {
                     "id": "snap",
                     "title": "Snap",
-                    "subtitle": "Uses the Snapcraft repository. Default in Ubuntu."
+                    "subtitle": "Manage and configure the status of Snaps and the Snapcraft repository."
                 },
                 {
                     "id": "appimage",
                     "title": "AppImage",
-                    "subtitle": "Will install the necessary dependencies to run AppImages.",
+                    "subtitle": "Install necessary dependencies to run AppImages.",
                     "default": true
                 }
             ],
