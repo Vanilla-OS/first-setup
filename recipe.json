@@ -54,13 +54,13 @@
                 {
                     "id": "flatpak",
                     "title": "Flatpak and Flathub",
-                    "subtitle": "Manage and configure the status of Flatpaks and the Flathub repository.",
+                    "subtitle": "Manage and configure Flatpaks and the Flathub repository.",
                     "default": true
                 },
                 {
                     "id": "snap",
                     "title": "Snap",
-                    "subtitle": "Manage and configure the status of Snaps and the Snapcraft repository."
+                    "subtitle": "Manage and configure Snaps and the Snapcraft repository."
                 },
                 {
                     "id": "appimage",
