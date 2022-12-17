@@ -45,9 +45,19 @@ class VanillaLayoutApplications(Adw.Bin):
         self.status_page.set_description(self.__step["description"])
         selection_dialogs = []
 
+        def present_customize(widget, dialog):
+                dialog.show()
+
+        def close_customize(widget, dialog):
+            dialog.hide()
+
         for item in self.__step["bundles"]:
 
-            _selection_dialog = Adw.Window()
+            _selection_dialog = VanillaDialog(
+                    self.__window,
+                    "Select Applications",
+                    "Description",
+                )
 
             _cancel_button = Gtk.Button()
             _apply_button = Gtk.Button()
@@ -70,17 +80,7 @@ class VanillaLayoutApplications(Adw.Bin):
             _box.append(_apps_page)
 
             _selection_dialog.set_content(_box)
-            _selection_dialog.set_modal(True)
-            _selection_dialog.set_title("Choose Applications")
-            _selection_dialog.set_transient_for(self.__window)
-
             selection_dialogs.append(_selection_dialog)
-
-            def present_customize(widget, dialog):
-                dialog.present()
-
-            def close_customize(widget, dialog):
-                dialog.close()
 
             _action_row = Adw.ActionRow(
                 title=item["title"],

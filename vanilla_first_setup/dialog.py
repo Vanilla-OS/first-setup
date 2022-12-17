@@ -28,3 +28,10 @@ class VanillaDialog(Adw.Window):
         self.set_transient_for(window)
         self.set_title(title)
         self.label_text.set_text(text)
+
+        def hide(action, callback=None):
+            self.hide()
+
+        shortcut_controller = Gtk.ShortcutController.new()
+        shortcut_controller.add_shortcut(Gtk.Shortcut.new(Gtk.ShortcutTrigger.parse_string('Escape'), Gtk.CallbackAction.new(hide)))
+        self.add_controller(shortcut_controller)
