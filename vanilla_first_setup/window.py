@@ -52,6 +52,10 @@ class VanillaWindow(Adw.ApplicationWindow):
 
         # connect system signals
         self.__connect_signals()
+    
+    @property
+    def builder(self):
+        return self.__builder
 
     def __connect_signals(self):
         self.btn_back.connect("clicked", self.back)
