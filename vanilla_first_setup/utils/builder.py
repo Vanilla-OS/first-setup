@@ -88,6 +88,13 @@ class Builder:
             if step["template"] in templates:
                 _widget = templates[step["template"]](self.__window, self.distro_info, key, step)
                 self.__register_widgets.append(_widget)
+    
+    def get_temp_finals(self, step_id: str):
+        for widget in self.__register_widgets:
+            if widget.step_id == step_id:
+                return widget.get_finals()
+
+        return None
 
     def get_finals(self):
         self.__register_finals = []
