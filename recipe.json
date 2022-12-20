@@ -25,6 +25,70 @@
         }
     },
     "steps": {
+        "welcome": {
+            "template": "welcome"
+        },
+        "theme": {
+            "template": "theme"
+        },
+        "packages": {
+            "template": "preferences",
+            "icon": "vanilla-package-symbolic",
+            "title": "Package Manager",
+            "description": "Choose one or more package managers to install",
+            "without_selection": {
+                "allowed": true,
+                "message": "You have chosen not to install any package manager, you will only be able to install packages using the package manager (apx).\n\nGNOME Software will be disabled.",
+                "title": "No package manager selected",
+                "final": [
+                    {
+                        "type": "command",
+                        "commands": [
+                            "apt remove -y gnome-software"
+                        ]
+                    }
+                ]
+            },
+            "preferences": [
+                {
+                    "id": "flatpak",
+                    "title": "Flatpak",
+                    "subtitle": "Manage and configure Flatpaks and the Flathub repository.",
+                    "default": true
+                },
+                {
+                    "id": "snap",
+                    "title": "Snap",
+                    "subtitle": "Manage and configure Snaps and the Snapcraft repository."
+                },
+                {
+                    "id": "appimage",
+                    "title": "AppImage",
+                    "subtitle": "Install necessary dependencies to run AppImages.",
+                    "default": true
+                }
+            ],
+            "final": [
+                {
+                    "if": "flatpak",
+                    "type": "command",
+                    "commands": [
+                        "apt install -y flatpak gnome-software-plugin-flatpak",
+                        "!outRun echo '[Desktop Entry]\nType=Application\nExec=kgx -e bash -c \"echo 'Configuring Flathub..' && flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo && rm -f ~/.config/autostart/flathub.desktop && echo 'Flathub installed successfully' || echo 'Failed installing Flathub. Are you connected to the internet?'\"\nName=Flatpak Flathub\nComment=Add Flathub repository to Flatpak\n' > ~/.config/autostart/flathub.desktop"
+                    ]
+                },
+                {
+                    "if": "snap",
+                    "type": "command",
+                    "commands": ["apt install -y snapd"]
+                },
+                {
+                    "if": "appimage",
+                    "type": "command",
+                    "commands": ["apt install -y fuse3 libfuse2"]
+                }
+            ]
+        },
         "apps": {
             "template": "applications",
             "icon": "org.gnome.Software-symbolic",
@@ -162,72 +226,6 @@
                     "if": "utilities",
                     "type": "command",
                     "commands": ["flatpak install org.gnome.Geary || snap install snapd"]
-                }
-            ]
-        },
-        
-        "welcome": {
-            "template": "welcome"
-        },
-        "theme": {
-            "template": "theme"
-        },
-        "packages": {
-            "template": "preferences",
-            "icon": "vanilla-package-symbolic",
-            "title": "Package Manager",
-            "description": "Choose one or more package managers to install",
-            "without_selection": {
-                "allowed": true,
-                "message": "You have chosen not to install any package manager, you will only be able to install packages using the package manager (apx).\n\nGNOME Software will be disabled since it is not compatible with the On-Demand Immutability.",
-                "title": "No package manager selected",
-                "final": [
-                    {
-                        "if": "warp::immutability",
-                        "type": "command",
-                        "commands": [
-                            "apt remove -y gnome-software"
-                        ]
-                    }
-                ]
-            },
-            "preferences": [
-                {
-                    "id": "flatpak",
-                    "title": "Flatpak",
-                    "subtitle": "Manage and configure Flatpaks and the Flathub repository.",
-                    "default": true
-                },
-                {
-                    "id": "snap",
-                    "title": "Snap",
-                    "subtitle": "Manage and configure Snaps and the Snapcraft repository."
-                },
-                {
-                    "id": "appimage",
-                    "title": "AppImage",
-                    "subtitle": "Install necessary dependencies to run AppImages.",
-                    "default": true
-                }
-            ],
-            "final": [
-                {
-                    "if": "flatpak",
-                    "type": "command",
-                    "commands": [
-                        "apt install -y flatpak gnome-software-plugin-flatpak",
-                        "!outRun echo '[Desktop Entry]\nType=Application\nExec=kgx -e bash -c \"echo 'Configuring Flathub..' && flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo && rm -f ~/.config/autostart/flathub.desktop && echo 'Flathub installed successfully' || echo 'Failed installing Flathub. Are you connected to the internet?'\"\nName=Flatpak Flathub\nComment=Add Flathub repository to Flatpak\n' > ~/.config/autostart/flathub.desktop"
-                    ]
-                },
-                {
-                    "if": "snap",
-                    "type": "command",
-                    "commands": ["apt install -y snapd"]
-                },
-                {
-                    "if": "appimage",
-                    "type": "command",
-                    "commands": ["apt install -y fuse3 libfuse2"]
                 }
             ]
         },
