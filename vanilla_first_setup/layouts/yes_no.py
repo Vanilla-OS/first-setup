@@ -43,6 +43,10 @@ class VanillaLayoutYesNo(Adw.Bin):
         self.btn_yes.connect("clicked", self.__on_response, True)
         self.btn_no.connect("clicked", self.__on_response, False)
         self.btn_info.connect("clicked", self.__on_info)
+    
+    @property
+    def step_id(self):
+        return self.__key
 
     def __build_ui(self):
         self.status_page.set_icon_name(self.__step["icon"])

@@ -38,6 +38,10 @@ class VanillaLayoutPreferences(Adw.Bin):
 
         # signals
         self.btn_next.connect("clicked", self.__next_step)
+    
+    @property
+    def step_id(self):
+        return self.__key
 
     def __build_ui(self):
         self.status_page.set_icon_name(self.__step["icon"])

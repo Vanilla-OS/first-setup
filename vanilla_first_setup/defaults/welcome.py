@@ -79,6 +79,10 @@ class VanillaDefaultWelcome(Adw.Bin):
 
         # set distro logo
         self.status_page.set_icon_name(self.__distro_info["logo"])
+    
+    @property
+    def step_id(self):
+        return self.__key
 
     def __start_welcome_animation(self):
         def change_langs():

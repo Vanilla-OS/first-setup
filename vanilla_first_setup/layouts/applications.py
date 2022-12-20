@@ -38,6 +38,10 @@ class VanillaLayoutApplications(Adw.Bin):
 
         # signals
         self.btn_next.connect("clicked", self.__next_step)
+    
+    @property
+    def step_id(self):
+        return self.__key
 
     def __build_ui(self):
         self.status_page.set_icon_name(self.__step["icon"])
@@ -46,13 +50,13 @@ class VanillaLayoutApplications(Adw.Bin):
         selection_dialogs = []
 
         def present_customize(widget, dialog):
-                dialog.show()
+            dialog.show()
+            print(self.__window.builder.get_temp_finals("packages"))
 
         def close_customize(widget, dialog):
             dialog.hide()
 
         for item in self.__step["bundles"]:
-
             _selection_dialog = VanillaDialog(
                     self.__window,
                     "Select Applications",
@@ -104,8 +108,8 @@ class VanillaLayoutApplications(Adw.Bin):
 
             for app in item["applications"]:
                 _apps_action_row = Adw.ActionRow(
-                title=app["name"],
-                icon_name=app["icon"]
+                    title=app["name"],
+                    icon_name=app["icon"]
                 )
                 _app_switcher = Gtk.Switch()
                 _app_switcher.set_active(True)
