@@ -159,6 +159,8 @@ class VanillaLayoutApplications(Adw.Bin):
         for _id, switcher, index in self.__register_widgets:
             if switcher.get_active() == True:
                 for app in self.__step["bundles"][index]["applications"]:
+                    if "active" not in app.keys():
+                        app["active"] = True
                     finals["vars"][app["name"]] = app["active"]
             else:
                 for app in self.__step["bundles"][index]["applications"]:
