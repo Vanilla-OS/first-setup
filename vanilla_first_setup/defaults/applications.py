@@ -156,9 +156,21 @@ class VanillaLayoutApplications(Adw.Bin):
     def get_finals(self):
         finals = {"vars": {}, "funcs": [x for x in self.__step["final"]]}
 
+        if self.__window.builder.get_temp_finals("packages")["vars"]["flatpak"] == True:
+            package_manager = "flatpak"
+        elif self.__window.builder.get_temp_finals("packages")["vars"]["snap"] == True:
+            try:
+                package_manager = "snap"
+            except KeyError:
+                pass
+        else:
+            package_manager = None
+
         for _id, switcher, index in self.__register_widgets:
             if switcher.get_active() == True:
                 for app in self.__step["bundles"][index]["applications"]:
+                    if package_manager not in app.keys():
+                        app["active"] = False
                     if "active" not in app.keys():
                         app["active"] = True
                     finals["vars"][app["name"]] = app["active"]
