@@ -48,6 +48,7 @@ class VanillaLayoutApplications(Adw.Bin):
         self.status_page.set_title(self.__step["title"])
         self.status_page.set_description(self.__step["description"])
         selection_dialogs = []
+        _index = 0
 
         def present_customize(widget, dialog, apps_list, item):
             for app in item["applications"]:
@@ -146,8 +147,8 @@ class VanillaLayoutApplications(Adw.Bin):
             
             self.bundles_list.add(_action_row)
 
-            self.__register_widgets.append((item["id"], _switcher))
-
+            self.__register_widgets.append((item["id"], _switcher, _index))
+            _index += 1
             
     def __next_step(self, widget):
         self.__window.next()
@@ -155,12 +156,12 @@ class VanillaLayoutApplications(Adw.Bin):
     def get_finals(self):
         finals = {"vars": {}, "funcs": [x for x in self.__step["final"]]}
 
-        for _id, switcher in self.__register_widgets:
+        for _id, switcher, index in self.__register_widgets:
             if switcher.get_active() == True:
-                for app in _id["applications"]:
-                    finals["vars"][app] = app["active"]
+                for app in self.__step["bundles"][index]["applications"]:
+                    finals["vars"][app["name"]] = app["active"]
             else:
-                for app in _id["applications"]:
-                    finals["vars"][app] = False
+                for app in self.__step["bundles"][index]["applications"]:
+                    finals["vars"][app["name"]] = False
 
         return finals

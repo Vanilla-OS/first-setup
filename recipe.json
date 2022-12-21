@@ -220,92 +220,97 @@
                 {
                     "if" : "Calculator",
                     "type" :  "command",
-                    "commands" : "flatpak install org.gnome.Calculator || snap install gnome-calculator"
+                    "commands" : ["flatpak --user install org.gnome.Calculator || snap install gnome-calculator"]
                 },
                 {
                     "if" : "Calendar",
                     "type" :  "command",
-                    "commands" : "flatpak install org.gnome.Calendar"
+                    "commands" : ["flatpak --user install org.gnome.Calendar"]
                 },
                 {
                     "if" : "Characters",
                     "type" :  "command",
-                    "commands" : "flatpak install org.gnome.Characters || snap install gnome-characters"
+                    "commands" : ["flatpak --user install org.gnome.Characters || snap install gnome-characters"]
                 },
                 {
                     "if" : "Cheese",
                     "type" :  "command",
-                    "commands" : "flatpak install org.gnome.Cheese || snap install cheese"
+                    "commands" : ["flatpak --user install org.gnome.Cheese || snap install cheese"]
                 },
                 {
                     "if" : "Clocks",
                     "type" :  "command",
-                    "commands" : "flatpak install org.gnome.clocks || snap install gnome-clocks"
+                    "commands" : ["flatpak --user install org.gnome.clocks || snap install gnome-clocks"]
                 },
                 {
                     "if" : "Contacts",
                     "type" :  "command",
-                    "commands" : "flatpak install org.gnome.Contacts || snap install gnome-contacts"
+                    "commands" : ["flatpak --user install org.gnome.Contacts || snap install gnome-contacts"]
                 },
                 {
-                    "if" : "Disk Usage Alanyzer",
+                    "if" : "Disk Usage Analyzer",
                     "type" :  "command",
-                    "commands" : "flatpak install org.gnome.baobab"
+                    "commands" : ["flatpak --user install org.gnome.baobab"]
                 },
                 {
-                    "if" : "Evince",
+                    "if" : "Document Viewer",
                     "type" :  "command",
-                    "commands" : "flatpak install org.gnome.Evince || snap install evince"
+                    "commands" : ["flatpak --user install org.gnome.Evince || snap install evince"]
                 },
                 {
                     "if" : "Extensions",
                     "type" :  "command",
-                    "commands" : "flatpak install org.gnome.Extensions"
+                    "commands" : ["flatpak --user install org.gnome.Extensions"]
                 },
                 {
                     "if" : "Fonts",
                     "type" :  "command",
-                    "commands" : "flatpak install org.gnome.Fonts"
+                    "commands" : ["flatpak --user install org.gnome.Fonts"]
                 },
                 {
                     "if" : "Image Viewer",
                     "type" :  "command",
-                    "commands" : "flatpak install org.gnome.eog || snap install eog"
+                    "commands" : ["flatpak --user install org.gnome.eog || snap install eog"]
                 },
                 {
                     "if" : "Logs",
                     "type" :  "command",
-                    "commands" : "flatpak install org.gnome.Logs || snap install gnome-logs"
+                    "commands" : ["flatpak --user install org.gnome.Logs || snap install gnome-logs"]
                 },
                 {
                     "if" : "Maps",
                     "type" :  "command",
-                    "commands" : "flatpak install org.gnome.Maps"
+                    "commands" : ["flatpak --user install org.gnome.Maps"]
                 },
                 {
                     "if" : "Music",
                     "type" :  "command",
-                    "commands" : "flatpak install org.gnome.Music"
+                    "commands" : ["flatpak --user install org.gnome.Music"]
                 },
                 {
-                    "name" : "Photos",
-                    "icon" :  "org.gnome.Photos",
-                    "flatpak" : "org.gnome.Photos"
+                    "if" : "Photos",
+                    "type" :  "command",
+                    "commands" : ["flatpak --user install org.gnome.Photos"]
                 },
                 {
                     "if" : "Text Editor",
                     "type" :  "command",
-                    "commands" : "flatpak install org.gnome.TextEditor"
+                    "commands" : ["flatpak --user install org.gnome.TextEditor"]
                 },
                 {
                     "if" : "Videos",
                     "type" :  "command",
-                    "commands" : "flatpak install org.gnome.Totem"
+                    "commands" : ["flatpak --user install org.gnome.Totem"]
                 },
                 {
                     "if" : "Weather",
                     "type" :  "command",
-                    "commands" : "flatpak install org.gnome.Weather || snap install gnome-weather"
+                    "commands" : ["flatpak --user install org.gnome.Weather || snap install gnome-weather"]
+                },
+                {
+                    "if" : "Bottles",
+                    "type" :  "command",
+                    "commands" : ["flatpak --user install com.usebottles.bottles"]
                 }
             ]
         },
