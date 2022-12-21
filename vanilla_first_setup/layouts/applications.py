@@ -49,11 +49,48 @@ class VanillaLayoutApplications(Adw.Bin):
         self.status_page.set_description(self.__step["description"])
         selection_dialogs = []
 
-        def present_customize(widget, dialog):
+        def present_customize(widget, dialog, apps_list, item):
+            for app in item["applications"]:
+                try:
+                    apps_list.remove(app["apps_action_row"])
+                except KeyError:
+                    pass
+                if self.__window.builder.get_temp_finals("packages")["vars"]["flatpak"] == True:
+                    package_manager = "flatpak"
+                elif self.__window.builder.get_temp_finals("packages")["vars"]["snap"] == True:
+                    try:
+                        package_manager = "snap"
+                    except KeyError:
+                        continue
+                else:
+                    continue
+                try:
+                    if app[package_manager]:
+                        _apps_action_row = Adw.ActionRow(
+                            title=app["name"],
+                            icon_name=app["icon"]
+                        )
+                        _app_switcher = Gtk.Switch()
+                        _app_switcher.set_active(True)
+                        _app_switcher.set_valign(Gtk.Align.CENTER)
+                        _apps_action_row.add_suffix(_app_switcher)
+                        apps_list.add(_apps_action_row)
+                        app["apps_action_row"] = _apps_action_row
+                        app["switch"] = _app_switcher
+                        try:
+                            app["switch"].set_active(app["active"])
+                        except KeyError:
+                            pass
+                except KeyError:
+                    continue
             dialog.show()
-            print(self.__window.builder.get_temp_finals("packages"))
 
-        def close_customize(widget, dialog):
+        def close_customize(widget, dialog, apps_list, item):
+            dialog.hide()
+        
+        def apply_preferences(widget, dialog, apps_list, item):
+            for app in item["applications"]:
+                app["active"] = app["switch"].get_active()
             dialog.hide()
 
         for item in self.__step["bundles"]:
@@ -103,19 +140,9 @@ class VanillaLayoutApplications(Adw.Bin):
             _customize.add_css_class("flat")
             _action_row.add_suffix(_customize)
 
-            _customize.connect("clicked", present_customize, selection_dialogs[-1])
-            _cancel_button.connect("clicked", close_customize, selection_dialogs[-1])
-
-            for app in item["applications"]:
-                _apps_action_row = Adw.ActionRow(
-                    title=app["name"],
-                    icon_name=app["icon"]
-                )
-                _app_switcher = Gtk.Switch()
-                _app_switcher.set_active(True)
-                _app_switcher.set_valign(Gtk.Align.CENTER)
-                _apps_action_row.add_suffix(_app_switcher)
-                _apps_list.add(_apps_action_row)
+            _customize.connect("clicked", present_customize, selection_dialogs[-1], _apps_list, item)
+            _cancel_button.connect("clicked", close_customize, selection_dialogs[-1], _apps_list, item)
+            _apply_button.connect("clicked", apply_preferences, selection_dialogs[-1], _apps_list, item)
             
             self.bundles_list.add(_action_row)
 
@@ -129,6 +156,11 @@ class VanillaLayoutApplications(Adw.Bin):
         finals = {"vars": {}, "funcs": [x for x in self.__step["final"]]}
 
         for _id, switcher in self.__register_widgets:
-            finals["vars"][_id] = switcher.get_active()
+            if switcher.get_active() == True:
+                for app in _id["applications"]:
+                    finals["vars"][app] = app["active"]
+            else:
+                for app in _id["applications"]:
+                    finals["vars"][app] = False
 
         return finals
