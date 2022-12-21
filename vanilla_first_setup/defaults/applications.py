@@ -86,7 +86,7 @@ class VanillaLayoutApplications(Adw.Bin):
                     continue
             dialog.show()
 
-        def close_customize(widget, dialog, apps_list, item):
+        def close_customize(widget, dialog):
             dialog.hide()
         
         def apply_preferences(widget, dialog, apps_list, item):
@@ -142,7 +142,7 @@ class VanillaLayoutApplications(Adw.Bin):
             _action_row.add_suffix(_customize)
 
             _customize.connect("clicked", present_customize, selection_dialogs[-1], _apps_list, item)
-            _cancel_button.connect("clicked", close_customize, selection_dialogs[-1], _apps_list, item)
+            _cancel_button.connect("clicked", close_customize, selection_dialogs[-1])
             _apply_button.connect("clicked", apply_preferences, selection_dialogs[-1], _apps_list, item)
             
             self.bundles_list.add(_action_row)

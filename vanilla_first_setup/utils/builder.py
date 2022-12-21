@@ -26,7 +26,7 @@ from vanilla_first_setup.defaults.theme import VanillaDefaultTheme
 
 from vanilla_first_setup.layouts.preferences import VanillaLayoutPreferences
 from vanilla_first_setup.layouts.yes_no import VanillaLayoutYesNo
-from vanilla_first_setup.layouts.applications import VanillaLayoutApplications
+from vanilla_first_setup.defaults.applications import VanillaLayoutApplications
 
 
 logger = logging.getLogger("FirstSetup::Builder")

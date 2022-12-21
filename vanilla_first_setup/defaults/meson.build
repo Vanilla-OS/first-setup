@@ -5,6 +5,7 @@ sources = [
   '__init__.py',
   'welcome.py',
   'theme.py',
+  'applications.py'
 ]
 
 install_data(sources, install_dir: defaultsdir)

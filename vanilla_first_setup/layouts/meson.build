@@ -4,8 +4,7 @@ layoutsdir = join_paths(pkgdatadir, 'vanilla_first_setup/layouts')
 sources = [
   '__init__.py',
   'preferences.py',
-  'yes_no.py',
-  'applications.py'
+  'yes_no.py'
 ]
 
 install_data(sources, install_dir: layoutsdir)
