@@ -162,7 +162,7 @@ class VanillaLayoutApplications(Adw.Bin):
             try:
                 package_manager = "snap"
             except KeyError:
-                pass
+                package_manager = None
         else:
             package_manager = None
 
