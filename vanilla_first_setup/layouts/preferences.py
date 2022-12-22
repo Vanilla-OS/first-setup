@@ -14,10 +14,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import time
-from gi.repository import Gtk, Gio, GLib, Adw
+from gi.repository import Gtk, Adw
 
-from vanilla_first_setup.utils.run_async import RunAsync
 from vanilla_first_setup.dialog import VanillaDialog
 
 
@@ -40,6 +38,10 @@ class VanillaLayoutPreferences(Adw.Bin):
 
         # signals
         self.btn_next.connect("clicked", self.__next_step)
+    
+    @property
+    def step_id(self):
+        return self.__key
 
     def __build_ui(self):
         self.status_page.set_icon_name(self.__step["icon"])

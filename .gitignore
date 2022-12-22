@@ -7,3 +7,4 @@ debian/vanilla-first-setup
 debian/.debhelper
 */__pycache__
 *.pyc
+/localbuild

@@ -18,9 +18,6 @@ import os
 import sys
 import logging
 import subprocess
-import json
-
-from gi.repository import Gio
 
 from vanilla_first_setup.utils.recipe import RecipeLoader
 
@@ -29,6 +26,7 @@ from vanilla_first_setup.defaults.theme import VanillaDefaultTheme
 
 from vanilla_first_setup.layouts.preferences import VanillaLayoutPreferences
 from vanilla_first_setup.layouts.yes_no import VanillaLayoutYesNo
+from vanilla_first_setup.defaults.applications import VanillaLayoutApplications
 
 
 logger = logging.getLogger("FirstSetup::Builder")
@@ -38,7 +36,8 @@ templates = {
     "welcome": VanillaDefaultWelcome,
     "theme": VanillaDefaultTheme,
     "preferences": VanillaLayoutPreferences,
-    "yes-no": VanillaLayoutYesNo
+    "yes-no": VanillaLayoutYesNo,
+    "applications": VanillaLayoutApplications
 }
 
 
@@ -89,6 +88,13 @@ class Builder:
             if step["template"] in templates:
                 _widget = templates[step["template"]](self.__window, self.distro_info, key, step)
                 self.__register_widgets.append(_widget)
+    
+    def get_temp_finals(self, step_id: str):
+        for widget in self.__register_widgets:
+            if widget.step_id == step_id:
+                return widget.get_finals()
+
+        return None
 
     def get_finals(self):
         self.__register_finals = []

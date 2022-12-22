@@ -15,7 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import time
-from gi.repository import Gtk, Gio, GLib, Adw
+from gi.repository import Gtk, Adw
 
 from vanilla_first_setup.utils.builder import Builder
 from vanilla_first_setup.utils.parser import Parser
@@ -52,6 +52,10 @@ class VanillaWindow(Adw.ApplicationWindow):
 
         # connect system signals
         self.__connect_signals()
+    
+    @property
+    def builder(self):
+        return self.__builder
 
     def __connect_signals(self):
         self.btn_back.connect("clicked", self.back)

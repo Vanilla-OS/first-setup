@@ -19,8 +19,6 @@ import sys
 import logging
 import json
 
-from gi.repository import Gio
-
 
 logger = logging.getLogger("FirstSetup::RecipeLoader")
 

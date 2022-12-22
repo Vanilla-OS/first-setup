@@ -14,8 +14,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import time
-from gi.repository import Gtk, Gio, GLib, Adw
+from gi.repository import Gtk, Gio
 
 
 @Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/default-theme.ui')
@@ -38,6 +37,10 @@ class VanillaDefaultTheme(Gtk.Box):
         self.btn_next.connect("clicked", self.__window.next)
         self.btn_default.connect('toggled', self.__set_theme, "light")
         self.btn_dark.connect('toggled', self.__set_theme, "dark")
+    
+    @property
+    def step_id(self):
+        return self.__key
 
     def __build_ui(self):
         self.btn_dark.set_group(self.btn_default)

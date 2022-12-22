@@ -15,7 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import time
-from gi.repository import Gtk, Gio, GLib, Adw
+from gi.repository import Gtk, GLib, Adw
 
 from vanilla_first_setup.utils.run_async import RunAsync
 
@@ -79,6 +79,10 @@ class VanillaDefaultWelcome(Adw.Bin):
 
         # set distro logo
         self.status_page.set_icon_name(self.__distro_info["logo"])
+    
+    @property
+    def step_id(self):
+        return self.__key
 
     def __start_welcome_animation(self):
         def change_langs():
