@@ -54,6 +54,8 @@ class Processor:
                 for command in next_boot:
                     f.write(f"{command}\n")
 
+                f.write(f"rm -f {next_boot_script_path}\n")
+                f.write(f"rm -f {next_boot_autostart_path}\n")
                 f.flush()
                 f.close()
 
