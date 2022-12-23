@@ -96,9 +96,9 @@
             "description": "Choose which applications to install.",
             "bundles": [
                 {
-                    "id": "essential-apps",
-                    "title": "Essential Applications",
-                    "subtitle": "Core GNOME apps like Calendar or Calculator.",
+                    "id": "core-apps",
+                    "title": "Core Applications",
+                    "subtitle": "Essential GNOME apps like Calendar or Calculator.",
                     "default": true,
                     "applications" : [
                         {
@@ -129,6 +129,11 @@
                             "icon" :  "org.gnome.clocks",
                             "flatpak" : true,
                             "snap" : true
+                        },
+                        {
+                            "name" : "Connections",
+                            "icon" :  "org.gnome.Connections",
+                            "flatpak" : true 
                         },
                         {
                             "name" : "Contacts",
@@ -203,15 +208,61 @@
                     ]
                 },
                 {
+                    "id": "office",
+                    "title": "Office",
+                    "subtitle": "The LibreOffice suite.",
+                    "default": false,
+                    "applications" : [
+                        {
+                            "name" : "LibreOffice",
+                            "icon" : "org.libreoffice.LibreOffice",
+                            "flatpak": true,
+                            "snap" : true
+                        }
+                    ]
+                },
+                {
                     "id": "utilities",
                     "title": "Common Utilities",
-                    "subtitle": "Useful utilities like Bottles.",
-                    "default": true,
+                    "subtitle": "Useful utilities like Bottles or Sound Recorder.",
+                    "default": false,
                     "applications" : [
                         {
                             "name" : "Bottles",
                             "icon" :  "com.usebottles.bottles",
-                            "flatpak" : "com.usebottles.bottles"
+                            "flatpak" : true
+                        },
+                        {
+                            "name" : "Boxes",
+                            "icon" :  "org.gnome.Boxes",
+                            "flatpak" : true,
+                            "snap" : true
+                        },
+                        {
+                            "name" : "Flatseal",
+                            "icon" :  "com.github.tchx84.Flatseal",
+                            "flatpak" : true
+                        },
+                        {
+                            "name" : "Metadata Cleaner",
+                            "icon" :  "fr.romainvigier.MetadataCleaner",
+                            "flatpak" : true
+                        },
+                        {
+                            "name" : "Rnote",
+                            "icon" : "com.github.flxzt.rnote",
+                            "flatpak" : true
+                        },
+                        {
+                            "name" : "Shortwave",
+                            "icon" : "de.haeckerfelix.Shortwave",
+                            "flatpak" : true,
+                            "snap" : true
+                        },
+                        {
+                            "name" : "Sound Recorder",
+                            "icon" : "org.gnome.SoundRecorder",
+                            "flatpak" : true
                         }
                     ]
                 }
@@ -241,6 +292,11 @@
                     "if" : "Clocks",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.clocks || snap install gnome-clocks"]
+                },
+                {
+                    "if" : "Connections",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.Connections"]
                 },
                 {
                     "if" : "Contacts",
@@ -308,9 +364,44 @@
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Weather || snap install gnome-weather"]
                 },
                 {
+                    "if" : "LibreOffice",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y org.libreoffice.LibreOffice || snap install libreoffice"]
+                },
+                {
                     "if" : "Bottles",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y com.usebottles.bottles"]
+                },
+                {
+                    "if" : "Boxes",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.Boxes || snap install gnome-boxes"]
+                },
+                {
+                    "if" : "Flatseal",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y com.github.tchx84.Flatseal"]
+                },
+                {
+                    "if" : "Metadata Cleaner",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y fr.romainvigier.MetadataCleaner"]
+                },
+                {
+                    "if" : "Rnote",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y com.github.flxzt.rnote"]
+                },
+                {
+                    "if" : "Shortwave",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y de.haeckerfelix.Shortwave || snap install shortwave"]
+                },
+                {
+                    "if" : "Sound Recorder",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.SoundRecorder"]
                 }
             ]
         },
