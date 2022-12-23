@@ -15,7 +15,7 @@
              "icon": "security-medium-symbolic",
              "title": "Immutable and Atomic",
              "description": "Vanilla OS is an immutable and atomic Linux distribution. It is based on Ubuntu and uses ABRoot to provide atomic transactions.",
-             "read_more_link": "https://documentation.vanillaos.org/docs/abroot/"
+             "read_more_link": "https://documentation.vanillaos.org/docs/ABRoot/"
         },
         "apx": {
              "icon": "vanilla-container-terminal-symbolic",
