@@ -14,9 +14,38 @@
     <file>gtk/layout-yes-no.ui</file>
     <file>gtk/layout-applications.ui</file>
   </gresource>
-  <gresource prefix="/io/github/vanilla-os/FirstSetup/icons/scalable/actions/">
+  <gresource prefix="/io/github/vanilla-os/FirstSetup/icons/scalable/actions">
     <file preprocess="xml-stripblanks">../data/icons/hicolor/symbolic/actions/vanilla-package-symbolic.svg</file>
     <file preprocess="xml-stripblanks">../data/icons/hicolor/symbolic/actions/vanilla-container-terminal-symbolic.svg</file>
     <file preprocess="xml-stripblanks">../data/icons/hicolor/symbolic/actions/vanilla-puzzle-piece-symbolic.svg</file>
+  </gresource>
+  <gresource prefix="/io/github/vanilla-os/FirstSetup">
+    <file>assets/bundle-app-icons/com.github.flxzt.rnote.png</file>
+    <file>assets/bundle-app-icons/com.github.tchx84.Flatseal.png</file>
+    <file>assets/bundle-app-icons/com.usebottles.bottles.png</file>
+    <file>assets/bundle-app-icons/de.haeckerfelix.Shortwave.png</file>
+    <file>assets/bundle-app-icons/fr.romainvigier.MetadataCleaner.png</file>
+    <file>assets/bundle-app-icons/org.gnome.baobab.png</file>
+    <file>assets/bundle-app-icons/org.gnome.Boxes.png</file>
+    <file>assets/bundle-app-icons/org.gnome.Calculator.png</file>
+    <file>assets/bundle-app-icons/org.gnome.Calendar.png</file>
+    <file>assets/bundle-app-icons/org.gnome.Characters.png</file>
+    <file>assets/bundle-app-icons/org.gnome.Cheese.png</file>
+    <file>assets/bundle-app-icons/org.gnome.clocks.png</file>
+    <file>assets/bundle-app-icons/org.gnome.Connections.png</file>
+    <file>assets/bundle-app-icons/org.gnome.Contacts.png</file>
+    <file>assets/bundle-app-icons/org.gnome.eog.png</file>
+    <file>assets/bundle-app-icons/org.gnome.Evince.png</file>
+    <file>assets/bundle-app-icons/org.gnome.Extensions.png</file>
+    <file>assets/bundle-app-icons/org.gnome.font-viewer.png</file>
+    <file>assets/bundle-app-icons/org.gnome.Logs.png</file>
+    <file>assets/bundle-app-icons/org.gnome.Maps.png</file>
+    <file>assets/bundle-app-icons/org.gnome.Music.png</file>
+    <file>assets/bundle-app-icons/org.gnome.Photos.png</file>
+    <file>assets/bundle-app-icons/org.gnome.SoundRecorder.png</file>
+    <file>assets/bundle-app-icons/org.gnome.TextEditor.png</file>
+    <file>assets/bundle-app-icons/org.gnome.Totem.png</file>
+    <file>assets/bundle-app-icons/org.gnome.Weather.png</file>
+    <file>assets/bundle-app-icons/org.libreoffice.LibreOffice.png</file>
   </gresource>
 </gresources>

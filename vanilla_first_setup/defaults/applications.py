@@ -69,8 +69,11 @@ class VanillaLayoutApplications(Adw.Bin):
                     if app[package_manager]:
                         _apps_action_row = Adw.ActionRow(
                             title=app["name"],
-                            icon_name=app["icon"]
                         )
+                        _app_icon = Gtk.Image.new_from_resource("/io/github/vanilla-os/FirstSetup/assets/bundle-app-icons/" + app["icon"] + ".png")
+                        _app_icon.set_icon_size(Gtk.IconSize.LARGE)
+                        _app_icon.add_css_class("lowres-icon")
+                        _apps_action_row.add_prefix(_app_icon)
                         _app_switcher = Gtk.Switch()
                         _app_switcher.set_active(True)
                         _app_switcher.set_valign(Gtk.Align.CENTER)

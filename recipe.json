@@ -224,7 +224,7 @@
                 {
                     "id": "utilities",
                     "title": "Common Utilities",
-                    "subtitle": "Useful utilities like Bottles.",
+                    "subtitle": "Useful utilities like Bottles or Sound Recorder.",
                     "default": false,
                     "applications" : [
                         {
@@ -237,6 +237,11 @@
                             "icon" :  "org.gnome.Boxes",
                             "flatpak" : true,
                             "snap" : true
+                        },
+                        {
+                            "name" : "Flatseal",
+                            "icon" :  "com.github.tchx84.Flatseal",
+                            "flatpak" : true
                         },
                         {
                             "name" : "Metadata Cleaner",
@@ -372,6 +377,11 @@
                     "if" : "Boxes",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Boxes || snap install gnome-boxes"]
+                },
+                {
+                    "if" : "Flatseal",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y com.github.tchx84.Flatseal"]
                 },
                 {
                     "if" : "Metadata Cleaner",
