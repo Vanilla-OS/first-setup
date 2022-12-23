@@ -210,7 +210,7 @@
                 {
                     "id": "office",
                     "title": "Office",
-                    "subtitle": "The LibreOffice Suite.",
+                    "subtitle": "The LibreOffice suite.",
                     "default": false,
                     "applications" : [
                         {
