@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-22 22:16+0200\n"
+"POT-Creation-Date: 2022-12-24 18:22+0530\n"
 "PO-Revision-Date: 2022-11-16 04:15+0000\n"
 "Last-Translator: Luccas Ferreira <mertubeluiz123@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
@@ -24,7 +24,8 @@ msgid "Vanilla OS First Setup"
 msgstr "Primeira Configuração do Vanilla OS"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
-msgid "Tweak your Ubuntu Vanilla GNOME installation."
+#, fuzzy
+msgid "Tweak your Vanilla OS installation."
 msgstr "Ajuste sua instalação Ubuntu com GNOME Vanilla."
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
@@ -56,10 +57,11 @@ msgid "Next"
 msgstr "Próximo"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
-msgid "Showing Informations"
+#, fuzzy
+msgid "Showing Information"
 msgstr "Mostrando informações"
 
-#: vanilla_first_setup/gtk/progress.ui:20
+#: vanilla_first_setup/gtk/progress.ui:26
 msgid "The changes are being applied. Please Wait…"
 msgstr "As alterações estão sendo aplicadas. Por favor aguarde…"
 
@@ -80,7 +82,8 @@ msgid "All done!"
 msgstr "Tudo pronto!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-msgid "Restart your PC to enjoy your Vanila OS experience."
+#, fuzzy
+msgid "Restart your device to enjoy your Vanilla OS experience."
 msgstr "Reinicie seu PC para aproveitar a experiência de seu Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
@@ -91,12 +94,13 @@ msgstr "Sim, habilite"
 msgid "Read More"
 msgstr "Ler mais"
 
-#: vanilla_first_setup/layouts/preferences.py:68
+#: vanilla_first_setup/layouts/preferences.py:70
 msgid "Please select at least one option."
 msgstr "Selecione pelo menos uma opção."
 
 #: vanilla_first_setup/views/done.py:34
-msgid "Restart your PC to enjoy your {} experience."
+#, fuzzy
+msgid "Restart your device to enjoy your {} experience."
 msgstr "Reinicie seu PC para aproveitar a experiência de seu {}."
 
 #: vanilla_first_setup/views/done.py:45

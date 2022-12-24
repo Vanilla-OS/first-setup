@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-22 22:16+0200\n"
+"POT-Creation-Date: 2022-12-24 18:22+0530\n"
 "PO-Revision-Date: 2022-11-06 12:07+0000\n"
 "Last-Translator: Jehu Marcos Herrera Puentes <jehuherrerap@hotmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/es/>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/first-"
+"setup/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,7 +24,8 @@ msgid "Vanilla OS First Setup"
 msgstr "Primera instalación de Vanilla OS"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
-msgid "Tweak your Ubuntu Vanilla GNOME installation."
+#, fuzzy
+msgid "Tweak your Vanilla OS installation."
 msgstr "Modifique la instalación de Ubuntu Vanilla GNOME."
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
@@ -56,10 +57,11 @@ msgid "Next"
 msgstr "Siguiente"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
-msgid "Showing Informations"
+#, fuzzy
+msgid "Showing Information"
 msgstr "Mostrando información"
 
-#: vanilla_first_setup/gtk/progress.ui:20
+#: vanilla_first_setup/gtk/progress.ui:26
 msgid "The changes are being applied. Please Wait…"
 msgstr "Los cambios están siendo aplicados. Por favor espere…"
 
@@ -80,7 +82,8 @@ msgid "All done!"
 msgstr "¡Todo listo!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-msgid "Restart your PC to enjoy your Vanila OS experience."
+#, fuzzy
+msgid "Restart your device to enjoy your Vanilla OS experience."
 msgstr "Reinicie su ordenador para disfrutar su experiencia en Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
@@ -91,12 +94,13 @@ msgstr "Sí, habilitar"
 msgid "Read More"
 msgstr "Leer más"
 
-#: vanilla_first_setup/layouts/preferences.py:68
+#: vanilla_first_setup/layouts/preferences.py:70
 msgid "Please select at least one option."
 msgstr "Por favor, seleccione al menos una opción."
 
 #: vanilla_first_setup/views/done.py:34
-msgid "Restart your PC to enjoy your {} experience."
+#, fuzzy
+msgid "Restart your device to enjoy your {} experience."
 msgstr "Reinicie su ordenador para disfrutar su {} experiencia."
 
 #: vanilla_first_setup/views/done.py:45
@@ -105,4 +109,5 @@ msgstr "Algo salió mal"
 
 #: vanilla_first_setup/views/done.py:46
 msgid "Please contact the distribution developers."
-msgstr "Por favor, póngase en contacto con los desarrolladores de la distribución."
+msgstr ""
+"Por favor, póngase en contacto con los desarrolladores de la distribución."

@@ -10,10 +10,12 @@ vanilla_first_setup/gtk/window.ui
 vanilla_first_setup/gtk/default-welcome.ui
 vanilla_first_setup/gtk/done.ui
 vanilla_first_setup/gtk/layout-yes-no.ui
+vanilla_first_setup/gtk/layout-applications.ui
 vanilla_first_setup/gtk/tour.ui
 
 vanilla_first_setup/defaults/theme.py
 vanilla_first_setup/defaults/welcome.py
+vanilla_first_setup/defaults/applications.py
 
 vanilla_first_setup/layouts/preferences.py
 vanilla_first_setup/layouts/yes_no.py

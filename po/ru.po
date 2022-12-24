@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-22 22:16+0200\n"
+"POT-Creation-Date: 2022-12-24 18:22+0530\n"
 "PO-Revision-Date: 2022-11-06 00:07+0000\n"
 "Last-Translator: sherichev <s9erx2@yandex.ru>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/ru/>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/vanilla-os/first-"
+"setup/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.14.2\n"
 
 #: data/io.github.vanilla-os.FirstSetup.desktop.in:3
@@ -25,7 +25,8 @@ msgid "Vanilla OS First Setup"
 msgstr "Первоначальная настройка Vanilla OS"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
-msgid "Tweak your Ubuntu Vanilla GNOME installation."
+#, fuzzy
+msgid "Tweak your Vanilla OS installation."
 msgstr "Настройте свою установку Ubuntu Vanilla GNOME."
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
@@ -57,10 +58,11 @@ msgid "Next"
 msgstr "Далее"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
-msgid "Showing Informations"
+#, fuzzy
+msgid "Showing Information"
 msgstr "Отображение информации"
 
-#: vanilla_first_setup/gtk/progress.ui:20
+#: vanilla_first_setup/gtk/progress.ui:26
 msgid "The changes are being applied. Please Wait…"
 msgstr "Изменения применяются. Пожалуйста, подождите…"
 
@@ -81,7 +83,8 @@ msgid "All done!"
 msgstr "Все сделано!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-msgid "Restart your PC to enjoy your Vanila OS experience."
+#, fuzzy
+msgid "Restart your device to enjoy your Vanilla OS experience."
 msgstr "Перезагрузите компьютер, чтобы насладиться работой с Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
@@ -92,12 +95,13 @@ msgstr "Да, включить"
 msgid "Read More"
 msgstr "Подробнее"
 
-#: vanilla_first_setup/layouts/preferences.py:68
+#: vanilla_first_setup/layouts/preferences.py:70
 msgid "Please select at least one option."
 msgstr "Пожалуйста, выберите хотя бы один вариант."
 
 #: vanilla_first_setup/views/done.py:34
-msgid "Restart your PC to enjoy your {} experience."
+#, fuzzy
+msgid "Restart your device to enjoy your {} experience."
 msgstr "Перезагрузите компьютер, чтобы насладиться работой {}."
 
 #: vanilla_first_setup/views/done.py:45
