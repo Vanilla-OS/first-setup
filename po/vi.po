@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-22 22:16+0200\n"
+"POT-Creation-Date: 2022-12-24 18:22+0530\n"
 "PO-Revision-Date: 2022-11-06 12:07+0000\n"
 "Last-Translator: Nguyễn Phú Trọng <minhhoang9105@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/vanilla-os/"
@@ -24,7 +24,8 @@ msgid "Vanilla OS First Setup"
 msgstr "Thiết lập ban đầu cho hệ điều hành Vanilla"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
-msgid "Tweak your Ubuntu Vanilla GNOME installation."
+#, fuzzy
+msgid "Tweak your Vanilla OS installation."
 msgstr "Chỉnh sửa cài đặt Ubuntu Vanilla GNOME của bạn."
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
@@ -56,10 +57,11 @@ msgid "Next"
 msgstr "Tiếp theo"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
-msgid "Showing Informations"
+#, fuzzy
+msgid "Showing Information"
 msgstr "Hiển thị các thông tin"
 
-#: vanilla_first_setup/gtk/progress.ui:20
+#: vanilla_first_setup/gtk/progress.ui:26
 msgid "The changes are being applied. Please Wait…"
 msgstr "Các thay đổi đang được áp dụng. Xin hãy chờ trong giây lát…"
 
@@ -80,7 +82,8 @@ msgid "All done!"
 msgstr "Tất cả đã xong!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-msgid "Restart your PC to enjoy your Vanila OS experience."
+#, fuzzy
+msgid "Restart your device to enjoy your Vanilla OS experience."
 msgstr ""
 "Khởi động lại máy tính của bạn để tận hưởng các trải nghiệm của bạn trên "
 "Vanilla OS."
@@ -93,12 +96,13 @@ msgstr "Được, hãy kích hoạt nó"
 msgid "Read More"
 msgstr "Đọc thêm"
 
-#: vanilla_first_setup/layouts/preferences.py:68
+#: vanilla_first_setup/layouts/preferences.py:70
 msgid "Please select at least one option."
 msgstr "Xin hãy chọn ít nhất một tùy chọn."
 
 #: vanilla_first_setup/views/done.py:34
-msgid "Restart your PC to enjoy your {} experience."
+#, fuzzy
+msgid "Restart your device to enjoy your {} experience."
 msgstr "Khởi động lại máy tính của bạn để tận hưởng trải nghiệm của bạn."
 
 #: vanilla_first_setup/views/done.py:45

@@ -171,7 +171,7 @@
                         {
                             "name" : "Logs",
                             "icon" :  "org.gnome.Logs",
-                            "flatpak" : "org.gnome.Logs",
+                            "flatpak" : true,
                             "snap" : true
                         },
                         {
@@ -447,7 +447,7 @@
                 "info": {
                     "type": "text",
                     "title": "About Open VM Tools",
-                    "text": "Open VM Tools can be used in GNOME Boxes."
+                    "text": "Install Open VM Tools for seamless integration with Virtual machines."
                 }
             },
             "final": [
@@ -469,7 +469,7 @@
                 "info": {
                     "type": "text",
                     "title": "About Restricted Codecs",
-                    "text": "Installs ubuntu-restricted-extras and ubuntu-restricted-addons."
+                    "text": "Install drivers, fonts and other essentials from the ubuntu-restricted-extras and ubuntu-restricted-addons repositories."
                 }
             },
             "final": [

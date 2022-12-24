@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-22 22:16+0200\n"
+"POT-Creation-Date: 2022-12-24 18:22+0530\n"
 "PO-Revision-Date: 2022-11-21 20:00+0000\n"
 "Last-Translator: Rodrigo Pedro <rodrigoresendespedro@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/vanilla-os/"
@@ -24,7 +24,8 @@ msgid "Vanilla OS First Setup"
 msgstr "Primeira configuração do Vanilla OS"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
-msgid "Tweak your Ubuntu Vanilla GNOME installation."
+#, fuzzy
+msgid "Tweak your Vanilla OS installation."
 msgstr "Ajuste a sua instalação do Ubuntu Vanilla GNOME."
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
@@ -56,10 +57,11 @@ msgid "Next"
 msgstr "Seguinte"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
-msgid "Showing Informations"
+#, fuzzy
+msgid "Showing Information"
 msgstr "A mostrar informações"
 
-#: vanilla_first_setup/gtk/progress.ui:20
+#: vanilla_first_setup/gtk/progress.ui:26
 msgid "The changes are being applied. Please Wait…"
 msgstr "As alterações estão a ser aplicadas. Por favor, aguarde…"
 
@@ -80,7 +82,8 @@ msgid "All done!"
 msgstr "Tudo feito!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-msgid "Restart your PC to enjoy your Vanila OS experience."
+#, fuzzy
+msgid "Restart your device to enjoy your Vanilla OS experience."
 msgstr "Reinicie o seu PC para aproveitar a sua experiência com o Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
@@ -91,12 +94,13 @@ msgstr "Sim, ativar"
 msgid "Read More"
 msgstr "Ler Mais"
 
-#: vanilla_first_setup/layouts/preferences.py:68
+#: vanilla_first_setup/layouts/preferences.py:70
 msgid "Please select at least one option."
 msgstr "Selecione pelo menos uma opção."
 
 #: vanilla_first_setup/views/done.py:34
-msgid "Restart your PC to enjoy your {} experience."
+#, fuzzy
+msgid "Restart your device to enjoy your {} experience."
 msgstr "Reinicie o seu PC para aproveitar a sua {} experiência."
 
 #: vanilla_first_setup/views/done.py:45
