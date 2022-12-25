@@ -102,12 +102,6 @@
                     "default": true,
                     "applications" : [
                         {
-                            "name" : "Calculator",
-                            "icon" :  "org.gnome.Calculator",
-                            "flatpak" : true,
-                            "snap" : true
-                        },
-                        {
                             "name" : "Calendar",
                             "icon" :  "org.gnome.Calendar",
                             "flatpak" : true
@@ -153,11 +147,6 @@
                             "snap" : true
                         },
                         {
-                            "name" : "Extensions",
-                            "icon" :  "org.gnome.Extensions",
-                            "flatpak" : true
-                        },
-                        {
                             "name" : "Fonts",
                             "icon" :  "org.gnome.font-viewer",
                             "flatpak" : true
@@ -180,23 +169,8 @@
                             "flatpak" : true
                         },
                         {
-                            "name" : "Music",
-                            "icon" :  "org.gnome.Music",
-                            "flatpak" : true
-                        },
-                        {
-                            "name" : "Photos",
-                            "icon" :  "org.gnome.Photos",
-                            "flatpak" : true
-                        },
-                        {
                             "name" : "Text Editor",
                             "icon" :  "org.gnome.TextEditor",
-                            "flatpak" : true
-                        },
-                        {
-                            "name" : "Videos",
-                            "icon" :  "org.gnome.Totem",
                             "flatpak" : true
                         },
                         {
@@ -269,11 +243,6 @@
             ],
             "final": [
                 {
-                    "if" : "Calculator",
-                    "type" :  "command",
-                    "commands" : ["!nextBoot flatpak install -y org.gnome.Calculator || snap install gnome-calculator"]
-                },
-                {
                     "if" : "Calendar",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Calendar"]
@@ -312,12 +281,7 @@
                     "if" : "Document Viewer",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Evince || snap install evince"]
-                },
-                {
-                    "if" : "Extensions",
-                    "type" :  "command",
-                    "commands" : ["!nextBoot flatpak install -y org.gnome.Extensions"]
-                },
+                },         
                 {
                     "if" : "Fonts",
                     "type" :  "command",
@@ -339,24 +303,9 @@
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Maps"]
                 },
                 {
-                    "if" : "Music",
-                    "type" :  "command",
-                    "commands" : ["!nextBoot flatpak install -y org.gnome.Music"]
-                },
-                {
-                    "if" : "Photos",
-                    "type" :  "command",
-                    "commands" : ["!nextBoot flatpak install -y org.gnome.Photos"]
-                },
-                {
                     "if" : "Text Editor",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.TextEditor"]
-                },
-                {
-                    "if" : "Videos",
-                    "type" :  "command",
-                    "commands" : ["!nextBoot flatpak install -y org.gnome.Totem"]
                 },
                 {
                     "if" : "Weather",
