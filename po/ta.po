@@ -24,9 +24,8 @@ msgid "Vanilla OS First Setup"
 msgstr "வெண்ணிலா OS முதல் அமைப்பு"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
-#, fuzzy
 msgid "Tweak your Vanilla OS installation."
-msgstr "உங்கள் உபுண்டு வெண்ணிலா GNOME நிறுவலை மாற்றி அமைக்கவும்."
+msgstr "உங்கள் வெண்ணிலா OS நிறுவலை மாற்றி அமையுங்கள்."
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -57,9 +56,8 @@ msgid "Next"
 msgstr "அடுத்தது"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
-#, fuzzy
 msgid "Showing Information"
-msgstr "தகவல்களைக் காட்டுகிறது"
+msgstr "தகவலைக் காட்டுகிறது"
 
 #: vanilla_first_setup/gtk/progress.ui:26
 msgid "The changes are being applied. Please Wait…"
@@ -82,9 +80,8 @@ msgid "All done!"
 msgstr "அனைத்தும் முடிந்தது!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr "உங்கள் வனிலா OS அனுபவத்தை அனுபவிக்க உங்கள் கணினியை மறுதொடக்கம் செய்யவும்."
+msgstr "உங்கள் வெண்ணிலா OS அனுபவத்தை அனுபவிக்க உங்கள் சாதனத்தை மறுதொடக்கம் செய்யவும்."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
@@ -103,19 +100,19 @@ msgid "Your device will be ready soon."
 msgstr ""
 
 #: vanilla_first_setup/layouts/preferences.py:75
+#: vanilla_first_setup/layouts/preferences.py:70
 msgid "Please select at least one option."
 msgstr "குறைந்தபட்சம் ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்."
 
-#: vanilla_first_setup/views/done.py:37
-#, fuzzy
+#: vanilla_first_setup/views/done.py:34
 msgid "Restart your device to enjoy your {} experience."
-msgstr "உங்கள் {} அனுபவத்தை அனுபவிக்க உங்கள் கணினியை மறுதொடக்கம் செய்யவும்."
+msgstr "உங்கள் {} அனுபவத்தை அனுபவிக்க உங்கள் சாதனத்தை மறுதொடக்கம் செய்யவும்."
 
-#: vanilla_first_setup/views/done.py:55
+#: vanilla_first_setup/views/done.py:55 vanilla_first_setup/views/done.py:45
 msgid "Something went wrong"
 msgstr "ஏதோ தவறாகிவிட்டது"
 
-#: vanilla_first_setup/views/done.py:56
+#: vanilla_first_setup/views/done.py:56 vanilla_first_setup/views/done.py:46
 msgid "Please contact the distribution developers."
 msgstr "விநியோக டெவலப்பர்களைத் தொடர்பு கொள்ளவும்."
 
