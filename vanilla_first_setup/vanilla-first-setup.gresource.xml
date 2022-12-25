@@ -27,7 +27,6 @@
     <file>assets/bundle-app-icons/fr.romainvigier.MetadataCleaner.png</file>
     <file>assets/bundle-app-icons/org.gnome.baobab.png</file>
     <file>assets/bundle-app-icons/org.gnome.Boxes.png</file>
-    <file>assets/bundle-app-icons/org.gnome.Calculator.png</file>
     <file>assets/bundle-app-icons/org.gnome.Calendar.png</file>
     <file>assets/bundle-app-icons/org.gnome.Characters.png</file>
     <file>assets/bundle-app-icons/org.gnome.Cheese.png</file>
@@ -36,15 +35,11 @@
     <file>assets/bundle-app-icons/org.gnome.Contacts.png</file>
     <file>assets/bundle-app-icons/org.gnome.eog.png</file>
     <file>assets/bundle-app-icons/org.gnome.Evince.png</file>
-    <file>assets/bundle-app-icons/org.gnome.Extensions.png</file>
     <file>assets/bundle-app-icons/org.gnome.font-viewer.png</file>
     <file>assets/bundle-app-icons/org.gnome.Logs.png</file>
     <file>assets/bundle-app-icons/org.gnome.Maps.png</file>
-    <file>assets/bundle-app-icons/org.gnome.Music.png</file>
-    <file>assets/bundle-app-icons/org.gnome.Photos.png</file>
     <file>assets/bundle-app-icons/org.gnome.SoundRecorder.png</file>
     <file>assets/bundle-app-icons/org.gnome.TextEditor.png</file>
-    <file>assets/bundle-app-icons/org.gnome.Totem.png</file>
     <file>assets/bundle-app-icons/org.gnome.Weather.png</file>
     <file>assets/bundle-app-icons/org.libreoffice.LibreOffice.png</file>
   </gresource>
