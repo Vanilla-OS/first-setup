@@ -98,7 +98,7 @@
                 {
                     "id": "core-apps",
                     "title": "Core Applications",
-                    "subtitle": "Essential GNOME apps like Calendar or Calculator.",
+                    "subtitle": "Essential GNOME apps like Calendar or Document Viewer.",
                     "default": true,
                     "applications" : [
                         {
