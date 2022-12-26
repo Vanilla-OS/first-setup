@@ -67,7 +67,7 @@ class Processor:
                 f.write("[Desktop Entry]\n")
                 f.write("Name=FirstSetup Next Boot\n")
                 f.write("Comment=Run FirstSetup commands at the next boot\n")
-                f.write("Exec=kgx -e bash -c 'sh %s'\n" % next_boot_script_path)
+                f.write("Exec=vanilla-first-setup --run-post-script 'sh %s'\n" % next_boot_script_path)
                 f.write("Terminal=false\n")
                 f.write("Type=Application\n")
                 f.write("X-GNOME-Autostart-enabled=true\n")
