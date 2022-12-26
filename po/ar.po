@@ -25,9 +25,8 @@ msgid "Vanilla OS First Setup"
 msgstr "الإعداد الأولي لنظام التشغيل فانيلا"
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
-#, fuzzy
 msgid "Tweak your Vanilla OS installation."
-msgstr "تعديل تثبيت أوبنتو بواجهة جنوم الخام."
+msgstr "طوَّع تثبيتك لنظام فانيلا."
 
 #: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -51,20 +50,19 @@ msgstr "سمة النظام"
 
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
-msgstr "اختر سمة لون نظامك."
+msgstr "اختر سمة لنظامك."
 
 #: vanilla_first_setup/gtk/default-theme.ui:49
 msgid "Next"
 msgstr "التالي"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
-#, fuzzy
 msgid "Showing Information"
 msgstr "عرض المعلومات"
 
 #: vanilla_first_setup/gtk/progress.ui:26
 msgid "The changes are being applied. Please Wait…"
-msgstr "يتم تطبيق التعديلات. يرجى الانتظار…"
+msgstr "تُطبَّق التعديلات. يرجى الانتظار…"
 
 #: vanilla_first_setup/gtk/window.ui:25
 msgid "Back"
@@ -83,9 +81,8 @@ msgid "All done!"
 msgstr "تم!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr "أعد تشغيل الحاسوب للاستمتاع بتجربة نظام التشغيل فانيلا."
+msgstr "أعد تشغيل الحاسوب للاستمتاع بتجربتك لنظام التشغيل فانيلا."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
@@ -104,19 +101,19 @@ msgid "Your device will be ready soon."
 msgstr ""
 
 #: vanilla_first_setup/layouts/preferences.py:75
+#: vanilla_first_setup/layouts/preferences.py:70
 msgid "Please select at least one option."
 msgstr "يرجى تحديد خيار واحد على الأقل."
 
-#: vanilla_first_setup/views/done.py:37
-#, fuzzy
+#: vanilla_first_setup/views/done.py:34
 msgid "Restart your device to enjoy your {} experience."
-msgstr "أعد تشغيل الحاسوب للاستمتاع بتجربة {}."
+msgstr "أعد تشغيل الحاسوب للاستمتاع بتجربك لـ{}."
 
-#: vanilla_first_setup/views/done.py:55
+#: vanilla_first_setup/views/done.py:55 vanilla_first_setup/views/done.py:45
 msgid "Something went wrong"
 msgstr "هناك خطأ ما"
 
-#: vanilla_first_setup/views/done.py:56
+#: vanilla_first_setup/views/done.py:56 vanilla_first_setup/views/done.py:46
 msgid "Please contact the distribution developers."
 msgstr "يرجى التواصل مع مطوري التوزيعة."
 
