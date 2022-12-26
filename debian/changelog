@@ -1,4 +1,4 @@
-vanilla-first-setup (1.5.0) kinetic; urgency=low
+vanilla-first-setup (1.5.1) kinetic; urgency=low
 
   * Rewrite from scratch to support custom recipes and
     to be more modular.
