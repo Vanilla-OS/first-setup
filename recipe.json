@@ -59,7 +59,8 @@
                 {
                     "id": "snap",
                     "title": "Snap",
-                    "subtitle": "Manage and configure Snaps and the Snapcraft repository."
+                    "subtitle": "Manage and configure Snaps and the Snapcraft repository.",
+                    "disabled": true
                 },
                 {
                     "id": "appimage",

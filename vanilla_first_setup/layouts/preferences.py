@@ -58,6 +58,11 @@ class VanillaLayoutPreferences(Adw.Bin):
             _switcher.set_valign(Gtk.Align.CENTER)
             _action_row.add_suffix(_switcher)
 
+            if item.get("disabled"):
+                _action_row.set_visible(False)
+                _action_row.set_sensitive(False)
+                _switcher.set_sensitive(False)
+
             self.prefs_list.add(_action_row)
 
             self.__register_widgets.append((item["id"], _switcher))
