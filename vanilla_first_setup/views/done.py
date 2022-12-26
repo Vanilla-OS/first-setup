@@ -26,24 +26,35 @@ class VanillaDone(Adw.Bin):
     btn_reboot = Gtk.Template.Child()
     btn_close = Gtk.Template.Child()
 
-    def __init__(self, window, **kwargs):
+    def __init__(self, window, reboot: bool=True, title: str="", description: str="", fail_title: str="", fail_description: str="", **kwargs):
         super().__init__(**kwargs)
         self.__window = window
+        self.__fail_title = fail_title
+        self.__fail_description = fail_description
         
-        self.status_page.set_description(
-            _("Restart your device to enjoy your {} experience.").format(
-                self.__window.recipe["distro_name"]
+        if not title and not description:
+            self.status_page.set_description(
+                _("Restart your device to enjoy your {} experience.").format(
+                    self.__window.recipe["distro_name"]
+                )
             )
-        )
+        else:
+            self.status_page.set_title(title)
+            self.status_page.set_description(description)
 
-        self.btn_reboot.connect("clicked", self.__on_reboot_clicked)
+        if reboot:
+            self.btn_reboot.connect("clicked", self.__on_reboot_clicked)
         self.btn_close.connect("clicked", self.__on_close_clicked)
     
     def set_result(self, result):
         if not result:
             self.status_page.set_icon_name("dialog-error-symbolic")
-            self.status_page.set_title(_("Something went wrong"))
-            self.status_page.set_description(_("Please contact the distribution developers."))
+            if not self.__fail_title and not self.__fail_description:
+                self.status_page.set_title(_("Something went wrong"))
+                self.status_page.set_description(_("Please contact the distribution developers."))
+            else:
+                self.status_page.set_title(self.__fail_title)
+                self.status_page.set_description(self.__fail_description)
             self.btn_reboot.set_visible(False)
             self.btn_close.set_visible(True)
 

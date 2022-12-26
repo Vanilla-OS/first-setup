@@ -24,6 +24,7 @@ from vanilla_first_setup.utils.run_async import RunAsync
 
 from vanilla_first_setup.views.progress import VanillaProgress
 from vanilla_first_setup.views.done import VanillaDone
+from vanilla_first_setup.views.post_script import VanillaPostScript
 
 
 @Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/window.ui')
@@ -36,8 +37,40 @@ class VanillaWindow(Adw.ApplicationWindow):
     btn_back = Gtk.Template.Child()
     toasts = Gtk.Template.Child()
 
-    def __init__(self, **kwargs):
+    def __init__(self, post_script: str, **kwargs):
         super().__init__(**kwargs)
+
+        # prepare a variable for the initialization mode:
+        # 0 = normal
+        # 1 = post script
+        self.__init_mode = 0
+
+        # some modes handle the result on their own, so we set
+        # a new variable where to store the result:
+        # None = no managed result
+        # True/False = managed result
+        self.__last_result = None
+
+        # if a post_script is provided, we are in the post setup
+        # so we can skip the builder and just run the post script
+        # in the Vte terminal
+        if post_script:
+            # set the initialization mode to 1
+            self.__init_mode = 1
+
+            # system views
+            self.__view_done = VanillaDone(self, reboot=False, 
+                title=_("Done!"), description=_("Your device is ready to use."),
+                fail_title=_("Error!"), fail_description=_("Something went wrong."))
+
+            # this builds the UI for the post script only
+            self.__build_post_script_ui(post_script)
+
+            # connect system signals
+            self.__connect_signals()
+
+            return
+
         # this starts the builder and generates the widgets
         # to put in the carousel
         self.__builder = Builder(self)
@@ -52,6 +85,12 @@ class VanillaWindow(Adw.ApplicationWindow):
 
         # connect system signals
         self.__connect_signals()
+
+    def __build_post_script_ui(self, post_script):
+        self.__view_post_script = VanillaPostScript(self, post_script)
+
+        self.carousel.append(self.__view_post_script)
+        self.carousel.append(self.__view_done)
     
     @property
     def builder(self):
@@ -83,13 +122,18 @@ class VanillaWindow(Adw.ApplicationWindow):
             )
 
         def on_done(result, *args):
-            self.__view_done.set_result(result)
+            if self.__init_mode == 0:
+                self.__view_done.set_result(result)
             self.next()
 
         cur_index = self.carousel.get_position()
         page = self.carousel.get_nth_page(cur_index)
 
-        if page not in [self.__view_progress, self.__view_done]:
+        pages_check = [self.__view_done]
+        if self.__init_mode == 0:
+            pages_check.append(self.__view_progress)
+            
+        if page not in pages_check:
             self.btn_back.set_visible(cur_index != 0.0)
             self.carousel_indicator_dots.set_visible(cur_index != 0.0)
             self.headerbar.set_show_end_title_buttons(cur_index != 0.0)
@@ -98,6 +142,13 @@ class VanillaWindow(Adw.ApplicationWindow):
         self.btn_back.set_visible(False)
         self.carousel_indicator_dots.set_visible(False)
         self.headerbar.set_show_end_title_buttons(False)
+
+        # if there is a managed result, we can skip the processing
+        # and manage it directly instead
+        if self.__last_result is not None:
+            self.__view_done.set_result(self.__last_result)
+            self.__last_result = None
+            return
 
         # keep the btn_back button locked if this is the last page
         if page == self.__view_done:
@@ -109,7 +160,10 @@ class VanillaWindow(Adw.ApplicationWindow):
         # run the process in a thread
         RunAsync(process, on_done)
 
-    def next(self, *args):
+    def next(self, result: bool=None, *args):
+        if result is not None:
+            self.__last_result = result
+
         cur_index = self.carousel.get_position()
         page = self.carousel.get_nth_page(cur_index + 1)
         self.carousel.scroll_to(page, True)

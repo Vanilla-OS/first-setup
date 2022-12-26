@@ -6,6 +6,7 @@
     <file>gtk/progress.ui</file>
     <file>gtk/dialog.ui</file>
     <file>gtk/tour.ui</file>
+    <file>gtk/post-script.ui</file>
 
     <file>gtk/default-theme.ui</file>
     <file>gtk/default-welcome.ui</file>

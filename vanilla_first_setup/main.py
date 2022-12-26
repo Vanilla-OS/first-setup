@@ -22,8 +22,9 @@ from gettext import gettext as _
 
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
+gi.require_version('Vte', '3.91')
 
-from gi.repository import Gtk, Gdk, Gio, Adw
+from gi.repository import Gtk, Gdk, Gio, GLib, Adw, Vte, Pango
 from vanilla_first_setup.window import VanillaWindow
 
 
@@ -35,8 +36,29 @@ class FirstSetupApplication(Adw.Application):
 
     def __init__(self):
         super().__init__(application_id='io.github.vanilla-os.FirstSetup',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+                flags=Gio.ApplicationFlags.HANDLES_COMMAND_LINE)
+        self.post_script = None
         self.create_action('quit', self.close, ['<primary>q'])
+        self.__register_arguments()
+
+    def __register_arguments(self):
+        """Register the command line arguments."""
+        self.add_main_option(
+            "run-post-script",
+            ord("p"),
+            GLib.OptionFlags.NONE,
+            GLib.OptionArg.STRING,
+            _("Run a post script"),
+            None
+        )
+
+    def do_command_line(self, command_line):
+        """Handle command line arguments."""
+        options = command_line.get_options_dict()
+        if options.contains("run-post-script"):
+            self.post_script = options.lookup_value("run-post-script").get_string()
+
+        self.activate()
 
     def do_activate(self):
         """
@@ -97,10 +119,10 @@ class FirstSetupApplication(Adw.Application):
             provider=provider,
             priority=Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
         )
-
+    
         win = self.props.active_window
         if not win:
-            win = VanillaWindow(application=self)
+            win = VanillaWindow(application=self, post_script=self.post_script)
         win.present()
 
     def create_action(self, name, callback, shortcuts=None):
