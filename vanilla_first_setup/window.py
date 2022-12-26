@@ -125,14 +125,13 @@ class VanillaWindow(Adw.ApplicationWindow):
             if self.__init_mode == 0:
                 self.__view_done.set_result(result)
             self.next()
-
-        cur_index = self.carousel.get_position()
-        page = self.carousel.get_nth_page(cur_index)
-
+            
         pages_check = [self.__view_done]
         if self.__init_mode == 0:
             pages_check.append(self.__view_progress)
             
+        cur_index = self.carousel.get_position()
+        page = self.carousel.get_nth_page(cur_index)
         if page not in pages_check:
             self.btn_back.set_visible(cur_index != 0.0)
             self.carousel_indicator_dots.set_visible(cur_index != 0.0)
@@ -160,7 +159,7 @@ class VanillaWindow(Adw.ApplicationWindow):
         # run the process in a thread
         RunAsync(process, on_done)
 
-    def next(self, result: bool=None, *args):
+    def next(self, widget: Gtk.Widget=None, result: bool=None, *args):
         if result is not None:
             self.__last_result = result
 
