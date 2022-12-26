@@ -44,6 +44,8 @@ class VanillaDone(Adw.Bin):
 
         if reboot:
             self.btn_reboot.connect("clicked", self.__on_reboot_clicked)
+        else:
+            self.btn_close.set_visible(True)
         self.btn_close.connect("clicked", self.__on_close_clicked)
     
     def set_result(self, result):
