@@ -11,6 +11,18 @@
         "apt install -f"
     ],
     "tour": {
+        "get-involved": {
+             "icon": "system-users-symbolic",
+             "title": "Get Involved",
+             "description": "Vanilla OS is a community project. You can contribute to the project by reporting bugs, suggesting new features, or even by writing code.",
+             "read_more_link": "https://vanillaos.org/get-involved"
+        },
+        "community": {
+             "icon": "help-faq-symbolic",
+             "title": "Join The Community",
+             "description": "Our community is active on Discord. You can join us to ask questions, get help, or just to chat with other users.",
+             "read_more_link": "https://discord.gg/3cD2Q7Ht3S"
+        },
         "abroot": {
              "icon": "security-medium-symbolic",
              "title": "Immutable and Atomic",
