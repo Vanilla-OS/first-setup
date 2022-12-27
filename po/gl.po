@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-24 18:22+0530\n"
+"POT-Creation-Date: 2022-12-27 20:42+0530\n"
 "PO-Revision-Date: 2022-12-10 23:50+0000\n"
 "Last-Translator: Martin Meizoso <martinmeizoso@gmail.com>\n"
 "Language-Team: Galician <https://hosted.weblate.org/projects/vanilla-os/"
@@ -94,19 +94,48 @@ msgstr "Si, actívao"
 msgid "Read More"
 msgstr "Leer Maís"
 
-#: vanilla_first_setup/layouts/preferences.py:70
+#: vanilla_first_setup/gtk/post-script.ui:11
+msgid "Finalizing"
+msgstr ""
+
+#: vanilla_first_setup/gtk/post-script.ui:12
+msgid "Your device will be ready soon."
+msgstr ""
+
+#: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
 msgstr "Seleccione polo menos unha opción."
 
-#: vanilla_first_setup/views/done.py:34
+#: vanilla_first_setup/views/done.py:37
 #, fuzzy
 msgid "Restart your device to enjoy your {} experience."
 msgstr "Reinicia o teu PC para ter a túa experiencia {}."
 
-#: vanilla_first_setup/views/done.py:45
+#: vanilla_first_setup/views/done.py:55
 msgid "Something went wrong"
 msgstr "Algo saíu mal"
 
-#: vanilla_first_setup/views/done.py:46
+#: vanilla_first_setup/views/done.py:56
 msgid "Please contact the distribution developers."
 msgstr "Póñase en contacto cos desenvolvedores da distribución."
+
+#: vanilla_first_setup/main.py:51
+msgid "Run a post script"
+msgstr ""
+
+#: vanilla_first_setup/window.py:63
+msgid "Done!"
+msgstr ""
+
+#: vanilla_first_setup/window.py:63
+msgid "Your device is ready to use."
+msgstr ""
+
+#: vanilla_first_setup/window.py:64
+msgid "Error!"
+msgstr ""
+
+#: vanilla_first_setup/window.py:64
+#, fuzzy
+msgid "Something went wrong."
+msgstr "Algo saíu mal"

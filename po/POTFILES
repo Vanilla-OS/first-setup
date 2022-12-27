@@ -12,6 +12,7 @@ vanilla_first_setup/gtk/done.ui
 vanilla_first_setup/gtk/layout-yes-no.ui
 vanilla_first_setup/gtk/layout-applications.ui
 vanilla_first_setup/gtk/tour.ui
+vanilla_first_setup/gtk/post-script.ui
 
 vanilla_first_setup/defaults/theme.py
 vanilla_first_setup/defaults/welcome.py
@@ -29,6 +30,7 @@ vanilla_first_setup/utils/run_async.py
 vanilla_first_setup/views/done.py
 vanilla_first_setup/views/progress.py
 vanilla_first_setup/views/tour.py
+vanilla_first_setup/views/post_script.py
 
 vanilla_first_setup/dialog.py
 vanilla_first_setup/main.py
