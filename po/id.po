@@ -19,20 +19,20 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.15.1-dev\n"
 
-#: data/io.github.vanilla-os.FirstSetup.desktop.in:3
+#: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
 msgstr "Pengaturan Pertama Vanilla OS"
 
-#: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 #, fuzzy
 msgid "Tweak your Vanilla OS installation."
 msgstr "Tweak instalasi Ubuntu Vanilla GNOME Anda."
 
-#: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
 msgstr "Tidak ada deskripsi"
 
-#: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:26
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
 msgstr "Rilis perdana"
 

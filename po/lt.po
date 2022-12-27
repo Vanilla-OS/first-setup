@@ -18,19 +18,19 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "(n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: data/io.github.vanilla-os.FirstSetup.desktop.in:3
+#: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
 msgstr ""
 
-#: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
 msgstr ""
 
-#: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
 msgstr ""
 
-#: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:26
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
 msgstr ""
 

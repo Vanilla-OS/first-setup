@@ -19,20 +19,20 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.14.2\n"
 
-#: data/io.github.vanilla-os.FirstSetup.desktop.in:3
+#: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
 msgstr "Thiết lập ban đầu cho hệ điều hành Vanilla"
 
-#: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 #, fuzzy
 msgid "Tweak your Vanilla OS installation."
 msgstr "Chỉnh sửa cài đặt Ubuntu Vanilla GNOME của bạn."
 
-#: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
 msgstr "Không có thông tin mô tả"
 
-#: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:26
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
 msgstr "Bản phát hành đầu tiên"
 

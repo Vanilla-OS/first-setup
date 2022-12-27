@@ -35,7 +35,7 @@ class FirstSetupApplication(Adw.Application):
     """The main application singleton class."""
 
     def __init__(self):
-        super().__init__(application_id='io.github.vanilla-os.FirstSetup',
+        super().__init__(application_id='org.vanillaos.FirstSetup',
                 flags=Gio.ApplicationFlags.HANDLES_COMMAND_LINE)
         self.post_script = None
         self.create_action('quit', self.close, ['<primary>q'])

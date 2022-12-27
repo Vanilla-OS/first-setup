@@ -1,6 +1,6 @@
-data/io.github.vanilla-os.FirstSetup.desktop.in
-data/io.github.vanilla-os.FirstSetup.appdata.xml.in
-data/io.github.vanilla-os.FirstSetup.gschema.xml
+data/org.vanillaos.FirstSetup.desktop.in
+data/org.vanillaos.FirstSetup.appdata.xml.in
+data/org.vanillaos.FirstSetup.gschema.xml
 
 vanilla_first_setup/gtk/default-theme.ui
 vanilla_first_setup/gtk/dialog.ui

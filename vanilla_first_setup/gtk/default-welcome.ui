@@ -8,7 +8,7 @@
         <property name="hexpand">true</property>
         <child>
             <object class="AdwStatusPage" id="status_page">
-                <property name="icon-name">io.github.vanilla-os.FirstSetup</property>
+                <property name="icon-name">org.vanillaos.FirstSetup</property>
                 <property name="title" translatable="true">Welcome!</property>
                 <property name="description" translatable="true">Make your choices, this wizard will take care of everything.</property>
                 <child>

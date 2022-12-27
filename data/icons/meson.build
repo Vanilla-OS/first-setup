@@ -1,4 +1,4 @@
-application_id = 'io.github.vanilla-os.FirstSetup'
+application_id = 'org.vanillaos.FirstSetup'
 
 
 scalable_dir = join_paths('hicolor', 'scalable', 'apps')

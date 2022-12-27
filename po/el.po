@@ -19,19 +19,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.15\n"
 
-#: data/io.github.vanilla-os.FirstSetup.desktop.in:3
+#: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
 msgstr ""
 
-#: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
 msgstr ""
 
-#: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
 msgstr "Καμία περιγραφή"
 
-#: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:26
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
 msgstr ""
 

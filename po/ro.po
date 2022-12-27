@@ -20,20 +20,20 @@ msgstr ""
 "20)) ? 1 : 2;\n"
 "X-Generator: Weblate 4.15-dev\n"
 
-#: data/io.github.vanilla-os.FirstSetup.desktop.in:3
+#: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
 msgstr "Prima pornire Vanilla OS"
 
-#: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:7
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 #, fuzzy
 msgid "Tweak your Vanilla OS installation."
 msgstr "Modifică-ți installația Ubuntu GNOME implicită."
 
-#: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:10
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
 msgstr "Fără descriere"
 
-#: data/io.github.vanilla-os.FirstSetup.appdata.xml.in:26
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
 msgstr "Prima lansare"
 
