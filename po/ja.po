@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-24 18:22+0530\n"
+"POT-Creation-Date: 2022-12-27 20:42+0530\n"
 "PO-Revision-Date: 2022-12-05 04:47+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/vanilla-os/"
@@ -94,19 +94,48 @@ msgstr "はい、有効にします"
 msgid "Read More"
 msgstr "もっと読む"
 
-#: vanilla_first_setup/layouts/preferences.py:70
+#: vanilla_first_setup/gtk/post-script.ui:11
+msgid "Finalizing"
+msgstr ""
+
+#: vanilla_first_setup/gtk/post-script.ui:12
+msgid "Your device will be ready soon."
+msgstr ""
+
+#: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
 msgstr "最低でもひとつはオプションを選択してください。"
 
-#: vanilla_first_setup/views/done.py:34
+#: vanilla_first_setup/views/done.py:37
 #, fuzzy
 msgid "Restart your device to enjoy your {} experience."
 msgstr "デバイスを再起動して、{} をお楽しみください。"
 
-#: vanilla_first_setup/views/done.py:45
+#: vanilla_first_setup/views/done.py:55
 msgid "Something went wrong"
 msgstr "問題が発生しました"
 
-#: vanilla_first_setup/views/done.py:46
+#: vanilla_first_setup/views/done.py:56
 msgid "Please contact the distribution developers."
 msgstr "ディストリビューションの開発者にご連絡ください。"
+
+#: vanilla_first_setup/main.py:51
+msgid "Run a post script"
+msgstr ""
+
+#: vanilla_first_setup/window.py:63
+msgid "Done!"
+msgstr ""
+
+#: vanilla_first_setup/window.py:63
+msgid "Your device is ready to use."
+msgstr ""
+
+#: vanilla_first_setup/window.py:64
+msgid "Error!"
+msgstr ""
+
+#: vanilla_first_setup/window.py:64
+#, fuzzy
+msgid "Something went wrong."
+msgstr "問題が発生しました"
