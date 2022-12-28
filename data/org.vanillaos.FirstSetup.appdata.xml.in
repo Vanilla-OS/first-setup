@@ -21,7 +21,7 @@
       <display_length compare="ge">768</display_length>
     </requires>
     <releases>
-        <release version="1.5.2" date="2022-09-03">
+        <release version="1.5.3" date="2022-09-03">
           <description>
             <p>First release</p>
           </description>
