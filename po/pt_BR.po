@@ -8,8 +8,9 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-27 20:42+0530\n"
-"PO-Revision-Date: 2022-11-16 04:15+0000\n"
-"Last-Translator: Luccas Ferreira <mertubeluiz123@gmail.com>\n"
+"PO-Revision-Date: 2022-12-28 01:11+0000\n"
+"Last-Translator: Henrique Picanço <114828539+henriquepicanco@users.noreply."
+"github.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "vanilla-os/first-setup/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,11 +18,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr "Configuração Inicial do Vanilla OS"
+msgstr "Primeira Configuração do Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
@@ -93,11 +94,11 @@ msgstr "Ler mais"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
-msgstr ""
+msgstr "Finalizando"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
-msgstr ""
+msgstr "Seu dispositivo estará pronto em breve."
 
 #: vanilla_first_setup/layouts/preferences.py:75
 #: vanilla_first_setup/layouts/preferences.py:70
@@ -118,21 +119,20 @@ msgstr "Por favor, contate os desenvolvedores da distribuição."
 
 #: vanilla_first_setup/main.py:51
 msgid "Run a post script"
-msgstr ""
+msgstr "Executar um post script"
 
 #: vanilla_first_setup/window.py:63
 msgid "Done!"
-msgstr ""
+msgstr "Feito!"
 
 #: vanilla_first_setup/window.py:63
 msgid "Your device is ready to use."
-msgstr ""
+msgstr "Seu dispositivo está pronto para uso."
 
 #: vanilla_first_setup/window.py:64
 msgid "Error!"
-msgstr ""
+msgstr "Erro!"
 
 #: vanilla_first_setup/window.py:64
-#, fuzzy
 msgid "Something went wrong."
-msgstr "Algo deu errado"
+msgstr "Algo deu errado."
