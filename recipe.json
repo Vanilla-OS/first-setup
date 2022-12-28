@@ -298,7 +298,7 @@
                 {
                     "if" : "Fonts",
                     "type" :  "command",
-                    "commands" : ["!nextBoot flatpak install -y org.gnome.Fonts"]
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.font-viewer"]
                 },
                 {
                     "if" : "Image Viewer",
