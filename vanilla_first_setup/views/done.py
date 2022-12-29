@@ -45,20 +45,23 @@ class VanillaDone(Adw.Bin):
         if reboot:
             self.btn_reboot.connect("clicked", self.__on_reboot_clicked)
         else:
+            self.btn_reboot.set_visible(False)
             self.btn_close.set_visible(True)
         self.btn_close.connect("clicked", self.__on_close_clicked)
     
     def set_result(self, result):
-        if not result:
-            self.status_page.set_icon_name("dialog-error-symbolic")
-            if not self.__fail_title and not self.__fail_description:
-                self.status_page.set_title(_("Something went wrong"))
-                self.status_page.set_description(_("Please contact the distribution developers."))
-            else:
-                self.status_page.set_title(self.__fail_title)
-                self.status_page.set_description(self.__fail_description)
-            self.btn_reboot.set_visible(False)
-            self.btn_close.set_visible(True)
+        if result:
+            return
+        
+        self.status_page.set_icon_name("dialog-error-symbolic")
+        if not self.__fail_title and not self.__fail_description:
+            self.status_page.set_title(_("Something went wrong"))
+            self.status_page.set_description(_("Please contact the distribution developers."))
+        else:
+            self.status_page.set_title(self.__fail_title)
+            self.status_page.set_description(self.__fail_description)
+        self.btn_reboot.set_visible(False)
+        self.btn_close.set_visible(True)
 
     def __on_reboot_clicked(self, button):
         subprocess.run(['gnome-session-quit', '--reboot'])
