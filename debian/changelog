@@ -1,6 +1,5 @@
-vanilla-first-setup (1.5.4) kinetic; urgency=low
+vanilla-first-setup (1.5.5) kinetic; urgency=critical
 
-  * Rewrite from scratch to support custom recipes and
-    to be more modular.
+  * Fix reboot button not being hidden
 
- -- Mirko Brombin <send@mirko.pm>  Thu, 20 Sep 2022 22:01:00 +0000
+ -- Mirko Brombin <send@mirko.pm>  Thu, 29 Dec 2022 14:35:00 +0000
