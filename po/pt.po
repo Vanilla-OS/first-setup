@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-27 20:42+0530\n"
-"PO-Revision-Date: 2022-12-29 16:48+0000\n"
-"Last-Translator: Augusto Kakuja Santos <santo.augusto.kakuja@gmail.com>\n"
+"PO-Revision-Date: 2022-12-30 18:15+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/pt/>\n"
 "Language: pt\n"
@@ -115,7 +115,7 @@ msgstr "Algo correu mal"
 
 #: vanilla_first_setup/views/done.py:56
 msgid "Please contact the distribution developers."
-msgstr "Por favor, entre em contacto com os desenvolvedores da distribuição."
+msgstr "Por favor, entre em contacto com os programadores da distribuição."
 
 #: vanilla_first_setup/main.py:51
 msgid "Run a post script"
