@@ -3,28 +3,30 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-27 20:42+0530\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2023-01-02 12:40+0000\n"
+"Last-Translator: _Ghost_ <Krzysztof.siekierski@interia.pl>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/pl/>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
 msgstr "Pierwsza konfiguracja Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
-#, fuzzy
 msgid "Tweak your Vanilla OS installation."
-msgstr "Dostosuj swoją instalację Ubuntu z czystym GNOME."
+msgstr "Dostosuj swoją instalację Vanilla OS."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -55,7 +57,6 @@ msgid "Next"
 msgstr "Dalej"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
-#, fuzzy
 msgid "Showing Information"
 msgstr "Wyświetlanie informacji"
 
@@ -80,7 +81,6 @@ msgid "All done!"
 msgstr "Wszystko gotowe!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Restart your device to enjoy your Vanilla OS experience."
 msgstr "Uruchom ponownie komputer, aby cieszyć się korzystaniem z Vanilla OS."
 
@@ -94,18 +94,17 @@ msgstr "Czytaj więcej"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
-msgstr ""
+msgstr "Finalizacja"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
-msgstr ""
+msgstr "Twoje urządzenie będzie wkrótce gotowe."
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
 msgstr "Wybierz co najmniej jedną opcję."
 
 #: vanilla_first_setup/views/done.py:37
-#, fuzzy
 msgid "Restart your device to enjoy your {} experience."
 msgstr "Uruchom ponownie komputer, aby cieszyć się z {}."
 
@@ -119,21 +118,20 @@ msgstr "Prosimy o kontakt z twórcami dystrybucji."
 
 #: vanilla_first_setup/main.py:51
 msgid "Run a post script"
-msgstr ""
+msgstr "Uruchom post skrypt"
 
 #: vanilla_first_setup/window.py:63
 msgid "Done!"
-msgstr ""
+msgstr "Gotowe!"
 
 #: vanilla_first_setup/window.py:63
 msgid "Your device is ready to use."
-msgstr ""
+msgstr "Twoje urządzenie jest gotowe do użytku"
 
 #: vanilla_first_setup/window.py:64
 msgid "Error!"
-msgstr ""
+msgstr "Błąd!"
 
 #: vanilla_first_setup/window.py:64
-#, fuzzy
 msgid "Something went wrong."
-msgstr "Coś poszło nie tak"
+msgstr "Coś poszło nie tak."
