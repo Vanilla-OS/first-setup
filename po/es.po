@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-27 20:42+0530\n"
-"PO-Revision-Date: 2022-11-06 12:07+0000\n"
-"Last-Translator: Jehu Marcos Herrera Puentes <jehuherrerap@hotmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/es/>\n"
+"PO-Revision-Date: 2022-12-29 16:48+0000\n"
+"Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -37,7 +37,7 @@ msgstr "Primer lanzamiento"
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
-msgstr "Por defecto"
+msgstr "Predeterminado"
 
 #: vanilla_first_setup/gtk/default-theme.ui:29
 msgid "Dark"
@@ -85,7 +85,7 @@ msgstr "Reinicie su dispositivo para disfrutar su experiencia en Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
-msgstr "Sí, habilitar"
+msgstr "Sí, activar"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
@@ -93,11 +93,11 @@ msgstr "Leer más"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
-msgstr ""
+msgstr "Finalizando"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
-msgstr ""
+msgstr "Su dispositivo estará listo en breve."
 
 #: vanilla_first_setup/layouts/preferences.py:75
 #: vanilla_first_setup/layouts/preferences.py:70
@@ -106,7 +106,7 @@ msgstr "Por favor, seleccione al menos una opción."
 
 #: vanilla_first_setup/views/done.py:34
 msgid "Restart your device to enjoy your {} experience."
-msgstr "Reinicie su dispositivo para disfrutar su {} experiencia."
+msgstr "Reinicie su dispositivo para disfrutar su experiencia en {}."
 
 #: vanilla_first_setup/views/done.py:55 vanilla_first_setup/views/done.py:45
 msgid "Something went wrong"
@@ -119,21 +119,20 @@ msgstr ""
 
 #: vanilla_first_setup/main.py:51
 msgid "Run a post script"
-msgstr ""
+msgstr "Ejecutar un script posterior"
 
 #: vanilla_first_setup/window.py:63
 msgid "Done!"
-msgstr ""
+msgstr "¡Listo!"
 
 #: vanilla_first_setup/window.py:63
 msgid "Your device is ready to use."
-msgstr ""
+msgstr "Su dispositivo está listo para usarse."
 
 #: vanilla_first_setup/window.py:64
 msgid "Error!"
-msgstr ""
+msgstr "¡Error!"
 
 #: vanilla_first_setup/window.py:64
-#, fuzzy
 msgid "Something went wrong."
-msgstr "Algo salió mal"
+msgstr "Algo salió mal."

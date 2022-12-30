@@ -8,25 +8,24 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-27 20:42+0530\n"
-"PO-Revision-Date: 2022-12-10 23:50+0000\n"
-"Last-Translator: Chris <wolrekids@gmail.com>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/de/>\n"
+"PO-Revision-Date: 2022-12-30 18:15+0000\n"
+"Last-Translator: Leo <leomerh96@outlook.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
 msgstr "Vanilla OS Erste Einrichtung"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
-#, fuzzy
 msgid "Tweak your Vanilla OS installation."
-msgstr "Optimieren Sie Ihre Vanilla GNOME-Installation."
+msgstr "Optimieren Sie Ihre Vanilla OS Installation."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -54,16 +53,15 @@ msgstr "Wählen Sie ein Farbschema für Ihr System."
 
 #: vanilla_first_setup/gtk/default-theme.ui:49
 msgid "Next"
-msgstr "Nächste"
+msgstr "Weiter"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
-#, fuzzy
 msgid "Showing Information"
-msgstr "Zeige Informationen an"
+msgstr "Informationen anzeigen"
 
 #: vanilla_first_setup/gtk/progress.ui:26
 msgid "The changes are being applied. Please Wait…"
-msgstr "Bitte warten Sie, während die Änderungen übernommen werden …"
+msgstr "Bitte warten Sie, während die Änderungen übernommen werden…"
 
 #: vanilla_first_setup/gtk/window.ui:25
 msgid "Back"
@@ -82,9 +80,8 @@ msgid "All done!"
 msgstr "Alles erledigt!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr "Starten Sie Ihren PC neu, um Ihr Vanilla OS-Erlebnis zu genießen."
+msgstr "Starten Sie Ihren PC neu, um Ihr Vanilla OS Erlebnis zu genießen."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
@@ -96,20 +93,19 @@ msgstr "Mehr lesen"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
-msgstr ""
+msgstr "Fertigstellen"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
-msgstr ""
+msgstr "Ihr Gerät ist bald bereit."
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
 msgstr "Bitte wählen Sie mindestens eine Option aus."
 
 #: vanilla_first_setup/views/done.py:37
-#, fuzzy
 msgid "Restart your device to enjoy your {} experience."
-msgstr "Starten Sie Ihren PC neu, um Ihr {}-Erlebnis zu genießen."
+msgstr "Starten Sie Ihren PC neu, um Ihr {} Erlebnis zu genießen."
 
 #: vanilla_first_setup/views/done.py:55
 msgid "Something went wrong"
@@ -121,21 +117,20 @@ msgstr "Bitte wenden Sie sich an die Entwickler der Distribution."
 
 #: vanilla_first_setup/main.py:51
 msgid "Run a post script"
-msgstr ""
+msgstr "Post-Script ausführen"
 
 #: vanilla_first_setup/window.py:63
 msgid "Done!"
-msgstr ""
+msgstr "Fertig!"
 
 #: vanilla_first_setup/window.py:63
 msgid "Your device is ready to use."
-msgstr ""
+msgstr "Ihr Gerät ist bereit."
 
 #: vanilla_first_setup/window.py:64
 msgid "Error!"
-msgstr ""
+msgstr "Fehler!"
 
 #: vanilla_first_setup/window.py:64
-#, fuzzy
 msgid "Something went wrong."
-msgstr "Etwas ist schief gelaufen"
+msgstr "Etwas ist schief gelaufen."
