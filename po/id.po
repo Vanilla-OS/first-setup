@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-27 20:42+0530\n"
-"PO-Revision-Date: 2022-12-20 08:48+0000\n"
-"Last-Translator: A Zainal Abidin <zhainhart@gmail.com>\n"
+"PO-Revision-Date: 2022-12-30 18:15+0000\n"
+"Last-Translator: Imam Faraz Aditya <imamaditya2211@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/id/>\n"
 "Language: id\n"
@@ -24,9 +24,8 @@ msgid "Vanilla OS First Setup"
 msgstr "Pengaturan Pertama Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
-#, fuzzy
 msgid "Tweak your Vanilla OS installation."
-msgstr "Tweak instalasi Ubuntu Vanilla GNOME Anda."
+msgstr "Atur instalasi Vanilla OS Anda."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -54,7 +53,7 @@ msgstr "Pilih skema warna untuk sistem Anda."
 
 #: vanilla_first_setup/gtk/default-theme.ui:49
 msgid "Next"
-msgstr "Lanjut"
+msgstr "Selanjutnya"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 #, fuzzy
@@ -82,9 +81,8 @@ msgid "All done!"
 msgstr "Selesai!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr "Restart PC Anda untuk menikmati pengalaman Vanila OS Anda."
+msgstr "Mulai ulang perangkat anda untuk meninkmati pengalaman Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
@@ -96,7 +94,7 @@ msgstr "Baca selengkapnya"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
-msgstr ""
+msgstr "Finalisasi"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
