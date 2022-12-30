@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-27 20:42+0530\n"
 "PO-Revision-Date: 2023-01-02 12:40+0000\n"
-"Last-Translator: Muhammad Ariq Nizar Daffa Kusmana <marnzdfku@gmail.com>\n"
+"Last-Translator: yukidream <ahawaribagus@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/id/>\n"
 "Language: id\n"
@@ -96,8 +96,9 @@ msgid "Finalizing"
 msgstr "Finalisasi"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
+#, fuzzy
 msgid "Your device will be ready soon."
-msgstr ""
+msgstr "Perangkat anda akan segera siap digunakan."
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
@@ -122,17 +123,16 @@ msgstr "Jalankan post script"
 
 #: vanilla_first_setup/window.py:63
 msgid "Done!"
-msgstr ""
+msgstr "Selesai!"
 
 #: vanilla_first_setup/window.py:63
 msgid "Your device is ready to use."
-msgstr ""
+msgstr "Perangkat anda akan siap digunakan."
 
 #: vanilla_first_setup/window.py:64
 msgid "Error!"
-msgstr ""
+msgstr "Galat!"
 
 #: vanilla_first_setup/window.py:64
-#, fuzzy
 msgid "Something went wrong."
-msgstr "Ada sesuatu yang salah"
+msgstr "Ada sesuatu yang salah."
