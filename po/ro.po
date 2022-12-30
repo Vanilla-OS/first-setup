@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-27 20:42+0530\n"
-"PO-Revision-Date: 2022-11-19 19:47+0000\n"
+"PO-Revision-Date: 2022-12-30 18:15+0000\n"
 "Last-Translator: finnmonstar <finnmonstar@pm.me>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ro/>\n"
@@ -18,16 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
 msgstr "Prima pornire Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
-#, fuzzy
 msgid "Tweak your Vanilla OS installation."
-msgstr "Modifică-ți installația Ubuntu GNOME implicită."
+msgstr "Modifică-ți instalarea Vanilla OS."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -58,7 +57,6 @@ msgid "Next"
 msgstr "Următorul"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
-#, fuzzy
 msgid "Showing Information"
 msgstr "Se arată informații"
 
@@ -84,10 +82,8 @@ msgid "All done!"
 msgstr "Totul este gata!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr ""
-"Repornește-ți dispozitivul pentru a te bucura de experiența Vanilla OS."
+msgstr "Repornește-ți dispozitivul pentru a te bucura de experiența Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
@@ -99,18 +95,17 @@ msgstr "Citește mai mult"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
-msgstr ""
+msgstr "Se finalizează"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
-msgstr ""
+msgstr "Dispozitivul tău va fi pregătit curând."
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
 msgstr "Alege te rog cel puțin o opțiune."
 
 #: vanilla_first_setup/views/done.py:37
-#, fuzzy
 msgid "Restart your device to enjoy your {} experience."
 msgstr "Repornește-ți dispozitivul pentru a te bucura de experiența {}."
 
@@ -124,21 +119,20 @@ msgstr "Te rog contactează dezvoltatorii distribuției."
 
 #: vanilla_first_setup/main.py:51
 msgid "Run a post script"
-msgstr ""
+msgstr "Rulează un script de după instalare"
 
 #: vanilla_first_setup/window.py:63
 msgid "Done!"
-msgstr ""
+msgstr "Gata!"
 
 #: vanilla_first_setup/window.py:63
 msgid "Your device is ready to use."
-msgstr ""
+msgstr "Dispozitivul tău este gata de folosință."
 
 #: vanilla_first_setup/window.py:64
 msgid "Error!"
-msgstr ""
+msgstr "Eroare!"
 
 #: vanilla_first_setup/window.py:64
-#, fuzzy
 msgid "Something went wrong."
-msgstr "Ceva a dat greș"
+msgstr "Ceva a dat greș."
