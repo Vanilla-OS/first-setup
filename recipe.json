@@ -4,7 +4,8 @@
     "distro_logo": "org.vanillaos.FirstSetup", 
     "pre_run": [
         "apt update", 
-        "apt install -f"
+        "apt install -f",
+        "apt upgrade -y"
     ],
     "post_run": [
         "apt update", 
