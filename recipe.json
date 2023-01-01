@@ -417,7 +417,7 @@
                 {
                     "if": "vm",
                     "type": "command",
-                    "commands": ["apt install -y open-vm-tools"]
+                    "commands": ["apt install -y open-vm-tools open-vm-tools-desktop"]
                 }
             ]
         },
