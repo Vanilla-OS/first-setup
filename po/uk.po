@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-27 20:42+0530\n"
-"PO-Revision-Date: 2022-11-06 12:07+0000\n"
+"PO-Revision-Date: 2023-01-02 12:40+0000\n"
 "Last-Translator: Serhii Chebanenko <4e6anenk0@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/uk/>\n"
@@ -18,16 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
 msgstr "Перше налаштування Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
-#, fuzzy
 msgid "Tweak your Vanilla OS installation."
-msgstr "Налаштуйте встановлення Ubuntu з ванільним GNOME."
+msgstr "Налаштуйте встановлення Vanilla OS."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -58,7 +57,6 @@ msgid "Next"
 msgstr "Далі"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
-#, fuzzy
 msgid "Showing Information"
 msgstr "Відображення інформації"
 
@@ -83,9 +81,8 @@ msgid "All done!"
 msgstr "Готово!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr "Перезапустіть ваш комп'ютер, щоб насолодитися роботою Vanilla OS."
+msgstr "Перезапустіть свій пристрій, щоб насолодитися роботою Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
@@ -97,20 +94,19 @@ msgstr "Докладніше"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
-msgstr ""
+msgstr "Доопрацювання"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
-msgstr ""
+msgstr "Ваш пристрій незабаром буде готовий."
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
 msgstr "Виберіть принаймні один варіант."
 
 #: vanilla_first_setup/views/done.py:37
-#, fuzzy
 msgid "Restart your device to enjoy your {} experience."
-msgstr "Перезапустіть ваш комп'ютер, щоб насолодитися роботою {}."
+msgstr "Перезапустіть пристрій, щоб насолоджуватися {}."
 
 #: vanilla_first_setup/views/done.py:55
 msgid "Something went wrong"
@@ -122,21 +118,20 @@ msgstr "Будь ласка, зверніться до розробників д
 
 #: vanilla_first_setup/main.py:51
 msgid "Run a post script"
-msgstr ""
+msgstr "Запустити пост-сценарій"
 
 #: vanilla_first_setup/window.py:63
 msgid "Done!"
-msgstr ""
+msgstr "Готово!"
 
 #: vanilla_first_setup/window.py:63
 msgid "Your device is ready to use."
-msgstr ""
+msgstr "Ваш пристрій готовий до використання."
 
 #: vanilla_first_setup/window.py:64
 msgid "Error!"
-msgstr ""
+msgstr "Помилка!"
 
 #: vanilla_first_setup/window.py:64
-#, fuzzy
 msgid "Something went wrong."
-msgstr "Щось пішло не так"
+msgstr "Щось пішло не так."
