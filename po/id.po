@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-27 20:42+0530\n"
-"PO-Revision-Date: 2022-12-30 18:15+0000\n"
-"Last-Translator: Imam Faraz Aditya <imamaditya2211@gmail.com>\n"
+"PO-Revision-Date: 2023-01-02 12:40+0000\n"
+"Last-Translator: Ahmad Maulanal Fahmi <lanal.fahmi27@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/id/>\n"
 "Language: id\n"
@@ -86,7 +86,7 @@ msgstr "Mulai ulang perangkat anda untuk meninkmati pengalaman Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
-msgstr "Ya, aktifkan"
+msgstr "Ya, hidupkan"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
