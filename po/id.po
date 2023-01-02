@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-27 20:42+0530\n"
-"PO-Revision-Date: 2022-12-30 18:15+0000\n"
-"Last-Translator: Imam Faraz Aditya <imamaditya2211@gmail.com>\n"
+"PO-Revision-Date: 2023-01-02 12:40+0000\n"
+"Last-Translator: yukidream <ahawaribagus@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/id/>\n"
 "Language: id\n"
@@ -25,7 +25,7 @@ msgstr "Pengaturan Pertama Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
-msgstr "Atur instalasi Vanilla OS Anda."
+msgstr "Ubah instalasi Vanilla OSmu."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -56,7 +56,6 @@ msgid "Next"
 msgstr "Selanjutnya"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
-#, fuzzy
 msgid "Showing Information"
 msgstr "Menampilkan Informasi"
 
@@ -86,7 +85,7 @@ msgstr "Mulai ulang perangkat anda untuk meninkmati pengalaman Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
-msgstr "Ya, aktifkan"
+msgstr "Ya, hidupkan"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
@@ -97,8 +96,9 @@ msgid "Finalizing"
 msgstr "Finalisasi"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
+#, fuzzy
 msgid "Your device will be ready soon."
-msgstr ""
+msgstr "Perangkat anda akan segera siap digunakan."
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
@@ -119,21 +119,20 @@ msgstr "Silakan hubungi pengembang distro."
 
 #: vanilla_first_setup/main.py:51
 msgid "Run a post script"
-msgstr ""
+msgstr "Jalankan post script"
 
 #: vanilla_first_setup/window.py:63
 msgid "Done!"
-msgstr ""
+msgstr "Selesai!"
 
 #: vanilla_first_setup/window.py:63
 msgid "Your device is ready to use."
-msgstr ""
+msgstr "Perangkat anda akan siap digunakan."
 
 #: vanilla_first_setup/window.py:64
 msgid "Error!"
-msgstr ""
+msgstr "Galat!"
 
 #: vanilla_first_setup/window.py:64
-#, fuzzy
 msgid "Something went wrong."
-msgstr "Ada sesuatu yang salah"
+msgstr "Ada sesuatu yang salah."

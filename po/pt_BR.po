@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-27 20:42+0530\n"
-"PO-Revision-Date: 2022-12-30 18:15+0000\n"
+"PO-Revision-Date: 2023-01-02 12:40+0000\n"
 "Last-Translator: Henrique Picanço <114828539+henriquepicanco@users.noreply."
 "github.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr "Configuração inicial do Vanilla OS"
+msgstr "Configuração Inicial do Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
