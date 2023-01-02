@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-27 20:42+0530\n"
 "PO-Revision-Date: 2023-01-02 12:40+0000\n"
-"Last-Translator: Ahmad Maulanal Fahmi <lanal.fahmi27@gmail.com>\n"
+"Last-Translator: Muhammad Ariq Nizar Daffa Kusmana <marnzdfku@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/id/>\n"
 "Language: id\n"
@@ -25,7 +25,7 @@ msgstr "Pengaturan Pertama Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
-msgstr "Atur instalasi Vanilla OS Anda."
+msgstr "Ubah instalasi Vanilla OSmu."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -56,7 +56,6 @@ msgid "Next"
 msgstr "Selanjutnya"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
-#, fuzzy
 msgid "Showing Information"
 msgstr "Menampilkan Informasi"
 
@@ -119,7 +118,7 @@ msgstr "Silakan hubungi pengembang distro."
 
 #: vanilla_first_setup/main.py:51
 msgid "Run a post script"
-msgstr ""
+msgstr "Jalankan post script"
 
 #: vanilla_first_setup/window.py:63
 msgid "Done!"
