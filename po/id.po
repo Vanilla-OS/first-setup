@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-27 20:42+0530\n"
-"PO-Revision-Date: 2023-01-02 12:40+0000\n"
-"Last-Translator: yukidream <ahawaribagus@gmail.com>\n"
+"PO-Revision-Date: 2023-01-03 21:49+0000\n"
+"Last-Translator: Muhammad Ariq Nizar Daffa Kusmana <marnzdfku@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/id/>\n"
 "Language: id\n"
@@ -25,7 +25,7 @@ msgstr "Pengaturan Pertama Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
-msgstr "Ubah instalasi Vanilla OSmu."
+msgstr "Ubah instalasi Vanilla OS mu."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -33,7 +33,7 @@ msgstr "Tidak ada deskripsi"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr "Rilis perdana"
+msgstr "Rilisan Pertama"
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -53,7 +53,7 @@ msgstr "Pilih skema warna untuk sistem Anda."
 
 #: vanilla_first_setup/gtk/default-theme.ui:49
 msgid "Next"
-msgstr "Selanjutnya"
+msgstr "Lanjut"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
@@ -96,7 +96,6 @@ msgid "Finalizing"
 msgstr "Finalisasi"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-#, fuzzy
 msgid "Your device will be ready soon."
 msgstr "Perangkat anda akan segera siap digunakan."
 
@@ -105,9 +104,8 @@ msgid "Please select at least one option."
 msgstr "Tolong setidaknya pilih satu opsi."
 
 #: vanilla_first_setup/views/done.py:37
-#, fuzzy
 msgid "Restart your device to enjoy your {} experience."
-msgstr "Mulai ulang PC Anda untuk menikmati pengalaman {} Anda."
+msgstr "Mulai ulang perangkat anda untuk menikmati pengalaman {} anda."
 
 #: vanilla_first_setup/views/done.py:55
 msgid "Something went wrong"
