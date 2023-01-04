@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-27 20:42+0530\n"
-"PO-Revision-Date: 2022-11-09 04:07+0000\n"
-"Last-Translator: Nguyễn Phú Trọng <minhhoang9105@gmail.com>\n"
+"PO-Revision-Date: 2023-01-06 08:49+0000\n"
+"Last-Translator: imgradeone - 一年级么么哒 <imgradeone@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "vanilla-os/first-setup/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr ""
+msgstr "Vanilla OS 初始设定"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
-msgstr ""
+msgstr "定制您的 Vanilla OS 安装副本。"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -33,11 +33,11 @@ msgstr "没有说明"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr ""
+msgstr "初版"
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
-msgstr ""
+msgstr "默认"
 
 #: vanilla_first_setup/gtk/default-theme.ui:29
 msgid "Dark"
@@ -69,7 +69,7 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/default-welcome.ui:12
 msgid "Welcome!"
-msgstr ""
+msgstr "欢迎！"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:13
 msgid "Make your choices, this wizard will take care of everything."
@@ -77,11 +77,11 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "All done!"
-msgstr ""
+msgstr "大功告成！"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr ""
+msgstr "重启设备即可开始您的 Vanilla OS 体验。"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
@@ -125,7 +125,7 @@ msgstr ""
 
 #: vanilla_first_setup/window.py:63
 msgid "Your device is ready to use."
-msgstr ""
+msgstr "您的设备已准备就绪。"
 
 #: vanilla_first_setup/window.py:64
 msgid "Error!"
