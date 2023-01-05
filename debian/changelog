@@ -1,4 +1,4 @@
-vanilla-first-setup (1.5.8) kinetic; urgency=critical
+vanilla-first-setup (1.5.9) kinetic; urgency=critical
 
   * Fix reboot button not being hidden
   * Add open-vm-tools-desktop to recipe.json
