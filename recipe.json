@@ -3,6 +3,7 @@
     "distro_name": "Vanilla OS",
     "distro_logo": "org.vanillaos.FirstSetup", 
     "pre_run": [
+        "export DEBIAN_FRONTEND=noninteractive",
         "apt update", 
         "apt install -f",
         "apt upgrade -y"
