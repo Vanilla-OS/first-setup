@@ -25,6 +25,8 @@ class VanillaDone(Adw.Bin):
     status_page = Gtk.Template.Child()
     btn_reboot = Gtk.Template.Child()
     btn_close = Gtk.Template.Child()
+    log_box = Gtk.Template.Child()
+    log_output = Gtk.Template.Child()
 
     def __init__(self, window, reboot: bool=True, title: str="", description: str="", fail_title: str="", fail_description: str="", **kwargs):
         super().__init__(**kwargs)
@@ -50,16 +52,21 @@ class VanillaDone(Adw.Bin):
         self.btn_close.connect("clicked", self.__on_close_clicked)
     
     def set_result(self, result):
-        if result:
+        res, msg = result
+
+        if res:
             return
         
         self.status_page.set_icon_name("dialog-error-symbolic")
         if not self.__fail_title and not self.__fail_description:
             self.status_page.set_title(_("Something went wrong"))
             self.status_page.set_description(_("Please contact the distribution developers."))
+            self.log_box.set_visible(True)
+            self.log_output.set_text(msg)
         else:
             self.status_page.set_title(self.__fail_title)
             self.status_page.set_description(self.__fail_description)
+            self.log_box.set_visible(False)
         self.btn_reboot.set_visible(False)
         self.btn_close.set_visible(True)
 
