@@ -46,8 +46,18 @@
                                 <property name="halign">center</property>
                                 <property name="valign">center</property>
                                 <style>
-                                    <class name="pill" />
-                                    <class name="suggested-action" />
+                                    <class name="pill"/>
+                                    <class name="suggested-action"/>
+                                </style>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkButton" id="btn_retry">
+                                <property name="label">Retry</property>
+                                <property name="halign">center</property>
+                                <property name="visible">false</property>
+                                <style>
+                                    <class name="pill"/>
                                 </style>
                             </object>
                         </child>
@@ -57,8 +67,8 @@
                                 <property name="halign">center</property>
                                 <property name="visible">false</property>
                                 <style>
-                                    <class name="pill" />
-                                    <class name="suggested-action" />
+                                    <class name="pill"/>
+                                    <class name="suggested-action"/>
                                 </style>
                             </object>
                         </child>

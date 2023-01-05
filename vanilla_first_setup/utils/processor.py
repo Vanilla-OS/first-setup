@@ -37,14 +37,14 @@ class Processor:
 
         logger.info("processing the following commands: \n%s" %
                     '\n'.join(commands))
-        
+
         # connection check
         cn = subprocess.run(["wget", "-q", "--spider", "cloudflare.com"],
                             stdout=subprocess.DEVNULL,
                             stderr=subprocess.DEVNULL)
         if cn.returncode != 0:
             logger.critical("No internet connection")
-            return False, "No internet connection."
+            return False, "No internet connection.", True
 
         # nextBoot commands are collected in ~/.local/org.vanillaos.FirstSetup.nextBoot
         # and executed at the next boot by a desktop entry
@@ -95,7 +95,7 @@ class Processor:
 
                 if command.startswith("!noSudo"):
                     command = command.replace("!noSudo", "sudo -u $USER")
-                
+
                 # outRun band is used to run a command outside of the main
                 # shell script.
                 if command.startswith("!outRun"):
@@ -113,7 +113,7 @@ class Processor:
             if "VANILLA_FAKE" in os.environ:
                 logger.info("VANILLA_FAKE is set, skipping the commands")
                 return True, ""
-                
+
             cmd = ["pkexec", "sh", f.name]
             if abroot_bin := shutil.which("abroot"):
                 cmd = ["pkexec", abroot_bin, "exec", "--assume-yes", "sh", f.name]
@@ -133,7 +133,7 @@ class Processor:
                 logger.warning("failed to write to the log file: %s" % e)
                 logger.warning("the output of the commands is: %s" %
                                  out)
-                                 
+
             if proc.returncode != 0:
                 logger.critical(
                     "Error while processing commands, see log for details.")

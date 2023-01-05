@@ -63,7 +63,7 @@ class VanillaWindow(Adw.ApplicationWindow):
             self.__init_mode = 1
 
             # system views
-            self.__view_done = VanillaDone(self, reboot=False, 
+            self.__view_done = VanillaDone(self, reboot=False,
                 title=_("Done!"), description=_("Your device is ready to use."),
                 fail_title=_("Error!"), fail_description=_("Something went wrong."))
 
@@ -95,7 +95,7 @@ class VanillaWindow(Adw.ApplicationWindow):
 
         self.carousel.append(self.__view_post_script)
         self.carousel.append(self.__view_done)
-    
+
     @property
     def builder(self):
         return self.__builder
@@ -130,11 +130,11 @@ class VanillaWindow(Adw.ApplicationWindow):
             if self.__init_mode == 0:
                 self.__view_done.set_result(result)
             self.next()
-            
+
         pages_check = [self.__view_done]
         if self.__init_mode == 0:
             pages_check.append(self.__view_progress)
-            
+
         cur_index = self.carousel.get_position()
         page = self.carousel.get_nth_page(cur_index)
         with contextlib.suppress(AttributeError):
@@ -181,7 +181,7 @@ class VanillaWindow(Adw.ApplicationWindow):
         cur_index = self.carousel.get_position()
         page = self.carousel.get_nth_page(cur_index - 1)
         self.carousel.scroll_to(page, True)
-    
+
     def toast(self, message, timeout=3):
         toast = Adw.Toast.new(message)
         toast.props.timeout = timeout
