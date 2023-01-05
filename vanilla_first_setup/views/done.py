@@ -15,6 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import subprocess
+from sys import intern
 from gi.repository import Gtk, Adw
 
 
@@ -24,6 +25,7 @@ class VanillaDone(Adw.Bin):
 
     status_page = Gtk.Template.Child()
     btn_reboot = Gtk.Template.Child()
+    btn_retry = Gtk.Template.Child()
     btn_close = Gtk.Template.Child()
     log_box = Gtk.Template.Child()
     log_output = Gtk.Template.Child()
@@ -33,7 +35,7 @@ class VanillaDone(Adw.Bin):
         self.__window = window
         self.__fail_title = fail_title
         self.__fail_description = fail_description
-        
+
         if not title and not description:
             self.status_page.set_description(
                 _("Restart your device to enjoy your {} experience.").format(
@@ -49,16 +51,29 @@ class VanillaDone(Adw.Bin):
         else:
             self.btn_reboot.set_visible(False)
             self.btn_close.set_visible(True)
+
         self.btn_close.connect("clicked", self.__on_close_clicked)
-    
+        self.btn_retry.connect("clicked", self.__on_retry_clicked)
+
     def set_result(self, result):
-        res, msg = result
+        res, msg, *internet_fail = result
+
+        # Default to false if internet_fail wasn't passed with result
+        internet_fail = internet_fail[0] if len(internet_fail) > 0 else False
 
         if res:
             return
-        
-        self.status_page.set_icon_name("dialog-error-symbolic")
-        if not self.__fail_title and not self.__fail_description:
+
+        if internet_fail:
+            self.status_page.set_icon_name("network-offline-symbolic")
+        else:
+            self.status_page.set_icon_name("dialog-error-symbolic")
+
+        if internet_fail:
+            self.status_page.set_title(_("No internet connection"))
+            self.status_page.set_description(_("Please ensure your system is connected to the internet and try again."))
+            self.log_box.set_visible(False)
+        elif not self.__fail_title and not self.__fail_description:
             self.status_page.set_title(_("Something went wrong"))
             self.status_page.set_description(_("Please contact the distribution developers."))
             self.log_box.set_visible(True)
@@ -67,11 +82,20 @@ class VanillaDone(Adw.Bin):
             self.status_page.set_title(self.__fail_title)
             self.status_page.set_description(self.__fail_description)
             self.log_box.set_visible(False)
+
         self.btn_reboot.set_visible(False)
-        self.btn_close.set_visible(True)
+        if internet_fail:
+            self.btn_retry.set_visible(True)
+            self.btn_close.set_visible(False)
+        else:
+            self.btn_retry.set_visible(False)
+            self.btn_close.set_visible(True)
 
     def __on_reboot_clicked(self, button):
         subprocess.run(['gnome-session-quit', '--reboot'])
 
     def __on_close_clicked(self, button):
         self.__window.close()
+
+    def __on_retry_clicked(self, button):
+        self.__window.back()
