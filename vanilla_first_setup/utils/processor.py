@@ -111,7 +111,8 @@ class Processor:
 
             # fake the process if VANILLA_FAKE is set
             if "VANILLA_FAKE" in os.environ:
-                    return True, ""
+                logger.info("VANILLA_FAKE is set, skipping the commands")
+                return True, ""
                 
             cmd = ["pkexec", "sh", f.name]
             if abroot_bin := shutil.which("abroot"):

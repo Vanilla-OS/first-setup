@@ -15,7 +15,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import time
-from gi.repository import Gtk, Adw
+import contextlib
+from gi.repository import Gtk, GObject, Adw
 
 from vanilla_first_setup.utils.builder import Builder
 from vanilla_first_setup.utils.parser import Parser
@@ -30,6 +31,9 @@ from vanilla_first_setup.views.post_script import VanillaPostScript
 @Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/window.ui')
 class VanillaWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'VanillaWindow'
+    __gsignals__ = {
+        "page-changed": (GObject.SignalFlags.RUN_FIRST, None, (str,)),
+    }
 
     carousel = Gtk.Template.Child()
     carousel_indicator_dots = Gtk.Template.Child()
@@ -108,6 +112,7 @@ class VanillaWindow(Adw.ApplicationWindow):
         self.carousel.append(self.__view_done)
 
     def __on_page_changed(self, *args):
+
         def process():
             # this parses the finals to compatible commands, by replacing the
             # placeholders with the actual values and generating shell commands
@@ -132,6 +137,11 @@ class VanillaWindow(Adw.ApplicationWindow):
             
         cur_index = self.carousel.get_position()
         page = self.carousel.get_nth_page(cur_index)
+        with contextlib.suppress(AttributeError):
+            self.emit("page-changed", page.step_id)
+
+        print("Page changed to", cur_index, page)
+
         if page not in pages_check:
             self.btn_back.set_visible(cur_index != 0.0)
             self.carousel_indicator_dots.set_visible(cur_index != 0.0)
