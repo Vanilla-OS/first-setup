@@ -38,6 +38,7 @@ class VanillaLayoutApplications(Adw.Bin):
 
         # signals
         self.btn_next.connect("clicked", self.__next_step)
+        self.__window.connect("page-changed", self.__on_page_changed)
     
     @property
     def step_id(self):
@@ -152,8 +153,18 @@ class VanillaLayoutApplications(Adw.Bin):
 
             self.__register_widgets.append((item["id"], _switcher, _index))
             _index += 1
+    
+    def __on_page_changed(self, widget, page):
+        if page == self.__key:
+            if True not in [
+                self.__window.builder.get_temp_finals("packages")["vars"]["flatpak"],
+                self.__window.builder.get_temp_finals("packages")["vars"]["snap"]
+            ]:
+                self.bundles_list.set_sensitive(False)
+            else:
+                self.bundles_list.set_sensitive(True)
             
-    def __next_step(self, widget):
+    def __next_step(self, *args):
         self.__window.next()
 
     def get_finals(self):

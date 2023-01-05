@@ -81,6 +81,13 @@
                     "title": "AppImage",
                     "subtitle": "Install necessary dependencies to run AppImages.",
                     "default": true
+                },
+                {
+                    "id": "-",
+                    "title": "-",
+                    "subtitle": "-",
+                    "disabled": true,
+                    "default": true
                 }
             ],
             "final": [
