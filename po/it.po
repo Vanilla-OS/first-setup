@@ -8,25 +8,24 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-27 20:42+0530\n"
-"PO-Revision-Date: 2022-11-06 12:07+0000\n"
-"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/it/>\n"
+"PO-Revision-Date: 2023-01-09 11:50+0000\n"
+"Last-Translator: EncryptedEasty <c.zullo08@gmail.com>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
 msgstr "Prima installazione del sistema operativo vaniglia"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
-#, fuzzy
 msgid "Tweak your Vanilla OS installation."
-msgstr "Modifica la tua installazione di Ubuntu Vanilla GNOME."
+msgstr "Modifica la tua installazione di Vanilla OS."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -95,21 +94,21 @@ msgid "Read More"
 msgstr "Leggi di più"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
+#, fuzzy
 msgid "Finalizing"
-msgstr ""
+msgstr "Finalizzazione"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
-msgstr ""
+msgstr "Il tuo dispositivo sarà pronto a breve."
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
 msgstr "Seleziona almeno un'opzione."
 
 #: vanilla_first_setup/views/done.py:37
-#, fuzzy
 msgid "Restart your device to enjoy your {} experience."
-msgstr "Riavvia il PC per goderti la tua esperienza {}."
+msgstr "Riavvia il dispositivo per goderti la tua esperienza {}."
 
 #: vanilla_first_setup/views/done.py:55
 msgid "Something went wrong"
@@ -124,12 +123,14 @@ msgid "Run a post script"
 msgstr ""
 
 #: vanilla_first_setup/window.py:63
+#, fuzzy
 msgid "Done!"
-msgstr ""
+msgstr "Fatto!"
 
 #: vanilla_first_setup/window.py:63
+#, fuzzy
 msgid "Your device is ready to use."
-msgstr ""
+msgstr "Il tuo dispositivo è pronto all'uso."
 
 #: vanilla_first_setup/window.py:64
 msgid "Error!"
@@ -138,4 +139,4 @@ msgstr ""
 #: vanilla_first_setup/window.py:64
 #, fuzzy
 msgid "Something went wrong."
-msgstr "Qualcosa è andato storto"
+msgstr "Qualcosa è andato storto."
