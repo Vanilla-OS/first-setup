@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-27 20:42+0530\n"
-"PO-Revision-Date: 2023-01-09 11:50+0000\n"
+"PO-Revision-Date: 2023-01-11 05:51+0000\n"
 "Last-Translator: EncryptedEasty <c.zullo08@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/it/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr "Prima installazione del sistema operativo vaniglia"
+msgstr "Prima configurazione di Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
@@ -56,7 +56,6 @@ msgid "Next"
 msgstr "Procedi"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
-#, fuzzy
 msgid "Showing Information"
 msgstr "Visualizzazione delle informazioni"
 
@@ -70,7 +69,7 @@ msgstr "Indietro"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:12
 msgid "Welcome!"
-msgstr "Ben arrivato!"
+msgstr "Benvenuto!"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:13
 msgid "Make your choices, this wizard will take care of everything."
@@ -81,7 +80,6 @@ msgid "All done!"
 msgstr "Tutto fatto!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Restart your device to enjoy your Vanilla OS experience."
 msgstr "Riavvia il tuo PC per goderti la tua esperienza con Vanila OS."
 
@@ -94,9 +92,8 @@ msgid "Read More"
 msgstr "Leggi di più"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-#, fuzzy
 msgid "Finalizing"
-msgstr "Finalizzazione"
+msgstr "Finalizzando"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
@@ -120,23 +117,20 @@ msgstr "Si prega di contattare gli sviluppatori della distribuzione."
 
 #: vanilla_first_setup/main.py:51
 msgid "Run a post script"
-msgstr ""
+msgstr "Esegui uno script post-installazione"
 
 #: vanilla_first_setup/window.py:63
-#, fuzzy
 msgid "Done!"
 msgstr "Fatto!"
 
 #: vanilla_first_setup/window.py:63
-#, fuzzy
 msgid "Your device is ready to use."
 msgstr "Il tuo dispositivo è pronto all'uso."
 
 #: vanilla_first_setup/window.py:64
 msgid "Error!"
-msgstr ""
+msgstr "Errore!"
 
 #: vanilla_first_setup/window.py:64
-#, fuzzy
 msgid "Something went wrong."
 msgstr "Qualcosa è andato storto."
