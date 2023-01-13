@@ -1,10 +1,18 @@
+vanilla-first-setup (1.6.1) kinetic; urgency=critical
+
+  * Better internet check
+  * Add nvidia-prime for NVIDIA Optimus support
+  * Update translations
+
+ -- Mirko Brombin <send@mirko.pm>  Thu, 29 Dec 2022 16:29:00 +0000
+
 vanilla-first-setup (1.6.0) kinetic; urgency=critical
 
   * Skip applications view with no pkg manager selected
 
  -- Mirko Brombin <send@mirko.pm>  Thu, 29 Dec 2022 16:29:00 +0000
 
- vanilla-first-setup (1.5.9) kinetic; urgency=critical
+vanilla-first-setup (1.5.9) kinetic; urgency=critical
 
     * Fix reboot button not being hidden
     * Add open-vm-tools-desktop to recipe.json
