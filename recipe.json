@@ -398,7 +398,7 @@
                     "if": "nvidia",
                     "type": "command",
                     "commands": [
-                        "apt install -y linux-headers-$(uname -r)",
+                        "apt install -y linux-headers-$(uname -r) nvidia-prime",
                         "ubuntu-drivers install --recommended"
                     ]
                 }
