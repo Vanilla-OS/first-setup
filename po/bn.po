@@ -8,126 +8,129 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-27 20:42+0530\n"
-"PO-Revision-Date: 2022-10-22 22:16+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-01-17 18:48+0000\n"
+"Last-Translator: Istiaque Ahmed <istiaque.ahmed@outlook.sa>\n"
+"Language-Team: Bengali <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/bn/>\n"
 "Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr ""
+msgstr "ভ্যানিলা ওএস প্রথম সেটআপ"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
-msgstr ""
+msgstr "আপনার ভ্যানিলা ওএস ইনস্টলেশনটি টুইক করুন।"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr ""
+msgstr "কোনো বর্ণনা নেই"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr ""
+msgstr "প্রথম রিলিজ"
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
-msgstr ""
+msgstr "ডিফল্ট"
 
 #: vanilla_first_setup/gtk/default-theme.ui:29
 msgid "Dark"
-msgstr ""
+msgstr "ডার্ক"
 
 #: vanilla_first_setup/gtk/default-theme.ui:42
 msgid "Color Scheme"
-msgstr ""
+msgstr "রঙ তালিকা"
 
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
-msgstr ""
+msgstr "আপনার সিস্টেমের জন্য একটি রঙের স্কিম নির্বাচন করুন।"
 
 #: vanilla_first_setup/gtk/default-theme.ui:49
 msgid "Next"
-msgstr ""
+msgstr "পরবর্তী"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
-msgstr ""
+msgstr "তথ্য দেখাচ্ছে"
 
 #: vanilla_first_setup/gtk/progress.ui:26
 msgid "The changes are being applied. Please Wait…"
-msgstr ""
+msgstr "পরিবর্তনগুলি প্রয়োগ করা হচ্ছে। অনুগ্রহপূর্বক অপেক্ষা করুন…"
 
 #: vanilla_first_setup/gtk/window.ui:25
 msgid "Back"
-msgstr ""
+msgstr "পেছনে"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:12
 msgid "Welcome!"
-msgstr ""
+msgstr "স্বাগতম!"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:13
 msgid "Make your choices, this wizard will take care of everything."
-msgstr ""
+msgstr "আপনার পছন্দগুলি তৈরি করুন, এই উইজার্ড সব কিছু সামলে নেবে।"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "All done!"
-msgstr ""
+msgstr "সব শেষ!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr ""
+msgstr "ভ্যানিলা ওএস ব্যবহার করতে আপনার ডিভাইসটি রিস্টার্ট করুন।"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
-msgstr ""
+msgstr "হ্যাঁ, এটি চালু করুন"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
-msgstr ""
+msgstr "আরও পড়ুন"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
-msgstr ""
+msgstr "শেষ হচ্ছে"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
-msgstr ""
+msgstr "আপনার ডিভাইস শীঘ্রই প্রস্তুত হবে।"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
-msgstr ""
+msgstr "অন্তত একটি বিকল্প নির্বাচন করুন."
 
 #: vanilla_first_setup/views/done.py:37
 msgid "Restart your device to enjoy your {} experience."
-msgstr ""
+msgstr "ভ্যানিলা ওএস ব্যবহার করতে আপনার ডিভাইসটি রিস্টার্ট করুন।"
 
 #: vanilla_first_setup/views/done.py:55
 msgid "Something went wrong"
-msgstr ""
+msgstr "কিছু একটা ভুল হয়েছে"
 
 #: vanilla_first_setup/views/done.py:56
 msgid "Please contact the distribution developers."
-msgstr ""
+msgstr "ডিস্ট্রিবিউশন ডেভেলপারদের সাথে যোগাযোগ করুন।"
 
 #: vanilla_first_setup/main.py:51
 msgid "Run a post script"
-msgstr ""
+msgstr "একটি পোস্ট স্ক্রিপ্ট চালান"
 
 #: vanilla_first_setup/window.py:63
 msgid "Done!"
-msgstr ""
+msgstr "শেষ!"
 
 #: vanilla_first_setup/window.py:63
 msgid "Your device is ready to use."
-msgstr ""
+msgstr "আপনার ডিভাইসটি ব্যবহারের জন্য প্রস্তুত।"
 
 #: vanilla_first_setup/window.py:64
 msgid "Error!"
-msgstr ""
+msgstr "ত্রুটি!"
 
 #: vanilla_first_setup/window.py:64
 msgid "Something went wrong."
-msgstr ""
+msgstr "কিছু একটা ভুল হয়েছে।"
