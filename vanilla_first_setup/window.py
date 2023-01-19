@@ -119,12 +119,17 @@ class VanillaWindow(Adw.ApplicationWindow):
             commands = Parser.parse(finals)
 
             # process the commands
-            return Processor.run(
+            res = Processor.run(
                 self.recipe.get("log_file", "/tmp/vanilla_first_setup.log"), 
                 self.recipe.get("pre_run", []),
                 self.recipe.get("post_run"),
                 commands
             )
+
+            if res:
+                Processor.hide_first_setup()
+
+            return res
 
         def on_done(result, *args):
             if self.__init_mode == 0:

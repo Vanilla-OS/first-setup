@@ -141,8 +141,6 @@ class Processor:
 
         autostart_file = os.path.expanduser(
             "~/.config/autostart/org.vanillaos.FirstSetup.desktop")
-        if os.path.exists(autostart_file):
-            os.remove(autostart_file)
 
         # run the outRun commands
         if out_run:
@@ -150,3 +148,24 @@ class Processor:
             subprocess.run(out_run, shell=True)
 
         return True, ""
+
+    @staticmethod
+    def hide_first_setup():
+        desktop_file = os.path.expanduser(
+            "~/.local/share/applications/org.vanillaos.FirstSetup.desktop")
+        autostart_file = os.path.expanduser(
+            "~/.config/autostart/org.vanillaos.FirstSetup.desktop")
+
+        if os.path.exists(autostart_file):
+            os.remove(autostart_file)
+
+        with open(desktop_file, "w") as f:
+            f.write("[Desktop Entry]\n")
+            f.write("Name=FirstSetup\n")
+            f.write("Comment=FirstSetup\n")
+            f.write("Exec=vanilla-first-setup\n")
+            f.write("Terminal=false\n")
+            f.write("Type=Application\n")
+            f.write("NoDisplay=true\n")
+            f.flush()
+            f.close()
