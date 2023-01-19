@@ -1,8 +1,10 @@
-vanilla-first-setup (1.6.1) kinetic; urgency=critical
+vanilla-first-setup (1.6.3) kinetic; urgency=critical
 
   * Better internet check
   * Add nvidia-prime for NVIDIA Optimus support
   * Update translations
+  * Disable autostart on success
+  * Hide desktop entry on success
 
  -- Mirko Brombin <send@mirko.pm>  Thu, 29 Dec 2022 16:29:00 +0000
 
