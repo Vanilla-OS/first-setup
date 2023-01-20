@@ -229,6 +229,16 @@
                             "flatpak" : true
                         },
                         {
+                            "name" : "Heroic Games Launcher",
+                            "icon" :  "com.heroicgameslauncher.hgl",
+                            "flatpak" : true
+                        },
+                        {
+                            "name" : "Lutris",
+                            "icon" :  "net.lutris.Lutris",
+                            "flatpak" : true
+                        },
+                        {
                             "name" : "Boxes",
                             "icon" :  "org.gnome.Boxes",
                             "flatpak" : true,
@@ -343,6 +353,16 @@
                     "if" : "Bottles",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y com.usebottles.bottles"]
+                },
+                {
+                    "if" : "Heroic Games Launcher",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y com.heroicgameslauncher.hgl"]
+                },
+                {
+                    "if" : "Lutris",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y net.lutris.Lutris"]
                 },
                 {
                     "if" : "Boxes",
