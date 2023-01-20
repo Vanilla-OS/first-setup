@@ -43,5 +43,7 @@
     <file>assets/bundle-app-icons/org.gnome.TextEditor.png</file>
     <file>assets/bundle-app-icons/org.gnome.Weather.png</file>
     <file>assets/bundle-app-icons/org.libreoffice.LibreOffice.png</file>
+    <file>assets/bundle-app-icons/net.lutris.Lutris.png</file>
+    <file>assets/bundle-app-icons/com.heroicgameslauncher.hgl.png</file>
   </gresource>
 </gresources>
