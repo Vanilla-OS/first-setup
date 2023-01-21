@@ -116,7 +116,7 @@ class Processor:
 
             cmd = ["pkexec", "sh", f.name]
             if abroot_bin := shutil.which("abroot"):
-                cmd = ["pkexec", abroot_bin, "exec", "--assume-yes", "sh", f.name]
+                cmd = ["pkexec", abroot_bin, "exec", "-f", "sh", f.name]
 
             #proc = subprocess.run(cmd)
             # the above is wrong, we need to show the output in the console but also capture it
