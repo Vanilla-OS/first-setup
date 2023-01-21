@@ -1,6 +1,7 @@
-vanilla-first-setup (1.6.4) kinetic; urgency=critical
+vanilla-first-setup (1.6.4-1) kinetic; urgency=high
 
   * Add Lutris and Heroic Games Launcher
+  * Adapt to ABRoot 1.3.1
 
  -- Mirko Brombin <send@mirko.pm>  Fri, 20 Jan 2023 21:06:00 +0000
 
