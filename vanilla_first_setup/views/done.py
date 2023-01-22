@@ -55,40 +55,17 @@ class VanillaDone(Adw.Bin):
         self.btn_close.connect("clicked", self.__on_close_clicked)
         self.btn_retry.connect("clicked", self.__on_retry_clicked)
 
-    def set_result(self, result):
-        res, msg, *internet_fail = result
+    def set_result(self, result, terminal):
+        out = terminal.get_text()[0]
 
-        # Default to false if internet_fail wasn't passed with result
-        internet_fail = internet_fail[0] if len(internet_fail) > 0 else False
-
-        if res:
-            return
-
-        if internet_fail:
-            self.status_page.set_icon_name("network-offline-symbolic")
-        else:
+        if not result:
             self.status_page.set_icon_name("dialog-error-symbolic")
-
-        if internet_fail:
-            self.status_page.set_title(_("No internet connection"))
-            self.status_page.set_description(_("Please ensure your system is connected to the internet and try again."))
-            self.log_box.set_visible(False)
-        elif not self.__fail_title and not self.__fail_description:
             self.status_page.set_title(_("Something went wrong"))
             self.status_page.set_description(_("Please contact the distribution developers."))
-            self.log_box.set_visible(True)
-            self.log_output.set_text(msg)
-        else:
-            self.status_page.set_title(self.__fail_title)
-            self.status_page.set_description(self.__fail_description)
-            self.log_box.set_visible(False)
-
-        self.btn_reboot.set_visible(False)
-        if internet_fail:
-            self.btn_retry.set_visible(True)
-            self.btn_close.set_visible(False)
-        else:
-            self.btn_retry.set_visible(False)
+            if len(out) > 0:
+                self.log_output.set_text(out)
+                self.log_box.set_visible(True)
+            self.btn_reboot.set_visible(False)
             self.btn_close.set_visible(True)
 
     def __on_reboot_clicked(self, button):

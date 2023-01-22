@@ -112,30 +112,6 @@ class VanillaWindow(Adw.ApplicationWindow):
         self.carousel.append(self.__view_done)
 
     def __on_page_changed(self, *args):
-
-        def process():
-            # this parses the finals to compatible commands, by replacing the
-            # placeholders with the actual values and generating shell commands
-            commands = Parser.parse(finals)
-
-            # process the commands
-            res = Processor.run(
-                self.recipe.get("log_file", "/tmp/vanilla_first_setup.log"), 
-                self.recipe.get("pre_run", []),
-                self.recipe.get("post_run"),
-                commands
-            )
-
-            if res:
-                Processor.hide_first_setup()
-
-            return res
-
-        def on_done(result, *args):
-            if self.__init_mode == 0:
-                self.__view_done.set_result(result)
-            self.next()
-
         pages_check = [self.__view_done]
         if self.__init_mode == 0:
             pages_check.append(self.__view_progress)
@@ -145,10 +121,8 @@ class VanillaWindow(Adw.ApplicationWindow):
         with contextlib.suppress(AttributeError):
             self.emit("page-changed", page.step_id)
 
-        print("Page changed to", cur_index, page)
-
         if page not in pages_check:
-            self.btn_back.set_visible(cur_index != 0.0)
+            self.btn_back.set_visible(cur_index > 1.0)
             self.carousel_indicator_dots.set_visible(cur_index != 0.0)
             self.headerbar.set_show_end_title_buttons(cur_index != 0.0)
             return
@@ -171,8 +145,23 @@ class VanillaWindow(Adw.ApplicationWindow):
         # collect all the finals
         finals = self.__builder.get_finals()
 
-        # run the process in a thread
-        RunAsync(process, on_done)
+        # this parses the finals to compatible commands, by replacing the
+        # placeholders with the actual values and generating shell commands
+        commands = Parser.parse(finals)
+
+        # process the commands
+        res = Processor.get_setup_commands(
+            self.recipe.get("log_file", "/tmp/vanilla_first_setup.log"), 
+            self.recipe.get("pre_run", []),
+            self.recipe.get("post_run"),
+            commands
+        )
+
+        self.__view_progress.start(res, Processor.hide_first_setup)
+    
+    def set_installation_result(self, result, terminal):
+        self.__view_done.set_result(result, terminal)
+        self.next()
 
     def next(self, widget: Gtk.Widget=None, result: bool=None, *args):
         if result is not None:

@@ -21,6 +21,7 @@ import subprocess
 
 from vanilla_first_setup.utils.recipe import RecipeLoader
 
+from vanilla_first_setup.defaults.conn_check import VanillaDefaultConnCheck
 from vanilla_first_setup.defaults.welcome import VanillaDefaultWelcome
 from vanilla_first_setup.defaults.theme import VanillaDefaultTheme
 
@@ -33,6 +34,7 @@ logger = logging.getLogger("FirstSetup::Builder")
 
 
 templates = {
+    "conn-check": VanillaDefaultConnCheck,
     "welcome": VanillaDefaultWelcome,
     "theme": VanillaDefaultTheme,
     "preferences": VanillaLayoutPreferences,

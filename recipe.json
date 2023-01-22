@@ -39,6 +39,9 @@
         }
     },
     "steps": {
+        "conn-check": {
+            "template": "conn-check"
+        },
         "welcome": {
             "template": "welcome"
         },
