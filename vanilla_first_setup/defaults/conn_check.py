@@ -14,7 +14,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import socket
 import subprocess
+
 from gi.repository import Gtk, GLib, Adw
 
 from vanilla_first_setup.utils.run_async import RunAsync
@@ -49,13 +51,26 @@ class VanillaDefaultConnCheck(Adw.Bin):
 
     def __start_conn_check(self):
         def async_fn():
-            cn = subprocess.run(["wget", "-q", "--spider", "cloudflare.com"],
-                                stdout=subprocess.DEVNULL,
-                                stderr=subprocess.DEVNULL)
-            return cn.returncode
+            try:
+                host = socket.gethostbyname("8.8.8.8")
+                s = socket.create_connection((host, 53), 2)
+                s.close()
+                return True
+            except:
+                try:
+                    host = '2001:4860:4860::8888'
+                    s = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
+                    s.settimeout(2)
+                    s.connect((host, 53))
+                    s.close()
+                    return True
+                except:
+                    pass
+
+            return False
         
         def callback(res, *args):
-            if res == 0:
+            if res:
                 self.__window.next()
                 return
 
