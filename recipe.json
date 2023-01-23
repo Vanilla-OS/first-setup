@@ -209,7 +209,7 @@
                 {
                     "id": "office",
                     "title": "Office",
-                    "subtitle": "Open Source Office suites.",
+                    "subtitle": "Open Source Office suites and applications.",
                     "default": false,
                     "applications" : [
                         {
@@ -223,6 +223,12 @@
                             "icon" : "org.onlyoffice.desktopeditors",
                             "flatpak" : true,
                             "snap" : true
+                        },
+                        {
+                            "name" : "Geary",
+                            "icon" : "org.gnome.Geary",
+                            "flatpak" : true,
+                            "snap" : false
                         }
                     ]
                 },
@@ -362,6 +368,11 @@
                     "if" : "OnlyOffice",
                     "type" : "command",
                     "commands" : ["!nextBoot flatpak install -y org.onlyoffice.desktopeditors || snap install onlyoffice-desktopeditors"]
+                },
+                {
+                    "if" : "Geary",
+                    "type" : "command",
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.Geary"]
                 },
                 {
                     "if" : "Bottles",
