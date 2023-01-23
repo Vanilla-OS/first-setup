@@ -1,4 +1,4 @@
-vanilla-first-setup (1.7.0-1) kinetic; urgency=critical
+vanilla-first-setup (1.7.0-2) kinetic; urgency=critical
 
   * Transaction now runs in a Vte terminal
   * Ability to display the output while the transaction is running

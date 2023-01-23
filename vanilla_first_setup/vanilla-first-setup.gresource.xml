@@ -20,6 +20,7 @@
     <file preprocess="xml-stripblanks">../data/icons/hicolor/symbolic/actions/vanilla-package-symbolic.svg</file>
     <file preprocess="xml-stripblanks">../data/icons/hicolor/symbolic/actions/vanilla-container-terminal-symbolic.svg</file>
     <file preprocess="xml-stripblanks">../data/icons/hicolor/symbolic/actions/vanilla-puzzle-piece-symbolic.svg</file>
+    <file preprocess="xml-stripblanks">../data/icons/hicolor/symbolic/actions/vanilla-history-undo-symbolic.svg</file>
   </gresource>
   <gresource prefix="/io/github/vanilla-os/FirstSetup">
     <file>assets/bundle-app-icons/com.github.flxzt.rnote.png</file>
@@ -46,5 +47,6 @@
     <file>assets/bundle-app-icons/org.libreoffice.LibreOffice.png</file>
     <file>assets/bundle-app-icons/net.lutris.Lutris.png</file>
     <file>assets/bundle-app-icons/com.heroicgameslauncher.hgl.png</file>
+    <file>assets/bundle-app-icons/org.gnome.DejaDup.png</file>
   </gresource>
 </gresources>

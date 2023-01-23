@@ -110,7 +110,11 @@
                 {
                     "if": "appimage",
                     "type": "command",
-                    "commands": ["apt install -y fuse3 libfuse2"]
+                    "commands": [
+                        "apt install -y software-properties-common",
+                        "add-apt-repository --yes ppa:appimagelauncher-team/stable",
+                        "apt install -y fuse3 libfuse2 appimagelauncher"
+                    ]
                 }
             ]
         },
@@ -260,6 +264,12 @@
                             "snap" : true
                         },
                         {
+                            "name" : "Déjà Dup Backups",
+                            "icon" :  "org.gnome.DejaDup",
+                            "flatpak" : true,
+                            "snap" : true
+                        },
+                        {
                             "name" : "Flatseal",
                             "icon" :  "com.github.tchx84.Flatseal",
                             "flatpak" : true
@@ -395,6 +405,11 @@
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Boxes || snap install gnome-boxes"]
                 },
                 {
+                    "if" : "Déjà Dup Backups",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.DejaDup || snap install deja-dup"]
+                },
+                {
                     "if" : "Flatseal",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y com.github.tchx84.Flatseal"]
@@ -418,6 +433,28 @@
                     "if" : "Sound Recorder",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.SoundRecorder"]
+                }
+            ]
+        },
+        "timeshift": {
+            "template": "yes-no",
+            "icon": "vanilla-history-undo-symbolic",
+            "title": "Timeshift",
+            "description": "Choose whether to install Timeshift to create snapshots of your system.",
+            "buttons": {
+                "yes": "Install",
+                "no": "Skip",
+                "info": {
+                    "type": "text",
+                    "title": "Timeshift",
+                    "text": "Timeshift for Linux is an application that provides functionality similar to the System Restore feature in Windows and the Time Machine tool in Mac OS. Timeshift protects your system by taking incremental snapshots of the file system at regular intervals. These snapshots can be restored at a later date to undo all changes to the system.\n\nIn RSYNC mode, snapshots are taken using rsync and hard-links. Common files are shared between snapshots which saves disk space. Each snapshot is a full system backup that can be browsed with a file manager.\n\nIn BTRFS mode, snapshots are taken using the in-built features of the BTRFS filesystem. BTRFS snapshots are supported only on BTRFS systems having an Ubuntu-type subvolume layout (with @ and @home subvolumes)."
+                }
+            },
+            "final": [
+                {
+                    "if": "timeshift",
+                    "type": "command",
+                    "commands": ["apt install -y timeshift"]
                 }
             ]
         },
