@@ -221,6 +221,32 @@
                     ]
                 },
                 {
+                    "id" : "browsers",
+                    "title" : "Browsers",
+                    "subtitle" : "Web Browsers",
+                    "default" : false,
+                    "applications" : [
+                        {
+                            "name" : "Chromium",
+                            "icon" : "org.chromium.Chromium",
+                            "flatpak" : true,
+                            "snap" : true
+                        },
+                        {
+                            "name" : "Brave Browser",
+                            "icon" : "com.brave.Browser",
+                            "flatpak" : true,
+                            "snap" : true
+                        },
+                        {
+                            "name" : "Firefox",
+                            "icon" : "org.mozilla.firefox",
+                            "flatpak" : true,
+                            "snap" : true
+                        }
+                    ]
+                },
+                {
                     "id": "utilities",
                     "title": "Common Utilities",
                     "subtitle": "Useful utilities like Bottles or Sound Recorder.",
@@ -351,6 +377,21 @@
                     "if" : "LibreOffice",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.libreoffice.LibreOffice || snap install libreoffice"]
+                },
+                {
+                    "if" : "Chromium",
+                    "type" : "command",
+                    "commands" : ["!nextBoot flatpak install -y org.chromium.Chromium || snap install chromium"]
+                },
+                { 
+                    "if" : "Brave Browser",
+                    "type" : "command",
+                    "commands" : ["!nextBoot flatpak install -y com.brave.Browser || snap install brave"]
+                },
+                {
+                    "if" : "Firefox",
+                    "type" : "command",
+                    "commands" : ["!nextBoot flatpak install -y org.mozilla.firefox || snap install firefox"]
                 },
                 {
                     "if" : "Bottles",
