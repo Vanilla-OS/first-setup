@@ -474,6 +474,28 @@
                 }
             ]
         },
+        "vaapi-drivers": {
+            "template": "yes-no",
+            "icon": "video-display-symbolic",
+            "title": "Hardware Video Acceleration Drivers",
+            "description": "Choose whether to install VAAPI drivers.",
+            "buttons": {
+                "yes": "Install",
+                "no": "Skip",
+                "info": {
+                    "type": "text",
+                    "title": "About VAAPI drivers",
+                    "text": "Install VAAPI drivers that providing hardware accelerated decoding/encoding capabilities."
+                }
+            },
+                "final": [
+                    {
+                     "if": "vaapi-drivers",
+                     "type": "command",
+                     "commands": ["apt install -y nvidia-vaapi-driver i965-va-driver-shaders intel-media-va-driver-non-free"]
+                    }
+                ]
+        },
         "extra": {
             "template": "preferences",
             "icon": "dialog-warning-symbolic",
