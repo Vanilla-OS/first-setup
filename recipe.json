@@ -209,13 +209,19 @@
                 {
                     "id": "office",
                     "title": "Office",
-                    "subtitle": "The LibreOffice suite.",
+                    "subtitle": "Open Source Office suites.",
                     "default": false,
                     "applications" : [
                         {
                             "name" : "LibreOffice",
                             "icon" : "org.libreoffice.LibreOffice",
                             "flatpak": true,
+                            "snap" : true
+                        },
+                        {
+                            "name" : "OnlyOffice",
+                            "icon" : "org.onlyoffice.desktopeditors",
+                            "flatpak" : true,
                             "snap" : true
                         }
                     ]
@@ -351,6 +357,11 @@
                     "if" : "LibreOffice",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.libreoffice.LibreOffice || snap install libreoffice"]
+                },
+                {
+                    "if" : "OnlyOffice",
+                    "type" : "command",
+                    "commands" : ["!nextBoot flatpak install -y org.onlyoffice.desktopeditors || snap install onlyoffice-desktopeditors"]
                 },
                 {
                     "if" : "Bottles",
