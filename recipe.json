@@ -110,7 +110,11 @@
                 {
                     "if": "appimage",
                     "type": "command",
-                    "commands": ["apt install -y fuse3 libfuse2"]
+                    "commands": [
+                        "apt install -y software-properties-common",
+                        "add-apt-repository --yes ppa:appimagelauncher-team/stable",
+                        "apt install -y fuse3 libfuse2 appimagelauncher"
+                    ]
                 }
             ]
         },
