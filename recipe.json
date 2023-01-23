@@ -492,7 +492,7 @@
                     {
                      "if": "vaapi-drivers",
                      "type": "command",
-                     "commands": ["apt install -y nvidia-vaapi-driver i965-va-driver-shaders intel-media-va-driver-non-free"]
+                     "commands": ["apt install -y nvidia-vaapi-driver i965-va-driver-shaders intel-media-va-driver-non-free gstreamer1.0-vaapi"]
                     }
                 ]
         },
