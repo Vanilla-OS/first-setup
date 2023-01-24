@@ -125,9 +125,9 @@
             "description": "Choose between web browsers alternatives to install",
             "bundles": [
                 {
-                    "id": "oss-browsers",
-                    "title": "OSS Browsers",
-                    "subtitle": "Open Source Web Browsers",
+                    "id": "web-browsers",
+                    "title": "Web Browsers",
+                    "subtitle": "Web Browsers",
                     "default": false,
                     "applications": [
                         {
@@ -147,15 +147,8 @@
                             "icon" : "org.mozilla.firefox",
                             "flatpak" : true,
                             "snap" : true
-                        }
-                    ]
-                },
-                {
-                    "id": "closed-browsers",
-                    "title": "Proprietary Browsers",
-                    "subtitle": "Proprietary Web Browsers",
-                    "default": false,
-                    "applications": [
+                         
+                        },
                         {
                             "name" : "Chrome",
                             "icon" : "com.google.Chrome",
