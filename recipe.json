@@ -225,6 +225,44 @@
                     ]
                 },
                 {
+                    "id": "browsers",
+                    "title": "Web Browsers",
+                    "subtitle": "Web Browsers alternatives",
+                    "default": true,
+                    "applications": [
+                        {
+                            "name" : "Firefox",
+                            "icon" : "org.mozilla.firefox",
+                            "flatpak" : true,
+                            "snap" : true
+                        },
+                        {
+                            "name" : "Chromium",
+                            "icon" : "org.chromium.Chromium",
+                            "flatpak" : false,
+                            "snap" : true
+                        },
+                        {
+                            "name" : "Brave Browser",
+                            "icon" : "com.brave.Browser",
+                            "flatpak" : false,
+                            "snap" : true
+                        },
+                        {
+                            "name" : "Opera",
+                            "icon" : "com.opera.Opera",
+                            "flatpak" : false,
+                            "snap" : true
+                        },
+                        {
+                            "name" : "Falkon",
+                            "icon" : "org.kde.falkon",
+                            "flatpak" : false,
+                            "snap": true
+                        }
+                    ]
+                },
+                {
                     "id": "utilities",
                     "title": "Common Utilities",
                     "subtitle": "Useful utilities like Bottles or Sound Recorder.",
@@ -361,6 +399,31 @@
                     "if" : "LibreOffice",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.libreoffice.LibreOffice || snap install libreoffice"]
+                },
+                {
+                    "if" : "Firefox",
+                    "type" : "command",
+                    "commands" : ["!nextBoot flatpak install -y org.mozilla.firefox || snap install firefox"]
+                },
+                {
+                    "if" : "Chromium",
+                    "type" : "command",
+                    "commands" : ["!nextBoot snap install chromium"]
+                },
+                {   
+                    "if" : "Brave Browser",
+                    "type" : "command",
+                    "commands" : ["!nextBoot snap install brave"]
+                },
+                {
+                    "if" : "Opera",
+                    "type" : "command",
+                    "commands" : ["!nextBoot snap install opera"]
+                },
+                {
+                    "if" : "Falkon",
+                    "type" : "command",
+                    "commands" : ["!nextBoot snap install chromium"]
                 },
                 {
                     "if" : "Bottles",
