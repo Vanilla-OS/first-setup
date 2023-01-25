@@ -231,9 +231,9 @@
                     "default": true,
                     "applications": [
                         {
-                            "name" : "Firefox",
-                            "icon" : "org.mozilla.firefox",
-                            "flatpak" : true,
+                            "name" : "Brave Browser",
+                            "icon" : "com.brave.Browser",
+                            "flatpak" : false,
                             "snap" : true
                         },
                         {
@@ -243,15 +243,9 @@
                             "snap" : true
                         },
                         {
-                            "name" : "Brave Browser",
-                            "icon" : "com.brave.Browser",
-                            "flatpak" : false,
-                            "snap" : true
-                        },
-                        {
-                            "name" : "Opera",
-                            "icon" : "com.opera.Opera",
-                            "flatpak" : false,
+                            "name" : "Firefox",
+                            "icon" : "org.mozilla.firefox",
+                            "flatpak" : true,
                             "snap" : true
                         },
                         {
@@ -259,6 +253,12 @@
                             "icon" : "org.kde.falkon",
                             "flatpak" : false,
                             "snap": true
+                        },
+                        {
+                            "name" : "Opera",
+                            "icon" : "com.opera.Opera",
+                            "flatpak" : false,
+                            "snap" : true
                         }
                     ]
                 },
