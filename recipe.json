@@ -231,6 +231,11 @@
                     "default": false,
                     "applications" : [
                         {
+                            "name" : "AppImage Pool",
+                            "icon" : "io.github.prateekmedia.appimagepool",
+                            "flatpak" : true
+                        },
+                        {
                             "name" : "Bottles",
                             "icon" :  "com.usebottles.bottles",
                             "flatpak" : true
@@ -288,6 +293,11 @@
             ],
             "final": [
                 {
+                    "name" : "AppImage Pool",
+                    "type" : "command",
+                    "commands" : ["!nextBoot flatpak install -y io.github.prateekmedia.appimagepool"]
+                },
+                {
                     "if" : "Calendar",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Calendar"]
@@ -326,7 +336,7 @@
                     "if" : "Document Viewer",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Evince || snap install evince"]
-                },         
+                },
                 {
                     "if" : "Fonts",
                     "type" :  "command",
