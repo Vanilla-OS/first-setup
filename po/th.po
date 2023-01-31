@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-27 20:42+0530\n"
+"POT-Creation-Date: 2023-01-31 23:10+0530\n"
 "PO-Revision-Date: 2023-01-09 11:50+0000\n"
 "Last-Translator: PPNplus <ppnplus@protonmail.com>\n"
-"Language-Team: Thai <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/th/>\n"
+"Language-Team: Thai <https://hosted.weblate.org/projects/vanilla-os/first-"
+"setup/th/>\n"
 "Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,63 +35,10 @@ msgstr "ไม่มีคำอธิบาย"
 msgid "First release"
 msgstr "การเปิดตัวครั้งแรก"
 
-#: vanilla_first_setup/gtk/default-theme.ui:17
-msgid "Default"
-msgstr "ค่าเริ่มต้น"
-
-#: vanilla_first_setup/gtk/default-theme.ui:29
-msgid "Dark"
-msgstr "มืด"
-
-#: vanilla_first_setup/gtk/default-theme.ui:42
-msgid "Color Scheme"
-msgstr "แบบแผนชุดสี"
-
-#: vanilla_first_setup/gtk/default-theme.ui:43
-msgid "Choose a color scheme for your system."
-msgstr "เลือกแบบแผนชุดสีสำหรับระบบของคุณ"
-
-#: vanilla_first_setup/gtk/default-theme.ui:49
-msgid "Next"
-msgstr "ถัดไป"
-
 #: vanilla_first_setup/gtk/dialog.ui:6
 #, fuzzy
 msgid "Showing Information"
 msgstr "กำลังแสดงข้อมูล"
-
-#: vanilla_first_setup/gtk/progress.ui:26
-msgid "The changes are being applied. Please Wait…"
-msgstr "กำลังนำการเปลี่ยนแปลงไปใช้ โปรดรอสักครู่…"
-
-#: vanilla_first_setup/gtk/window.ui:25
-msgid "Back"
-msgstr "ย้อนกลับ"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:12
-msgid "Welcome!"
-msgstr "ยินดีต้อนรับ!"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:13
-msgid "Make your choices, this wizard will take care of everything."
-msgstr "ตั้งค่าตามต้องการได้เลย ตัวติดตั้งนี้จะดูแลทุกอย่าง"
-
-#: vanilla_first_setup/gtk/done.ui:12
-msgid "All done!"
-msgstr "เสร็จหมดแล้ว!"
-
-#: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
-msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr "รีสตาร์ทคอมพิวเตอร์ของคุณเพื่อเพลิดเพลินกับประสบการณ์ Vanila OS ของคุณ"
-
-#: vanilla_first_setup/gtk/layout-yes-no.ui:36
-msgid "Yes, enable it"
-msgstr "ใช่ เปิดใช้งานมัน"
-
-#: vanilla_first_setup/gtk/tour.ui:27
-msgid "Read More"
-msgstr "อ่านเพิ่มเติม"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
@@ -101,20 +48,44 @@ msgstr "กำลังเสร็จสิ้น"
 msgid "Your device will be ready soon."
 msgstr "อุปกรณ์ของคุณจะพร้อมใช้ในอีกไม่นาน"
 
+#: vanilla_first_setup/gtk/progress.ui:91
+msgid "Show Console output"
+msgstr ""
+
+#: vanilla_first_setup/gtk/progress.ui:106
+msgid "Show Slideshow"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:78
+msgid "No Internet Connection!"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:79
+msgid "First Setup requires an active internet connection"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:87
+msgid "Checking Connection…"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:88
+msgid "Please wait until the connection check is done."
+msgstr ""
+
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
 msgstr "โปรดเลือกอย่างน้อยหนึ่งตัวเลือก"
 
-#: vanilla_first_setup/views/done.py:37
+#: vanilla_first_setup/views/done.py:41
 #, fuzzy
 msgid "Restart your device to enjoy your {} experience."
 msgstr "รีสตาร์ทพีซีของคุณเพื่อเพลิดเพลินกับประสบการณ์ {} ของคุณ"
 
-#: vanilla_first_setup/views/done.py:55
+#: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
 msgstr "มีบางอย่างผิดพลาด"
 
-#: vanilla_first_setup/views/done.py:56
+#: vanilla_first_setup/views/done.py:64
 msgid "Please contact the distribution developers."
 msgstr "โปรดติดต่อผู้พัฒนาดิสทริบิวชัน"
 
@@ -122,19 +93,59 @@ msgstr "โปรดติดต่อผู้พัฒนาดิสทริ
 msgid "Run a post script"
 msgstr ""
 
-#: vanilla_first_setup/window.py:63
+#: vanilla_first_setup/window.py:67
 msgid "Done!"
 msgstr "เสร็จสิ้น!"
 
-#: vanilla_first_setup/window.py:63
+#: vanilla_first_setup/window.py:67
 msgid "Your device is ready to use."
 msgstr "อุปกรณ์ของคุณพร้อมใช้งานแล้ว"
 
-#: vanilla_first_setup/window.py:64
+#: vanilla_first_setup/window.py:68
 msgid "Error!"
 msgstr "ผิดพลาด!"
 
-#: vanilla_first_setup/window.py:64
+#: vanilla_first_setup/window.py:68
 #, fuzzy
 msgid "Something went wrong."
 msgstr "มีบางอย่างผิดพลาด"
+
+#~ msgid "Default"
+#~ msgstr "ค่าเริ่มต้น"
+
+#~ msgid "Dark"
+#~ msgstr "มืด"
+
+#~ msgid "Color Scheme"
+#~ msgstr "แบบแผนชุดสี"
+
+#~ msgid "Choose a color scheme for your system."
+#~ msgstr "เลือกแบบแผนชุดสีสำหรับระบบของคุณ"
+
+#~ msgid "Next"
+#~ msgstr "ถัดไป"
+
+#~ msgid "The changes are being applied. Please Wait…"
+#~ msgstr "กำลังนำการเปลี่ยนแปลงไปใช้ โปรดรอสักครู่…"
+
+#~ msgid "Back"
+#~ msgstr "ย้อนกลับ"
+
+#~ msgid "Welcome!"
+#~ msgstr "ยินดีต้อนรับ!"
+
+#~ msgid "Make your choices, this wizard will take care of everything."
+#~ msgstr "ตั้งค่าตามต้องการได้เลย ตัวติดตั้งนี้จะดูแลทุกอย่าง"
+
+#~ msgid "All done!"
+#~ msgstr "เสร็จหมดแล้ว!"
+
+#, fuzzy
+#~ msgid "Restart your device to enjoy your Vanilla OS experience."
+#~ msgstr "รีสตาร์ทคอมพิวเตอร์ของคุณเพื่อเพลิดเพลินกับประสบการณ์ Vanila OS ของคุณ"
+
+#~ msgid "Yes, enable it"
+#~ msgstr "ใช่ เปิดใช้งานมัน"
+
+#~ msgid "Read More"
+#~ msgstr "อ่านเพิ่มเติม"

@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-27 20:42+0530\n"
+"POT-Creation-Date: 2023-01-31 23:10+0530\n"
 "PO-Revision-Date: 2023-01-02 12:40+0000\n"
 "Last-Translator: Emin KÖSE <kansaslicocuk@gmail.com>\n"
-"Language-Team: Turkish <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/tr/>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/vanilla-os/first-"
+"setup/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,63 +35,9 @@ msgstr "Açıklama yok"
 msgid "First release"
 msgstr "İlk sürüm"
 
-#: vanilla_first_setup/gtk/default-theme.ui:17
-msgid "Default"
-msgstr "Varsayılan"
-
-#: vanilla_first_setup/gtk/default-theme.ui:29
-msgid "Dark"
-msgstr "Koyu"
-
-#: vanilla_first_setup/gtk/default-theme.ui:42
-msgid "Color Scheme"
-msgstr "Renk Şeması"
-
-#: vanilla_first_setup/gtk/default-theme.ui:43
-msgid "Choose a color scheme for your system."
-msgstr "Sisteminiz için bir renk şeması seçin."
-
-#: vanilla_first_setup/gtk/default-theme.ui:49
-msgid "Next"
-msgstr "Sonraki"
-
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
 msgstr "Bilgiler gösteriliyor"
-
-#: vanilla_first_setup/gtk/progress.ui:26
-msgid "The changes are being applied. Please Wait…"
-msgstr "Değişiklikler uygulanıyor. Lütfen bekleyiniz…"
-
-#: vanilla_first_setup/gtk/window.ui:25
-msgid "Back"
-msgstr "Geri"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:12
-msgid "Welcome!"
-msgstr "Hoş geldiniz!"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:13
-msgid "Make your choices, this wizard will take care of everything."
-msgstr "Seçimlerinizi yapın, bu sihirbaz sizin için her şeyi halledecektir."
-
-#: vanilla_first_setup/gtk/done.ui:12
-msgid "All done!"
-msgstr "Her şey tamam!"
-
-#: vanilla_first_setup/gtk/done.ui:13
-msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr ""
-"Vanila OS deneyiminizin keyfini çıkarmak için bilgisayarınızı yeniden "
-"başlatın."
-
-#: vanilla_first_setup/gtk/layout-yes-no.ui:36
-msgid "Yes, enable it"
-msgstr "Evet, aktif hale getir"
-
-#: vanilla_first_setup/gtk/tour.ui:27
-msgid "Read More"
-msgstr "Devamını oku"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
@@ -101,20 +47,44 @@ msgstr "Tamamlanıyor"
 msgid "Your device will be ready soon."
 msgstr "Cihazınız çok yakında hazır olacak."
 
+#: vanilla_first_setup/gtk/progress.ui:91
+msgid "Show Console output"
+msgstr ""
+
+#: vanilla_first_setup/gtk/progress.ui:106
+msgid "Show Slideshow"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:78
+msgid "No Internet Connection!"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:79
+msgid "First Setup requires an active internet connection"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:87
+msgid "Checking Connection…"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:88
+msgid "Please wait until the connection check is done."
+msgstr ""
+
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
 msgstr "Lütfen en azından bir seçeneği seçin."
 
-#: vanilla_first_setup/views/done.py:37
+#: vanilla_first_setup/views/done.py:41
 msgid "Restart your device to enjoy your {} experience."
 msgstr ""
 "{} deneyiminizin keyfini çıkarmak için bilgisayarınızı yeniden başlatın."
 
-#: vanilla_first_setup/views/done.py:55
+#: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
 msgstr "Bazı şeyler yolunda gitmedi"
 
-#: vanilla_first_setup/views/done.py:56
+#: vanilla_first_setup/views/done.py:64
 msgid "Please contact the distribution developers."
 msgstr "Lütfen dağıtım geliştiricileri ile irtibata geçin."
 
@@ -123,18 +93,59 @@ msgstr "Lütfen dağıtım geliştiricileri ile irtibata geçin."
 msgid "Run a post script"
 msgstr "Yükleme sonrası komut dosyasını çalıştırın"
 
-#: vanilla_first_setup/window.py:63
+#: vanilla_first_setup/window.py:67
 msgid "Done!"
 msgstr "Tamamlandı!"
 
-#: vanilla_first_setup/window.py:63
+#: vanilla_first_setup/window.py:67
 msgid "Your device is ready to use."
 msgstr "Cihazınız kullanıma hazır."
 
-#: vanilla_first_setup/window.py:64
+#: vanilla_first_setup/window.py:68
 msgid "Error!"
 msgstr "Hata!"
 
-#: vanilla_first_setup/window.py:64
+#: vanilla_first_setup/window.py:68
 msgid "Something went wrong."
 msgstr "Bir şeyler yolunda gitmedi."
+
+#~ msgid "Default"
+#~ msgstr "Varsayılan"
+
+#~ msgid "Dark"
+#~ msgstr "Koyu"
+
+#~ msgid "Color Scheme"
+#~ msgstr "Renk Şeması"
+
+#~ msgid "Choose a color scheme for your system."
+#~ msgstr "Sisteminiz için bir renk şeması seçin."
+
+#~ msgid "Next"
+#~ msgstr "Sonraki"
+
+#~ msgid "The changes are being applied. Please Wait…"
+#~ msgstr "Değişiklikler uygulanıyor. Lütfen bekleyiniz…"
+
+#~ msgid "Back"
+#~ msgstr "Geri"
+
+#~ msgid "Welcome!"
+#~ msgstr "Hoş geldiniz!"
+
+#~ msgid "Make your choices, this wizard will take care of everything."
+#~ msgstr "Seçimlerinizi yapın, bu sihirbaz sizin için her şeyi halledecektir."
+
+#~ msgid "All done!"
+#~ msgstr "Her şey tamam!"
+
+#~ msgid "Restart your device to enjoy your Vanilla OS experience."
+#~ msgstr ""
+#~ "Vanila OS deneyiminizin keyfini çıkarmak için bilgisayarınızı yeniden "
+#~ "başlatın."
+
+#~ msgid "Yes, enable it"
+#~ msgstr "Evet, aktif hale getir"
+
+#~ msgid "Read More"
+#~ msgstr "Devamını oku"

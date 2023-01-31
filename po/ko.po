@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-27 20:42+0530\n"
+"POT-Creation-Date: 2023-01-31 23:10+0530\n"
 "PO-Revision-Date: 2022-11-09 04:07+0000\n"
 "Last-Translator: 이정희 <daemul72@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/vanilla-os/first-"
@@ -36,63 +36,10 @@ msgstr "설명 없음"
 msgid "First release"
 msgstr "첫 번째 릴리스"
 
-#: vanilla_first_setup/gtk/default-theme.ui:17
-msgid "Default"
-msgstr "기본값"
-
-#: vanilla_first_setup/gtk/default-theme.ui:29
-msgid "Dark"
-msgstr "어두운 테마"
-
-#: vanilla_first_setup/gtk/default-theme.ui:42
-msgid "Color Scheme"
-msgstr "색 구성표"
-
-#: vanilla_first_setup/gtk/default-theme.ui:43
-msgid "Choose a color scheme for your system."
-msgstr "사용자 시스템의 색 구성표를 고릅니다."
-
-#: vanilla_first_setup/gtk/default-theme.ui:49
-msgid "Next"
-msgstr "다음"
-
 #: vanilla_first_setup/gtk/dialog.ui:6
 #, fuzzy
 msgid "Showing Information"
 msgstr "정보 표시"
-
-#: vanilla_first_setup/gtk/progress.ui:26
-msgid "The changes are being applied. Please Wait…"
-msgstr "변경사항을 적용하고 있습니다. 기다려 주십시오…"
-
-#: vanilla_first_setup/gtk/window.ui:25
-msgid "Back"
-msgstr "뒤로"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:12
-msgid "Welcome!"
-msgstr "환영합니다!"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:13
-msgid "Make your choices, this wizard will take care of everything."
-msgstr "사용자가 고르면, 이 마법사가 모든 것을 처리할 것입니다."
-
-#: vanilla_first_setup/gtk/done.ui:12
-msgid "All done!"
-msgstr "모두 완료되었습니다!"
-
-#: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
-msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr "사용자의 PC를 다시 시작하여 바닐라 OS 환경을 즐기십시오."
-
-#: vanilla_first_setup/gtk/layout-yes-no.ui:36
-msgid "Yes, enable it"
-msgstr "예, 활성화합니다"
-
-#: vanilla_first_setup/gtk/tour.ui:27
-msgid "Read More"
-msgstr "더 읽기"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
@@ -102,20 +49,44 @@ msgstr ""
 msgid "Your device will be ready soon."
 msgstr ""
 
+#: vanilla_first_setup/gtk/progress.ui:91
+msgid "Show Console output"
+msgstr ""
+
+#: vanilla_first_setup/gtk/progress.ui:106
+msgid "Show Slideshow"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:78
+msgid "No Internet Connection!"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:79
+msgid "First Setup requires an active internet connection"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:87
+msgid "Checking Connection…"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:88
+msgid "Please wait until the connection check is done."
+msgstr ""
+
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
 msgstr "옵션을 하나 이상 선택하십시오."
 
-#: vanilla_first_setup/views/done.py:37
+#: vanilla_first_setup/views/done.py:41
 #, fuzzy
 msgid "Restart your device to enjoy your {} experience."
 msgstr "사용자의 PC를 다시 시작하여 {} 환경을 즐기십시오."
 
-#: vanilla_first_setup/views/done.py:55
+#: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
 msgstr "문제가 발생했습니다"
 
-#: vanilla_first_setup/views/done.py:56
+#: vanilla_first_setup/views/done.py:64
 msgid "Please contact the distribution developers."
 msgstr "배포 개발자에게 문의하십시오."
 
@@ -123,19 +94,59 @@ msgstr "배포 개발자에게 문의하십시오."
 msgid "Run a post script"
 msgstr ""
 
-#: vanilla_first_setup/window.py:63
+#: vanilla_first_setup/window.py:67
 msgid "Done!"
 msgstr ""
 
-#: vanilla_first_setup/window.py:63
+#: vanilla_first_setup/window.py:67
 msgid "Your device is ready to use."
 msgstr ""
 
-#: vanilla_first_setup/window.py:64
+#: vanilla_first_setup/window.py:68
 msgid "Error!"
 msgstr ""
 
-#: vanilla_first_setup/window.py:64
+#: vanilla_first_setup/window.py:68
 #, fuzzy
 msgid "Something went wrong."
 msgstr "문제가 발생했습니다"
+
+#~ msgid "Default"
+#~ msgstr "기본값"
+
+#~ msgid "Dark"
+#~ msgstr "어두운 테마"
+
+#~ msgid "Color Scheme"
+#~ msgstr "색 구성표"
+
+#~ msgid "Choose a color scheme for your system."
+#~ msgstr "사용자 시스템의 색 구성표를 고릅니다."
+
+#~ msgid "Next"
+#~ msgstr "다음"
+
+#~ msgid "The changes are being applied. Please Wait…"
+#~ msgstr "변경사항을 적용하고 있습니다. 기다려 주십시오…"
+
+#~ msgid "Back"
+#~ msgstr "뒤로"
+
+#~ msgid "Welcome!"
+#~ msgstr "환영합니다!"
+
+#~ msgid "Make your choices, this wizard will take care of everything."
+#~ msgstr "사용자가 고르면, 이 마법사가 모든 것을 처리할 것입니다."
+
+#~ msgid "All done!"
+#~ msgstr "모두 완료되었습니다!"
+
+#, fuzzy
+#~ msgid "Restart your device to enjoy your Vanilla OS experience."
+#~ msgstr "사용자의 PC를 다시 시작하여 바닐라 OS 환경을 즐기십시오."
+
+#~ msgid "Yes, enable it"
+#~ msgstr "예, 활성화합니다"
+
+#~ msgid "Read More"
+#~ msgstr "더 읽기"

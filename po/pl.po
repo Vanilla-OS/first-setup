@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-27 20:42+0530\n"
+"POT-Creation-Date: 2023-01-31 23:10+0530\n"
 "PO-Revision-Date: 2023-01-02 12:40+0000\n"
 "Last-Translator: _Ghost_ <Krzysztof.siekierski@interia.pl>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/pl/>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/vanilla-os/first-"
+"setup/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,61 +36,9 @@ msgstr "Brak opisu"
 msgid "First release"
 msgstr "Pierwsze wydanie"
 
-#: vanilla_first_setup/gtk/default-theme.ui:17
-msgid "Default"
-msgstr "Domyślny"
-
-#: vanilla_first_setup/gtk/default-theme.ui:29
-msgid "Dark"
-msgstr "Ciemny"
-
-#: vanilla_first_setup/gtk/default-theme.ui:42
-msgid "Color Scheme"
-msgstr "Schemat kolorów"
-
-#: vanilla_first_setup/gtk/default-theme.ui:43
-msgid "Choose a color scheme for your system."
-msgstr "Wybierz schemat kolorów dla swojego systemu."
-
-#: vanilla_first_setup/gtk/default-theme.ui:49
-msgid "Next"
-msgstr "Dalej"
-
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
 msgstr "Wyświetlanie informacji"
-
-#: vanilla_first_setup/gtk/progress.ui:26
-msgid "The changes are being applied. Please Wait…"
-msgstr "Zmiany są wprowadzane. Proszę czekać…"
-
-#: vanilla_first_setup/gtk/window.ui:25
-msgid "Back"
-msgstr "Wróć"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:12
-msgid "Welcome!"
-msgstr "Witamy!"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:13
-msgid "Make your choices, this wizard will take care of everything."
-msgstr "Dokonaj wyborów, a ten kreator zajmie się wszystkim."
-
-#: vanilla_first_setup/gtk/done.ui:12
-msgid "All done!"
-msgstr "Wszystko gotowe!"
-
-#: vanilla_first_setup/gtk/done.ui:13
-msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr "Uruchom ponownie komputer, aby cieszyć się korzystaniem z Vanilla OS."
-
-#: vanilla_first_setup/gtk/layout-yes-no.ui:36
-msgid "Yes, enable it"
-msgstr "Tak, włącz to"
-
-#: vanilla_first_setup/gtk/tour.ui:27
-msgid "Read More"
-msgstr "Czytaj więcej"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
@@ -100,19 +48,43 @@ msgstr "Finalizacja"
 msgid "Your device will be ready soon."
 msgstr "Twoje urządzenie będzie wkrótce gotowe."
 
+#: vanilla_first_setup/gtk/progress.ui:91
+msgid "Show Console output"
+msgstr ""
+
+#: vanilla_first_setup/gtk/progress.ui:106
+msgid "Show Slideshow"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:78
+msgid "No Internet Connection!"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:79
+msgid "First Setup requires an active internet connection"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:87
+msgid "Checking Connection…"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:88
+msgid "Please wait until the connection check is done."
+msgstr ""
+
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
 msgstr "Wybierz co najmniej jedną opcję."
 
-#: vanilla_first_setup/views/done.py:37
+#: vanilla_first_setup/views/done.py:41
 msgid "Restart your device to enjoy your {} experience."
 msgstr "Uruchom ponownie komputer, aby cieszyć się z {}."
 
-#: vanilla_first_setup/views/done.py:55
+#: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
 msgstr "Coś poszło nie tak"
 
-#: vanilla_first_setup/views/done.py:56
+#: vanilla_first_setup/views/done.py:64
 msgid "Please contact the distribution developers."
 msgstr "Prosimy o kontakt z twórcami dystrybucji."
 
@@ -120,18 +92,58 @@ msgstr "Prosimy o kontakt z twórcami dystrybucji."
 msgid "Run a post script"
 msgstr "Uruchom post skrypt"
 
-#: vanilla_first_setup/window.py:63
+#: vanilla_first_setup/window.py:67
 msgid "Done!"
 msgstr "Gotowe!"
 
-#: vanilla_first_setup/window.py:63
+#: vanilla_first_setup/window.py:67
 msgid "Your device is ready to use."
 msgstr "Twoje urządzenie jest gotowe do użytku"
 
-#: vanilla_first_setup/window.py:64
+#: vanilla_first_setup/window.py:68
 msgid "Error!"
 msgstr "Błąd!"
 
-#: vanilla_first_setup/window.py:64
+#: vanilla_first_setup/window.py:68
 msgid "Something went wrong."
 msgstr "Coś poszło nie tak."
+
+#~ msgid "Default"
+#~ msgstr "Domyślny"
+
+#~ msgid "Dark"
+#~ msgstr "Ciemny"
+
+#~ msgid "Color Scheme"
+#~ msgstr "Schemat kolorów"
+
+#~ msgid "Choose a color scheme for your system."
+#~ msgstr "Wybierz schemat kolorów dla swojego systemu."
+
+#~ msgid "Next"
+#~ msgstr "Dalej"
+
+#~ msgid "The changes are being applied. Please Wait…"
+#~ msgstr "Zmiany są wprowadzane. Proszę czekać…"
+
+#~ msgid "Back"
+#~ msgstr "Wróć"
+
+#~ msgid "Welcome!"
+#~ msgstr "Witamy!"
+
+#~ msgid "Make your choices, this wizard will take care of everything."
+#~ msgstr "Dokonaj wyborów, a ten kreator zajmie się wszystkim."
+
+#~ msgid "All done!"
+#~ msgstr "Wszystko gotowe!"
+
+#~ msgid "Restart your device to enjoy your Vanilla OS experience."
+#~ msgstr ""
+#~ "Uruchom ponownie komputer, aby cieszyć się korzystaniem z Vanilla OS."
+
+#~ msgid "Yes, enable it"
+#~ msgstr "Tak, włącz to"
+
+#~ msgid "Read More"
+#~ msgstr "Czytaj więcej"

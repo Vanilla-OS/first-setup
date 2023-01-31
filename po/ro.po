@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-27 20:42+0530\n"
+"POT-Creation-Date: 2023-01-31 23:10+0530\n"
 "PO-Revision-Date: 2022-12-30 18:15+0000\n"
 "Last-Translator: finnmonstar <finnmonstar@pm.me>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/vanilla-os/"
@@ -36,62 +36,9 @@ msgstr "Fără descriere"
 msgid "First release"
 msgstr "Prima lansare"
 
-#: vanilla_first_setup/gtk/default-theme.ui:17
-msgid "Default"
-msgstr "Implicit"
-
-#: vanilla_first_setup/gtk/default-theme.ui:29
-msgid "Dark"
-msgstr "Întunecat"
-
-#: vanilla_first_setup/gtk/default-theme.ui:42
-msgid "Color Scheme"
-msgstr "Schema de culoare"
-
-#: vanilla_first_setup/gtk/default-theme.ui:43
-msgid "Choose a color scheme for your system."
-msgstr "Selectează schema de culoare pentru sistemul tău."
-
-#: vanilla_first_setup/gtk/default-theme.ui:49
-msgid "Next"
-msgstr "Următorul"
-
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
 msgstr "Se arată informații"
-
-#: vanilla_first_setup/gtk/progress.ui:26
-msgid "The changes are being applied. Please Wait…"
-msgstr "Schimbările se aplică. Te rog așteaptă…"
-
-#: vanilla_first_setup/gtk/window.ui:25
-msgid "Back"
-msgstr "Înapoi"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:12
-msgid "Welcome!"
-msgstr "Bine ai venit!"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:13
-msgid "Make your choices, this wizard will take care of everything."
-msgstr ""
-"Alege opțiunile potrivite și programul de instalare va avea grijă de tot."
-
-#: vanilla_first_setup/gtk/done.ui:12
-msgid "All done!"
-msgstr "Totul este gata!"
-
-#: vanilla_first_setup/gtk/done.ui:13
-msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr "Repornește-ți dispozitivul pentru a te bucura de experiența Vanilla OS."
-
-#: vanilla_first_setup/gtk/layout-yes-no.ui:36
-msgid "Yes, enable it"
-msgstr "Da, activează opțiunea"
-
-#: vanilla_first_setup/gtk/tour.ui:27
-msgid "Read More"
-msgstr "Citește mai mult"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
@@ -101,19 +48,43 @@ msgstr "Se finalizează"
 msgid "Your device will be ready soon."
 msgstr "Dispozitivul tău va fi pregătit curând."
 
+#: vanilla_first_setup/gtk/progress.ui:91
+msgid "Show Console output"
+msgstr ""
+
+#: vanilla_first_setup/gtk/progress.ui:106
+msgid "Show Slideshow"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:78
+msgid "No Internet Connection!"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:79
+msgid "First Setup requires an active internet connection"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:87
+msgid "Checking Connection…"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:88
+msgid "Please wait until the connection check is done."
+msgstr ""
+
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
 msgstr "Alege te rog cel puțin o opțiune."
 
-#: vanilla_first_setup/views/done.py:37
+#: vanilla_first_setup/views/done.py:41
 msgid "Restart your device to enjoy your {} experience."
 msgstr "Repornește-ți dispozitivul pentru a te bucura de experiența {}."
 
-#: vanilla_first_setup/views/done.py:55
+#: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
 msgstr "Ceva a dat greș"
 
-#: vanilla_first_setup/views/done.py:56
+#: vanilla_first_setup/views/done.py:64
 msgid "Please contact the distribution developers."
 msgstr "Te rog contactează dezvoltatorii distribuției."
 
@@ -121,18 +92,59 @@ msgstr "Te rog contactează dezvoltatorii distribuției."
 msgid "Run a post script"
 msgstr "Rulează un script de după instalare"
 
-#: vanilla_first_setup/window.py:63
+#: vanilla_first_setup/window.py:67
 msgid "Done!"
 msgstr "Gata!"
 
-#: vanilla_first_setup/window.py:63
+#: vanilla_first_setup/window.py:67
 msgid "Your device is ready to use."
 msgstr "Dispozitivul tău este gata de folosință."
 
-#: vanilla_first_setup/window.py:64
+#: vanilla_first_setup/window.py:68
 msgid "Error!"
 msgstr "Eroare!"
 
-#: vanilla_first_setup/window.py:64
+#: vanilla_first_setup/window.py:68
 msgid "Something went wrong."
 msgstr "Ceva a dat greș."
+
+#~ msgid "Default"
+#~ msgstr "Implicit"
+
+#~ msgid "Dark"
+#~ msgstr "Întunecat"
+
+#~ msgid "Color Scheme"
+#~ msgstr "Schema de culoare"
+
+#~ msgid "Choose a color scheme for your system."
+#~ msgstr "Selectează schema de culoare pentru sistemul tău."
+
+#~ msgid "Next"
+#~ msgstr "Următorul"
+
+#~ msgid "The changes are being applied. Please Wait…"
+#~ msgstr "Schimbările se aplică. Te rog așteaptă…"
+
+#~ msgid "Back"
+#~ msgstr "Înapoi"
+
+#~ msgid "Welcome!"
+#~ msgstr "Bine ai venit!"
+
+#~ msgid "Make your choices, this wizard will take care of everything."
+#~ msgstr ""
+#~ "Alege opțiunile potrivite și programul de instalare va avea grijă de tot."
+
+#~ msgid "All done!"
+#~ msgstr "Totul este gata!"
+
+#~ msgid "Restart your device to enjoy your Vanilla OS experience."
+#~ msgstr ""
+#~ "Repornește-ți dispozitivul pentru a te bucura de experiența Vanilla OS."
+
+#~ msgid "Yes, enable it"
+#~ msgstr "Da, activează opțiunea"
+
+#~ msgid "Read More"
+#~ msgstr "Citește mai mult"
