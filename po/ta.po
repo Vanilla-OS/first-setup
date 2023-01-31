@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-27 20:42+0530\n"
+"POT-Creation-Date: 2023-01-31 23:10+0530\n"
 "PO-Revision-Date: 2022-12-29 16:48+0000\n"
 "Last-Translator: K.B.Dharun Krishna <kbdharunkrishna@gmail.com>\n"
-"Language-Team: Tamil <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/ta/>\n"
+"Language-Team: Tamil <https://hosted.weblate.org/projects/vanilla-os/first-"
+"setup/ta/>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,61 +35,9 @@ msgstr "விளக்கம் இல்லை"
 msgid "First release"
 msgstr "முதல் வெளியீடு"
 
-#: vanilla_first_setup/gtk/default-theme.ui:17
-msgid "Default"
-msgstr "இயல்புநிலை"
-
-#: vanilla_first_setup/gtk/default-theme.ui:29
-msgid "Dark"
-msgstr "இருள்"
-
-#: vanilla_first_setup/gtk/default-theme.ui:42
-msgid "Color Scheme"
-msgstr "வண்ண திட்டம்"
-
-#: vanilla_first_setup/gtk/default-theme.ui:43
-msgid "Choose a color scheme for your system."
-msgstr "உங்கள் கணினிக்கான வண்ணத் திட்டத்தைத் தேர்ந்தெடுக்கவும்."
-
-#: vanilla_first_setup/gtk/default-theme.ui:49
-msgid "Next"
-msgstr "அடுத்தது"
-
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
 msgstr "தகவலைக் காட்டுகிறது"
-
-#: vanilla_first_setup/gtk/progress.ui:26
-msgid "The changes are being applied. Please Wait…"
-msgstr "மாற்றங்கள் செயல்படுத்தப்படுகின்றன. தயவுசெய்து காத்திருங்கள்…"
-
-#: vanilla_first_setup/gtk/window.ui:25
-msgid "Back"
-msgstr "மீண்டும்"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:12
-msgid "Welcome!"
-msgstr "வரவேற்கிறோம்!"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:13
-msgid "Make your choices, this wizard will take care of everything."
-msgstr "உங்கள் தேர்வுகளை செய்யுங்கள், இந்த வழிகாட்டி எல்லாவற்றையும் கவனித்துக்கொள்ளும்."
-
-#: vanilla_first_setup/gtk/done.ui:12
-msgid "All done!"
-msgstr "அனைத்தும் முடிந்தது!"
-
-#: vanilla_first_setup/gtk/done.ui:13
-msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr "உங்கள் வெண்ணிலா OS அனுபவத்தை அனுபவிக்க உங்கள் சாதனத்தை மறுதொடக்கம் செய்யவும்."
-
-#: vanilla_first_setup/gtk/layout-yes-no.ui:36
-msgid "Yes, enable it"
-msgstr "ஆம், அதை இயக்கு"
-
-#: vanilla_first_setup/gtk/tour.ui:27
-msgid "Read More"
-msgstr "மேலும் படிக்கவும்"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
@@ -99,20 +47,43 @@ msgstr "இறுதிப்படுத்துதல்"
 msgid "Your device will be ready soon."
 msgstr "உங்கள் சாதனம் விரைவில் தயாராகிவிடும்."
 
+#: vanilla_first_setup/gtk/progress.ui:91
+msgid "Show Console output"
+msgstr ""
+
+#: vanilla_first_setup/gtk/progress.ui:106
+msgid "Show Slideshow"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:78
+msgid "No Internet Connection!"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:79
+msgid "First Setup requires an active internet connection"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:87
+msgid "Checking Connection…"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:88
+msgid "Please wait until the connection check is done."
+msgstr ""
+
 #: vanilla_first_setup/layouts/preferences.py:75
-#: vanilla_first_setup/layouts/preferences.py:70
 msgid "Please select at least one option."
 msgstr "குறைந்தபட்சம் ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்."
 
-#: vanilla_first_setup/views/done.py:34
+#: vanilla_first_setup/views/done.py:41
 msgid "Restart your device to enjoy your {} experience."
 msgstr "உங்கள் {} அனுபவத்தை அனுபவிக்க உங்கள் சாதனத்தை மறுதொடக்கம் செய்யவும்."
 
-#: vanilla_first_setup/views/done.py:55 vanilla_first_setup/views/done.py:45
+#: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
 msgstr "ஏதோ தவறாகிவிட்டது"
 
-#: vanilla_first_setup/views/done.py:56 vanilla_first_setup/views/done.py:46
+#: vanilla_first_setup/views/done.py:64
 msgid "Please contact the distribution developers."
 msgstr "விநியோக டெவலப்பர்களைத் தொடர்பு கொள்ளவும்."
 
@@ -120,18 +91,57 @@ msgstr "விநியோக டெவலப்பர்களைத் தொ�
 msgid "Run a post script"
 msgstr "இடுகை ஸ்கிரிப்டை இயக்கவும்"
 
-#: vanilla_first_setup/window.py:63
+#: vanilla_first_setup/window.py:67
 msgid "Done!"
 msgstr "முடிந்தது!"
 
-#: vanilla_first_setup/window.py:63
+#: vanilla_first_setup/window.py:67
 msgid "Your device is ready to use."
 msgstr "உங்கள் சாதனம் பயன்படுத்த தயாராக உள்ளது."
 
-#: vanilla_first_setup/window.py:64
+#: vanilla_first_setup/window.py:68
 msgid "Error!"
 msgstr "பிழை!"
 
-#: vanilla_first_setup/window.py:64
+#: vanilla_first_setup/window.py:68
 msgid "Something went wrong."
 msgstr "ஏதோ தவறாகிவிட்டது."
+
+#~ msgid "Default"
+#~ msgstr "இயல்புநிலை"
+
+#~ msgid "Dark"
+#~ msgstr "இருள்"
+
+#~ msgid "Color Scheme"
+#~ msgstr "வண்ண திட்டம்"
+
+#~ msgid "Choose a color scheme for your system."
+#~ msgstr "உங்கள் கணினிக்கான வண்ணத் திட்டத்தைத் தேர்ந்தெடுக்கவும்."
+
+#~ msgid "Next"
+#~ msgstr "அடுத்தது"
+
+#~ msgid "The changes are being applied. Please Wait…"
+#~ msgstr "மாற்றங்கள் செயல்படுத்தப்படுகின்றன. தயவுசெய்து காத்திருங்கள்…"
+
+#~ msgid "Back"
+#~ msgstr "மீண்டும்"
+
+#~ msgid "Welcome!"
+#~ msgstr "வரவேற்கிறோம்!"
+
+#~ msgid "Make your choices, this wizard will take care of everything."
+#~ msgstr "உங்கள் தேர்வுகளை செய்யுங்கள், இந்த வழிகாட்டி எல்லாவற்றையும் கவனித்துக்கொள்ளும்."
+
+#~ msgid "All done!"
+#~ msgstr "அனைத்தும் முடிந்தது!"
+
+#~ msgid "Restart your device to enjoy your Vanilla OS experience."
+#~ msgstr "உங்கள் வெண்ணிலா OS அனுபவத்தை அனுபவிக்க உங்கள் சாதனத்தை மறுதொடக்கம் செய்யவும்."
+
+#~ msgid "Yes, enable it"
+#~ msgstr "ஆம், அதை இயக்கு"
+
+#~ msgid "Read More"
+#~ msgstr "மேலும் படிக்கவும்"

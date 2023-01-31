@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-27 20:42+0530\n"
+"POT-Creation-Date: 2023-01-31 23:10+0530\n"
 "PO-Revision-Date: 2023-01-17 18:48+0000\n"
 "Last-Translator: Istiaque Ahmed <istiaque.ahmed@outlook.sa>\n"
-"Language-Team: Bengali <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/bn/>\n"
+"Language-Team: Bengali <https://hosted.weblate.org/projects/vanilla-os/first-"
+"setup/bn/>\n"
 "Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,61 +35,9 @@ msgstr "কোনো বর্ণনা নেই"
 msgid "First release"
 msgstr "প্রথম রিলিজ"
 
-#: vanilla_first_setup/gtk/default-theme.ui:17
-msgid "Default"
-msgstr "ডিফল্ট"
-
-#: vanilla_first_setup/gtk/default-theme.ui:29
-msgid "Dark"
-msgstr "ডার্ক"
-
-#: vanilla_first_setup/gtk/default-theme.ui:42
-msgid "Color Scheme"
-msgstr "রঙ তালিকা"
-
-#: vanilla_first_setup/gtk/default-theme.ui:43
-msgid "Choose a color scheme for your system."
-msgstr "আপনার সিস্টেমের জন্য একটি রঙের স্কিম নির্বাচন করুন।"
-
-#: vanilla_first_setup/gtk/default-theme.ui:49
-msgid "Next"
-msgstr "পরবর্তী"
-
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
 msgstr "তথ্য দেখাচ্ছে"
-
-#: vanilla_first_setup/gtk/progress.ui:26
-msgid "The changes are being applied. Please Wait…"
-msgstr "পরিবর্তনগুলি প্রয়োগ করা হচ্ছে। অনুগ্রহপূর্বক অপেক্ষা করুন…"
-
-#: vanilla_first_setup/gtk/window.ui:25
-msgid "Back"
-msgstr "পেছনে"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:12
-msgid "Welcome!"
-msgstr "স্বাগতম!"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:13
-msgid "Make your choices, this wizard will take care of everything."
-msgstr "আপনার পছন্দগুলি তৈরি করুন, এই উইজার্ড সব কিছু সামলে নেবে।"
-
-#: vanilla_first_setup/gtk/done.ui:12
-msgid "All done!"
-msgstr "সব শেষ!"
-
-#: vanilla_first_setup/gtk/done.ui:13
-msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr "ভ্যানিলা ওএস ব্যবহার করতে আপনার ডিভাইসটি রিস্টার্ট করুন।"
-
-#: vanilla_first_setup/gtk/layout-yes-no.ui:36
-msgid "Yes, enable it"
-msgstr "হ্যাঁ, এটি চালু করুন"
-
-#: vanilla_first_setup/gtk/tour.ui:27
-msgid "Read More"
-msgstr "আরও পড়ুন"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
@@ -99,19 +47,43 @@ msgstr "শেষ হচ্ছে"
 msgid "Your device will be ready soon."
 msgstr "আপনার ডিভাইস শীঘ্রই প্রস্তুত হবে।"
 
+#: vanilla_first_setup/gtk/progress.ui:91
+msgid "Show Console output"
+msgstr ""
+
+#: vanilla_first_setup/gtk/progress.ui:106
+msgid "Show Slideshow"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:78
+msgid "No Internet Connection!"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:79
+msgid "First Setup requires an active internet connection"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:87
+msgid "Checking Connection…"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:88
+msgid "Please wait until the connection check is done."
+msgstr ""
+
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
 msgstr "অন্তত একটি বিকল্প নির্বাচন করুন."
 
-#: vanilla_first_setup/views/done.py:37
+#: vanilla_first_setup/views/done.py:41
 msgid "Restart your device to enjoy your {} experience."
 msgstr "ভ্যানিলা ওএস ব্যবহার করতে আপনার ডিভাইসটি রিস্টার্ট করুন।"
 
-#: vanilla_first_setup/views/done.py:55
+#: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
 msgstr "কিছু একটা ভুল হয়েছে"
 
-#: vanilla_first_setup/views/done.py:56
+#: vanilla_first_setup/views/done.py:64
 msgid "Please contact the distribution developers."
 msgstr "ডিস্ট্রিবিউশন ডেভেলপারদের সাথে যোগাযোগ করুন।"
 
@@ -119,18 +91,57 @@ msgstr "ডিস্ট্রিবিউশন ডেভেলপারদে�
 msgid "Run a post script"
 msgstr "একটি পোস্ট স্ক্রিপ্ট চালান"
 
-#: vanilla_first_setup/window.py:63
+#: vanilla_first_setup/window.py:67
 msgid "Done!"
 msgstr "শেষ!"
 
-#: vanilla_first_setup/window.py:63
+#: vanilla_first_setup/window.py:67
 msgid "Your device is ready to use."
 msgstr "আপনার ডিভাইসটি ব্যবহারের জন্য প্রস্তুত।"
 
-#: vanilla_first_setup/window.py:64
+#: vanilla_first_setup/window.py:68
 msgid "Error!"
 msgstr "ত্রুটি!"
 
-#: vanilla_first_setup/window.py:64
+#: vanilla_first_setup/window.py:68
 msgid "Something went wrong."
 msgstr "কিছু একটা ভুল হয়েছে।"
+
+#~ msgid "Default"
+#~ msgstr "ডিফল্ট"
+
+#~ msgid "Dark"
+#~ msgstr "ডার্ক"
+
+#~ msgid "Color Scheme"
+#~ msgstr "রঙ তালিকা"
+
+#~ msgid "Choose a color scheme for your system."
+#~ msgstr "আপনার সিস্টেমের জন্য একটি রঙের স্কিম নির্বাচন করুন।"
+
+#~ msgid "Next"
+#~ msgstr "পরবর্তী"
+
+#~ msgid "The changes are being applied. Please Wait…"
+#~ msgstr "পরিবর্তনগুলি প্রয়োগ করা হচ্ছে। অনুগ্রহপূর্বক অপেক্ষা করুন…"
+
+#~ msgid "Back"
+#~ msgstr "পেছনে"
+
+#~ msgid "Welcome!"
+#~ msgstr "স্বাগতম!"
+
+#~ msgid "Make your choices, this wizard will take care of everything."
+#~ msgstr "আপনার পছন্দগুলি তৈরি করুন, এই উইজার্ড সব কিছু সামলে নেবে।"
+
+#~ msgid "All done!"
+#~ msgstr "সব শেষ!"
+
+#~ msgid "Restart your device to enjoy your Vanilla OS experience."
+#~ msgstr "ভ্যানিলা ওএস ব্যবহার করতে আপনার ডিভাইসটি রিস্টার্ট করুন।"
+
+#~ msgid "Yes, enable it"
+#~ msgstr "হ্যাঁ, এটি চালু করুন"
+
+#~ msgid "Read More"
+#~ msgstr "আরও পড়ুন"

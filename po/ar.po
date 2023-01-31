@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-27 20:42+0530\n"
+"POT-Creation-Date: 2023-01-31 23:10+0530\n"
 "PO-Revision-Date: 2022-12-20 08:48+0000\n"
 "Last-Translator: Ali Abukhamsin <abukhamsin.ali89@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/vanilla-os/first-"
@@ -36,61 +36,9 @@ msgstr "دون وصف"
 msgid "First release"
 msgstr "اﻹصدار الأول"
 
-#: vanilla_first_setup/gtk/default-theme.ui:17
-msgid "Default"
-msgstr "افتراضي"
-
-#: vanilla_first_setup/gtk/default-theme.ui:29
-msgid "Dark"
-msgstr "مظلم"
-
-#: vanilla_first_setup/gtk/default-theme.ui:42
-msgid "Color Scheme"
-msgstr "سمة النظام"
-
-#: vanilla_first_setup/gtk/default-theme.ui:43
-msgid "Choose a color scheme for your system."
-msgstr "اختر سمة لنظامك."
-
-#: vanilla_first_setup/gtk/default-theme.ui:49
-msgid "Next"
-msgstr "التالي"
-
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
 msgstr "عرض المعلومات"
-
-#: vanilla_first_setup/gtk/progress.ui:26
-msgid "The changes are being applied. Please Wait…"
-msgstr "تُطبَّق التعديلات. يرجى الانتظار…"
-
-#: vanilla_first_setup/gtk/window.ui:25
-msgid "Back"
-msgstr "رجوع"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:12
-msgid "Welcome!"
-msgstr "مرحبا!"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:13
-msgid "Make your choices, this wizard will take care of everything."
-msgstr "حدد اختياراتك، سيهتم هذا المساعد بكل شيء."
-
-#: vanilla_first_setup/gtk/done.ui:12
-msgid "All done!"
-msgstr "تم!"
-
-#: vanilla_first_setup/gtk/done.ui:13
-msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr "أعد تشغيل الحاسوب للاستمتاع بتجربتك لنظام التشغيل فانيلا."
-
-#: vanilla_first_setup/gtk/layout-yes-no.ui:36
-msgid "Yes, enable it"
-msgstr "نعم، فعّلها"
-
-#: vanilla_first_setup/gtk/tour.ui:27
-msgid "Read More"
-msgstr "اقرأ المزيد"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
@@ -100,20 +48,43 @@ msgstr ""
 msgid "Your device will be ready soon."
 msgstr ""
 
+#: vanilla_first_setup/gtk/progress.ui:91
+msgid "Show Console output"
+msgstr ""
+
+#: vanilla_first_setup/gtk/progress.ui:106
+msgid "Show Slideshow"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:78
+msgid "No Internet Connection!"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:79
+msgid "First Setup requires an active internet connection"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:87
+msgid "Checking Connection…"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:88
+msgid "Please wait until the connection check is done."
+msgstr ""
+
 #: vanilla_first_setup/layouts/preferences.py:75
-#: vanilla_first_setup/layouts/preferences.py:70
 msgid "Please select at least one option."
 msgstr "يرجى تحديد خيار واحد على الأقل."
 
-#: vanilla_first_setup/views/done.py:34
+#: vanilla_first_setup/views/done.py:41
 msgid "Restart your device to enjoy your {} experience."
 msgstr "أعد تشغيل الحاسوب للاستمتاع بتجربك لـ{}."
 
-#: vanilla_first_setup/views/done.py:55 vanilla_first_setup/views/done.py:45
+#: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
 msgstr "هناك خطأ ما"
 
-#: vanilla_first_setup/views/done.py:56 vanilla_first_setup/views/done.py:46
+#: vanilla_first_setup/views/done.py:64
 msgid "Please contact the distribution developers."
 msgstr "يرجى التواصل مع مطوري التوزيعة."
 
@@ -121,19 +92,58 @@ msgstr "يرجى التواصل مع مطوري التوزيعة."
 msgid "Run a post script"
 msgstr ""
 
-#: vanilla_first_setup/window.py:63
+#: vanilla_first_setup/window.py:67
 msgid "Done!"
 msgstr ""
 
-#: vanilla_first_setup/window.py:63
+#: vanilla_first_setup/window.py:67
 msgid "Your device is ready to use."
 msgstr ""
 
-#: vanilla_first_setup/window.py:64
+#: vanilla_first_setup/window.py:68
 msgid "Error!"
 msgstr ""
 
-#: vanilla_first_setup/window.py:64
+#: vanilla_first_setup/window.py:68
 #, fuzzy
 msgid "Something went wrong."
 msgstr "هناك خطأ ما"
+
+#~ msgid "Default"
+#~ msgstr "افتراضي"
+
+#~ msgid "Dark"
+#~ msgstr "مظلم"
+
+#~ msgid "Color Scheme"
+#~ msgstr "سمة النظام"
+
+#~ msgid "Choose a color scheme for your system."
+#~ msgstr "اختر سمة لنظامك."
+
+#~ msgid "Next"
+#~ msgstr "التالي"
+
+#~ msgid "The changes are being applied. Please Wait…"
+#~ msgstr "تُطبَّق التعديلات. يرجى الانتظار…"
+
+#~ msgid "Back"
+#~ msgstr "رجوع"
+
+#~ msgid "Welcome!"
+#~ msgstr "مرحبا!"
+
+#~ msgid "Make your choices, this wizard will take care of everything."
+#~ msgstr "حدد اختياراتك، سيهتم هذا المساعد بكل شيء."
+
+#~ msgid "All done!"
+#~ msgstr "تم!"
+
+#~ msgid "Restart your device to enjoy your Vanilla OS experience."
+#~ msgstr "أعد تشغيل الحاسوب للاستمتاع بتجربتك لنظام التشغيل فانيلا."
+
+#~ msgid "Yes, enable it"
+#~ msgstr "نعم، فعّلها"
+
+#~ msgid "Read More"
+#~ msgstr "اقرأ المزيد"
