@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-31 23:10+0530\n"
-"PO-Revision-Date: 2022-12-29 16:48+0000\n"
+"PO-Revision-Date: 2023-02-01 07:00+0000\n"
 "Last-Translator: K.B.Dharun Krishna <kbdharunkrishna@gmail.com>\n"
-"Language-Team: Tamil <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/ta/>\n"
+"Language-Team: Tamil <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/ta/>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 4.16-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -49,27 +49,27 @@ msgstr "உங்கள் சாதனம் விரைவில் தயா
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
-msgstr ""
+msgstr "கன்சோல் வெளியீட்டைக் காட்டு"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr ""
+msgstr "ஸ்லைடுஷோவைக் காட்டு"
 
 #: vanilla_first_setup/defaults/conn_check.py:78
 msgid "No Internet Connection!"
-msgstr ""
+msgstr "இணைய இணைப்பு இல்லை!"
 
 #: vanilla_first_setup/defaults/conn_check.py:79
 msgid "First Setup requires an active internet connection"
-msgstr ""
+msgstr "முதல் அமைப்பிற்கு செயலில் உள்ள இணைய இணைப்பு தேவை"
 
 #: vanilla_first_setup/defaults/conn_check.py:87
 msgid "Checking Connection…"
-msgstr ""
+msgstr "இணைப்பைச் சரிபார்க்கிறது…"
 
 #: vanilla_first_setup/defaults/conn_check.py:88
 msgid "Please wait until the connection check is done."
-msgstr ""
+msgstr "இணைப்புச் சரிபார்ப்பு முடியும் வரை காத்திருக்கவும்."
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
