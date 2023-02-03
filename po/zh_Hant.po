@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-31 23:10+0530\n"
-"PO-Revision-Date: 2023-01-11 05:51+0000\n"
+"PO-Revision-Date: 2023-02-03 15:15+0000\n"
 "Last-Translator: lakejason0 <sunliyuan200402@outlook.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "vanilla-os/first-setup/zh_Hant/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 4.16-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -49,35 +49,35 @@ msgstr "您的裝置將很快準備就緒。"
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
-msgstr ""
+msgstr "顯示主控台輸出"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr ""
+msgstr "顯示投影片"
 
 #: vanilla_first_setup/defaults/conn_check.py:78
 msgid "No Internet Connection!"
-msgstr ""
+msgstr "沒有網際網路連線！"
 
 #: vanilla_first_setup/defaults/conn_check.py:79
 msgid "First Setup requires an active internet connection"
-msgstr ""
+msgstr "初始設定需要有效的網際網路連線"
 
 #: vanilla_first_setup/defaults/conn_check.py:87
 msgid "Checking Connection…"
-msgstr ""
+msgstr "正在檢查連線…"
 
 #: vanilla_first_setup/defaults/conn_check.py:88
 msgid "Please wait until the connection check is done."
-msgstr ""
+msgstr "請等候連線檢查完成。"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
-msgstr "請至少選擇一個選項。"
+msgstr "請至少選取一個選項。"
 
 #: vanilla_first_setup/views/done.py:41
 msgid "Restart your device to enjoy your {} experience."
-msgstr "裝置重新開機，開始您的 {} 之旅。"
+msgstr "重新啟動您的裝置，開始您的 {} 之旅。"
 
 #: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
@@ -85,11 +85,11 @@ msgstr "出了點問題"
 
 #: vanilla_first_setup/views/done.py:64
 msgid "Please contact the distribution developers."
-msgstr "請聯絡發行版開發人員。"
+msgstr "請聯絡散布版開發人員。"
 
 #: vanilla_first_setup/main.py:51
 msgid "Run a post script"
-msgstr "執行後期處理指令"
+msgstr "執行後期處理指令稿"
 
 #: vanilla_first_setup/window.py:67
 msgid "Done!"
@@ -97,7 +97,7 @@ msgstr "大功告成！"
 
 #: vanilla_first_setup/window.py:67
 msgid "Your device is ready to use."
-msgstr "您的裝置已準備就緒，可供使用。"
+msgstr "您的裝置已準備就緒供您使用。"
 
 #: vanilla_first_setup/window.py:68
 msgid "Error!"
