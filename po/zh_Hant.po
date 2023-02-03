@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-31 23:10+0530\n"
-"PO-Revision-Date: 2023-02-03 14:29+0000\n"
+"PO-Revision-Date: 2023-02-03 15:15+0000\n"
 "Last-Translator: Jen Kung-chih <Kaitul@outlook.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "vanilla-os/first-setup/zh_Hant/>\n"
@@ -65,19 +65,19 @@ msgstr "首次安裝需要有效的網際網路連線"
 
 #: vanilla_first_setup/defaults/conn_check.py:87
 msgid "Checking Connection…"
-msgstr ""
+msgstr "正在檢查連線…"
 
 #: vanilla_first_setup/defaults/conn_check.py:88
 msgid "Please wait until the connection check is done."
-msgstr ""
+msgstr "請等候連線檢查完成。"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
-msgstr "請至少選擇一個選項。"
+msgstr "請至少選取一個選項。"
 
 #: vanilla_first_setup/views/done.py:41
 msgid "Restart your device to enjoy your {} experience."
-msgstr "裝置重新開機，開始您的 {} 之旅。"
+msgstr "重新啟動您的裝置，開始您的 {} 之旅。"
 
 #: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
