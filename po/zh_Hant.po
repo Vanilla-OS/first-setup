@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-31 23:10+0530\n"
 "PO-Revision-Date: 2023-02-03 14:29+0000\n"
-"Last-Translator: lakejason0 <sunliyuan200402@outlook.com>\n"
+"Last-Translator: Jen Kung-chih <Kaitul@outlook.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "vanilla-os/first-setup/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -57,11 +57,11 @@ msgstr "顯示投影片"
 
 #: vanilla_first_setup/defaults/conn_check.py:78
 msgid "No Internet Connection!"
-msgstr ""
+msgstr "沒有網際網路連線！"
 
 #: vanilla_first_setup/defaults/conn_check.py:79
 msgid "First Setup requires an active internet connection"
-msgstr ""
+msgstr "首次安裝需要有效的網際網路連線"
 
 #: vanilla_first_setup/defaults/conn_check.py:87
 msgid "Checking Connection…"
