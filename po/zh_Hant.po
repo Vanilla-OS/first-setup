@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-31 23:10+0530\n"
 "PO-Revision-Date: 2023-02-03 15:15+0000\n"
-"Last-Translator: Chang-Chia Tseng <pswo10680@gmail.com>\n"
+"Last-Translator: lakejason0 <sunliyuan200402@outlook.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "vanilla-os/first-setup/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -61,7 +61,7 @@ msgstr "沒有網際網路連線！"
 
 #: vanilla_first_setup/defaults/conn_check.py:79
 msgid "First Setup requires an active internet connection"
-msgstr "首次安裝需要有效的網際網路連線"
+msgstr "初始設定需要有效的網際網路連線"
 
 #: vanilla_first_setup/defaults/conn_check.py:87
 msgid "Checking Connection…"
