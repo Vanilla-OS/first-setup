@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-31 23:10+0530\n"
 "PO-Revision-Date: 2023-02-03 15:15+0000\n"
-"Last-Translator: Jen Kung-chih <Kaitul@outlook.com>\n"
+"Last-Translator: Chang-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "vanilla-os/first-setup/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -85,11 +85,11 @@ msgstr "出了點問題"
 
 #: vanilla_first_setup/views/done.py:64
 msgid "Please contact the distribution developers."
-msgstr "請聯絡發行版開發人員。"
+msgstr "請聯絡散布版開發人員。"
 
 #: vanilla_first_setup/main.py:51
 msgid "Run a post script"
-msgstr "執行後期處理指令"
+msgstr "執行後期處理指令稿"
 
 #: vanilla_first_setup/window.py:67
 msgid "Done!"
@@ -97,7 +97,7 @@ msgstr "大功告成！"
 
 #: vanilla_first_setup/window.py:67
 msgid "Your device is ready to use."
-msgstr "您的裝置已準備就緒，可供使用。"
+msgstr "您的裝置已準備就緒供您使用。"
 
 #: vanilla_first_setup/window.py:68
 msgid "Error!"
