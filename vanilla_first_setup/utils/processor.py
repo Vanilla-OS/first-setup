@@ -85,12 +85,13 @@ class Processor:
             if "VANILLA_FAKE" in os.environ:
                 f.write("echo 'VANILLA_FAKE is set, not running commands'\n")
                 f.write("exit 0\n")
-            
+
             # connection test
-            f.write("wget -q --spider cloudflare.com")
-            f.write("if [ $? != 0 ]; then")
-            f.write("echo 'No internet connection!'")
-            f.write("exit 1")
+            f.write("wget -q --spider cloudflare.com\n")
+            f.write("if [ $? != 0 ]; then\n")
+            f.write("echo 'No internet connection!'\n")
+            f.write("exit 1\n")
+            f.write("fi\n")
 
             for command in commands:
                 if command.startswith("!nextBoot"):
