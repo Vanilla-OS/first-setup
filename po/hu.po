@@ -3,28 +3,29 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-31 23:10+0530\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2023-02-07 11:36+0000\n"
+"Last-Translator: Tamás Ecsedi <ecseditamas22@gmail.com>\n"
+"Language-Team: Hungarian <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/hu/>\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.16-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr "Vanilla OS első beállítások"
+msgstr "Vanilla OS Kezdeti beállítások"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
-#, fuzzy
 msgid "Tweak your Vanilla OS installation."
-msgstr "Módosítsa az Ubuntu Vanilla GNOME telepítését."
+msgstr "Módosítsa a Vanilla OS telepítését."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -35,50 +36,48 @@ msgid "First release"
 msgstr "Első kiadás"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
-#, fuzzy
 msgid "Showing Information"
-msgstr "Információk megjelenítése"
+msgstr "Információ megjelenítése"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
-msgstr ""
+msgstr "Véglegesítés"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
-msgstr ""
+msgstr "Az eszköze hamarosan készen áll."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
-msgstr ""
+msgstr "Konzol kimenet megjelenítése"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr ""
+msgstr "Diavetítés megjelenítése"
 
 #: vanilla_first_setup/defaults/conn_check.py:78
 msgid "No Internet Connection!"
-msgstr ""
+msgstr "Nincs internetkapcsolat!"
 
 #: vanilla_first_setup/defaults/conn_check.py:79
 msgid "First Setup requires an active internet connection"
-msgstr ""
+msgstr "A kezdő beállítások elvégzéséhez internetkapcsolat szükséges"
 
 #: vanilla_first_setup/defaults/conn_check.py:87
 msgid "Checking Connection…"
-msgstr ""
+msgstr "Csatlakozás ellenőrzése…"
 
 #: vanilla_first_setup/defaults/conn_check.py:88
 msgid "Please wait until the connection check is done."
-msgstr ""
+msgstr "Kérjük várjon, amíg a kapcsolat ellenőrzése befejeződik."
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
-msgstr "Kérem, válasszon legalább egy lehetőséget."
+msgstr "Kérjük, válasszon legalább egy lehetőséget."
 
 #: vanilla_first_setup/views/done.py:41
-#, fuzzy
 msgid "Restart your device to enjoy your {} experience."
-msgstr "Indítsa újra a számítógépét, hogy élvezze {} élményét."
+msgstr "Indítsa újra eszközét, hogy élvezze {} élményét."
 
 #: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
@@ -90,24 +89,23 @@ msgstr "Kérjük, lépjen kapcsolatba a disztribúció fejlesztőivel."
 
 #: vanilla_first_setup/main.py:51
 msgid "Run a post script"
-msgstr ""
+msgstr "Telepítést követő szkript futtatása"
 
 #: vanilla_first_setup/window.py:67
 msgid "Done!"
-msgstr ""
+msgstr "Kész!"
 
 #: vanilla_first_setup/window.py:67
 msgid "Your device is ready to use."
-msgstr ""
+msgstr "Az eszköze használatra kész."
 
 #: vanilla_first_setup/window.py:68
 msgid "Error!"
-msgstr ""
+msgstr "Hiba!"
 
 #: vanilla_first_setup/window.py:68
-#, fuzzy
 msgid "Something went wrong."
-msgstr "Valami hiba történt"
+msgstr "Valami hiba történt."
 
 #~ msgid "Default"
 #~ msgstr "Alapértelmezett"
