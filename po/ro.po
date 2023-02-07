@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-31 23:10+0530\n"
-"PO-Revision-Date: 2022-12-30 18:15+0000\n"
+"PO-Revision-Date: 2023-02-07 11:36+0000\n"
 "Last-Translator: finnmonstar <finnmonstar@pm.me>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ro/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 4.16-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -50,27 +50,27 @@ msgstr "Dispozitivul tău va fi pregătit curând."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
-msgstr ""
+msgstr "Arată datele de ieșire ale consolei"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr ""
+msgstr "Arată prezentarea"
 
 #: vanilla_first_setup/defaults/conn_check.py:78
 msgid "No Internet Connection!"
-msgstr ""
+msgstr "Fară conexiune la internet!"
 
 #: vanilla_first_setup/defaults/conn_check.py:79
 msgid "First Setup requires an active internet connection"
-msgstr ""
+msgstr "Prima parte a configurării necesită o conexiune de internet activă"
 
 #: vanilla_first_setup/defaults/conn_check.py:87
 msgid "Checking Connection…"
-msgstr ""
+msgstr "Se verifică conexiunea…"
 
 #: vanilla_first_setup/defaults/conn_check.py:88
 msgid "Please wait until the connection check is done."
-msgstr ""
+msgstr "Te rog așteaptă până verificarea conexiunii este gata."
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
