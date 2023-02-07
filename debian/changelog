@@ -1,3 +1,9 @@
+vanilla-first-setup (1.7.1) kinetic; urgency=critical
+
+  * Make gnome-software mandatory
+
+ -- Mirko Brombin <send@mirko.pm>  Fri, 20 Jan 2023 21:06:00 +0000
+
 vanilla-first-setup (1.7.0-3) kinetic; urgency=critical
 
   * Transaction now runs in a Vte terminal

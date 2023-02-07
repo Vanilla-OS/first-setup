@@ -53,19 +53,6 @@
             "icon": "vanilla-package-symbolic",
             "title": "Package Manager",
             "description": "Choose one or more package managers to install",
-            "without_selection": {
-                "allowed": true,
-                "message": "You have chosen not to install any package manager, you will only be able to install packages using the package manager (apx).\n\nGNOME Software will be disabled.",
-                "title": "No package manager selected",
-                "final": [
-                    {
-                        "type": "command",
-                        "commands": [
-                            "apt remove -y gnome-software"
-                        ]
-                    }
-                ]
-            },
             "preferences": [
                 {
                     "id": "flatpak",
