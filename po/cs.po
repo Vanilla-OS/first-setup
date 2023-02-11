@@ -8,25 +8,24 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-31 23:10+0530\n"
-"PO-Revision-Date: 2022-12-22 13:49+0000\n"
-"Last-Translator: Michal Maděra <misamadera1@gmail.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/cs/>\n"
+"PO-Revision-Date: 2023-02-11 11:39+0000\n"
+"Last-Translator: \"Vojtěch V.\" <xonax658@gmail.com>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 4.16-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
 msgstr "Prvotní nastavení Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
-#, fuzzy
 msgid "Tweak your Vanilla OS installation."
-msgstr "Vylaďte si instalaci Ubuntu Vanilla GNOME."
+msgstr "Vylaďte si instalaci Vanilla OS."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -43,15 +42,15 @@ msgstr "Zobrazení informací"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
-msgstr ""
+msgstr "Dokončování"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
-msgstr ""
+msgstr "Vaše zařízení bude brzy připraveno."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
-msgstr ""
+msgstr "Ukázat výstup z konzole"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
@@ -59,11 +58,11 @@ msgstr ""
 
 #: vanilla_first_setup/defaults/conn_check.py:78
 msgid "No Internet Connection!"
-msgstr ""
+msgstr "Bez internetového připojení!"
 
 #: vanilla_first_setup/defaults/conn_check.py:79
 msgid "First Setup requires an active internet connection"
-msgstr ""
+msgstr "První Nastavení potřebuje připojení k internetu"
 
 #: vanilla_first_setup/defaults/conn_check.py:87
 msgid "Checking Connection…"
@@ -71,7 +70,7 @@ msgstr ""
 
 #: vanilla_first_setup/defaults/conn_check.py:88
 msgid "Please wait until the connection check is done."
-msgstr ""
+msgstr "Prosím počkejte než se zkontroluje vaše připojení."
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
@@ -96,20 +95,20 @@ msgstr ""
 
 #: vanilla_first_setup/window.py:67
 msgid "Done!"
-msgstr ""
+msgstr "Hotovo!"
 
 #: vanilla_first_setup/window.py:67
+#, fuzzy
 msgid "Your device is ready to use."
-msgstr ""
+msgstr "Vaše zařízení je připraveno."
 
 #: vanilla_first_setup/window.py:68
 msgid "Error!"
-msgstr ""
+msgstr "Chyba!"
 
 #: vanilla_first_setup/window.py:68
-#, fuzzy
 msgid "Something went wrong."
-msgstr "Něco se pokazilo"
+msgstr "Něco se pokazilo."
 
 #~ msgid "Default"
 #~ msgstr "Výchozí"
