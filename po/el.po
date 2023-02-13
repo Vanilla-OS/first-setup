@@ -3,110 +3,110 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Automatically generated, 2022.
 #
+# Andrew Geo <andrewgeo@outlook.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-31 23:10+0530\n"
-"PO-Revision-Date: 2022-12-16 13:47+0000\n"
-"Last-Translator: stathious <stathious@users.noreply.hosted.weblate.org>\n"
-"Language-Team: Greek <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/el/>\n"
+"PO-Revision-Date: 2023-02-15 16:35+0000\n"
+"Last-Translator: Andrew Geo <andrewgeo@outlook.com>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/el/>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15\n"
+"X-Generator: Weblate 4.16-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr ""
+msgstr "Αρχικές Ρυθμίσεις του Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
-msgstr ""
+msgstr "Τροποποιήστε την εγκατάσταση του Vanilla OS."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr "Καμία περιγραφή"
+msgstr "Δεν υπάρχει περιγραφή"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr ""
+msgstr "Πρώτη έκδοση"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
-msgstr ""
+msgstr "Προβολή πληροφοριών"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
-msgstr ""
+msgstr "Οριστικοποίηση"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
-msgstr ""
+msgstr "Η συσκευή σας θα είναι σύντομα έτοιμη."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
-msgstr ""
+msgstr "Προβολή εξόδου κονσόλας"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr ""
+msgstr "Προβολή Παρουσίασης"
 
 #: vanilla_first_setup/defaults/conn_check.py:78
 msgid "No Internet Connection!"
-msgstr ""
+msgstr "Δεν υπάρχει σύνδεση δικτύου!"
 
 #: vanilla_first_setup/defaults/conn_check.py:79
 msgid "First Setup requires an active internet connection"
-msgstr ""
+msgstr "Οι Αρχικές Ρυθμίσεις χρειάζονται μια ενεργή σύνδεση δικτύου"
 
 #: vanilla_first_setup/defaults/conn_check.py:87
 msgid "Checking Connection…"
-msgstr ""
+msgstr "Έλεγχος σύνδεσης…"
 
 #: vanilla_first_setup/defaults/conn_check.py:88
 msgid "Please wait until the connection check is done."
-msgstr ""
+msgstr "Παρακαλώ περιμένετε έως ότου τελειώσει ο έλεγχος σύνδεσης."
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
-msgstr ""
+msgstr "Παρακαλώ επιλέξτε τουλάχιστον ένα στοιχείο."
 
 #: vanilla_first_setup/views/done.py:41
 msgid "Restart your device to enjoy your {} experience."
-msgstr ""
+msgstr "Επανεκκινήστε τη συσκεύη σας για να απολαύσετε την {} εμπειρία."
 
 #: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
-msgstr "Παρουσιάστηκε σφάλμα"
+msgstr "Κάτι πήγε στραβά"
 
 #: vanilla_first_setup/views/done.py:64
 msgid "Please contact the distribution developers."
-msgstr ""
+msgstr "Παρακαλώ επικοινωνήστε με τους δημιουργούς της διανομής."
 
 #: vanilla_first_setup/main.py:51
 msgid "Run a post script"
-msgstr ""
+msgstr "Εκτέλεση ενός PostScript"
 
 #: vanilla_first_setup/window.py:67
 msgid "Done!"
-msgstr ""
+msgstr "Έτοιμο!"
 
 #: vanilla_first_setup/window.py:67
 msgid "Your device is ready to use."
-msgstr ""
+msgstr "Η συσκευή σας είναι έτοιμη για χρήση."
 
 #: vanilla_first_setup/window.py:68
 msgid "Error!"
-msgstr ""
+msgstr "Σφάλμα!"
 
 #: vanilla_first_setup/window.py:68
-#, fuzzy
 msgid "Something went wrong."
-msgstr "Παρουσιάστηκε σφάλμα"
+msgstr "Κάτι πήγε στραβά."
 
 #~ msgid "Default"
 #~ msgstr "Προεπιλογή"
