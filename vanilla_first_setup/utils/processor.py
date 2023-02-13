@@ -33,6 +33,7 @@ class Processor:
         next_boot = []
         next_boot_script_path = os.path.expanduser("~/.local/org.vanillaos.FirstSetup.nextBoot")
         next_boot_autostart_path = os.path.expanduser("~/.config/autostart/org.vanillaos.FirstSetup.nextBoot.desktop")
+        done_file = "/etc/vanilla-first-setup-done"
         abroot_bin = shutil.which("abroot")
 
         logger.info("processing the following commands: \n%s" %
@@ -112,6 +113,11 @@ class Processor:
                 f.write("if [ $? -eq 0 ]; then")
                 f.write(f"{out_run}\n")
                 f.write("fi")
+            
+            # create the done file
+            f.write("if [ $? -eq 0 ]; then\n")
+            f.write(f"touch {done_file}\n")
+            f.write("fi\n")
 
             f.flush()
             f.close()
