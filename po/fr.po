@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Thual LABART--BARNAGAUD <tlabartbarnagaud@protonmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-31 23:10+0530\n"
-"PO-Revision-Date: 2023-02-07 11:36+0000\n"
+"PO-Revision-Date: 2023-02-15 16:35+0000\n"
 "Last-Translator: Thual LABART--BARNAGAUD <tlabartbarnagaud@protonmail.com>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/fr/>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,7 +28,7 @@ msgstr "Personnalisez votre installation de Vanilla OS."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr "Aucune description"
+msgstr "Pas de description"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
