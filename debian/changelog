@@ -1,3 +1,9 @@
+vanilla-first-setup (1.7.2) kinetic; urgency=critical
+
+  * Log first setup completion
+
+ -- Mirko Brombin <send@mirko.pm>  Mon, 13 Feb 2023 22:46:00 +0000
+
 vanilla-first-setup (1.7.1) kinetic; urgency=critical
 
   * Make gnome-software mandatory
