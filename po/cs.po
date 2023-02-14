@@ -3,15 +3,16 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Automatically generated, 2022.
 #
+# Vojtěch Perník <translations@pervoj.cz>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-31 23:10+0530\n"
-"PO-Revision-Date: 2023-02-11 11:39+0000\n"
-"Last-Translator: \"Vojtěch V.\" <xonax658@gmail.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/cs/>\n"
+"PO-Revision-Date: 2023-02-15 16:35+0000\n"
+"Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,14 +30,13 @@ msgstr "Vylaďte si instalaci Vanilla OS."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr "Bez popisu"
+msgstr "Žádný popis"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
 msgstr "První verze"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
-#, fuzzy
 msgid "Showing Information"
 msgstr "Zobrazení informací"
 
@@ -53,8 +53,9 @@ msgid "Show Console output"
 msgstr "Ukázat výstup z konzole"
 
 #: vanilla_first_setup/gtk/progress.ui:106
+#, fuzzy
 msgid "Show Slideshow"
-msgstr ""
+msgstr "Zobrazit prezentaci"
 
 #: vanilla_first_setup/defaults/conn_check.py:78
 msgid "No Internet Connection!"
@@ -66,7 +67,7 @@ msgstr "První Nastavení potřebuje připojení k internetu"
 
 #: vanilla_first_setup/defaults/conn_check.py:87
 msgid "Checking Connection…"
-msgstr ""
+msgstr "Kontroluje se připojení…"
 
 #: vanilla_first_setup/defaults/conn_check.py:88
 msgid "Please wait until the connection check is done."
@@ -77,9 +78,8 @@ msgid "Please select at least one option."
 msgstr "Vyberte prosím alespoň jednu možnost."
 
 #: vanilla_first_setup/views/done.py:41
-#, fuzzy
 msgid "Restart your device to enjoy your {} experience."
-msgstr "Restartujte počítač a vychutnejte si {} zážitek."
+msgstr "Restartujte zařízení, abyste si mohli vychutnat své {} zážitky."
 
 #: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
@@ -91,14 +91,13 @@ msgstr "Obraťte se prosím na vývojáře distribuce."
 
 #: vanilla_first_setup/main.py:51
 msgid "Run a post script"
-msgstr ""
+msgstr "Spustit poinstalační skript"
 
 #: vanilla_first_setup/window.py:67
 msgid "Done!"
 msgstr "Hotovo!"
 
 #: vanilla_first_setup/window.py:67
-#, fuzzy
 msgid "Your device is ready to use."
 msgstr "Vaše zařízení je připraveno."
 
