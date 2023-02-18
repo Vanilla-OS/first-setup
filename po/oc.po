@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-31 23:10+0530\n"
-"PO-Revision-Date: 2023-02-18 09:58+0000\n"
+"PO-Revision-Date: 2023-02-20 05:17+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/oc/>\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr ""
+msgstr "Configuracion iniciala de Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
-msgstr ""
+msgstr "Personalizatz vòstra installacion de Vanilla OS."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -32,76 +32,76 @@ msgstr "Cap de descripcion"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr ""
+msgstr "Primièr lançament"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
-msgstr ""
+msgstr "Afichatge de las informacions"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
-msgstr ""
+msgstr "Finalizacion"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
-msgstr ""
+msgstr "Vòstre aparelh serà lèu prèst."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
-msgstr ""
+msgstr "Mostrar la consòla"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr ""
+msgstr "Veire lo diaporama"
 
 #: vanilla_first_setup/defaults/conn_check.py:78
 msgid "No Internet Connection!"
-msgstr ""
+msgstr "Cap de connexion Internet !"
 
 #: vanilla_first_setup/defaults/conn_check.py:79
 msgid "First Setup requires an active internet connection"
-msgstr ""
+msgstr "L’aisina Primièra Configuracion requerís una connexion Internet"
 
 #: vanilla_first_setup/defaults/conn_check.py:87
 msgid "Checking Connection…"
-msgstr ""
+msgstr "Verificacion de la connexion…"
 
 #: vanilla_first_setup/defaults/conn_check.py:88
 msgid "Please wait until the connection check is done."
-msgstr ""
+msgstr "Esperatz que la connexion siá confirmada."
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
-msgstr ""
+msgstr "Volgatz seleccionar almens una opcion."
 
 #: vanilla_first_setup/views/done.py:41
 msgid "Restart your device to enjoy your {} experience."
-msgstr ""
+msgstr "Reaviatz vòstre aparelh per aprofiechar de vòstra experiéncia {}."
 
 #: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
-msgstr ""
+msgstr "I a quicòm que truca"
 
 #: vanilla_first_setup/views/done.py:64
 msgid "Please contact the distribution developers."
-msgstr ""
+msgstr "Mercés de contactar los desvolopaires de la distribucion."
 
 #: vanilla_first_setup/main.py:51
 msgid "Run a post script"
-msgstr ""
+msgstr "Executar un script post-installacion"
 
 #: vanilla_first_setup/window.py:67
 msgid "Done!"
-msgstr ""
+msgstr "Acabat !"
 
 #: vanilla_first_setup/window.py:67
 msgid "Your device is ready to use."
-msgstr ""
+msgstr "Vòstre aparelh es prèst per utilizacion."
 
 #: vanilla_first_setup/window.py:68
 msgid "Error!"
-msgstr ""
+msgstr "Error !"
 
 #: vanilla_first_setup/window.py:68
 msgid "Something went wrong."
-msgstr ""
+msgstr "I a quicòm que truca."
