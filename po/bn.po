@@ -4,15 +4,16 @@
 # Automatically generated, 2022.
 #
 # Abu Huraira <abuhuraira@tutamail.com>, 2023.
+# Manjur Muammar Rashidi <mhasanmuammar2@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-20 14:24+0100\n"
-"PO-Revision-Date: 2023-02-20 05:17+0000\n"
-"Last-Translator: Abu Huraira <abuhuraira@tutamail.com>\n"
-"Language-Team: Bengali <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/bn/>\n"
+"PO-Revision-Date: 2023-02-20 18:21+0000\n"
+"Last-Translator: Manjur Muammar Rashidi <mhasanmuammar2@gmail.com>\n"
+"Language-Team: Bengali <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/bn/>\n"
 "Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -100,7 +101,7 @@ msgstr "আপনার ডিভাইস শীঘ্রই প্রস্ত
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
-msgstr ""
+msgstr "ইনস্টল করা হচ্ছে..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
