@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-31 23:10+0530\n"
-"PO-Revision-Date: 2023-02-16 17:29+0000\n"
+"PO-Revision-Date: 2023-02-20 05:17+0000\n"
 "Last-Translator: Abu Huraira <abuhuraira@tutamail.com>\n"
 "Language-Team: Bengali <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/bn/>\n"
@@ -30,7 +30,7 @@ msgstr "আপনার ভ্যানিলা ওএস ইনস্টলে
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr "কোন বর্ণনা নেই"
+msgstr "কোন বর্ণনা পাওয়া যায়নি"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
