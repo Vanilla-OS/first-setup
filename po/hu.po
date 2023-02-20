@@ -36,13 +36,11 @@ msgstr "Első kiadás"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:75
-#: vanilla_first_setup/defaults/conn_check.py:87
 msgid "Checking Connection…"
 msgstr "Csatlakozás ellenőrzése…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 #: vanilla_first_setup/defaults/conn_check.py:76
-#: vanilla_first_setup/defaults/conn_check.py:88
 msgid "Please wait until the connection check is done."
 msgstr "Kérjük várjon, amíg a kapcsolat ellenőrzése befejeződik."
 
@@ -120,12 +118,10 @@ msgid "Back"
 msgstr "Vissza"
 
 #: vanilla_first_setup/defaults/conn_check.py:66
-#: vanilla_first_setup/defaults/conn_check.py:78
 msgid "No Internet Connection!"
 msgstr "Nincs internetkapcsolat!"
 
 #: vanilla_first_setup/defaults/conn_check.py:67
-#: vanilla_first_setup/defaults/conn_check.py:79
 msgid "First Setup requires an active internet connection"
 msgstr "A kezdő beállítások elvégzéséhez internetkapcsolat szükséges"
 
@@ -165,262 +161,221 @@ msgstr "Hiba!"
 msgid "Something went wrong."
 msgstr "Valami hiba történt."
 
-#: recipe.json:18
-msgid "Get Involved"
-msgstr "Kapcsolódjon be"
+#~ msgid "Get Involved"
+#~ msgstr "Kapcsolódjon be"
 
-#: recipe.json:19
-msgid ""
-"Vanilla OS is a community project. You can contribute to the project by "
-"reporting bugs, suggesting new features, or even by writing code."
-msgstr ""
-"A Vanilla OS egy közösségi projekt. Hozzájárulhat a projekthez hibák "
-"bejelentésével, új funkciók javaslataival vagy akár kód írásával."
+#~ msgid ""
+#~ "Vanilla OS is a community project. You can contribute to the project by "
+#~ "reporting bugs, suggesting new features, or even by writing code."
+#~ msgstr ""
+#~ "A Vanilla OS egy közösségi projekt. Hozzájárulhat a projekthez hibák "
+#~ "bejelentésével, új funkciók javaslataival vagy akár kód írásával."
 
-#: recipe.json:24
-msgid "Join The Community"
-msgstr "Csatlakozás a közösséghez"
+#~ msgid "Join The Community"
+#~ msgstr "Csatlakozás a közösséghez"
 
-#: recipe.json:25
-msgid ""
-"Our community is active on Discord. You can join us to ask questions, get "
-"help, or just to chat with other users."
-msgstr ""
-"Közösségünk aktív Discordon. Csatlakozhat hozzánk, hogy kérdéseket tegyen "
-"fel, segítséget kapjon, vagy csak beszélgessen más felhasználókkal."
+#~ msgid ""
+#~ "Our community is active on Discord. You can join us to ask questions, get "
+#~ "help, or just to chat with other users."
+#~ msgstr ""
+#~ "Közösségünk aktív Discordon. Csatlakozhat hozzánk, hogy kérdéseket tegyen "
+#~ "fel, segítséget kapjon, vagy csak beszélgessen más felhasználókkal."
 
-#: recipe.json:30
-msgid "Immutable and Atomic"
-msgstr "Immutable és Atomic"
+#~ msgid "Immutable and Atomic"
+#~ msgstr "Immutable és Atomic"
 
-#: recipe.json:31
-msgid ""
-"Vanilla OS is an immutable and atomic Linux distribution. It is based on "
-"Ubuntu and uses ABRoot to provide atomic transactions."
-msgstr ""
-"A Vanilla OS egy Immutable és Atomic Linux-disztribúció. Az Ubuntun alapul, "
-"és az ABRoot-ot használja az Atomic tranzakciók biztosítására."
+#~ msgid ""
+#~ "Vanilla OS is an immutable and atomic Linux distribution. It is based on "
+#~ "Ubuntu and uses ABRoot to provide atomic transactions."
+#~ msgstr ""
+#~ "A Vanilla OS egy Immutable és Atomic Linux-disztribúció. Az Ubuntun "
+#~ "alapul, és az ABRoot-ot használja az Atomic tranzakciók biztosítására."
 
-#: recipe.json:36
-msgid "Sub-System Ready To Go"
-msgstr "Az alrendszer készen áll"
+#~ msgid "Sub-System Ready To Go"
+#~ msgstr "Az alrendszer készen áll"
 
-#: recipe.json:37
-msgid ""
-"Vanilla OS comes with Apx, a new package manager which installs software in "
-"integrated containers to prevent host compromise."
-msgstr ""
-"A Vanilla OS egy új csomagkezelővel, az Apx-szel érkezik, amely integrált "
-"konténerekbe telepíti a szoftvereket, hogy megakadályozza az állomás "
-"kompromittálódását."
+#~ msgid ""
+#~ "Vanilla OS comes with Apx, a new package manager which installs software "
+#~ "in integrated containers to prevent host compromise."
+#~ msgstr ""
+#~ "A Vanilla OS egy új csomagkezelővel, az Apx-szel érkezik, amely integrált "
+#~ "konténerekbe telepíti a szoftvereket, hogy megakadályozza az állomás "
+#~ "kompromittálódását."
 
-#: recipe.json:54
-msgid "Package Manager"
-msgstr "Csomagkezelő"
+#~ msgid "Package Manager"
+#~ msgstr "Csomagkezelő"
 
-#: recipe.json:55
-msgid "Choose one or more package managers to install"
-msgstr "Válasszon ki egy vagy több csomagkezelőt a telepítéshez"
+#~ msgid "Choose one or more package managers to install"
+#~ msgstr "Válasszon ki egy vagy több csomagkezelőt a telepítéshez"
 
-#: recipe.json:59
-msgid "Flatpak"
-msgstr "Flatpak"
+#~ msgid "Flatpak"
+#~ msgstr "Flatpak"
 
-#: recipe.json:60
-msgid "Manage and configure Flatpaks and the Flathub repository."
-msgstr "A Flatpaks és a Flathub adattár kezelése és konfigurálása."
+#~ msgid "Manage and configure Flatpaks and the Flathub repository."
+#~ msgstr "A Flatpaks és a Flathub adattár kezelése és konfigurálása."
 
-#: recipe.json:65
-msgid "Snap"
-msgstr "Snap"
+#~ msgid "Snap"
+#~ msgstr "Snap"
 
-#: recipe.json:66
-msgid "Manage and configure Snaps and the Snapcraft repository."
-msgstr "A Snaps és a Snapcraft tároló kezelése és konfigurálása."
+#~ msgid "Manage and configure Snaps and the Snapcraft repository."
+#~ msgstr "A Snaps és a Snapcraft tároló kezelése és konfigurálása."
 
-#: recipe.json:71
-msgid "AppImage"
-msgstr "AppImage"
+#~ msgid "AppImage"
+#~ msgstr "AppImage"
 
-#: recipe.json:72
-msgid "Install necessary dependencies to run AppImages."
-msgstr "Telepítse az AppImages futtatásához szükséges függőségeket."
+#~ msgid "Install necessary dependencies to run AppImages."
+#~ msgstr "Telepítse az AppImages futtatásához szükséges függőségeket."
 
-#: recipe.json:111
-msgid "Applications"
-msgstr "Alkalmazások"
+#~ msgid "Applications"
+#~ msgstr "Alkalmazások"
 
-#: recipe.json:112
-msgid "Choose which applications to install."
-msgstr "Válassza ki a telepítendő alkalmazásokat."
+#~ msgid "Choose which applications to install."
+#~ msgstr "Válassza ki a telepítendő alkalmazásokat."
 
-#: recipe.json:116
-msgid "Core Applications"
-msgstr "Alapvető alkalmazások"
+#~ msgid "Core Applications"
+#~ msgstr "Alapvető alkalmazások"
 
-#: recipe.json:117
-msgid "Essential GNOME apps like Calendar or Document Viewer."
-msgstr "Alapvető GNOME-alkalmazások, mint a Naptár vagy a Dokumentumnéző."
+#~ msgid "Essential GNOME apps like Calendar or Document Viewer."
+#~ msgstr "Alapvető GNOME-alkalmazások, mint a Naptár vagy a Dokumentumnéző."
 
-#: recipe.json:202
-msgid "Office"
-msgstr "Iroda"
+#~ msgid "Office"
+#~ msgstr "Iroda"
 
-#: recipe.json:203
-msgid "The LibreOffice suite."
-msgstr "A LibreOffice programcsomag."
+#~ msgid "The LibreOffice suite."
+#~ msgstr "A LibreOffice programcsomag."
 
-#: recipe.json:216
-msgid "Common Utilities"
-msgstr "Általános segédprogramok"
+#~ msgid "Common Utilities"
+#~ msgstr "Általános segédprogramok"
 
-#: recipe.json:217
-msgid "Useful utilities like Bottles or Sound Recorder."
-msgstr "Hasznos segédprogramok, mint a Bottles vagy a Sound Recorder."
+#~ msgid "Useful utilities like Bottles or Sound Recorder."
+#~ msgstr "Hasznos segédprogramok, mint a Bottles vagy a Sound Recorder."
 
-#: recipe.json:407 recipe.json:414
-msgid "Timeshift"
-msgstr "Timeshift"
+#~ msgid "Timeshift"
+#~ msgstr "Timeshift"
 
-#: recipe.json:408
-msgid "Choose whether to install Timeshift to create snapshots of your system."
-msgstr ""
-"Válassza ki, hogy telepíteni kívánja-e a Timeshiftet a rendszer "
-"pillanatfelvételek készítéséhez."
+#~ msgid ""
+#~ "Choose whether to install Timeshift to create snapshots of your system."
+#~ msgstr ""
+#~ "Válassza ki, hogy telepíteni kívánja-e a Timeshiftet a rendszer "
+#~ "pillanatfelvételek készítéséhez."
 
-#: recipe.json:410 recipe.json:463 recipe.json:485
-msgid "Install"
-msgstr "Telepítés"
+#~ msgid "Install"
+#~ msgstr "Telepítés"
 
-#: recipe.json:411 recipe.json:464 recipe.json:486
-msgid "Skip"
-msgstr "Átugrás"
+#~ msgid "Skip"
+#~ msgstr "Átugrás"
 
-#: recipe.json:415
-msgid ""
-"Timeshift for Linux is an application that provides functionality similar to "
-"the System Restore feature in Windows and the Time Machine tool in Mac OS. "
-"Timeshift protects your system by taking incremental snapshots of the file "
-"system at regular intervals. These snapshots can be restored at a later date "
-"to undo all changes to the system.\n"
-"\n"
-"In RSYNC mode, snapshots are taken using rsync and hard-links. Common files "
-"are shared between snapshots which saves disk space. Each snapshot is a full "
-"system backup that can be browsed with a file manager.\n"
-"\n"
-"In BTRFS mode, snapshots are taken using the in-built features of the BTRFS "
-"filesystem. BTRFS snapshots are supported only on BTRFS systems having an "
-"Ubuntu-type subvolume layout (with @ and @home subvolumes)."
-msgstr ""
-"A Timeshift for Linux egy olyan alkalmazás, amely a Windows rendszer-"
-"visszaállítási funkciójához és a Mac OS Time Machine eszközéhez hasonló "
-"funkciókat biztosít. A Timeshift úgy védi a rendszert, hogy rendszeres "
-"időközönként inkrementális pillanatfelvételeket készít a fájlrendszerről. "
-"Ezek a pillanatfelvételek egy későbbi időpontban visszaállíthatók, hogy a "
-"rendszerben bekövetkezett minden változást vissza lehessen vonni.\n"
-"\n"
-"RSYNC módban a pillanatfelvételek készítése rsync és hardlinkek segítségével "
-"történik. A közös fájlok megosztásra kerülnek a pillanatképek között, ami "
-"lemezterületet takarít meg. Minden pillanatfelvétel egy teljes "
-"rendszermentés, amely fájlkezelővel böngészhető.\n"
-"\n"
-"BTRFS módban a pillanatfelvételek a BTRFS fájlrendszer beépített funkcióinak "
-"használatával készülnek. A BTRFS pillanatképek csak az Ubuntu-típusú (@ és "
-"@home alkötegekkel rendelkező) alkötegkiosztással rendelkező BTRFS "
-"rendszereken támogatottak."
+#~ msgid ""
+#~ "Timeshift for Linux is an application that provides functionality similar "
+#~ "to the System Restore feature in Windows and the Time Machine tool in Mac "
+#~ "OS. Timeshift protects your system by taking incremental snapshots of the "
+#~ "file system at regular intervals. These snapshots can be restored at a "
+#~ "later date to undo all changes to the system.\n"
+#~ "\n"
+#~ "In RSYNC mode, snapshots are taken using rsync and hard-links. Common "
+#~ "files are shared between snapshots which saves disk space. Each snapshot "
+#~ "is a full system backup that can be browsed with a file manager.\n"
+#~ "\n"
+#~ "In BTRFS mode, snapshots are taken using the in-built features of the "
+#~ "BTRFS filesystem. BTRFS snapshots are supported only on BTRFS systems "
+#~ "having an Ubuntu-type subvolume layout (with @ and @home subvolumes)."
+#~ msgstr ""
+#~ "A Timeshift for Linux egy olyan alkalmazás, amely a Windows rendszer-"
+#~ "visszaállítási funkciójához és a Mac OS Time Machine eszközéhez hasonló "
+#~ "funkciókat biztosít. A Timeshift úgy védi a rendszert, hogy rendszeres "
+#~ "időközönként inkrementális pillanatfelvételeket készít a fájlrendszerről. "
+#~ "Ezek a pillanatfelvételek egy későbbi időpontban visszaállíthatók, hogy a "
+#~ "rendszerben bekövetkezett minden változást vissza lehessen vonni.\n"
+#~ "\n"
+#~ "RSYNC módban a pillanatfelvételek készítése rsync és hardlinkek "
+#~ "segítségével történik. A közös fájlok megosztásra kerülnek a "
+#~ "pillanatképek között, ami lemezterületet takarít meg. Minden "
+#~ "pillanatfelvétel egy teljes rendszermentés, amely fájlkezelővel "
+#~ "böngészhető.\n"
+#~ "\n"
+#~ "BTRFS módban a pillanatfelvételek a BTRFS fájlrendszer beépített "
+#~ "funkcióinak használatával készülnek. A BTRFS pillanatképek csak az Ubuntu-"
+#~ "típusú (@ és @home alkötegekkel rendelkező) alkötegkiosztással rendelkező "
+#~ "BTRFS rendszereken támogatottak."
 
-#: recipe.json:432
-msgid "NVIDIA® Drivers"
-msgstr "NVIDIA® illesztőprogramok"
+#~ msgid "NVIDIA® Drivers"
+#~ msgstr "NVIDIA® illesztőprogramok"
 
-#: recipe.json:433
-msgid ""
-"Choose whether to install proprietary NVIDIA drivers for better "
-"compatibility and performance."
-msgstr ""
-"Válassza ki, hogy a jobb kompatibilitás és teljesítmény érdekében telepíteni "
-"kívánja-e a védjegyezett NVIDIA illesztőprogramokat."
+#~ msgid ""
+#~ "Choose whether to install proprietary NVIDIA drivers for better "
+#~ "compatibility and performance."
+#~ msgstr ""
+#~ "Válassza ki, hogy a jobb kompatibilitás és teljesítmény érdekében "
+#~ "telepíteni kívánja-e a védjegyezett NVIDIA illesztőprogramokat."
 
-#: recipe.json:439
-msgid "About Proprietary Drivers"
-msgstr "A védjegyezett illesztőprogramokról"
+#~ msgid "About Proprietary Drivers"
+#~ msgstr "A védjegyezett illesztőprogramokról"
 
-#: recipe.json:440
-msgid ""
-"A proprietary driver has private code that neither Vanilla OS nor Ubuntu "
-"developers can review.\n"
-"\n"
-"Security and other updates are dependent on the driver vendor."
-msgstr ""
-"A védjegyezett illesztőprogramnak privát kódja van, amelyet sem a Vanilla "
-"OS, sem az Ubuntu fejlesztői nem tudnak áttekinteni.\n"
-"\n"
-"A biztonsági és egyéb frissítések az illesztőprogram gyártójától függnek."
+#~ msgid ""
+#~ "A proprietary driver has private code that neither Vanilla OS nor Ubuntu "
+#~ "developers can review.\n"
+#~ "\n"
+#~ "Security and other updates are dependent on the driver vendor."
+#~ msgstr ""
+#~ "A védjegyezett illesztőprogramnak privát kódja van, amelyet sem a Vanilla "
+#~ "OS, sem az Ubuntu fejlesztői nem tudnak áttekinteni.\n"
+#~ "\n"
+#~ "A biztonsági és egyéb frissítések az illesztőprogram gyártójától függnek."
 
-#: recipe.json:460
-msgid "Open VM Tools"
-msgstr "Open VM Tools"
+#~ msgid "Open VM Tools"
+#~ msgstr "Open VM Tools"
 
-#: recipe.json:461
-msgid "Choose whether to install Open VM Tools for the virtual machine."
-msgstr ""
-"Válassza ki, hogy telepíteni kívánja-e az Open VM Tools-t a virtuális géphez."
+#~ msgid "Choose whether to install Open VM Tools for the virtual machine."
+#~ msgstr ""
+#~ "Válassza ki, hogy telepíteni kívánja-e az Open VM Tools-t a virtuális "
+#~ "géphez."
 
-#: recipe.json:467
-msgid "About Open VM Tools"
-msgstr "Az Open VM Tools-ról"
+#~ msgid "About Open VM Tools"
+#~ msgstr "Az Open VM Tools-ról"
 
-#: recipe.json:468
-msgid "Install Open VM Tools for seamless integration with Virtual machines."
-msgstr ""
-"Telepítse az Open VM Tools-t a virtuális gépekkel való zökkenőmentes "
-"integrációhoz."
+#~ msgid ""
+#~ "Install Open VM Tools for seamless integration with Virtual machines."
+#~ msgstr ""
+#~ "Telepítse az Open VM Tools-t a virtuális gépekkel való zökkenőmentes "
+#~ "integrációhoz."
 
-#: recipe.json:482
-msgid "Restricted Codecs"
-msgstr "Korlátozott kodekek"
+#~ msgid "Restricted Codecs"
+#~ msgstr "Korlátozott kodekek"
 
-#: recipe.json:483
-msgid "Choose whether to install restricted codecs and fonts."
-msgstr ""
-"Válassza ki, hogy telepíteni kívánja-e a korlátozott kodekeket és "
-"betűtípusokat."
+#~ msgid "Choose whether to install restricted codecs and fonts."
+#~ msgstr ""
+#~ "Válassza ki, hogy telepíteni kívánja-e a korlátozott kodekeket és "
+#~ "betűtípusokat."
 
-#: recipe.json:489
-msgid "About Restricted Codecs"
-msgstr "A korlátozott kodekekről"
+#~ msgid "About Restricted Codecs"
+#~ msgstr "A korlátozott kodekekről"
 
-#: recipe.json:490
-msgid ""
-"Install drivers, fonts and other essentials from the ubuntu-restricted-"
-"extras and ubuntu-restricted-addons repositories."
-msgstr ""
-"Telepítsen illesztőprogramokat, betűtípusokat és egyéb alapvető dolgokat az "
-"ubuntu-restricted-extras és ubuntu-restricted-addons tárolókból."
+#~ msgid ""
+#~ "Install drivers, fonts and other essentials from the ubuntu-restricted-"
+#~ "extras and ubuntu-restricted-addons repositories."
+#~ msgstr ""
+#~ "Telepítsen illesztőprogramokat, betűtípusokat és egyéb alapvető dolgokat "
+#~ "az ubuntu-restricted-extras és ubuntu-restricted-addons tárolókból."
 
-#: recipe.json:504
-msgid "Extra Settings"
-msgstr "Extra beállítások"
+#~ msgid "Extra Settings"
+#~ msgstr "Extra beállítások"
 
-#: recipe.json:505
-msgid ""
-"The following are optional settings, leave them as they are if you don't "
-"know what they do."
-msgstr ""
-"A következő beállítások opcionálisak, hagyja őket úgy, ahogy vannak, ha nem "
-"tudja, mit csinálnak."
+#~ msgid ""
+#~ "The following are optional settings, leave them as they are if you don't "
+#~ "know what they do."
+#~ msgstr ""
+#~ "A következő beállítások opcionálisak, hagyja őket úgy, ahogy vannak, ha "
+#~ "nem tudja, mit csinálnak."
 
-#: recipe.json:509
-msgid "Apport"
-msgstr "Apport"
+#~ msgid "Apport"
+#~ msgstr "Apport"
 
-#: recipe.json:510
-msgid ""
-"Apport is a crash reporting system that helps us improve the stability of "
-"the system."
-msgstr ""
-"Az Apport egy balesetjelentő rendszer, amely segít nekünk a rendszer "
-"stabilitásának javításában."
+#~ msgid ""
+#~ "Apport is a crash reporting system that helps us improve the stability of "
+#~ "the system."
+#~ msgstr ""
+#~ "Az Apport egy balesetjelentő rendszer, amely segít nekünk a rendszer "
+#~ "stabilitásának javításában."
 
 #~ msgid "The changes are being applied. Please Wait…"
 #~ msgstr "A változtatások beállítása folyamatban van. Kérem, várjon…"
