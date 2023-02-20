@@ -14,8 +14,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import socket
-import subprocess
+from urllib.request import urlopen
+from urllib.error import URLError
 
 from gi.repository import Gtk, GLib, Adw
 
@@ -52,23 +52,11 @@ class VanillaDefaultConnCheck(Adw.Bin):
     def __start_conn_check(self):
         def async_fn():
             try:
-                host = socket.gethostbyname("8.8.8.8")
-                s = socket.create_connection((host, 53), 2)
-                s.close()
+                urlopen("http://google.com", timeout=1)
                 return True
-            except:
-                try:
-                    host = '2001:4860:4860::8888'
-                    s = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
-                    s.settimeout(2)
-                    s.connect((host, 53))
-                    s.close()
-                    return True
-                except:
-                    pass
+            except URLError:
+                return False
 
-            return False
-        
         def callback(res, *args):
             if res:
                 self.__window.next()
@@ -80,7 +68,7 @@ class VanillaDefaultConnCheck(Adw.Bin):
             self.btn_recheck.set_visible(True)
 
         RunAsync(async_fn, callback)
-    
+
     def __on_btn_recheck_clicked(self, widget, *args):
         widget.set_visible(False)
         self.status_page.set_icon_name("content-loading-symbolic")
