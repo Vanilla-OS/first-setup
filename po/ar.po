@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-20 13:35+0530\n"
+"POT-Creation-Date: 2023-02-20 14:16+0100\n"
 "PO-Revision-Date: 2023-02-11 11:39+0000\n"
 "Last-Translator: Khaled Mahmoud <Khaled.q6@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/vanilla-os/first-"
@@ -37,12 +37,12 @@ msgid "First release"
 msgstr "اﻹصدار الأول"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
-#: vanilla_first_setup/defaults/conn_check.py:87
+#: vanilla_first_setup/defaults/conn_check.py:75
 msgid "Checking Connection…"
 msgstr "يتحقق من الإتصال…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#: vanilla_first_setup/defaults/conn_check.py:88
+#: vanilla_first_setup/defaults/conn_check.py:76
 msgid "Please wait until the connection check is done."
 msgstr "الرجاء الإنتظار لحين الإنتهاء من التحقق بالإتصال."
 
@@ -118,11 +118,11 @@ msgstr "اقرأ المزيد"
 msgid "Back"
 msgstr "رجوع"
 
-#: vanilla_first_setup/defaults/conn_check.py:78
+#: vanilla_first_setup/defaults/conn_check.py:66
 msgid "No Internet Connection!"
 msgstr "لا يوجد إتصال بالإنترنت!"
 
-#: vanilla_first_setup/defaults/conn_check.py:79
+#: vanilla_first_setup/defaults/conn_check.py:67
 msgid "First Setup requires an active internet connection"
 msgstr "تتطلب الخطوة الأولى الاتصال بالإنترنت"
 
@@ -161,219 +161,6 @@ msgstr "خطأ!"
 #: vanilla_first_setup/window.py:68
 msgid "Something went wrong."
 msgstr "هناك خطأ ما."
-
-#: recipe.json:18
-msgid "Get Involved"
-msgstr ""
-
-#: recipe.json:19
-msgid ""
-"Vanilla OS is a community project. You can contribute to the project by "
-"reporting bugs, suggesting new features, or even by writing code."
-msgstr ""
-
-#: recipe.json:24
-msgid "Join The Community"
-msgstr ""
-
-#: recipe.json:25
-msgid ""
-"Our community is active on Discord. You can join us to ask questions, get "
-"help, or just to chat with other users."
-msgstr ""
-
-#: recipe.json:30
-msgid "Immutable and Atomic"
-msgstr ""
-
-#: recipe.json:31
-msgid ""
-"Vanilla OS is an immutable and atomic Linux distribution. It is based on "
-"Ubuntu and uses ABRoot to provide atomic transactions."
-msgstr ""
-
-#: recipe.json:36
-msgid "Sub-System Ready To Go"
-msgstr ""
-
-#: recipe.json:37
-msgid ""
-"Vanilla OS comes with Apx, a new package manager which installs software in "
-"integrated containers to prevent host compromise."
-msgstr ""
-
-#: recipe.json:54
-msgid "Package Manager"
-msgstr ""
-
-#: recipe.json:55
-msgid "Choose one or more package managers to install"
-msgstr ""
-
-#: recipe.json:59
-msgid "Flatpak"
-msgstr ""
-
-#: recipe.json:60
-msgid "Manage and configure Flatpaks and the Flathub repository."
-msgstr ""
-
-#: recipe.json:65
-msgid "Snap"
-msgstr ""
-
-#: recipe.json:66
-msgid "Manage and configure Snaps and the Snapcraft repository."
-msgstr ""
-
-#: recipe.json:71
-msgid "AppImage"
-msgstr ""
-
-#: recipe.json:72
-msgid "Install necessary dependencies to run AppImages."
-msgstr ""
-
-#: recipe.json:111
-msgid "Applications"
-msgstr ""
-
-#: recipe.json:112
-msgid "Choose which applications to install."
-msgstr ""
-
-#: recipe.json:116
-msgid "Core Applications"
-msgstr ""
-
-#: recipe.json:117
-msgid "Essential GNOME apps like Calendar or Document Viewer."
-msgstr ""
-
-#: recipe.json:202
-msgid "Office"
-msgstr ""
-
-#: recipe.json:203
-msgid "The LibreOffice suite."
-msgstr ""
-
-#: recipe.json:216
-msgid "Common Utilities"
-msgstr ""
-
-#: recipe.json:217
-msgid "Useful utilities like Bottles or Sound Recorder."
-msgstr ""
-
-#: recipe.json:407 recipe.json:414
-msgid "Timeshift"
-msgstr ""
-
-#: recipe.json:408
-msgid "Choose whether to install Timeshift to create snapshots of your system."
-msgstr ""
-
-#: recipe.json:410 recipe.json:463 recipe.json:485
-msgid "Install"
-msgstr ""
-
-#: recipe.json:411 recipe.json:464 recipe.json:486
-msgid "Skip"
-msgstr ""
-
-#: recipe.json:415
-msgid ""
-"Timeshift for Linux is an application that provides functionality similar to "
-"the System Restore feature in Windows and the Time Machine tool in Mac OS. "
-"Timeshift protects your system by taking incremental snapshots of the file "
-"system at regular intervals. These snapshots can be restored at a later date "
-"to undo all changes to the system.\n"
-"\n"
-"In RSYNC mode, snapshots are taken using rsync and hard-links. Common files "
-"are shared between snapshots which saves disk space. Each snapshot is a full "
-"system backup that can be browsed with a file manager.\n"
-"\n"
-"In BTRFS mode, snapshots are taken using the in-built features of the BTRFS "
-"filesystem. BTRFS snapshots are supported only on BTRFS systems having an "
-"Ubuntu-type subvolume layout (with @ and @home subvolumes)."
-msgstr ""
-
-#: recipe.json:432
-msgid "NVIDIA® Drivers"
-msgstr ""
-
-#: recipe.json:433
-msgid ""
-"Choose whether to install proprietary NVIDIA drivers for better "
-"compatibility and performance."
-msgstr ""
-
-#: recipe.json:439
-msgid "About Proprietary Drivers"
-msgstr ""
-
-#: recipe.json:440
-msgid ""
-"A proprietary driver has private code that neither Vanilla OS nor Ubuntu "
-"developers can review.\n"
-"\n"
-"Security and other updates are dependent on the driver vendor."
-msgstr ""
-
-#: recipe.json:460
-msgid "Open VM Tools"
-msgstr ""
-
-#: recipe.json:461
-msgid "Choose whether to install Open VM Tools for the virtual machine."
-msgstr ""
-
-#: recipe.json:467
-msgid "About Open VM Tools"
-msgstr ""
-
-#: recipe.json:468
-msgid "Install Open VM Tools for seamless integration with Virtual machines."
-msgstr ""
-
-#: recipe.json:482
-msgid "Restricted Codecs"
-msgstr ""
-
-#: recipe.json:483
-msgid "Choose whether to install restricted codecs and fonts."
-msgstr ""
-
-#: recipe.json:489
-msgid "About Restricted Codecs"
-msgstr ""
-
-#: recipe.json:490
-msgid ""
-"Install drivers, fonts and other essentials from the ubuntu-restricted-"
-"extras and ubuntu-restricted-addons repositories."
-msgstr ""
-
-#: recipe.json:504
-msgid "Extra Settings"
-msgstr ""
-
-#: recipe.json:505
-msgid ""
-"The following are optional settings, leave them as they are if you don't "
-"know what they do."
-msgstr ""
-
-#: recipe.json:509
-msgid "Apport"
-msgstr ""
-
-#: recipe.json:510
-msgid ""
-"Apport is a crash reporting system that helps us improve the stability of "
-"the system."
-msgstr ""
 
 #~ msgid "The changes are being applied. Please Wait…"
 #~ msgstr "تُطبَّق التعديلات. يرجى الانتظار…"
