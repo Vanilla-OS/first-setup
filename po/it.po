@@ -100,7 +100,7 @@ msgstr "Il tuo dispositivo sarà pronto a breve."
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
-msgstr ""
+msgstr "Installazione..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
@@ -161,6 +161,216 @@ msgstr "Errore!"
 #: vanilla_first_setup/window.py:68
 msgid "Something went wrong."
 msgstr "Qualcosa è andato storto."
+
+#~ msgid "Get Involved"
+#~ msgstr "Fatti coinvolgere"
+
+#~ msgid ""
+#~ "Vanilla OS is a community project. You can contribute to the project by "
+#~ "reporting bugs, suggesting new features, or even by writing code."
+#~ msgstr ""
+#~ "Vanilla OS è un progetto comunitario. Puoi contribuire al progetto "
+#~ "segnalando bug, suggerendo nuove funzionalità, o anche scrivendo codice."
+
+#~ msgid "Join The Community"
+#~ msgstr "Unisciti alla community"
+
+#~ msgid ""
+#~ "Our community is active on Discord. You can join us to ask questions, get "
+#~ "help, or just to chat with other users."
+#~ msgstr ""
+#~ "La nostra community è attiva su Discord. Puoi unirti per porre domande, "
+#~ "ottenere aiuto, o semplicemente per chattare con altri utenti."
+
+#~ msgid "Immutable and Atomic"
+#~ msgstr "Immutabile e atomico"
+
+#~ msgid ""
+#~ "Vanilla OS is an immutable and atomic Linux distribution. It is based on "
+#~ "Ubuntu and uses ABRoot to provide atomic transactions."
+#~ msgstr ""
+#~ "Vanilla OS è una distribuzione Linux immutabile e atomica. Si basa su "
+#~ "Ubuntu e utilizza ABRoot per fornire transazioni atomiche."
+
+#~ msgid "Sub-System Ready To Go"
+#~ msgstr "Sottosistema pronto all'uso"
+
+#~ msgid ""
+#~ "Vanilla OS comes with Apx, a new package manager which installs software "
+#~ "in integrated containers to prevent host compromise."
+#~ msgstr ""
+#~ "Vanilla OS è dotato di Apx, un nuovo gestore di pacchetti che installa "
+#~ "software in contenitori integrati per prevenire la compromissione "
+#~ "dell'host."
+
+#~ msgid "Package Manager"
+#~ msgstr "Gestore dei pacchetti"
+
+#~ msgid "Choose one or more package managers to install"
+#~ msgstr "Scegliere uno o più gestori di pacchetti da installare"
+
+#~ msgid "Flatpak"
+#~ msgstr "Flatpak"
+
+#~ msgid "Manage and configure Flatpaks and the Flathub repository."
+#~ msgstr "Gestisci e configura i Flatpak e la repository di Flathub."
+
+#~ msgid "Snap"
+#~ msgstr "Snap"
+
+#~ msgid "Manage and configure Snaps and the Snapcraft repository."
+#~ msgstr "Gestisci e configura gli Snap e la repository di Snapcraft."
+
+#~ msgid "AppImage"
+#~ msgstr "AppImage"
+
+#~ msgid "Install necessary dependencies to run AppImages."
+#~ msgstr "Installare le dipendenze necessarie per eseguire le AppImages."
+
+#~ msgid "Applications"
+#~ msgstr "Applicazioni"
+
+#~ msgid "Choose which applications to install."
+#~ msgstr "Scegli quali applicazioni installare."
+
+#~ msgid "Core Applications"
+#~ msgstr "Applicazioni principali"
+
+#~ msgid "Essential GNOME apps like Calendar or Document Viewer."
+#~ msgstr "App GNOME essenziali come Calendar o Document Viewer."
+
+#~ msgid "Office"
+#~ msgstr "Office"
+
+#~ msgid "The LibreOffice suite."
+#~ msgstr "La suite LibreOffice."
+
+#~ msgid "Common Utilities"
+#~ msgstr "Utilità comuni"
+
+#~ msgid "Useful utilities like Bottles or Sound Recorder."
+#~ msgstr "Utilità utili come Bottles o Sound Recorder."
+
+#~ msgid "Timeshift"
+#~ msgstr "Timeshift"
+
+#~ msgid ""
+#~ "Choose whether to install Timeshift to create snapshots of your system."
+#~ msgstr ""
+#~ "Scegli se installare Timeshift per creare istantanee del tuo sistema."
+
+#~ msgid "Install"
+#~ msgstr "Installa"
+
+#~ msgid "Skip"
+#~ msgstr "Salta"
+
+#~ msgid ""
+#~ "Timeshift for Linux is an application that provides functionality similar "
+#~ "to the System Restore feature in Windows and the Time Machine tool in Mac "
+#~ "OS. Timeshift protects your system by taking incremental snapshots of the "
+#~ "file system at regular intervals. These snapshots can be restored at a "
+#~ "later date to undo all changes to the system.\n"
+#~ "\n"
+#~ "In RSYNC mode, snapshots are taken using rsync and hard-links. Common "
+#~ "files are shared between snapshots which saves disk space. Each snapshot "
+#~ "is a full system backup that can be browsed with a file manager.\n"
+#~ "\n"
+#~ "In BTRFS mode, snapshots are taken using the in-built features of the "
+#~ "BTRFS filesystem. BTRFS snapshots are supported only on BTRFS systems "
+#~ "having an Ubuntu-type subvolume layout (with @ and @home subvolumes)."
+#~ msgstr ""
+#~ "Timeshift per Linux è un'applicazione che fornisce funzionalità simili "
+#~ "alla funzione Ripristino di sistema in Windows e allo strumento Time "
+#~ "Machine in Mac OS. Timeshift protegge il sistema scattando istantanee "
+#~ "incrementali del file system a intervalli regolari. Queste istantanee "
+#~ "possono essere ripristinate in un secondo momento per annullare tutte le "
+#~ "modifiche apportate al sistema.\n"
+#~ "\n"
+#~ "In modalità RSYNC, le istantanee vengono prese utilizzando rsync e "
+#~ "collegamenti reali. I file comuni vengono condivisi tra istantanee che "
+#~ "consentono di risparmiare spazio su disco. Ogni snapshot è un backup "
+#~ "completo del sistema che può essere sfogliato con un file manager.\n"
+#~ "\n"
+#~ "In modalità BTRFS, le istantanee vengono prese utilizzando le "
+#~ "funzionalità integrate del filesystem BTRFS. Le istantanee BTRFS sono "
+#~ "supportate solo su sistemi BTRFS con un layout di sottovolume di tipo "
+#~ "Ubuntu (con sottovolumi @ e @home)."
+
+#~ msgid "NVIDIA® Drivers"
+#~ msgstr "Driver NVIDIA®"
+
+#~ msgid ""
+#~ "Choose whether to install proprietary NVIDIA drivers for better "
+#~ "compatibility and performance."
+#~ msgstr ""
+#~ "Scegli se installare i driver NVIDIA proprietari per una migliore "
+#~ "compatibilità e prestazioni."
+
+#~ msgid "About Proprietary Drivers"
+#~ msgstr "Informazioni sui driver proprietari"
+
+#~ msgid ""
+#~ "A proprietary driver has private code that neither Vanilla OS nor Ubuntu "
+#~ "developers can review.\n"
+#~ "\n"
+#~ "Security and other updates are dependent on the driver vendor."
+#~ msgstr ""
+#~ "Un driver proprietario ha codice privato che né gli sviluppatori di "
+#~ "Vanilla OS né quelli di Ubuntu possono esaminare.\n"
+#~ "\n"
+#~ "La sicurezza e gli altri aggiornamenti dipendono dal fornitore del driver."
+
+#~ msgid "Open VM Tools"
+#~ msgstr "Open VM Tools"
+
+#~ msgid "Choose whether to install Open VM Tools for the virtual machine."
+#~ msgstr "Scegliere se installare Open VM Tools per la macchina virtuale."
+
+#~ msgid "About Open VM Tools"
+#~ msgstr "Informazioni su Open VM Tools"
+
+#~ msgid ""
+#~ "Install Open VM Tools for seamless integration with Virtual machines."
+#~ msgstr ""
+#~ "Installa Open VM Tools per un'integrazione perfetta con le macchine "
+#~ "virtuali."
+
+#~ msgid "Restricted Codecs"
+#~ msgstr "Codec Ristretti"
+
+#~ msgid "Choose whether to install restricted codecs and fonts."
+#~ msgstr "Scegliere se installare codec e caratteri ristretti."
+
+#~ msgid "About Restricted Codecs"
+#~ msgstr "Informazioni sui codec ristretti"
+
+#~ msgid ""
+#~ "Install drivers, fonts and other essentials from the ubuntu-restricted-"
+#~ "extras and ubuntu-restricted-addons repositories."
+#~ msgstr ""
+#~ "Installa driver, font e altri elementi essenziali dai repository ubuntu-"
+#~ "restricted-extras e ubuntu-restricted-addons."
+
+#~ msgid "Extra Settings"
+#~ msgstr "Impostazioni aggiuntive"
+
+#~ msgid ""
+#~ "The following are optional settings, leave them as they are if you don't "
+#~ "know what they do."
+#~ msgstr ""
+#~ "Le seguenti sono impostazioni opzionali, lasciale così come sono se non "
+#~ "sai cosa fanno."
+
+#~ msgid "Apport"
+#~ msgstr "Apport"
+
+#~ msgid ""
+#~ "Apport is a crash reporting system that helps us improve the stability of "
+#~ "the system."
+#~ msgstr ""
+#~ "Apport è un sistema di segnalazione degli arresti anomali che ci aiuta a "
+#~ "migliorare la stabilità del sistema."
 
 #~ msgid "The changes are being applied. Please Wait…"
 #~ msgstr "Le modifiche vengono applicate. Attendere prego…"

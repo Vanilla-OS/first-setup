@@ -99,7 +99,7 @@ msgstr "உங்கள் சாதனம் விரைவில் தயா
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
-msgstr ""
+msgstr "நிறுவுகிறது…"
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
@@ -115,7 +115,7 @@ msgstr "மேலும் படிக்கவும்"
 
 #: vanilla_first_setup/gtk/window.ui:25
 msgid "Back"
-msgstr "மீண்டும்"
+msgstr "திரும்பவும்"
 
 #: vanilla_first_setup/defaults/conn_check.py:66
 msgid "No Internet Connection!"
