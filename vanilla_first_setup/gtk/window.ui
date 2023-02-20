@@ -22,7 +22,7 @@
             </property>
             <child type="start">
               <object class="GtkButton" id="btn_back">
-                <property name="label" translatable="true">Back</property>
+                <property name="label" translatable="yes">Back</property>
                 <property name="halign">center</property>
                 <property name="visible">False</property>
               </object>

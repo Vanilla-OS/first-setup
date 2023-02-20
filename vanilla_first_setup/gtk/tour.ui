@@ -24,7 +24,7 @@
                                 <property name="halign">center</property>
                                 <child>
                                     <object class="GtkButton" id="btn_read_more">
-                                    <property name="label" translatable="true">Read More</property>
+                                    <property name="label" translatable="yes">Read More</property>
                                     <property name="halign">center</property>
                                     <style>
                                         <class name="pill" />

@@ -37,3 +37,5 @@ vanilla_first_setup/views/tour.py
 vanilla_first_setup/dialog.py
 vanilla_first_setup/main.py
 vanilla_first_setup/window.py
+
+recipe.json

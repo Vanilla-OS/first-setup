@@ -9,8 +9,8 @@
         <child>
             <object class="AdwStatusPage" id="status_page">
                 <property name="icon-name">org.vanillaos.FirstSetup</property>
-                <property name="title" translatable="true">Welcome!</property>
-                <property name="description" translatable="true">Make your choices, this wizard will take care of everything.</property>
+                <property name="title" translatable="yes">Welcome!</property>
+                <property name="description" translatable="yes">Make your choices, this wizard will take care of everything.</property>
                 <child>
                     <object class="GtkButton" id="btn_next">
                         <property name="label">Let's Start</property>

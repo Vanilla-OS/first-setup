@@ -15,26 +15,26 @@
     "tour": {
         "get-involved": {
              "icon": "system-users-symbolic",
-             "title": "Get Involved",
-             "description": "Vanilla OS is a community project. You can contribute to the project by reporting bugs, suggesting new features, or even by writing code.",
+             "title": _("Get Involved"),
+             "description": _("Vanilla OS is a community project. You can contribute to the project by reporting bugs, suggesting new features, or even by writing code."),
              "read_more_link": "https://vanillaos.org/get-involved"
         },
         "community": {
              "icon": "help-faq-symbolic",
-             "title": "Join The Community",
-             "description": "Our community is active on Discord. You can join us to ask questions, get help, or just to chat with other users.",
+             "title": _("Join The Community"),
+             "description": _("Our community is active on Discord. You can join us to ask questions, get help, or just to chat with other users."),
              "read_more_link": "https://discord.gg/3cD2Q7Ht3S"
         },
         "abroot": {
              "icon": "security-medium-symbolic",
-             "title": "Immutable and Atomic",
-             "description": "Vanilla OS is an immutable and atomic Linux distribution. It is based on Ubuntu and uses ABRoot to provide atomic transactions.",
+             "title": _("Immutable and Atomic"),
+             "description": _("Vanilla OS is an immutable and atomic Linux distribution. It is based on Ubuntu and uses ABRoot to provide atomic transactions."),
              "read_more_link": "https://documentation.vanillaos.org/docs/ABRoot/"
         },
         "apx": {
              "icon": "vanilla-container-terminal-symbolic",
-             "title": "Sub-System Ready To Go",
-             "description": "Vanilla OS comes with Apx, a new package manager which installs software in integrated containers to prevent host compromise.",
+             "title": _("Sub-System Ready To Go"),
+             "description": _("Vanilla OS comes with Apx, a new package manager which installs software in integrated containers to prevent host compromise."),
              "read_more_link": "https://documentation.vanillaos.org/docs/apx/"
         }
     },
@@ -51,25 +51,25 @@
         "packages": {
             "template": "preferences",
             "icon": "vanilla-package-symbolic",
-            "title": "Package Manager",
-            "description": "Choose one or more package managers to install",
+            "title": _("Package Manager"),
+            "description": _("Choose one or more package managers to install"),
             "preferences": [
                 {
                     "id": "flatpak",
-                    "title": "Flatpak",
-                    "subtitle": "Manage and configure Flatpaks and the Flathub repository.",
+                    "title": _("Flatpak"),
+                    "subtitle": _("Manage and configure Flatpaks and the Flathub repository."),
                     "default": true
                 },
                 {
                     "id": "snap",
-                    "title": "Snap",
-                    "subtitle": "Manage and configure Snaps and the Snapcraft repository.",
+                    "title": _("Snap"),
+                    "subtitle": _("Manage and configure Snaps and the Snapcraft repository."),
                     "disabled": true
                 },
                 {
                     "id": "appimage",
-                    "title": "AppImage",
-                    "subtitle": "Install necessary dependencies to run AppImages.",
+                    "title": _("AppImage"),
+                    "subtitle": _("Install necessary dependencies to run AppImages."),
                     "default": true
                 },
                 {
@@ -108,13 +108,13 @@
         "apps": {
             "template": "applications",
             "icon": "org.gnome.Software-symbolic",
-            "title": "Applications",
-            "description": "Choose which applications to install.",
+            "title": _("Applications"),
+            "description": _("Choose which applications to install."),
             "bundles": [
                 {
                     "id": "core-apps",
-                    "title": "Core Applications",
-                    "subtitle": "Essential GNOME apps like Calendar or Document Viewer.",
+                    "title": _("Core Applications"),
+                    "subtitle": _("Essential GNOME apps like Calendar or Document Viewer."),
                     "default": true,
                     "applications" : [
                         {
@@ -199,8 +199,8 @@
                 },
                 {
                     "id": "office",
-                    "title": "Office",
-                    "subtitle": "The LibreOffice suite.",
+                    "title": _("Office"),
+                    "subtitle": _("The LibreOffice suite."),
                     "default": false,
                     "applications" : [
                         {
@@ -213,8 +213,8 @@
                 },
                 {
                     "id": "utilities",
-                    "title": "Common Utilities",
-                    "subtitle": "Useful utilities like Bottles or Sound Recorder.",
+                    "title": _("Common Utilities"),
+                    "subtitle": _("Useful utilities like Bottles or Sound Recorder."),
                     "default": false,
                     "applications" : [
                         {
@@ -404,15 +404,15 @@
         "timeshift": {
             "template": "yes-no",
             "icon": "vanilla-history-undo-symbolic",
-            "title": "Timeshift",
-            "description": "Choose whether to install Timeshift to create snapshots of your system.",
+            "title": _("Timeshift"),
+            "description": _("Choose whether to install Timeshift to create snapshots of your system."),
             "buttons": {
-                "yes": "Install",
-                "no": "Skip",
+                "yes": _("Install"),
+                "no": _("Skip"),
                 "info": {
                     "type": "text",
-                    "title": "Timeshift",
-                    "text": "Timeshift for Linux is an application that provides functionality similar to the System Restore feature in Windows and the Time Machine tool in Mac OS. Timeshift protects your system by taking incremental snapshots of the file system at regular intervals. These snapshots can be restored at a later date to undo all changes to the system.\n\nIn RSYNC mode, snapshots are taken using rsync and hard-links. Common files are shared between snapshots which saves disk space. Each snapshot is a full system backup that can be browsed with a file manager.\n\nIn BTRFS mode, snapshots are taken using the in-built features of the BTRFS filesystem. BTRFS snapshots are supported only on BTRFS systems having an Ubuntu-type subvolume layout (with @ and @home subvolumes)."
+                    "title": _("Timeshift"),
+                    "text": _("Timeshift for Linux is an application that provides functionality similar to the System Restore feature in Windows and the Time Machine tool in Mac OS. Timeshift protects your system by taking incremental snapshots of the file system at regular intervals. These snapshots can be restored at a later date to undo all changes to the system.\n\nIn RSYNC mode, snapshots are taken using rsync and hard-links. Common files are shared between snapshots which saves disk space. Each snapshot is a full system backup that can be browsed with a file manager.\n\nIn BTRFS mode, snapshots are taken using the in-built features of the BTRFS filesystem. BTRFS snapshots are supported only on BTRFS systems having an Ubuntu-type subvolume layout (with @ and @home subvolumes).")
                 }
             },
             "final": [
@@ -429,15 +429,15 @@
                 "lspci | grep -i '.* nvidia .*'"
             ],
             "icon": "video-display-symbolic",
-            "title": "NVIDIA® Drivers",
-            "description": "Choose whether to install proprietary NVIDIA drivers for better compatibility and performance.",
+            "title": _("NVIDIA® Drivers"),
+            "description": _("Choose whether to install proprietary NVIDIA drivers for better compatibility and performance."),
             "buttons": {
                 "yes": "Yes, install",
                 "no": "Skip",
                 "info": {
                     "type": "text",
-                    "title": "About Proprietary Drivers",
-                    "text": "A proprietary driver has private code that neither Vanilla OS nor Ubuntu developers can review.\n\nSecurity and other updates are dependent on the driver vendor."
+                    "title": _("About Proprietary Drivers"),
+                    "text": _("A proprietary driver has private code that neither Vanilla OS nor Ubuntu developers can review.\n\nSecurity and other updates are dependent on the driver vendor.")
                 }
             },
             "final": [
@@ -457,15 +457,15 @@
                 "grep 'hypervisor' /proc/cpuinfo"
             ],
             "icon": "application-x-appliance-symbolic",
-            "title": "Open VM Tools",
-            "description": "Choose whether to install Open VM Tools for the virtual machine.",
+            "title": _("Open VM Tools"),
+            "description": _("Choose whether to install Open VM Tools for the virtual machine."),
             "buttons": {
-                "yes": "Install",
-                "no": "Skip",
+                "yes": _("Install"),
+                "no": _("Skip"),
                 "info": {
                     "type": "text",
-                    "title": "About Open VM Tools",
-                    "text": "Install Open VM Tools for seamless integration with Virtual machines."
+                    "title": _("About Open VM Tools"),
+                    "text": _("Install Open VM Tools for seamless integration with Virtual machines.")
                 }
             },
             "final": [
@@ -479,15 +479,15 @@
         "codecs": {
             "template": "yes-no",
             "icon": "vanilla-puzzle-piece-symbolic",
-            "title": "Restricted Codecs",
-            "description": "Choose whether to install restricted codecs and fonts.",
+            "title": _("Restricted Codecs"),
+            "description": _("Choose whether to install restricted codecs and fonts."),
             "buttons": {
-                "yes": "Install",
-                "no": "Skip",
+                "yes": _("Install"),
+                "no": _("Skip"),
                 "info": {
                     "type": "text",
-                    "title": "About Restricted Codecs",
-                    "text": "Install drivers, fonts and other essentials from the ubuntu-restricted-extras and ubuntu-restricted-addons repositories."
+                    "title": _("About Restricted Codecs"),
+                    "text": _("Install drivers, fonts and other essentials from the ubuntu-restricted-extras and ubuntu-restricted-addons repositories.")
                 }
             },
             "final": [
@@ -501,13 +501,13 @@
         "extra": {
             "template": "preferences",
             "icon": "dialog-warning-symbolic",
-            "title": "Extra Settings",
-            "description": "The following are optional settings, leave them as they are if you don't know what they do.",
+            "title": _("Extra Settings"),
+            "description": _("The following are optional settings, leave them as they are if you don't know what they do."),
             "preferences": [
                 {
                     "id": "apport",
-                    "title": "Apport",
-                    "subtitle": "Apport is a crash reporting system that helps us improve the stability of the system."
+                    "title": _("Apport"),
+                    "subtitle": _("Apport is a crash reporting system that helps us improve the stability of the system.")
                 }
             ],
             "final": [
