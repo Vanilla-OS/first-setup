@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-20 14:24+0100\n"
-"PO-Revision-Date: 2023-02-15 16:35+0000\n"
+"PO-Revision-Date: 2023-02-23 00:28+0000\n"
 "Last-Translator: Benjamin Kőhidi <benstone326@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/hu/>\n"
@@ -81,9 +81,8 @@ msgid "All done!"
 msgstr "Készen vagyunk!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr "Indítsa újra a számítógépét, hogy élvezze Vanila OS élményét."
+msgstr "Indítsa újra a készüléket, hogy élvezhesse a Vanilla OS élményt."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
@@ -131,7 +130,7 @@ msgstr "Kérjük, válasszon legalább egy lehetőséget."
 
 #: vanilla_first_setup/views/done.py:41
 msgid "Restart your device to enjoy your {} experience."
-msgstr "Indítsa újra eszközét, hogy kiélvezze {} élményét."
+msgstr "Indítsa újra a készüléket, hogy élvezhesse a {} élményt."
 
 #: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
