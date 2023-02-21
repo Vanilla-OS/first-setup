@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Juan <benitesjn@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-20 14:24+0100\n"
-"PO-Revision-Date: 2023-02-03 14:29+0000\n"
-"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/es/>\n"
+"PO-Revision-Date: 2023-02-23 00:28+0000\n"
+"Last-Translator: Juan <benitesjn@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,7 +28,7 @@ msgstr "Modifique su instalación de Vanilla OS."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr "Sin descripción"
+msgstr "No description"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
@@ -99,7 +98,7 @@ msgstr "Su dispositivo estará listo en breve."
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
-msgstr ""
+msgstr "Instalando..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
@@ -115,7 +114,7 @@ msgstr "Leer más"
 
 #: vanilla_first_setup/gtk/window.ui:25
 msgid "Back"
-msgstr "Atrás"
+msgstr "Regresar"
 
 #: vanilla_first_setup/defaults/conn_check.py:66
 msgid "No Internet Connection!"
