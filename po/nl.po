@@ -7,10 +7,10 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-20 14:24+0100\n"
-"PO-Revision-Date: 2023-02-15 16:35+0000\n"
+"PO-Revision-Date: 2023-02-23 00:28+0000\n"
 "Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
-"Language-Team: Dutch <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/nl/>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -99,7 +99,7 @@ msgstr "Uw apparaat zal binnenkort gereed zijn."
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
-msgstr ""
+msgstr "Installeren…"
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
