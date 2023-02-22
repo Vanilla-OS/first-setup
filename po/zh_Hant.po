@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Automatically generated, 2022.
 #
+# Jen Kung-chih <Kaitul@outlook.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-20 14:24+0100\n"
-"PO-Revision-Date: 2023-02-05 07:35+0000\n"
+"PO-Revision-Date: 2023-02-23 00:28+0000\n"
 "Last-Translator: Jen Kung-chih <Kaitul@outlook.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "vanilla-os/first-setup/zh_Hant/>\n"
@@ -99,7 +100,7 @@ msgstr "您的裝置將很快準備就緒。"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
-msgstr ""
+msgstr "正在安裝…"
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
@@ -115,7 +116,7 @@ msgstr "閱讀更多"
 
 #: vanilla_first_setup/gtk/window.ui:25
 msgid "Back"
-msgstr "上一步"
+msgstr "返回"
 
 #: vanilla_first_setup/defaults/conn_check.py:66
 msgid "No Internet Connection!"
