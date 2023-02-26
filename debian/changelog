@@ -1,4 +1,10 @@
-vanilla-first-setup (1.7.3) kinetic; urgency=critical
+vanilla-first-setup (1.7.3-1) lunar; urgency=critical
+
+  * Updated translations
+
+ -- Mirko Brombin <send@mirko.pm>  Sat, 25 Feb 2023 23:04:00 +0000
+
+ vanilla-first-setup (1.7.3) kinetic; urgency=critical
 
   * Updated translations
 
