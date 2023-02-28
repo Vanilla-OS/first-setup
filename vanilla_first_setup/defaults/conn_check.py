@@ -16,6 +16,7 @@
 
 from urllib.request import urlopen
 from urllib.error import URLError
+import os
 
 from gi.repository import Gtk, GLib, Adw
 
@@ -51,6 +52,9 @@ class VanillaDefaultConnCheck(Adw.Bin):
 
     def __start_conn_check(self):
         def async_fn():
+            if "VANILLA_SKIP_CONN_CHECK" in os.environ:
+                return True
+
             try:
                 urlopen("http://google.com", timeout=1)
                 return True
