@@ -1,10 +1,17 @@
-vanilla-first-setup (1.7.4) lunar; urgency=critical
+vanilla-first-setup (1.7.4-1) kinetic; urgency=critical
+
+  * Improve connection checking
+  * Environment flag to skip connection checking
+
+ -- Mateus Melchiades <matbme@duck.com>  Tue, 28 Feb 2023 14:31:00 -0300
+
+vanilla-first-setup (1.7.4) kinetic; urgency=critical
 
   * gtk4 changes
 
  -- Mirko Brombin <send@mirko.pm>  Mon, 27 Feb 2023 09:06:00 +0000
 
-vanilla-first-setup (1.7.3-1) lunar; urgency=critical
+vanilla-first-setup (1.7.3-1) kinetic; urgency=critical
 
   * Updated translations
 
