@@ -56,9 +56,9 @@ class VanillaDefaultConnCheck(Adw.Bin):
                 return True
 
             try:
-                urlopen("http://google.com", timeout=1)
+                urlopen("https://google.com", timeout=1)
                 return True
-            except URLError:
+            except:
                 return False
 
         def callback(res, *args):
