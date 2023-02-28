@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Sergey Ivanov <ivanov.sergey.ekb@gmail.com>, 2023.
+# Anatoly <pandorinpan@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-20 14:24+0100\n"
-"PO-Revision-Date: 2023-02-23 00:28+0000\n"
-"Last-Translator: Sergey Ivanov <ivanov.sergey.ekb@gmail.com>\n"
+"PO-Revision-Date: 2023-02-27 20:38+0000\n"
+"Last-Translator: Anatoly <pandorinpan@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ru/>\n"
 "Language: ru\n"
@@ -132,7 +133,7 @@ msgstr "Пожалуйста, выберите хотя бы один вариа
 
 #: vanilla_first_setup/views/done.py:41
 msgid "Restart your device to enjoy your {} experience."
-msgstr "Перезагрузите компьютер, чтобы насладиться работой {}."
+msgstr "Перезагрузите ваше устройство, чтобы насладиться работой {}."
 
 #: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
