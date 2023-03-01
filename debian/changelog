@@ -1,3 +1,9 @@
+vanilla-first-setup (1.7.4-2) lunar; urgency=critical
+
+  * Fix CSS-provider getting too many arguments
+
+ -- Mateus Melchiades <matbme@duck.com>  Tue, 28 Feb 2023 19:21:00 -0300
+
 vanilla-first-setup (1.7.4) lunar; urgency=critical
 
   * gtk4 changes
