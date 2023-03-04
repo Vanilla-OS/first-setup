@@ -36,7 +36,7 @@ class VanillaLayoutYesNo(Adw.Bin):
         self.__distro_info = distro_info
         self.__key = key
         self.__step = step
-        self.__response = False
+        self.__response = self.__get_default()
         self.__build_ui()
 
         # signals
@@ -81,3 +81,9 @@ class VanillaLayoutYesNo(Adw.Bin):
             },
             "funcs": [x for x in self.__step["final"]]
         }
+
+    def __get_default(self):
+        if not self.__step.get("is-advanced"):
+            return False
+
+        return self.__step.get("preset", False)

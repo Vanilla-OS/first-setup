@@ -12,13 +12,28 @@
                 <property name="title" translatable="yes">Welcome!</property>
                 <property name="description" translatable="yes">Make your choices, this wizard will take care of everything.</property>
                 <child>
-                    <object class="GtkButton" id="btn_next">
-                        <property name="label">Let's Start</property>
+                    <object class="GtkBox">
+                        <property name="spacing">8</property>
                         <property name="halign">center</property>
-                        <style>
-                            <class name="pill" />
-                            <class name="suggested-action" />
-                        </style>
+                        <child>
+                            <object class="GtkButton" id="btn_advanced">
+                                <property name="label">Advanced</property>
+                                <property name="halign">center</property>
+                                <style>
+                                    <class name="pill" />
+                                </style>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkButton" id="btn_next">
+                                <property name="label">Start</property>
+                                <property name="halign">center</property>
+                                <style>
+                                    <class name="pill" />
+                                    <class name="suggested-action" />
+                                </style>
+                            </object>
+                        </child>
                     </object>
                 </child>
             </object>

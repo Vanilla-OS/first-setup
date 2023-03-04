@@ -24,6 +24,7 @@ from vanilla_first_setup.utils.run_async import RunAsync
 class VanillaDefaultWelcome(Adw.Bin):
     __gtype_name__ = 'VanillaDefaultWelcome'
 
+    btn_advanced = Gtk.Template.Child()
     btn_next = Gtk.Template.Child()
     status_page = Gtk.Template.Child()
 
@@ -75,7 +76,8 @@ class VanillaDefaultWelcome(Adw.Bin):
         self.__start_welcome_animation()
 
         # signals
-        self.btn_next.connect("clicked", self.__window.next)
+        self.btn_advanced.connect("clicked", self.__advanced)
+        self.btn_next.connect("clicked", self.__next)
 
         # set distro logo
         self.status_page.set_icon_name(self.__distro_info["logo"])
@@ -92,6 +94,12 @@ class VanillaDefaultWelcome(Adw.Bin):
                     time.sleep(1.2)
 
         RunAsync(change_langs, None)
+
+    def __advanced(self, widget):
+        self.__window.next(rebuild=True, mode=1)
+
+    def __next(self, widget):
+        self.__window.next(rebuild=True, mode=0)
 
     def get_finals(self):
         return {}

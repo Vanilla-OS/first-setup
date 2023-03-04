@@ -40,16 +40,19 @@
     },
     "steps": {
         "conn-check": {
-            "template": "conn-check"
+            "template": "conn-check",
+            "protected": true
         },
         "welcome": {
-            "template": "welcome"
+            "template": "welcome",
+            "protected": true
         },
         "theme": {
             "template": "theme"
         },
         "packages": {
             "template": "preferences",
+            "is-advanced": true,
             "icon": "vanilla-package-symbolic",
             "title": "Package Manager",
             "description": "Choose one or more package managers to install",
@@ -403,6 +406,9 @@
         },
         "timeshift": {
             "template": "yes-no",
+            "is-advanced": true,
+            "advanced_value-type": "bool",
+            "preset": false,
             "icon": "vanilla-history-undo-symbolic",
             "title": "Timeshift",
             "description": "Choose whether to install Timeshift to create snapshots of your system.",
@@ -425,6 +431,8 @@
         },
         "nvidia": {
             "template": "yes-no",
+            "is-advanced": true,
+            "preset": false,
             "display-conditions": [
                 "lspci | grep -i '.* nvidia .*'"
             ],
@@ -453,6 +461,8 @@
         },
         "vm": {
             "template": "yes-no",
+            "is-advanced": true,
+            "preset": true,
             "display-conditions": [
                 "grep 'hypervisor' /proc/cpuinfo"
             ],
@@ -478,6 +488,8 @@
         },
         "codecs": {
             "template": "yes-no",
+            "is-advanced": true,
+            "preset": true,
             "icon": "vanilla-puzzle-piece-symbolic",
             "title": "Restricted Codecs",
             "description": "Choose whether to install restricted codecs and fonts.",
@@ -500,6 +512,7 @@
         },
         "extra": {
             "template": "preferences",
+            "is-advanced": true,
             "icon": "dialog-warning-symbolic",
             "title": "Extra Settings",
             "description": "The following are optional settings, leave them as they are if you don't know what they do.",

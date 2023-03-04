@@ -104,12 +104,27 @@ class VanillaWindow(Adw.ApplicationWindow):
         self.btn_back.connect("clicked", self.back)
         self.carousel.connect("page-changed", self.__on_page_changed)
 
-    def __build_ui(self):
-        for widget in self.__builder.widgets:
+    def __build_ui(self, mode=0, rebuild=False):
+        if rebuild:
+            self.carousel.remove(self.__view_progress)
+            self.carousel.remove(self.__view_done)
+            
+        for widget, status, protected in self.__builder.widgets:
+            if rebuild:
+                if protected:
+                    continue
+                self.carousel.remove(widget)
+
+            if mode == 0 and not status:
+                continue
+            
             self.carousel.append(widget)
 
         self.carousel.append(self.__view_progress)
         self.carousel.append(self.__view_done)
+    
+    def rebuild_ui(self, mode=0):
+        self.__build_ui(mode, rebuild=True)
 
     def __on_page_changed(self, *args):
         pages_check = [self.__view_done]
@@ -163,7 +178,10 @@ class VanillaWindow(Adw.ApplicationWindow):
         self.__view_done.set_result(result, terminal)
         self.next()
 
-    def next(self, widget: Gtk.Widget=None, result: bool=None, *args):
+    def next(self, widget: Gtk.Widget=None, result: bool=None, rebuild: bool=False, mode: int=0, *args):
+        if rebuild:
+            self.rebuild_ui(mode)
+
         if result is not None:
             self.__last_result = result
 

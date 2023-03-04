@@ -69,6 +69,9 @@ class Builder:
                 logging.warning("No log will be stored.")
 
         for key, step in self.__recipe.raw["steps"].items():
+            _status = True
+            _protected = False
+
             if step.get("display-conditions"):
                 _condition_met = False
                 for command in step["display-conditions"]:
@@ -86,13 +89,18 @@ class Builder:
 
                 if not _condition_met:
                     continue
+            
+            _status = not step.get("is-advanced", False)
+
+            if step.get("protected"):
+                _protected = True
 
             if step["template"] in templates:
                 _widget = templates[step["template"]](self.__window, self.distro_info, key, step)
-                self.__register_widgets.append(_widget)
+                self.__register_widgets.append((_widget, _status, _protected))
     
     def get_temp_finals(self, step_id: str):
-        for widget in self.__register_widgets:
+        for widget, _, _ in self.__register_widgets:
             if widget.step_id == step_id:
                 return widget.get_finals()
 
@@ -101,7 +109,7 @@ class Builder:
     def get_finals(self):
         self.__register_finals = []
 
-        for widget in self.__register_widgets:
+        for widget, _, _ in self.__register_widgets:
             self.__register_finals.append(widget.get_finals())
 
         return self.__register_finals
