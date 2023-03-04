@@ -407,7 +407,6 @@
         "timeshift": {
             "template": "yes-no",
             "is-advanced": true,
-            "advanced_value-type": "bool",
             "preset": false,
             "icon": "vanilla-history-undo-symbolic",
             "title": "Timeshift",
