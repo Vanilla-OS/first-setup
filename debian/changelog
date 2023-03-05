@@ -1,4 +1,4 @@
-vanilla-first-setup (2.0.0) lunar; urgency=critical
+vanilla-first-setup (2.0.0) unstable; urgency=critical
 
   * Express and Advanced mode
   * Custom GNOME session
