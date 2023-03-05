@@ -131,11 +131,12 @@ class Processor:
         return cmd
 
     @staticmethod
-    def hide_first_setup():
-        desktop_file = os.path.expanduser(
-            "~/.local/share/applications/org.vanillaos.FirstSetup.desktop")
-        autostart_file = os.path.expanduser(
-            "~/.config/autostart/org.vanillaos.FirstSetup.desktop")
+    def hide_first_setup(user: str=None):
+        if user is None:
+            user = os.environ.get("USER")
+
+        desktop_file = "/home/%s/.local/share/applications/org.vanillaos.FirstSetup.desktop" % user
+        autostart_file = "/home/%s/.config/autostart/org.vanillaos.FirstSetup.desktop" % user
 
         if os.path.exists(autostart_file):
             os.remove(autostart_file)

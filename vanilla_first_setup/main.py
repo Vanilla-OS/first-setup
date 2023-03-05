@@ -29,6 +29,7 @@ from vanilla_first_setup.window import VanillaWindow
 
 
 logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("FirstSetup::Main")
 
 
 class FirstSetupApplication(Adw.Application):
@@ -38,6 +39,9 @@ class FirstSetupApplication(Adw.Application):
         super().__init__(application_id='org.vanillaos.FirstSetup',
                 flags=Gio.ApplicationFlags.HANDLES_COMMAND_LINE)
         self.post_script = None
+        self.user = os.environ.get("USER")
+        self.new_user = False
+        
         self.create_action('quit', self.close, ['<primary>q'])
         self.__register_arguments()
 
@@ -51,12 +55,27 @@ class FirstSetupApplication(Adw.Application):
             _("Run a post script"),
             None
         )
+        self.add_main_option(
+            "new-user",
+            ord("p"),
+            GLib.OptionFlags.NONE,
+            GLib.OptionArg.NONE,
+            _("Run as a new user"),
+            None
+        )
 
     def do_command_line(self, command_line):
         """Handle command line arguments."""
         options = command_line.get_options_dict()
+
         if options.contains("run-post-script"):
+            logger.info("Running post script")
             self.post_script = options.lookup_value("run-post-script").get_string()
+            
+        if options.contains("new-user"):
+            logger.info("Running as a new user")
+            self.user = None
+            self.new_user = True
 
         self.activate()
 
@@ -122,7 +141,7 @@ class FirstSetupApplication(Adw.Application):
     
         win = self.props.active_window
         if not win:
-            win = VanillaWindow(application=self, post_script=self.post_script)
+            win = VanillaWindow(application=self, post_script=self.post_script, user=self.user, new_user=self.new_user)
         win.present()
 
     def create_action(self, name, callback, shortcuts=None):

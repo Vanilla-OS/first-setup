@@ -41,7 +41,7 @@ class VanillaWindow(Adw.ApplicationWindow):
     btn_back = Gtk.Template.Child()
     toasts = Gtk.Template.Child()
 
-    def __init__(self, post_script: str, **kwargs):
+    def __init__(self, post_script: str, user: str, new_user: bool=False, **kwargs):
         super().__init__(**kwargs)
 
         # prepare a variable for the initialization mode:
@@ -77,7 +77,7 @@ class VanillaWindow(Adw.ApplicationWindow):
 
         # this starts the builder and generates the widgets
         # to put in the carousel
-        self.__builder = Builder(self)
+        self.__builder = Builder(self, new_user=new_user)
         self.recipe = self.__builder.recipe
 
         # system views
@@ -172,7 +172,7 @@ class VanillaWindow(Adw.ApplicationWindow):
             commands
         )
 
-        self.__view_progress.start(res, Processor.hide_first_setup)
+        self.__view_progress.start(res, Processor.hide_first_setup, self.__user)
     
     def set_installation_result(self, result, terminal):
         self.__view_done.set_result(result, terminal)
@@ -198,3 +198,6 @@ class VanillaWindow(Adw.ApplicationWindow):
         toast = Adw.Toast.new(message)
         toast.props.timeout = timeout
         self.toasts.add_toast(toast)
+    
+    def set_user(self, user):
+        self.__user = user

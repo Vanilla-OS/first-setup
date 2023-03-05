@@ -45,8 +45,9 @@ templates = {
 
 class Builder:
 
-    def __init__(self, window):
+    def __init__(self, window, new_user: bool = False):
         self.__window = window
+        self.__new_user = new_user
         self.__recipe = RecipeLoader()
         self.__register_widgets = []
         self.__register_finals = []
@@ -88,6 +89,9 @@ class Builder:
                     _condition_met = True
 
                 if not _condition_met:
+                    continue
+                    
+                if step.get("new-user-only") and not self.__new_user:
                     continue
             
             _status = not step.get("is-advanced", False)
