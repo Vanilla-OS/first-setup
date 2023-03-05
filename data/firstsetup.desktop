@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=FirstSetup
+Comment=This session provides a First Setup interface
+Exec=env GNOME_SHELL_SESSION_MODE=firstsetup gnome-session --builtin --session=firstsetup
+TryExec=gnome-shell
+Icon=
+Type=Application
+DesktopNames=vanilla:GNOME
+X-Ubuntu-Gettext-Domain=gnome-session-3.0
