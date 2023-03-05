@@ -4,6 +4,11 @@ install_data(
 )
 
 install_data(
+    'org.vanillaos.FirstSetup.NewUser.desktop',
+    install_dir: join_paths(get_option('datadir'), 'applications')
+)
+
+install_data(
     'firstsetup.json',
     install_dir: join_paths(get_option('datadir'), 'gnome-shell', 'modes')
 )
