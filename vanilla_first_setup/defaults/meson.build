@@ -5,6 +5,7 @@ sources = [
   '__init__.py',
   'welcome.py',
   'theme.py',
+  'user.py',
   'applications.py',
   'conn_check.py'
 ]

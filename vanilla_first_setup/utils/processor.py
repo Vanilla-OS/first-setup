@@ -113,7 +113,7 @@ class Processor:
                 f.write("if [ $? -eq 0 ]; then")
                 f.write(f"{out_run}\n")
                 f.write("fi")
-            
+
             # create the done file
             f.write("if [ $? -eq 0 ]; then\n")
             f.write(f"touch {done_file}\n")
