@@ -141,7 +141,7 @@ class Processor:
         if os.path.exists(autostart_file):
             os.remove(autostart_file)
 
-        with open(desktop_file, "w") as f:
+        with open(desktop_file, "w+") as f:
             f.write("[Desktop Entry]\n")
             f.write("Name=FirstSetup\n")
             f.write("Comment=FirstSetup\n")

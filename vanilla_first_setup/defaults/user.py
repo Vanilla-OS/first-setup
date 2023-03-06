@@ -58,7 +58,7 @@ class VanillaDefaultUser(Adw.Bin):
 
     def __on_btn_next_clicked(self, widget):
         self.__window.set_user(self.username)
-        self.__window.next
+        self.__window.next()
 
     def get_finals(self):
         return {
