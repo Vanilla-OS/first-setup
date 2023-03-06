@@ -19,7 +19,6 @@
 import sys
 import time
 import re, subprocess, shutil
-import crypt
 from gi.repository import Gtk, Gio, GLib, Adw
 
 
@@ -67,7 +66,8 @@ class VanillaDefaultUser(Adw.Bin):
                     "if": "create",
                     "type": "command",
                     "commands": [
-                        f"useradd -m {self.username} -c \"{self.fullname}\" -G sudo,adm,lpadmin -p {crypt.crypt(self.password_entry.get_text())}",
+                        f"adduser --quiet --disabled-password --shell /bin/bash --gecos \"{self.fullname}\" {self.username}",
+                        f"echo \"{self.username}:{self.password_entry.get_text()}\" | chpasswd"
                     ]
                 }
             ]
