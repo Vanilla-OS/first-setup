@@ -46,7 +46,7 @@ class VanillaDefaultUser(Adw.Bin):
         self.__step = step
 
         # signals
-        self.btn_next.connect("clicked", self.__window.next)
+        self.btn_next.connect("clicked", self.__on_btn_next_clicked)
         self.fullname_entry.connect('changed', self.__on_fullname_entry_changed)
         self.username_entry.connect('changed', self.__on_username_entry_changed)
         self.password_entry.connect('changed', self.__on_password_changed)
@@ -55,6 +55,10 @@ class VanillaDefaultUser(Adw.Bin):
     @property
     def step_id(self):
         return self.__key
+
+    def __on_btn_next_clicked(self, widget):
+        self.__window.set_user(self.username)
+        self.__window.next
 
     def get_finals(self):
         return {

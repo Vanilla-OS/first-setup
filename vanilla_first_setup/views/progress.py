@@ -119,12 +119,14 @@ class VanillaProgress(Gtk.Box):
         status = not bool(status)
         
         if self.__success_fn is not None and status:
-            self.__success_fn()
+            self.__success_fn(*self.__success_fn_args)
 
         self.__window.set_installation_result(status, self.__terminal)
 
-    def start(self, setup_commands, success_fn):
+    def start(self, setup_commands, success_fn, *fn_args):
         self.__success_fn = success_fn
+        self.__success_fn_args = fn_args
+
         self.__terminal.spawn_async(
             Vte.PtyFlags.DEFAULT,
             ".",
