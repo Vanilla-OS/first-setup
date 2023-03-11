@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-20 14:24+0100\n"
-"PO-Revision-Date: 2023-03-06 18:40+0000\n"
+"PO-Revision-Date: 2023-03-08 20:37+0000\n"
 "Last-Translator: Andrew Geo <andrewgeo@outlook.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/el/>\n"
@@ -56,11 +56,11 @@ msgstr "Σκοτεινό"
 
 #: vanilla_first_setup/gtk/default-theme.ui:42
 msgid "Color Scheme"
-msgstr ""
+msgstr "Συνδυασμός Χρωμάτων"
 
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
-msgstr ""
+msgstr "Επιλέξτε έναν συνδυασμό χρωμάτων για το σύστημά σας."
 
 #: vanilla_first_setup/gtk/default-theme.ui:49
 msgid "Next"
@@ -72,7 +72,7 @@ msgstr "Καλωσορίσατε!"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:13
 msgid "Make your choices, this wizard will take care of everything."
-msgstr ""
+msgstr "Κάντε τις επιλογές σας, ο οδηγός θα αναλάβει τα πάντα."
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
@@ -80,16 +80,16 @@ msgstr "Προβολή πληροφοριών"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "All done!"
-msgstr ""
+msgstr "Όλα έτοιμα!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr "Επανεκκινήστε τη συσκεύη σας για να απολαύσετε την {} εμπειρία."
+msgstr ""
+"Επανεκκινήστε τη συσκεύη σας για να απολαύσετε την εμπειρία του Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
-msgstr ""
+msgstr "Ναι, να ενεργοποιηθεί"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
@@ -101,7 +101,7 @@ msgstr "Η συσκευή σας θα είναι σύντομα έτοιμη."
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
-msgstr ""
+msgstr "Γίνεται εγκατάσταση..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
@@ -133,7 +133,7 @@ msgstr "Παρακαλώ επιλέξτε τουλάχιστον ένα στοι
 
 #: vanilla_first_setup/views/done.py:41
 msgid "Restart your device to enjoy your {} experience."
-msgstr "Επανεκκινήστε τη συσκεύη σας για να απολαύσετε την {} εμπειρία."
+msgstr "Επανεκκινήστε τη συσκεύη σας για να απολαύσετε την εμπειρία {}."
 
 #: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"

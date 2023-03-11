@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Automatically generated, 2022.
 #
+# Rafa <rafita.fernandez@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-20 14:24+0100\n"
-"PO-Revision-Date: 2023-01-09 11:50+0000\n"
-"Last-Translator: Saky do galo <sakydogalo@gmail.com>\n"
+"PO-Revision-Date: 2023-03-09 22:41+0000\n"
+"Last-Translator: Rafa <rafita.fernandez@gmail.com>\n"
 "Language-Team: Galician <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/gl/>\n"
 "Language: gl\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 4.16.2-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -38,12 +39,12 @@ msgstr "Primeiro lanzamento"
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:75
 msgid "Checking Connection…"
-msgstr ""
+msgstr "Comprobando conexión…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 #: vanilla_first_setup/defaults/conn_check.py:76
 msgid "Please wait until the connection check is done."
-msgstr ""
+msgstr "Por favor, agarde ata que a comprobación da conexión remate."
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -99,15 +100,15 @@ msgstr "Nun intre a súa máquina estará preparada."
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
-msgstr ""
+msgstr "Instalando…"
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
-msgstr ""
+msgstr "Amosa a saída da consola"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr ""
+msgstr "Amosa as diapositivas"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
@@ -119,11 +120,11 @@ msgstr "Atrás"
 
 #: vanilla_first_setup/defaults/conn_check.py:66
 msgid "No Internet Connection!"
-msgstr ""
+msgstr "Non hai conexión con Internet!"
 
 #: vanilla_first_setup/defaults/conn_check.py:67
 msgid "First Setup requires an active internet connection"
-msgstr ""
+msgstr "A primera configuración require dunha conexión activa con Internet"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
