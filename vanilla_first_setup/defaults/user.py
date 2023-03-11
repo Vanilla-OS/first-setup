@@ -44,6 +44,7 @@ class VanillaDefaultUser(Adw.Bin):
         self.__distro_info = distro_info
         self.__key = key
         self.__step = step
+        self.__verify_continue()
 
         # signals
         self.btn_next.connect("clicked", self.__on_btn_next_clicked)
