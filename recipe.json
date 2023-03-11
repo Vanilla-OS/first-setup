@@ -51,7 +51,12 @@
             "template": "theme"
         },
         "user": {
-            "template": "user"
+            "template": "user",
+            "new-user-only": true
+        },
+        "hostname": {
+            "template": "hostname",
+            "new-user-only": true
         },
         "packages": {
             "template": "preferences",

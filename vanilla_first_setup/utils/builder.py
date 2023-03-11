@@ -25,6 +25,7 @@ from vanilla_first_setup.defaults.conn_check import VanillaDefaultConnCheck
 from vanilla_first_setup.defaults.welcome import VanillaDefaultWelcome
 from vanilla_first_setup.defaults.theme import VanillaDefaultTheme
 from vanilla_first_setup.defaults.user import VanillaDefaultUser
+from vanilla_first_setup.defaults.hostname import VanillaDefaultHostname
 
 from vanilla_first_setup.layouts.preferences import VanillaLayoutPreferences
 from vanilla_first_setup.layouts.yes_no import VanillaLayoutYesNo
@@ -39,6 +40,7 @@ templates = {
     "welcome": VanillaDefaultWelcome,
     "theme": VanillaDefaultTheme,
     "user": VanillaDefaultUser,
+    "hostname": VanillaDefaultHostname,
     "preferences": VanillaLayoutPreferences,
     "yes-no": VanillaLayoutYesNo,
     "applications": VanillaLayoutApplications

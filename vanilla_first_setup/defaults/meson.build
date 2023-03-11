@@ -6,6 +6,7 @@ sources = [
   'welcome.py',
   'theme.py',
   'user.py',
+  'hostname.py',
   'applications.py',
   'conn_check.py'
 ]
