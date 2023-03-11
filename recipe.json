@@ -50,6 +50,9 @@
         "theme": {
             "template": "theme"
         },
+        "user": {
+            "template": "user"
+        },
         "packages": {
             "template": "preferences",
             "is-advanced": true,

@@ -113,7 +113,7 @@ class Processor:
                 f.write("if [ $? -eq 0 ]; then")
                 f.write(f"{out_run}\n")
                 f.write("fi")
-            
+
             # create the done file
             f.write("if [ $? -eq 0 ]; then\n")
             f.write(f"touch {done_file}\n")
@@ -141,7 +141,7 @@ class Processor:
         if os.path.exists(autostart_file):
             os.remove(autostart_file)
 
-        with open(desktop_file, "w") as f:
+        with open(desktop_file, "w+") as f:
             f.write("[Desktop Entry]\n")
             f.write("Name=FirstSetup\n")
             f.write("Comment=FirstSetup\n")

@@ -20,6 +20,7 @@ conf.set('pkgdatadir', pkgdatadir)
 configure_file(
   input: 'vanilla-first-setup.in',
   output: 'vanilla-first-setup',
+  install_mode: 'rwxr-xr-x',
   configuration: conf,
   install: true,
   install_dir: get_option('bindir')

@@ -74,7 +74,7 @@ class Parser:
                 # check if the condition is met
                 if _condition == _vars[_func["if"]]:
                     commands += _func["commands"]
-        
+
         # set-up warps if any
         for warp in warps:
             _vars = warp["vars"]

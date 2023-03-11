@@ -11,6 +11,7 @@
     <file>gtk/default-conn-check.ui</file>
     <file>gtk/default-theme.ui</file>
     <file>gtk/default-welcome.ui</file>
+    <file>gtk/default-user.ui</file>
 
     <file>gtk/layout-preferences.ui</file>
     <file>gtk/layout-yes-no.ui</file>

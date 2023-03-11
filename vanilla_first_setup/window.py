@@ -173,7 +173,7 @@ class VanillaWindow(Adw.ApplicationWindow):
         )
 
         self.__view_progress.start(res, Processor.hide_first_setup, self.__user)
-    
+
     def set_installation_result(self, result, terminal):
         self.__view_done.set_result(result, terminal)
         self.next()

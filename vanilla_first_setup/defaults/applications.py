@@ -39,7 +39,7 @@ class VanillaLayoutApplications(Adw.Bin):
         # signals
         self.btn_next.connect("clicked", self.__next_step)
         self.__window.connect("page-changed", self.__on_page_changed)
-    
+
     @property
     def step_id(self):
         return self.__key
@@ -92,7 +92,7 @@ class VanillaLayoutApplications(Adw.Bin):
 
         def close_customize(widget, dialog):
             dialog.hide()
-        
+
         def apply_preferences(widget, dialog, apps_list, item):
             for app in item["applications"]:
                 app["active"] = app["switch"].get_active()
@@ -148,12 +148,12 @@ class VanillaLayoutApplications(Adw.Bin):
             _customize.connect("clicked", present_customize, selection_dialogs[-1], _apps_list, item)
             _cancel_button.connect("clicked", close_customize, selection_dialogs[-1])
             _apply_button.connect("clicked", apply_preferences, selection_dialogs[-1], _apps_list, item)
-            
+
             self.bundles_list.add(_action_row)
 
             self.__register_widgets.append((item["id"], _switcher, _index))
             _index += 1
-    
+
     def __on_page_changed(self, widget, page):
         if page == self.__key:
             if True not in [
@@ -163,7 +163,7 @@ class VanillaLayoutApplications(Adw.Bin):
                 self.bundles_list.set_sensitive(False)
             else:
                 self.bundles_list.set_sensitive(True)
-            
+
     def __next_step(self, *args):
         self.__window.next()
 

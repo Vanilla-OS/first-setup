@@ -24,6 +24,7 @@ from vanilla_first_setup.utils.recipe import RecipeLoader
 from vanilla_first_setup.defaults.conn_check import VanillaDefaultConnCheck
 from vanilla_first_setup.defaults.welcome import VanillaDefaultWelcome
 from vanilla_first_setup.defaults.theme import VanillaDefaultTheme
+from vanilla_first_setup.defaults.user import VanillaDefaultUser
 
 from vanilla_first_setup.layouts.preferences import VanillaLayoutPreferences
 from vanilla_first_setup.layouts.yes_no import VanillaLayoutYesNo
@@ -37,6 +38,7 @@ templates = {
     "conn-check": VanillaDefaultConnCheck,
     "welcome": VanillaDefaultWelcome,
     "theme": VanillaDefaultTheme,
+    "user": VanillaDefaultUser,
     "preferences": VanillaLayoutPreferences,
     "yes-no": VanillaLayoutYesNo,
     "applications": VanillaLayoutApplications
@@ -102,7 +104,7 @@ class Builder:
             if step["template"] in templates:
                 _widget = templates[step["template"]](self.__window, self.distro_info, key, step)
                 self.__register_widgets.append((_widget, _status, _protected))
-    
+
     def get_temp_finals(self, step_id: str):
         for widget, _, _ in self.__register_widgets:
             if widget.step_id == step_id:
@@ -125,7 +127,7 @@ class Builder:
     @property
     def recipe(self):
         return self.__recipe.raw
-    
+
     @property
     def distro_info(self):
         return {
