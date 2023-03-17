@@ -3,19 +3,22 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Automatically generated, 2022.
 #
+# Trond Kjetil Bremnes <tk@bremnes.email>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-20 14:24+0100\n"
-"PO-Revision-Date: 2022-10-22 22:16+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: nb\n"
+"PO-Revision-Date: 2023-03-17 09:37+0000\n"
+"Last-Translator: Trond Kjetil Bremnes <tk@bremnes.email>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
+"vanilla-os/first-setup/nb_NO/>\n"
+"Language: nb_NO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.16.2-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -23,69 +26,69 @@ msgstr ""
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
-msgstr ""
+msgstr "Juster Vanilla OS-installasjonen din."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr ""
+msgstr "Ingen beskrivelse"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr ""
+msgstr "Første utgivelse"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:75
 msgid "Checking Connection…"
-msgstr ""
+msgstr "Kontrollerer tilkobling…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 #: vanilla_first_setup/defaults/conn_check.py:76
 msgid "Please wait until the connection check is done."
-msgstr ""
+msgstr "Vennligst vent til tilkoblingskontrollen er ferdig."
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: vanilla_first_setup/gtk/default-theme.ui:29
 msgid "Dark"
-msgstr ""
+msgstr "Mørk"
 
 #: vanilla_first_setup/gtk/default-theme.ui:42
 msgid "Color Scheme"
-msgstr ""
+msgstr "Fargevalg"
 
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
-msgstr ""
+msgstr "Velg et fargevalg for systemet ditt."
 
 #: vanilla_first_setup/gtk/default-theme.ui:49
 msgid "Next"
-msgstr ""
+msgstr "Neste"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:12
 msgid "Welcome!"
-msgstr ""
+msgstr "Velkommen!"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:13
 msgid "Make your choices, this wizard will take care of everything."
-msgstr ""
+msgstr "Gjør dine valg, denne veiviseren tar seg av alt."
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
-msgstr ""
+msgstr "Viser informasjon"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "All done!"
-msgstr ""
+msgstr "Ferdig!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr ""
+msgstr "Start enheten på nytt for å nyte Vanilla OS-opplevelsen."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
-msgstr ""
+msgstr "Ja, aktiver det"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
@@ -93,11 +96,11 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
-msgstr ""
+msgstr "Enheten din vil snart være klar."
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
-msgstr ""
+msgstr "Installerer..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
@@ -105,19 +108,19 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr ""
+msgstr "Vis lysbildefremvisning"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
-msgstr ""
+msgstr "Les mer"
 
 #: vanilla_first_setup/gtk/window.ui:25
 msgid "Back"
-msgstr ""
+msgstr "Tilbake"
 
 #: vanilla_first_setup/defaults/conn_check.py:66
 msgid "No Internet Connection!"
-msgstr ""
+msgstr "Ingen internettforbindelse!"
 
 #: vanilla_first_setup/defaults/conn_check.py:67
 msgid "First Setup requires an active internet connection"
@@ -125,36 +128,36 @@ msgstr ""
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
-msgstr ""
+msgstr "Vennligst velg minst ett alternativ."
 
 #: vanilla_first_setup/views/done.py:41
 msgid "Restart your device to enjoy your {} experience."
-msgstr ""
+msgstr "Start enheten på nytt for å nyte {}-opplevelsen."
 
 #: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
-msgstr ""
+msgstr "Noe gikk galt"
 
 #: vanilla_first_setup/views/done.py:64
 msgid "Please contact the distribution developers."
-msgstr ""
+msgstr "Ta kontakt med distribusjonsutviklerne."
 
 #: vanilla_first_setup/main.py:51
 msgid "Run a post script"
-msgstr ""
+msgstr "Kjør et postskriptum"
 
 #: vanilla_first_setup/window.py:67
 msgid "Done!"
-msgstr ""
+msgstr "Ferdig!"
 
 #: vanilla_first_setup/window.py:67
 msgid "Your device is ready to use."
-msgstr ""
+msgstr "Enheten din er klar til bruk."
 
 #: vanilla_first_setup/window.py:68
 msgid "Error!"
-msgstr ""
+msgstr "Feil!"
 
 #: vanilla_first_setup/window.py:68
 msgid "Something went wrong."
-msgstr ""
+msgstr "Noe gikk galt."
