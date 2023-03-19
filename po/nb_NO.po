@@ -4,13 +4,14 @@
 # Automatically generated, 2022.
 #
 # Trond Kjetil Bremnes <tk@bremnes.email>, 2023.
+# Infinity <a.sjur91@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-20 14:24+0100\n"
-"PO-Revision-Date: 2023-03-17 09:37+0000\n"
-"Last-Translator: Trond Kjetil Bremnes <tk@bremnes.email>\n"
+"PO-Revision-Date: 2023-03-19 23:38+0000\n"
+"Last-Translator: Infinity <a.sjur91@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
 "vanilla-os/first-setup/nb_NO/>\n"
 "Language: nb_NO\n"
@@ -22,7 +23,7 @@ msgstr ""
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr ""
+msgstr "Vanilla OS Førstegangsoppsett"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
@@ -92,7 +93,7 @@ msgstr "Ja, aktiver det"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
-msgstr ""
+msgstr "Ferdigstiller"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
@@ -104,7 +105,7 @@ msgstr "Installerer..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
-msgstr ""
+msgstr "Vis konsollutskrift"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
