@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Automatically generated, 2022.
 #
+# Ryo Nakano <ryonakaknock3@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-20 14:24+0100\n"
-"PO-Revision-Date: 2023-02-07 11:36+0000\n"
-"Last-Translator: azuki <ipadgoogcloud@gmail.com>\n"
+"PO-Revision-Date: 2023-03-19 23:38+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ja/>\n"
 "Language: ja\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.16.2-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -82,7 +83,6 @@ msgid "All done!"
 msgstr "すべて完了しました！"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Restart your device to enjoy your Vanilla OS experience."
 msgstr "デバイスを再起動して、Vanilla OS をお楽しみください。"
 
@@ -100,7 +100,7 @@ msgstr "あなたのデバイスはまもなく準備が整います。"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
-msgstr ""
+msgstr "インストールしています…"
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
@@ -131,7 +131,6 @@ msgid "Please select at least one option."
 msgstr "最低でもひとつはオプションを選択してください。"
 
 #: vanilla_first_setup/views/done.py:41
-#, fuzzy
 msgid "Restart your device to enjoy your {} experience."
 msgstr "デバイスを再起動して、{} をお楽しみください。"
 
