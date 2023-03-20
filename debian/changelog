@@ -1,3 +1,10 @@
+vanilla-first-setup (2.0.1) unstable; urgency=critical
+
+  * Remove ubuntu-drivers-common dependency
+  * Update recipe to use Debian packages
+
+ -- Mateus Melchiades <matbme@duck.com>  Mon, 20 Mar 2023 19:44:00 -0300
+
 vanilla-first-setup (2.0.0) unstable; urgency=critical
 
   * Express and Advanced mode
