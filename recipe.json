@@ -513,7 +513,7 @@
                 {
                     "if": "codecs",
                     "type": "command",
-                    "commands": ["apt install -y gstreamer1.0-fluendo-mp3 gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi libavcodec-extra ttf-mscorefonts-installer unrar"]
+                    "commands": ["apt install -y libavcodec-extra gstreamer1.0-fluendo-mp3 gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi libavcodec-extra ttf-mscorefonts-installer unrar"]
                 }
             ]
         },
