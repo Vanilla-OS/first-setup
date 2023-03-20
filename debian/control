@@ -24,6 +24,5 @@ Depends: python3,
          libadwaita-1-0,
          gir1.2-gtk-4.0,
          gir1.2-adw-1,
-         gir1.2-vte-3.91,
-         ubuntu-drivers-common
+         gir1.2-vte-3.91
 Description: This utility is meant to be used in Ubuntu Vanilla GNOME as a first-setup wizard.

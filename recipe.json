@@ -28,7 +28,7 @@
         "abroot": {
              "icon": "security-medium-symbolic",
              "title": "Immutable and Atomic",
-             "description": "Vanilla OS is an immutable and atomic Linux distribution. It is based on Ubuntu and uses ABRoot to provide atomic transactions.",
+             "description": "Vanilla OS is an immutable and atomic Linux distribution. It is based on Debian and uses ABRoot to provide atomic transactions.",
              "read_more_link": "https://documentation.vanillaos.org/docs/ABRoot/"
         },
         "apx": {
@@ -452,7 +452,7 @@
                 "info": {
                     "type": "text",
                     "title": "About Proprietary Drivers",
-                    "text": "A proprietary driver has private code that neither Vanilla OS nor Ubuntu developers can review.\n\nSecurity and other updates are dependent on the driver vendor."
+                    "text": "A proprietary driver has private code that neither Vanilla OS nor Debian developers can review.\n\nSecurity and other updates are dependent on the driver vendor."
                 }
             },
             "final": [
@@ -461,7 +461,7 @@
                     "type": "command",
                     "commands": [
                         "apt install -y linux-headers-$(uname -r) nvidia-prime",
-                        "ubuntu-drivers install --recommended"
+                        "ikaros auto-install"
                     ]
                 }
             ]
@@ -498,22 +498,22 @@
             "is-advanced": true,
             "preset": true,
             "icon": "vanilla-puzzle-piece-symbolic",
-            "title": "Restricted Codecs",
-            "description": "Choose whether to install restricted codecs and fonts.",
+            "title": "Proprietary Codecs",
+            "description": "Choose whether to install proprietary codecs and fonts.",
             "buttons": {
                 "yes": "Install",
                 "no": "Skip",
                 "info": {
                     "type": "text",
-                    "title": "About Restricted Codecs",
-                    "text": "Install drivers, fonts and other essentials from the ubuntu-restricted-extras and ubuntu-restricted-addons repositories."
+                    "title": "About Proprietary Codecs",
+                    "text": "Install proprietary drivers, fonts and other essentials from the Debian repositories."
                 }
             },
             "final": [
                 {
                     "if": "codecs",
                     "type": "command",
-                    "commands": ["apt install -y ubuntu-restricted-addons ubuntu-restricted-extras"]
+                    "commands": ["apt install -y libavcodec-extra gstreamer1.0-fluendo-mp3 gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi libavcodec-extra ttf-mscorefonts-installer unrar"]
                 }
             ]
         },
