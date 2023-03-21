@@ -9,11 +9,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-20 14:24+0100\n"
+"POT-Creation-Date: 2023-03-21 19:32+0530\n"
 "PO-Revision-Date: 2023-03-19 23:38+0000\n"
 "Last-Translator: Trond Kjetil Bremnes <tk@bremnes.email>\n"
-"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
-"vanilla-os/first-setup/nb_NO/>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/vanilla-"
+"os/first-setup/nb_NO/>\n"
 "Language: nb_NO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -38,14 +38,31 @@ msgid "First release"
 msgstr "Første utgivelse"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
-#: vanilla_first_setup/defaults/conn_check.py:75
+#: vanilla_first_setup/defaults/conn_check.py:79
 msgid "Checking Connection…"
 msgstr "Kontrollerer tilkobling…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#: vanilla_first_setup/defaults/conn_check.py:76
+#: vanilla_first_setup/defaults/conn_check.py:80
 msgid "Please wait until the connection check is done."
 msgstr "Vennligst vent til tilkoblingskontrollen er ferdig."
+
+#: vanilla_first_setup/gtk/default-hostname.ui:14
+msgid "Device Details"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-hostname.ui:15
+msgid "Provide details about your device"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-hostname.ui:22
+msgid "Device Name"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-hostname.ui:35
+#: vanilla_first_setup/gtk/default-theme.ui:49
+msgid "Next"
+msgstr "Neste"
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -62,10 +79,6 @@ msgstr "Fargevalg"
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
 msgstr "Velg et fargevalg for systemet ditt."
-
-#: vanilla_first_setup/gtk/default-theme.ui:49
-msgid "Next"
-msgstr "Neste"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:12
 msgid "Welcome!"
@@ -119,11 +132,11 @@ msgstr "Les mer"
 msgid "Back"
 msgstr "Tilbake"
 
-#: vanilla_first_setup/defaults/conn_check.py:66
+#: vanilla_first_setup/defaults/conn_check.py:70
 msgid "No Internet Connection!"
 msgstr "Ingen internettforbindelse!"
 
-#: vanilla_first_setup/defaults/conn_check.py:67
+#: vanilla_first_setup/defaults/conn_check.py:71
 msgid "First Setup requires an active internet connection"
 msgstr "Førstegangsoppsett krever en aktiv internettforbindelse"
 
@@ -143,9 +156,13 @@ msgstr "Noe gikk galt"
 msgid "Please contact the distribution developers."
 msgstr "Ta kontakt med distribusjonsutviklerne."
 
-#: vanilla_first_setup/main.py:51
+#: vanilla_first_setup/main.py:55
 msgid "Run a post script"
 msgstr "Kjør et postskriptum"
+
+#: vanilla_first_setup/main.py:63
+msgid "Run as a new user"
+msgstr ""
 
 #: vanilla_first_setup/window.py:67
 msgid "Done!"

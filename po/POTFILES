@@ -3,6 +3,8 @@ data/org.vanillaos.FirstSetup.appdata.xml.in
 data/org.vanillaos.FirstSetup.gschema.xml
 
 vanilla_first_setup/gtk/default-conn-check.ui
+vanilla_first_setup/gtk/default-hostname.ui
+vanilla_first_setup/gtk/default-theme.ui
 vanilla_first_setup/gtk/default-theme.ui
 vanilla_first_setup/gtk/default-welcome.ui
 vanilla_first_setup/gtk/dialog.ui
@@ -17,7 +19,9 @@ vanilla_first_setup/gtk/window.ui
 
 vanilla_first_setup/defaults/applications.py
 vanilla_first_setup/defaults/conn_check.py
+vanilla_first_setup/defaults/hostname.py
 vanilla_first_setup/defaults/theme.py
+vanilla_first_setup/defaults/user.py
 vanilla_first_setup/defaults/welcome.py
 
 vanilla_first_setup/layouts/preferences.py
