@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-20 14:24+0100\n"
+"POT-Creation-Date: 2023-03-21 19:32+0530\n"
 "PO-Revision-Date: 2023-02-28 19:27+0000\n"
 "Last-Translator: Jen Kung-chih <Kaitul@outlook.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
@@ -37,14 +37,31 @@ msgid "First release"
 msgstr "初版"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
-#: vanilla_first_setup/defaults/conn_check.py:75
+#: vanilla_first_setup/defaults/conn_check.py:79
 msgid "Checking Connection…"
 msgstr "正在檢查連線…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#: vanilla_first_setup/defaults/conn_check.py:76
+#: vanilla_first_setup/defaults/conn_check.py:80
 msgid "Please wait until the connection check is done."
 msgstr "請等候連線檢查完成。"
+
+#: vanilla_first_setup/gtk/default-hostname.ui:14
+msgid "Device Details"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-hostname.ui:15
+msgid "Provide details about your device"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-hostname.ui:22
+msgid "Device Name"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-hostname.ui:35
+#: vanilla_first_setup/gtk/default-theme.ui:49
+msgid "Next"
+msgstr "下一步"
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -61,10 +78,6 @@ msgstr "色彩配置"
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
 msgstr "為您的系統選擇配色。"
-
-#: vanilla_first_setup/gtk/default-theme.ui:49
-msgid "Next"
-msgstr "下一步"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:12
 msgid "Welcome!"
@@ -118,11 +131,11 @@ msgstr "閱讀更多"
 msgid "Back"
 msgstr "返回"
 
-#: vanilla_first_setup/defaults/conn_check.py:66
+#: vanilla_first_setup/defaults/conn_check.py:70
 msgid "No Internet Connection!"
 msgstr "沒有網際網路連線！"
 
-#: vanilla_first_setup/defaults/conn_check.py:67
+#: vanilla_first_setup/defaults/conn_check.py:71
 msgid "First Setup requires an active internet connection"
 msgstr "初始設定需要有效的網際網路連線"
 
@@ -142,9 +155,13 @@ msgstr "出了點問題"
 msgid "Please contact the distribution developers."
 msgstr "請聯絡散布版開發人員。"
 
-#: vanilla_first_setup/main.py:51
+#: vanilla_first_setup/main.py:55
 msgid "Run a post script"
 msgstr "執行後期處理指令稿"
+
+#: vanilla_first_setup/main.py:63
+msgid "Run as a new user"
+msgstr ""
 
 #: vanilla_first_setup/window.py:67
 msgid "Done!"
