@@ -2,13 +2,15 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Felipe Nogueira <contato.fnog@gmail.com>, 2023.
+# Fernando Lopes <118869201+plasmus777@users.noreply.github.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-21 19:32+0530\n"
-"PO-Revision-Date: 2023-02-26 02:41+0000\n"
-"Last-Translator: Felipe Nogueira <contato.fnog@gmail.com>\n"
+"PO-Revision-Date: 2023-03-23 01:36+0000\n"
+"Last-Translator: Fernando Lopes <118869201+plasmus777@users.noreply.github."
+"com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "vanilla-os/first-setup/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -16,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.16.2-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -46,15 +48,15 @@ msgstr "Por favor, aguarde até que a verificação da conexão seja concluída.
 
 #: vanilla_first_setup/gtk/default-hostname.ui:14
 msgid "Device Details"
-msgstr ""
+msgstr "Detalhes do Dispositivo"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:15
 msgid "Provide details about your device"
-msgstr ""
+msgstr "Forneça detalhes sobre o seu dispositivo"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:22
 msgid "Device Name"
-msgstr ""
+msgstr "Nome do Dispositivo"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:35
 #: vanilla_first_setup/gtk/default-theme.ui:49
@@ -71,7 +73,7 @@ msgstr "Escuro"
 
 #: vanilla_first_setup/gtk/default-theme.ui:42
 msgid "Color Scheme"
-msgstr "Esquema de cores"
+msgstr "Esquema de Cores"
 
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
@@ -87,7 +89,7 @@ msgstr "Faça suas escolhas, este assistente cuidará de tudo."
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
-msgstr "Mostrando informações"
+msgstr "Exibindo Informações"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "All done!"
@@ -159,7 +161,7 @@ msgstr "Executar um post script"
 
 #: vanilla_first_setup/main.py:63
 msgid "Run as a new user"
-msgstr ""
+msgstr "Executar como um novo usuário"
 
 #: vanilla_first_setup/window.py:67
 msgid "Done!"
