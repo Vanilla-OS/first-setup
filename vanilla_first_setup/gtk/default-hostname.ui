@@ -10,7 +10,7 @@
         <property name="orientation">vertical</property>
         <child>
           <object class="AdwStatusPage" id="status_page">
-            <property name="icon-name">computer-symbolicz</property>
+            <property name="icon-name">computer-symbolic</property>
             <property name="title" translatable="true">Device Details</property>
             <property name="description" translatable="true">Provide details about your device</property>
             <child>
