@@ -4,13 +4,14 @@
 # Automatically generated, 2022.
 #
 # Henri <contact@hen.ee>, 2023.
+# dogyx <aaronloit@zohomail.eu>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-21 19:32+0530\n"
-"PO-Revision-Date: 2023-02-20 05:17+0000\n"
-"Last-Translator: Henri <contact@hen.ee>\n"
+"PO-Revision-Date: 2023-03-24 18:24+0000\n"
+"Last-Translator: dogyx <aaronloit@zohomail.eu>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/et/>\n"
 "Language: et\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.17-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -26,7 +27,7 @@ msgstr ""
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
-msgstr ""
+msgstr "Kohanda oma Vanilla OS-i paidalgust."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -34,7 +35,7 @@ msgstr "Kirjeldus puudub"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr ""
+msgstr "Esimene väljalase"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:79
@@ -61,19 +62,19 @@ msgstr ""
 #: vanilla_first_setup/gtk/default-hostname.ui:35
 #: vanilla_first_setup/gtk/default-theme.ui:49
 msgid "Next"
-msgstr ""
+msgstr "Edasi"
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
-msgstr ""
+msgstr "Vaikimisi"
 
 #: vanilla_first_setup/gtk/default-theme.ui:29
 msgid "Dark"
-msgstr ""
+msgstr "Tume"
 
 #: vanilla_first_setup/gtk/default-theme.ui:42
 msgid "Color Scheme"
-msgstr ""
+msgstr "Värviskeem"
 
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
@@ -89,11 +90,11 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
-msgstr ""
+msgstr "Informatsiooni näitamine"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "All done!"
-msgstr ""
+msgstr "Kõik tehtud!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your device to enjoy your Vanilla OS experience."
@@ -101,7 +102,7 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
-msgstr ""
+msgstr "Jah, luba see"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
@@ -113,15 +114,15 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
-msgstr ""
+msgstr "Paigaldamine..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
-msgstr ""
+msgstr "Näita konsooli väljundit"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr ""
+msgstr "Näita slaidiesitlust"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
@@ -129,7 +130,7 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/window.ui:25
 msgid "Back"
-msgstr ""
+msgstr "Tagasi"
 
 #: vanilla_first_setup/defaults/conn_check.py:70
 msgid "No Internet Connection!"
@@ -141,19 +142,19 @@ msgstr ""
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
-msgstr ""
+msgstr "Palun vali vähemalt üks võimalus."
 
 #: vanilla_first_setup/views/done.py:41
 msgid "Restart your device to enjoy your {} experience."
-msgstr ""
+msgstr "Taaskäivita seade, et nautida {} kogemust."
 
 #: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
-msgstr ""
+msgstr "Midagi läks valesti"
 
 #: vanilla_first_setup/views/done.py:64
 msgid "Please contact the distribution developers."
-msgstr ""
+msgstr "Palun võta ühendust distributsiooni arendajatega."
 
 #: vanilla_first_setup/main.py:55
 msgid "Run a post script"
