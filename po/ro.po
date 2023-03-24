@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-21 19:32+0530\n"
-"PO-Revision-Date: 2023-02-23 00:28+0000\n"
+"PO-Revision-Date: 2023-03-22 00:26+0000\n"
 "Last-Translator: Matt C <matei.gurzu@gmail.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ro/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.16.2-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -49,15 +49,15 @@ msgstr "Te rog așteaptă până verificarea conexiunii este gata."
 
 #: vanilla_first_setup/gtk/default-hostname.ui:14
 msgid "Device Details"
-msgstr ""
+msgstr "Detalii dispozitiv"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:15
 msgid "Provide details about your device"
-msgstr ""
+msgstr "Furnizați detalii despre dispozitivul dvs"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:22
 msgid "Device Name"
-msgstr ""
+msgstr "Numele dispozitivului"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:35
 #: vanilla_first_setup/gtk/default-theme.ui:49
@@ -164,7 +164,7 @@ msgstr "Rulează un script de după instalare"
 
 #: vanilla_first_setup/main.py:63
 msgid "Run as a new user"
-msgstr ""
+msgstr "Rulați ca utilizator nou"
 
 #: vanilla_first_setup/window.py:67
 msgid "Done!"
