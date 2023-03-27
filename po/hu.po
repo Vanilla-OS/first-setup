@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-21 19:32+0530\n"
-"PO-Revision-Date: 2023-02-23 00:28+0000\n"
+"PO-Revision-Date: 2023-03-27 19:07+0000\n"
 "Last-Translator: Benjamin Kőhidi <benstone326@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/hu/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.17-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -46,15 +46,15 @@ msgstr "Kérjük várjon, amíg a kapcsolat ellenőrzése befejeződik."
 
 #: vanilla_first_setup/gtk/default-hostname.ui:14
 msgid "Device Details"
-msgstr ""
+msgstr "Eszköz részletei"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:15
 msgid "Provide details about your device"
-msgstr ""
+msgstr "Adjon meg részleteket a készülékéről"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:22
 msgid "Device Name"
-msgstr ""
+msgstr "Eszköz neve"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:35
 #: vanilla_first_setup/gtk/default-theme.ui:49
@@ -159,7 +159,7 @@ msgstr "Telepítést követő szkript futtatása"
 
 #: vanilla_first_setup/main.py:63
 msgid "Run as a new user"
-msgstr ""
+msgstr "Futtatás új felhasználóként"
 
 #: vanilla_first_setup/window.py:67
 msgid "Done!"

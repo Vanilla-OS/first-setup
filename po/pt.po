@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Hugo Carvalho <hugokarvalho@hotmail.com>, 2023.
 # ssantos <ssantos@web.de>, 2023.
+# Felipe Nogueira <contato.fnog@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-21 19:32+0530\n"
-"PO-Revision-Date: 2023-03-11 13:37+0000\n"
-"Last-Translator: ssantos <ssantos@web.de>\n"
+"PO-Revision-Date: 2023-03-26 04:29+0000\n"
+"Last-Translator: Felipe Nogueira <contato.fnog@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/pt/>\n"
 "Language: pt\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.16.2-dev\n"
+"X-Generator: Weblate 4.17-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -47,15 +48,15 @@ msgstr "Aguarde até a verificação da ligação estar concluída."
 
 #: vanilla_first_setup/gtk/default-hostname.ui:14
 msgid "Device Details"
-msgstr ""
+msgstr "Detalhes do Dispositivo"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:15
 msgid "Provide details about your device"
-msgstr ""
+msgstr "Forneça detalhes sobre o seu dispositivo"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:22
 msgid "Device Name"
-msgstr ""
+msgstr "Nome do Dispositivo"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:35
 #: vanilla_first_setup/gtk/default-theme.ui:49
@@ -162,7 +163,7 @@ msgstr "Executar um post script"
 
 #: vanilla_first_setup/main.py:63
 msgid "Run as a new user"
-msgstr ""
+msgstr "Executar como um novo usuário"
 
 #: vanilla_first_setup/window.py:67
 msgid "Done!"
