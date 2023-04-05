@@ -2,7 +2,6 @@
 <gresources>
   <gresource prefix="/io/github/vanilla-os/FirstSetup">
     <file>style.css</file>
-
     <file>gtk/window.ui</file>
     <file>gtk/done.ui</file>
     <file>gtk/progress.ui</file>
