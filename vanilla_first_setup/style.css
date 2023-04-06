@@ -1,0 +1,41 @@
+/* CSS inspired by: Sonny Piers <https://github.com/sonnyp> */
+
+.theme-selector {
+    border-radius: 100px;
+    margin: 8px;
+    border: 1px solid rgba(145, 145, 145, 0.1);
+    padding: 30px;
+}
+.theme-selector radio {
+    -gtk-icon-source: none;
+    border: none;
+    background: none;
+    box-shadow: none;
+    min-width: 12px;
+    min-height: 12px;
+    transform: translate(34px, 20px);
+    padding: 2px;
+    border-radius: 100px;
+}
+.theme-selector radio:checked {
+  -gtk-icon-source: -gtk-icontheme("object-select-symbolic");
+  background-color: @theme_selected_bg_color;
+  color: @theme_selected_fg_color;
+}
+.theme-selector:checked {
+    border-color: @theme_selected_bg_color;
+    border-width: 2px;
+    background-color: @theme_selected_bg_color;
+}
+.theme-selector.light {
+    background-color: #ffffff;
+}
+.theme-selector.dark {
+    background-color: #202020;
+}
+.theme-selector.light:checked {
+    background-color: #eeeeee;
+}
+.theme-selector.dark:checked {
+    background-color: #303030;
+}
