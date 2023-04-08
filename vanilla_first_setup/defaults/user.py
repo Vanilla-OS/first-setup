@@ -64,11 +64,11 @@ class VanillaDefaultUser(Adw.Bin):
     def get_finals(self):
         return {
             "vars": {
-                "create": True
+                "createUser": True
             },
             "funcs": [
                 {
-                    "if": "create",
+                    "if": "createUser",
                     "type": "command",
                     "commands": [
                         f"adduser --quiet --disabled-password --shell /bin/bash --gecos \"{self.fullname}\" {self.username}",
