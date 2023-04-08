@@ -127,19 +127,7 @@ class Processor:
         if user is None:
             user = os.environ.get("USER")
 
-        desktop_file = "/home/%s/.local/share/applications/org.vanillaos.FirstSetup.desktop" % user
         autostart_file = "/home/%s/.config/autostart/org.vanillaos.FirstSetup.desktop" % user
 
         if os.path.exists(autostart_file):
             os.remove(autostart_file)
-
-        with open(desktop_file, "w+") as f:
-            f.write("[Desktop Entry]\n")
-            f.write("Name=FirstSetup\n")
-            f.write("Comment=FirstSetup\n")
-            f.write("Exec=vanilla-first-setup\n")
-            f.write("Terminal=false\n")
-            f.write("Type=Application\n")
-            f.write("NoDisplay=true\n")
-            f.flush()
-            f.close()
