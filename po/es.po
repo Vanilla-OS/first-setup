@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-21 19:32+0530\n"
-"PO-Revision-Date: 2023-03-24 07:04+0000\n"
+"PO-Revision-Date: 2023-04-18 06:52+0000\n"
 "Last-Translator: Juan <benitesjn@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/es/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16.2-dev\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -160,7 +160,7 @@ msgstr "Ejecutar un script posterior"
 
 #: vanilla_first_setup/main.py:63
 msgid "Run as a new user"
-msgstr "Ejecutar como nueva usuario"
+msgstr "Ejecutar como nuevo usuario"
 
 #: vanilla_first_setup/window.py:67
 msgid "Done!"
