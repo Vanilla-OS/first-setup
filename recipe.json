@@ -3,14 +3,8 @@
     "distro_name": "Vanilla OS",
     "distro_logo": "org.vanillaos.FirstSetup", 
     "pre_run": [
-        "export DEBIAN_FRONTEND=noninteractive",
-        "apt update", 
-        "apt install -f",
-        "apt upgrade -y"
     ],
     "post_run": [
-        "apt update", 
-        "apt install -f"
     ],
     "tour": {
         "get-involved": {
@@ -96,22 +90,20 @@
                     "if": "flatpak",
                     "type": "command",
                     "commands": [
-                        "apt install -y flatpak gnome-software-plugin-flatpak",
+                        "abroot pkg add flatpak gnome-software-plugin-flatpak",
                         "!nextBoot flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo"
                     ]
                 },
                 {
                     "if": "snap",
                     "type": "command",
-                    "commands": ["apt install -y snapd"]
+                    "commands": ["abroot pkg add snapd"]
                 },
                 {
                     "if": "appimage",
                     "type": "command",
                     "commands": [
-                        "apt install -y software-properties-common",
-                        "add-apt-repository --yes ppa:appimagelauncher-team/stable",
-                        "apt install -y fuse3 libfuse2 appimagelauncher"
+                        "abroot pkg add fuse3 libfuse2 appimagelauncher"
                     ]
                 }
             ]
@@ -324,7 +316,7 @@
                     "if" : "Document Viewer",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Evince || snap install evince"]
-                },         
+                },
                 {
                     "if" : "Fonts",
                     "type" :  "command",
@@ -432,7 +424,7 @@
                 {
                     "if": "timeshift",
                     "type": "command",
-                    "commands": ["apt install -y timeshift"]
+                    "commands": ["abroot pkg add timeshift"]
                 }
             ]
         },
@@ -460,7 +452,7 @@
                     "if": "nvidia",
                     "type": "command",
                     "commands": [
-                        "apt install -y linux-headers-$(uname -r) nvidia-prime",
+                        "abroot pkg add linux-headers-$(uname -r) nvidia-prime",
                         "ikaros auto-install"
                     ]
                 }
@@ -489,7 +481,7 @@
                 {
                     "if": "vm",
                     "type": "command",
-                    "commands": ["apt install -y open-vm-tools open-vm-tools-desktop"]
+                    "commands": ["abroot pkg add open-vm-tools open-vm-tools-desktop"]
                 }
             ]
         },
@@ -513,7 +505,7 @@
                 {
                     "if": "codecs",
                     "type": "command",
-                    "commands": ["apt install -y libavcodec-extra gstreamer1.0-fluendo-mp3 gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi libavcodec-extra ttf-mscorefonts-installer unrar"]
+                    "commands": ["abroot pkg add libavcodec-extra gstreamer1.0-fluendo-mp3 gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi libavcodec-extra ttf-mscorefonts-installer unrar"]
                 }
             ]
         },
@@ -535,7 +527,7 @@
                     "if": "apport",
                     "type": "command",
                     "commands": [
-                        "apt install -y apport",
+                        "abroot pkg add apport",
                         "systemctl enable apport.service || true"
                     ]
                 },
@@ -544,7 +536,7 @@
                     "condition": false,
                     "type": "command",
                     "commands": [
-                        "apt remove -y apport",
+                        "abroot pkg remove apport",
                         "systemctl disable apport.service || true"
                     ]
                 }

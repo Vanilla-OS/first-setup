@@ -108,7 +108,7 @@ class VanillaWindow(Adw.ApplicationWindow):
         if rebuild:
             self.carousel.remove(self.__view_progress)
             self.carousel.remove(self.__view_done)
-            
+
         for widget, status, protected in self.__builder.widgets:
             if rebuild:
                 if protected:
@@ -117,12 +117,12 @@ class VanillaWindow(Adw.ApplicationWindow):
 
             if mode == 0 and not status:
                 continue
-            
+
             self.carousel.append(widget)
 
         self.carousel.append(self.__view_progress)
         self.carousel.append(self.__view_done)
-    
+
     def rebuild_ui(self, mode=0):
         self.__build_ui(mode, rebuild=True)
 
@@ -198,6 +198,6 @@ class VanillaWindow(Adw.ApplicationWindow):
         toast = Adw.Toast.new(message)
         toast.props.timeout = timeout
         self.toasts.add_toast(toast)
-    
+
     def set_user(self, user):
         self.__user = user

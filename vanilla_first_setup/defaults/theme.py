@@ -37,7 +37,7 @@ class VanillaDefaultTheme(Gtk.Box):
         self.btn_next.connect("clicked", self.__window.next)
         self.btn_default.connect('toggled', self.__set_theme, "light")
         self.btn_dark.connect('toggled', self.__set_theme, "dark")
-    
+
     @property
     def step_id(self):
         return self.__key

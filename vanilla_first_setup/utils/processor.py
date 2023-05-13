@@ -127,8 +127,6 @@ class Processor:
             os.chmod(f.name, 0o755)
 
         cmd = ["pkexec", "sh", f.name]
-        if abroot_bin := shutil.which("abroot"):
-            cmd = ["pkexec", abroot_bin, "exec", "-f", "-s", "sh", f.name]
         return cmd
 
     @staticmethod

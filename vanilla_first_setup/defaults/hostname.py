@@ -73,7 +73,7 @@ class VanillaDefaultHostname(Adw.Bin):
             self.hostname_entry.remove_css_class('error')
             self.__verify_continue()
             return
-            
+
         self.__window.toast("Hostname cannot contain special characters. Please choose another hostname.")
         self.hostname_entry.add_css_class('error')
         self.hostname = ""
