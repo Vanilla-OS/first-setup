@@ -18,7 +18,6 @@ import os
 import shutil
 import logging
 import tempfile
-import subprocess
 
 
 logger = logging.getLogger("FirstSetup::Processor")
@@ -114,6 +113,9 @@ class Processor:
                 f.write("if [ $? -eq 0 ]; then")
                 f.write(f"{out_run}\n")
                 f.write("fi")
+
+            # commit changes
+            f.write(f"{abroot_bin} pkg apply\n")
 
             # create the done file
             f.write("if [ $? -eq 0 ]; then\n")
