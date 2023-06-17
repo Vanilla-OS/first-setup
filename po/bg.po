@@ -3,175 +3,180 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Automatically generated, 2022.
 #
+# Plamen Stanchev <sommersbynobodyev@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-21 19:32+0530\n"
-"PO-Revision-Date: 2022-10-22 22:16+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-06-10 20:50+0000\n"
+"Last-Translator: Plamen Stanchev <sommersbynobodyev@gmail.com>\n"
+"Language-Team: Bulgarian <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/bg/>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.18-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr ""
+msgstr "Първа настройка на Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
-msgstr ""
+msgstr "Променете вашата инсталация на Vanilla OS."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr ""
+msgstr "Няма описание"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr ""
+msgstr "Първо издание"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:79
 msgid "Checking Connection…"
-msgstr ""
+msgstr "Проверка на връзката…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 #: vanilla_first_setup/defaults/conn_check.py:80
 msgid "Please wait until the connection check is done."
-msgstr ""
+msgstr "Моля, изчакайте, докато проверката на връзката приключи."
 
 #: vanilla_first_setup/gtk/default-hostname.ui:14
 msgid "Device Details"
-msgstr ""
+msgstr "Подробности за устройството"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:15
 msgid "Provide details about your device"
-msgstr ""
+msgstr "Предоставяне на подробна информация за вашето устройство"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:22
 msgid "Device Name"
-msgstr ""
+msgstr "Име на устройството"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:35
 #: vanilla_first_setup/gtk/default-theme.ui:49
 msgid "Next"
-msgstr ""
+msgstr "Напред"
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
-msgstr ""
+msgstr "По подразбиране"
 
 #: vanilla_first_setup/gtk/default-theme.ui:29
 msgid "Dark"
-msgstr ""
+msgstr "Тъмно"
 
 #: vanilla_first_setup/gtk/default-theme.ui:42
 msgid "Color Scheme"
-msgstr ""
+msgstr "Цветова схема"
 
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
-msgstr ""
+msgstr "Изберете цветова схема за вашата система."
 
 #: vanilla_first_setup/gtk/default-welcome.ui:12
 msgid "Welcome!"
-msgstr ""
+msgstr "Добре дошли!"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:13
 msgid "Make your choices, this wizard will take care of everything."
-msgstr ""
+msgstr "Направете своя избор,този съветник ще се погрижи за всичко останало."
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
-msgstr ""
+msgstr "Показване на информация"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "All done!"
-msgstr ""
+msgstr "Всичко е готово!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your device to enjoy your Vanilla OS experience."
 msgstr ""
+"Рестартирайте устройството си, за да се насладите на работата с Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
-msgstr ""
+msgstr "Да, разрешете го"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
-msgstr ""
+msgstr "Финализиране"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
-msgstr ""
+msgstr "Вашето устройство ще бъде готово скоро."
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
-msgstr ""
+msgstr "Инсталиране..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
-msgstr ""
+msgstr "Показване на изхода на конзолата"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr ""
+msgstr "Показване на слайдшоу"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
-msgstr ""
+msgstr "Прочетете повече"
 
 #: vanilla_first_setup/gtk/window.ui:25
 msgid "Back"
-msgstr ""
+msgstr "Обратно"
 
 #: vanilla_first_setup/defaults/conn_check.py:70
 msgid "No Internet Connection!"
-msgstr ""
+msgstr "Няма интернет връзка!"
 
 #: vanilla_first_setup/defaults/conn_check.py:71
 msgid "First Setup requires an active internet connection"
-msgstr ""
+msgstr "Първата настройка изисква активна интернет връзка"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
-msgstr ""
+msgstr "Моля, изберете поне една опция."
 
 #: vanilla_first_setup/views/done.py:41
 msgid "Restart your device to enjoy your {} experience."
 msgstr ""
+"Рестартирайте устройството си, за да се насладите на изживяването си с {}."
 
 #: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
-msgstr ""
+msgstr "Нещо се обърка"
 
 #: vanilla_first_setup/views/done.py:64
 msgid "Please contact the distribution developers."
-msgstr ""
+msgstr "Моля, свържете се с разработчиците на дистрибуцията."
 
 #: vanilla_first_setup/main.py:55
 msgid "Run a post script"
-msgstr ""
+msgstr "Стартиране на допълнителен скрипт"
 
 #: vanilla_first_setup/main.py:63
 msgid "Run as a new user"
-msgstr ""
+msgstr "Стартиране като нов потребител"
 
 #: vanilla_first_setup/window.py:67
 msgid "Done!"
-msgstr ""
+msgstr "Готово!"
 
 #: vanilla_first_setup/window.py:67
 msgid "Your device is ready to use."
-msgstr ""
+msgstr "Вашето устройство е готово за използване."
 
 #: vanilla_first_setup/window.py:68
 msgid "Error!"
-msgstr ""
+msgstr "Грешка!"
 
 #: vanilla_first_setup/window.py:68
 msgid "Something went wrong."
-msgstr ""
+msgstr "Нещо се е объркало."
