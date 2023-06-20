@@ -27,11 +27,11 @@ msgstr "Prima pornire Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
-msgstr "Modifică-ți instalarea Vanilla OS."
+msgstr "Configurați instalarea Vanilla OS."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr "Nicio descripție"
+msgstr "Fără descriere"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
@@ -45,7 +45,7 @@ msgstr "Se verifică conexiunea…"
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 #: vanilla_first_setup/defaults/conn_check.py:80
 msgid "Please wait until the connection check is done."
-msgstr "Te rog așteaptă până verificarea conexiunii este gata."
+msgstr "Vă rog aștepați până verificarea conexiunii este gata."
 
 #: vanilla_first_setup/gtk/default-hostname.ui:14
 msgid "Device Details"
@@ -53,7 +53,7 @@ msgstr "Detalii dispozitiv"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:15
 msgid "Provide details about your device"
-msgstr "Furnizați detalii despre dispozitivul dvs"
+msgstr "Furnizați detalii despre dispozitivul dvs."
 
 #: vanilla_first_setup/gtk/default-hostname.ui:22
 msgid "Device Name"
@@ -74,24 +74,24 @@ msgstr "Întunecat"
 
 #: vanilla_first_setup/gtk/default-theme.ui:42
 msgid "Color Scheme"
-msgstr "Schema de culoare"
+msgstr "Schema de culori"
 
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
-msgstr "Selectează schema de culoare pentru sistemul tău."
+msgstr "Selectează schema de culori pentru sistemul dvs."
 
 #: vanilla_first_setup/gtk/default-welcome.ui:12
 msgid "Welcome!"
-msgstr "Bine ai venit!"
+msgstr "Bun venit!"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:13
 msgid "Make your choices, this wizard will take care of everything."
 msgstr ""
-"Alege opțiunile potrivite și programul de instalare va avea grijă de tot."
+"Alegeți opțiunile preferate și programul de instalare va avea grijă de tot."
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
-msgstr "Se arată informații"
+msgstr "Afișare informații"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "All done!"
@@ -100,7 +100,7 @@ msgstr "Totul este gata!"
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your device to enjoy your Vanilla OS experience."
 msgstr ""
-"Repornește-ți dispozitivul pentru a te bucura de experiența Vanilla OS."
+"Reporniți dispozitivul pentru a vă bucura de experiența Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
@@ -112,7 +112,7 @@ msgstr "Se finalizează"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
-msgstr "Dispozitivul tău va fi pregătit curând."
+msgstr "Dispozitivul dvs. va fi pregătit curând."
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
@@ -140,15 +140,15 @@ msgstr "Fară conexiune la internet!"
 
 #: vanilla_first_setup/defaults/conn_check.py:71
 msgid "First Setup requires an active internet connection"
-msgstr "Prima parte a configurării necesită o conexiune de internet activă"
+msgstr "Prima parte a configurării necesită o conexiune activă la internet"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
-msgstr "Alege te rog cel puțin o opțiune."
+msgstr "Alegeți vă rog cel puțin o opțiune."
 
 #: vanilla_first_setup/views/done.py:41
 msgid "Restart your device to enjoy your {} experience."
-msgstr "Repornește-ți dispozitivul pentru a te bucura de experiența {}."
+msgstr "Reporniți dispozitivul pentru a vă bucura de experiența {}."
 
 #: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
@@ -156,11 +156,11 @@ msgstr "Ceva a dat greș"
 
 #: vanilla_first_setup/views/done.py:64
 msgid "Please contact the distribution developers."
-msgstr "Te rog contactează dezvoltatorii distribuției."
+msgstr "Vă rog să contactați dezvoltatorii distribuției."
 
 #: vanilla_first_setup/main.py:55
 msgid "Run a post script"
-msgstr "Rulează un script de după instalare"
+msgstr "Rulează un script post instalare"
 
 #: vanilla_first_setup/main.py:63
 msgid "Run as a new user"
@@ -172,7 +172,7 @@ msgstr "Gata!"
 
 #: vanilla_first_setup/window.py:67
 msgid "Your device is ready to use."
-msgstr "Dispozitivul tău este gata de folosință."
+msgstr "Dispozitivul dvs. este gata de utilizare."
 
 #: vanilla_first_setup/window.py:68
 msgid "Error!"
@@ -183,4 +183,4 @@ msgid "Something went wrong."
 msgstr "Ceva a dat greș."
 
 #~ msgid "The changes are being applied. Please Wait…"
-#~ msgstr "Schimbările se aplică. Te rog așteaptă…"
+#~ msgstr "Schimbările se aplică. Vă rog așteptați…"
