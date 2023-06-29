@@ -56,7 +56,7 @@ class VanillaDefaultConnCheck(Adw.Bin):
                 return True
 
             try:
-                urlopen("https://google.com", timeout=1)
+                urlopen("https://vanillaos.org", timeout=1)
                 return True
             except:
                 return False
