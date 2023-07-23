@@ -14,8 +14,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from urllib.request import urlopen
-from urllib.error import URLError
+from requests import Session
+from collections import OrderedDict
+import requests
 import os
 
 from gi.repository import Gtk, GLib, Adw
@@ -56,7 +57,14 @@ class VanillaDefaultConnCheck(Adw.Bin):
                 return True
 
             try:
-                urlopen("https://google.com", timeout=1)
+                 s = Session()
+                headers = OrderedDict({
+                    'Accept-Encoding': 'gzip, deflate, br',
+                    'Host': "vanillaos.org",
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:77.0) Gecko/20100101 Firefox/77.0'
+                })
+                s.headers = headers
+                s.get(f"https://vanillaos.org/", headers=headers, verify=True)
                 return True
             except:
                 return False
