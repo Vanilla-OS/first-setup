@@ -57,7 +57,7 @@ class VanillaDefaultConnCheck(Adw.Bin):
                 return True
 
             try:
-                 s = Session()
+                s = Session()
                 headers = OrderedDict({
                     'Accept-Encoding': 'gzip, deflate, br',
                     'Host': "vanillaos.org",
