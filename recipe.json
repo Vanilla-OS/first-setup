@@ -4,7 +4,7 @@
     "distro_logo": "org.vanillaos.FirstSetup", 
     "pre_run": [],
     "post_run": [
-        "abroot pkg apply", 
+        "abroot pkg apply"
     ],
     "tour": {
         "get-involved": {
