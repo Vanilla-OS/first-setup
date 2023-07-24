@@ -52,11 +52,11 @@ class VanillaDefaultHostname(Adw.Bin):
     def get_finals(self):
         return {
             "vars": {
-                "create": True
+                "setHostname": True
             },
             "funcs": [
                 {
-                    "if": "create",
+                    "if": "setHostname",
                     "type": "command",
                     "commands": [
                         "hostnamectl set-hostname " + self.hostname

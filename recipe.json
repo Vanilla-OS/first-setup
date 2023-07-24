@@ -66,12 +66,6 @@
                     "default": true
                 },
                 {
-                    "id": "snap",
-                    "title": "Snap",
-                    "subtitle": "Manage and configure Snaps and the Snapcraft repository.",
-                    "disabled": true
-                },
-                {
                     "id": "appimage",
                     "title": "AppImage",
                     "subtitle": "Install necessary dependencies to run AppImages.",
@@ -95,15 +89,10 @@
                     ]
                 },
                 {
-                    "if": "snap",
-                    "type": "command",
-                    "commands": ["abroot pkg add snapd"]
-                },
-                {
                     "if": "appimage",
                     "type": "command",
                     "commands": [
-                        "abroot pkg add fuse3 libfuse2 appimagelauncher"
+                        "abroot pkg add fuse3 libfuse3-3"
                     ]
                 }
             ]
@@ -128,20 +117,17 @@
                         {
                             "name" : "Characters",
                             "icon" :  "org.gnome.Characters",
-                            "flatpak" : true,
-                            "snap" : true
+                            "flatpak" : true
                         },
                         {
                             "name" : "Cheese",
                             "icon" :  "org.gnome.Cheese",
-                            "flatpak" : true,
-                            "snap" : true
+                            "flatpak" : true
                         },
                         {
                             "name" : "Clocks",
                             "icon" :  "org.gnome.clocks",
-                            "flatpak" : true,
-                            "snap" : true
+                            "flatpak" : true
                         },
                         {
                             "name" : "Connections",
@@ -151,8 +137,7 @@
                         {
                             "name" : "Contacts",
                             "icon" :  "org.gnome.Contacts",
-                            "flatpak" : true,
-                            "snap" : true
+                            "flatpak" : true
                         },
                         {
                             "name" : "Disk Usage Analyzer",
@@ -162,8 +147,7 @@
                         {
                             "name" : "Document Viewer",
                             "icon" :  "org.gnome.Evince",
-                            "flatpak" : true,
-                            "snap" : true
+                            "flatpak" : true
                         },
                         {
                             "name" : "Fonts",
@@ -172,15 +156,13 @@
                         },
                         {
                             "name" : "Image Viewer",
-                            "icon" :  "org.gnome.eog",
-                            "flatpak" : true,
-                            "snap" : true
+                            "icon" :  "org.gnome.Loupe",
+                            "flatpak" : true
                         },
                         {
                             "name" : "Logs",
                             "icon" :  "org.gnome.Logs",
-                            "flatpak" : true,
-                            "snap" : true
+                            "flatpak" : true
                         },
                         {
                             "name" : "Maps",
@@ -195,8 +177,12 @@
                         {
                             "name" : "Weather",
                             "icon" :  "org.gnome.Weather",
-                            "flatpak" : true,
-                            "snap" : true
+                            "flatpak" : true
+                        },
+                        {
+                            "name" : "Web",
+                            "icon" :  "org.gnome.Epiphany",
+                            "flatpak" : true
                         }
                     ]
                 },
@@ -209,8 +195,7 @@
                         {
                             "name" : "LibreOffice",
                             "icon" : "org.libreoffice.LibreOffice",
-                            "flatpak": true,
-                            "snap" : true
+                            "flatpak": true
                         }
                     ]
                 },
@@ -238,14 +223,12 @@
                         {
                             "name" : "Boxes",
                             "icon" :  "org.gnome.Boxes",
-                            "flatpak" : true,
-                            "snap" : true
+                            "flatpak" : true
                         },
                         {
                             "name" : "Déjà Dup Backups",
                             "icon" :  "org.gnome.DejaDup",
-                            "flatpak" : true,
-                            "snap" : true
+                            "flatpak" : true
                         },
                         {
                             "name" : "Flatseal",
@@ -265,8 +248,7 @@
                         {
                             "name" : "Shortwave",
                             "icon" : "de.haeckerfelix.Shortwave",
-                            "flatpak" : true,
-                            "snap" : true
+                            "flatpak" : true
                         },
                         {
                             "name" : "Sound Recorder",
@@ -285,17 +267,17 @@
                 {
                     "if" : "Characters",
                     "type" :  "command",
-                    "commands" : ["!nextBoot flatpak install -y org.gnome.Characters || snap install gnome-characters"]
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.Characters"]
                 },
                 {
                     "if" : "Cheese",
                     "type" :  "command",
-                    "commands" : ["!nextBoot flatpak install -y org.gnome.Cheese || snap install cheese"]
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.Cheese"]
                 },
                 {
                     "if" : "Clocks",
                     "type" :  "command",
-                    "commands" : ["!nextBoot flatpak install -y org.gnome.clocks || snap install gnome-clocks"]
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.clocks"]
                 },
                 {
                     "if" : "Connections",
@@ -305,7 +287,7 @@
                 {
                     "if" : "Contacts",
                     "type" :  "command",
-                    "commands" : ["!nextBoot flatpak install -y org.gnome.Contacts || snap install gnome-contacts"]
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.Contacts"]
                 },
                 {
                     "if" : "Disk Usage Analyzer",
@@ -315,7 +297,7 @@
                 {
                     "if" : "Document Viewer",
                     "type" :  "command",
-                    "commands" : ["!nextBoot flatpak install -y org.gnome.Evince || snap install evince"]
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.Evince"]
                 },
                 {
                     "if" : "Fonts",
@@ -325,12 +307,12 @@
                 {
                     "if" : "Image Viewer",
                     "type" :  "command",
-                    "commands" : ["!nextBoot flatpak install -y org.gnome.eog || snap install eog"]
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.Loupe"]
                 },
                 {
                     "if" : "Logs",
                     "type" :  "command",
-                    "commands" : ["!nextBoot flatpak install -y org.gnome.Logs || snap install gnome-logs"]
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.Logs"]
                 },
                 {
                     "if" : "Maps",
@@ -345,12 +327,17 @@
                 {
                     "if" : "Weather",
                     "type" :  "command",
-                    "commands" : ["!nextBoot flatpak install -y org.gnome.Weather || snap install gnome-weather"]
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.Weather"]
+                },
+                {
+                    "if" : "Web",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.Epiphany"]
                 },
                 {
                     "if" : "LibreOffice",
                     "type" :  "command",
-                    "commands" : ["!nextBoot flatpak install -y org.libreoffice.LibreOffice || snap install libreoffice"]
+                    "commands" : ["!nextBoot flatpak install -y org.libreoffice.LibreOffice"]
                 },
                 {
                     "if" : "Bottles",
@@ -370,12 +357,12 @@
                 {
                     "if" : "Boxes",
                     "type" :  "command",
-                    "commands" : ["!nextBoot flatpak install -y org.gnome.Boxes || snap install gnome-boxes"]
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.Boxes"]
                 },
                 {
                     "if" : "Déjà Dup Backups",
                     "type" :  "command",
-                    "commands" : ["!nextBoot flatpak install -y org.gnome.DejaDup || snap install deja-dup"]
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.DejaDup"]
                 },
                 {
                     "if" : "Flatseal",
@@ -395,7 +382,7 @@
                 {
                     "if" : "Shortwave",
                     "type" :  "command",
-                    "commands" : ["!nextBoot flatpak install -y de.haeckerfelix.Shortwave || snap install shortwave"]
+                    "commands" : ["!nextBoot flatpak install -y de.haeckerfelix.Shortwave"]
                 },
                 {
                     "if" : "Sound Recorder",
@@ -425,36 +412,6 @@
                     "if": "timeshift",
                     "type": "command",
                     "commands": ["abroot pkg add timeshift"]
-                }
-            ]
-        },
-        "nvidia": {
-            "template": "yes-no",
-            "is-advanced": true,
-            "preset": false,
-            "display-conditions": [
-                "lspci | grep -i '.* nvidia .*'"
-            ],
-            "icon": "video-display-symbolic",
-            "title": "NVIDIA® Drivers",
-            "description": "Choose whether to install proprietary NVIDIA drivers for better compatibility and performance.",
-            "buttons": {
-                "yes": "Yes, install",
-                "no": "Skip",
-                "info": {
-                    "type": "text",
-                    "title": "About Proprietary Drivers",
-                    "text": "A proprietary driver has private code that neither Vanilla OS nor Debian developers can review.\n\nSecurity and other updates are dependent on the driver vendor."
-                }
-            },
-            "final": [
-                {
-                    "if": "nvidia",
-                    "type": "command",
-                    "commands": [
-                        "abroot pkg add linux-headers-$(uname -r) nvidia-prime",
-                        "ikaros auto-install"
-                    ]
                 }
             ]
         },
@@ -505,40 +462,7 @@
                 {
                     "if": "codecs",
                     "type": "command",
-                    "commands": ["abroot pkg add libavcodec-extra gstreamer1.0-fluendo-mp3 gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi libavcodec-extra ttf-mscorefonts-installer unrar"]
-                }
-            ]
-        },
-        "extra": {
-            "template": "preferences",
-            "is-advanced": true,
-            "icon": "dialog-warning-symbolic",
-            "title": "Extra Settings",
-            "description": "The following are optional settings, leave them as they are if you don't know what they do.",
-            "preferences": [
-                {
-                    "id": "apport",
-                    "title": "Apport",
-                    "subtitle": "Apport is a crash reporting system that helps us improve the stability of the system."
-                }
-            ],
-            "final": [
-                {
-                    "if": "apport",
-                    "type": "command",
-                    "commands": [
-                        "abroot pkg add apport",
-                        "systemctl enable apport.service || true"
-                    ]
-                },
-                {
-                    "if": "apport",
-                    "condition": false,
-                    "type": "command",
-                    "commands": [
-                        "abroot pkg remove apport",
-                        "systemctl disable apport.service || true"
-                    ]
+                    "commands": ["abroot pkg add libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi libavcodec-extra ttf-mscorefonts-installer unrar"]
                 }
             ]
         }
