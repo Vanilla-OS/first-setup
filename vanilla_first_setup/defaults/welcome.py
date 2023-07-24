@@ -27,6 +27,7 @@ class VanillaDefaultWelcome(Adw.Bin):
     btn_advanced = Gtk.Template.Child()
     btn_next = Gtk.Template.Child()
     status_page = Gtk.Template.Child()
+    title_label = Gtk.Template.Child()
 
     welcome = [
         'Welcome',
@@ -90,7 +91,7 @@ class VanillaDefaultWelcome(Adw.Bin):
         def change_langs():
             while True:
                 for lang in self.welcome:
-                    GLib.idle_add(self.status_page.set_title, lang)
+                    GLib.idle_add(self.title_label.set_text, lang)
                     time.sleep(1.2)
 
         RunAsync(change_langs, None)
