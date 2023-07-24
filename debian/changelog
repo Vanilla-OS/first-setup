@@ -1,3 +1,17 @@
+vanilla-first-setup (2.0.3) unstable; urgency=critical
+
+  * Change log font
+
+ -- Mateus Melchiades <matbme@duck.com>  Mon, 24 Jul 2023 18:42:00 -0300
+
+vanilla-first-setup (2.0.2) unstable; urgency=critical
+
+  * Complete Orchid port
+  * Replace eog with Loupe
+  * Add Epiplany as default browser
+
+ -- Mateus Melchiades <matbme@duck.com>  Mon, 24 Jul 2023 18:34:00 -0300
+
 vanilla-first-setup (2.0.1) unstable; urgency=critical
 
   * Remove ubuntu-drivers-common dependency
