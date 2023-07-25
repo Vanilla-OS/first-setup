@@ -1,3 +1,10 @@
+vanilla-first-setup (2.0.2) unstable; urgency=critical
+
+  * Delete default user on finish
+  * Fix hiding desktop icon
+
+ -- Mateus Melchiades <matbme@duck.com>  Mon, 25 Jul 2023 19:54:00 -0300
+
 vanilla-first-setup (2.0.1) unstable; urgency=critical
 
   * Remove ubuntu-drivers-common dependency
