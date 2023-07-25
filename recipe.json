@@ -4,7 +4,8 @@
     "distro_logo": "org.vanillaos.FirstSetup",
     "pre_run": [],
     "post_run": [
-        "abroot pkg apply"
+        "abroot pkg apply",
+        "!nextBoot userdel -r vanilla"
     ],
     "tour": {
         "get-involved": {
