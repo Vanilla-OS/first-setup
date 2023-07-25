@@ -32,7 +32,7 @@ class VanillaPostScript(Adw.Bin):
         self.__terminal = Vte.Terminal()
         self.__post_script = post_script
         self.__font = Pango.FontDescription()
-        self.__font.set_family("Ubuntu Mono")
+        self.__font.set_family("Monospace")
         self.__font.set_size(13 * Pango.SCALE)
         self.__font.set_weight(Pango.Weight.NORMAL)
         self.__font.set_stretch(Pango.Stretch.NORMAL)
@@ -46,14 +46,16 @@ class VanillaPostScript(Adw.Bin):
 
         self.console_output.append(self.__terminal)
         self.__terminal.connect("child-exited", self.on_vte_child_exited)
-        
-        palette = ["#353535", "#c01c28", "#26a269", "#a2734c", "#12488b", "#a347ba", "#2aa1b3", "#cfcfcf", "#5d5d5d", "#f66151", "#33d17a", "#e9ad0c", "#2a7bde", "#c061cb", "#33c7de", "#ffffff"]
-        
+
+        palette = ["#353535", "#c01c28", "#26a269", "#a2734c", "#12488b", "#a347ba", "#2aa1b3",
+                   "#cfcfcf", "#5d5d5d", "#f66151", "#33d17a", "#e9ad0c", "#2a7bde", "#c061cb",
+                   "#33c7de", "#ffffff"]
+
         FOREGROUND = palette[0]
         BACKGROUND = palette[15]
         FOREGROUND_DARK = palette[15]
         BACKGROUND_DARK = palette[0]
-        
+
         self.fg = Gdk.RGBA()
         self.bg = Gdk.RGBA()
 

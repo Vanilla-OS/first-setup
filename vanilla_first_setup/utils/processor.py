@@ -132,7 +132,7 @@ class Processor:
         return cmd
 
     @staticmethod
-    def hide_first_setup(user: str=None):
+    def hide_first_setup(user: str = None):
         if user is None:
             user = os.environ.get("USER")
 

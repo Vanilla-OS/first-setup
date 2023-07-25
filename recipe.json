@@ -1,7 +1,7 @@
 {
     "log_file": "/etc/vanilla/first-setup.log",
     "distro_name": "Vanilla OS",
-    "distro_logo": "org.vanillaos.FirstSetup", 
+    "distro_logo": "org.vanillaos.FirstSetup",
     "pre_run": [],
     "post_run": [
         "abroot pkg apply"
@@ -135,7 +135,7 @@
                         {
                             "name" : "Connections",
                             "icon" :  "org.gnome.Connections",
-                            "flatpak" : true 
+                            "flatpak" : true
                         },
                         {
                             "name" : "Contacts",
@@ -305,7 +305,7 @@
                     "if" : "Document Viewer",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Evince || snap install evince"]
-                },         
+                },
                 {
                     "if" : "Fonts",
                     "type" :  "command",

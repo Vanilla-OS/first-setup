@@ -37,11 +37,11 @@ class FirstSetupApplication(Adw.Application):
 
     def __init__(self):
         super().__init__(application_id='org.vanillaos.FirstSetup',
-                flags=Gio.ApplicationFlags.HANDLES_COMMAND_LINE)
+                         flags=Gio.ApplicationFlags.HANDLES_COMMAND_LINE)
         self.post_script = None
         self.user = os.environ.get("USER")
         self.new_user = False
-        
+
         self.create_action('quit', self.close, ['<primary>q'])
         self.__register_arguments()
 
@@ -71,7 +71,7 @@ class FirstSetupApplication(Adw.Application):
         if options.contains("run-post-script"):
             logger.info("Running post script")
             self.post_script = options.lookup_value("run-post-script").get_string()
-            
+
         if options.contains("new-user"):
             logger.info("Running as a new user")
             self.user = None
@@ -80,8 +80,6 @@ class FirstSetupApplication(Adw.Application):
         self.activate()
 
     def do_activate(self):
-
-    
         win = self.props.active_window
         if not win:
             win = VanillaWindow(application=self, post_script=self.post_script, user=self.user, new_user=self.new_user)
