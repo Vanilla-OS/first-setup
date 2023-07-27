@@ -72,7 +72,8 @@ class VanillaDefaultUser(Adw.Bin):
                     "type": "command",
                     "commands": [
                         f"adduser --quiet --disabled-password --shell /bin/bash --gecos \"{self.fullname}\" {self.username}",
-                        f"echo \"{self.username}:{self.password_entry.get_text()}\" | chpasswd"
+                        f"echo \"{self.username}:{self.password_entry.get_text()}\" | chpasswd",
+                        f"usermod -a -G sudo,lpadmin {self.username}"
                     ]
                 }
             ]

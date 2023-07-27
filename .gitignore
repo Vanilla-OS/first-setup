@@ -8,3 +8,5 @@ debian/.debhelper
 */__pycache__
 *.pyc
 /localbuild
+.buildconfig
+install/
