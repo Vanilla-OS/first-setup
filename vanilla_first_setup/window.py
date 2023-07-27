@@ -41,7 +41,7 @@ class VanillaWindow(Adw.ApplicationWindow):
     btn_back = Gtk.Template.Child()
     toasts = Gtk.Template.Child()
 
-    def __init__(self, post_script: str, user: str, new_user: bool=False, **kwargs):
+    def __init__(self, post_script: str, user: str, new_user: bool = False, **kwargs):
         super().__init__(**kwargs)
 
         # prepare a variable for the initialization mode:
@@ -63,9 +63,12 @@ class VanillaWindow(Adw.ApplicationWindow):
             self.__init_mode = 1
 
             # system views
-            self.__view_done = VanillaDone(self, reboot=False,
-                title=_("Done!"), description=_("Your device is ready to use."),
-                fail_title=_("Error!"), fail_description=_("Something went wrong."))
+            self.__view_done = VanillaDone(
+                self, reboot=False, title=_("Done!"),
+                description=_("Your device is ready to use."),
+                fail_title=_("Error!"),
+                fail_description=_("Something went wrong.")
+            )
 
             # this builds the UI for the post script only
             self.__build_post_script_ui(post_script)
@@ -166,7 +169,7 @@ class VanillaWindow(Adw.ApplicationWindow):
 
         # process the commands
         res = Processor.get_setup_commands(
-            self.recipe.get("log_file", "/tmp/vanilla_first_setup.log"), 
+            self.recipe.get("log_file", "/tmp/vanilla_first_setup.log"),
             self.recipe.get("pre_run", []),
             self.recipe.get("post_run"),
             commands
@@ -178,7 +181,7 @@ class VanillaWindow(Adw.ApplicationWindow):
         self.__view_done.set_result(result, terminal)
         self.next()
 
-    def next(self, widget: Gtk.Widget=None, result: bool=None, rebuild: bool=False, mode: int=0, *args):
+    def next(self, widget: Gtk.Widget = None, result: bool = None, rebuild: bool = False, mode: int = 0, *args):
         if rebuild:
             self.rebuild_ui(mode)
 

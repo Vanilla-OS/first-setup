@@ -1,10 +1,13 @@
 {
     "log_file": "/etc/vanilla/first-setup.log",
     "distro_name": "Vanilla OS",
-    "distro_logo": "org.vanillaos.FirstSetup", 
-    "pre_run": [
-    ],
+    "distro_logo": "org.vanillaos.FirstSetup",
+    "pre_run": [],
     "post_run": [
+        "abroot pkg apply",
+        "echo '[User]\nLanguage=\nXSession=gnome\nSystemAccount=true' > /var/lib/AccountsService/users/vanilla",
+        "!nextBoot userdel -r vanilla",
+        "!nextBoot pkexec rm /var/lib/AccountsService/users/vanilla"
     ],
     "tour": {
         "get-involved": {
@@ -132,7 +135,7 @@
                         {
                             "name" : "Connections",
                             "icon" :  "org.gnome.Connections",
-                            "flatpak" : true 
+                            "flatpak" : true
                         },
                         {
                             "name" : "Contacts",
