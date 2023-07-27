@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ $USER != 'vanilla' ]; then
+    userdel -r vanilla
+fi
+
+if [ -e '/var/lib/AccountsService/users/vanilla' ]; then
+    rm /var/lib/AccountsService/users/vanilla
+fi
+
+if [ -e '/etc/polkit-1/rules.d/org.vanillaos.first-setup.rules' ]; then
+    rm /etc/polkit-1/rules.d/org.vanillaos.first-setup.rules
+fi

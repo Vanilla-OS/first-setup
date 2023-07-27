@@ -1,0 +1,5 @@
+#!/bin/sh
+
+if [ -gt $(users | wc -l) 1 ]; then
+    echo '[User]\nLanguage=\nXSession=gnome\nSystemAccount=true' > /var/lib/AccountsService/users/vanilla
+fi

@@ -4,10 +4,9 @@
     "distro_logo": "org.vanillaos.FirstSetup",
     "pre_run": [],
     "post_run": [
-        "abroot pkg apply",
-        "echo '[User]\nLanguage=\nXSession=gnome\nSystemAccount=true' > /var/lib/AccountsService/users/vanilla",
-        "!nextBoot userdel -r vanilla",
-        "!nextBoot pkexec rm /var/lib/AccountsService/users/vanilla"
+        "pkexec abroot pkg apply",
+        "pkexec /etc/vanilla-first-setup/first_setup_post",
+        "!nextBoot pkexec /etc/vanilla-first-setup/first_setup_post_boot"
     ],
     "tour": {
         "get-involved": {
