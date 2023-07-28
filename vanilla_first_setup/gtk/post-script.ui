@@ -7,7 +7,7 @@
             <object class="AdwStatusPage">
                 <property name="valign">fill</property>
                 <property name="halign">fill</property>
-                <property name="icon-name">org.vanillaos.FirstSetup</property>
+                <property name="icon-name">org.vanillaos.FirstSetup-flower</property>
                 <property name="title" translatable="yes">Finalizing</property>
                 <property name="description" translatable="yes">Your device will be ready soon.</property>
                 <child>

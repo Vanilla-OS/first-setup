@@ -8,7 +8,7 @@
         <property name="hexpand">true</property>
         <child>
             <object class="AdwStatusPage" id="status_page">
-                <property name="icon-name">org.vanillaos.FirstSetup</property>
+                <property name="icon-name">org.vanillaos.FirstSetup-flower</property>
                 <child>
                     <object class="GtkBox">
                         <property name="spacing">8</property>
