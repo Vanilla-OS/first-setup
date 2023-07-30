@@ -6,7 +6,7 @@
     system to their needs, e.g. by configuring snap, flatpak, flathub, etc.</p>
     <hr />
     <a href="https://hosted.weblate.org/engage/vanilla-os/">
-<img src="https://hosted.weblate.org/widgets/vanilla-os/-/control-center/svg-badge.svg" alt="Stato traduzione" />
+<img src="https://hosted.weblate.org/widgets/vanilla-os/-/first-setup/svg-badge.svg" alt="Translation status" />
 </a>
     <br />
     <img src="data/screenshot-1.png">
