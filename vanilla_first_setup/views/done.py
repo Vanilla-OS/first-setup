@@ -65,8 +65,7 @@ class VanillaDone(Adw.Bin):
         self.btn_retry.connect("clicked", self.__on_retry_clicked)
 
     def set_result(self, result, terminal=None):
-        if terminal:
-            out = terminal.get_text()[0]
+        out = terminal.get_text()[0] if terminal else ""
 
         if not result:
             self.status_page.set_icon_name("dialog-error-symbolic")
