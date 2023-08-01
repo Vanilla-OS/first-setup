@@ -11,3 +11,11 @@ fi
 if [ -e '/etc/polkit-1/rules.d/org.vanillaos.first-setup.rules' ]; then
     rm /etc/polkit-1/rules.d/org.vanillaos.first-setup.rules
 fi
+
+if [ -e '/etc/xdg/autostart/org.vanillaos.FirstSetup.nextBoot.desktop' ]; then
+    rm /etc/xdg/autostart/org.vanillaos.FirstSetup.nextBoot.desktop
+fi
+
+if [ -e '/etc/org.vanillaos.FirstSetup.nextBoot' ]; then
+    rm /etc/org.vanillaos.FirstSetup.nextBoot
+fi
