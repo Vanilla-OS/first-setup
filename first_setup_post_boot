@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ $USER != 'vanilla' ]; then
+if [ "$USER" != 'vanilla' ]; then
     userdel -r vanilla
 fi
 
