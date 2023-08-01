@@ -156,13 +156,10 @@ class VanillaLayoutApplications(Adw.Bin):
 
     def __on_page_changed(self, widget, page):
         if page == self.__key:
-            if True not in [
-                self.__window.builder.get_temp_finals("packages")["vars"]["flatpak"],
-                self.__window.builder.get_temp_finals("packages")["vars"]["snap"]
-            ]:
-                self.bundles_list.set_sensitive(False)
-            else:
-                self.bundles_list.set_sensitive(True)
+            packages_vars = self.__window.builder.get_temp_finals("packages")["vars"]
+            has_flatpak = packages_vars.get("flatpak", False)
+            has_snap = packages_vars.get("snap", False)
+            self.bundles_list.set_sensitive(has_flatpak or has_snap)
 
     def __next_step(self, *args):
         self.__window.next()
@@ -170,9 +167,9 @@ class VanillaLayoutApplications(Adw.Bin):
     def get_finals(self):
         finals = {"vars": {}, "funcs": [x for x in self.__step["final"]]}
 
-        if self.__window.builder.get_temp_finals("packages")["vars"]["flatpak"] == True:
+        if self.__window.builder.get_temp_finals("packages")["vars"]["flatpak"]:
             package_manager = "flatpak"
-        elif self.__window.builder.get_temp_finals("packages")["vars"]["snap"] == True:
+        elif self.__window.builder.get_temp_finals("packages")["vars"]["snap"]:
             try:
                 package_manager = "snap"
             except KeyError:
@@ -181,7 +178,7 @@ class VanillaLayoutApplications(Adw.Bin):
             package_manager = None
 
         for _id, switcher, index in self.__register_widgets:
-            if switcher.get_active() == True:
+            if switcher.get_active():
                 for app in self.__step["bundles"][index]["applications"]:
                     if package_manager not in app.keys():
                         app["active"] = False
