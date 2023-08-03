@@ -122,11 +122,6 @@
                             "flatpak" : true
                         },
                         {
-                            "name" : "Cheese",
-                            "icon" :  "org.gnome.Cheese",
-                            "flatpak" : true
-                        },
-                        {
                             "name" : "Clocks",
                             "icon" :  "org.gnome.clocks",
                             "flatpak" : true
@@ -169,6 +164,11 @@
                         {
                             "name" : "Maps",
                             "icon" :  "org.gnome.Maps",
+                            "flatpak" : true
+                        },
+                        {
+                            "name" : "Snapshot",
+                            "icon" :  "org.gnome.Snapshot",
                             "flatpak" : true
                         },
                         {
@@ -272,11 +272,6 @@
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Characters"]
                 },
                 {
-                    "if" : "Cheese",
-                    "type" :  "command",
-                    "commands" : ["!nextBoot flatpak install -y org.gnome.Cheese"]
-                },
-                {
                     "if" : "Clocks",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.clocks"]
@@ -320,6 +315,11 @@
                     "if" : "Maps",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Maps"]
+                },
+                {
+                    "if" : "Snapshot",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.Snapshot"]
                 },
                 {
                     "if" : "Text Editor",

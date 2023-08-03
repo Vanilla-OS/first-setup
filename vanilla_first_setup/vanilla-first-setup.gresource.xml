@@ -35,7 +35,6 @@
     <file>assets/bundle-app-icons/org.gnome.Boxes.png</file>
     <file>assets/bundle-app-icons/org.gnome.Calendar.png</file>
     <file>assets/bundle-app-icons/org.gnome.Characters.png</file>
-    <file>assets/bundle-app-icons/org.gnome.Cheese.png</file>
     <file>assets/bundle-app-icons/org.gnome.clocks.png</file>
     <file>assets/bundle-app-icons/org.gnome.Connections.png</file>
     <file>assets/bundle-app-icons/org.gnome.Contacts.png</file>
@@ -45,6 +44,7 @@
     <file>assets/bundle-app-icons/org.gnome.Logs.png</file>
     <file>assets/bundle-app-icons/org.gnome.Loupe.png</file>
     <file>assets/bundle-app-icons/org.gnome.Maps.png</file>
+    <file>assets/bundle-app-icons/org.gnome.Snapshot.png</file>
     <file>assets/bundle-app-icons/org.gnome.SoundRecorder.png</file>
     <file>assets/bundle-app-icons/org.gnome.TextEditor.png</file>
     <file>assets/bundle-app-icons/org.gnome.Weather.png</file>
