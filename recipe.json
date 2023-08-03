@@ -112,6 +112,11 @@
                     "default": true,
                     "applications" : [
                         {
+                            "name" : "Calculator",
+                            "icon" :  "org.gnome.Calculator",
+                            "flatpak" : true
+                        },
+                        {
                             "name" : "Calendar",
                             "icon" :  "org.gnome.Calendar",
                             "flatpak" : true
@@ -142,9 +147,19 @@
                             "flatpak" : true
                         },
                         {
+                            "name": "Document Scanner",
+                            "icon": "org.gnome.SimpleScan",
+                            "flatpak": true
+                        },
+                        {
                             "name" : "Document Viewer",
                             "icon" :  "org.gnome.Evince",
                             "flatpak" : true
+                        },
+                        {
+                            "name": "File Roller",
+                            "icon": "org.gnome.FileRoller",
+                            "flatpak": true
                         },
                         {
                             "name" : "Fonts",
@@ -165,6 +180,16 @@
                             "name" : "Maps",
                             "icon" :  "org.gnome.Maps",
                             "flatpak" : true
+                        },
+                        {
+                            "name" : "Music",
+                            "icon" :  "org.gnome.Music",
+                            "flatpak" : true
+                        },
+                        {
+                            "name": "Photos",
+                            "icon": "org.gnome.Photos",
+                            "flatpak": true
                         },
                         {
                             "name" : "Snapshot",
@@ -211,6 +236,11 @@
                             "name" : "Bottles",
                             "icon" :  "com.usebottles.bottles",
                             "flatpak" : true
+                        },
+                        {
+                            "name": "Extension Manager",
+                            "icon": "com.mattjakeman.ExtensionManager",
+                            "flatpak": true
                         },
                         {
                             "name" : "Heroic Games Launcher",
@@ -262,6 +292,11 @@
             ],
             "final": [
                 {
+                    "if" : "Calculator",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.Calculator"]
+                },
+                {
                     "if" : "Calendar",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Calendar"]
@@ -292,9 +327,24 @@
                     "commands" : ["!nextBoot flatpak install -y org.gnome.baobab"]
                 },
                 {
+                    "if": "Document Scanner",
+                    "type": "command",
+                    "commands": ["!nextBoot flatpak install -y org.gnome.SimpleScan"]
+                },
+                {
                     "if" : "Document Viewer",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Evince"]
+                },
+                {
+                    "if": "Extension Manager",
+                    "type": "command",
+                    "commands": ["!nextBoot flatpak install -y com.mattjakeman.ExtensionManager"]
+                },
+                {
+                    "if" : "File Roller",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.FileRoller"]
                 },
                 {
                     "if" : "Fonts",
@@ -315,6 +365,16 @@
                     "if" : "Maps",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Maps"]
+                },
+                {
+                    "if" : "Music",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.Music"]
+                },
+                {
+                    "if": "Photos",
+                    "type": "command",
+                    "commands": ["!nextBoot flatpak install -y org.gnome.Photos"]
                 },
                 {
                     "if" : "Snapshot",

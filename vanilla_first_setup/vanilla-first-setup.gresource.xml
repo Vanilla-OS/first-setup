@@ -33,6 +33,7 @@
     <file>assets/bundle-app-icons/fr.romainvigier.MetadataCleaner.png</file>
     <file>assets/bundle-app-icons/org.gnome.baobab.png</file>
     <file>assets/bundle-app-icons/org.gnome.Boxes.png</file>
+    <file>assets/bundle-app-icons/org.gnome.Calculator.png</file>
     <file>assets/bundle-app-icons/org.gnome.Calendar.png</file>
     <file>assets/bundle-app-icons/org.gnome.Characters.png</file>
     <file>assets/bundle-app-icons/org.gnome.clocks.png</file>
@@ -44,10 +45,12 @@
     <file>assets/bundle-app-icons/org.gnome.Logs.png</file>
     <file>assets/bundle-app-icons/org.gnome.Loupe.png</file>
     <file>assets/bundle-app-icons/org.gnome.Maps.png</file>
+    <file>assets/bundle-app-icons/org.gnome.Music.png</file>
     <file>assets/bundle-app-icons/org.gnome.Snapshot.png</file>
     <file>assets/bundle-app-icons/org.gnome.SoundRecorder.png</file>
     <file>assets/bundle-app-icons/org.gnome.TextEditor.png</file>
     <file>assets/bundle-app-icons/org.gnome.Weather.png</file>
+    <file>assets/bundle-app-icons/com.mattjakeman.ExtensionManager.png</file>
     <file>assets/bundle-app-icons/org.libreoffice.LibreOffice.png</file>
     <file>assets/bundle-app-icons/net.lutris.Lutris.png</file>
     <file>assets/bundle-app-icons/com.heroicgameslauncher.hgl.png</file>
