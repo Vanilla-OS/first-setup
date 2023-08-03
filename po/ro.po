@@ -4,13 +4,14 @@
 # Automatically generated, 2022.
 #
 # Matt C <matei.gurzu@gmail.com>, 2023.
+# Gabriel C <me@gabs.eu.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-21 19:32+0530\n"
-"PO-Revision-Date: 2023-03-22 00:26+0000\n"
-"Last-Translator: Matt C <matei.gurzu@gmail.com>\n"
+"PO-Revision-Date: 2023-07-05 14:52+0000\n"
+"Last-Translator: Gabriel C <me@gabs.eu.org>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ro/>\n"
 "Language: ro\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.16.2-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -31,7 +32,7 @@ msgstr "Modifică-ți instalarea Vanilla OS."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr "Nicio descripție"
+msgstr "Fără descriere"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
