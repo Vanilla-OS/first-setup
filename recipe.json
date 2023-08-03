@@ -202,6 +202,11 @@
                             "flatpak" : true
                         },
                         {
+                            "name": "Videos",
+                            "icon": "org.gnome.Totem",
+                            "flatpak": true
+                        },
+                        {
                             "name" : "Weather",
                             "icon" :  "org.gnome.Weather",
                             "flatpak" : true
@@ -390,6 +395,11 @@
                     "if" : "Weather",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Weather"]
+                },
+                {
+                    "if": "Videos",
+                    "type": "command",
+                    "commands": ["!nextBoot flatpak install -y org.gnome.Totem"]
                 },
                 {
                     "if" : "Web",

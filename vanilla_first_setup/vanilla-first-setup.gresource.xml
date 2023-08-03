@@ -41,14 +41,17 @@
     <file>assets/bundle-app-icons/org.gnome.Contacts.png</file>
     <file>assets/bundle-app-icons/org.gnome.Epiphany.png</file>
     <file>assets/bundle-app-icons/org.gnome.Evince.png</file>
+    <file>assets/bundle-app-icons/org.gnome.FileRoller.png</file>
     <file>assets/bundle-app-icons/org.gnome.font-viewer.png</file>
     <file>assets/bundle-app-icons/org.gnome.Logs.png</file>
     <file>assets/bundle-app-icons/org.gnome.Loupe.png</file>
     <file>assets/bundle-app-icons/org.gnome.Maps.png</file>
     <file>assets/bundle-app-icons/org.gnome.Music.png</file>
+    <file>assets/bundle-app-icons/org.gnome.SimpleScan.png</file>
     <file>assets/bundle-app-icons/org.gnome.Snapshot.png</file>
     <file>assets/bundle-app-icons/org.gnome.SoundRecorder.png</file>
     <file>assets/bundle-app-icons/org.gnome.TextEditor.png</file>
+    <file>assets/bundle-app-icons/org.gnome.Totem.png</file>
     <file>assets/bundle-app-icons/org.gnome.Weather.png</file>
     <file>assets/bundle-app-icons/com.mattjakeman.ExtensionManager.png</file>
     <file>assets/bundle-app-icons/org.libreoffice.LibreOffice.png</file>
