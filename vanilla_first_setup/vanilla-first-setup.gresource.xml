@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/io/github/vanilla-os/FirstSetup">
+  <gresource prefix="/org/vanillaos/FirstSetup">
     <file>style.css</file>
     <file>gtk/window.ui</file>
     <file>gtk/done.ui</file>
@@ -19,13 +19,13 @@
     <file>gtk/layout-yes-no.ui</file>
     <file>gtk/layout-applications.ui</file>
   </gresource>
-  <gresource prefix="/io/github/vanilla-os/FirstSetup/icons/scalable/actions">
+  <gresource prefix="/org/vanillaos/FirstSetup/icons/scalable/actions">
     <file preprocess="xml-stripblanks">../data/icons/hicolor/symbolic/actions/vanilla-package-symbolic.svg</file>
     <file preprocess="xml-stripblanks">../data/icons/hicolor/symbolic/actions/vanilla-container-terminal-symbolic.svg</file>
     <file preprocess="xml-stripblanks">../data/icons/hicolor/symbolic/actions/vanilla-puzzle-piece-symbolic.svg</file>
     <file preprocess="xml-stripblanks">../data/icons/hicolor/symbolic/actions/vanilla-history-undo-symbolic.svg</file>
   </gresource>
-  <gresource prefix="/io/github/vanilla-os/FirstSetup">
+  <gresource prefix="/org/vanillaos/FirstSetup">
     <file>assets/bundle-app-icons/com.github.flxzt.rnote.png</file>
     <file>assets/bundle-app-icons/com.github.tchx84.Flatseal.png</file>
     <file>assets/bundle-app-icons/com.usebottles.bottles.png</file>

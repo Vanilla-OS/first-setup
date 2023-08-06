@@ -21,7 +21,7 @@ from vanilla_first_setup.utils.run_async import RunAsync
 from vanilla_first_setup.dialog import VanillaDialog
 
 
-@Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/layout-yes-no.ui')
+@Gtk.Template(resource_path='/org/vanillaos/FirstSetup/gtk/layout-yes-no.ui')
 class VanillaLayoutYesNo(Adw.Bin):
     __gtype_name__ = 'VanillaLayoutYesNo'
 

@@ -80,6 +80,18 @@ class FirstSetupApplication(Adw.Application):
         self.activate()
 
     def do_activate(self):
+        """
+        Called when the application is activated.
+        We raise the application's main window, creating it if
+        necessary.
+        """
+        provider = Gtk.CssProvider()
+        provider.load_from_resource("/org/vanillaos/FirstSetup/style.css")
+        Gtk.StyleContext.add_provider_for_display(
+            display=Gdk.Display.get_default(),
+            provider=provider,
+            priority=Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+        )
         win = self.props.active_window
         if not win:
             win = VanillaWindow(application=self, post_script=self.post_script, user=self.user, new_user=self.new_user)

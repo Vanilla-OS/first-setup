@@ -17,7 +17,7 @@
 from gi.repository import Gtk, Gio
 
 
-@Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/default-theme.ui')
+@Gtk.Template(resource_path='/org/vanillaos/FirstSetup/gtk/default-theme.ui')
 class VanillaDefaultTheme(Gtk.Box):
     __gtype_name__ = 'VanillaDefaultTheme'
 

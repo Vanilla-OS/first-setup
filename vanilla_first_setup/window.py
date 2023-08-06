@@ -28,7 +28,7 @@ from vanilla_first_setup.views.done import VanillaDone
 from vanilla_first_setup.views.post_script import VanillaPostScript
 
 
-@Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/window.ui')
+@Gtk.Template(resource_path='/org/vanillaos/FirstSetup/gtk/window.ui')
 class VanillaWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'VanillaWindow'
     __gsignals__ = {
