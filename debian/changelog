@@ -1,8 +1,9 @@
 vanilla-first-setup (2.0.3) unstable; urgency=critical
 
   * Change log font
+  * Use polkit for handling cleanup
 
- -- Mateus Melchiades <matbme@duck.com>  Mon, 24 Jul 2023 18:42:00 -0300
+ -- Mateus Melchiades <matbme@duck.com>  Mon, 26 Jul 2023 19:58:00 -0300
 
 vanilla-first-setup (2.0.2) unstable; urgency=critical
 

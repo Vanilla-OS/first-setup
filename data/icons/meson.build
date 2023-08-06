@@ -17,6 +17,10 @@ install_data(
   install_dir: join_paths(get_option('datadir'), 'icons', symbolic_dir, 'apps')
 )
 
+install_data(
+  join_paths(scalable_dir, ('org.vanillaos.FirstSetup-flower.svg').format(application_id)),
+  install_dir: join_paths(get_option('datadir'), 'icons', scalable_dir)
+)
 
 install_data(
     join_paths(actions_dir, 'vanilla-container-terminal-symbolic.svg'),

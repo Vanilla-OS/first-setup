@@ -30,7 +30,16 @@ class VanillaDone(Adw.Bin):
     log_box = Gtk.Template.Child()
     log_output = Gtk.Template.Child()
 
-    def __init__(self, window, reboot: bool=True, title: str="", description: str="", fail_title: str="", fail_description: str="", **kwargs):
+    def __init__(
+        self,
+        window,
+        reboot: bool = True,
+        title: str = "",
+        description: str = "",
+        fail_title: str = "",
+        fail_description: str = "",
+        **kwargs,
+    ):
         super().__init__(**kwargs)
         self.__window = window
         self.__fail_title = fail_title
@@ -55,8 +64,8 @@ class VanillaDone(Adw.Bin):
         self.btn_close.connect("clicked", self.__on_close_clicked)
         self.btn_retry.connect("clicked", self.__on_retry_clicked)
 
-    def set_result(self, result, terminal):
-        out = terminal.get_text()[0]
+    def set_result(self, result, terminal=None):
+        out = terminal.get_text()[0] if terminal else ""
 
         if not result:
             self.status_page.set_icon_name("dialog-error-symbolic")

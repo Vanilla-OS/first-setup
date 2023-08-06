@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-21 19:32+0530\n"
-"PO-Revision-Date: 2023-04-14 06:57+0000\n"
+"PO-Revision-Date: 2023-07-05 14:52+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ka/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -137,7 +137,7 @@ msgstr "ინტერნეტკავშირის გარეშე!"
 
 #: vanilla_first_setup/defaults/conn_check.py:71
 msgid "First Setup requires an active internet connection"
-msgstr ""
+msgstr "პირველი დაყენება აქტიურ ინტერნეტკავშირს მოითხოვს"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
@@ -145,7 +145,7 @@ msgstr "არჩიეთ ერთი პარამეტრი მაინ
 
 #: vanilla_first_setup/views/done.py:41
 msgid "Restart your device to enjoy your {} experience."
-msgstr ""
+msgstr "{}-სთან მუშაობის დასაწყებად გადატვირთეთ თქვენი მოწყობილობა."
 
 #: vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
@@ -153,7 +153,7 @@ msgstr "რაღაც არასწორია"
 
 #: vanilla_first_setup/views/done.py:64
 msgid "Please contact the distribution developers."
-msgstr ""
+msgstr "დაუკავშირდით დისტრიბუტივის პროგრამისტებს."
 
 #: vanilla_first_setup/main.py:55
 msgid "Run a post script"

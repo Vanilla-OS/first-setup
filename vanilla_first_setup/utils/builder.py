@@ -86,7 +86,7 @@ class Builder:
                         if output.decode("utf-8") == "" or output.decode("utf-8") == "1":
                             logger.info("Step %s skipped due to display-conditions" % key)
                             break
-                    except subprocess.CalledProcessError as e:
+                    except subprocess.CalledProcessError:
                         logger.info("Step %s skipped due to display-conditions" % key)
                         break
                 else:
@@ -94,14 +94,12 @@ class Builder:
 
                 if not _condition_met:
                     continue
-                    
+
                 if step.get("new-user-only") and not self.__new_user:
                     continue
-            
-            _status = not step.get("is-advanced", False)
 
-            if step.get("protected"):
-                _protected = True
+            _status = not step.get("is-advanced", False)
+            _protected = step.get("protected", False)
 
             if step["template"] in templates:
                 _widget = templates[step["template"]](self.__window, self.distro_info, key, step)

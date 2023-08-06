@@ -1,13 +1,12 @@
 {
     "log_file": "/etc/vanilla/first-setup.log",
     "distro_name": "Vanilla OS",
-    "distro_logo": "org.vanillaos.FirstSetup",
+    "distro_logo": "org.vanillaos.FirstSetup-flower",
     "pre_run": [],
     "post_run": [
-        "abroot pkg apply",
-        "echo '[User]\nLanguage=\nXSession=gnome\nSystemAccount=true' > /var/lib/AccountsService/users/vanilla",
-        "!nextBoot userdel -r vanilla",
-        "!nextBoot pkexec rm /var/lib/AccountsService/users/vanilla"
+        "pkexec /etc/vanilla-first-setup/first_setup_post",
+        "pkexec abroot pkg apply",
+        "!nextBoot pkexec /etc/vanilla-first-setup/first_setup_post_boot"
     ],
     "tour": {
         "get-involved": {
@@ -113,6 +112,11 @@
                     "default": true,
                     "applications" : [
                         {
+                            "name" : "Calculator",
+                            "icon" :  "org.gnome.Calculator",
+                            "flatpak" : true
+                        },
+                        {
                             "name" : "Calendar",
                             "icon" :  "org.gnome.Calendar",
                             "flatpak" : true
@@ -120,11 +124,6 @@
                         {
                             "name" : "Characters",
                             "icon" :  "org.gnome.Characters",
-                            "flatpak" : true
-                        },
-                        {
-                            "name" : "Cheese",
-                            "icon" :  "org.gnome.Cheese",
                             "flatpak" : true
                         },
                         {
@@ -148,9 +147,19 @@
                             "flatpak" : true
                         },
                         {
+                            "name": "Document Scanner",
+                            "icon": "org.gnome.SimpleScan",
+                            "flatpak": true
+                        },
+                        {
                             "name" : "Document Viewer",
                             "icon" :  "org.gnome.Evince",
                             "flatpak" : true
+                        },
+                        {
+                            "name": "File Roller",
+                            "icon": "org.gnome.FileRoller",
+                            "flatpak": true
                         },
                         {
                             "name" : "Fonts",
@@ -173,9 +182,29 @@
                             "flatpak" : true
                         },
                         {
+                            "name" : "Music",
+                            "icon" :  "org.gnome.Music",
+                            "flatpak" : true
+                        },
+                        {
+                            "name": "Photos",
+                            "icon": "org.gnome.Photos",
+                            "flatpak": true
+                        },
+                        {
+                            "name" : "Snapshot",
+                            "icon" :  "org.gnome.Snapshot",
+                            "flatpak" : true
+                        },
+                        {
                             "name" : "Text Editor",
                             "icon" :  "org.gnome.TextEditor",
                             "flatpak" : true
+                        },
+                        {
+                            "name": "Videos",
+                            "icon": "org.gnome.Totem",
+                            "flatpak": true
                         },
                         {
                             "name" : "Weather",
@@ -212,6 +241,11 @@
                             "name" : "Bottles",
                             "icon" :  "com.usebottles.bottles",
                             "flatpak" : true
+                        },
+                        {
+                            "name": "Extension Manager",
+                            "icon": "com.mattjakeman.ExtensionManager",
+                            "flatpak": true
                         },
                         {
                             "name" : "Heroic Games Launcher",
@@ -263,6 +297,11 @@
             ],
             "final": [
                 {
+                    "if" : "Calculator",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.Calculator"]
+                },
+                {
                     "if" : "Calendar",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Calendar"]
@@ -271,11 +310,6 @@
                     "if" : "Characters",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Characters"]
-                },
-                {
-                    "if" : "Cheese",
-                    "type" :  "command",
-                    "commands" : ["!nextBoot flatpak install -y org.gnome.Cheese"]
                 },
                 {
                     "if" : "Clocks",
@@ -298,9 +332,24 @@
                     "commands" : ["!nextBoot flatpak install -y org.gnome.baobab"]
                 },
                 {
+                    "if": "Document Scanner",
+                    "type": "command",
+                    "commands": ["!nextBoot flatpak install -y org.gnome.SimpleScan"]
+                },
+                {
                     "if" : "Document Viewer",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Evince"]
+                },
+                {
+                    "if": "Extension Manager",
+                    "type": "command",
+                    "commands": ["!nextBoot flatpak install -y com.mattjakeman.ExtensionManager"]
+                },
+                {
+                    "if" : "File Roller",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.FileRoller"]
                 },
                 {
                     "if" : "Fonts",
@@ -323,6 +372,21 @@
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Maps"]
                 },
                 {
+                    "if" : "Music",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.Music"]
+                },
+                {
+                    "if": "Photos",
+                    "type": "command",
+                    "commands": ["!nextBoot flatpak install -y org.gnome.Photos"]
+                },
+                {
+                    "if" : "Snapshot",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.Snapshot"]
+                },
+                {
                     "if" : "Text Editor",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.TextEditor"]
@@ -331,6 +395,11 @@
                     "if" : "Weather",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.gnome.Weather"]
+                },
+                {
+                    "if": "Videos",
+                    "type": "command",
+                    "commands": ["!nextBoot flatpak install -y org.gnome.Totem"]
                 },
                 {
                     "if" : "Web",
