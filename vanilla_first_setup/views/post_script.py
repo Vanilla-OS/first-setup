@@ -20,7 +20,7 @@ from gi.repository import Gtk, Gio, Gdk, GLib, Adw, Vte, Pango
 from vanilla_first_setup.utils.run_async import RunAsync
 
 
-@Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/post-script.ui')
+@Gtk.Template(resource_path='/org/vanillaos/FirstSetup/gtk/post-script.ui')
 class VanillaPostScript(Adw.Bin):
     __gtype_name__ = 'VanillaPostScript'
 

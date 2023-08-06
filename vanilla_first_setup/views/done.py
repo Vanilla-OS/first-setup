@@ -19,7 +19,7 @@ from sys import intern
 from gi.repository import Gtk, Adw
 
 
-@Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/done.ui')
+@Gtk.Template(resource_path='/org/vanillaos/FirstSetup/gtk/done.ui')
 class VanillaDone(Adw.Bin):
     __gtype_name__ = 'VanillaDone'
 

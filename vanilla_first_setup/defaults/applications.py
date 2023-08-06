@@ -19,7 +19,7 @@ from gi.repository import Gtk, Adw
 from vanilla_first_setup.dialog import VanillaDialog
 
 
-@Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/layout-applications.ui')
+@Gtk.Template(resource_path='/org/vanillaos/FirstSetup/gtk/layout-applications.ui')
 class VanillaLayoutApplications(Adw.Bin):
     __gtype_name__ = 'VanillaLayoutApplications'
 
@@ -71,7 +71,7 @@ class VanillaLayoutApplications(Adw.Bin):
                         _apps_action_row = Adw.ActionRow(
                             title=app["name"],
                         )
-                        _app_icon = Gtk.Image.new_from_resource("/io/github/vanilla-os/FirstSetup/assets/bundle-app-icons/" + app["icon"] + ".png")
+                        _app_icon = Gtk.Image.new_from_resource("/org/vanillaos/FirstSetup/assets/bundle-app-icons/" + app["icon"] + ".png")
                         _app_icon.set_icon_size(Gtk.IconSize.LARGE)
                         _app_icon.add_css_class("lowres-icon")
                         _apps_action_row.add_prefix(_app_icon)

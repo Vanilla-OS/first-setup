@@ -21,7 +21,7 @@ import re, subprocess, shutil
 from gi.repository import Gtk, Gio, GLib, Adw
 
 
-@Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/default-hostname.ui')
+@Gtk.Template(resource_path='/org/vanillaos/FirstSetup/gtk/default-hostname.ui')
 class VanillaDefaultHostname(Adw.Bin):
     __gtype_name__ = 'VanillaDefaultHostname'
 
