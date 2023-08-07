@@ -1,3 +1,9 @@
+vanilla-first-setup (2.0.4) unstable; urgency=critical
+
+  * Fix theme switcher
+
+ -- Mirko Brombin <send@mirko.pm>  Mon, 7 Jul 2023 18:38:00 +0000
+
 vanilla-first-setup (2.0.3) unstable; urgency=critical
 
   * Change log font
