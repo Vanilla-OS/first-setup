@@ -21,7 +21,6 @@ logger = logging.getLogger("FirstSetup::Parser")
 
 
 class Parser:
-
     supported_types = ["command"]
 
     @staticmethod
@@ -29,6 +28,18 @@ class Parser:
         commands = []
         warps = []
         all_vars = []
+        exposed_vars = {}
+
+        for final in finals:
+            if len(final) == 0:
+                continue
+
+            _exposed = final.get("expose", {})
+            for k, v in _exposed.items():
+                if k in exposed_vars:
+                    logger.error(f"variable {k} is exposed multiple times")
+                    sys.exit(1)
+                exposed_vars[k] = v
 
         for final in finals:
             if len(final) == 0:
@@ -37,35 +48,30 @@ class Parser:
             _vars = final["vars"]
             for k, v in _vars.items():
                 if k in all_vars:
-                    logger.error(
-                        f"variable {k} is defined multiple times")
+                    logger.error(f"variable {k} is defined multiple times")
                     sys.exit(1)
                 if not v:
                     continue
                 all_vars.append(k)
 
             for _func in final["funcs"]:
-
                 if "if" not in _func:
                     logger.critical(f"Missing an 'if' operand in {_func}")
                     sys.exit(1)
 
                 if _func["if"] not in _vars and not _func["if"].startswith("warp::"):
                     logger.critical(
-                        f"Missing a variable named '{_func['if']}' in the 'vars' section.")
+                        f"Missing a variable named '{_func['if']}' in the 'vars' section."
+                    )
                     sys.exit(1)
 
                 if _func.get("type") not in Parser.supported_types:
-                    logger.critical(
-                        f"Unsupported final type: {_func.get('type')}")
+                    logger.critical(f"Unsupported final type: {_func.get('type')}")
                     sys.exit(1)
 
                 if _func["if"].startswith("warp::"):
                     _var = _func["if"].split("::")[1]
-                    warps.append({
-                        "vars": [_var],
-                        "func": [_func]
-                    })
+                    warps.append({"vars": [_var], "func": [_func]})
                     continue
 
                 # assume True if no condition is given
@@ -73,7 +79,12 @@ class Parser:
 
                 # check if the condition is met
                 if _condition == _vars[_func["if"]]:
-                    commands += _func["commands"]
+                    # interpolate exposed variables
+                    _commands = []
+                    for cmd in _func["commands"]:
+                        for k, v in exposed_vars.items():
+                            cmd = cmd.replace(f"exposed::{k}", v)
+                        _commands.append(cmd)
 
         # set-up warps if any
         for warp in warps:
