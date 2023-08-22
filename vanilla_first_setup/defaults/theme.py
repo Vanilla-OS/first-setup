@@ -17,9 +17,9 @@
 from gi.repository import Gtk, Gio
 
 
-@Gtk.Template(resource_path='/org/vanillaos/FirstSetup/gtk/default-theme.ui')
+@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/default-theme.ui")
 class VanillaDefaultTheme(Gtk.Box):
-    __gtype_name__ = 'VanillaDefaultTheme'
+    __gtype_name__ = "VanillaDefaultTheme"
 
     btn_next = Gtk.Template.Child()
     btn_default = Gtk.Template.Child()
@@ -31,12 +31,13 @@ class VanillaDefaultTheme(Gtk.Box):
         self.__distro_info = distro_info
         self.__key = key
         self.__step = step
+        self.__theme = "light"
 
         self.__build_ui()
 
         self.btn_next.connect("clicked", self.__window.next)
-        self.btn_default.connect('toggled', self.__set_theme, "light")
-        self.btn_dark.connect('toggled', self.__set_theme, "dark")
+        self.btn_default.connect("toggled", self.__set_theme, "light")
+        self.btn_dark.connect("toggled", self.__set_theme, "dark")
 
     @property
     def step_id(self):
@@ -48,10 +49,30 @@ class VanillaDefaultTheme(Gtk.Box):
     def __set_theme(self, widget, theme: str):
         pref = "prefer-dark" if theme == "dark" else "default"
         gtk = "Adwaita-dark" if theme == "dark" else "Adwaita"
-        Gio.Settings.new("org.gnome.desktop.interface").set_string(
-            "color-scheme", pref)
-        Gio.Settings.new("org.gnome.desktop.interface").set_string(
-            "gtk-theme", gtk)
+        Gio.Settings.new("org.gnome.desktop.interface").set_string("color-scheme", pref)
+        Gio.Settings.new("org.gnome.desktop.interface").set_string("gtk-theme", gtk)
+        self.__theme = theme
 
     def get_finals(self):
-        return {}
+        gs_cmd = "!nextBoot pkexec gsettings set %s %s %s"
+        cmds = []
+
+        if self.__theme == "dark":
+            cmds.append(
+                gs_cmd % ("org.gnome.desktop.interface", "color-scheme", "prefer-dark")
+            )
+            cmds.append(
+                gs_cmd % ("org.gnome.desktop.interface", "gtk-theme", "Adwaita-dark")
+            )
+        else:
+            cmds.append(
+                gs_cmd % ("org.gnome.desktop.interface", "color-scheme", "default")
+            )
+            cmds.append(
+                gs_cmd % ("org.gnome.desktop.interface", "gtk-theme", "Adwaita")
+            )
+
+        return {
+            "vars": {"setTheme": True},
+            "funcs": [{"if": "setTheme", "type": "command", "commands": cmds}],
+        }
