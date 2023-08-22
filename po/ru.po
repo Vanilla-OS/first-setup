@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-21 19:32+0530\n"
-"PO-Revision-Date: 2023-07-14 11:51+0000\n"
+"PO-Revision-Date: 2023-08-04 22:02+0000\n"
 "Last-Translator: Fedorov Alexei <aleksejfedorov963@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ru/>\n"
@@ -71,7 +71,7 @@ msgstr "По умолчанию"
 
 #: vanilla_first_setup/gtk/default-theme.ui:29
 msgid "Dark"
-msgstr "Тёмный"
+msgstr "Тёмная"
 
 #: vanilla_first_setup/gtk/default-theme.ui:42
 msgid "Color Scheme"
