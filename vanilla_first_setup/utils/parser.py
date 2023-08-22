@@ -80,11 +80,10 @@ class Parser:
                 # check if the condition is met
                 if _condition == _vars[_func["if"]]:
                     # interpolate exposed variables
-                    _commands = []
                     for cmd in _func["commands"]:
                         for k, v in exposed_vars.items():
                             cmd = cmd.replace(f"exposed::{k}", v)
-                        _commands.append(cmd)
+                        commands.append(cmd)
 
         # set-up warps if any
         for warp in warps:
