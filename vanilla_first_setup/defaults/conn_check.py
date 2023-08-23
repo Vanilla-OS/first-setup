@@ -43,12 +43,11 @@ class VanillaDefaultConnCheck(Adw.Bin):
         self.__distro_info = distro_info
         self.__key = key
         self.__step = step
-
-        # connection check start
-        self.__start_conn_check()
+        self.__step_num = step["num"]
 
         # signals
         self.btn_recheck.connect("clicked", self.__on_btn_recheck_clicked)
+        self.__window.carousel.connect("page-changed", self.__conn_check)
 
     @property
     def step_id(self):
@@ -57,7 +56,10 @@ class VanillaDefaultConnCheck(Adw.Bin):
     def get_finals(self):
         return {}
 
-    def __start_conn_check(self):
+    def __conn_check(self, carousel=None, idx=None):
+        if idx and idx != self.__step_num:
+            return
+
         def async_fn():
             if "VANILLA_SKIP_CONN_CHECK" in os.environ:
                 return True
@@ -99,4 +101,4 @@ class VanillaDefaultConnCheck(Adw.Bin):
         self.status_page.set_description(
             _("Please wait until the connection check is done.")
         )
-        self.__start_conn_check()
+        self.__conn_check()

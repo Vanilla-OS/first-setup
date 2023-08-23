@@ -35,6 +35,10 @@
         }
     },
     "steps": {
+        "network": {
+            "template": "network",
+            "protected": true
+        },
         "conn-check": {
             "template": "conn-check",
             "protected": true

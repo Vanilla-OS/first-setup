@@ -26,6 +26,7 @@ from vanilla_first_setup.defaults.welcome import VanillaDefaultWelcome
 from vanilla_first_setup.defaults.theme import VanillaDefaultTheme
 from vanilla_first_setup.defaults.user import VanillaDefaultUser
 from vanilla_first_setup.defaults.hostname import VanillaDefaultHostname
+from vanilla_first_setup.defaults.network import VanillaDefaultNetwork
 
 from vanilla_first_setup.layouts.preferences import VanillaLayoutPreferences
 from vanilla_first_setup.layouts.yes_no import VanillaLayoutYesNo
@@ -36,6 +37,7 @@ logger = logging.getLogger("FirstSetup::Builder")
 
 
 templates = {
+    "network": VanillaDefaultNetwork,
     "conn-check": VanillaDefaultConnCheck,
     "welcome": VanillaDefaultWelcome,
     "theme": VanillaDefaultTheme,
@@ -68,11 +70,11 @@ class Builder:
         if not os.path.exists(log_path):
             try:
                 open(log_path, "a").close()
-            except OSError:
-                logger.warning("failed to create log file: %s" % log_path)
+            except OSError as e:
+                logger.warning(f"failed to create log file: {log_path}: {e}")
                 logging.warning("No log will be stored.")
 
-        for key, step in self.__recipe.raw["steps"].items():
+        for i, (key, step) in enumerate(self.__recipe.raw["steps"].items()):
             _status = True
             _protected = False
 
@@ -80,7 +82,7 @@ class Builder:
                 _condition_met = False
                 for command in step["display-conditions"]:
                     try:
-                        logger.info("Performing display-condition: %s" % command)
+                        logger.info(f"Performing display-condition: {command}")
                         output = subprocess.check_output(
                             command, shell=True, stderr=subprocess.STDOUT
                         )
@@ -89,11 +91,11 @@ class Builder:
                             or output.decode("utf-8") == "1"
                         ):
                             logger.info(
-                                "Step %s skipped due to display-conditions" % key
+                                "Step {key} skipped due to display-conditions"
                             )
                             break
                     except subprocess.CalledProcessError:
-                        logger.info("Step %s skipped due to display-conditions" % key)
+                        logger.info(f"Step {key} skipped due to display-conditions")
                         break
                 else:
                     _condition_met = True
@@ -108,6 +110,7 @@ class Builder:
             _protected = step.get("protected", False)
 
             if step["template"] in templates:
+                step["num"] = i
                 _widget = templates[step["template"]](
                     self.__window, self.distro_info, key, step
                 )
