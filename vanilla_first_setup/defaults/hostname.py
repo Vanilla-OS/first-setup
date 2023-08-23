@@ -15,15 +15,13 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import sys
-import time
-import re, subprocess, shutil
-from gi.repository import Gtk, Gio, GLib, Adw
+import re
+from gi.repository import Gtk, Adw
 
 
-@Gtk.Template(resource_path='/org/vanillaos/FirstSetup/gtk/default-hostname.ui')
+@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/default-hostname.ui")
 class VanillaDefaultHostname(Adw.Bin):
-    __gtype_name__ = 'VanillaDefaultHostname'
+    __gtype_name__ = "VanillaDefaultHostname"
 
     btn_next = Gtk.Template.Child()
     hostname_entry = Gtk.Template.Child()
@@ -40,7 +38,7 @@ class VanillaDefaultHostname(Adw.Bin):
 
         # signals
         self.btn_next.connect("clicked", self.__on_btn_next_clicked)
-        self.hostname_entry.connect('changed', self.__on_hostname_entry_changed)
+        self.hostname_entry.connect("changed", self.__on_hostname_entry_changed)
 
     @property
     def step_id(self):
@@ -51,18 +49,14 @@ class VanillaDefaultHostname(Adw.Bin):
 
     def get_finals(self):
         return {
-            "vars": {
-                "setHostname": True
-            },
+            "vars": {"setHostname": True},
             "funcs": [
                 {
                     "if": "setHostname",
                     "type": "command",
-                    "commands": [
-                        "hostnamectl set-hostname " + self.hostname
-                    ]
+                    "commands": ["hostnamectl set-hostname " + self.hostname],
                 }
-            ]
+            ],
         }
 
     def __on_hostname_entry_changed(self, *args):
@@ -70,12 +64,14 @@ class VanillaDefaultHostname(Adw.Bin):
 
         if self.__validate_hostname(_hostname):
             self.hostname = _hostname
-            self.hostname_entry.remove_css_class('error')
+            self.hostname_entry.remove_css_class("error")
             self.__verify_continue()
             return
 
-        self.__window.toast("Hostname cannot contain special characters. Please choose another hostname.")
-        self.hostname_entry.add_css_class('error')
+        self.__window.toast(
+            "Hostname cannot contain special characters. Please choose another hostname."
+        )
+        self.hostname_entry.add_css_class("error")
         self.hostname = ""
         self.__verify_continue()
 
@@ -83,7 +79,7 @@ class VanillaDefaultHostname(Adw.Bin):
         if len(hostname) > 50:
             return False
 
-        allowed = re.compile("(?!-)[A-Z\d-]{1,63}(?<!-)$", re.IGNORECASE)
+        allowed = re.compile(r"(?!-)[A-Z\d-]{1,63}(?<!-)$", re.IGNORECASE)
         return all(allowed.match(x) for x in hostname.split("."))
 
     def __verify_continue(self):

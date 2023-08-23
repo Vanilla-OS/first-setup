@@ -14,15 +14,12 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import time
 from gi.repository import Gtk, Gio, Gdk, GLib, Adw, Vte, Pango
 
-from vanilla_first_setup.utils.run_async import RunAsync
 
-
-@Gtk.Template(resource_path='/org/vanillaos/FirstSetup/gtk/post-script.ui')
+@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/post-script.ui")
 class VanillaPostScript(Adw.Bin):
-    __gtype_name__ = 'VanillaPostScript'
+    __gtype_name__ = "VanillaPostScript"
 
     console_output = Gtk.Template.Child()
 
@@ -47,9 +44,24 @@ class VanillaPostScript(Adw.Bin):
         self.console_output.append(self.__terminal)
         self.__terminal.connect("child-exited", self.on_vte_child_exited)
 
-        palette = ["#353535", "#c01c28", "#26a269", "#a2734c", "#12488b", "#a347ba", "#2aa1b3",
-                   "#cfcfcf", "#5d5d5d", "#f66151", "#33d17a", "#e9ad0c", "#2a7bde", "#c061cb",
-                   "#33c7de", "#ffffff"]
+        palette = [
+            "#353535",
+            "#c01c28",
+            "#26a269",
+            "#a2734c",
+            "#12488b",
+            "#a347ba",
+            "#2aa1b3",
+            "#cfcfcf",
+            "#5d5d5d",
+            "#f66151",
+            "#33d17a",
+            "#e9ad0c",
+            "#2a7bde",
+            "#c061cb",
+            "#33c7de",
+            "#ffffff",
+        ]
 
         FOREGROUND = palette[0]
         BACKGROUND = palette[15]
@@ -61,11 +73,11 @@ class VanillaPostScript(Adw.Bin):
 
         self.colors = [Gdk.RGBA() for c in palette]
         [color.parse(s) for (color, s) in zip(self.colors, palette)]
-        desktop_schema = Gio.Settings.new('org.gnome.desktop.interface')
-        if desktop_schema.get_enum('color-scheme') == 0:
+        desktop_schema = Gio.Settings.new("org.gnome.desktop.interface")
+        if desktop_schema.get_enum("color-scheme") == 0:
             self.fg.parse(FOREGROUND)
             self.bg.parse(BACKGROUND)
-        elif desktop_schema.get_enum('color-scheme') == 1:
+        elif desktop_schema.get_enum("color-scheme") == 1:
             self.fg.parse(FOREGROUND_DARK)
             self.bg.parse(BACKGROUND_DARK)
         self.__terminal.set_colors(self.fg, self.bg, self.colors)

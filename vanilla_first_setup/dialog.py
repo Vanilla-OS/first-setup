@@ -17,9 +17,9 @@
 from gi.repository import Gtk, Adw
 
 
-@Gtk.Template(resource_path='/org/vanillaos/FirstSetup/gtk/dialog.ui')
+@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/dialog.ui")
 class VanillaDialog(Adw.Window):
-    __gtype_name__ = 'VanillaDialog'
+    __gtype_name__ = "VanillaDialog"
 
     label_text = Gtk.Template.Child()
 
@@ -33,5 +33,9 @@ class VanillaDialog(Adw.Window):
             self.hide()
 
         shortcut_controller = Gtk.ShortcutController.new()
-        shortcut_controller.add_shortcut(Gtk.Shortcut.new(Gtk.ShortcutTrigger.parse_string('Escape'), Gtk.CallbackAction.new(hide)))
+        shortcut_controller.add_shortcut(
+            Gtk.Shortcut.new(
+                Gtk.ShortcutTrigger.parse_string("Escape"), Gtk.CallbackAction.new(hide)
+            )
+        )
         self.add_controller(shortcut_controller)

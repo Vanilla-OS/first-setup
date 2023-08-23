@@ -16,17 +16,23 @@
 
 from requests import Session
 from collections import OrderedDict
-import requests
+
+import logging
 import os
 
-from gi.repository import Gtk, GLib, Adw
+from gi.repository import Gtk, Adw
 
 from vanilla_first_setup.utils.run_async import RunAsync
+from gettext import gettext as _
 
 
-@Gtk.Template(resource_path='/org/vanillaos/FirstSetup/gtk/default-conn-check.ui')
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("FirstSetup::Conn_Check")
+
+
+@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/default-conn-check.ui")
 class VanillaDefaultConnCheck(Adw.Bin):
-    __gtype_name__ = 'VanillaDefaultConnCheck'
+    __gtype_name__ = "VanillaDefaultConnCheck"
 
     btn_recheck = Gtk.Template.Child()
     status_page = Gtk.Template.Child()
@@ -58,15 +64,18 @@ class VanillaDefaultConnCheck(Adw.Bin):
 
             try:
                 s = Session()
-                headers = OrderedDict({
-                    'Accept-Encoding': 'gzip, deflate, br',
-                    'Host': "vanillaos.org",
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:77.0) Gecko/20100101 Firefox/77.0'
-                })
+                headers = OrderedDict(
+                    {
+                        "Accept-Encoding": "gzip, deflate, br",
+                        "Host": "vanillaos.org",
+                        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:77.0) Gecko/20100101 Firefox/77.0",
+                    }
+                )
                 s.headers = headers
-                s.get(f"https://vanillaos.org/", headers=headers, verify=True)
+                s.get("https://vanillaos.org/", headers=headers, verify=True)
                 return True
-            except:
+            except Exception as e:
+                logger.error(f"Connection check failed: {str(e)}")
                 return False
 
         def callback(res, *args):
@@ -76,7 +85,9 @@ class VanillaDefaultConnCheck(Adw.Bin):
 
             self.status_page.set_icon_name("network-wired-disconnected-symbolic")
             self.status_page.set_title(_("No Internet Connection!"))
-            self.status_page.set_description(_("First Setup requires an active internet connection"))
+            self.status_page.set_description(
+                _("First Setup requires an active internet connection")
+            )
             self.btn_recheck.set_visible(True)
 
         RunAsync(async_fn, callback)
@@ -85,5 +96,7 @@ class VanillaDefaultConnCheck(Adw.Bin):
         widget.set_visible(False)
         self.status_page.set_icon_name("content-loading-symbolic")
         self.status_page.set_title(_("Checking Connection…"))
-        self.status_page.set_description(_("Please wait until the connection check is done."))
+        self.status_page.set_description(
+            _("Please wait until the connection check is done.")
+        )
         self.__start_conn_check()

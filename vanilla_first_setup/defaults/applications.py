@@ -19,9 +19,9 @@ from gi.repository import Gtk, Adw
 from vanilla_first_setup.dialog import VanillaDialog
 
 
-@Gtk.Template(resource_path='/org/vanillaos/FirstSetup/gtk/layout-applications.ui')
+@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/layout-applications.ui")
 class VanillaLayoutApplications(Adw.Bin):
-    __gtype_name__ = 'VanillaLayoutApplications'
+    __gtype_name__ = "VanillaLayoutApplications"
 
     status_page = Gtk.Template.Child()
     bundles_list = Gtk.Template.Child()
@@ -57,9 +57,9 @@ class VanillaLayoutApplications(Adw.Bin):
                     apps_list.remove(app["apps_action_row"])
                 except KeyError:
                     pass
-                if self.__window.builder.get_temp_finals("packages")["vars"]["flatpak"] == True:
+                if self.__window.builder.get_temp_finals("packages")["vars"]["flatpak"]:
                     package_manager = "flatpak"
-                elif self.__window.builder.get_temp_finals("packages")["vars"]["snap"] == True:
+                elif self.__window.builder.get_temp_finals("packages")["vars"]["snap"]:
                     try:
                         package_manager = "snap"
                     except KeyError:
@@ -71,7 +71,11 @@ class VanillaLayoutApplications(Adw.Bin):
                         _apps_action_row = Adw.ActionRow(
                             title=app["name"],
                         )
-                        _app_icon = Gtk.Image.new_from_resource("/org/vanillaos/FirstSetup/assets/bundle-app-icons/" + app["icon"] + ".png")
+                        _app_icon = Gtk.Image.new_from_resource(
+                            "/org/vanillaos/FirstSetup/assets/bundle-app-icons/"
+                            + app["icon"]
+                            + ".png"
+                        )
                         _app_icon.set_icon_size(Gtk.IconSize.LARGE)
                         _app_icon.add_css_class("lowres-icon")
                         _apps_action_row.add_prefix(_app_icon)
@@ -100,10 +104,10 @@ class VanillaLayoutApplications(Adw.Bin):
 
         for item in self.__step["bundles"]:
             _selection_dialog = VanillaDialog(
-                    self.__window,
-                    "Select Applications",
-                    "Description",
-                )
+                self.__window,
+                "Select Applications",
+                "Description",
+            )
 
             _cancel_button = Gtk.Button()
             _apply_button = Gtk.Button()
@@ -118,7 +122,9 @@ class VanillaLayoutApplications(Adw.Bin):
             _header_bar.set_show_start_title_buttons(False)
 
             _apps_list = Adw.PreferencesGroup()
-            _apps_list.set_description("The following list includes only applications available in your preferred package manager.")
+            _apps_list.set_description(
+                "The following list includes only applications available in your preferred package manager."
+            )
             _apps_page = Adw.PreferencesPage()
             _apps_page.add(_apps_list)
 
@@ -131,8 +137,7 @@ class VanillaLayoutApplications(Adw.Bin):
             selection_dialogs.append(_selection_dialog)
 
             _action_row = Adw.ActionRow(
-                title=item["title"],
-                subtitle=item.get("subtitle", "")
+                title=item["title"], subtitle=item.get("subtitle", "")
             )
             _switcher = Gtk.Switch()
             _switcher.set_active(item.get("default", False))
@@ -145,9 +150,13 @@ class VanillaLayoutApplications(Adw.Bin):
             _customize.add_css_class("flat")
             _action_row.add_suffix(_customize)
 
-            _customize.connect("clicked", present_customize, selection_dialogs[-1], _apps_list, item)
+            _customize.connect(
+                "clicked", present_customize, selection_dialogs[-1], _apps_list, item
+            )
             _cancel_button.connect("clicked", close_customize, selection_dialogs[-1])
-            _apply_button.connect("clicked", apply_preferences, selection_dialogs[-1], _apps_list, item)
+            _apply_button.connect(
+                "clicked", apply_preferences, selection_dialogs[-1], _apps_list, item
+            )
 
             self.bundles_list.add(_action_row)
 

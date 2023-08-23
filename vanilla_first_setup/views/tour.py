@@ -18,9 +18,9 @@ import webbrowser
 from gi.repository import Gtk, Adw
 
 
-@Gtk.Template(resource_path='/org/vanillaos/FirstSetup/gtk/tour.ui')
+@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/tour.ui")
 class VanillaTour(Adw.Bin):
-    __gtype_name__ = 'VanillaTour'
+    __gtype_name__ = "VanillaTour"
 
     status_page = Gtk.Template.Child()
     btn_read_more = Gtk.Template.Child()
@@ -38,8 +38,8 @@ class VanillaTour(Adw.Bin):
         self.status_page.set_icon_name(self.__tour["icon"])
         self.status_page.set_title(self.__tour["title"])
         self.status_page.set_description(self.__tour["description"])
-        
+
         self.btn_read_more.set_visible(bool("read_more_link" in self.__tour))
-        
+
     def __on_read_more(self, e):
         webbrowser.open_new_tab(self.__tour["read_more_link"])

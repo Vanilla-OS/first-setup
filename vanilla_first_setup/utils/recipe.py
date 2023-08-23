@@ -24,7 +24,6 @@ logger = logging.getLogger("FirstSetup::RecipeLoader")
 
 
 class RecipeLoader:
-
     recipe_path = "/usr/share/org.vanillaos.FirstSetup/recipe.json"
 
     def __init__(self):
@@ -36,7 +35,7 @@ class RecipeLoader:
             self.recipe_path = os.environ["VANILLA_CUSTOM_RECIPE"]
 
         logger.info(f"Loading recipe from {self.recipe_path}")
-        
+
         if os.path.exists(self.recipe_path):
             with open(self.recipe_path, "r") as f:
                 self.__recipe = json.load(f)
