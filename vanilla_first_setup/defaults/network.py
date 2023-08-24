@@ -24,6 +24,28 @@ from gi.repository import NM, NMA4, Adw, Gtk
 from vanilla_first_setup.utils.run_async import RunAsync
 
 
+# Dictionary mapping security types to a tuple containing
+# their pretty name and whether it is a secure protocol.
+# If security is None, it means that no padlock icon is shown.
+# If security is False, a warning symbol appears instead of a padlock.
+AP_SECURITY_TYPES = {
+    "none": (None, None),
+    "wep": (False, _("Insecure network (WEP)")),
+    "wpa": (True, _("Secure network (WPA)")),
+    "wpa2": (True, _("Secure network (WPA2)")),
+    "sae": (True, _("Secure network (WPA3)")),
+    "owe": (None, None),
+    "owe_tm": (None, None),
+}
+
+# PyGObject-libnm doesn't seem to expose these values, so we have redefine them
+NM_802_11_AP_FLAGS_PRIVACY = 0x00000001
+NM_802_11_AP_SEC_NONE = 0x00000000
+NM_802_11_AP_SEC_KEY_MGMT_SAE = 0x00000400
+NM_802_11_AP_SEC_KEY_MGMT_OWE = 0x00000800
+NM_802_11_AP_SEC_KEY_MGMT_OWE_TM = 0x00001000
+
+
 @Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/wireless-row.ui")
 class WirelessRow(Adw.ActionRow):
     __gtype_name__ = "WirelessRow"
@@ -32,7 +54,7 @@ class WirelessRow(Adw.ActionRow):
     secure_icon = Gtk.Template.Child()
     connected_label = Gtk.Template.Child()
 
-    def __init__(self, ap, **kwargs):
+    def __init__(self, ap: NM.AccessPoint, **kwargs):
         super().__init__(**kwargs)
         self.ap = ap
 
@@ -46,7 +68,7 @@ class WirelessRow(Adw.ActionRow):
         else:
             ssid = ""
 
-        # We use the same strength logic as gnome-controll-center
+        # We use the same strength logic as gnome-control-center
         strength = self.ap.get_strength()
         if strength < 20:
             icon_name = "network-wireless-signal-none-symbolic"
@@ -61,6 +83,45 @@ class WirelessRow(Adw.ActionRow):
 
         self.set_title(ssid)
         self.signal_icon.set_from_icon_name(icon_name)
+        secure, tooltip = self.__get_security()
+        if secure is not None:
+            if not secure:
+                self.secure_icon.set_from_icon_name("warning-small-symbolic")
+            self.secure_icon.set_visible(True)
+            self.secure_icon.set_tooltip_text(tooltip)
+
+    def __get_security(self) -> tuple[bool | None, str | None]:
+        flags = self.ap.get_flags()
+        rsn_flags = self.ap.get_rsn_flags()
+        wpa_flags = self.ap.get_wpa_flags()
+
+        # Copying logic used in gnome-control-center because this is a mess
+        if (
+            not (flags & NM_802_11_AP_FLAGS_PRIVACY)
+            and wpa_flags == NM_802_11_AP_SEC_NONE
+            and rsn_flags == NM_802_11_AP_SEC_NONE
+        ):
+            return AP_SECURITY_TYPES["none"]
+        elif (
+            (flags & NM_802_11_AP_FLAGS_PRIVACY)
+            and wpa_flags == NM_802_11_AP_SEC_NONE
+            and rsn_flags == NM_802_11_AP_SEC_NONE
+        ):
+            return AP_SECURITY_TYPES["wep"]
+        elif (
+            (flags & NM_802_11_AP_FLAGS_PRIVACY)
+            and wpa_flags != NM_802_11_AP_SEC_NONE
+            and rsn_flags != NM_802_11_AP_SEC_NONE
+        ):
+            return AP_SECURITY_TYPES["wpa"]
+        elif rsn_flags & NM_802_11_AP_SEC_KEY_MGMT_SAE:
+            return AP_SECURITY_TYPES["sae"]
+        elif rsn_flags & NM_802_11_AP_SEC_KEY_MGMT_OWE:
+            return AP_SECURITY_TYPES["owe"]
+        elif rsn_flags & NM_802_11_AP_SEC_KEY_MGMT_OWE_TM:
+            return AP_SECURITY_TYPES["owe_tm"]
+        else:
+            return AP_SECURITY_TYPES["wpa2"]
 
 
 @Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/default-network.ui")
