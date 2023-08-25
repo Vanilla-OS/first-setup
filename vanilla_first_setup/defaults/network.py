@@ -18,8 +18,9 @@
 
 import time
 from gettext import gettext as _
+from threading import Timer
 
-from gi.repository import NM, NMA4, Adw, Gtk
+from gi.repository import NM, Adw, Gtk
 
 from vanilla_first_setup.utils.run_async import RunAsync
 
@@ -57,17 +58,18 @@ class WirelessRow(Adw.ActionRow):
     def __init__(self, ap: NM.AccessPoint, **kwargs):
         super().__init__(**kwargs)
         self.ap = ap
+        self.refresh_ui()
 
-        self.__build_ui()
-
-    def __build_ui(self):
-        # TODO: Add lock icon if connection has security
+    @property
+    def ssid(self):
         ssid = self.ap.get_ssid()
         if ssid is not None:
             ssid = ssid.get_data().decode("utf-8")
         else:
             ssid = ""
+        return ssid
 
+    def refresh_ui(self):
         # We use the same strength logic as gnome-control-center
         strength = self.ap.get_strength()
         if strength < 20:
@@ -81,13 +83,17 @@ class WirelessRow(Adw.ActionRow):
         else:
             icon_name = "network-wireless-signal-excellent-symbolic"
 
-        self.set_title(ssid)
+        self.set_title(self.ssid)
         self.signal_icon.set_from_icon_name(icon_name)
         secure, tooltip = self.__get_security()
         if secure is not None:
             if not secure:
                 self.secure_icon.set_from_icon_name("warning-small-symbolic")
-            self.secure_icon.set_visible(True)
+            else:
+                self.secure_icon.set_from_icon_name("network-wireless-encrypted-symbolic")
+
+        self.secure_icon.set_visible(secure is not None)
+        if tooltip is not None:
             self.secure_icon.set_tooltip_text(tooltip)
 
     def __get_security(self) -> tuple[bool | None, str | None]:
@@ -142,8 +148,9 @@ class VanillaDefaultNetwork(Adw.Bin):
         self.__step = step
         self.__nm_client = NM.Client.new()
 
+        self.__devices = []
         self.__wired_children = []
-        self.__wireless_children = []
+        self.__wireless_children = {}
 
         self.__last_wifi_scan = 0
 
@@ -153,8 +160,11 @@ class VanillaDefaultNetwork(Adw.Bin):
         self.has_eth_connection = False
         self.has_wifi_connection = False
 
+        self.__get_network_devices()
         self.__start_auto_refresh()
 
+        self.__nm_client.connect("device-added", self.__add_new_device)
+        self.__nm_client.connect("device-added", self.__remove_device)
         self.btn_next.connect("clicked", self.__window.next)
 
     @property
@@ -185,32 +195,40 @@ class VanillaDefaultNetwork(Adw.Bin):
                     self.__add_ethernet_connection(device)
                     eth_devices += 1
                 elif device_type == NM.DeviceType.WIFI:
-                    self.__add_wifi_networks(device)
+                    self.__refresh_wifi_list(device)
                     wifi_devices += 1
                 else:
                     continue
 
+                self.__devices.append(device)
+
         self.wired_group.set_visible(eth_devices > 0)
         self.wireless_group.set_visible(wifi_devices > 0)
 
+    def __add_new_device(self, client, device):
+        self.__devices.append(device)
+
+    def __remove_device(self, client, device):
+        self.__devices.remove(device)
+
     def __refresh(self):
-        # TODO: Re-use rows to prevent list from jumping around
         for child in self.__wired_children:
             self.wired_group.remove(child)
-        for child in self.__wireless_children:
-            self.wireless_group.remove(child)
 
         self.__wired_children = []
-        self.__wireless_children = []
 
-        self.__get_network_devices()
+        for device in self.__devices:
+            device_type = device.get_device_type()
+            if device_type == NM.DeviceType.WIFI:
+                self.__scan_wifi(device)
+
         self.set_btn_next(self.has_eth_connection or self.has_wifi_connection)
 
     def __start_auto_refresh(self):
         def run_async():
             while True:
                 self.__refresh()
-                time.sleep(5)
+                time.sleep(15)
 
         RunAsync(run_async, None)
 
@@ -261,34 +279,62 @@ class VanillaDefaultNetwork(Adw.Bin):
         self.wired_group.add(eth_conn)
         self.__wired_children.append(eth_conn)
 
-    def __add_wifi_networks(self, conn: NM.DeviceWifi):
-        def scan_callback(source_object, res, *data):
-            while source_object.get_last_scan() == self.__last_wifi_scan:
-                time.sleep(0.25)
+    def __refresh_wifi_list(self, conn: NM.DeviceWifi):
+        while conn.get_last_scan() == self.__last_wifi_scan:
+            time.sleep(0.25)
 
-            networks = {}
-            for ap in source_object.get_access_points():
-                ssid = ap.get_ssid()
-                if ssid is None:
-                    continue
+        networks = {}
+        for ap in conn.get_access_points():
+            ssid = ap.get_ssid()
+            if ssid is None:
+                continue
 
-                ssid = ssid.get_data().decode("utf-8")
-                if ssid in networks.keys():
-                    networks[ssid].append(ap)
-                else:
-                    networks[ssid] = [ap]
+            ssid = ssid.get_data().decode("utf-8")
+            if ssid in networks.keys():
+                networks[ssid].append(ap)
+            else:
+                networks[ssid] = [ap]
 
-            for ssid, aps in networks.items():
-                max_strength = -1
-                best_ap = None
-                for ap in aps:
-                    ap_strength = ap.get_strength()
-                    if ap_strength > max_strength:
-                        max_strength = ap_strength
-                        best_ap = ap
+        # Invalidate current list
+        for ssid, (child, clean) in self.__wireless_children.items():
+            self.__wireless_children[ssid] = (child, True)
 
-                wifi_network = WirelessRow(best_ap)
-                self.wireless_group.add(wifi_network)
-                self.__wireless_children.append(wifi_network)
+        for ssid, aps in networks.items():
+            max_strength = -1
+            best_ap = None
+            for ap in aps:
+                ap_strength = ap.get_strength()
+                if ap_strength > max_strength:
+                    max_strength = ap_strength
+                    best_ap = ap
 
-        conn.request_scan_async(callback=scan_callback)
+            # Try to re-use entries with the same SSID
+            if ssid in self.__wireless_children.keys():
+                child = self.__wireless_children[ssid][0]
+                child.ap = best_ap
+                child.refresh_ui()
+                self.__wireless_children[ssid] = (child, False)
+                continue
+
+            # Create new row if SSID is new
+            wifi_network = WirelessRow(best_ap)
+            self.wireless_group.add(wifi_network)
+            self.__wireless_children[ssid] = (wifi_network, False)
+
+        # Remove invalid rows
+        invalid_ssids = []
+        for ssid, (child, clean) in self.__wireless_children.items():
+            if clean:
+                self.wireless_group.remove(child)
+                invalid_ssids.append(ssid)
+
+        for ssid in invalid_ssids:
+            del self.__wireless_children[ssid]
+
+    def __scan_wifi(self, conn: NM.DeviceWifi):
+        self.__last_wifi_scan = conn.get_last_scan()
+        conn.request_scan_async()
+        print("Running scan")
+
+        t = Timer(1.5, self.__refresh_wifi_list, [conn])
+        t.start()
