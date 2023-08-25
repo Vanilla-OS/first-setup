@@ -4,6 +4,11 @@ install_data(
 )
 
 install_data(
+     'firstsetup.desktop',
+     install_dir: join_paths(get_option('datadir'), 'wayland-sessions')
+)
+
+install_data(
     'org.vanillaos.FirstSetup.NewUser.desktop',
     install_dir: join_paths(get_option('datadir'), 'applications')
 )
