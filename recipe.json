@@ -4,9 +4,9 @@
     "distro_logo": "org.vanillaos.FirstSetup-flower",
     "pre_run": [],
     "post_run": [
-        "pkexec /etc/vanilla-first-setup/first_setup_post",
-        "pkexec abroot pkg apply",
-        "!nextBoot pkexec /etc/vanilla-first-setup/first_setup_post_boot"
+        "/etc/vanilla-first-setup/first_setup_post",
+        "abroot pkg apply",
+        "!nextBoot /etc/vanilla-first-setup/first_setup_post_boot"
     ],
     "tour": {
         "get-involved": {

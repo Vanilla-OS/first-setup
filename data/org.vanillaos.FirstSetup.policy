@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE policyconfig PUBLIC
  "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
- "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+
 <policyconfig>
-  <vendor>vanillaos</vendor>
-  <vendor_url>https://github.com/vanillaos/first-setup</vendor_url>
-  <icon_name>system-file-manager</icon_name>
-  <action id="org.freedesktop.policykit.pkexec.org.vanillaos.FirstSetup">
-   <description>Run First Setup as Administrator</description>
-   <defaults>
-     <allow_any>auth_admin</allow_any>
-     <allow_inactive>auth_admin</allow_inactive>
-     <allow_active>auth_admin</allow_active>
-   </defaults>
-     <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/vanilla-first-setup</annotate>
-     <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
-   </action>
+
+  <action id="org.vanillaos.FirstSetup.exec">
+    <description>Run Vanilla OS First Setup</description>
+    <message>Run the Vanilla OS First Setup with privileges</message>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/vanilla-first-setup-exec</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">TRUE</annotate>
+  </action>
+
 </policyconfig>

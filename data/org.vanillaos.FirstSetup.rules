@@ -1,0 +1,8 @@
+polkit.addRule(function(action, subject) {
+    if (action.id == "org.vanillaos.FirstSetup.exec")
+    {
+        polkit.log("action=" + action);
+        polkit.log("subject=" + subject);
+        return polkit.Result.YES;
+    }
+});
