@@ -1,3 +1,27 @@
+vanilla-first-setup (2.1.0) unstable; urgency=critical
+
+  * Add network step
+
+ -- Mateus Melchiades <matbme@duck.com>  Mon, 26 Jul 2023 10:52:00 -0300
+
+vanilla-first-setup (2.0.7) unstable; urgency=critical
+
+  * Correctly use log_file variable from recipe
+
+ -- Mateus Melchiades <matbme@duck.com>  Mon, 30 Jul 2023 19:18:00 -0300
+
+vanilla-first-setup (2.0.6) unstable; urgency=critical
+
+  * Post script fixes
+
+ -- Mateus Melchiades <matbme@duck.com>  Mon, 27 Jul 2023 10:35:00 -0300
+
+vanilla-first-setup (2.0.5) unstable; urgency=critical
+
+  * Default user cleanup fixes
+
+ -- Mateus Melchiades <matbme@duck.com>  Mon, 27 Jul 2023 09:04:00 -0300
+
 vanilla-first-setup (2.0.3) unstable; urgency=critical
 
   * Change log font

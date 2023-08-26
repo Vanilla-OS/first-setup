@@ -20,6 +20,9 @@
 - libadwaita-1-dev
 - gettext
 - desktop-file-utils
+- libnm-dev
+- libnma-dev
+- libnma-gtk4-dev
 
 ### Build
 ```bash

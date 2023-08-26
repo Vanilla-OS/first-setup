@@ -2,7 +2,7 @@ Source: vanilla-first-setup
 Section: utils
 Priority: optional
 Maintainer: Mirko Brombin <send@mirko.pm>
-Build-Depends: 
+Build-Depends:
             build-essential,
             debhelper,
             python3,
@@ -11,7 +11,10 @@ Build-Depends:
             gettext,
             desktop-file-utils,
             make,
-            libjpeg-dev
+            libjpeg-dev,
+            libnm-dev,
+            libnma-dev,
+            libnma-gtk4-dev
 Homepage: https://github.com/mirkobrombin/vanilla-first-setup/
 Vcs-Browser: hhttps://github.com/mirkobrombin/vanilla-first-setup
 Vcs-Git: https://github.com/mirkobrombin/vanilla-first-setup.git
@@ -24,5 +27,8 @@ Depends: python3,
          libadwaita-1-0,
          gir1.2-gtk-4.0,
          gir1.2-adw-1,
-         gir1.2-vte-3.91
-Description: This utility is meant to be used in Ubuntu Vanilla GNOME as a first-setup wizard.
+         gir1.2-vte-3.91,
+         libnm0,
+         libnma0,
+         libnma-gtk4-0
+Description: This utility is meant to be used in Vanilla GNOME as a first-setup wizard.
