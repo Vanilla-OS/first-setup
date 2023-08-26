@@ -26,6 +26,7 @@ from vanilla_first_setup.defaults.welcome import VanillaDefaultWelcome
 from vanilla_first_setup.defaults.theme import VanillaDefaultTheme
 from vanilla_first_setup.defaults.user import VanillaDefaultUser
 from vanilla_first_setup.defaults.hostname import VanillaDefaultHostname
+from vanilla_first_setup.defaults.network import VanillaDefaultNetwork
 
 from vanilla_first_setup.layouts.preferences import VanillaLayoutPreferences
 from vanilla_first_setup.layouts.yes_no import VanillaLayoutYesNo
@@ -36,6 +37,7 @@ logger = logging.getLogger("FirstSetup::Builder")
 
 
 templates = {
+    "network": VanillaDefaultNetwork,
     "conn-check": VanillaDefaultConnCheck,
     "welcome": VanillaDefaultWelcome,
     "theme": VanillaDefaultTheme,
@@ -43,12 +45,11 @@ templates = {
     "hostname": VanillaDefaultHostname,
     "preferences": VanillaLayoutPreferences,
     "yes-no": VanillaLayoutYesNo,
-    "applications": VanillaLayoutApplications
+    "applications": VanillaLayoutApplications,
 }
 
 
 class Builder:
-
     def __init__(self, window, new_user: bool = False):
         self.__window = window
         self.__new_user = new_user
@@ -68,12 +69,12 @@ class Builder:
 
         if not os.path.exists(log_path):
             try:
-                open(log_path, 'a').close()
-            except OSError:
-                logger.warning("failed to create log file: %s" % log_path)
+                open(log_path, "a").close()
+            except OSError as e:
+                logger.warning(f"failed to create log file: {log_path}: {e}")
                 logging.warning("No log will be stored.")
 
-        for key, step in self.__recipe.raw["steps"].items():
+        for i, (key, step) in enumerate(self.__recipe.raw["steps"].items()):
             _status = True
             _protected = False
 
@@ -81,13 +82,20 @@ class Builder:
                 _condition_met = False
                 for command in step["display-conditions"]:
                     try:
-                        logger.info("Performing display-condition: %s" % command)
-                        output = subprocess.check_output(command, shell=True, stderr=subprocess.STDOUT)
-                        if output.decode("utf-8") == "" or output.decode("utf-8") == "1":
-                            logger.info("Step %s skipped due to display-conditions" % key)
+                        logger.info(f"Performing display-condition: {command}")
+                        output = subprocess.check_output(
+                            command, shell=True, stderr=subprocess.STDOUT
+                        )
+                        if (
+                            output.decode("utf-8") == ""
+                            or output.decode("utf-8") == "1"
+                        ):
+                            logger.info(
+                                "Step {key} skipped due to display-conditions"
+                            )
                             break
                     except subprocess.CalledProcessError:
-                        logger.info("Step %s skipped due to display-conditions" % key)
+                        logger.info(f"Step {key} skipped due to display-conditions")
                         break
                 else:
                     _condition_met = True
@@ -102,7 +110,10 @@ class Builder:
             _protected = step.get("protected", False)
 
             if step["template"] in templates:
-                _widget = templates[step["template"]](self.__window, self.distro_info, key, step)
+                step["num"] = i
+                _widget = templates[step["template"]](
+                    self.__window, self.distro_info, key, step
+                )
                 self.__register_widgets.append((_widget, _status, _protected))
 
     def get_temp_finals(self, step_id: str):
@@ -132,5 +143,5 @@ class Builder:
     def distro_info(self):
         return {
             "name": self.__recipe.raw["distro_name"],
-            "logo": self.__recipe.raw["distro_logo"]
+            "logo": self.__recipe.raw["distro_logo"],
         }

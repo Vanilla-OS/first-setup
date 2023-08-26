@@ -8,7 +8,8 @@ sources = [
   'user.py',
   'hostname.py',
   'applications.py',
-  'conn_check.py'
+  'conn_check.py',
+  'network.py',
 ]
 
 install_data(sources, install_dir: defaultsdir)

@@ -35,13 +35,13 @@ class RunAsync(threading.Thread):
     def __init__(self, task_func, callback=None, *args, **kwargs):
         if "DEBUG_MODE" in os.environ:
             import faulthandler
+
             faulthandler.enable()
 
         self.source_id = None
         assert threading.current_thread() is threading.main_thread()
 
-        super(RunAsync, self).__init__(
-            target=self.__target, args=args, kwargs=kwargs)
+        super(RunAsync, self).__init__(target=self.__target, args=args, kwargs=kwargs)
 
         self.task_func = task_func
 
@@ -59,13 +59,14 @@ class RunAsync(threading.Thread):
         try:
             result = self.task_func(*args, **kwargs)
         except Exception as exception:
-            logger.error("Error while running async job: "
-                         f"{self.task_func}\nException: {exception}")
+            logger.error(
+                "Error while running async job: "
+                f"{self.task_func}\nException: {exception}"
+            )
 
             error = exception
             _ex_type, _ex_value, trace = sys.exc_info()
             traceback.print_tb(trace)
-            traceback_info = '\n'.join(traceback.format_tb(trace))
 
         self.source_id = GLib.idle_add(self.callback, result, error)
         return self.source_id

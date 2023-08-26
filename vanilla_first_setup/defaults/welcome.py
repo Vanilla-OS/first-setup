@@ -20,9 +20,9 @@ from gi.repository import Gtk, GLib, Adw
 from vanilla_first_setup.utils.run_async import RunAsync
 
 
-@Gtk.Template(resource_path='/org/vanillaos/FirstSetup/gtk/default-welcome.ui')
+@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/default-welcome.ui")
 class VanillaDefaultWelcome(Adw.Bin):
-    __gtype_name__ = 'VanillaDefaultWelcome'
+    __gtype_name__ = "VanillaDefaultWelcome"
 
     btn_advanced = Gtk.Template.Child()
     btn_next = Gtk.Template.Child()
@@ -30,40 +30,40 @@ class VanillaDefaultWelcome(Adw.Bin):
     title_label = Gtk.Template.Child()
 
     welcome = [
-        'Welcome',
-        'Benvenuto',
-        'Bienvenido',
-        'Bienvenue',
-        'Willkommen',
-        'Bem-vindo',
-        'Добро пожаловать',
-        '欢迎',
-        'ようこそ',
-        '환영합니다',
-        'أهلا بك',
-        'ברוך הבא',
-        'Καλώς ήρθατε',
-        'Hoşgeldiniz',
-        'Welkom',
-        'Witamy',
-        'Välkommen',
-        'Tervetuloa',
-        'Vítejte',
-        'Üdvözöljük',
-        'Bun venit',
-        'Vitajte',
-        'Tere tulemast',
-        'Sveiki atvykę',
-        'Dobrodošli',
-        'خوش آمدید',
-        'आपका स्वागत है',
-        'স্বাগতম',
-        'வரவேற்கிறோம்',
-        'స్వాగతం',
-        'मुबारक हो',
-        'સુસ્વાગત છે',
-        'ಸುಸ್ವಾಗತ',
-        'സ്വാഗതം'
+        "Welcome",
+        "Benvenuto",
+        "Bienvenido",
+        "Bienvenue",
+        "Willkommen",
+        "Bem-vindo",
+        "Добро пожаловать",
+        "欢迎",
+        "ようこそ",
+        "환영합니다",
+        "أهلا بك",
+        "ברוך הבא",
+        "Καλώς ήρθατε",
+        "Hoşgeldiniz",
+        "Welkom",
+        "Witamy",
+        "Välkommen",
+        "Tervetuloa",
+        "Vítejte",
+        "Üdvözöljük",
+        "Bun venit",
+        "Vitajte",
+        "Tere tulemast",
+        "Sveiki atvykę",
+        "Dobrodošli",
+        "خوش آمدید",
+        "आपका स्वागत है",
+        "স্বাগতম",
+        "வரவேற்கிறோம்",
+        "స్వాగతం",
+        "मुबारक हो",
+        "સુસ્વાગત છે",
+        "ಸುಸ್ವಾಗತ",
+        "സ്വാഗതം",
     ]
 
     def __init__(self, window, distro_info, key, step, **kwargs):
@@ -82,7 +82,7 @@ class VanillaDefaultWelcome(Adw.Bin):
 
         # set distro logo
         self.status_page.set_icon_name(self.__distro_info["logo"])
-    
+
     @property
     def step_id(self):
         return self.__key

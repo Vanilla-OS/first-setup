@@ -14,18 +14,17 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+from vanilla_first_setup.window import VanillaWindow
+from gi.repository import Gtk, Gdk, Gio, GLib, Adw
 import os
 import gi
 import sys
 import logging
 from gettext import gettext as _
 
-gi.require_version('Gtk', '4.0')
-gi.require_version('Adw', '1')
-gi.require_version('Vte', '3.91')
-
-from gi.repository import Gtk, Gdk, Gio, GLib, Adw, Vte, Pango
-from vanilla_first_setup.window import VanillaWindow
+gi.require_version("Gtk", "4.0")
+gi.require_version("Adw", "1")
+gi.require_version("Vte", "3.91")
 
 
 logging.basicConfig(level=logging.INFO)
@@ -36,13 +35,15 @@ class FirstSetupApplication(Adw.Application):
     """The main application singleton class."""
 
     def __init__(self):
-        super().__init__(application_id='org.vanillaos.FirstSetup',
-                         flags=Gio.ApplicationFlags.HANDLES_COMMAND_LINE)
+        super().__init__(
+            application_id="org.vanillaos.FirstSetup",
+            flags=Gio.ApplicationFlags.HANDLES_COMMAND_LINE,
+        )
         self.post_script = None
         self.user = os.environ.get("USER")
         self.new_user = False
 
-        self.create_action('quit', self.close, ['<primary>q'])
+        self.create_action("quit", self.close, ["<primary>q"])
         self.__register_arguments()
 
     def __register_arguments(self):
@@ -53,7 +54,7 @@ class FirstSetupApplication(Adw.Application):
             GLib.OptionFlags.NONE,
             GLib.OptionArg.STRING,
             _("Run a post script"),
-            None
+            None,
         )
         self.add_main_option(
             "new-user",
@@ -61,7 +62,7 @@ class FirstSetupApplication(Adw.Application):
             GLib.OptionFlags.NONE,
             GLib.OptionArg.NONE,
             _("Run as a new user"),
-            None
+            None,
         )
 
     def do_command_line(self, command_line):
@@ -90,11 +91,16 @@ class FirstSetupApplication(Adw.Application):
         Gtk.StyleContext.add_provider_for_display(
             display=Gdk.Display.get_default(),
             provider=provider,
-            priority=Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+            priority=Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION,
         )
         win = self.props.active_window
         if not win:
-            win = VanillaWindow(application=self, post_script=self.post_script, user=self.user, new_user=self.new_user)
+            win = VanillaWindow(
+                application=self,
+                post_script=self.post_script,
+                user=self.user,
+                new_user=self.new_user,
+            )
         win.present()
 
     def create_action(self, name, callback, shortcuts=None):

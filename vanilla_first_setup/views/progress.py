@@ -15,16 +15,16 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import time
-from gi.repository import Gtk, Gdk, Gio, GLib, Adw, Vte, Pango
+from gi.repository import Gtk, Gdk, Gio, GLib, Vte, Pango
 
 from vanilla_first_setup.utils.run_async import RunAsync
 
 from vanilla_first_setup.views.tour import VanillaTour
 
 
-@Gtk.Template(resource_path='/org/vanillaos/FirstSetup/gtk/progress.ui')
+@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/progress.ui")
 class VanillaProgress(Gtk.Box):
-    __gtype_name__ = 'VanillaProgress'
+    __gtype_name__ = "VanillaProgress"
 
     carousel_tour = Gtk.Template.Child()
     tour_button = Gtk.Template.Child()
@@ -37,7 +37,7 @@ class VanillaProgress(Gtk.Box):
     def __init__(self, window, tour: dict, **kwargs):
         super().__init__(**kwargs)
         self.__window = window
-        self.__tour = tour    
+        self.__tour = tour
         self.__success_fn = None
         self.__terminal = Vte.Terminal()
         self.__font = Pango.FontDescription()
@@ -70,8 +70,24 @@ class VanillaProgress(Gtk.Box):
         self.console_output.append(self.__terminal)
         self.__terminal.connect("child-exited", self.on_vte_child_exited)
 
-        palette = ["#353535", "#c01c28", "#26a269", "#a2734c", "#12488b", "#a347ba", "#2aa1b3", "#cfcfcf", "#5d5d5d", "#f66151", "#33d17a", "#e9ad0c", "#2a7bde", "#c061cb", "#33c7de", "#ffffff"]
-
+        palette = [
+            "#353535",
+            "#c01c28",
+            "#26a269",
+            "#a2734c",
+            "#12488b",
+            "#a347ba",
+            "#2aa1b3",
+            "#cfcfcf",
+            "#5d5d5d",
+            "#f66151",
+            "#33d17a",
+            "#e9ad0c",
+            "#2a7bde",
+            "#c061cb",
+            "#33c7de",
+            "#ffffff",
+        ]
         FOREGROUND = palette[0]
         BACKGROUND = palette[15]
         FOREGROUND_DARK = palette[15]
@@ -82,11 +98,11 @@ class VanillaProgress(Gtk.Box):
 
         self.colors = [Gdk.RGBA() for c in palette]
         [color.parse(s) for (color, s) in zip(self.colors, palette)]
-        desktop_schema = Gio.Settings.new('org.gnome.desktop.interface')
-        if desktop_schema.get_enum('color-scheme') == 0:
+        desktop_schema = Gio.Settings.new("org.gnome.desktop.interface")
+        if desktop_schema.get_enum("color-scheme") == 0:
             self.fg.parse(FOREGROUND)
             self.bg.parse(BACKGROUND)
-        elif desktop_schema.get_enum('color-scheme') == 1:
+        elif desktop_schema.get_enum("color-scheme") == 1:
             self.fg.parse(FOREGROUND_DARK)
             self.bg.parse(BACKGROUND_DARK)
         self.__terminal.set_colors(self.fg, self.bg, self.colors)
@@ -97,11 +113,11 @@ class VanillaProgress(Gtk.Box):
         self.__start_tour()
 
     def __switch_tour(self, *args):
-        cur_index = self.carousel_tour.get_position()
-        page = self.carousel_tour.get_nth_page(cur_index + 1)
+        cur_index = self.carousel_tour.get_position() + 1
+        if cur_index == self.carousel_tour.get_n_pages():
+            cur_index = 0
 
-        if page is None:
-            page = self.carousel_tour.get_nth_page(0)
+        page = self.carousel_tour.get_nth_page(cur_index)
 
         self.carousel_tour.scroll_to(page, True)
 
@@ -137,5 +153,5 @@ class VanillaProgress(Gtk.Box):
             None,
             -1,
             None,
-            None
+            None,
         )

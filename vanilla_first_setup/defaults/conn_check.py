@@ -16,17 +16,23 @@
 
 from requests import Session
 from collections import OrderedDict
-import requests
+
+import logging
 import os
 
-from gi.repository import Gtk, GLib, Adw
+from gi.repository import Gtk, Adw
 
 from vanilla_first_setup.utils.run_async import RunAsync
+from gettext import gettext as _
 
 
-@Gtk.Template(resource_path='/org/vanillaos/FirstSetup/gtk/default-conn-check.ui')
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("FirstSetup::Conn_Check")
+
+
+@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/default-conn-check.ui")
 class VanillaDefaultConnCheck(Adw.Bin):
-    __gtype_name__ = 'VanillaDefaultConnCheck'
+    __gtype_name__ = "VanillaDefaultConnCheck"
 
     btn_recheck = Gtk.Template.Child()
     status_page = Gtk.Template.Child()
@@ -37,12 +43,16 @@ class VanillaDefaultConnCheck(Adw.Bin):
         self.__distro_info = distro_info
         self.__key = key
         self.__step = step
+        self.__step_num = step["num"]
 
-        # connection check start
-        self.__start_conn_check()
+        self.__ignore_callback = False
 
         # signals
         self.btn_recheck.connect("clicked", self.__on_btn_recheck_clicked)
+        self.__window.carousel.connect("page-changed", self.__conn_check)
+        self.__window.btn_back.connect(
+            "clicked", self.__on_btn_back_clicked, self.__window.carousel.get_position()
+        )
 
     @property
     def step_id(self):
@@ -51,32 +61,49 @@ class VanillaDefaultConnCheck(Adw.Bin):
     def get_finals(self):
         return {}
 
-    def __start_conn_check(self):
+    def __on_btn_back_clicked(self, data, idx):
+        if idx + 1 != self.__step_num:
+            return
+        self.__ignore_callback = True
+
+    def __conn_check(self, carousel=None, idx=None):
+        if idx is not None and idx != self.__step_num:
+            return
+
         def async_fn():
             if "VANILLA_SKIP_CONN_CHECK" in os.environ:
                 return True
 
             try:
                 s = Session()
-                headers = OrderedDict({
-                    'Accept-Encoding': 'gzip, deflate, br',
-                    'Host': "vanillaos.org",
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:77.0) Gecko/20100101 Firefox/77.0'
-                })
+                headers = OrderedDict(
+                    {
+                        "Accept-Encoding": "gzip, deflate, br",
+                        "Host": "vanillaos.org",
+                        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:77.0) Gecko/20100101 Firefox/77.0",
+                    }
+                )
                 s.headers = headers
-                s.get(f"https://vanillaos.org/", headers=headers, verify=True)
+                s.get("https://vanillaos.org/", headers=headers, verify=True)
                 return True
-            except:
+            except Exception as e:
+                logger.error(f"Connection check failed: {str(e)}")
                 return False
 
         def callback(res, *args):
+            if self.__ignore_callback:
+                self.__ignore_callback = False
+                return
+
             if res:
                 self.__window.next()
                 return
 
             self.status_page.set_icon_name("network-wired-disconnected-symbolic")
             self.status_page.set_title(_("No Internet Connection!"))
-            self.status_page.set_description(_("First Setup requires an active internet connection"))
+            self.status_page.set_description(
+                _("First Setup requires an active internet connection")
+            )
             self.btn_recheck.set_visible(True)
 
         RunAsync(async_fn, callback)
@@ -85,5 +112,7 @@ class VanillaDefaultConnCheck(Adw.Bin):
         widget.set_visible(False)
         self.status_page.set_icon_name("content-loading-symbolic")
         self.status_page.set_title(_("Checking Connection…"))
-        self.status_page.set_description(_("Please wait until the connection check is done."))
-        self.__start_conn_check()
+        self.status_page.set_description(
+            _("Please wait until the connection check is done.")
+        )
+        self.__conn_check()

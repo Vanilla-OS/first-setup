@@ -16,15 +16,15 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import sys
-import time
-import re, subprocess, shutil
-from gi.repository import Gtk, Gio, GLib, Adw
+import re
+import subprocess
+import shutil
+from gi.repository import Gtk, Adw
 
 
-@Gtk.Template(resource_path='/org/vanillaos/FirstSetup/gtk/default-user.ui')
+@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/default-user.ui")
 class VanillaDefaultUser(Adw.Bin):
-    __gtype_name__ = 'VanillaDefaultUser'
+    __gtype_name__ = "VanillaDefaultUser"
 
     btn_next = Gtk.Template.Child()
     fullname_entry = Gtk.Template.Child()
@@ -48,10 +48,10 @@ class VanillaDefaultUser(Adw.Bin):
 
         # signals
         self.btn_next.connect("clicked", self.__on_btn_next_clicked)
-        self.fullname_entry.connect('changed', self.__on_fullname_entry_changed)
-        self.username_entry.connect('changed', self.__on_username_entry_changed)
-        self.password_entry.connect('changed', self.__on_password_changed)
-        self.password_confirmation.connect('changed', self.__on_password_changed)
+        self.fullname_entry.connect("changed", self.__on_fullname_entry_changed)
+        self.username_entry.connect("changed", self.__on_username_entry_changed)
+        self.password_entry.connect("changed", self.__on_password_changed)
+        self.password_confirmation.connect("changed", self.__on_password_changed)
 
     @property
     def step_id(self):
@@ -63,20 +63,18 @@ class VanillaDefaultUser(Adw.Bin):
 
     def get_finals(self):
         return {
-            "vars": {
-                "createUser": True
-            },
+            "vars": {"createUser": True},
             "funcs": [
                 {
                     "if": "createUser",
                     "type": "command",
                     "commands": [
-                        f"adduser --quiet --disabled-password --shell /bin/bash --gecos \"{self.fullname}\" {self.username}",
-                        f"echo \"{self.username}:{self.password_entry.get_text()}\" | chpasswd",
-                        f"usermod -a -G sudo,adm,lpadmin {self.username}"
-                    ]
+                        f'adduser --quiet --disabled-password --shell /bin/bash --gecos "{self.fullname}" {self.username}',
+                        f'echo "{self.username}:{self.password_entry.get_text()}" | chpasswd',
+                        f"usermod -a -G sudo,adm,lpadmin {self.username}",
+                    ],
                 }
-            ]
+            ],
         }
 
     def __on_fullname_entry_changed(self, *args):
@@ -102,9 +100,11 @@ class VanillaDefaultUser(Adw.Bin):
             _input = self.username_entry.get_text()
 
         # cannot contain special characters
-        if re.search(r'[^a-z0-9_-]', _input):
+        if re.search(r"[^a-z0-9_-]", _input):
             _status = False
-            self.__window.toast("Username cannot contain special characters or uppercase letters. Please choose another username.")
+            self.__window.toast(
+                "Username cannot contain special characters or uppercase letters. Please choose another username."
+            )
 
         # cannot be empty
         elif not _input:
@@ -114,39 +114,40 @@ class VanillaDefaultUser(Adw.Bin):
         # cannot be root
         elif _input == "root":
             _status = False
-            self.__window.toast("root user is reserved. Please choose another username.")
+            self.__window.toast(
+                "root user is reserved. Please choose another username."
+            )
 
         if not _status:
-            self.username_entry.add_css_class('error')
+            self.username_entry.add_css_class("error")
             self.username_filled = False
             self.__verify_continue()
         else:
-            self.username_entry.remove_css_class('error')
+            self.username_entry.remove_css_class("error")
             self.username_filled = True
             self.__verify_continue()
             self.username = _input
 
-
     def __on_password_changed(self, *args):
         password = self.password_entry.get_text()
-        if password == self.password_confirmation.get_text() \
-                and password.strip():
-            self.password_filled = True;
-            self.password_confirmation.remove_css_class('error')
+        if password == self.password_confirmation.get_text() and password.strip():
+            self.password_filled = True
+            self.password_confirmation.remove_css_class("error")
             self.password = self.__encrypt_password(password)
         else:
-            self.password_filled = False;
-            self.password_confirmation.add_css_class('error')
+            self.password_filled = False
+            self.password_confirmation.add_css_class("error")
 
-        self.__verify_continue();
+        self.__verify_continue()
 
     def __verify_continue(self):
-        self.btn_next.set_sensitive(self.fullname_filled and self.password_filled and self.username_filled)
+        self.btn_next.set_sensitive(
+            self.fullname_filled and self.password_filled and self.username_filled
+        )
 
     def __encrypt_password(self, password):
         command = subprocess.run(
-            [shutil.which("openssl"), "passwd", "-crypt", password],
-            capture_output=True
+            [shutil.which("openssl"), "passwd", "-crypt", password], capture_output=True
         )
-        password_encrypted = command.stdout.decode('utf-8').strip('\n')
+        password_encrypted = command.stdout.decode("utf-8").strip("\n")
         return password_encrypted

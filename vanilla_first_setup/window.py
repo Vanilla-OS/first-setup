@@ -14,23 +14,23 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import time
-import contextlib
+from gettext import gettext as _
 from gi.repository import Gtk, GObject, Adw
+
+import contextlib
 
 from vanilla_first_setup.utils.builder import Builder
 from vanilla_first_setup.utils.parser import Parser
 from vanilla_first_setup.utils.processor import Processor
-from vanilla_first_setup.utils.run_async import RunAsync
 
 from vanilla_first_setup.views.progress import VanillaProgress
 from vanilla_first_setup.views.done import VanillaDone
 from vanilla_first_setup.views.post_script import VanillaPostScript
 
 
-@Gtk.Template(resource_path='/org/vanillaos/FirstSetup/gtk/window.ui')
+@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/window.ui")
 class VanillaWindow(Adw.ApplicationWindow):
-    __gtype_name__ = 'VanillaWindow'
+    __gtype_name__ = "VanillaWindow"
     __gsignals__ = {
         "page-changed": (GObject.SignalFlags.RUN_FIRST, None, (str,)),
     }
@@ -64,10 +64,12 @@ class VanillaWindow(Adw.ApplicationWindow):
 
             # system views
             self.__view_done = VanillaDone(
-                self, reboot=False, title=_("Done!"),
+                self,
+                reboot=False,
+                title=_("Done!"),
                 description=_("Your device is ready to use."),
                 fail_title=_("Error!"),
-                fail_description=_("Something went wrong.")
+                fail_description=_("Something went wrong."),
             )
 
             # this builds the UI for the post script only
@@ -140,7 +142,7 @@ class VanillaWindow(Adw.ApplicationWindow):
             self.emit("page-changed", page.step_id)
 
         if page not in pages_check:
-            self.btn_back.set_visible(cur_index > 1.0)
+            self.btn_back.set_visible(cur_index not in [0.0, 2.0])
             self.carousel_indicator_dots.set_visible(cur_index != 0.0)
             self.headerbar.set_show_end_title_buttons(cur_index != 0.0)
             return
@@ -172,7 +174,7 @@ class VanillaWindow(Adw.ApplicationWindow):
             self.recipe.get("log_file", "/tmp/vanilla_first_setup.log"),
             self.recipe.get("pre_run", []),
             self.recipe.get("post_run"),
-            commands
+            commands,
         )
 
         self.__view_progress.start(res, Processor.hide_first_setup, self.__user)
@@ -181,7 +183,14 @@ class VanillaWindow(Adw.ApplicationWindow):
         self.__view_done.set_result(result, terminal)
         self.next()
 
-    def next(self, widget: Gtk.Widget = None, result: bool = None, rebuild: bool = False, mode: int = 0, *args):
+    def next(
+        self,
+        widget: Gtk.Widget = None,
+        result: bool = None,
+        rebuild: bool = False,
+        mode: int = 0,
+        *args
+    ):
         if rebuild:
             self.rebuild_ui(mode)
 
