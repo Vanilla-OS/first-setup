@@ -239,6 +239,7 @@ class VanillaDefaultNetwork(Adw.Bin):
     wireless_group = Gtk.Template.Child()
     hidden_network_row = Gtk.Template.Child()
     proxy_settings_row = Gtk.Template.Child()
+    advanced_group = Gtk.Template.Child()
     btn_next = Gtk.Template.Child()
 
     def __init__(self, window, distro_info, key, step, **kwargs):
@@ -270,9 +271,18 @@ class VanillaDefaultNetwork(Adw.Bin):
         self.__get_network_devices()
         self.__start_auto_refresh()
 
+        # TODO: Remove once implemented
+        self.advanced_group.set_visible(False)
+
         self.__nm_client.connect("device-added", self.__add_new_device)
         self.__nm_client.connect("device-added", self.__remove_device)
         self.btn_next.connect("clicked", self.__window.next)
+        self.connect("realize", self.__try_skip_page)
+
+    def __try_skip_page(self, data):
+        # Skip page if already connected to the internet
+        if self.has_eth_connection or self.has_wifi_connection:
+            self.__window.next()
 
     @property
     def step_id(self):
@@ -303,6 +313,9 @@ class VanillaDefaultNetwork(Adw.Bin):
                     eth_devices += 1
                 elif device_type == NM.DeviceType.WIFI:
                     device.connect("state-changed", self.__on_state_changed)
+                    self.has_wifi_connection = (
+                        device.get_active_connection() is not None
+                    )
                     self.__refresh_wifi_list(device)
                     wifi_devices += 1
                 else:
@@ -320,6 +333,7 @@ class VanillaDefaultNetwork(Adw.Bin):
         self.__devices.remove(device)
 
     def __on_state_changed(self, device, new_state, old_state, reason):
+        self.has_wifi_connection = device.get_active_connection() is not None
         self.__refresh()
 
     def __refresh(self):

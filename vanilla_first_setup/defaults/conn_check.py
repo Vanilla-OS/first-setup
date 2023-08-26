@@ -45,9 +45,14 @@ class VanillaDefaultConnCheck(Adw.Bin):
         self.__step = step
         self.__step_num = step["num"]
 
+        self.__ignore_callback = False
+
         # signals
         self.btn_recheck.connect("clicked", self.__on_btn_recheck_clicked)
         self.__window.carousel.connect("page-changed", self.__conn_check)
+        self.__window.btn_back.connect(
+            "clicked", self.__on_btn_back_clicked, self.__window.carousel.get_position()
+        )
 
     @property
     def step_id(self):
@@ -56,8 +61,13 @@ class VanillaDefaultConnCheck(Adw.Bin):
     def get_finals(self):
         return {}
 
+    def __on_btn_back_clicked(self, data, idx):
+        if idx + 1 != self.__step_num:
+            return
+        self.__ignore_callback = True
+
     def __conn_check(self, carousel=None, idx=None):
-        if idx and idx != self.__step_num:
+        if idx is not None and idx != self.__step_num:
             return
 
         def async_fn():
@@ -81,6 +91,10 @@ class VanillaDefaultConnCheck(Adw.Bin):
                 return False
 
         def callback(res, *args):
+            if self.__ignore_callback:
+                self.__ignore_callback = False
+                return
+
             if res:
                 self.__window.next()
                 return

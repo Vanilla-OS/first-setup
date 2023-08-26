@@ -38,6 +38,7 @@
                 <property name="allow_scroll_wheel">False</property>
                 <property name="allow_mouse_drag">False</property>
                 <property name="allow_long_swipes">False</property>
+                <property name="interactive">False</property>
               </object>
             </child>
           </object>

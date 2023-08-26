@@ -13,7 +13,6 @@
                     <object class="GtkBox">
                         <property name="spacing">8</property>
                         <property name="orientation">1</property>
-                        
                         <child>
                             <object class="GtkOverlay">
                                 <child>
@@ -35,7 +34,6 @@
                                 </child>
                             </object>
                         </child>
-                        
                         <child>
                           <object class="GtkLabel">
                             <property name="label">Make your choices, this wizard will take care of everything.</property>

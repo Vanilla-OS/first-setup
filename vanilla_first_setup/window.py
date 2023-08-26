@@ -142,7 +142,7 @@ class VanillaWindow(Adw.ApplicationWindow):
             self.emit("page-changed", page.step_id)
 
         if page not in pages_check:
-            self.btn_back.set_visible(cur_index > 1.0)
+            self.btn_back.set_visible(cur_index not in [0.0, 2.0])
             self.carousel_indicator_dots.set_visible(cur_index != 0.0)
             self.headerbar.set_show_end_title_buttons(cur_index != 0.0)
             return
