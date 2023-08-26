@@ -345,11 +345,12 @@ class VanillaDefaultNetwork(Adw.Bin):
     def __refresh(self):
         for child in self.__wired_children:
             self.wired_group.remove(child)
-
         self.__wired_children = []
 
         for device in self.__devices:
             device_type = device.get_device_type()
+            if device_type == NM.DeviceType.ETHERNET:
+                self.__add_ethernet_connection(device)
             if device_type == NM.DeviceType.WIFI:
                 self.__scan_wifi(device)
 
