@@ -19,6 +19,7 @@
 import logging
 import time
 from gettext import gettext as _
+from operator import attrgetter
 from threading import Lock, Timer
 
 from gi.repository import NM, NMA4, Adw, Gtk
@@ -82,9 +83,21 @@ class WirelessRow(Adw.ActionRow):
             ssid = ""
         return ssid
 
+    @property
+    def signal_strength(self):
+        return self.ap.get_strength()
+
+    @property
+    def connected(self):
+        active_connection = self.device.get_active_connection()
+        if active_connection is not None:
+            if active_connection.get_id() == self.ssid:
+                return True
+        return False
+
     def refresh_ui(self):
         # We use the same strength logic as gnome-control-center
-        strength = self.ap.get_strength()
+        strength = self.signal_strength
         if strength < 20:
             icon_name = "network-wireless-signal-none-symbolic"
         elif strength < 40:
@@ -111,14 +124,7 @@ class WirelessRow(Adw.ActionRow):
         if tooltip is not None:
             self.secure_icon.set_tooltip_text(tooltip)
 
-        self.connected_label.set_visible(self.is_connected())
-
-    def is_connected(self):
-        active_connection = self.device.get_active_connection()
-        if active_connection is not None:
-            if active_connection.get_id() == self.ssid:
-                return True
-        return False
+        self.connected_label.set_visible(self.connected)
 
     def __get_security(self) -> tuple[bool | None, str | None]:
         flags = self.ap.get_flags()
@@ -353,7 +359,7 @@ class VanillaDefaultNetwork(Adw.Bin):
         def run_async():
             while True:
                 self.__refresh()
-                time.sleep(15)
+                time.sleep(10)
 
         RunAsync(run_async, None)
 
@@ -451,12 +457,15 @@ class VanillaDefaultNetwork(Adw.Bin):
         # Remove invalid rows
         invalid_ssids = []
         for ssid, (child, clean) in self.__wireless_children.items():
+            self.wireless_group.remove(child)
             if clean:
-                self.wireless_group.remove(child)
                 invalid_ssids.append(ssid)
 
         for ssid in invalid_ssids:
             del self.__wireless_children[ssid]
+
+        for row in self.__sorted_wireless_children:
+            self.wireless_group.add(row)
 
         self.__wifi_lock.release()
 
@@ -466,3 +475,18 @@ class VanillaDefaultNetwork(Adw.Bin):
 
         t = Timer(1.5, self.__refresh_wifi_list, [conn])
         t.start()
+
+    @property
+    def __sorted_wireless_children(self):
+        def multisort(xs, specs):
+            for key, reverse in reversed(specs):
+                xs.sort(key=attrgetter(key), reverse=reverse)
+            return xs
+
+        # 1 - Is connected
+        # 2 - Signal strength
+        # 3 - Alphabetically
+        return multisort(
+            [it[0] for it in list(self.__wireless_children.values())],
+            (("connected", True), ("signal_strength", True), ("ssid", True)),
+        )
