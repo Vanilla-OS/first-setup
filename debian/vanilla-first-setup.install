@@ -2,3 +2,5 @@ recipe.json usr/share/org.vanillaos.FirstSetup/
 first_setup_post etc/vanilla-first-setup/
 first_setup_post_boot etc/vanilla-first-setup/
 first-setup.txt etc/vanilla/
+data/org.vanillaos.FirstSetup.policy usr/share/polkit-1/actions/
+data/org.vanillaos.FirstSetup.rules usr/share/polkit-1/rules.d/
