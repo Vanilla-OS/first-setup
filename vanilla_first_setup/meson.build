@@ -18,8 +18,8 @@ conf.set('localedir', join_paths(get_option('prefix'), get_option('localedir')))
 conf.set('pkgdatadir', pkgdatadir)
 
 configure_file(
-  input: 'vanilla-first-setup-exec.in',
-  output: 'vanilla-first-setup-exec',
+  input: 'vanilla-first-setup.in',
+  output: 'vanilla-first-setup',
   install_mode: 'rwxr-xr-x',
   configuration: conf,
   install: true,
@@ -28,16 +28,8 @@ configure_file(
 )
 
 configure_file(
-  input: 'vanilla-first-setup-processor.in',
-  output: 'vanilla-first-setup-processor',
-  configuration: conf,
-  install: true,
-  install_dir: get_option('bindir')
-)
-
-configure_file(
-  input: 'vanilla-first-setup.in',
-  output: 'vanilla-first-setup',
+  input: 'vanilla-first-setup-prepare-files.in',
+  output: 'vanilla-first-setup-prepare-files',
   configuration: conf,
   install: true,
   install_dir: get_option('bindir')

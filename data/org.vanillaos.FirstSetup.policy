@@ -5,15 +5,39 @@
 
 <policyconfig>
 
-  <action id="org.vanillaos.FirstSetup.exec">
-    <description>Run Vanilla OS First Setup</description>
+  <action id="org.vanillaos.FirstSetup.commands">
+    <description>Run Vanilla OS First Setup Commands</description>
     <message>Run the Vanilla OS First Setup with privileges</message>
     <defaults>
-      <allow_any>no</allow_any>
-      <allow_inactive>no</allow_inactive>
-      <allow_active>auth_admin_keep</allow_active>
+      <allow_any>yes</allow_any>
+      <allow_inactive>yes</allow_inactive>
+      <allow_active>yes</allow_active>
     </defaults>
-    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/vanilla-first-setup-exec</annotate>
+    <annotate key="org.freedesktop.policykit.exec.path">/etc/org.vanillaos.FirstSetup.commands</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">TRUE</annotate>
+  </action>
+
+  <action id="org.vanillaos.FirstSetup.nextBoot">
+    <description>Run Vanilla OS First Setup Next Boot</description>
+    <message>Run the Vanilla OS First Setup Boot commands with privileges</message>
+    <defaults>
+      <allow_any>yes</allow_any>
+      <allow_inactive>yes</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/etc/org.vanillaos.FirstSetup.nextBoot</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">TRUE</annotate>
+  </action>
+
+  <action id="org.vanillaos.FirstSetup.prepare">
+    <description>Run Vanilla OS First Setup Prepare</description>
+    <message>Run the Vanilla OS First Setup Prepare with privileges</message>
+    <defaults>
+      <allow_any>yes</allow_any>
+      <allow_inactive>yes</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/vanilla-first-setup-prepare-files</annotate>
     <annotate key="org.freedesktop.policykit.exec.allow_gui">TRUE</annotate>
   </action>
 

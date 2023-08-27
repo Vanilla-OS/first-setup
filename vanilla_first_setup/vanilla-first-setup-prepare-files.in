@@ -1,0 +1,6 @@
+#!/bin/bash
+touch /etc/org.vanillaos.FirstSetup.commands
+touch /etc/org.vanillaos.FirstSetup.nextBoot
+
+chmod +wx /etc/org.vanillaos.FirstSetup.commands
+chmod +wx /etc/org.vanillaos.FirstSetup.nextBoot

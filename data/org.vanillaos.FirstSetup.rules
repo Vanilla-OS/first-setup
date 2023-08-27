@@ -1,5 +1,5 @@
 polkit.addRule(function(action, subject) {
-    if (action.id == "org.vanillaos.FirstSetup.exec")
+    if (action.id == "org.vanillaos.FirstSetup.commands" || action.id == "org.vanillaos.FirstSetup.nextBoot") || action.id == "org.vanillaos.FirstSetup.prepare") {
     {
         polkit.log("action=" + action);
         polkit.log("subject=" + subject);

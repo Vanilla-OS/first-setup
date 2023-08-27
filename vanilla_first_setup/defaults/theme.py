@@ -54,7 +54,7 @@ class VanillaDefaultTheme(Gtk.Box):
         self.__theme = theme
 
     def get_finals(self):
-        gs_cmd = "!nextBoot gsettings set %s %s %s"
+        gs_cmd = "!nextBoot !noRoot gsettings set %s %s %s"
         cmds = []
 
         if self.__theme == "dark":
