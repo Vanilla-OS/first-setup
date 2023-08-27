@@ -23,8 +23,3 @@ if [ -e '/etc/org.vanillaos.FirstSetup.nextBoot' ]; then
     # we preserve the file for new users, to avoid creating policies to allow them to create it
     echo '' > /etc/org.vanillaos.FirstSetup.nextBoot
 fi
-
-if [ -e "/var/lib/AccountsService/users/$USER" ]; then
-    # changing the session to gnome, so that the user can login to the full desktop
-    sed 's/Session=firstsetup/Session=gnome/g' -i "/var/lib/AccountsService/users/$USER"
-fi
