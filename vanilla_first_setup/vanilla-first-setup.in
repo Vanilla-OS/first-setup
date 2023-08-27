@@ -1,2 +1,2 @@
 #!/bin/sh
-pkexec vanilla-first-setup-exec "$@"
+pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY vanilla-first-setup-exec "$@"
