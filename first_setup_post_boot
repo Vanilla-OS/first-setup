@@ -19,3 +19,7 @@ fi
 if [ -e '/etc/org.vanillaos.FirstSetup.nextBoot' ]; then
     rm /etc/org.vanillaos.FirstSetup.nextBoot
 fi
+
+if [ -e "/var/lib/AccountsService/users/$USER" ]; then
+    sed 's/Session=firstsetup/Session=gnome/g' -i "/var/lib/AccountsService/users/$USER"
+fi
