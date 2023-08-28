@@ -14,7 +14,9 @@
 
 
 ## Build
+
 ### Dependencies
+
 - build-essential
 - meson
 - libadwaita-1-dev
@@ -25,22 +27,26 @@
 - libnma-gtk4-dev
 
 ### Build
+
 ```bash
 meson build
 ninja -C build
 ```
 
 ### Install
+
 ```bash
 sudo ninja -C build install
 ```
 
 ## Run
+
 ```bash
 vanilla-first-setup
 ```
 
 ### Using custom recipes
+
 Place a new recipe in `/etc/vanilla-first-setup/recipe.json` or launch the
 utility with the `VANILLA_CUSTOM_RECIPE` environment variable set to the path
 of the recipe.
