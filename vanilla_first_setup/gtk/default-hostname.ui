@@ -11,15 +11,15 @@
         <child>
           <object class="AdwStatusPage" id="status_page">
             <property name="icon-name">computer-symbolic</property>
-            <property name="title" translatable="true">Device Details</property>
-            <property name="description" translatable="true">Provide details about your device</property>
+            <property name="title" translatable="yes">Device Details</property>
+            <property name="description" translatable="yes">Provide details about your device</property>
             <child>
               <object class="AdwPreferencesPage">
                 <child>
                   <object class="AdwPreferencesGroup">
                     <child>
                       <object class="AdwEntryRow" id="hostname_entry">
-                        <property name="title" translatable="true">Device Name</property>
+                        <property name="title" translatable="yes">Device Name</property>
                         <property name="input-purpose">name</property>
                       </object>
                     </child>
@@ -32,7 +32,7 @@
         <child>
           <object class="GtkButton" id="btn_next">
             <property name="halign">center</property>
-            <property name="label" translatable="true">Next</property>
+            <property name="label" translatable="yes">Next</property>
             <style>
               <class name="pill"/>
               <class name="suggested-action"/>

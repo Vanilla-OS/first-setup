@@ -18,33 +18,33 @@
         </child>
         <child>
           <object class="AdwStatusPage" id="status_page">
-            <property name="title" translatable="true">Create User</property>
-            <property name="description" translatable="true">Provide details for your user account</property>
+            <property name="title" translatable="yes">Create User</property>
+            <property name="description" translatable="yes">Provide details for your user account</property>
             <child>
               <object class="AdwPreferencesPage">
                 <child>
                   <object class="AdwPreferencesGroup">
                     <child>
                       <object class="AdwEntryRow" id="fullname_entry">
-                        <property name="title" translatable="true">Name</property>
+                        <property name="title" translatable="yes">Name</property>
                         <property name="input-purpose">name</property>
                       </object>
                     </child>
                     <child>
                       <object class="AdwEntryRow" id="username_entry">
-                        <property name="title" translatable="true">Username</property>
+                        <property name="title" translatable="yes">Username</property>
                         <property name="input-purpose">name</property>
                       </object>
                     </child>
                     <child>
                       <object class="AdwPasswordEntryRow" id="password_entry">
-                        <property name="title" translatable="true">Password</property>
+                        <property name="title" translatable="yes">Password</property>
                         <property name="input-purpose">password</property>
                       </object>
                     </child>
                     <child>
                       <object class="AdwPasswordEntryRow" id="password_confirmation">
-                        <property name="title" translatable="true">Confirm Password</property>
+                        <property name="title" translatable="yes">Confirm Password</property>
                         <property name="input-purpose">password</property>
                       </object>
                     </child>
@@ -57,7 +57,7 @@
         <child>
           <object class="GtkButton" id="btn_next">
             <property name="halign">center</property>
-            <property name="label" translatable="true">Next</property>
+            <property name="label" translatable="yes">Next</property>
             <style>
               <class name="pill"/>
               <class name="suggested-action"/>
