@@ -22,7 +22,7 @@ from gettext import gettext as _
 from operator import attrgetter
 from threading import Lock, Timer
 
-from gi.repository import NM, NMA4, Adw, Gtk
+from gi.repository import NM, NMA4, Adw, GLib, Gtk
 
 from vanilla_first_setup.utils.run_async import RunAsync
 
@@ -355,11 +355,12 @@ class VanillaDefaultNetwork(Adw.Bin):
                 self.__scan_wifi(device)
 
         self.set_btn_next(self.has_eth_connection or self.has_wifi_connection)
+        return GLib.SOURCE_REMOVE
 
     def __start_auto_refresh(self):
         def run_async():
             while True:
-                self.__refresh()
+                GLib.idle_add(self.__refresh)
                 time.sleep(10)
 
         RunAsync(run_async, None)
