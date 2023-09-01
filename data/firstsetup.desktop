@@ -8,3 +8,4 @@ Type=Application
 DesktopNames=vanilla:GNOME
 X-GDM-SessionRegisters=true
 X-Ubuntu-Gettext-Domain=gnome-session-3.0
+NoDisplay=true
