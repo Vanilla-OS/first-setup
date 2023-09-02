@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-06-12 21:52+0000\n"
+"PO-Revision-Date: 2023-08-31 13:54+0000\n"
 "Last-Translator: jolupa <jolupameister@gmail.com>\n"
-"Language-Team: Catalan <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/ca/>\n"
+"Language-Team: Catalan <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -26,7 +26,7 @@ msgstr "Primera configuració de Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
-msgstr "Ajusta la teva instal·lació del sistema operatiu Vanilla."
+msgstr "Modifica la teva instal·lació de Vanilla OS."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -48,15 +48,15 @@ msgstr "Espera fins que es comprovi la conexió."
 
 #: vanilla_first_setup/gtk/default-hostname.ui:14
 msgid "Device Details"
-msgstr "Detalls de l'Ordinador"
+msgstr "Detalls del dispositiu"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:15
 msgid "Provide details about your device"
-msgstr "Proporciona detalls del teu ordinador"
+msgstr "Proporcioneu detalls sobre el vostre dispositiu"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:22
 msgid "Device Name"
-msgstr "Nom de l'Ordinador"
+msgstr "Nom del dispositiu"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:35
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -67,33 +67,35 @@ msgstr "Següent"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Connect to the Internet"
-msgstr ""
+msgstr "Conectat a Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
 "An active internet connection is required to make sure your system is up-to-"
 "date and download your favorite applications."
 msgstr ""
+"És necesita una conexió a Internet activa per assegurar-te que el sistema és "
+"troba actualitzat i descarregar les teves aplicacions favorites."
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
-msgstr ""
+msgstr "Xarxa amb cable"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
-msgstr ""
+msgstr "Xarxes inalàmbriques"
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
-msgstr ""
+msgstr "Avançat"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
 msgid "Connect to Hidden Network..."
-msgstr ""
+msgstr "Conectat a xarxas ocultes..."
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr ""
+msgstr "Obrir la configuració del Proxy..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -113,29 +115,27 @@ msgstr "Escull un esquema de colors per al teu sistema."
 
 #: vanilla_first_setup/gtk/default-user.ui:21
 msgid "Create User"
-msgstr ""
+msgstr "Crear Usuari"
 
 #: vanilla_first_setup/gtk/default-user.ui:22
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide details for your user account"
-msgstr "Proporciona detalls del teu ordinador"
+msgstr "Proporciona detalls per la teva conte d'usuari"
 
 #: vanilla_first_setup/gtk/default-user.ui:29
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #: vanilla_first_setup/gtk/default-user.ui:35
 msgid "Username"
-msgstr ""
+msgstr "Nom d'usuari"
 
 #: vanilla_first_setup/gtk/default-user.ui:41
 msgid "Password"
-msgstr ""
+msgstr "Contrasenya"
 
 #: vanilla_first_setup/gtk/default-user.ui:47
 msgid "Confirm Password"
-msgstr ""
+msgstr "Confirmar la contrasenya"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
@@ -144,7 +144,7 @@ msgstr "Benvingut!"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
-msgstr "Mostrant Informació"
+msgstr "Mostrant informació"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "All done!"
@@ -152,7 +152,7 @@ msgstr "Tot fet!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr "Reinicia el teu ordinador per gaudir la teva experiència Vanilla OS."
+msgstr "Reinicia el teu dispositiu per gaudir la teva experiència Vanilla OS"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
@@ -164,7 +164,7 @@ msgstr "Finalitzant"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
-msgstr "El teu ordinador estarà llest de seguida."
+msgstr "El vostre dispositiu estarà llest aviat."
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
@@ -176,7 +176,7 @@ msgstr "Mostra la sortida de Consola"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr "Mostra la Presentació"
+msgstr "Mostra la presentació"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
@@ -189,67 +189,67 @@ msgstr "Enrere"
 #: vanilla_first_setup/gtk/wireless-row.ui:33
 #: vanilla_first_setup/defaults/network.py:371
 msgid "Connected"
-msgstr ""
+msgstr "Conectat"
 
 #: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
-msgstr "Sense Conexió a Internet!"
+msgstr "Sense connexió a Internet!"
 
 #: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
-msgstr "La Configuració Inicial necessita una conexió a Internet activa"
+msgstr "La primera configuració requereix una connexió a Internet activa"
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
-msgstr ""
+msgstr "Xarxa no segura (WEP)"
 
 #: vanilla_first_setup/defaults/network.py:39
 msgid "Secure network (WPA)"
-msgstr ""
+msgstr "Xarxa segura (WPA)"
 
 #: vanilla_first_setup/defaults/network.py:40
 msgid "Secure network (WPA2)"
-msgstr ""
+msgstr "Xarxa segura (WPA2)"
 
 #: vanilla_first_setup/defaults/network.py:41
 msgid "Secure network (WPA3)"
-msgstr ""
+msgstr "Xarxa segura (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:374
 msgid "Authentication required"
-msgstr ""
+msgstr "És necessita autenticació"
 
 #: vanilla_first_setup/defaults/network.py:382
 msgid "Connecting"
-msgstr ""
+msgstr "Conectant"
 
 #: vanilla_first_setup/defaults/network.py:384
 msgid "Disconnected"
-msgstr ""
+msgstr "Desconectat"
 
 #: vanilla_first_setup/defaults/network.py:386
 msgid "Disconnecting"
-msgstr ""
+msgstr "Desconectant"
 
 #: vanilla_first_setup/defaults/network.py:388
 msgid "Connection Failed"
-msgstr ""
+msgstr "La conexió a fallat"
 
 #: vanilla_first_setup/defaults/network.py:390
 msgid "Status Unknown"
-msgstr ""
+msgstr "Estat desconegut"
 
 #: vanilla_first_setup/defaults/network.py:392
 msgid "Unmanaged"
-msgstr ""
+msgstr "No administrat"
 
 #: vanilla_first_setup/defaults/network.py:394
 msgid "Unavailable"
-msgstr ""
+msgstr "No disponible"
 
 #: vanilla_first_setup/defaults/network.py:408
 msgid "Cable Unplugged"
-msgstr ""
+msgstr "Cable Desconectat"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
@@ -273,7 +273,7 @@ msgstr "Executa un post script"
 
 #: vanilla_first_setup/main.py:64
 msgid "Run as a new user"
-msgstr "Executar com a nou usuari"
+msgstr "Executar com un usuari nou"
 
 #: vanilla_first_setup/window.py:69
 msgid "Done!"
