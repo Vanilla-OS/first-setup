@@ -9,17 +9,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-21 19:32+0530\n"
+"POT-Creation-Date: 2023-08-29 00:39+0530\n"
 "PO-Revision-Date: 2023-08-04 22:02+0000\n"
 "Last-Translator: Fedorov Alexei <aleksejfedorov963@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/ru/>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/vanilla-os/first-"
+"setup/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.0-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
@@ -39,12 +39,12 @@ msgid "First release"
 msgstr "Первый выпуск"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
-#: vanilla_first_setup/defaults/conn_check.py:79
+#: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
 msgstr "Проверка соединения…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#: vanilla_first_setup/defaults/conn_check.py:80
+#: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
 msgstr "Пожалуйста, подождите, пока не будет выполнена проверка подключения."
 
@@ -61,9 +61,41 @@ msgid "Device Name"
 msgstr "Имя устройства"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:35
+#: vanilla_first_setup/gtk/default-network.ui:95
 #: vanilla_first_setup/gtk/default-theme.ui:49
+#: vanilla_first_setup/gtk/default-user.ui:60
 msgid "Next"
 msgstr "Далее"
+
+#: vanilla_first_setup/gtk/default-network.ui:18
+msgid "Connect to the Internet"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:19
+msgid ""
+"An active internet connection is required to make sure your system is up-to-"
+"date and download your favorite applications."
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:29
+msgid "Wired"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:34
+msgid "Wireless Networks"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:39
+msgid "Advanced"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:42
+msgid "Connect to Hidden Network..."
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:69
+msgid "Open Proxy Settings..."
+msgstr ""
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -81,13 +113,36 @@ msgstr "Цветовая схема"
 msgid "Choose a color scheme for your system."
 msgstr "Выберите цветовую схему для вашей системы."
 
-#: vanilla_first_setup/gtk/default-welcome.ui:12
+#: vanilla_first_setup/gtk/default-user.ui:21
+msgid "Create User"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-user.ui:22
+#, fuzzy
+#| msgid "Provide details about your device"
+msgid "Provide details for your user account"
+msgstr "Предоставьте подробную информацию о своем устройстве"
+
+#: vanilla_first_setup/gtk/default-user.ui:29
+msgid "Name"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-user.ui:35
+msgid "Username"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-user.ui:41
+msgid "Password"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-user.ui:47
+msgid "Confirm Password"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-welcome.ui:20
+#: vanilla_first_setup/gtk/default-welcome.ui:29
 msgid "Welcome!"
 msgstr "Добро пожаловать!"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:13
-msgid "Make your choices, this wizard will take care of everything."
-msgstr "Сделайте свой выбор, этот мастер по настройке обо всем позаботится."
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
@@ -133,54 +188,114 @@ msgstr "Подробнее"
 msgid "Back"
 msgstr "Назад"
 
-#: vanilla_first_setup/defaults/conn_check.py:70
+#: vanilla_first_setup/gtk/wireless-row.ui:33
+#: vanilla_first_setup/defaults/network.py:371
+msgid "Connected"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
 msgstr "Нет подключения к Интернету!"
 
-#: vanilla_first_setup/defaults/conn_check.py:71
+#: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
 msgstr ""
 "Для первоначальной настройки требуется активное подключение к Интернету"
+
+#: vanilla_first_setup/defaults/network.py:38
+msgid "Insecure network (WEP)"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:39
+msgid "Secure network (WPA)"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:40
+msgid "Secure network (WPA2)"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:41
+msgid "Secure network (WPA3)"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:374
+msgid "Authentication required"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:382
+msgid "Connecting"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:384
+msgid "Disconnected"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:386
+msgid "Disconnecting"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:388
+msgid "Connection Failed"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:390
+msgid "Status Unknown"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:392
+msgid "Unmanaged"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:394
+msgid "Unavailable"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:408
+msgid "Cable Unplugged"
+msgstr ""
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
 msgstr "Пожалуйста, выберите хотя бы один вариант."
 
-#: vanilla_first_setup/views/done.py:41
+#: vanilla_first_setup/views/done.py:51
 msgid "Restart your device to enjoy your {} experience."
 msgstr "Перезагрузите ваше устройство, чтобы насладиться работой {}."
 
-#: vanilla_first_setup/views/done.py:63
+#: vanilla_first_setup/views/done.py:73
 msgid "Something went wrong"
 msgstr "Что-то пошло не так"
 
-#: vanilla_first_setup/views/done.py:64
+#: vanilla_first_setup/views/done.py:75
 msgid "Please contact the distribution developers."
 msgstr "Пожалуйста, обратитесь к разработчикам дистрибутива."
 
-#: vanilla_first_setup/main.py:55
+#: vanilla_first_setup/main.py:56
 msgid "Run a post script"
 msgstr "Запуск post-скрипта"
 
-#: vanilla_first_setup/main.py:63
+#: vanilla_first_setup/main.py:64
 msgid "Run as a new user"
 msgstr "Запуск от имени нового пользователя"
 
-#: vanilla_first_setup/window.py:67
+#: vanilla_first_setup/window.py:69
 msgid "Done!"
 msgstr "Готово!"
 
-#: vanilla_first_setup/window.py:67
+#: vanilla_first_setup/window.py:70
 msgid "Your device is ready to use."
 msgstr "Ваше устройство готово к использованию."
 
-#: vanilla_first_setup/window.py:68
+#: vanilla_first_setup/window.py:71
 msgid "Error!"
 msgstr "Ошибка!"
 
-#: vanilla_first_setup/window.py:68
+#: vanilla_first_setup/window.py:72
 msgid "Something went wrong."
 msgstr "Что-то пошло не так."
+
+#~ msgid "Make your choices, this wizard will take care of everything."
+#~ msgstr "Сделайте свой выбор, этот мастер по настройке обо всем позаботится."
 
 #~ msgid "The changes are being applied. Please Wait…"
 #~ msgstr "Изменения применяются. Пожалуйста, подождите…"

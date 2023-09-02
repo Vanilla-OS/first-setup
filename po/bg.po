@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-21 19:32+0530\n"
+"POT-Creation-Date: 2023-08-29 00:39+0530\n"
 "PO-Revision-Date: 2023-06-10 20:50+0000\n"
 "Last-Translator: Plamen Stanchev <sommersbynobodyev@gmail.com>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/vanilla-os/"
@@ -37,12 +37,12 @@ msgid "First release"
 msgstr "Първо издание"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
-#: vanilla_first_setup/defaults/conn_check.py:79
+#: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
 msgstr "Проверка на връзката…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#: vanilla_first_setup/defaults/conn_check.py:80
+#: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
 msgstr "Моля, изчакайте, докато проверката на връзката приключи."
 
@@ -59,9 +59,41 @@ msgid "Device Name"
 msgstr "Име на устройството"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:35
+#: vanilla_first_setup/gtk/default-network.ui:95
 #: vanilla_first_setup/gtk/default-theme.ui:49
+#: vanilla_first_setup/gtk/default-user.ui:60
 msgid "Next"
 msgstr "Напред"
+
+#: vanilla_first_setup/gtk/default-network.ui:18
+msgid "Connect to the Internet"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:19
+msgid ""
+"An active internet connection is required to make sure your system is up-to-"
+"date and download your favorite applications."
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:29
+msgid "Wired"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:34
+msgid "Wireless Networks"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:39
+msgid "Advanced"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:42
+msgid "Connect to Hidden Network..."
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:69
+msgid "Open Proxy Settings..."
+msgstr ""
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -79,13 +111,36 @@ msgstr "Цветова схема"
 msgid "Choose a color scheme for your system."
 msgstr "Изберете цветова схема за вашата система."
 
-#: vanilla_first_setup/gtk/default-welcome.ui:12
+#: vanilla_first_setup/gtk/default-user.ui:21
+msgid "Create User"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-user.ui:22
+#, fuzzy
+#| msgid "Provide details about your device"
+msgid "Provide details for your user account"
+msgstr "Предоставяне на подробна информация за вашето устройство"
+
+#: vanilla_first_setup/gtk/default-user.ui:29
+msgid "Name"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-user.ui:35
+msgid "Username"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-user.ui:41
+msgid "Password"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-user.ui:47
+msgid "Confirm Password"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-welcome.ui:20
+#: vanilla_first_setup/gtk/default-welcome.ui:29
 msgid "Welcome!"
 msgstr "Добре дошли!"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:13
-msgid "Make your choices, this wizard will take care of everything."
-msgstr "Направете своя избор,този съветник ще се погрижи за всичко останало."
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
@@ -132,51 +187,112 @@ msgstr "Прочетете повече"
 msgid "Back"
 msgstr "Обратно"
 
-#: vanilla_first_setup/defaults/conn_check.py:70
+#: vanilla_first_setup/gtk/wireless-row.ui:33
+#: vanilla_first_setup/defaults/network.py:371
+msgid "Connected"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
 msgstr "Няма интернет връзка!"
 
-#: vanilla_first_setup/defaults/conn_check.py:71
+#: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
 msgstr "Първата настройка изисква активна интернет връзка"
+
+#: vanilla_first_setup/defaults/network.py:38
+msgid "Insecure network (WEP)"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:39
+msgid "Secure network (WPA)"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:40
+msgid "Secure network (WPA2)"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:41
+msgid "Secure network (WPA3)"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:374
+msgid "Authentication required"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:382
+msgid "Connecting"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:384
+msgid "Disconnected"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:386
+msgid "Disconnecting"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:388
+msgid "Connection Failed"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:390
+msgid "Status Unknown"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:392
+msgid "Unmanaged"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:394
+msgid "Unavailable"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:408
+msgid "Cable Unplugged"
+msgstr ""
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
 msgstr "Моля, изберете поне една опция."
 
-#: vanilla_first_setup/views/done.py:41
+#: vanilla_first_setup/views/done.py:51
 msgid "Restart your device to enjoy your {} experience."
 msgstr ""
 "Рестартирайте устройството си, за да се насладите на изживяването си с {}."
 
-#: vanilla_first_setup/views/done.py:63
+#: vanilla_first_setup/views/done.py:73
 msgid "Something went wrong"
 msgstr "Нещо се обърка"
 
-#: vanilla_first_setup/views/done.py:64
+#: vanilla_first_setup/views/done.py:75
 msgid "Please contact the distribution developers."
 msgstr "Моля, свържете се с разработчиците на дистрибуцията."
 
-#: vanilla_first_setup/main.py:55
+#: vanilla_first_setup/main.py:56
 msgid "Run a post script"
 msgstr "Стартиране на допълнителен скрипт"
 
-#: vanilla_first_setup/main.py:63
+#: vanilla_first_setup/main.py:64
 msgid "Run as a new user"
 msgstr "Стартиране като нов потребител"
 
-#: vanilla_first_setup/window.py:67
+#: vanilla_first_setup/window.py:69
 msgid "Done!"
 msgstr "Готово!"
 
-#: vanilla_first_setup/window.py:67
+#: vanilla_first_setup/window.py:70
 msgid "Your device is ready to use."
 msgstr "Вашето устройство е готово за използване."
 
-#: vanilla_first_setup/window.py:68
+#: vanilla_first_setup/window.py:71
 msgid "Error!"
 msgstr "Грешка!"
 
-#: vanilla_first_setup/window.py:68
+#: vanilla_first_setup/window.py:72
 msgid "Something went wrong."
 msgstr "Нещо се е объркало."
+
+#~ msgid "Make your choices, this wizard will take care of everything."
+#~ msgstr ""
+#~ "Направете своя избор,този съветник ще се погрижи за всичко останало."
