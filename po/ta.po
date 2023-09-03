@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-21 19:32+0530\n"
-"PO-Revision-Date: 2023-03-22 00:26+0000\n"
+"POT-Creation-Date: 2023-08-29 00:39+0530\n"
+"PO-Revision-Date: 2023-08-31 13:54+0000\n"
 "Last-Translator: \"K.B.Dharun Krishna\" <kbdharunkrishna@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ta/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16.2-dev\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -35,12 +35,12 @@ msgid "First release"
 msgstr "முதல் வெளியீடு"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
-#: vanilla_first_setup/defaults/conn_check.py:79
+#: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
 msgstr "இணைப்பைச் சரிபார்க்கிறது…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#: vanilla_first_setup/defaults/conn_check.py:80
+#: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
 msgstr "இணைப்புச் சரிபார்ப்பு முடியும் வரை காத்திருக்கவும்."
 
@@ -57,9 +57,43 @@ msgid "Device Name"
 msgstr "சாதனத்தின் பெயர்"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:35
+#: vanilla_first_setup/gtk/default-network.ui:95
 #: vanilla_first_setup/gtk/default-theme.ui:49
+#: vanilla_first_setup/gtk/default-user.ui:60
 msgid "Next"
 msgstr "அடுத்தது"
+
+#: vanilla_first_setup/gtk/default-network.ui:18
+msgid "Connect to the Internet"
+msgstr "இணையத்துடன் இணைக்கவும்"
+
+#: vanilla_first_setup/gtk/default-network.ui:19
+msgid ""
+"An active internet connection is required to make sure your system is up-to-"
+"date and download your favorite applications."
+msgstr ""
+"உங்கள் அமைப்பு புதுப்பித்த நிலையில் இருப்பதை உறுதிசெய்து, உங்களுக்குப் "
+"பிடித்தமான பயன்பாடுகளை பதிவிறக்க, செயலில் உள்ள இணைய இணைப்பு தேவை."
+
+#: vanilla_first_setup/gtk/default-network.ui:29
+msgid "Wired"
+msgstr "கம்பியுடையது"
+
+#: vanilla_first_setup/gtk/default-network.ui:34
+msgid "Wireless Networks"
+msgstr "கம்பியில்லா பிணையங்கள்"
+
+#: vanilla_first_setup/gtk/default-network.ui:39
+msgid "Advanced"
+msgstr "மேம்பட்டது"
+
+#: vanilla_first_setup/gtk/default-network.ui:42
+msgid "Connect to Hidden Network..."
+msgstr "மறைக்கப்பட்ட பிணையத்துடன் இணைக்கவும்..."
+
+#: vanilla_first_setup/gtk/default-network.ui:69
+msgid "Open Proxy Settings..."
+msgstr "ப்ராக்ஸி அமைப்புகளைத் திறக்கவும்..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -77,13 +111,34 @@ msgstr "வண்ண திட்டம்"
 msgid "Choose a color scheme for your system."
 msgstr "உங்கள் கணினிக்கான வண்ணத் திட்டத்தைத் தேர்ந்தெடுக்கவும்."
 
-#: vanilla_first_setup/gtk/default-welcome.ui:12
+#: vanilla_first_setup/gtk/default-user.ui:21
+msgid "Create User"
+msgstr "பயனரை உருவாக்கவும்"
+
+#: vanilla_first_setup/gtk/default-user.ui:22
+msgid "Provide details for your user account"
+msgstr "உங்கள் பயனர் கணக்கிற்கான விவரங்களை வழங்கவும்"
+
+#: vanilla_first_setup/gtk/default-user.ui:29
+msgid "Name"
+msgstr "பெயர்"
+
+#: vanilla_first_setup/gtk/default-user.ui:35
+msgid "Username"
+msgstr "பயனர் பெயர்"
+
+#: vanilla_first_setup/gtk/default-user.ui:41
+msgid "Password"
+msgstr "கடவுச்சொல்"
+
+#: vanilla_first_setup/gtk/default-user.ui:47
+msgid "Confirm Password"
+msgstr "கடவுச்சொல்லை உறுதிப்படுத்தவும்"
+
+#: vanilla_first_setup/gtk/default-welcome.ui:20
+#: vanilla_first_setup/gtk/default-welcome.ui:29
 msgid "Welcome!"
 msgstr "வரவேற்கிறோம்!"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:13
-msgid "Make your choices, this wizard will take care of everything."
-msgstr "உங்கள் தேர்வுகளை செய்யுங்கள், இந்த வழிகாட்டி எல்லாவற்றையும் கவனித்துக்கொள்ளும்."
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
@@ -129,53 +184,113 @@ msgstr "மேலும் படிக்கவும்"
 msgid "Back"
 msgstr "திரும்பவும்"
 
-#: vanilla_first_setup/defaults/conn_check.py:70
+#: vanilla_first_setup/gtk/wireless-row.ui:33
+#: vanilla_first_setup/defaults/network.py:371
+msgid "Connected"
+msgstr "இணைக்கப்பட்டது"
+
+#: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
 msgstr "இணைய இணைப்பு இல்லை!"
 
-#: vanilla_first_setup/defaults/conn_check.py:71
+#: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
 msgstr "முதல் அமைப்பிற்கு செயலில் உள்ள இணைய இணைப்பு தேவை"
+
+#: vanilla_first_setup/defaults/network.py:38
+msgid "Insecure network (WEP)"
+msgstr "பாதுகாப்பற்ற வலைப்பின்னல் (WEP)"
+
+#: vanilla_first_setup/defaults/network.py:39
+msgid "Secure network (WPA)"
+msgstr "பாதுகாப்பான வலைப்பின்னல் (WPA)"
+
+#: vanilla_first_setup/defaults/network.py:40
+msgid "Secure network (WPA2)"
+msgstr "பாதுகாப்பான வலைப்பின்னல் (WPA2)"
+
+#: vanilla_first_setup/defaults/network.py:41
+msgid "Secure network (WPA3)"
+msgstr "பாதுகாப்பான வலைப்பின்னல் (WPA3)"
+
+#: vanilla_first_setup/defaults/network.py:374
+msgid "Authentication required"
+msgstr "அங்கீகாரம் தேவை"
+
+#: vanilla_first_setup/defaults/network.py:382
+msgid "Connecting"
+msgstr "இணைக்கிறது"
+
+#: vanilla_first_setup/defaults/network.py:384
+msgid "Disconnected"
+msgstr "இணைப்பு துண்டிக்கப்பட்டது"
+
+#: vanilla_first_setup/defaults/network.py:386
+msgid "Disconnecting"
+msgstr "இணைப்பைத் துண்டிக்கிறது"
+
+#: vanilla_first_setup/defaults/network.py:388
+msgid "Connection Failed"
+msgstr "இணைப்பு தோல்வியடைந்தது"
+
+#: vanilla_first_setup/defaults/network.py:390
+msgid "Status Unknown"
+msgstr "நிலை தெரியவில்லை"
+
+#: vanilla_first_setup/defaults/network.py:392
+msgid "Unmanaged"
+msgstr "நிர்வகிக்கப்படாதது"
+
+#: vanilla_first_setup/defaults/network.py:394
+msgid "Unavailable"
+msgstr "கிடைக்கவில்லை"
+
+#: vanilla_first_setup/defaults/network.py:408
+msgid "Cable Unplugged"
+msgstr "கம்பி துண்டிக்கப்பட்டது"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
 msgstr "குறைந்தபட்சம் ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்."
 
-#: vanilla_first_setup/views/done.py:41
+#: vanilla_first_setup/views/done.py:51
 msgid "Restart your device to enjoy your {} experience."
 msgstr "உங்கள் {} அனுபவத்தை அனுபவிக்க உங்கள் சாதனத்தை மறுதொடக்கம் செய்யவும்."
 
-#: vanilla_first_setup/views/done.py:63
+#: vanilla_first_setup/views/done.py:73
 msgid "Something went wrong"
 msgstr "ஏதோ தவறாகிவிட்டது"
 
-#: vanilla_first_setup/views/done.py:64
+#: vanilla_first_setup/views/done.py:75
 msgid "Please contact the distribution developers."
 msgstr "விநியோக டெவலப்பர்களைத் தொடர்பு கொள்ளவும்."
 
-#: vanilla_first_setup/main.py:55
+#: vanilla_first_setup/main.py:56
 msgid "Run a post script"
 msgstr "இடுகை ஸ்கிரிப்டை இயக்கவும்"
 
-#: vanilla_first_setup/main.py:63
+#: vanilla_first_setup/main.py:64
 msgid "Run as a new user"
 msgstr "புதிய பயனராக இயக்கவும்"
 
-#: vanilla_first_setup/window.py:67
+#: vanilla_first_setup/window.py:69
 msgid "Done!"
 msgstr "முடிந்தது!"
 
-#: vanilla_first_setup/window.py:67
+#: vanilla_first_setup/window.py:70
 msgid "Your device is ready to use."
 msgstr "உங்கள் சாதனம் பயன்படுத்த தயாராக உள்ளது."
 
-#: vanilla_first_setup/window.py:68
+#: vanilla_first_setup/window.py:71
 msgid "Error!"
 msgstr "பிழை!"
 
-#: vanilla_first_setup/window.py:68
+#: vanilla_first_setup/window.py:72
 msgid "Something went wrong."
 msgstr "ஏதோ தவறாகிவிட்டது."
+
+#~ msgid "Make your choices, this wizard will take care of everything."
+#~ msgstr "உங்கள் தேர்வுகளை செய்யுங்கள், இந்த வழிகாட்டி எல்லாவற்றையும் கவனித்துக்கொள்ளும்."
 
 #~ msgid "The changes are being applied. Please Wait…"
 #~ msgstr "மாற்றங்கள் செயல்படுத்தப்படுகின்றன. தயவுசெய்து காத்திருங்கள்…"

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-21 19:32+0530\n"
-"PO-Revision-Date: 2023-03-23 01:36+0000\n"
+"POT-Creation-Date: 2023-08-29 00:39+0530\n"
+"PO-Revision-Date: 2023-09-01 07:15+0000\n"
 "Last-Translator: lakejason0 <sunliyuan200402@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "vanilla-os/first-setup/zh_Hans/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.16.2-dev\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -37,12 +37,12 @@ msgid "First release"
 msgstr "初版"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
-#: vanilla_first_setup/defaults/conn_check.py:79
+#: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
 msgstr "检查连接…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#: vanilla_first_setup/defaults/conn_check.py:80
+#: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
 msgstr "请等待连接检查完成。"
 
@@ -59,9 +59,41 @@ msgid "Device Name"
 msgstr "设备名称"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:35
+#: vanilla_first_setup/gtk/default-network.ui:95
 #: vanilla_first_setup/gtk/default-theme.ui:49
+#: vanilla_first_setup/gtk/default-user.ui:60
 msgid "Next"
 msgstr "继续"
+
+#: vanilla_first_setup/gtk/default-network.ui:18
+msgid "Connect to the Internet"
+msgstr "连接到互联网"
+
+#: vanilla_first_setup/gtk/default-network.ui:19
+msgid ""
+"An active internet connection is required to make sure your system is up-to-"
+"date and download your favorite applications."
+msgstr "需要有效的互联网连接以确保系统保持最新及下载您所需要的应用程序。"
+
+#: vanilla_first_setup/gtk/default-network.ui:29
+msgid "Wired"
+msgstr "有线"
+
+#: vanilla_first_setup/gtk/default-network.ui:34
+msgid "Wireless Networks"
+msgstr "无线网络"
+
+#: vanilla_first_setup/gtk/default-network.ui:39
+msgid "Advanced"
+msgstr "高级"
+
+#: vanilla_first_setup/gtk/default-network.ui:42
+msgid "Connect to Hidden Network..."
+msgstr "连接到隐藏网络…"
+
+#: vanilla_first_setup/gtk/default-network.ui:69
+msgid "Open Proxy Settings..."
+msgstr "打开代理设置…"
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -79,13 +111,34 @@ msgstr "配色方案"
 msgid "Choose a color scheme for your system."
 msgstr "为您的系统选择配色方案。"
 
-#: vanilla_first_setup/gtk/default-welcome.ui:12
+#: vanilla_first_setup/gtk/default-user.ui:21
+msgid "Create User"
+msgstr "创建用户"
+
+#: vanilla_first_setup/gtk/default-user.ui:22
+msgid "Provide details for your user account"
+msgstr "提供您用户账户的详细信息"
+
+#: vanilla_first_setup/gtk/default-user.ui:29
+msgid "Name"
+msgstr "名称"
+
+#: vanilla_first_setup/gtk/default-user.ui:35
+msgid "Username"
+msgstr "用户名"
+
+#: vanilla_first_setup/gtk/default-user.ui:41
+msgid "Password"
+msgstr "密码"
+
+#: vanilla_first_setup/gtk/default-user.ui:47
+msgid "Confirm Password"
+msgstr "确认密码"
+
+#: vanilla_first_setup/gtk/default-welcome.ui:20
+#: vanilla_first_setup/gtk/default-welcome.ui:29
 msgid "Welcome!"
 msgstr "欢迎！"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:13
-msgid "Make your choices, this wizard will take care of everything."
-msgstr "只需做出选择，向导程序会帮您完成设置任务。"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
@@ -131,53 +184,113 @@ msgstr "阅读更多"
 msgid "Back"
 msgstr "返回"
 
-#: vanilla_first_setup/defaults/conn_check.py:70
+#: vanilla_first_setup/gtk/wireless-row.ui:33
+#: vanilla_first_setup/defaults/network.py:371
+msgid "Connected"
+msgstr "已连接"
+
+#: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
 msgstr "没有互联网连接！"
 
-#: vanilla_first_setup/defaults/conn_check.py:71
+#: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
 msgstr "初始设置需要有效的互联网链接"
+
+#: vanilla_first_setup/defaults/network.py:38
+msgid "Insecure network (WEP)"
+msgstr "不安全的网络（WEP）"
+
+#: vanilla_first_setup/defaults/network.py:39
+msgid "Secure network (WPA)"
+msgstr "安全的网络（WPA）"
+
+#: vanilla_first_setup/defaults/network.py:40
+msgid "Secure network (WPA2)"
+msgstr "安全的网络（WPA2）"
+
+#: vanilla_first_setup/defaults/network.py:41
+msgid "Secure network (WPA3)"
+msgstr "安全的网络（WPA3）"
+
+#: vanilla_first_setup/defaults/network.py:374
+msgid "Authentication required"
+msgstr "需要认证"
+
+#: vanilla_first_setup/defaults/network.py:382
+msgid "Connecting"
+msgstr "连接中"
+
+#: vanilla_first_setup/defaults/network.py:384
+msgid "Disconnected"
+msgstr "已断开连接"
+
+#: vanilla_first_setup/defaults/network.py:386
+msgid "Disconnecting"
+msgstr "正在断开连接"
+
+#: vanilla_first_setup/defaults/network.py:388
+msgid "Connection Failed"
+msgstr "连接失败"
+
+#: vanilla_first_setup/defaults/network.py:390
+msgid "Status Unknown"
+msgstr "状态未知"
+
+#: vanilla_first_setup/defaults/network.py:392
+msgid "Unmanaged"
+msgstr "不受管理"
+
+#: vanilla_first_setup/defaults/network.py:394
+msgid "Unavailable"
+msgstr "不可用"
+
+#: vanilla_first_setup/defaults/network.py:408
+msgid "Cable Unplugged"
+msgstr "线缆已拔出"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
 msgstr "请至少选择一个选项。"
 
-#: vanilla_first_setup/views/done.py:41
+#: vanilla_first_setup/views/done.py:51
 msgid "Restart your device to enjoy your {} experience."
 msgstr "重启设备，开启您的 {} 之旅。"
 
-#: vanilla_first_setup/views/done.py:63
+#: vanilla_first_setup/views/done.py:73
 msgid "Something went wrong"
 msgstr "出错了"
 
-#: vanilla_first_setup/views/done.py:64
+#: vanilla_first_setup/views/done.py:75
 msgid "Please contact the distribution developers."
 msgstr "请联系发行版开发者。"
 
-#: vanilla_first_setup/main.py:55
+#: vanilla_first_setup/main.py:56
 msgid "Run a post script"
 msgstr "运行后处理脚本"
 
-#: vanilla_first_setup/main.py:63
+#: vanilla_first_setup/main.py:64
 msgid "Run as a new user"
 msgstr "以新用户身份运行"
 
-#: vanilla_first_setup/window.py:67
+#: vanilla_first_setup/window.py:69
 msgid "Done!"
 msgstr "大功告成！"
 
-#: vanilla_first_setup/window.py:67
+#: vanilla_first_setup/window.py:70
 msgid "Your device is ready to use."
 msgstr "您的设备已准备就绪。"
 
-#: vanilla_first_setup/window.py:68
+#: vanilla_first_setup/window.py:71
 msgid "Error!"
 msgstr "出错了！"
 
-#: vanilla_first_setup/window.py:68
+#: vanilla_first_setup/window.py:72
 msgid "Something went wrong."
 msgstr "出错了。"
+
+#~ msgid "Make your choices, this wizard will take care of everything."
+#~ msgstr "只需做出选择，向导程序会帮您完成设置任务。"
 
 #~ msgid "The changes are being applied. Please Wait…"
 #~ msgstr "正在应用更改。请稍候…"

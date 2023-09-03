@@ -4,13 +4,14 @@
 # Thual LABART--BARNAGAUD <tlabartbarnagaud@protonmail.com>, 2023.
 # "Alexandre BOYER (Alex)" <alexandre.boyer29@gmail.com>, 2023.
 # Lucas_Strafe <Lucas-Strafe@protonmail.com>, 2023.
+# tachyglossues <tachyglossues@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-21 19:32+0530\n"
-"PO-Revision-Date: 2023-04-02 13:30+0000\n"
-"Last-Translator: Lucas_Strafe <Lucas-Strafe@protonmail.com>\n"
+"POT-Creation-Date: 2023-08-29 00:39+0530\n"
+"PO-Revision-Date: 2023-08-31 13:54+0000\n"
+"Last-Translator: tachyglossues <tachyglossues@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/fr/>\n"
 "Language: fr\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -37,12 +38,12 @@ msgid "First release"
 msgstr "Première version"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
-#: vanilla_first_setup/defaults/conn_check.py:79
+#: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
 msgstr "Vérification de la connexion…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#: vanilla_first_setup/defaults/conn_check.py:80
+#: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
 msgstr "Veuillez attendre que la connexion soit confirmée."
 
@@ -59,9 +60,43 @@ msgid "Device Name"
 msgstr "Nom de l'appareil"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:35
+#: vanilla_first_setup/gtk/default-network.ui:95
 #: vanilla_first_setup/gtk/default-theme.ui:49
+#: vanilla_first_setup/gtk/default-user.ui:60
 msgid "Next"
 msgstr "Suivant"
+
+#: vanilla_first_setup/gtk/default-network.ui:18
+msgid "Connect to the Internet"
+msgstr "Se connecter à l'internet"
+
+#: vanilla_first_setup/gtk/default-network.ui:19
+msgid ""
+"An active internet connection is required to make sure your system is up-to-"
+"date and download your favorite applications."
+msgstr ""
+"Une connexion internet active est nécessaire pour s'assurer que votre "
+"système est à jour et pour télécharger vos applications préférées."
+
+#: vanilla_first_setup/gtk/default-network.ui:29
+msgid "Wired"
+msgstr "Câblé"
+
+#: vanilla_first_setup/gtk/default-network.ui:34
+msgid "Wireless Networks"
+msgstr "Réseaux sans fil"
+
+#: vanilla_first_setup/gtk/default-network.ui:39
+msgid "Advanced"
+msgstr "Avancé"
+
+#: vanilla_first_setup/gtk/default-network.ui:42
+msgid "Connect to Hidden Network..."
+msgstr "Connexion à un réseau caché ..."
+
+#: vanilla_first_setup/gtk/default-network.ui:69
+msgid "Open Proxy Settings..."
+msgstr "Ouvrir les paramètres du proxy ..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -79,13 +114,34 @@ msgstr "Palette de couleurs"
 msgid "Choose a color scheme for your system."
 msgstr "Choisissez une palette de couleurs pour votre système."
 
-#: vanilla_first_setup/gtk/default-welcome.ui:12
+#: vanilla_first_setup/gtk/default-user.ui:21
+msgid "Create User"
+msgstr "Création d'un utilisateur"
+
+#: vanilla_first_setup/gtk/default-user.ui:22
+msgid "Provide details for your user account"
+msgstr "Fournissez des informations sur votre compte d'utilisateur"
+
+#: vanilla_first_setup/gtk/default-user.ui:29
+msgid "Name"
+msgstr "Nom"
+
+#: vanilla_first_setup/gtk/default-user.ui:35
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: vanilla_first_setup/gtk/default-user.ui:41
+msgid "Password"
+msgstr "Mot de passe"
+
+#: vanilla_first_setup/gtk/default-user.ui:47
+msgid "Confirm Password"
+msgstr "Confirmer le mot de passe"
+
+#: vanilla_first_setup/gtk/default-welcome.ui:20
+#: vanilla_first_setup/gtk/default-welcome.ui:29
 msgid "Welcome!"
 msgstr "Bienvenue !"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:13
-msgid "Make your choices, this wizard will take care of everything."
-msgstr "Faites vos choix, cet assistant s'occupera de tout."
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
@@ -132,53 +188,113 @@ msgstr "En savoir plus"
 msgid "Back"
 msgstr "Retour"
 
-#: vanilla_first_setup/defaults/conn_check.py:70
+#: vanilla_first_setup/gtk/wireless-row.ui:33
+#: vanilla_first_setup/defaults/network.py:371
+msgid "Connected"
+msgstr "Connecté"
+
+#: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
 msgstr "Aucune connexion internet !"
 
-#: vanilla_first_setup/defaults/conn_check.py:71
+#: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
 msgstr "L'outils Première Configuration nécessite une connexion à internet"
+
+#: vanilla_first_setup/defaults/network.py:38
+msgid "Insecure network (WEP)"
+msgstr "Réseau non sécurisé (WEP)"
+
+#: vanilla_first_setup/defaults/network.py:39
+msgid "Secure network (WPA)"
+msgstr "Réseau sécurisé (WPA)"
+
+#: vanilla_first_setup/defaults/network.py:40
+msgid "Secure network (WPA2)"
+msgstr "Réseau sécurisé (WPA2)"
+
+#: vanilla_first_setup/defaults/network.py:41
+msgid "Secure network (WPA3)"
+msgstr "Réseau sécurisé (WPA3)"
+
+#: vanilla_first_setup/defaults/network.py:374
+msgid "Authentication required"
+msgstr "Authentification requise"
+
+#: vanilla_first_setup/defaults/network.py:382
+msgid "Connecting"
+msgstr "Connexion"
+
+#: vanilla_first_setup/defaults/network.py:384
+msgid "Disconnected"
+msgstr "Déconnecté"
+
+#: vanilla_first_setup/defaults/network.py:386
+msgid "Disconnecting"
+msgstr "Déconnexion"
+
+#: vanilla_first_setup/defaults/network.py:388
+msgid "Connection Failed"
+msgstr "Échec de la connexion"
+
+#: vanilla_first_setup/defaults/network.py:390
+msgid "Status Unknown"
+msgstr "Statut inconnu"
+
+#: vanilla_first_setup/defaults/network.py:392
+msgid "Unmanaged"
+msgstr "Non géré"
+
+#: vanilla_first_setup/defaults/network.py:394
+msgid "Unavailable"
+msgstr "Indisponible"
+
+#: vanilla_first_setup/defaults/network.py:408
+msgid "Cable Unplugged"
+msgstr "Câble débranché"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
 msgstr "Veuillez sélectionner au moins une option."
 
-#: vanilla_first_setup/views/done.py:41
+#: vanilla_first_setup/views/done.py:51
 msgid "Restart your device to enjoy your {} experience."
 msgstr "Redémarrez votre appareil pour profiter de votre expérience {}."
 
-#: vanilla_first_setup/views/done.py:63
+#: vanilla_first_setup/views/done.py:73
 msgid "Something went wrong"
 msgstr "Quelque chose s'est mal passé"
 
-#: vanilla_first_setup/views/done.py:64
+#: vanilla_first_setup/views/done.py:75
 msgid "Please contact the distribution developers."
 msgstr "Veuillez contacter les développeurs de la distribution."
 
-#: vanilla_first_setup/main.py:55
+#: vanilla_first_setup/main.py:56
 msgid "Run a post script"
 msgstr "Exécuter un script post-installation"
 
-#: vanilla_first_setup/main.py:63
+#: vanilla_first_setup/main.py:64
 msgid "Run as a new user"
 msgstr "Exécuter en tant que nouvel utilisateur"
 
-#: vanilla_first_setup/window.py:67
+#: vanilla_first_setup/window.py:69
 msgid "Done!"
 msgstr "Terminé !"
 
-#: vanilla_first_setup/window.py:67
+#: vanilla_first_setup/window.py:70
 msgid "Your device is ready to use."
 msgstr "Votre appareil est prêt à être utilisé."
 
-#: vanilla_first_setup/window.py:68
+#: vanilla_first_setup/window.py:71
 msgid "Error!"
 msgstr "Erreur !"
 
-#: vanilla_first_setup/window.py:68
+#: vanilla_first_setup/window.py:72
 msgid "Something went wrong."
 msgstr "Quelque chose s'est mal passé."
+
+#~ msgid "Make your choices, this wizard will take care of everything."
+#~ msgstr "Faites vos choix, cet assistant s'occupera de tout."
 
 #~ msgid "The changes are being applied. Please Wait…"
 #~ msgstr "Modifications en cours, merci de patienter…"

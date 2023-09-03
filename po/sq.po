@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-21 19:32+0530\n"
+"POT-Creation-Date: 2023-08-29 00:39+0530\n"
 "PO-Revision-Date: 2023-03-19 23:38+0000\n"
 "Last-Translator: Frederik Pjetri <rikpjetri@gmail.com>\n"
 "Language-Team: Albanian <https://hosted.weblate.org/projects/vanilla-os/"
@@ -35,12 +35,12 @@ msgid "First release"
 msgstr "Lëshimi i parë"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
-#: vanilla_first_setup/defaults/conn_check.py:79
+#: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
 msgstr "Po kontrollon lidhjen…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#: vanilla_first_setup/defaults/conn_check.py:80
+#: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
 msgstr "Ju lutemi prisni derisa të kryhet kontrolli i lidhjes."
 
@@ -57,9 +57,41 @@ msgid "Device Name"
 msgstr ""
 
 #: vanilla_first_setup/gtk/default-hostname.ui:35
+#: vanilla_first_setup/gtk/default-network.ui:95
 #: vanilla_first_setup/gtk/default-theme.ui:49
+#: vanilla_first_setup/gtk/default-user.ui:60
 msgid "Next"
 msgstr "Tjetra"
+
+#: vanilla_first_setup/gtk/default-network.ui:18
+msgid "Connect to the Internet"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:19
+msgid ""
+"An active internet connection is required to make sure your system is up-to-"
+"date and download your favorite applications."
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:29
+msgid "Wired"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:34
+msgid "Wireless Networks"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:39
+msgid "Advanced"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:42
+msgid "Connect to Hidden Network..."
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:69
+msgid "Open Proxy Settings..."
+msgstr ""
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -77,13 +109,34 @@ msgstr "Skema e ngjyrave"
 msgid "Choose a color scheme for your system."
 msgstr "Zgjidhni një skemë ngjyrash për sistemin tuaj."
 
-#: vanilla_first_setup/gtk/default-welcome.ui:12
+#: vanilla_first_setup/gtk/default-user.ui:21
+msgid "Create User"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-user.ui:22
+msgid "Provide details for your user account"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-user.ui:29
+msgid "Name"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-user.ui:35
+msgid "Username"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-user.ui:41
+msgid "Password"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-user.ui:47
+msgid "Confirm Password"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-welcome.ui:20
+#: vanilla_first_setup/gtk/default-welcome.ui:29
 msgid "Welcome!"
 msgstr "Mirë se vini!"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:13
-msgid "Make your choices, this wizard will take care of everything."
-msgstr "Bëni zgjedhjet tuaja, ky magjistar do të kujdeset për gjithçka."
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
@@ -129,50 +182,110 @@ msgstr "Lexo më shumë"
 msgid "Back"
 msgstr "Mbrapa"
 
-#: vanilla_first_setup/defaults/conn_check.py:70
+#: vanilla_first_setup/gtk/wireless-row.ui:33
+#: vanilla_first_setup/defaults/network.py:371
+msgid "Connected"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
 msgstr "Nuk ka lidhje interneti!"
 
-#: vanilla_first_setup/defaults/conn_check.py:71
+#: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
 msgstr "Konfigurimi i parë kërkon një lidhje aktive në internet"
+
+#: vanilla_first_setup/defaults/network.py:38
+msgid "Insecure network (WEP)"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:39
+msgid "Secure network (WPA)"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:40
+msgid "Secure network (WPA2)"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:41
+msgid "Secure network (WPA3)"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:374
+msgid "Authentication required"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:382
+msgid "Connecting"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:384
+msgid "Disconnected"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:386
+msgid "Disconnecting"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:388
+msgid "Connection Failed"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:390
+msgid "Status Unknown"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:392
+msgid "Unmanaged"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:394
+msgid "Unavailable"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:408
+msgid "Cable Unplugged"
+msgstr ""
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
 msgstr "Ju lutemi zgjidhni të paktën një opsion."
 
-#: vanilla_first_setup/views/done.py:41
+#: vanilla_first_setup/views/done.py:51
 msgid "Restart your device to enjoy your {} experience."
 msgstr "Rinisni pajisjen tuaj për të shijuar përvojën tuaj të {}."
 
-#: vanilla_first_setup/views/done.py:63
+#: vanilla_first_setup/views/done.py:73
 msgid "Something went wrong"
 msgstr "Dicka shkoi keq"
 
-#: vanilla_first_setup/views/done.py:64
+#: vanilla_first_setup/views/done.py:75
 msgid "Please contact the distribution developers."
 msgstr "Ju lutemi kontaktoni zhvilluesit e shpërndarjes."
 
-#: vanilla_first_setup/main.py:55
+#: vanilla_first_setup/main.py:56
 msgid "Run a post script"
 msgstr "Drejtoni një skript postimi"
 
-#: vanilla_first_setup/main.py:63
+#: vanilla_first_setup/main.py:64
 msgid "Run as a new user"
 msgstr ""
 
-#: vanilla_first_setup/window.py:67
+#: vanilla_first_setup/window.py:69
 msgid "Done!"
 msgstr "U krye!"
 
-#: vanilla_first_setup/window.py:67
+#: vanilla_first_setup/window.py:70
 msgid "Your device is ready to use."
 msgstr "Pajisja juaj është gati për përdorim."
 
-#: vanilla_first_setup/window.py:68
+#: vanilla_first_setup/window.py:71
 msgid "Error!"
 msgstr "Gabim!"
 
-#: vanilla_first_setup/window.py:68
+#: vanilla_first_setup/window.py:72
 msgid "Something went wrong."
 msgstr "Dicka shkoi keq."
+
+#~ msgid "Make your choices, this wizard will take care of everything."
+#~ msgstr "Bëni zgjedhjet tuaja, ky magjistar do të kujdeset për gjithçka."
