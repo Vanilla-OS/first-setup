@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
 "PO-Revision-Date: 2023-09-06 17:04+0000\n"
-"Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
+"Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/sv/>\n"
 "Language: sv\n"
@@ -67,7 +67,7 @@ msgstr "Nästa"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Connect to the Internet"
-msgstr ""
+msgstr "Anslut till internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
