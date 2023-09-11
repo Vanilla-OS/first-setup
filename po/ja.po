@@ -38,11 +38,13 @@ msgstr "最初のリリース"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:114
+#: vanilla_first_setup/defaults/conn_check.py:79
 msgid "Checking Connection…"
 msgstr "接続を確認しています…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 #: vanilla_first_setup/defaults/conn_check.py:116
+#: vanilla_first_setup/defaults/conn_check.py:80
 msgid "Please wait until the connection check is done."
 msgstr "接続の確認が終わるまでお待ちください。"
 
@@ -117,7 +119,6 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/default-user.ui:22
 #, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide details for your user account"
 msgstr "お使いのデバイスについての詳細を設定します"
 
@@ -139,6 +140,7 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
+#: vanilla_first_setup/gtk/default-welcome.ui:12
 msgid "Welcome!"
 msgstr "ようこそ！"
 
@@ -192,10 +194,12 @@ msgid "Connected"
 msgstr ""
 
 #: vanilla_first_setup/defaults/conn_check.py:103
+#: vanilla_first_setup/defaults/conn_check.py:70
 msgid "No Internet Connection!"
 msgstr "インターネット接続がありません！"
 
 #: vanilla_first_setup/defaults/conn_check.py:105
+#: vanilla_first_setup/defaults/conn_check.py:71
 msgid "First Setup requires an active internet connection"
 msgstr "初期設定には有効なインターネット接続が必要です"
 
@@ -255,44 +259,45 @@ msgstr ""
 msgid "Please select at least one option."
 msgstr "最低でもひとつはオプションを選択してください。"
 
-#: vanilla_first_setup/views/done.py:51
+#: vanilla_first_setup/views/done.py:51 vanilla_first_setup/views/done.py:41
 msgid "Restart your device to enjoy your {} experience."
 msgstr "デバイスを再起動して、{} をお楽しみください。"
 
-#: vanilla_first_setup/views/done.py:73
+#: vanilla_first_setup/views/done.py:73 vanilla_first_setup/views/done.py:63
 msgid "Something went wrong"
 msgstr "問題が発生しました"
 
-#: vanilla_first_setup/views/done.py:75
+#: vanilla_first_setup/views/done.py:75 vanilla_first_setup/views/done.py:64
 msgid "Please contact the distribution developers."
 msgstr "ディストリビューションの開発者にご連絡ください。"
 
-#: vanilla_first_setup/main.py:56
+#: vanilla_first_setup/main.py:56 vanilla_first_setup/main.py:55
 msgid "Run a post script"
 msgstr "ポストスクリプトを実行"
 
-#: vanilla_first_setup/main.py:64
+#: vanilla_first_setup/main.py:64 vanilla_first_setup/main.py:63
 msgid "Run as a new user"
 msgstr "新しいユーザーとして実行"
 
-#: vanilla_first_setup/window.py:69
+#: vanilla_first_setup/window.py:69 vanilla_first_setup/window.py:67
 msgid "Done!"
 msgstr "完了しました！"
 
-#: vanilla_first_setup/window.py:70
+#: vanilla_first_setup/window.py:70 vanilla_first_setup/window.py:67
 msgid "Your device is ready to use."
 msgstr "デバイスを使用する準備が整いました。"
 
-#: vanilla_first_setup/window.py:71
+#: vanilla_first_setup/window.py:71 vanilla_first_setup/window.py:68
 msgid "Error!"
 msgstr "エラー！"
 
-#: vanilla_first_setup/window.py:72
+#: vanilla_first_setup/window.py:72 vanilla_first_setup/window.py:68
 msgid "Something went wrong."
 msgstr "問題が発生しました。"
 
-#~ msgid "Make your choices, this wizard will take care of everything."
-#~ msgstr "ウィザードのガイドに従って、設定を選択してください。"
+#: vanilla_first_setup/gtk/default-welcome.ui:13
+msgid "Make your choices, this wizard will take care of everything."
+msgstr "ウィザードのガイドに従って、設定を選択してください。"
 
 #~ msgid "The changes are being applied. Please Wait…"
 #~ msgstr "変更を適用しています。お待ちください…"
