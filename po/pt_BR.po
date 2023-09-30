@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Felipe Nogueira <contato.fnog@gmail.com>, 2023.
 # Fernando Lopes <118869201+plasmus777@users.noreply.github.com>, 2023.
+# Davi de Oliveira Barbosa <davioliveira.java@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-08-31 13:54+0000\n"
-"Last-Translator: Fernando Lopes <118869201+plasmus777@users.noreply.github."
-"com>\n"
+"PO-Revision-Date: 2023-09-19 16:59+0000\n"
+"Last-Translator: Davi de Oliveira Barbosa <davioliveira.java@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "vanilla-os/first-setup/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.0.1-dev\n"
+"X-Generator: Weblate 5.1-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -70,16 +70,18 @@ msgid "Connect to the Internet"
 msgstr "Conectar-se à Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
+#, fuzzy
 msgid ""
 "An active internet connection is required to make sure your system is up-to-"
 "date and download your favorite applications."
 msgstr ""
-"Uma conexão ativa com a Internet é necessária para garantir que seu sistema "
-"esteja atualizado e baixar seus aplicativos favoritos."
+"Uma conexão de internet estável é necessária para garantir que o seu sistema "
+"permaneça atualizado e para baixar os seus aplicativos favoritos."
 
 #: vanilla_first_setup/gtk/default-network.ui:29
+#, fuzzy
 msgid "Wired"
-msgstr "Com fio"
+msgstr "Redes cabeadas"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
@@ -151,8 +153,9 @@ msgid "All done!"
 msgstr "Tudo pronto!"
 
 #: vanilla_first_setup/gtk/done.ui:13
+#, fuzzy
 msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr "Reinicie seu PC para aproveitar a experiência de seu Vanilla OS."
+msgstr "Reinicie seu PC para aproveitar a sua experiência no Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
