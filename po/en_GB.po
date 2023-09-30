@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-04-29 08:50+0000\n"
+"PO-Revision-Date: 2023-09-21 05:36+0000\n"
 "Last-Translator: Andi Chandler <andi@gowling.com>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
 "vanilla-os/first-setup/en_GB/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.1-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -65,33 +65,35 @@ msgstr "Next"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Connect to the Internet"
-msgstr ""
+msgstr "Connect to the Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
 "An active internet connection is required to make sure your system is up-to-"
 "date and download your favorite applications."
 msgstr ""
+"An active Internet connection is required to make sure your system is up-to-"
+"date and download your favourite applications."
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
-msgstr ""
+msgstr "Wired"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
-msgstr ""
+msgstr "Wireless Networks"
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
-msgstr ""
+msgstr "Advanced"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
 msgid "Connect to Hidden Network..."
-msgstr ""
+msgstr "Connect to Hidden Network..."
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr ""
+msgstr "Open Proxy Settings..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -111,29 +113,27 @@ msgstr "Choose a colour scheme for your system."
 
 #: vanilla_first_setup/gtk/default-user.ui:21
 msgid "Create User"
-msgstr ""
+msgstr "Create User"
 
 #: vanilla_first_setup/gtk/default-user.ui:22
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide details for your user account"
-msgstr "Provide details about your device"
+msgstr "Provide details for your user account"
 
 #: vanilla_first_setup/gtk/default-user.ui:29
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #: vanilla_first_setup/gtk/default-user.ui:35
 msgid "Username"
-msgstr ""
+msgstr "Username"
 
 #: vanilla_first_setup/gtk/default-user.ui:41
 msgid "Password"
-msgstr ""
+msgstr "Password"
 
 #: vanilla_first_setup/gtk/default-user.ui:47
 msgid "Confirm Password"
-msgstr ""
+msgstr "Confirm Password"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
@@ -187,7 +187,7 @@ msgstr "Back"
 #: vanilla_first_setup/gtk/wireless-row.ui:33
 #: vanilla_first_setup/defaults/network.py:371
 msgid "Connected"
-msgstr ""
+msgstr "Connected"
 
 #: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
@@ -199,55 +199,55 @@ msgstr "First Setup requires an active Internet connection"
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
-msgstr ""
+msgstr "Insecure network (WEP)"
 
 #: vanilla_first_setup/defaults/network.py:39
 msgid "Secure network (WPA)"
-msgstr ""
+msgstr "Secure network (WPA)"
 
 #: vanilla_first_setup/defaults/network.py:40
 msgid "Secure network (WPA2)"
-msgstr ""
+msgstr "Secure network (WPA2)"
 
 #: vanilla_first_setup/defaults/network.py:41
 msgid "Secure network (WPA3)"
-msgstr ""
+msgstr "Secure network (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:374
 msgid "Authentication required"
-msgstr ""
+msgstr "Authentication required"
 
 #: vanilla_first_setup/defaults/network.py:382
 msgid "Connecting"
-msgstr ""
+msgstr "Connecting"
 
 #: vanilla_first_setup/defaults/network.py:384
 msgid "Disconnected"
-msgstr ""
+msgstr "Disconnected"
 
 #: vanilla_first_setup/defaults/network.py:386
 msgid "Disconnecting"
-msgstr ""
+msgstr "Disconnecting"
 
 #: vanilla_first_setup/defaults/network.py:388
 msgid "Connection Failed"
-msgstr ""
+msgstr "Connection Failed"
 
 #: vanilla_first_setup/defaults/network.py:390
 msgid "Status Unknown"
-msgstr ""
+msgstr "Status Unknown"
 
 #: vanilla_first_setup/defaults/network.py:392
 msgid "Unmanaged"
-msgstr ""
+msgstr "Unmanaged"
 
 #: vanilla_first_setup/defaults/network.py:394
 msgid "Unavailable"
-msgstr ""
+msgstr "Unavailable"
 
 #: vanilla_first_setup/defaults/network.py:408
 msgid "Cable Unplugged"
-msgstr ""
+msgstr "Cable Unplugged"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
