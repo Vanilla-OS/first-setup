@@ -4,13 +4,14 @@
 # Felipe Nogueira <contato.fnog@gmail.com>, 2023.
 # Fernando Lopes <118869201+plasmus777@users.noreply.github.com>, 2023.
 # Davi de Oliveira Barbosa <davioliveira.java@gmail.com>, 2023.
+# Império Linux <kevendoria86@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-09-19 16:59+0000\n"
-"Last-Translator: Davi de Oliveira Barbosa <davioliveira.java@gmail.com>\n"
+"PO-Revision-Date: 2023-09-20 20:28+0000\n"
+"Last-Translator: Império Linux <kevendoria86@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "vanilla-os/first-setup/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -70,7 +71,6 @@ msgid "Connect to the Internet"
 msgstr "Conectar-se à Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
-#, fuzzy
 msgid ""
 "An active internet connection is required to make sure your system is up-to-"
 "date and download your favorite applications."
@@ -79,7 +79,6 @@ msgstr ""
 "permaneça atualizado e para baixar os seus aplicativos favoritos."
 
 #: vanilla_first_setup/gtk/default-network.ui:29
-#, fuzzy
 msgid "Wired"
 msgstr "Redes cabeadas"
 
@@ -153,7 +152,6 @@ msgid "All done!"
 msgstr "Tudo pronto!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Restart your device to enjoy your Vanilla OS experience."
 msgstr "Reinicie seu PC para aproveitar a sua experiência no Vanilla OS."
 
