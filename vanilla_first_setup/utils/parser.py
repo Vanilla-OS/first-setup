@@ -29,6 +29,7 @@ class Parser:
         warps = []
         all_vars = []
         exposed_vars = {}
+        tests = []
 
         for final in finals:
             if len(final) == 0:
@@ -84,6 +85,8 @@ class Parser:
                         for k, v in exposed_vars.items():
                             cmd = cmd.replace(f"exposed::{k}", v)
                         commands.append(cmd)
+                    for test in _func["tests"]:
+                        tests.append(test)
 
         # set-up warps if any
         for warp in warps:
@@ -98,4 +101,4 @@ class Parser:
                 if _if in all_vars:
                     commands += _func["commands"]
 
-        return commands
+        return (commands, tests)

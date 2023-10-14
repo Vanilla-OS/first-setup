@@ -92,6 +92,10 @@
                     "commands": [
                         "abroot pkg add flatpak gnome-software-plugin-flatpak",
                         "!nextBoot !noRoot flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo"
+                    ],
+                    "tests": [
+                        "flatpak",
+                        "gnome-software-plugin-flatpak"
                     ]
                 },
                 {
@@ -99,6 +103,9 @@
                     "type": "command",
                     "commands": [
                         "abroot pkg add fuse3 libfuse3-3"
+                    ],
+                    "tests": [
+                        "fuse3"
                     ]
                 }
             ]
@@ -303,167 +310,200 @@
                 {
                     "if" : "Calculator",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Calculator"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Calculator"],
+                    "tests": []
                 },
                 {
                     "if" : "Calendar",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Calendar"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Calendar"],
+                    "tests": []
                 },
                 {
                     "if" : "Characters",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Characters"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Characters"],
+                    "tests": []
                 },
                 {
                     "if" : "Clocks",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.clocks"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.clocks"],
+                    "tests": []
                 },
                 {
                     "if" : "Connections",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Connections"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Connections"],
+                    "tests": []
                 },
                 {
                     "if" : "Contacts",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Contacts"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Contacts"],
+                    "tests": []
                 },
                 {
                     "if" : "Disk Usage Analyzer",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.baobab"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.baobab"],
+                    "tests": []
                 },
                 {
                     "if": "Document Scanner",
                     "type": "command",
-                    "commands": ["!nextBoot !noRoot flatpak install -y org.gnome.SimpleScan"]
+                    "commands": ["!nextBoot !noRoot flatpak install -y org.gnome.SimpleScan"],
+                    "tests": []
                 },
                 {
                     "if" : "Document Viewer",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Evince"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Evince"],
+                    "tests": []
                 },
                 {
                     "if": "Extension Manager",
                     "type": "command",
-                    "commands": ["!nextBoot !noRoot flatpak install -y com.mattjakeman.ExtensionManager"]
+                    "commands": ["!nextBoot !noRoot flatpak install -y com.mattjakeman.ExtensionManager"],
+                    "tests": []
                 },
                 {
                     "if" : "File Roller",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.FileRoller"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.FileRoller"],
+                    "tests": []
                 },
                 {
                     "if" : "Fonts",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.font-viewer"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.font-viewer"],
+                    "tests": []
                 },
                 {
                     "if" : "Image Viewer",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Loupe"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Loupe"],
+                    "tests": []
                 },
                 {
                     "if" : "Logs",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Logs"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Logs"],
+                    "tests": []
                 },
                 {
                     "if" : "Maps",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Maps"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Maps"],
+                    "tests": []
                 },
                 {
                     "if" : "Music",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Music"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Music"],
+                    "tests": []
                 },
                 {
                     "if": "Photos",
                     "type": "command",
-                    "commands": ["!nextBoot !noRoot flatpak install -y org.gnome.Photos"]
+                    "commands": ["!nextBoot !noRoot flatpak install -y org.gnome.Photos"],
+                    "tests": []
                 },
                 {
                     "if" : "Snapshot",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Snapshot"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Snapshot"],
+                    "tests": []
                 },
                 {
                     "if" : "Text Editor",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.TextEditor"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.TextEditor"],
+                    "tests": []
                 },
                 {
                     "if" : "Weather",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Weather"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Weather"],
+                    "tests": []
                 },
                 {
                     "if": "Videos",
                     "type": "command",
-                    "commands": ["!nextBoot !noRoot flatpak install -y org.gnome.Totem"]
+                    "commands": ["!nextBoot !noRoot flatpak install -y org.gnome.Totem"],
+                    "tests": []
                 },
                 {
                     "if" : "Web",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Epiphany"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Epiphany"],
+                    "tests": []
                 },
                 {
                     "if" : "LibreOffice",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.libreoffice.LibreOffice"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.libreoffice.LibreOffice"],
+                    "tests": []
                 },
                 {
                     "if" : "Bottles",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y com.usebottles.bottles"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y com.usebottles.bottles"],
+                    "tests": []
                 },
                 {
                     "if" : "Heroic Games Launcher",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y com.heroicgameslauncher.hgl"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y com.heroicgameslauncher.hgl"],
+                    "tests": []
                 },
                 {
                     "if" : "Lutris",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y net.lutris.Lutris"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y net.lutris.Lutris"],
+                    "tests": []
                 },
                 {
                     "if" : "Boxes",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Boxes"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.Boxes"],
+                    "tests": []
                 },
                 {
                     "if" : "Déjà Dup Backups",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.DejaDup"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.DejaDup"],
+                    "tests": []
                 },
                 {
                     "if" : "Flatseal",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y com.github.tchx84.Flatseal"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y com.github.tchx84.Flatseal"],
+                    "tests": []
                 },
                 {
                     "if" : "Metadata Cleaner",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y fr.romainvigier.MetadataCleaner"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y fr.romainvigier.MetadataCleaner"],
+                    "tests": []
                 },
                 {
                     "if" : "Rnote",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y com.github.flxzt.rnote"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y com.github.flxzt.rnote"],
+                    "tests": []
                 },
                 {
                     "if" : "Shortwave",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y de.haeckerfelix.Shortwave"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y de.haeckerfelix.Shortwave"],
+                    "tests": []
                 },
                 {
                     "if" : "Sound Recorder",
                     "type" :  "command",
-                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.SoundRecorder"]
+                    "commands" : ["!nextBoot !noRoot flatpak install -y org.gnome.SoundRecorder"],
+                    "tests": []
                 }
             ]
         },
@@ -487,7 +527,8 @@
                 {
                     "if": "timeshift",
                     "type": "command",
-                    "commands": ["abroot pkg add timeshift"]
+                    "commands": ["abroot pkg add timeshift"],
+                    "tests": ["timeshift"]
                 }
             ]
         },
@@ -514,7 +555,8 @@
                 {
                     "if": "vm",
                     "type": "command",
-                    "commands": ["abroot pkg add open-vm-tools open-vm-tools-desktop"]
+                    "commands": ["abroot pkg add open-vm-tools open-vm-tools-desktop"],
+                    "tests": ["open-vm-tools", "open-vm-tools-desktop"]
                 }
             ]
         },
@@ -538,7 +580,8 @@
                 {
                     "if": "codecs",
                     "type": "command",
-                    "commands": ["abroot pkg add libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi libavcodec-extra unrar"]
+                    "commands": ["abroot pkg add libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi libavcodec-extra unrar"],
+                    "tests": []
                 }
             ]
         }

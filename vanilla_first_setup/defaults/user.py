@@ -73,6 +73,7 @@ class VanillaDefaultUser(Adw.Bin):
                         f'echo "{self.username}:{self.password_entry.get_text()}" | chpasswd',
                         f"usermod -a -G sudo,adm,lpadmin {self.username}",
                     ],
+                    "tests": []
                 }
             ],
         }
