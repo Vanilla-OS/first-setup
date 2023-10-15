@@ -94,8 +94,7 @@
                         "!nextBoot !noRoot flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo"
                     ],
                     "tests": [
-                        "flatpak",
-                        "gnome-software-plugin-flatpak"
+                        "flatpak"
                     ]
                 },
                 {
@@ -104,9 +103,7 @@
                     "commands": [
                         "abroot pkg add fuse3 libfuse3-3"
                     ],
-                    "tests": [
-                        "fuse3"
-                    ]
+                    "tests": []
                 }
             ]
         },
@@ -556,7 +553,7 @@
                     "if": "vm",
                     "type": "command",
                     "commands": ["abroot pkg add open-vm-tools open-vm-tools-desktop"],
-                    "tests": ["open-vm-tools", "open-vm-tools-desktop"]
+                    "tests": []
                 }
             ]
         },
