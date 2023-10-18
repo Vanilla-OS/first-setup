@@ -28,6 +28,8 @@ from vanilla_first_setup.views.progress import VanillaProgress
 from vanilla_first_setup.views.done import VanillaDone
 from vanilla_first_setup.views.post_script import VanillaPostScript
 
+from dialog import VanillaDialog
+
 
 @Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/window.ui")
 class VanillaWindow(Adw.ApplicationWindow):
@@ -61,15 +63,19 @@ class VanillaWindow(Adw.ApplicationWindow):
         if self.__init_mode == 1:
             self.__tests = Tests()
             self.__tests.load()
-            self.__tests_succeeded = self.__tests.test()
+
+            # 2 = succeeded
+            # 1 = did not succeed
+            # 0 = did not test
+            self.__tests_succeeded = 2 if self.__tests.test() else 1
+            post_script = 0 if self.__tests_succeeded == 1 else 1
         else:
-            # Set them to false anyway if it's the first boot
-            self.__tests_succeeded = False
+            self.__tests_succeeded = 0
 
         # if a post_script is provided, we are in the post setup
         # so we can skip the builder and just run the post script
         # in the Vte terminal
-        if post_script and self.__tests_succeeded:
+        if post_script:
             # set the initialization mode to 1
             self.__init_mode = 1
 
@@ -108,6 +114,9 @@ class VanillaWindow(Adw.ApplicationWindow):
 
         # connect system signals
         self.__connect_signals()
+
+        if self.__tests_succeeded == 1:
+            dialog = VanillaDialog(self, "Previous setup failed", "The packages you installed in the previous boot of First Setup could not be installed. Therefore, you will have to go through the First Setup again.")
 
     def __build_post_script_ui(self, post_script):
         self.__view_post_script = VanillaPostScript(self, post_script)
