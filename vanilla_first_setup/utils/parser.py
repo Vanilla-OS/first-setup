@@ -24,12 +24,11 @@ class Parser:
     supported_types = ["command"]
 
     @staticmethod
-    def parse(finals):
+    def parse(finals, tests):
         commands = []
         warps = []
         all_vars = []
         exposed_vars = {}
-        tests = []
 
         for final in finals:
             if len(final) == 0:
@@ -85,6 +84,8 @@ class Parser:
                         for k, v in exposed_vars.items():
                             cmd = cmd.replace(f"exposed::{k}", v)
                         commands.append(cmd)
+
+                    tests.append(_condition)
 
         # set-up warps if any
         for warp in warps:

@@ -190,7 +190,7 @@ class VanillaWindow(Adw.ApplicationWindow):
 
         # this parses the finals to compatible commands, by replacing the
         # placeholders with the actual values and generating shell commands
-        commands = Parser.parse(finals)
+        commands = Parser.parse(finals, self.__tests)
 
         # process the commands
         res = Processor.get_setup_commands(
@@ -200,6 +200,7 @@ class VanillaWindow(Adw.ApplicationWindow):
             commands
         )
 
+        self.__tests.write()
         self.__view_progress.start(res, Processor.hide_first_setup, self.__user)
 
     def set_installation_result(self, result, terminal):
