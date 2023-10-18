@@ -72,8 +72,7 @@ class VanillaDefaultUser(Adw.Bin):
                         f'adduser --quiet --disabled-password --shell /bin/bash --gecos "{self.fullname}" {self.username}',
                         f'echo "{self.username}:{self.password_entry.get_text()}" | chpasswd',
                         f"usermod -a -G sudo,adm,lpadmin {self.username}",
-                    ],
-                    "tests": []
+                    ]
                 }
             ],
         }

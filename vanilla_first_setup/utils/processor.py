@@ -25,7 +25,7 @@ logger = logging.getLogger("FirstSetup::Processor")
 
 class Processor:
     @staticmethod
-    def get_setup_commands(log_path, pre_run, post_run, commands, tests):
+    def get_setup_commands(log_path, pre_run, post_run, commands):
         commands = pre_run + commands + post_run
         out_run = ""
         next_boot = []
@@ -108,14 +108,6 @@ class Processor:
                 f.write(f"echo 'X-GNOME-Autostart-enabled=true' >> {next_boot_autostart_path}\n")
             # fmt: on
 
-            f.write("while ")
-            for test in tests:
-                f.write(f"! type {test} >/dev/null 2>&1")
-                f.write(" || ")
-            f.write("false\n")
-
-            f.write("do\n")
-
             for command in commands:
                 if command.startswith("!nextBoot"):
                     continue
@@ -141,8 +133,6 @@ class Processor:
 
             # commit changes
             f.write(f"{abroot_bin} pkg apply\n")
-
-            f.write("done\n")
 
             # create the done file
             f.write("if [ $? -eq 0 ]; then\n")

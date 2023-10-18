@@ -181,15 +181,14 @@ class VanillaWindow(Adw.ApplicationWindow):
 
         # this parses the finals to compatible commands, by replacing the
         # placeholders with the actual values and generating shell commands
-        (commands, tests) = Parser.parse(finals)
+        commands = Parser.parse(finals)
 
         # process the commands
         res = Processor.get_setup_commands(
             self.recipe.get("log_file", "/tmp/vanilla_first_setup.log"),
             self.recipe.get("pre_run", []),
             self.recipe.get("post_run"),
-            commands,
-            tests
+            commands
         )
 
         self.__view_progress.start(res, Processor.hide_first_setup, self.__user)

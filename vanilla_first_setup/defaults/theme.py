@@ -74,5 +74,5 @@ class VanillaDefaultTheme(Gtk.Box):
 
         return {
             "vars": {"setTheme": True},
-            "funcs": [{"if": "setTheme", "type": "command", "commands": cmds, "tests": []}],
+            "funcs": [{"if": "setTheme", "type": "command", "commands": cmds}],
         }
