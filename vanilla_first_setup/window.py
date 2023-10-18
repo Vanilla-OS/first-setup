@@ -22,6 +22,7 @@ import contextlib
 from vanilla_first_setup.utils.builder import Builder
 from vanilla_first_setup.utils.parser import Parser
 from vanilla_first_setup.utils.processor import Processor
+from vanilla_first_setup.utils.tests import Tests
 
 from vanilla_first_setup.views.progress import VanillaProgress
 from vanilla_first_setup.views.done import VanillaDone
@@ -55,12 +56,25 @@ class VanillaWindow(Adw.ApplicationWindow):
         # True/False = managed result
         self.__last_result = None
 
+        # Create and run the tests to make sure the previous run installed
+        # all the packages properly
+        if self.__init_mode == 1:
+            self.__tests = Tests()
+            self.__tests.load()
+            self.__tests_succeeded = self.__tests.test()
+        else:
+            # Set them to false anyway if it's the first boot
+            self.__tests_succeeded = False
+
         # if a post_script is provided, we are in the post setup
         # so we can skip the builder and just run the post script
         # in the Vte terminal
-        if post_script:
+        if post_script and self.__tests_succeeded:
             # set the initialization mode to 1
             self.__init_mode = 1
+
+            # delete the tests file
+            self.__tests.remove()
 
             # system views
             self.__view_done = VanillaDone(
