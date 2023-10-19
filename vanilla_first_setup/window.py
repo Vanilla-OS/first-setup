@@ -64,13 +64,13 @@ class VanillaWindow(Adw.ApplicationWindow):
             self.__tests = Tests()
             self.__tests.load()
 
-            # 2 = succeeded
+            # 0 = succeeded
             # 1 = did not succeed
-            # 0 = did not test
-            self.__tests_succeeded = 2 if self.__tests.test() else 1
+            # -1 = did not test
+            self.__tests_succeeded = 0 if self.__tests.test() else 1
             post_script = 0 if self.__tests_succeeded == 1 else 1
         else:
-            self.__tests_succeeded = 0
+            self.__tests_succeeded = -1
 
         # if a post_script is provided, we are in the post setup
         # so we can skip the builder and just run the post script
