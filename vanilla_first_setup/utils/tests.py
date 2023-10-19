@@ -24,6 +24,7 @@ class Tests:
         self.__tests = {}
         self.__tests_path = "/usr/share/org.vanillaos.FirstSetup/tests.json"
         self.__selected_tests_path = "/home/$REAL_USER/.local/share/selected_tests.json"
+        self.__selected_tests_path = "/home/{}/.local/share/selected_tests.json".format(os.getenv("REAL_USER"))
 
     def add_test(self, test):
         self.__selected_tests.append(test)
