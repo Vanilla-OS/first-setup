@@ -3,13 +3,15 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # "ส. สิทธิชัยวัฒน์" <phongthon.thuiprasid@gmail.com>, 2023.
 # Donlawat Samerwongtip <donlabob1051@gmail.com>, 2023.
+# "Toshisawa D. Daitsuku" <65522118+Daitsuku@users.noreply.github.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-10-25 05:00+0000\n"
-"Last-Translator: Donlawat Samerwongtip <donlabob1051@gmail.com>\n"
+"PO-Revision-Date: 2023-10-31 15:43+0000\n"
+"Last-Translator: \"Toshisawa D. Daitsuku\" <65522118+Daitsuku@users.noreply."
+"github.com>\n"
 "Language-Team: Thai <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/th/>\n"
 "Language: th\n"
@@ -17,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.1.1-dev\n"
+"X-Generator: Weblate 5.2-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -43,7 +45,7 @@ msgstr "กำลังตรวจสอบการเชื่อมต่อ
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 #: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
-msgstr "โปรดรอจนกว่าการเชื่อมต่อสำเร็จ."
+msgstr "กรุณารอจนกว่าการเชื่อมต่อจะเสร็จสิ้น"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:14
 msgid "Device Details"
@@ -118,7 +120,7 @@ msgstr "สร้างผู้ใช้"
 
 #: vanilla_first_setup/gtk/default-user.ui:22
 msgid "Provide details for your user account"
-msgstr "ให้รายละเอียดสําหรับบัญชีของผู้ใช้"
+msgstr "กรอกข้อมูลสำหรับบัญชีผู้ใช้ของคุณ"
 
 #: vanilla_first_setup/gtk/default-user.ui:29
 msgid "Name"
@@ -151,7 +153,7 @@ msgstr "เสร็จหมดแล้ว!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr "รีสตาร์ทอุปกรณ์ของคุณเพื่อเพลิดเพลินกับประสบการณ์ Vanila OS ของคุณ"
+msgstr "รีสตาร์ทอุปกรณ์ของคุณเพื่อเพลิดเพลินกับประสบการณ์ Vanilla OS ของคุณ"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
@@ -175,7 +177,7 @@ msgstr "แสดงเอาต์พุตของคอนโซล"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr "แสดงสไลด์"
+msgstr "แสดงภาพสไลด์"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
@@ -216,7 +218,7 @@ msgstr "เครือข่ายรักษาความปลอดภั
 
 #: vanilla_first_setup/defaults/network.py:374
 msgid "Authentication required"
-msgstr "ต้องการการยืนยัน"
+msgstr "ต้องการการยืนยันตัวตน"
 
 #: vanilla_first_setup/defaults/network.py:382
 msgid "Connecting"
