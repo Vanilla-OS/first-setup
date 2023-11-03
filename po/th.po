@@ -2,21 +2,24 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
 # "ส. สิทธิชัยวัฒน์" <phongthon.thuiprasid@gmail.com>, 2023.
+# Donlawat Samerwongtip <donlabob1051@gmail.com>, 2023.
+# "Toshisawa D. Daitsuku" <65522118+Daitsuku@users.noreply.github.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-06-23 22:52+0000\n"
-"Last-Translator: \"ส. สิทธิชัยวัฒน์\" <phongthon.thuiprasid@gmail.com>\n"
-"Language-Team: Thai <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/th/>\n"
+"PO-Revision-Date: 2023-10-31 15:43+0000\n"
+"Last-Translator: \"Toshisawa D. Daitsuku\" <65522118+Daitsuku@users.noreply."
+"github.com>\n"
+"Language-Team: Thai <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/th/>\n"
 "Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 5.2-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -42,7 +45,7 @@ msgstr "กำลังตรวจสอบการเชื่อมต่อ
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 #: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
-msgstr "โปรดรอจนกว่าการเชื่อมต่อสำเร็จ."
+msgstr "กรุณารอจนกว่าการเชื่อมต่อจะเสร็จสิ้น"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:14
 msgid "Device Details"
@@ -65,33 +68,35 @@ msgstr "ถัดไป"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Connect to the Internet"
-msgstr ""
+msgstr "เชื่อมต่ออินเตอร์เน็ต"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
 "An active internet connection is required to make sure your system is up-to-"
 "date and download your favorite applications."
 msgstr ""
+"ต้องมีการเชื่อมต่ออินเทอร์เน็ตที่ทำงานอยู่เพื่อให้แน่ใจว่าระบบของคุณมีการอัปเ"
+"ดตล่าสุดและดาวน์โหลดแอปพลิเคชันที่คุณชื่นชอบได้"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
-msgstr ""
+msgstr "อินเทอร์เน็ตแบบใช้สาย"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
-msgstr ""
+msgstr "เครือข่ายไร้สาย"
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
-msgstr ""
+msgstr "ขั้นสูง"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
 msgid "Connect to Hidden Network..."
-msgstr ""
+msgstr "เชื่อมต่อเครือข่ายที่ซ่อนอยู่ ..."
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr ""
+msgstr "การตั้งค่าพร็อกซี่ ..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -111,29 +116,27 @@ msgstr "เลือกแบบแผนชุดสีสำหรับระ
 
 #: vanilla_first_setup/gtk/default-user.ui:21
 msgid "Create User"
-msgstr ""
+msgstr "สร้างผู้ใช้"
 
 #: vanilla_first_setup/gtk/default-user.ui:22
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide details for your user account"
-msgstr "ให้รายละเอียดเกี่ยวกับอุปกรณ์ของคุณ"
+msgstr "กรอกข้อมูลสำหรับบัญชีผู้ใช้ของคุณ"
 
 #: vanilla_first_setup/gtk/default-user.ui:29
 msgid "Name"
-msgstr ""
+msgstr "ชื่อ"
 
 #: vanilla_first_setup/gtk/default-user.ui:35
 msgid "Username"
-msgstr ""
+msgstr "ชื่อผู้ใช้"
 
 #: vanilla_first_setup/gtk/default-user.ui:41
 msgid "Password"
-msgstr ""
+msgstr "รหัสผ่าน"
 
 #: vanilla_first_setup/gtk/default-user.ui:47
 msgid "Confirm Password"
-msgstr ""
+msgstr "ยืนยันรหัสผ่าน"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
@@ -150,7 +153,7 @@ msgstr "เสร็จหมดแล้ว!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr "รีสตาร์ทอุปกรณ์ของคุณเพื่อเพลิดเพลินกับประสบการณ์ Vanila OS ของคุณ"
+msgstr "รีสตาร์ทอุปกรณ์ของคุณเพื่อเพลิดเพลินกับประสบการณ์ Vanilla OS ของคุณ"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
@@ -174,7 +177,7 @@ msgstr "แสดงเอาต์พุตของคอนโซล"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr "แสดงสไลด์"
+msgstr "แสดงภาพสไลด์"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
@@ -187,7 +190,7 @@ msgstr "ย้อนกลับ"
 #: vanilla_first_setup/gtk/wireless-row.ui:33
 #: vanilla_first_setup/defaults/network.py:371
 msgid "Connected"
-msgstr ""
+msgstr "เชื่อมต่อแล้ว"
 
 #: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
@@ -199,55 +202,55 @@ msgstr "การตั้งค่าครั้งแรกต้องใช
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
-msgstr ""
+msgstr "เครือข่าย (WEP)"
 
 #: vanilla_first_setup/defaults/network.py:39
 msgid "Secure network (WPA)"
-msgstr ""
+msgstr "เครือข่ายรักษาความปลอดภัย (WPA)"
 
 #: vanilla_first_setup/defaults/network.py:40
 msgid "Secure network (WPA2)"
-msgstr ""
+msgstr "เครือข่ายรักษาความปลอดภัย (WPA2)"
 
 #: vanilla_first_setup/defaults/network.py:41
 msgid "Secure network (WPA3)"
-msgstr ""
+msgstr "เครือข่ายรักษาความปลอดภัย (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:374
 msgid "Authentication required"
-msgstr ""
+msgstr "ต้องการการยืนยันตัวตน"
 
 #: vanilla_first_setup/defaults/network.py:382
 msgid "Connecting"
-msgstr ""
+msgstr "กำลังเชื่อมต่อ"
 
 #: vanilla_first_setup/defaults/network.py:384
 msgid "Disconnected"
-msgstr ""
+msgstr "ตัดการเชื่อมต่อแล้ว"
 
 #: vanilla_first_setup/defaults/network.py:386
 msgid "Disconnecting"
-msgstr ""
+msgstr "กำลังตัดการเชื่อมต่อ"
 
 #: vanilla_first_setup/defaults/network.py:388
 msgid "Connection Failed"
-msgstr ""
+msgstr "เชื่อมต่อล้มเหลว"
 
 #: vanilla_first_setup/defaults/network.py:390
 msgid "Status Unknown"
-msgstr ""
+msgstr "ไม่ทราบสถานะ"
 
 #: vanilla_first_setup/defaults/network.py:392
 msgid "Unmanaged"
-msgstr ""
+msgstr "ไม่มีการจัดการ"
 
 #: vanilla_first_setup/defaults/network.py:394
 msgid "Unavailable"
-msgstr ""
+msgstr "ไม่มี"
 
 #: vanilla_first_setup/defaults/network.py:408
 msgid "Cable Unplugged"
-msgstr ""
+msgstr "ถอดสายแล้ว"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."

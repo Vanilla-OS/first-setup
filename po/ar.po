@@ -5,22 +5,23 @@
 # Ibrahim Kaikaa <ibrahimkaikaa@protonmail.com>, 2023.
 # Muhammad Bahaa <muhammad.bahaa1@gmail.com>, 2023.
 # Moumn Almunawy <moumnalmunawy2006@gmail.com>, 2023.
+# bob lock <sidkia447@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-07-05 14:52+0000\n"
-"Last-Translator: Moumn Almunawy <moumnalmunawy2006@gmail.com>\n"
-"Language-Team: Arabic <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/ar/>\n"
+"PO-Revision-Date: 2023-10-29 21:21+0000\n"
+"Last-Translator: bob lock <sidkia447@gmail.com>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.2-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -68,34 +69,36 @@ msgid "Next"
 msgstr "التالي"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
+#, fuzzy
 msgid "Connect to the Internet"
-msgstr ""
+msgstr "الاتصال بالإنترنت"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
 "An active internet connection is required to make sure your system is up-to-"
 "date and download your favorite applications."
 msgstr ""
+"يلزم وجود اتصال نشط بالإنترنت للتأكد من تحديث نظامك وتنزيل تطبيقاتك المفضلة."
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
-msgstr ""
+msgstr "سلكي"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
-msgstr ""
+msgstr "الشبكات اللاسلكية"
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
-msgstr ""
+msgstr "متقدم"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
 msgid "Connect to Hidden Network..."
-msgstr ""
+msgstr "الاتصال بالشبكة المخفية..."
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr ""
+msgstr "افتح إعدادات الوكيل..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -115,29 +118,27 @@ msgstr "اختر سمة لنظامك."
 
 #: vanilla_first_setup/gtk/default-user.ui:21
 msgid "Create User"
-msgstr ""
+msgstr "إنشاء مستخدم"
 
 #: vanilla_first_setup/gtk/default-user.ui:22
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide details for your user account"
-msgstr "قدم تفاصيل جهازك"
+msgstr "قدم تفاصيل جهازكتقديم تفاصيل لحساب المستخدم الخاص بك"
 
 #: vanilla_first_setup/gtk/default-user.ui:29
 msgid "Name"
-msgstr ""
+msgstr "اسم"
 
 #: vanilla_first_setup/gtk/default-user.ui:35
 msgid "Username"
-msgstr ""
+msgstr "اسم المستخدم"
 
 #: vanilla_first_setup/gtk/default-user.ui:41
 msgid "Password"
-msgstr ""
+msgstr "كلمة المرور"
 
 #: vanilla_first_setup/gtk/default-user.ui:47
 msgid "Confirm Password"
-msgstr ""
+msgstr "تأكيد كلمة المرور"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
@@ -162,7 +163,7 @@ msgstr "نعم، فعّلها"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing"
-msgstr "وضع اللمسات الأخيرة"
+msgstr "جاري التحضير"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
@@ -191,7 +192,7 @@ msgstr "إلى الخلف"
 #: vanilla_first_setup/gtk/wireless-row.ui:33
 #: vanilla_first_setup/defaults/network.py:371
 msgid "Connected"
-msgstr ""
+msgstr "متصل"
 
 #: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
@@ -203,55 +204,55 @@ msgstr "تتطلب الخطوة الأولى الاتصال بالإنترنت"
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
-msgstr ""
+msgstr "شبكة غير آمنة (WEP)"
 
 #: vanilla_first_setup/defaults/network.py:39
 msgid "Secure network (WPA)"
-msgstr ""
+msgstr "شبكة آمنة (WPA)"
 
 #: vanilla_first_setup/defaults/network.py:40
 msgid "Secure network (WPA2)"
-msgstr ""
+msgstr "شبكة آمنة (WPA2)"
 
 #: vanilla_first_setup/defaults/network.py:41
 msgid "Secure network (WPA3)"
-msgstr ""
+msgstr "شبكة آمنة (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:374
 msgid "Authentication required"
-msgstr ""
+msgstr "يستلزم التوثيق"
 
 #: vanilla_first_setup/defaults/network.py:382
 msgid "Connecting"
-msgstr ""
+msgstr "توصيل"
 
 #: vanilla_first_setup/defaults/network.py:384
 msgid "Disconnected"
-msgstr ""
+msgstr "انقطع الاتصال"
 
 #: vanilla_first_setup/defaults/network.py:386
 msgid "Disconnecting"
-msgstr ""
+msgstr "قطع الاتصال"
 
 #: vanilla_first_setup/defaults/network.py:388
 msgid "Connection Failed"
-msgstr ""
+msgstr "فشل الاتصال"
 
 #: vanilla_first_setup/defaults/network.py:390
 msgid "Status Unknown"
-msgstr ""
+msgstr "الحالة غير معروفة"
 
 #: vanilla_first_setup/defaults/network.py:392
 msgid "Unmanaged"
-msgstr ""
+msgstr "غير مُدار"
 
 #: vanilla_first_setup/defaults/network.py:394
 msgid "Unavailable"
-msgstr ""
+msgstr "غير متوفره"
 
 #: vanilla_first_setup/defaults/network.py:408
 msgid "Cable Unplugged"
-msgstr ""
+msgstr "الكابل غير موصول"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."

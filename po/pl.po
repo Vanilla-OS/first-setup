@@ -2,22 +2,23 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
 # gnu-ewm <gnu.ewm@protonmail.com>, 2023.
+# Tomasz Dyńka <gramyteraz12@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-03-23 01:36+0000\n"
-"Last-Translator: gnu-ewm <gnu.ewm@protonmail.com>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/pl/>\n"
+"PO-Revision-Date: 2023-10-26 20:58+0000\n"
+"Last-Translator: Tomasz Dyńka <gramyteraz12@gmail.com>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.16.2-dev\n"
+"X-Generator: Weblate 5.2-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -66,33 +67,35 @@ msgstr "Dalej"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Connect to the Internet"
-msgstr ""
+msgstr "Połącz się z internetem"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
 "An active internet connection is required to make sure your system is up-to-"
 "date and download your favorite applications."
 msgstr ""
+"Połączenie z internetem jest wymagane by aktualizować system oraz instalować "
+"aplikacje."
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
-msgstr ""
+msgstr "Przewodowe"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
-msgstr ""
+msgstr "Sieci bezprzewodowe"
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
-msgstr ""
+msgstr "Zaawansowane"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
 msgid "Connect to Hidden Network..."
-msgstr ""
+msgstr "Połącz z ukrytą siecią…"
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr ""
+msgstr "Otwórz ustawienia Proxy…"
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -112,29 +115,27 @@ msgstr "Wybierz schemat kolorów dla swojego systemu."
 
 #: vanilla_first_setup/gtk/default-user.ui:21
 msgid "Create User"
-msgstr ""
+msgstr "Stwórz użytkownika"
 
 #: vanilla_first_setup/gtk/default-user.ui:22
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide details for your user account"
-msgstr "Podaj szczegóły dotyczące Twojego urządzenia"
+msgstr "Podaj szczegóły dotyczące Twojego konta użytkownika"
 
 #: vanilla_first_setup/gtk/default-user.ui:29
 msgid "Name"
-msgstr ""
+msgstr "Nazwa"
 
 #: vanilla_first_setup/gtk/default-user.ui:35
 msgid "Username"
-msgstr ""
+msgstr "Nazwa użytkownika"
 
 #: vanilla_first_setup/gtk/default-user.ui:41
 msgid "Password"
-msgstr ""
+msgstr "Hasło"
 
 #: vanilla_first_setup/gtk/default-user.ui:47
 msgid "Confirm Password"
-msgstr ""
+msgstr "Potwierdź hasło"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
@@ -188,7 +189,7 @@ msgstr "Wstecz"
 #: vanilla_first_setup/gtk/wireless-row.ui:33
 #: vanilla_first_setup/defaults/network.py:371
 msgid "Connected"
-msgstr ""
+msgstr "Połączony"
 
 #: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
@@ -200,43 +201,43 @@ msgstr "Pierwsza konfiguracja wymaga aktywnego połączenia z Internetem"
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
-msgstr ""
+msgstr "Niebezpieczna sieć (WEP)"
 
 #: vanilla_first_setup/defaults/network.py:39
 msgid "Secure network (WPA)"
-msgstr ""
+msgstr "Bezpieczna sieć (WPA)"
 
 #: vanilla_first_setup/defaults/network.py:40
 msgid "Secure network (WPA2)"
-msgstr ""
+msgstr "Bezpieczna sieć (WPA2)"
 
 #: vanilla_first_setup/defaults/network.py:41
 msgid "Secure network (WPA3)"
-msgstr ""
+msgstr "Bezpieczna sieć (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:374
 msgid "Authentication required"
-msgstr ""
+msgstr "Wymagana autoryzacja"
 
 #: vanilla_first_setup/defaults/network.py:382
 msgid "Connecting"
-msgstr ""
+msgstr "Łączenie"
 
 #: vanilla_first_setup/defaults/network.py:384
 msgid "Disconnected"
-msgstr ""
+msgstr "Rozłączony"
 
 #: vanilla_first_setup/defaults/network.py:386
 msgid "Disconnecting"
-msgstr ""
+msgstr "Rozłączanie"
 
 #: vanilla_first_setup/defaults/network.py:388
 msgid "Connection Failed"
-msgstr ""
+msgstr "Błąd połączenia"
 
 #: vanilla_first_setup/defaults/network.py:390
 msgid "Status Unknown"
-msgstr ""
+msgstr "Stan nieznany"
 
 #: vanilla_first_setup/defaults/network.py:392
 msgid "Unmanaged"
@@ -244,11 +245,11 @@ msgstr ""
 
 #: vanilla_first_setup/defaults/network.py:394
 msgid "Unavailable"
-msgstr ""
+msgstr "Niedostępne"
 
 #: vanilla_first_setup/defaults/network.py:408
 msgid "Cable Unplugged"
-msgstr ""
+msgstr "Kabel odłączony"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
