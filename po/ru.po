@@ -10,17 +10,17 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-09-02 12:54+0000\n"
+"PO-Revision-Date: 2023-11-19 20:43+0000\n"
 "Last-Translator: Fedorov Alexei <aleksejfedorov963@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/ru/>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.0.1-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.2\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -54,7 +54,7 @@ msgstr "Информация об устройстве"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:15
 msgid "Provide details about your device"
-msgstr "Предоставьте подробную информацию о своем устройстве"
+msgstr "Предоставьте информацию о своем устройстве"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:22
 msgid "Device Name"
@@ -76,7 +76,7 @@ msgid ""
 "An active internet connection is required to make sure your system is up-to-"
 "date and download your favorite applications."
 msgstr ""
-"Подключение к интернету необходимо для обновления Вашей системы и установки "
+"Соединение с интернетом необходимо для обновления Вашей системы и установки "
 "любимых приложений."
 
 #: vanilla_first_setup/gtk/default-network.ui:29
@@ -117,7 +117,7 @@ msgstr "Выберите цветовую схему для вашей сист�
 
 #: vanilla_first_setup/gtk/default-user.ui:21
 msgid "Create User"
-msgstr "Создание Пользователя"
+msgstr "Создание пользователя"
 
 #: vanilla_first_setup/gtk/default-user.ui:22
 msgid "Provide details for your user account"
@@ -137,7 +137,7 @@ msgstr "Пароль"
 
 #: vanilla_first_setup/gtk/default-user.ui:47
 msgid "Confirm Password"
-msgstr "Подтверждение Пароля"
+msgstr "Подтверждение пароля"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
