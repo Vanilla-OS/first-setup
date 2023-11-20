@@ -6,3 +6,28 @@ if [ "$(echo "${LOGIN_USERS}" | wc -l)" -gt 1 ]; then
 fi
 
 echo '[daemon]' > /etc/gdm3/daemon.conf
+
+
+export highest_uid=$(grep -E "^UID_MIN " /etc/login.defs | sed 's/UID_MIN //')
+export REAL_USER=""
+
+# Gets the latest added user from /etc/passwd
+# It gets the minimum UID for users using /etc/login.defs
+# and loops over all the entries in /etc/passwd
+# checking if the uid of the selected user is higher than the minimum uid
+# if it is, then this uid gets set as the new minimum uid
+# and it gets repeated until the last line of passwd is processed
+# NOTE: This assumes that new users always have a higher uid than the previously added user and that no system user has a higher UID than the users
+#       it generally is a safe assumption to make, but should still be noted in case something goes wrong.
+while read entry; do
+    uid=$(echo "$entry" | awk 'BEGIN {FS=":"}; {print $3}')
+    name=$(echo "$entry" | awk 'BEGIN {FS=":"}; {print $1}')
+    if [[ $((uid)) -gt $((highest_uid)) && $name != "nobody" ]]; then
+        export highest_uid=$uid
+        export REAL_USER=$name
+    fi
+done < <(getent passwd)
+
+if [ -e "/var/lib/AccountsService/users/$REAL_USER" ]; then
+    sed 's/Session=firstsetup/Session=gnome/g' -i "/var/lib/AccountsService/users/$REAL_USER"
+fi
