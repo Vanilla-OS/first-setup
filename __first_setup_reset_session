@@ -23,7 +23,6 @@ while read entry; do
     uid=$(echo "$entry" | awk 'BEGIN {FS=":"}; {print $3}')
     name=$(echo "$entry" | awk 'BEGIN {FS=":"}; {print $1}')
     if [[ $((uid)) -gt $((highest_uid)) && $name != "nobody" ]]; then
-        echo "$name"
         export highest_uid=$uid
         export REAL_USER=$name
     fi
