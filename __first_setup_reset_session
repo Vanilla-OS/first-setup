@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 LOGIN_USERS=$(getent passwd | awk -F ':' "\$3 >= $(grep UID_MIN /etc/login.defs | cut -d " " -f 2) { print \$1 }" | uniq | sed '/^nobody$/d')
 if [ "$(echo "${LOGIN_USERS}" | wc -l)" -gt 1 ]; then
@@ -28,6 +28,4 @@ while read entry; do
     fi
 done < <(getent passwd)
 
-if [ -e "/var/lib/AccountsService/users/$REAL_USER" ]; then
-    echo '[User]\nSession=gnome' > /var/lib/AccountsService/users/$REAL_USER
-fi
+echo -e '[User]\nSession=gnome' > /var/lib/AccountsService/users/$REAL_USER
