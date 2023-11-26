@@ -8,7 +8,7 @@ fi
 echo '[daemon]' > /etc/gdm3/daemon.conf
 
 
-export highest_uid=$(grep -E "^UID_MIN " /etc/login.defs | sed 's/UID_MIN //')
+export highest_uid=$(grep -E "^UID_MIN" /etc/login.defs | awk '{$1=$1};1' | cut -d$' ' -f2)
 export REAL_USER=""
 
 # Gets the latest added user from /etc/passwd
@@ -29,5 +29,5 @@ while read entry; do
 done < <(getent passwd)
 
 if [ -e "/var/lib/AccountsService/users/$REAL_USER" ]; then
-    sed 's/Session=firstsetup/Session=gnome/g' -i "/var/lib/AccountsService/users/$REAL_USER"
+    echo '[User]\nSession=gnome' > /var/lib/AccountsService/users/$REAL_USER
 fi
