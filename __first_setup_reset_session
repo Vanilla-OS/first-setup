@@ -2,7 +2,7 @@
 
 LOGIN_USERS=$(getent passwd | awk -F ':' "\$3 >= $(grep UID_MIN /etc/login.defs | cut -d " " -f 2) { print \$1 }" | uniq | sed '/^nobody$/d')
 if [ "$(echo "${LOGIN_USERS}" | wc -l)" -gt 1 ]; then
-    echo '[User]\nLanguage=\nXSession=gnome\nSystemAccount=true' > /var/lib/AccountsService/users/vanilla
+    echo -e '[User]\nLanguage=\nXSession=gnome\nSystemAccount=true' > /var/lib/AccountsService/users/vanilla
 fi
 
 echo '[daemon]' > /etc/gdm3/daemon.conf
