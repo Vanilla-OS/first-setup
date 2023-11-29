@@ -4,9 +4,9 @@
     "distro_logo": "org.vanillaos.FirstSetup-flower",
     "pre_run": [],
     "post_run": [
-        "sh /usr/bin/__first_setup_reset_session",
+        "sh -c /usr/bin/__first_setup_reset_session",
         "abroot pkg apply",
-        "!nextBoot sh /usr/bin/__first_setup_cleanup"
+        "!nextBoot sh -c /usr/bin/__first_setup_cleanup"
     ],
     "tour": {
         "get-involved": {
