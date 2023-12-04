@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-08-31 13:54+0000\n"
+"PO-Revision-Date: 2023-12-04 13:06+0000\n"
 "Last-Translator: jolupa <jolupameister@gmail.com>\n"
-"Language-Team: Catalan <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/ca/>\n"
+"Language-Team: Catalan <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.1-dev\n"
+"X-Generator: Weblate 5.3-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -39,12 +39,12 @@ msgstr "Primer llançament"
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
-msgstr "Comprovant la conexió…"
+msgstr "S'està comprovant la connexió…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 #: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
-msgstr "Espera fins que es comprovi la conexió."
+msgstr "Espera fins que es comprovi la connexió."
 
 #: vanilla_first_setup/gtk/default-hostname.ui:14
 msgid "Device Details"
@@ -257,7 +257,7 @@ msgstr "Siusplau, escull com a mínim una opció."
 
 #: vanilla_first_setup/views/done.py:51
 msgid "Restart your device to enjoy your {} experience."
-msgstr "Reinicia el teu ordinador per gaudir la teva experiència {}."
+msgstr "Reinicia el teu dispositiu per gaudir la teva experiència {}."
 
 #: vanilla_first_setup/views/done.py:73
 msgid "Something went wrong"
@@ -269,11 +269,11 @@ msgstr "Siusplau, contacta amb els desenvolupadors de la distribució."
 
 #: vanilla_first_setup/main.py:56
 msgid "Run a post script"
-msgstr "Executa un post script"
+msgstr "Executar un post script"
 
 #: vanilla_first_setup/main.py:64
 msgid "Run as a new user"
-msgstr "Executar com un usuari nou"
+msgstr "Executar com usuari nou"
 
 #: vanilla_first_setup/window.py:69
 msgid "Done!"
@@ -281,7 +281,7 @@ msgstr "Fet!"
 
 #: vanilla_first_setup/window.py:70
 msgid "Your device is ready to use."
-msgstr "El teu ordinador està llest per fer-ho servir."
+msgstr "El teu dispositiu està llest per fer-ho servir."
 
 #: vanilla_first_setup/window.py:71
 msgid "Error!"
