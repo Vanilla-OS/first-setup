@@ -6,13 +6,14 @@
 # Muhammad Bahaa <muhammad.bahaa1@gmail.com>, 2023.
 # Moumn Almunawy <moumnalmunawy2006@gmail.com>, 2023.
 # bob lock <sidkia447@gmail.com>, 2023.
+# Yassin Mohamed <bursledon_backwaters@aleeas.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-10-29 21:21+0000\n"
-"Last-Translator: bob lock <sidkia447@gmail.com>\n"
+"PO-Revision-Date: 2023-11-29 10:55+0000\n"
+"Last-Translator: Yassin Mohamed <bursledon_backwaters@aleeas.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ar/>\n"
 "Language: ar\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.2-dev\n"
+"X-Generator: Weblate 5.3-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -69,7 +70,6 @@ msgid "Next"
 msgstr "التالي"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
-#, fuzzy
 msgid "Connect to the Internet"
 msgstr "الاتصال بالإنترنت"
 
