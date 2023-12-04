@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-11-19 20:43+0000\n"
+"PO-Revision-Date: 2023-11-23 11:04+0000\n"
 "Last-Translator: Fedorov Alexei <aleksejfedorov963@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ru/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.2\n"
+"X-Generator: Weblate 5.2.1-rc\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -121,7 +121,7 @@ msgstr "Создание пользователя"
 
 #: vanilla_first_setup/gtk/default-user.ui:22
 msgid "Provide details for your user account"
-msgstr "Предоставьте информацию для Вашего аккаунта пользователя"
+msgstr "Предоставьте информацию для Вашей учётной записи пользователя"
 
 #: vanilla_first_setup/gtk/default-user.ui:29
 msgid "Name"
@@ -220,7 +220,7 @@ msgstr "Безопасная сеть (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:374
 msgid "Authentication required"
-msgstr "Требуется Аутентификация"
+msgstr "Требуется аутентификация"
 
 #: vanilla_first_setup/defaults/network.py:382
 msgid "Connecting"
@@ -260,7 +260,7 @@ msgstr "Пожалуйста, выберите хотя бы один вариа
 
 #: vanilla_first_setup/views/done.py:51
 msgid "Restart your device to enjoy your {} experience."
-msgstr "Перезагрузите ваше устройство, чтобы насладиться работой {}."
+msgstr "Перезагрузите устройство, чтобы насладиться работой {}."
 
 #: vanilla_first_setup/views/done.py:73
 msgid "Something went wrong"
