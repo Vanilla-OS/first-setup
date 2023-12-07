@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-11-05 08:06+0000\n"
-"Last-Translator: ramon ledesma <rmon.led@gmail.com>\n"
+"PO-Revision-Date: 2023-11-23 11:04+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/es/>\n"
 "Language: es\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.2-dev\n"
+"X-Generator: Weblate 5.2.1-rc\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -202,23 +202,23 @@ msgstr "La primera configuración requiere una conexión a Internet"
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
-msgstr "Red no segura (WEP)"
+msgstr "Red insegura (WEP)"
 
 #: vanilla_first_setup/defaults/network.py:39
 msgid "Secure network (WPA)"
-msgstr "Red protegida (WPA)"
+msgstr "Red segura (WPA)"
 
 #: vanilla_first_setup/defaults/network.py:40
 msgid "Secure network (WPA2)"
-msgstr "Red protegida (WPA2)"
+msgstr "Red segura (WPA2)"
 
 #: vanilla_first_setup/defaults/network.py:41
 msgid "Secure network (WPA3)"
-msgstr "Red protegida (WPA3)"
+msgstr "Red segura (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:374
 msgid "Authentication required"
-msgstr "Autenticación requerida"
+msgstr "Autenticación necesaria"
 
 #: vanilla_first_setup/defaults/network.py:382
 msgid "Connecting"
@@ -234,19 +234,19 @@ msgstr "Desconectando"
 
 #: vanilla_first_setup/defaults/network.py:388
 msgid "Connection Failed"
-msgstr "Conexión fallo"
+msgstr "Conexión fallida"
 
 #: vanilla_first_setup/defaults/network.py:390
 msgid "Status Unknown"
-msgstr "Estado Desconocido"
+msgstr "Estado desconocido"
 
 #: vanilla_first_setup/defaults/network.py:392
 msgid "Unmanaged"
-msgstr "Sin gestión"
+msgstr "No gestionado"
 
 #: vanilla_first_setup/defaults/network.py:394
 msgid "Unavailable"
-msgstr "No disponible"
+msgstr "No está disponible"
 
 #: vanilla_first_setup/defaults/network.py:408
 msgid "Cable Unplugged"

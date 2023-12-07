@@ -5,13 +5,14 @@
 # ssantos <ssantos@web.de>, 2023.
 # Felipe Nogueira <contato.fnog@gmail.com>, 2023.
 # Afonso Coutinho <afonsopcastro@gmail.com>, 2023.
+# Ricardo <ricardo.btupy@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-09-28 08:24+0000\n"
-"Last-Translator: Afonso Coutinho <afonsopcastro@gmail.com>\n"
+"PO-Revision-Date: 2023-11-25 18:20+0000\n"
+"Last-Translator: Ricardo <ricardo.btupy@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/pt/>\n"
 "Language: pt\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.1-dev\n"
+"X-Generator: Weblate 5.2.1-rc\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -100,7 +101,7 @@ msgstr "Abrir Definições de Proxy..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
-msgstr "Predefinição"
+msgstr "Padrão"
 
 #: vanilla_first_setup/gtk/default-theme.ui:29
 msgid "Dark"
@@ -116,11 +117,11 @@ msgstr "Escolha um esquema de cores para o seu sistema."
 
 #: vanilla_first_setup/gtk/default-user.ui:21
 msgid "Create User"
-msgstr "Criar Utilizador"
+msgstr "Criar usuário"
 
 #: vanilla_first_setup/gtk/default-user.ui:22
 msgid "Provide details for your user account"
-msgstr "Forneça detalhes para a sua conta de utilzador"
+msgstr "Forneça detalhes para a sua conta de usuário"
 
 #: vanilla_first_setup/gtk/default-user.ui:29
 msgid "Name"
@@ -128,15 +129,15 @@ msgstr "Nome"
 
 #: vanilla_first_setup/gtk/default-user.ui:35
 msgid "Username"
-msgstr "Nome de utilizador"
+msgstr "Nome de usuário"
 
 #: vanilla_first_setup/gtk/default-user.ui:41
 msgid "Password"
-msgstr "Palavra-passe"
+msgstr "Senha"
 
 #: vanilla_first_setup/gtk/default-user.ui:47
 msgid "Confirm Password"
-msgstr "Confirmar Palavra-passe"
+msgstr "Confirme a senha"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
@@ -145,7 +146,7 @@ msgstr "Bem-vindo!"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
-msgstr "A mostrar informação"
+msgstr "Mostrar informação"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "All done!"
@@ -171,11 +172,11 @@ msgstr "O seu dispositivo estará pronto em breve."
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
-msgstr "A instalar..."
+msgstr "Instalando..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
-msgstr "Mostrar saída da consola"
+msgstr "Mostrar saída no console"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"

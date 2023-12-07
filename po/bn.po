@@ -5,21 +5,22 @@
 #
 # Abu Huraira <abuhuraira@tutamail.com>, 2023.
 # Manjur Muammar Rashidi <mhasanmuammar2@gmail.com>, 2023.
+# Istiaque Ahmed <istiaque.ahmed@outlook.sa>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-04-01 07:33+0000\n"
-"Last-Translator: Abu Huraira <abuhuraira@tutamail.com>\n"
-"Language-Team: Bengali <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/bn/>\n"
+"PO-Revision-Date: 2023-11-20 19:43+0000\n"
+"Last-Translator: Istiaque Ahmed <istiaque.ahmed@outlook.sa>\n"
+"Language-Team: Bengali <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/bn/>\n"
 "Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 5.2\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -68,33 +69,35 @@ msgstr "পরবর্তী"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Connect to the Internet"
-msgstr ""
+msgstr "ইন্টারনেটে সংযুক্ত হোন"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
 "An active internet connection is required to make sure your system is up-to-"
 "date and download your favorite applications."
 msgstr ""
+"আপনার সিস্টেম আপ-টু-ডেট এবং আপনার পছন্দের অ্যাপ্লিকেশন ডাউনলোড করার জন্য একটি"
+" সক্রিয় ইন্টারনেট সংযোগ প্রয়োজন।"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
-msgstr ""
+msgstr "তারযুক্ত"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
-msgstr ""
+msgstr "ওয়্যারলেস নেটওয়ার্ক"
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
-msgstr ""
+msgstr "অ্যাডভান্সড"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
 msgid "Connect to Hidden Network..."
-msgstr ""
+msgstr "লুকানো নেটওয়ার্কের সাথে সংযুক্ত করুন..।"
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr ""
+msgstr "প্রক্সি সেটিংস খুলুন..।"
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -114,29 +117,27 @@ msgstr "আপনার সিস্টেমের জন্য একটি �
 
 #: vanilla_first_setup/gtk/default-user.ui:21
 msgid "Create User"
-msgstr ""
+msgstr "ইউজার তৈরি করুন"
 
 #: vanilla_first_setup/gtk/default-user.ui:22
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide details for your user account"
-msgstr "আপনার ডিভাইস সম্পর্কে তথ্য প্রদান করুন"
+msgstr "আপনার ব্যবহারকারী অ্যাকাউন্টের জন্য বিস্তারিত প্রদান করুন"
 
 #: vanilla_first_setup/gtk/default-user.ui:29
 msgid "Name"
-msgstr ""
+msgstr "নাম"
 
 #: vanilla_first_setup/gtk/default-user.ui:35
 msgid "Username"
-msgstr ""
+msgstr "ইউজারনেম"
 
 #: vanilla_first_setup/gtk/default-user.ui:41
 msgid "Password"
-msgstr ""
+msgstr "পাসওয়ার্ড"
 
 #: vanilla_first_setup/gtk/default-user.ui:47
 msgid "Confirm Password"
-msgstr ""
+msgstr "পাসওয়ার্ড নিশ্চিত করুন"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
@@ -169,7 +170,7 @@ msgstr "আপনার ডিভাইস শীঘ্রই প্রস্ত
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
-msgstr "ইনস্টল করা হচ্ছে..."
+msgstr "ইনস্টল হচ্ছে..।"
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
@@ -190,7 +191,7 @@ msgstr "পেছনে"
 #: vanilla_first_setup/gtk/wireless-row.ui:33
 #: vanilla_first_setup/defaults/network.py:371
 msgid "Connected"
-msgstr ""
+msgstr "সংযুক্ত"
 
 #: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
