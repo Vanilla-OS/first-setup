@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-11-23 11:04+0000\n"
+"PO-Revision-Date: 2023-12-15 22:17+0000\n"
 "Last-Translator: Fedorov Alexei <aleksejfedorov963@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ru/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.2.1-rc\n"
+"X-Generator: Weblate 5.3\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -113,7 +113,7 @@ msgstr "Цветовая схема"
 
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
-msgstr "Выберите цветовую схему для вашей системы."
+msgstr "Выберите цветовую схему для Вашей системы."
 
 #: vanilla_first_setup/gtk/default-user.ui:21
 msgid "Create User"
