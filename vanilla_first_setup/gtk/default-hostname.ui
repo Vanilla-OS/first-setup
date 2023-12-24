@@ -11,8 +11,8 @@
         <child>
           <object class="AdwStatusPage" id="status_page">
             <property name="icon-name">computer-symbolic</property>
-            <property name="title" translatable="yes">Device Details</property>
-            <property name="description" translatable="yes">Provide details about your device</property>
+            <property name="title" translatable="yes">Device Name</property>
+            <property name="description" translatable="yes">Provide your device name</property>
             <child>
               <object class="AdwPreferencesPage">
                 <child>
