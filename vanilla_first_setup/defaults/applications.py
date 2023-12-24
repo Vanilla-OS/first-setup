@@ -57,15 +57,21 @@ class VanillaLayoutApplications(Adw.Bin):
                     apps_list.remove(app["apps_action_row"])
                 except KeyError:
                     pass
-                if self.__window.builder.get_temp_finals("packages")["vars"]["flatpak"]:
-                    package_manager = "flatpak"
-                elif self.__window.builder.get_temp_finals("packages")["vars"]["snap"]:
+
                     try:
-                        package_manager = "snap"
-                    except KeyError:
-                        continue
-                else:
-                    continue
+                        if self.__window.builder.get_temp_finals("packages")["vars"][
+                            "flatpak"
+                        ]:
+                            package_manager = "flatpak"
+                        elif self.__window.builder.get_temp_finals("packages")["vars"][
+                            "snap"
+                        ]:
+                            package_manager = "snap"
+                        else:
+                            continue
+                    except TypeError:
+                        # use flatpak as default
+                        package_manager = "flatpak"
                 try:
                     if app[package_manager]:
                         _apps_action_row = Adw.ActionRow(
@@ -165,7 +171,14 @@ class VanillaLayoutApplications(Adw.Bin):
 
     def __on_page_changed(self, widget, page):
         if page == self.__key:
-            packages_vars = self.__window.builder.get_temp_finals("packages")["vars"]
+            tmp_finals = self.__window.builder.get_temp_finals("packages")
+
+            # if no package manager is selected, use Flatpak as default
+            if tmp_finals is None:
+                self.bundles_list.set_sensitive(True)
+                return
+
+            packages_vars = tmp_finals["vars"]
             has_flatpak = packages_vars.get("flatpak", False)
             has_snap = packages_vars.get("snap", False)
             self.bundles_list.set_sensitive(has_flatpak or has_snap)
@@ -176,17 +189,18 @@ class VanillaLayoutApplications(Adw.Bin):
     def get_finals(self):
         finals = {"vars": {}, "funcs": [x for x in self.__step["final"]]}
 
-        if self.__window.builder.get_temp_finals("packages")["vars"]["flatpak"]:
-            package_manager = "flatpak"
-        elif self.__window.builder.get_temp_finals("packages")["vars"]["snap"]:
-            try:
+        try:
+            if self.__window.builder.get_temp_finals("packages")["vars"]["flatpak"]:
+                package_manager = "flatpak"
+            elif self.__window.builder.get_temp_finals("packages")["vars"]["snap"]:
                 package_manager = "snap"
-            except KeyError:
+            else:
                 package_manager = None
-        else:
-            package_manager = None
+        except TypeError:
+            # use flatpak as default
+            package_manager = "flatpak"
 
-        for _id, switcher, index in self.__register_widgets:
+        for _, switcher, index in self.__register_widgets:
             if switcher.get_active():
                 for app in self.__step["bundles"][index]["applications"]:
                     if package_manager not in app.keys():

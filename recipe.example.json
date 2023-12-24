@@ -58,6 +58,51 @@
             "template": "hostname",
             "new-user-only": true
         },
+        "packages": {
+            "template": "preferences",
+            "is-advanced": true,
+            "icon": "vanilla-package-symbolic",
+            "title": "Package Manager",
+            "description": "Choose one or more package managers to install",
+            "preferences": [
+                {
+                    "id": "flatpak",
+                    "title": "Flatpak",
+                    "subtitle": "Manage and configure Flatpaks and the Flathub repository.",
+                    "default": true
+                },
+                {
+                    "id": "appimage",
+                    "title": "AppImage",
+                    "subtitle": "Install necessary dependencies to run AppImages.",
+                    "default": true
+                },
+                {
+                    "id": "-",
+                    "title": "-",
+                    "subtitle": "-",
+                    "disabled": true,
+                    "default": true
+                }
+            ],
+            "final": [
+                {
+                    "if": "flatpak",
+                    "type": "command",
+                    "commands": [
+                        "abroot pkg add flatpak gnome-software-plugin-flatpak",
+                        "!nextBoot !noRoot flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo"
+                    ]
+                },
+                {
+                    "if": "appimage",
+                    "type": "command",
+                    "commands": [
+                        "abroot pkg add fuse3 libfuse3-3"
+                    ]
+                }
+            ]
+        },
         "apps": {
             "template": "applications",
             "icon": "org.gnome.Software-symbolic",
