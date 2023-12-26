@@ -2,11 +2,12 @@
     "log_file": "/etc/vanilla/first-setup.log",
     "distro_name": "Vanilla OS",
     "distro_logo": "org.vanillaos.FirstSetup-flower",
-    "pre_run": [],
+    "pre_run": [
+        "!nextBoot su - $REAL_USER -c \"flatpak --user remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo\""
+    ],
     "post_run": [
         "sh -c /usr/bin/__first_setup_reset_session",
         "abroot pkg apply",
-        "!nextBoot sh -c 'flatpak --user remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo'",
         "!nextBoot sh -c /usr/bin/__first_setup_cleanup"
     ],
     "tour": {
