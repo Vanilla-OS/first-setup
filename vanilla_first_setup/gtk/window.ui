@@ -6,6 +6,7 @@
     <property name="default-width">800</property>
     <property name="default-height">750</property>
     <property name="title">First Setup</property>
+    <property name="deletable">False</property>
     <child>
       <object class="GtkBox">
         <property name="orientation">vertical</property>
