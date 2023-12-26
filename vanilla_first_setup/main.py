@@ -14,17 +14,22 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from vanilla_first_setup.window import VanillaWindow
-from gi.repository import Gtk, Gdk, Gio, GLib, Adw
-import os
+
 import gi
-import sys
-import logging
-from gettext import gettext as _
 
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
 gi.require_version("Vte", "3.91")
+gi.require_version("NM", "1.0")
+gi.require_version("NMA4", "1.0")
+
+from gi.repository import Gtk, Gdk, Gio, GLib, Adw
+
+import os
+import sys
+import logging
+from gettext import gettext as _
+from vanilla_first_setup.window import VanillaWindow
 
 
 logging.basicConfig(level=logging.INFO)
