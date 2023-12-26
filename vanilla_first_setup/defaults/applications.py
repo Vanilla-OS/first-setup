@@ -51,13 +51,14 @@ class VanillaLayoutApplications(Adw.Bin):
         selection_dialogs = []
         _index = 0
 
-        def present_customize(widget, dialog, apps_list, item):
+        def present_customize(_, dialog, apps_list, item):
             for app in item["applications"]:
-                try:
-                    apps_list.remove(app["apps_action_row"])
-                except KeyError:
-                    pass
+                # use flatpak as default if no package manager is selected
+                package_manager = "flatpak"
 
+                if app.get("apps_action_row", None) is not None:
+                    apps_list.remove(app["apps_action_row"])
+                else:
                     try:
                         if self.__window.builder.get_temp_finals("packages")["vars"][
                             "flatpak"
@@ -70,8 +71,8 @@ class VanillaLayoutApplications(Adw.Bin):
                         else:
                             continue
                     except TypeError:
-                        # use flatpak as default
-                        package_manager = "flatpak"
+                        pass
+
                 try:
                     if app[package_manager]:
                         _apps_action_row = Adw.ActionRow(
