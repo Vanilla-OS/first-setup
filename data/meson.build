@@ -23,6 +23,11 @@ install_data(
     install_dir: join_paths(get_option('datadir'), 'gnome-session', 'sessions')
 )
 
+install_data(
+    'firstsetup.session.conf',
+    install_dir: join_paths(get_option('datadir'), '..', 'lib', 'systemd', 'user', 'gnome-session@firstsetup.target.d')
+)
+
 desktop_file = i18n.merge_file(
   input: 'org.vanillaos.FirstSetup.desktop.in',
   output: 'org.vanillaos.FirstSetup.desktop',
