@@ -49,6 +49,18 @@
             "template": "welcome",
             "protected": true
         },
+        "language": {
+            "template": "language",
+            "new-user-only": true
+        },
+        "keyboard": {
+            "template": "keyboard",
+            "new-user-only": true
+        },
+        "timezone": {
+            "template": "timezone",
+            "new-user-only": true
+        },
         "theme": {
             "template": "theme"
         },

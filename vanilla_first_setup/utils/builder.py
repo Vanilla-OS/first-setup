@@ -27,6 +27,9 @@ from vanilla_first_setup.defaults.theme import VanillaDefaultTheme
 from vanilla_first_setup.defaults.user import VanillaDefaultUser
 from vanilla_first_setup.defaults.hostname import VanillaDefaultHostname
 from vanilla_first_setup.defaults.network import VanillaDefaultNetwork
+from vanilla_first_setup.defaults.language import VanillaDefaultLanguage
+from vanilla_first_setup.defaults.keyboard import VanillaDefaultKeyboard
+from vanilla_first_setup.defaults.timezone import VanillaDefaultTimezone
 
 from vanilla_first_setup.layouts.preferences import VanillaLayoutPreferences
 from vanilla_first_setup.layouts.yes_no import VanillaLayoutYesNo
@@ -38,6 +41,9 @@ logger = logging.getLogger("FirstSetup::Builder")
 
 templates = {
     "network": VanillaDefaultNetwork,
+    "language": VanillaDefaultLanguage,
+    "keyboard": VanillaDefaultKeyboard,
+    "timezone": VanillaDefaultTimezone,
     "conn-check": VanillaDefaultConnCheck,
     "welcome": VanillaDefaultWelcome,
     "theme": VanillaDefaultTheme,
