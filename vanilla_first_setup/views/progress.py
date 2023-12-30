@@ -45,11 +45,57 @@ class VanillaProgress(Gtk.Box):
         self.__font.set_size(13 * Pango.SCALE)
         self.__font.set_weight(Pango.Weight.NORMAL)
         self.__font.set_stretch(Pango.Stretch.NORMAL)
+        self.__style_manager = self.__window.style_manager
 
         self.__build_ui()
+        self.__on_setup_terminal_colors()
 
+        self.__style_manager.connect("notify::dark", self.__on_setup_terminal_colors)
         self.tour_button.connect("clicked", self.__on_tour_button)
         self.console_button.connect("clicked", self.__on_console_button)
+
+    def __on_setup_terminal_colors(self, *args):
+          
+        is_dark: bool = self.__style_manager.get_dark()
+
+        palette = [
+            "#363636",
+            "#c01c28",
+            "#26a269",
+            "#a2734c",
+            "#12488b",
+            "#a347ba",
+            "#2aa1b3",
+            "#cfcfcf",
+            "#5d5d5d",
+            "#f66151",
+            "#33d17a",
+            "#e9ad0c",
+            "#2a7bde",
+            "#c061cb",
+            "#33c7de",
+            "#ffffff",
+        ]
+
+        FOREGROUND = palette[0]
+        BACKGROUND = palette[15]
+        FOREGROUND_DARK = palette[15]
+        BACKGROUND_DARK = palette[0]
+
+        self.fg = Gdk.RGBA()
+        self.bg = Gdk.RGBA()
+
+        self.colors = [Gdk.RGBA() for c in palette]
+        [color.parse(s) for (color, s) in zip(self.colors, palette)]
+        
+        if is_dark:
+            self.fg.parse(FOREGROUND_DARK)
+            self.bg.parse(BACKGROUND_DARK)
+        else:
+            self.fg.parse(FOREGROUND)
+            self.bg.parse(BACKGROUND)
+
+        self.__terminal.set_colors(self.fg, self.bg, self.colors)
 
     def __on_tour_button(self, *args):
         self.tour_box.set_visible(True)
@@ -67,45 +113,9 @@ class VanillaProgress(Gtk.Box):
         self.__terminal.set_cursor_blink_mode(Vte.CursorBlinkMode.ON)
         self.__terminal.set_font(self.__font)
         self.__terminal.set_mouse_autohide(True)
+        self.__terminal.set_input_enabled(False)
         self.console_output.append(self.__terminal)
         self.__terminal.connect("child-exited", self.on_vte_child_exited)
-
-        palette = [
-            "#353535",
-            "#c01c28",
-            "#26a269",
-            "#a2734c",
-            "#12488b",
-            "#a347ba",
-            "#2aa1b3",
-            "#cfcfcf",
-            "#5d5d5d",
-            "#f66151",
-            "#33d17a",
-            "#e9ad0c",
-            "#2a7bde",
-            "#c061cb",
-            "#33c7de",
-            "#ffffff",
-        ]
-        FOREGROUND = palette[0]
-        BACKGROUND = palette[15]
-        FOREGROUND_DARK = palette[15]
-        BACKGROUND_DARK = palette[0]
-
-        self.fg = Gdk.RGBA()
-        self.bg = Gdk.RGBA()
-
-        self.colors = [Gdk.RGBA() for c in palette]
-        [color.parse(s) for (color, s) in zip(self.colors, palette)]
-        desktop_schema = Gio.Settings.new("org.gnome.desktop.interface")
-        if desktop_schema.get_enum("color-scheme") == 0:
-            self.fg.parse(FOREGROUND)
-            self.bg.parse(BACKGROUND)
-        elif desktop_schema.get_enum("color-scheme") == 1:
-            self.fg.parse(FOREGROUND_DARK)
-            self.bg.parse(BACKGROUND_DARK)
-        self.__terminal.set_colors(self.fg, self.bg, self.colors)
 
         for _, tour in self.__tour.items():
             self.carousel_tour.append(VanillaTour(self.__window, tour))

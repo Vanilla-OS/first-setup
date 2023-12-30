@@ -2,12 +2,25 @@
 <interface>
   <requires lib="gtk" version="4.0"/>
   <template class="VanillaDefaultHostname" parent="AdwBin">
-    <property name="halign">fill</property>
-    <property name="valign">center</property>
-    <property name="hexpand">true</property>
+    <property name="hexpand">1</property>
+    <property name="vexpand">1</property>
     <child>
-      <object class="GtkBox">
-        <property name="orientation">vertical</property>
+      <object class="GtkOverlay">
+        <property name="valign">center</property>
+        <child type="overlay">
+          <object class="GtkButton" id="btn_next">
+            <property name="margin-end">12</property>
+            <property name="margin-start">12</property>
+            <property name="icon-name">go-next-symbolic</property>
+            <property name="halign">end</property>
+            <property name="valign">center</property>
+            <property name="tooltip-text" translatable="yes">Next</property>
+            <style>
+              <class name="circular" />
+              <class name="suggested-action" />
+            </style>
+          </object>
+        </child>
         <child>
           <object class="AdwStatusPage" id="status_page">
             <property name="icon-name">computer-symbolic</property>
@@ -27,16 +40,6 @@
                 </child>
               </object>
             </child>
-          </object>
-        </child>
-        <child>
-          <object class="GtkButton" id="btn_next">
-            <property name="halign">center</property>
-            <property name="label" translatable="yes">Next</property>
-            <style>
-              <class name="pill"/>
-              <class name="suggested-action"/>
-            </style>
           </object>
         </child>
       </object>
