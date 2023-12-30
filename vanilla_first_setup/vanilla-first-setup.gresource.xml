@@ -29,6 +29,9 @@
     <file preprocess="xml-stripblanks">../data/icons/hicolor/symbolic/actions/vanilla-history-undo-symbolic.svg</file>
   </gresource>
   <gresource prefix="/org/vanillaos/FirstSetup">
+    <file>assets/theme-default.svg</file>
+    <file>assets/theme-dark.svg</file>
+
     <file>assets/bundle-app-icons/com.github.flxzt.rnote.png</file>
     <file>assets/bundle-app-icons/com.github.tchx84.Flatseal.png</file>
     <file>assets/bundle-app-icons/com.usebottles.bottles.png</file>

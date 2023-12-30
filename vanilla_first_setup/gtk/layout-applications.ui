@@ -2,35 +2,43 @@
 <interface>
   <requires lib="gtk" version="4.0"/>
   <template class="VanillaLayoutApplications" parent="AdwBin">
-    <property name="halign">fill</property>
-    <property name="valign">fill</property>
-    <property name="hexpand">true</property>
+    <property name="hexpand">1</property>
+    <property name="vexpand">1</property>
     <child>
-      <object class="AdwStatusPage" id="status_page">
-        <property name="halign">fill</property>
-        <property name="valign">fill</property>
-        <property name="hexpand">true</property>
-        <child>
-          <object class="GtkBox">
-            <property name="orientation">vertical</property>
-            <property name="vexpand">true</property>
-            <property name="hexpand">true</property>
+      <object class="GtkOverlay">
+        <property name="valign">center</property>
+        <child type="overlay">
+          <object class="GtkButton" id="btn_next">
+            <property name="margin-end">12</property>
+            <property name="margin-start">12</property>
+            <property name="icon-name">go-next-symbolic</property>
+            <property name="halign">end</property>
             <property name="valign">center</property>
+            <property name="tooltip-text" translatable="yes">Next</property>
+            <style>
+              <class name="circular" />
+              <class name="suggested-action" />
+            </style>
+          </object>
+        </child>
+        <child>
+          <object class="AdwStatusPage" id="status_page">
+            <property name="halign">fill</property>
+            <property name="valign">fill</property>
+            <property name="hexpand">true</property>
             <child>
-              <object class="AdwPreferencesPage">
+              <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <property name="vexpand">true</property>
+                <property name="hexpand">true</property>
+                <property name="valign">center</property>
                 <child>
-                  <object class="AdwPreferencesGroup" id="bundles_list"></object>
+                  <object class="AdwPreferencesPage">
+                    <child>
+                      <object class="AdwPreferencesGroup" id="bundles_list"></object>
+                    </child>
+                  </object>
                 </child>
-              </object>
-            </child>
-            <child>
-              <object class="GtkButton" id="btn_next">
-                <property name="label">Next</property>
-                <property name="halign">center</property>
-                <style>
-                  <class name="pill"/>
-                  <class name="suggested-action"/>
-                </style>
               </object>
             </child>
           </object>

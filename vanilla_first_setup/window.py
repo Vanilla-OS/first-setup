@@ -40,6 +40,7 @@ class VanillaWindow(Adw.ApplicationWindow):
     headerbar = Gtk.Template.Child()
     btn_back = Gtk.Template.Child()
     toasts = Gtk.Template.Child()
+    style_manager = Adw.StyleManager().get_default()
 
     def __init__(self, post_script: str, user: str, new_user: bool = False, **kwargs):
         super().__init__(**kwargs)

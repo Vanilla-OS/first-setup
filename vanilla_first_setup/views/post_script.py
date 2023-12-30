@@ -33,10 +33,13 @@ class VanillaPostScript(Adw.Bin):
         self.__font.set_size(13 * Pango.SCALE)
         self.__font.set_weight(Pango.Weight.NORMAL)
         self.__font.set_stretch(Pango.Stretch.NORMAL)
+        self.__style_manager = self.__window.style_manager
 
         self.__build_ui()
 
-    def __build_ui(self):
+        self.__style_manager.connect("notify::dark", self.__build_ui)
+
+    def __build_ui(self, *args):
         self.__terminal.set_cursor_blink_mode(Vte.CursorBlinkMode.ON)
         self.__terminal.set_font(self.__font)
         self.__terminal.set_mouse_autohide(True)
@@ -44,8 +47,10 @@ class VanillaPostScript(Adw.Bin):
         self.console_output.append(self.__terminal)
         self.__terminal.connect("child-exited", self.on_vte_child_exited)
 
+        is_dark: bool = self.__style_manager.get_dark()
+
         palette = [
-            "#353535",
+            "#363636",
             "#c01c28",
             "#26a269",
             "#a2734c",
@@ -73,13 +78,14 @@ class VanillaPostScript(Adw.Bin):
 
         self.colors = [Gdk.RGBA() for c in palette]
         [color.parse(s) for (color, s) in zip(self.colors, palette)]
-        desktop_schema = Gio.Settings.new("org.gnome.desktop.interface")
-        if desktop_schema.get_enum("color-scheme") == 0:
-            self.fg.parse(FOREGROUND)
-            self.bg.parse(BACKGROUND)
-        elif desktop_schema.get_enum("color-scheme") == 1:
+        
+        if is_dark:
             self.fg.parse(FOREGROUND_DARK)
             self.bg.parse(BACKGROUND_DARK)
+        else:
+            self.fg.parse(FOREGROUND)
+            self.bg.parse(BACKGROUND)
+            
         self.__terminal.set_colors(self.fg, self.bg, self.colors)
 
         self.__terminal.spawn_async(

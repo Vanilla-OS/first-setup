@@ -14,11 +14,11 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from gi.repository import Gtk, Gio
+from gi.repository import Gtk, Gio, Adw
 
 
 @Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/default-theme.ui")
-class VanillaDefaultTheme(Gtk.Box):
+class VanillaDefaultTheme(Adw.Bin):
     __gtype_name__ = "VanillaDefaultTheme"
 
     btn_next = Gtk.Template.Child()
@@ -32,8 +32,10 @@ class VanillaDefaultTheme(Gtk.Box):
         self.__key = key
         self.__step = step
         self.__theme = "light"
+        self.__style_manager = self.__window.style_manager
 
-        self.__build_ui()
+        self.btn_default.set_active(not self.__style_manager.get_dark())
+        self.btn_dark.set_active(self.__style_manager.get_dark())
 
         self.btn_next.connect("clicked", self.__window.next)
         self.btn_default.connect("toggled", self.__set_theme, "light")
@@ -42,9 +44,6 @@ class VanillaDefaultTheme(Gtk.Box):
     @property
     def step_id(self):
         return self.__key
-
-    def __build_ui(self):
-        self.btn_dark.set_group(self.btn_default)
 
     def __set_theme(self, widget, theme: str):
         pref = "prefer-dark" if theme == "dark" else "default"
