@@ -15,7 +15,13 @@
     <file>gtk/default-user.ui</file>
     <file>gtk/default-hostname.ui</file>
     <file>gtk/default-network.ui</file>
+    <file>gtk/default-language.ui</file>
+    <file>gtk/default-keyboard.ui</file>
+    <file>gtk/default-timezone.ui</file>
     <file>gtk/wireless-row.ui</file>
+    <file>gtk/widget-language.ui</file>
+    <file>gtk/widget-keyboard.ui</file>
+    <file>gtk/widget-timezone.ui</file>
 
     <file>gtk/layout-preferences.ui</file>
     <file>gtk/layout-yes-no.ui</file>

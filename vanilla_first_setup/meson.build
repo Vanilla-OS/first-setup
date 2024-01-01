@@ -39,6 +39,7 @@ subdir('utils')
 subdir('defaults')
 subdir('layouts')
 subdir('views')
+subdir('core')
 
 vanilla_first_setup_sources = [
   '__init__.py',
