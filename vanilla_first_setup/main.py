@@ -22,6 +22,7 @@ gi.require_version("Adw", "1")
 gi.require_version("Vte", "3.91")
 gi.require_version("NM", "1.0")
 gi.require_version("NMA4", "1.0")
+gi.require_version("GnomeDesktop", "4.0")
 
 from gi.repository import Gtk, Gdk, Gio, GLib, Adw
 
