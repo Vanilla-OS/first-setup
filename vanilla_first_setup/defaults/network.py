@@ -16,6 +16,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import html
 import logging
 import time
 from gettext import gettext as _
@@ -78,8 +79,9 @@ class WirelessRow(Adw.ActionRow):
         ssid = self.ap.get_ssid()
         if ssid is not None:
             ssid = ssid.get_data().decode("utf-8")
+            ssid = html.escape(ssid)
         else:
-            ssid = ""
+            ssid = "Unknown"
         return ssid
 
     @property
