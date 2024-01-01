@@ -24,8 +24,6 @@ from vanilla_first_setup.core.timezones import (
     get_preview_timezone,
 )
 
-from vanilla_first_setup.utils.run_async import RunAsync
-
 
 @Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/widget-timezone.ui")
 class TimezoneRow(Adw.ActionRow):
@@ -79,7 +77,7 @@ class VanillaDefaultTimezone(Adw.Bin):
         self.__key = key
         self.__step = step
 
-        RunAsync(self.__generate_timezone_list_widgets)
+        self.__generate_timezone_list_widgets()
 
         # signals
         self.btn_next.connect("clicked", self.__window.next)
