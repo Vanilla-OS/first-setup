@@ -94,19 +94,41 @@ class VanillaDefaultTimezone(Adw.Bin):
         self.entry_search_timezone.add_controller(self.search_controller)
 
     def __timezone_verify(self, *args):
-        valid = self.selected_timezone["region"] and self.selected_timezone["zone"] is not None
+        valid = (
+            self.selected_timezone["region"]
+            and self.selected_timezone["zone"] is not None
+        )
         self.btn_next.set_sensitive(valid)
 
     def get_finals(self):
         try:
             return {
-                "timezone": {
-                    "region": self.selected_timezone["region"],
-                    "zone": self.selected_timezone["zone"],
-                }
+                "vars": {"setTimezone": True},
+                "funcs": [
+                    {
+                        "if": "setTimezone",
+                        "type": "command",
+                        "commands": [
+                            f'echo "{self.selected_timezone["region"]}/{self.selected_timezone["zone"]}" > /etc/timezone',
+                            f"ln -sf /usr/share/zoneinfo/{self.selected_timezone['region']}/{self.selected_timezone['zone']} /etc/localtime",
+                        ],
+                    }
+                ],
             }
         except IndexError:
-            return {"timezone": {"region": "Europe", "zone": "London"}}
+            return {
+                "vars": {"setTimezone": True},
+                "funcs": [
+                    {
+                        "if": "setTimezone",
+                        "type": "command",
+                        "commands": [
+                            f'echo "Europe/London" > /etc/timezone',
+                            f"ln -sf /usr/share/zoneinfo/Europe/London /etc/localtime",
+                        ],
+                    }
+                ],
+            }
 
     def __on_search_key_pressed(self, *args):
         keywords = self.match_regex.sub(

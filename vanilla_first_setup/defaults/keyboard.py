@@ -114,17 +114,37 @@ class VanillaDefaultKeyboard(Adw.Bin):
     def get_finals(self):
         variant = self.selected_keyboard["variant"]
 
+        # NOTE: we use BACKSPACE=guess here by default
+        # Ref: <https://manpages.ubuntu.com/manpages/bionic/en/man5/keyboard.5.htmlZ
         if variant is None:
             return {
-                "keyboard": {"layout": "us", "model": "pc105", "variant": ""}
+                "vars": {"confKeyboard": True},
+                "funcs": [
+                    {
+                        "if": "confKeyboard",
+                        "type": "command",
+                        "commands": [
+                            f'echo XKBMODEL="pc105" >> /etc/default/keyboard',
+                            f'echo XKBLAYOUT="{self.selected_keyboard["layout"]}" >> /etc/default/keyboard',
+                            f'echo BACKSPACE="guess" >> /etc/default/keyboard',
+                        ],
+                    }
+                ],
             }  # fallback
-
         return {
-            "keyboard": {
-                "layout": self.selected_keyboard["layout"],
-                "model": "pc105",
-                "variant": self.selected_keyboard["variant"],
-            }
+            "vars": {"confKeyboard": True},
+            "funcs": [
+                {
+                    "if": "confKeyboard",
+                    "type": "command",
+                    "commands": [
+                        f'echo XKBMODEL="pc105" >> /etc/default/keyboard',
+                        f'echo XKBLAYOUT="{self.selected_keyboard["layout"]}" >> /etc/default/keyboard',
+                        f'echo XKBVARIANT="{self.selected_keyboard["variant"]}" >> /etc/default/keyboard',
+                        f'echo BACKSPACE="guess" >> /etc/default/keyboard',
+                    ],
+                }
+            ],
         }
 
     def __generate_keyboard_list_widgets(self, selected_keyboard):

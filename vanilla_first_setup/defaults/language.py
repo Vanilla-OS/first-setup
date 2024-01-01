@@ -73,7 +73,7 @@ class VanillaDefaultLanguage(Adw.Bin):
         self.all_languages_group.connect("row-selected", self.__language_verify)
         self.all_languages_group.connect("row-activated", self.__language_verify)
         self.__window.carousel.connect("page-changed", self.__language_verify)
-        
+
         self.search_controller.connect("key-released", self.__on_search_key_pressed)
         self.entry_search_language.add_controller(self.search_controller)
 
@@ -90,7 +90,9 @@ class VanillaDefaultLanguage(Adw.Bin):
             )
 
             if len(self.__language_rows) > 0:
-                language_row.select_button.set_group(self.__language_rows[0].select_button)
+                language_row.select_button.set_group(
+                    self.__language_rows[0].select_button
+                )
 
             self.__language_rows.append(language_row)
 
@@ -100,7 +102,26 @@ class VanillaDefaultLanguage(Adw.Bin):
                 self.selected_language["language_subtitle"] = language_code
 
     def get_finals(self):
-        return {"language": self.selected_language["language_subtitle"]}
+        return {
+            "vars": {"setLanguage": True},
+            "funcs": [
+                {
+                    "if": "setLanguage",
+                    "type": "command",
+                    "commands": [
+                        f'echo LC_NUMERIC="{self.selected_language["language_subtitle"]}" >> /etc/default/locale',
+                        f'echo LC_TIME="{self.selected_language["language_subtitle"]}" >> /etc/default/locale',
+                        f'echo LC_MONETARY="{self.selected_language["language_subtitle"]}" >> /etc/default/locale',
+                        f'echo LC_PAPER="{self.selected_language["language_subtitle"]}" >> /etc/default/locale',
+                        f'echo LC_NAME="{self.selected_language["language_subtitle"]}" >> /etc/default/locale',
+                        f'echo LC_ADDRESS="{self.selected_language["language_subtitle"]}" >> /etc/default/locale',
+                        f'echo LC_TELEPHONE="{self.selected_language["language_subtitle"]}" >> /etc/default/locale',
+                        f'echo LC_MEASUREMENT="{self.selected_language["language_subtitle"]}" >> /etc/default/locale',
+                        f'echo LC_IDENTIFICATION="{self.selected_language["language_subtitle"]}" >> /etc/default/locale',
+                    ],
+                }
+            ],
+        }
 
     def __on_search_key_pressed(self, *args):
         keywords = re.sub(
