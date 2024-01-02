@@ -1,41 +1,25 @@
-/* CSS inspired by: Sonny Piers <https://github.com/sonnyp> */
+/* CSS inspired from: Settings Appearance Panel */
 
-.theme-selector {
-    border-radius: 100px;
-    margin: 8px;
-    border: 1px solid rgba(145, 145, 145, 0.1);
-    padding: 30px;
-}
-.theme-selector radio {
-    -gtk-icon-source: none;
-    border: none;
+.background-preview-button {
     background: none;
+    border-radius: 9px;
+    padding: 3px;
     box-shadow: none;
-    min-width: 12px;
-    min-height: 12px;
-    transform: translate(34px, 20px);
-    padding: 2px;
-    border-radius: 100px;
-}
-.theme-selector radio:checked {
-  -gtk-icon-source: -gtk-icontheme("object-select-symbolic");
-  background-color: @theme_selected_bg_color;
-  color: @theme_selected_fg_color;
-}
-.theme-selector:checked {
-    border-color: @theme_selected_bg_color;
-    border-width: 2px;
-    background-color: @theme_selected_bg_color;
-}
-.theme-selector.light {
-    background-color: #ffffff;
-}
-.theme-selector.dark {
-    background-color: #202020;
-}
-.theme-selector.light:checked {
-    background-color: #eeeeee;
-}
-.theme-selector.dark:checked {
-    background-color: #303030;
-}
+    outline: none;
+  }
+  
+  .background-preview-button:checked {
+    box-shadow: 0 0 0 3px @accent_color;
+  }
+  
+  .background-preview-button:focus:focus-visible {
+    box-shadow: 0 0 0 3px alpha(@accent_color, .3);
+  }
+  
+  .background-preview-button:checked:focus:focus-visible {
+    box-shadow: 0 0 0 3px @accent_color, 0 0 0 6px alpha(@accent_color, .3);
+  }
+  
+  .appearance-thumbnail {
+    border-radius: 6px;
+  }

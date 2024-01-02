@@ -24,7 +24,7 @@
                             <property name="halign">center</property>
                             <child>
                                 <object class="GtkButton" id="btn_no">
-                                <property name="label">No</property>
+                                <property name="label">Skip</property>
                                 <property name="halign">center</property>
                                 <style>
                                     <class name="pill" />
@@ -33,7 +33,7 @@
                             </child>
                             <child>
                                 <object class="GtkButton" id="btn_yes">
-                                <property name="label" translatable="yes">Yes, enable it</property>
+                                <property name="label" translatable="yes">Enable</property>
                                 <property name="halign">center</property>
                                 <style>
                                     <class name="pill" />

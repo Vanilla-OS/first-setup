@@ -4,13 +4,14 @@
 # Alim Satria <alimsatria2017@mail.ugm.ac.id>, 2023.
 # Zee <efzeee@pm.me>, 2023.
 # Arif Budiman <arifpedia@gmail.com>, 2023.
+# Sultan Iskandar Maulana <nattadasu@nattadasu.my.id>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-09-07 17:36+0000\n"
-"Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
+"PO-Revision-Date: 2023-11-26 16:57+0000\n"
+"Last-Translator: Sultan Iskandar Maulana <nattadasu@nattadasu.my.id>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/id/>\n"
 "Language: id\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.0.1-dev\n"
+"X-Generator: Weblate 5.2.1-rc\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -131,11 +132,11 @@ msgstr "Nama pengguna"
 
 #: vanilla_first_setup/gtk/default-user.ui:41
 msgid "Password"
-msgstr "Sandi"
+msgstr "Kata Sandi"
 
 #: vanilla_first_setup/gtk/default-user.ui:47
 msgid "Confirm Password"
-msgstr "Konfirmasi Sandi"
+msgstr "Konfirmasi Kata Sandi"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
@@ -201,7 +202,7 @@ msgstr "Pengaturan pertama memerlukan koneksi internet aktif"
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
-msgstr "Jaringan tak aman (WEP)"
+msgstr "Jaringan tidak aman (WEP)"
 
 #: vanilla_first_setup/defaults/network.py:39
 msgid "Secure network (WPA)"
@@ -217,7 +218,7 @@ msgstr "Jaringan aman (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:374
 msgid "Authentication required"
-msgstr "Diperlukan autentikasi"
+msgstr "Otentikasi diperlukan"
 
 #: vanilla_first_setup/defaults/network.py:382
 msgid "Connecting"
@@ -225,11 +226,11 @@ msgstr "Menghubungkan"
 
 #: vanilla_first_setup/defaults/network.py:384
 msgid "Disconnected"
-msgstr "Terputus"
+msgstr "Tidak Terhubung"
 
 #: vanilla_first_setup/defaults/network.py:386
 msgid "Disconnecting"
-msgstr "Memutuskan hubungan"
+msgstr "Memutuskan"
 
 #: vanilla_first_setup/defaults/network.py:388
 msgid "Connection Failed"
@@ -237,19 +238,19 @@ msgstr "Koneksi Gagal"
 
 #: vanilla_first_setup/defaults/network.py:390
 msgid "Status Unknown"
-msgstr "Status Tak Diketahui"
+msgstr "Status Tidak Diketahui"
 
 #: vanilla_first_setup/defaults/network.py:392
 msgid "Unmanaged"
-msgstr "Tidak dikelola"
+msgstr "Tidak Dikelola"
 
 #: vanilla_first_setup/defaults/network.py:394
 msgid "Unavailable"
-msgstr "Tidak tersedia"
+msgstr "Tidak Tersedia"
 
 #: vanilla_first_setup/defaults/network.py:408
 msgid "Cable Unplugged"
-msgstr "Kabel dicabut"
+msgstr "Kabel Tidak Terpasang"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."

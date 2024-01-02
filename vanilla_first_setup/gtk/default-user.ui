@@ -2,66 +2,74 @@
 <interface>
   <requires lib="gtk" version="4.0"/>
   <template class="VanillaDefaultUser" parent="AdwBin">
-    <property name="halign">fill</property>
-    <property name="valign">center</property>
-    <property name="hexpand">true</property>
+    <property name="hexpand">1</property>
+    <property name="vexpand">1</property>
     <child>
-      <object class="GtkBox">
-        <property name="orientation">vertical</property>
-        <child>
-          <object class="AdwAvatar">
+      <object class="GtkOverlay">
+        <property name="valign">center</property>
+        <child type="overlay">
+          <object class="GtkButton" id="btn_next">
+            <property name="margin-end">12</property>
+            <property name="margin-start">12</property>
+            <property name="icon-name">go-next-symbolic</property>
+            <property name="halign">end</property>
             <property name="valign">center</property>
-            <property name="size">128</property>
-            <property name="show-initials">true</property>
-            <property name="text" bind-source="fullname_entry" bind-property="text" bind-flags="sync-create"/>
+            <property name="tooltip-text" translatable="yes">Next</property>
+            <style>
+              <class name="circular" />
+              <class name="suggested-action" />
+            </style>
           </object>
         </child>
         <child>
-          <object class="AdwStatusPage" id="status_page">
-            <property name="title" translatable="yes">Create User</property>
-            <property name="description" translatable="yes">Provide details for your user account</property>
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
             <child>
-              <object class="AdwPreferencesPage">
+              <object class="AdwAvatar">
+                <property name="valign">center</property>
+                <property name="size">128</property>
+                <property name="show-initials">true</property>
+                <property name="text" bind-source="fullname_entry" bind-property="text" bind-flags="sync-create"/>
+              </object>
+            </child>
+            <child>
+              <object class="AdwStatusPage" id="status_page">
+                <property name="title" translatable="yes">Create User</property>
+                <property name="description" translatable="yes">Provide details for your user account</property>
                 <child>
-                  <object class="AdwPreferencesGroup">
+                  <object class="AdwPreferencesPage">
                     <child>
-                      <object class="AdwEntryRow" id="fullname_entry">
-                        <property name="title" translatable="yes">Name</property>
-                        <property name="input-purpose">name</property>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="AdwEntryRow" id="username_entry">
-                        <property name="title" translatable="yes">Username</property>
-                        <property name="input-purpose">name</property>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="AdwPasswordEntryRow" id="password_entry">
-                        <property name="title" translatable="yes">Password</property>
-                        <property name="input-purpose">password</property>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="AdwPasswordEntryRow" id="password_confirmation">
-                        <property name="title" translatable="yes">Confirm Password</property>
-                        <property name="input-purpose">password</property>
+                      <object class="AdwPreferencesGroup">
+                        <child>
+                          <object class="AdwEntryRow" id="fullname_entry">
+                            <property name="title" translatable="yes">Name</property>
+                            <property name="input-purpose">name</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="AdwEntryRow" id="username_entry">
+                            <property name="title" translatable="yes">Username</property>
+                            <property name="input-purpose">name</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="AdwPasswordEntryRow" id="password_entry">
+                            <property name="title" translatable="yes">Password</property>
+                            <property name="input-purpose">password</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="AdwPasswordEntryRow" id="password_confirmation">
+                            <property name="title" translatable="yes">Confirm Password</property>
+                            <property name="input-purpose">password</property>
+                          </object>
+                        </child>
                       </object>
                     </child>
                   </object>
                 </child>
               </object>
             </child>
-          </object>
-        </child>
-        <child>
-          <object class="GtkButton" id="btn_next">
-            <property name="halign">center</property>
-            <property name="label" translatable="yes">Next</property>
-            <style>
-              <class name="pill"/>
-              <class name="suggested-action"/>
-            </style>
           </object>
         </child>
       </object>

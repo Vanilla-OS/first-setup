@@ -10,6 +10,9 @@ sources = [
   'applications.py',
   'conn_check.py',
   'network.py',
+  'language.py',
+  'keyboard.py',
+  'timezone.py',
 ]
 
 install_data(sources, install_dir: defaultsdir)

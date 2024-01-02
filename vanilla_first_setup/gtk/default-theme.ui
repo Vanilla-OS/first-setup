@@ -1,60 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-    <requires lib="gtk" version="4.0"/>
-    <requires lib="libadwaita" version="1.0" />
-    <template class="VanillaDefaultTheme" parent="GtkBox">
-        <property name="orientation">vertical</property>
-        <property name="halign">fill</property>
+  <requires lib="gtk" version="4.0"/>
+  <requires lib="libadwaita" version="1.0" />
+  <template class="VanillaDefaultTheme" parent="AdwBin">
+    <property name="hexpand">1</property>
+    <property name="vexpand">1</property>
+    <child>
+      <object class="GtkOverlay">
         <property name="valign">center</property>
-        <property name="hexpand">true</property>
-        <child>
-            <object class="GtkBox">
+        <child type="overlay">
+          <object class="GtkButton" id="btn_next">
+            <property name="margin-end">12</property>
+            <property name="margin-start">12</property>
+            <property name="icon-name">go-next-symbolic</property>
+            <property name="halign">end</property>
             <property name="valign">center</property>
-            <property name="spacing">10</property>
-            <property name="halign">center</property>
-            <child>
-                <object class="GtkCheckButton" id="btn_default">
-                <property name="tooltip-text" translatable="yes">Default</property>
-                <property name="halign">center</property>
-                <property name="active">True</property>
-                <style>
-                    <class name="theme-selector" />
-                    <class name="light" />
-                    <class name="card" />
-                </style>
-                </object>
-            </child>
-            <child>
-                <object class="GtkCheckButton" id="btn_dark">
-                <property name="tooltip-text" translatable="yes">Dark</property>
-                <property name="halign">center</property>
-                <style>
-                    <class name="theme-selector" />
-                    <class name="dark" />
-                    <class name="card" />
-                </style>
-                </object>
-            </child>
-            </object>
+            <property name="tooltip-text" translatable="yes">Next</property>
+            <style>
+              <class name="circular" />
+              <class name="suggested-action" />
+            </style>
+          </object>
         </child>
         <child>
-            <object class="AdwStatusPage">
-                <property name="title" translatable="yes">Color Scheme</property>
-                <property name="description" translatable="yes">Choose a color scheme for your system.</property>
-                <property name="halign">fill</property>
-                <property name="valign">fill</property>
-                <property name="hexpand">true</property>
+          <object class="AdwStatusPage">
+            <property name="title" translatable="yes">Color Scheme</property>
+            <property name="description" translatable="yes">Choose a color scheme for your system</property>
+            <child>
+              <object class="AdwClamp">
+                <property name="maximum_size">500</property>
+                <property name="tightening_threshold">400</property>
                 <child>
-                    <object class="GtkButton" id="btn_next">
-                    <property name="label" translatable="yes">Next</property>
-                    <property name="halign">center</property>
-                    <style>
-                        <class name="pill" />
-                        <class name="suggested-action" />
-                    </style>
-                    </object>
+                  <object class="AdwPreferencesGroup">
+                    <child>
+                      <object class="AdwPreferencesRow">
+                        <property name="activatable">False</property>
+                        <property name="focusable">False</property>
+                        <child>
+                          <object class="AdwClamp">
+                            <property name="maximum_size">400</property>
+                            <property name="tightening_threshold">300</property>
+                            <child>
+                              <object class="GtkGrid">
+                                <property name="column-homogeneous">True</property>
+                                <property name="column-spacing">24</property>
+                                <property name="row-spacing">12</property>
+                                <property name="margin-start">12</property>
+                                <property name="margin-end">12</property>
+                                <property name="margin-top">18</property>
+                                <property name="margin-bottom">12</property>
+                                <property name="hexpand">True</property>
+                                <child>
+                                  <object class="GtkToggleButton" id="btn_default">
+                                    <child>
+                                      <object class="GtkPicture">
+                                        <property name="hexpand">True</property>
+                                        <property name="halign">center</property>
+                                        <property name="can-shrink">False</property>
+                                        <property name="file">resource:///org/vanillaos/FirstSetup/assets/theme-default.svg</property>
+                                        <style>
+                                          <class name="appearance-thumbnail"/>
+                                        </style>
+                                      </object>
+                                    </child>                                    
+                                    <style>
+                                      <class name="background-preview-button"/>
+                                    </style>
+                                    <layout>
+                                      <property name="column">0</property>
+                                      <property name="row">0</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="default_label">
+                                    <property name="label" translatable="yes">Default</property>
+                                    <layout>
+                                      <property name="column">0</property>
+                                      <property name="row">1</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="GtkToggleButton" id="btn_dark">
+                                    <property name="group">btn_default</property>
+                                    <child>
+                                      <object class="GtkPicture">
+                                        <property name="hexpand">True</property>
+                                        <property name="halign">center</property>
+                                        <property name="can-shrink">False</property>
+                                        <property name="file">resource:///org/vanillaos/FirstSetup/assets/theme-dark.svg</property>
+                                        <style>
+                                          <class name="appearance-thumbnail"/>
+                                        </style>
+                                      </object>
+                                    </child>
+                                    <style>
+                                      <class name="background-preview-button"/>
+                                    </style>
+                                    <layout>
+                                      <property name="column">1</property>
+                                      <property name="row">0</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="dark_label">
+                                    <property name="label" translatable="yes">Dark</property>
+                                    <layout>
+                                      <property name="column">1</property>
+                                      <property name="row">1</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
                 </child>
-            </object>
+              </object>
+            </child>
+          </object>
         </child>
-    </template>
+      </object>
+    </child>
+  </template>
 </interface>

@@ -2,9 +2,7 @@
     "log_file": "/etc/vanilla/first-setup.log",
     "distro_name": "Vanilla OS",
     "distro_logo": "org.vanillaos.FirstSetup-flower",
-    "pre_run": [
-        "!nextBoot su - $REAL_USER -c \"flatpak --user remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo\""
-    ],
+    "pre_run": [],
     "post_run": [
         "sh -c /usr/bin/__first_setup_reset_session",
         "abroot pkg apply",
@@ -49,18 +47,6 @@
             "template": "welcome",
             "protected": true
         },
-        "language": {
-            "template": "language",
-            "new-user-only": true
-        },
-        "keyboard": {
-            "template": "keyboard",
-            "new-user-only": true
-        },
-        "timezone": {
-            "template": "timezone",
-            "new-user-only": true
-        },
         "theme": {
             "template": "theme"
         },
@@ -71,6 +57,51 @@
         "hostname": {
             "template": "hostname",
             "new-user-only": true
+        },
+        "packages": {
+            "template": "preferences",
+            "is-advanced": true,
+            "icon": "vanilla-package-symbolic",
+            "title": "Package Manager",
+            "description": "Choose one or more package managers to install",
+            "preferences": [
+                {
+                    "id": "flatpak",
+                    "title": "Flatpak",
+                    "subtitle": "Manage and configure Flatpaks and the Flathub repository.",
+                    "default": true
+                },
+                {
+                    "id": "appimage",
+                    "title": "AppImage",
+                    "subtitle": "Install necessary dependencies to run AppImages.",
+                    "default": true
+                },
+                {
+                    "id": "-",
+                    "title": "-",
+                    "subtitle": "-",
+                    "disabled": true,
+                    "default": true
+                }
+            ],
+            "final": [
+                {
+                    "if": "flatpak",
+                    "type": "command",
+                    "commands": [
+                        "abroot pkg add flatpak gnome-software-plugin-flatpak",
+                        "!nextBoot !noRoot flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo"
+                    ]
+                },
+                {
+                    "if": "appimage",
+                    "type": "command",
+                    "commands": [
+                        "abroot pkg add fuse3 libfuse3-3"
+                    ]
+                }
+            ]
         },
         "apps": {
             "template": "applications",

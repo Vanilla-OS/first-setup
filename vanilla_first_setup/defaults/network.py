@@ -16,6 +16,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import html
 import logging
 import time
 from gettext import gettext as _
@@ -25,7 +26,6 @@ from threading import Lock, Timer
 from gi.repository import NM, NMA4, Adw, GLib, Gtk
 
 from vanilla_first_setup.utils.run_async import RunAsync
-
 
 logger = logging.getLogger("FirstSetup::Network")
 
@@ -79,8 +79,9 @@ class WirelessRow(Adw.ActionRow):
         ssid = self.ap.get_ssid()
         if ssid is not None:
             ssid = ssid.get_data().decode("utf-8")
+            ssid = html.escape(ssid)
         else:
-            ssid = ""
+            ssid = "Unknown"
         return ssid
 
     @property
@@ -260,14 +261,11 @@ class VanillaDefaultNetwork(Adw.Bin):
         self.__wired_children = []
         self.__wireless_children = {}
 
-        self.__last_wifi_scan = 0
-
         # Prevent concurrency issues when re-scanning Wi-Fi devices.
         # Since we reload the list every time there's a state change,
         # there's a high change that it coincides with a periodic
         # refresh operation.
         self.__wifi_lock = Lock()
-        self.__scan_lock = Lock()
 
         # Since we have a dedicated page for checking connectivity,
         # we only need to make sure the user has some type of
@@ -360,11 +358,13 @@ class VanillaDefaultNetwork(Adw.Bin):
 
     def __start_auto_refresh(self):
         def run_async():
-            while True:
-                GLib.idle_add(self.__refresh)
-                time.sleep(10)
+            return time.sleep(10)
 
-        RunAsync(run_async, None)
+        def callback(*args):
+            self.__refresh()
+            RunAsync(run_async, callback)
+
+        RunAsync(run_async, callback)
 
     def __device_status(self, conn: NM.Device):
         connected = False
@@ -394,6 +394,8 @@ class VanillaDefaultNetwork(Adw.Bin):
                 status = _("Unmanaged")
             case NM.DeviceState.UNAVAILABLE:
                 status = _("Unavailable")
+            case _:
+                status = _("Unknown")
 
         return status, connected
 
@@ -413,11 +415,9 @@ class VanillaDefaultNetwork(Adw.Bin):
         self.wired_group.add(eth_conn)
         self.__wired_children.append(eth_conn)
 
-    def __poll_wifi_scan(self, conn: NM.DeviceWifi):
-        self.__scan_lock.acquire()
-        while conn.get_last_scan() == self.__last_wifi_scan:
+    def __poll_wifi_scan(self, conn: NM.DeviceWifi, last_known_scan: int):
+        while conn.get_last_scan() == last_known_scan:
             time.sleep(0.25)
-        self.__scan_lock.release()
 
         GLib.idle_add(self.__refresh_wifi_list, conn)
 
@@ -478,12 +478,10 @@ class VanillaDefaultNetwork(Adw.Bin):
         self.__wifi_lock.release()
 
     def __scan_wifi(self, conn: NM.DeviceWifi):
-        self.__scan_lock.acquire()
-        self.__last_wifi_scan = conn.get_last_scan()
-        self.__scan_lock.release()
+        last_known_scan = conn.get_last_scan()
         conn.request_scan_async()
 
-        t = Timer(1.5, self.__poll_wifi_scan, [conn])
+        t = Timer(1.5, self.__poll_wifi_scan, [conn, last_known_scan])
         t.start()
 
     @property
@@ -500,4 +498,3 @@ class VanillaDefaultNetwork(Adw.Bin):
             [it[0] for it in list(self.__wireless_children.values())],
             (("connected", True), ("signal_strength", True), ("ssid", True)),
         )
-

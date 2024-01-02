@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-09-06 17:04+0000\n"
+"PO-Revision-Date: 2023-11-23 11:04+0000\n"
 "Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/nl/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.1-dev\n"
+"X-Generator: Weblate 5.2.1-rc\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -117,7 +117,7 @@ msgstr "Gebruiker aanmaken"
 
 #: vanilla_first_setup/gtk/default-user.ui:22
 msgid "Provide details for your user account"
-msgstr "Details voor uw gebruikers­account"
+msgstr "Geef details voor uw gebruikers­account op"
 
 #: vanilla_first_setup/gtk/default-user.ui:29
 msgid "Name"
@@ -232,7 +232,7 @@ msgstr "Verbinding verbreken"
 
 #: vanilla_first_setup/defaults/network.py:388
 msgid "Connection Failed"
-msgstr "Verbinding maken mislukt"
+msgstr "Verbinden mislukt"
 
 #: vanilla_first_setup/defaults/network.py:390
 msgid "Status Unknown"
@@ -244,11 +244,11 @@ msgstr "Onbeheerd"
 
 #: vanilla_first_setup/defaults/network.py:394
 msgid "Unavailable"
-msgstr "Onbeschikbaar"
+msgstr "Niet beschikbaar"
 
 #: vanilla_first_setup/defaults/network.py:408
 msgid "Cable Unplugged"
-msgstr "Kabel losgekoppeld"
+msgstr "Kabel niet verbonden"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
