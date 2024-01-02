@@ -135,3 +135,7 @@ class VanillaDefaultLanguage(Adw.Bin):
             )
             search_text = row_title + " " + row_subtitle
             row.set_visible(re.search(keywords, search_text, re.IGNORECASE) is not None)
+
+    @property
+    def step_id(self):
+        return self.__key

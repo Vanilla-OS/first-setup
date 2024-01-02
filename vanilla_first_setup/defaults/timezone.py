@@ -159,3 +159,7 @@ class VanillaDefaultTimezone(Adw.Bin):
                 self.selected_timezone["zone"] = current_city
                 self.selected_timezone["region"] = current_country
                 break
+
+    @property
+    def step_id(self):
+        return self.__key

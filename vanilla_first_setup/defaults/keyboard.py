@@ -259,3 +259,7 @@ class VanillaDefaultKeyboard(Adw.Bin):
                 ],
             ),
         )
+
+    @property
+    def step_id(self):
+        return self.__key
