@@ -106,10 +106,7 @@ class VanillaDefaultKeyboard(Adw.Bin):
             self.btn_next.set_sensitive(False)
 
     def __next(self, *args):
-        if "VANILLA_NO_APPLY_XKB" in os.environ:
-            self.__window.next()
-        else:
-            self.__window.next(None, self.__apply_layout)
+        self.__window.next()
 
     def get_finals(self):
         variant = self.selected_keyboard["variant"]
