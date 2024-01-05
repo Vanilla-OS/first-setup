@@ -25,7 +25,8 @@
       <allow_inactive>yes</allow_inactive>
       <allow_active>yes</allow_active>
     </defaults>
-    <annotate key="org.freedesktop.policykit.exec.path">/etc/org.vanillaos.FirstSetup.nextBoot</annotate>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/env</annotate>
+    <annotate key="org.freedesktop.policykit.exec.argv1">/etc/org.vanillaos.FirstSetup.nextBoot</annotate>
     <annotate key="org.freedesktop.policykit.exec.allow_gui">TRUE</annotate>
   </action>
 
