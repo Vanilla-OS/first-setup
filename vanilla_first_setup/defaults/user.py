@@ -118,6 +118,13 @@ class VanillaDefaultUser(Adw.Bin):
                 "root user is reserved. Please choose another username."
             )
 
+        # cannot be vanilla
+        elif _input == "vanilla":
+            _status = False
+            self.__window.toast(
+                "The username 'vanilla' is reserved. Please choose another username."
+            )
+
         if not _status:
             self.username_entry.add_css_class("error")
             self.username_filled = False
