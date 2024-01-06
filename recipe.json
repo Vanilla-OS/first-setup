@@ -8,7 +8,8 @@
     "post_run": [
         "sh -c /usr/bin/__first_setup_reset_session",
         "abroot pkg apply",
-        "!nextBoot sh -c /usr/bin/__first_setup_cleanup"
+        "!nextBoot sh -c /usr/bin/__first_setup_cleanup",
+        "!nextBoot vso pico-init"
     ],
     "tour": {
         "get-involved": {
