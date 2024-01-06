@@ -38,6 +38,8 @@ class VanillaDefaultUser(Adw.Bin):
     username_filled = False
     password_filled = False
 
+    existing_users = []
+
     def __init__(self, window, distro_info, key, step, **kwargs):
         super().__init__(**kwargs)
         self.__window = window
@@ -52,6 +54,10 @@ class VanillaDefaultUser(Adw.Bin):
         self.username_entry.connect("changed", self.__on_username_entry_changed)
         self.password_entry.connect("changed", self.__on_password_changed)
         self.password_confirmation.connect("changed", self.__on_password_changed)
+
+        # get existing users
+        self.existing_users = subprocess.Popen("getent passwd | cut -d: -f1", shell=True,
+                                          stdout=subprocess.PIPE).stdout.read().decode().splitlines()
 
     @property
     def step_id(self):
@@ -123,6 +129,13 @@ class VanillaDefaultUser(Adw.Bin):
             _status = False
             self.__window.toast(
                 "The username 'vanilla' is reserved. Please choose another username."
+            )
+        
+        # cannot already exist
+        elif _input in self.existing_users:
+            _status = False
+            self.__window.toast(
+                "The username '" + _input + "' is reserved. Please choose another username."
             )
 
         if not _status:
