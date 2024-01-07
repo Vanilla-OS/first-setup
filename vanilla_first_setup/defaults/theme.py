@@ -14,7 +14,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from gi.repository import Gtk, Gio, Adw
+from gi.repository import Gtk, Gio, Adw, GdkPixbuf
 
 
 @Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/default-theme.ui")
@@ -22,6 +22,8 @@ class VanillaDefaultTheme(Adw.Bin):
     __gtype_name__ = "VanillaDefaultTheme"
 
     btn_next = Gtk.Template.Child()
+    default_image = Gtk.Template.Child()
+    dark_image = Gtk.Template.Child()
     btn_default = Gtk.Template.Child()
     btn_dark = Gtk.Template.Child()
 
@@ -37,6 +39,8 @@ class VanillaDefaultTheme(Adw.Bin):
         self.btn_default.set_active(not self.__style_manager.get_dark())
         self.btn_dark.set_active(self.__style_manager.get_dark())
 
+        self.__set_wallpaper_assets()
+
         self.btn_next.connect("clicked", self.__window.next)
         self.btn_default.connect("toggled", self.__set_theme, "light")
         self.btn_dark.connect("toggled", self.__set_theme, "dark")
@@ -51,6 +55,15 @@ class VanillaDefaultTheme(Adw.Bin):
         Gio.Settings.new("org.gnome.desktop.interface").set_string("color-scheme", pref)
         Gio.Settings.new("org.gnome.desktop.interface").set_string("gtk-theme", gtk)
         self.__theme = theme
+
+    def __set_wallpaper_assets(self):
+        wallpaper_schema = Gio.Settings.new("org.gnome.desktop.background")
+
+        default_pixbuf = GdkPixbuf.Pixbuf.new_from_file(wallpaper_schema.get_string("picture-uri").split("file://")[1])
+        dark_pixbuf = GdkPixbuf.Pixbuf.new_from_file(wallpaper_schema.get_string("picture-uri-dark").split("file://")[1])
+
+        self.default_image.set_pixbuf(default_pixbuf.scale_simple(180, 120, GdkPixbuf.InterpType.BILINEAR))
+        self.dark_image.set_pixbuf(dark_pixbuf.scale_simple(180, 120, GdkPixbuf.InterpType.BILINEAR))
 
     def get_finals(self):
         gs_cmd = "!nextBoot !noRoot gsettings set %s %s %s"

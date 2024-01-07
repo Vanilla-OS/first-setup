@@ -53,16 +53,31 @@
                                 <child>
                                   <object class="GtkToggleButton" id="btn_default">
                                     <child>
-                                      <object class="GtkPicture">
-                                        <property name="hexpand">True</property>
-                                        <property name="halign">center</property>
-                                        <property name="can-shrink">False</property>
-                                        <property name="file">resource:///org/vanillaos/FirstSetup/assets/theme-default.svg</property>
-                                        <style>
-                                          <class name="appearance-thumbnail"/>
-                                        </style>
+                                      <object class="GtkOverlay">
+                                        <child>
+                                          <object class="GtkPicture" id="default_image">
+                                            <property name="hexpand">True</property>
+                                            <property name="halign">center</property>
+                                            <property name="can-shrink">False</property>
+                                            <style>
+                                              <class name="appearance-thumbnail"/>
+                                            </style>
+                                          </object>
+                                        </child>
+                                        <child type="overlay">
+                                          <object class="GtkPicture">
+                                            <property name="hexpand">True</property>
+                                            <property name="halign">center</property>
+                                            <property name="can-shrink">False</property>
+                                            <property name="file">resource:///org/vanillaos/FirstSetup/assets/theme-default.svg</property>
+                                            <style>
+                                              <class name="appearance-thumbnail"/>
+                                              <class name="icon-dropshadow"/>
+                                            </style>
+                                          </object>
+                                        </child>
                                       </object>
-                                    </child>                                    
+                                    </child>                                
                                     <style>
                                       <class name="background-preview-button"/>
                                     </style>
@@ -85,14 +100,29 @@
                                   <object class="GtkToggleButton" id="btn_dark">
                                     <property name="group">btn_default</property>
                                     <child>
-                                      <object class="GtkPicture">
-                                        <property name="hexpand">True</property>
-                                        <property name="halign">center</property>
-                                        <property name="can-shrink">False</property>
-                                        <property name="file">resource:///org/vanillaos/FirstSetup/assets/theme-dark.svg</property>
-                                        <style>
-                                          <class name="appearance-thumbnail"/>
-                                        </style>
+                                      <object class="GtkOverlay">
+                                        <child>
+                                          <object class="GtkPicture" id="dark_image">
+                                            <property name="hexpand">True</property>
+                                            <property name="halign">center</property>
+                                            <property name="can-shrink">False</property>
+                                            <style>
+                                              <class name="appearance-thumbnail"/>
+                                            </style>
+                                          </object>
+                                        </child>
+                                        <child type="overlay">
+                                          <object class="GtkPicture">
+                                            <property name="hexpand">True</property>
+                                            <property name="halign">center</property>
+                                            <property name="can-shrink">False</property>
+                                            <property name="file">resource:///org/vanillaos/FirstSetup/assets/theme-dark.svg</property>
+                                            <style>
+                                              <class name="appearance-thumbnail"/>
+                                              <class name="icon-dropshadow"/>
+                                            </style>
+                                          </object>
+                                        </child>
                                       </object>
                                     </child>
                                     <style>
