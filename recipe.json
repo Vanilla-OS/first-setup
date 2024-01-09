@@ -7,7 +7,6 @@
     ],
     "post_run": [
         "sh -c /usr/bin/__first_setup_reset_session",
-        "abroot pkg apply",
         "!nextBoot sh -c /usr/bin/__first_setup_cleanup",
         "!nextBoot !noRoot vso pico-init"
     ],
@@ -499,87 +498,6 @@
                     "type": "command",
                     "commands": [
                         "!nextBoot !noRoot flatpak install -y org.gnome.SoundRecorder"
-                    ]
-                }
-            ]
-        },
-        "timeshift": {
-            "template": "yes-no",
-            "is-advanced": true,
-            "preset": false,
-            "icon": "vanilla-history-undo-symbolic",
-            "title": "Timeshift",
-            "description": "Choose whether to install Timeshift to create snapshots of your system.",
-            "buttons": {
-                "yes": "Install",
-                "no": "Skip",
-                "info": {
-                    "type": "text",
-                    "title": "Timeshift",
-                    "text": "Timeshift for Linux is an application that provides functionality similar to the System Restore feature in Windows and the Time Machine tool in Mac OS. Timeshift protects your system by taking incremental snapshots of the file system at regular intervals. These snapshots can be restored at a later date to undo all changes to the system.\n\nIn RSYNC mode, snapshots are taken using rsync and hard-links. Common files are shared between snapshots which saves disk space. Each snapshot is a full system backup that can be browsed with a file manager.\n\nIn BTRFS mode, snapshots are taken using the in-built features of the BTRFS filesystem. BTRFS snapshots are supported only on BTRFS systems having an Ubuntu-type subvolume layout (with @ and @home subvolumes)."
-                }
-            },
-            "final": [
-                {
-                    "if": "timeshift",
-                    "type": "command",
-                    "commands": [
-                        "abroot pkg add timeshift"
-                    ]
-                }
-            ]
-        },
-        "vm": {
-            "template": "yes-no",
-            "is-advanced": true,
-            "preset": true,
-            "display-conditions": [
-                "grep 'hypervisor' /proc/cpuinfo"
-            ],
-            "icon": "application-x-appliance-symbolic",
-            "title": "Open VM Tools",
-            "description": "Choose whether to install Open VM Tools for the virtual machine.",
-            "buttons": {
-                "yes": "Install",
-                "no": "Skip",
-                "info": {
-                    "type": "text",
-                    "title": "About Open VM Tools",
-                    "text": "Install Open VM Tools for seamless integration with Virtual machines."
-                }
-            },
-            "final": [
-                {
-                    "if": "vm",
-                    "type": "command",
-                    "commands": [
-                        "abroot pkg add open-vm-tools open-vm-tools-desktop"
-                    ]
-                }
-            ]
-        },
-        "codecs": {
-            "template": "yes-no",
-            "is-advanced": true,
-            "preset": true,
-            "icon": "vanilla-puzzle-piece-symbolic",
-            "title": "Proprietary Codecs",
-            "description": "Choose whether to install proprietary codecs and fonts.",
-            "buttons": {
-                "yes": "Install",
-                "no": "Skip",
-                "info": {
-                    "type": "text",
-                    "title": "About Proprietary Codecs",
-                    "text": "Install proprietary drivers, fonts and other essentials from the Debian repositories."
-                }
-            },
-            "final": [
-                {
-                    "if": "codecs",
-                    "type": "command",
-                    "commands": [
-                        "abroot pkg add libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi libavcodec-extra unrar"
                     ]
                 }
             ]
