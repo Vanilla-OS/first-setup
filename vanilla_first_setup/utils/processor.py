@@ -36,7 +36,6 @@ class Processor:
         )
         user_fs_desktop_path = "/home/$REAL_USER/.local/share/applications/org.vanillaos.FirstSetup.desktop"
         done_file = "/etc/vanilla-first-setup-done"
-        abroot_bin = shutil.which("abroot")
         pkexec_bin = shutil.which("pkexec")
 
         logger.info("processing the following commands: \n%s" % "\n".join(commands))
@@ -130,9 +129,6 @@ class Processor:
                 f.write("if [ $? -eq 0 ]; then")
                 f.write(f"{out_run}\n")
                 f.write("fi")
-
-            # commit changes
-            f.write(f"{abroot_bin} pkg apply\n")
 
             # create the done file
             f.write("if [ $? -eq 0 ]; then\n")
