@@ -71,6 +71,7 @@ class VanillaWindow(Adw.ApplicationWindow):
                 description=_("Your device is ready to use."),
                 fail_title=_("Error!"),
                 fail_description=_("Something went wrong."),
+                init_mode=self.__init_mode,
             )
 
             # this builds the UI for the post script only

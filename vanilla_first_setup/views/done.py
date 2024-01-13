@@ -15,9 +15,11 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from gettext import gettext as _
-from gi.repository import Gtk, Adw
+from gi.repository import Gtk, Adw, GLib
 
 import subprocess
+
+from vanilla_first_setup.utils.recipe import RecipeLoader
 
 
 @Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/done.ui")
@@ -39,12 +41,14 @@ class VanillaDone(Adw.Bin):
         description: str = "",
         fail_title: str = "",
         fail_description: str = "",
+        init_mode: int = 0,
         **kwargs,
     ):
         super().__init__(**kwargs)
         self.__window = window
         self.__fail_title = fail_title
         self.__fail_description = fail_description
+        self.__init_mode = init_mode
 
         if not title and not description:
             self.status_page.set_description(
@@ -80,11 +84,19 @@ class VanillaDone(Adw.Bin):
             self.btn_reboot.set_visible(False)
             self.btn_close.set_visible(True)
 
-    def __on_reboot_clicked(self, button):
+    def __on_reboot_clicked(self, *args):
         subprocess.run(["gnome-session-quit", "--reboot"])
 
-    def __on_close_clicked(self, button):
+    def __on_close_clicked(self, *args):
+        if self.__init_mode == 1:
+            recipe = RecipeLoader()
+            if recipe.raw.get("tour_app"):
+                GLib.spawn_async(
+                    [recipe.raw["tour_app"]],
+                    flags=GLib.SpawnFlags.SEARCH_PATH,
+                )
+
         self.__window.close()
 
-    def __on_retry_clicked(self, button):
+    def __on_retry_clicked(self, *args):
         self.__window.back()

@@ -10,6 +10,7 @@
         "!nextBoot sh -c /usr/bin/__first_setup_cleanup",
         "!nextBoot !noRoot vso pico-init"
     ],
+    "tour_app": "vanilla-tour",
     "tour": {
         "get-involved": {
             "icon": "system-users-symbolic",

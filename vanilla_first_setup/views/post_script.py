@@ -78,14 +78,14 @@ class VanillaPostScript(Adw.Bin):
 
         self.colors = [Gdk.RGBA() for c in palette]
         [color.parse(s) for (color, s) in zip(self.colors, palette)]
-        
+
         if is_dark:
             self.fg.parse(FOREGROUND_DARK)
             self.bg.parse(BACKGROUND_DARK)
         else:
             self.fg.parse(FOREGROUND)
             self.bg.parse(BACKGROUND)
-            
+
         self.__terminal.set_colors(self.fg, self.bg, self.colors)
 
         self.__terminal.spawn_async(
