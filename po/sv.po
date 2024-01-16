@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-11-25 18:20+0000\n"
+"PO-Revision-Date: 2023-12-29 15:10+0000\n"
 "Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/sv/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.2.1-rc\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -79,7 +79,7 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
-msgstr "Trådad"
+msgstr "Trådbunden"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
@@ -87,15 +87,15 @@ msgstr "Trådlösa nätverk"
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
-msgstr "Avancerad"
+msgstr "Avancerat"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
 msgid "Connect to Hidden Network..."
-msgstr "Anslut till dolt nätverk..."
+msgstr "Anslut till ett Dolt nätverk..."
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr "Öppna proxyinställningar..."
+msgstr "Öppna Proxy inställningar..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
