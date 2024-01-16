@@ -4,13 +4,14 @@
 # EncryptedEasty <c.zullo08@gmail.com>, 2023.
 # EncryptedEasty <95353984+EncryptedEasty@users.noreply.github.com>, 2023.
 # Adrian <adrian06.dev@gmail.com>, 2023.
+# boblaspugna4f1ee5d391024b4c <boblaspugna@null.net>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-12-26 13:21+0000\n"
-"Last-Translator: Adrian <adrian06.dev@gmail.com>\n"
+"PO-Revision-Date: 2024-01-10 17:02+0000\n"
+"Last-Translator: boblaspugna4f1ee5d391024b4c <boblaspugna@null.net>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/it/>\n"
 "Language: it\n"
@@ -39,7 +40,7 @@ msgstr "Prima release"
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
-msgstr "Controllando la Connessione…"
+msgstr "Controllo Connessione…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 #: vanilla_first_setup/defaults/conn_check.py:116
@@ -80,23 +81,23 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
-msgstr "Via cavo"
+msgstr "Cavo"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
-msgstr "Connessioni Wireless"
+msgstr "Rete Wireless"
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
-msgstr "Opzioni Avanzate"
+msgstr "Avanzato"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
 msgid "Connect to Hidden Network..."
-msgstr "Connettiti ad una rete Nascosta..."
+msgstr "Connessione a Reti Nascoste..."
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr "Apri impostazioni di Proxy..."
+msgstr "Apertura Impostazioni Proxy..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
