@@ -11,11 +11,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-29 00:39+0530\n"
+"POT-Creation-Date: 2024-01-18 16:40+0530\n"
 "PO-Revision-Date: 2023-11-29 10:55+0000\n"
 "Last-Translator: Yassin Mohamed <bursledon_backwaters@aleeas.com>\n"
-"Language-Team: Arabic <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/ar/>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/vanilla-os/first-"
+"setup/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -46,37 +46,42 @@ msgid "Checking Connection…"
 msgstr "يتحقق من الإتصال…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#: vanilla_first_setup/defaults/conn_check.py:116
-msgid "Please wait until the connection check is done."
+#, fuzzy
+#| msgid "Please wait until the connection check is done."
+msgid "Please wait until the connection check is done"
 msgstr "الرجاء الإنتظار لحين الإنتهاء من التحقق بالإتصال."
 
-#: vanilla_first_setup/gtk/default-hostname.ui:14
-msgid "Device Details"
-msgstr "تفاصيل الجهاز"
-
-#: vanilla_first_setup/gtk/default-hostname.ui:15
-msgid "Provide details about your device"
-msgstr "قدم تفاصيل جهازك"
-
-#: vanilla_first_setup/gtk/default-hostname.ui:22
-msgid "Device Name"
-msgstr "اسم الجهاز"
-
-#: vanilla_first_setup/gtk/default-hostname.ui:35
+#: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
-#: vanilla_first_setup/gtk/default-theme.ui:49
-#: vanilla_first_setup/gtk/default-user.ui:60
+#: vanilla_first_setup/gtk/default-theme.ui:18
+#: vanilla_first_setup/gtk/default-user.ui:17
+#: vanilla_first_setup/gtk/layout-applications.ui:17
 msgid "Next"
 msgstr "التالي"
 
+#: vanilla_first_setup/gtk/default-hostname.ui:27
+#: vanilla_first_setup/gtk/default-hostname.ui:35
+msgid "Device Name"
+msgstr "اسم الجهاز"
+
+#: vanilla_first_setup/gtk/default-hostname.ui:28
+#, fuzzy
+#| msgid "Provide details about your device"
+msgid "Provide your device name"
+msgstr "قدم تفاصيل جهازك"
+
 #: vanilla_first_setup/gtk/default-network.ui:18
-msgid "Connect to the Internet"
-msgstr "الاتصال بالإنترنت"
+msgid "Internet"
+msgstr ""
 
 #: vanilla_first_setup/gtk/default-network.ui:19
+#, fuzzy
+#| msgid ""
+#| "An active internet connection is required to make sure your system is up-"
+#| "to-date and download your favorite applications."
 msgid ""
-"An active internet connection is required to make sure your system is up-to-"
-"date and download your favorite applications."
+"An active internet connection is required to download your favorite apps and "
+"to keep your system up-to-date"
 msgstr ""
 "يلزم وجود اتصال نشط بالإنترنت للتأكد من تحديث نظامك وتنزيل تطبيقاتك المفضلة."
 
@@ -100,43 +105,45 @@ msgstr "الاتصال بالشبكة المخفية..."
 msgid "Open Proxy Settings..."
 msgstr "افتح إعدادات الوكيل..."
 
-#: vanilla_first_setup/gtk/default-theme.ui:17
-msgid "Default"
-msgstr "افتراضي"
-
-#: vanilla_first_setup/gtk/default-theme.ui:29
-msgid "Dark"
-msgstr "مظلم"
-
-#: vanilla_first_setup/gtk/default-theme.ui:42
+#: vanilla_first_setup/gtk/default-theme.ui:27
 msgid "Color Scheme"
 msgstr "سمة النظام"
 
-#: vanilla_first_setup/gtk/default-theme.ui:43
-msgid "Choose a color scheme for your system."
+#: vanilla_first_setup/gtk/default-theme.ui:28
+#, fuzzy
+#| msgid "Choose a color scheme for your system."
+msgid "Choose a color scheme for your system"
 msgstr "اختر سمة لنظامك."
 
-#: vanilla_first_setup/gtk/default-user.ui:21
+#: vanilla_first_setup/gtk/default-theme.ui:92
+msgid "Default"
+msgstr "افتراضي"
+
+#: vanilla_first_setup/gtk/default-theme.ui:139
+msgid "Dark"
+msgstr "مظلم"
+
+#: vanilla_first_setup/gtk/default-user.ui:37
 msgid "Create User"
 msgstr "إنشاء مستخدم"
 
-#: vanilla_first_setup/gtk/default-user.ui:22
+#: vanilla_first_setup/gtk/default-user.ui:38
 msgid "Provide details for your user account"
 msgstr "قدم تفاصيل جهازكتقديم تفاصيل لحساب المستخدم الخاص بك"
 
-#: vanilla_first_setup/gtk/default-user.ui:29
+#: vanilla_first_setup/gtk/default-user.ui:45
 msgid "Name"
 msgstr "اسم"
 
-#: vanilla_first_setup/gtk/default-user.ui:35
+#: vanilla_first_setup/gtk/default-user.ui:51
 msgid "Username"
 msgstr "اسم المستخدم"
 
-#: vanilla_first_setup/gtk/default-user.ui:41
+#: vanilla_first_setup/gtk/default-user.ui:57
 msgid "Password"
 msgstr "كلمة المرور"
 
-#: vanilla_first_setup/gtk/default-user.ui:47
+#: vanilla_first_setup/gtk/default-user.ui:63
 msgid "Confirm Password"
 msgstr "تأكيد كلمة المرور"
 
@@ -150,23 +157,29 @@ msgid "Showing Information"
 msgstr "عرض المعلومات"
 
 #: vanilla_first_setup/gtk/done.ui:12
-msgid "All done!"
-msgstr "تم!"
+msgid "Finished!"
+msgstr ""
 
 #: vanilla_first_setup/gtk/done.ui:13
-msgid "Restart your device to enjoy your Vanilla OS experience."
+#, fuzzy
+#| msgid "Restart your device to enjoy your Vanilla OS experience."
+msgid "Restart your device to enjoy your Vanilla OS experience"
 msgstr "أعد تشغيل الحاسوب للاستمتاع بتجربتك لنظام التشغيل فانيلا."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
-msgid "Yes, enable it"
-msgstr "نعم، فعّلها"
+msgid "Enable"
+msgstr ""
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-msgid "Finalizing"
+#, fuzzy
+#| msgid "Finalizing"
+msgid "Finalizing..."
 msgstr "جاري التحضير"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-msgid "Your device will be ready soon."
+#, fuzzy
+#| msgid "Your device will be ready soon."
+msgid "Your device will be ready soon"
 msgstr "سيصبح جهازك جاهز قريبا."
 
 #: vanilla_first_setup/gtk/progress.ui:70
@@ -174,7 +187,9 @@ msgid "Installing..."
 msgstr "جارٍ التثبيت ..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
-msgid "Show Console output"
+#, fuzzy
+#| msgid "Show Console output"
+msgid "Show Console Output"
 msgstr "اعرض مخرجات وحدة التحكم"
 
 #: vanilla_first_setup/gtk/progress.ui:106
@@ -185,12 +200,12 @@ msgstr "اعرض الشريط الجانبي"
 msgid "Read More"
 msgstr "اقرأ المزيد"
 
-#: vanilla_first_setup/gtk/window.ui:25
+#: vanilla_first_setup/gtk/window.ui:36
 msgid "Back"
 msgstr "إلى الخلف"
 
 #: vanilla_first_setup/gtk/wireless-row.ui:33
-#: vanilla_first_setup/defaults/network.py:371
+#: vanilla_first_setup/defaults/network.py:373
 msgid "Connected"
 msgstr "متصل"
 
@@ -201,6 +216,10 @@ msgstr "لا يوجد إتصال بالإنترنت!"
 #: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
 msgstr "تتطلب الخطوة الأولى الاتصال بالإنترنت"
+
+#: vanilla_first_setup/defaults/conn_check.py:116
+msgid "Please wait until the connection check is done."
+msgstr "الرجاء الإنتظار لحين الإنتهاء من التحقق بالإتصال."
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
@@ -218,39 +237,45 @@ msgstr "شبكة آمنة (WPA2)"
 msgid "Secure network (WPA3)"
 msgstr "شبكة آمنة (WPA3)"
 
-#: vanilla_first_setup/defaults/network.py:374
+#: vanilla_first_setup/defaults/network.py:376
 msgid "Authentication required"
 msgstr "يستلزم التوثيق"
 
-#: vanilla_first_setup/defaults/network.py:382
+#: vanilla_first_setup/defaults/network.py:384
 msgid "Connecting"
 msgstr "توصيل"
 
-#: vanilla_first_setup/defaults/network.py:384
+#: vanilla_first_setup/defaults/network.py:386
 msgid "Disconnected"
 msgstr "انقطع الاتصال"
 
-#: vanilla_first_setup/defaults/network.py:386
+#: vanilla_first_setup/defaults/network.py:388
 msgid "Disconnecting"
 msgstr "قطع الاتصال"
 
-#: vanilla_first_setup/defaults/network.py:388
+#: vanilla_first_setup/defaults/network.py:390
 msgid "Connection Failed"
 msgstr "فشل الاتصال"
 
-#: vanilla_first_setup/defaults/network.py:390
+#: vanilla_first_setup/defaults/network.py:392
 msgid "Status Unknown"
 msgstr "الحالة غير معروفة"
 
-#: vanilla_first_setup/defaults/network.py:392
+#: vanilla_first_setup/defaults/network.py:394
 msgid "Unmanaged"
 msgstr "غير مُدار"
 
-#: vanilla_first_setup/defaults/network.py:394
+#: vanilla_first_setup/defaults/network.py:396
 msgid "Unavailable"
 msgstr "غير متوفره"
 
-#: vanilla_first_setup/defaults/network.py:408
+#: vanilla_first_setup/defaults/network.py:398
+#, fuzzy
+#| msgid "Status Unknown"
+msgid "Unknown"
+msgstr "الحالة غير معروفة"
+
+#: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
 msgstr "الكابل غير موصول"
 
@@ -258,41 +283,53 @@ msgstr "الكابل غير موصول"
 msgid "Please select at least one option."
 msgstr "يرجى تحديد خيار واحد على الأقل."
 
-#: vanilla_first_setup/views/done.py:51
+#: vanilla_first_setup/views/done.py:55
 msgid "Restart your device to enjoy your {} experience."
 msgstr "أعد تشغيل الحاسوب للاستمتاع بتجربك لـ{}."
 
-#: vanilla_first_setup/views/done.py:73
+#: vanilla_first_setup/views/done.py:77
 msgid "Something went wrong"
 msgstr "هناك خطأ ما"
 
-#: vanilla_first_setup/views/done.py:75
+#: vanilla_first_setup/views/done.py:79
 msgid "Please contact the distribution developers."
 msgstr "يرجى التواصل مع مطوري التوزيعة."
 
-#: vanilla_first_setup/main.py:56
+#: vanilla_first_setup/main.py:62
 msgid "Run a post script"
 msgstr "شغل السكربت الأولي"
 
-#: vanilla_first_setup/main.py:64
+#: vanilla_first_setup/main.py:70
 msgid "Run as a new user"
 msgstr "تشغيل كمستخدم جديد"
 
-#: vanilla_first_setup/window.py:69
+#: vanilla_first_setup/window.py:70
 msgid "Done!"
 msgstr "انتهى!"
 
-#: vanilla_first_setup/window.py:70
+#: vanilla_first_setup/window.py:71
 msgid "Your device is ready to use."
 msgstr "جهازك جاهز للإستخدام."
 
-#: vanilla_first_setup/window.py:71
+#: vanilla_first_setup/window.py:72
 msgid "Error!"
 msgstr "خطأ!"
 
-#: vanilla_first_setup/window.py:72
+#: vanilla_first_setup/window.py:73
 msgid "Something went wrong."
 msgstr "هناك خطأ ما."
+
+#~ msgid "Device Details"
+#~ msgstr "تفاصيل الجهاز"
+
+#~ msgid "Connect to the Internet"
+#~ msgstr "الاتصال بالإنترنت"
+
+#~ msgid "All done!"
+#~ msgstr "تم!"
+
+#~ msgid "Yes, enable it"
+#~ msgstr "نعم، فعّلها"
 
 #~ msgid "Make your choices, this wizard will take care of everything."
 #~ msgstr "حدد اختياراتك، سيهتم هذا المساعد بكل شيء."

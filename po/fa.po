@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-29 00:39+0530\n"
+"POT-Creation-Date: 2024-01-18 16:40+0530\n"
 "PO-Revision-Date: 2023-06-28 11:51+0000\n"
 "Last-Translator: MohammadSaleh Kamyab <mskf1383@envs.net>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/vanilla-os/first-"
@@ -42,37 +42,34 @@ msgid "Checking Connection…"
 msgstr ""
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#: vanilla_first_setup/defaults/conn_check.py:116
-msgid "Please wait until the connection check is done."
+msgid "Please wait until the connection check is done"
 msgstr ""
 
-#: vanilla_first_setup/gtk/default-hostname.ui:14
-msgid "Device Details"
-msgstr ""
-
-#: vanilla_first_setup/gtk/default-hostname.ui:15
-msgid "Provide details about your device"
-msgstr ""
-
-#: vanilla_first_setup/gtk/default-hostname.ui:22
-msgid "Device Name"
-msgstr ""
-
-#: vanilla_first_setup/gtk/default-hostname.ui:35
+#: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
-#: vanilla_first_setup/gtk/default-theme.ui:49
-#: vanilla_first_setup/gtk/default-user.ui:60
+#: vanilla_first_setup/gtk/default-theme.ui:18
+#: vanilla_first_setup/gtk/default-user.ui:17
+#: vanilla_first_setup/gtk/layout-applications.ui:17
 msgid "Next"
 msgstr "بعدی"
 
+#: vanilla_first_setup/gtk/default-hostname.ui:27
+#: vanilla_first_setup/gtk/default-hostname.ui:35
+msgid "Device Name"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-hostname.ui:28
+msgid "Provide your device name"
+msgstr ""
+
 #: vanilla_first_setup/gtk/default-network.ui:18
-msgid "Connect to the Internet"
+msgid "Internet"
 msgstr ""
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
-"An active internet connection is required to make sure your system is up-to-"
-"date and download your favorite applications."
+"An active internet connection is required to download your favorite apps and "
+"to keep your system up-to-date"
 msgstr ""
 
 #: vanilla_first_setup/gtk/default-network.ui:29
@@ -95,43 +92,43 @@ msgstr ""
 msgid "Open Proxy Settings..."
 msgstr ""
 
-#: vanilla_first_setup/gtk/default-theme.ui:17
-msgid "Default"
-msgstr "پیش‌گزیده"
-
-#: vanilla_first_setup/gtk/default-theme.ui:29
-msgid "Dark"
-msgstr "تاریک"
-
-#: vanilla_first_setup/gtk/default-theme.ui:42
+#: vanilla_first_setup/gtk/default-theme.ui:27
 msgid "Color Scheme"
 msgstr "طرح رنگی"
 
-#: vanilla_first_setup/gtk/default-theme.ui:43
-msgid "Choose a color scheme for your system."
+#: vanilla_first_setup/gtk/default-theme.ui:28
+msgid "Choose a color scheme for your system"
 msgstr ""
 
-#: vanilla_first_setup/gtk/default-user.ui:21
+#: vanilla_first_setup/gtk/default-theme.ui:92
+msgid "Default"
+msgstr "پیش‌گزیده"
+
+#: vanilla_first_setup/gtk/default-theme.ui:139
+msgid "Dark"
+msgstr "تاریک"
+
+#: vanilla_first_setup/gtk/default-user.ui:37
 msgid "Create User"
 msgstr ""
 
-#: vanilla_first_setup/gtk/default-user.ui:22
+#: vanilla_first_setup/gtk/default-user.ui:38
 msgid "Provide details for your user account"
 msgstr ""
 
-#: vanilla_first_setup/gtk/default-user.ui:29
+#: vanilla_first_setup/gtk/default-user.ui:45
 msgid "Name"
 msgstr ""
 
-#: vanilla_first_setup/gtk/default-user.ui:35
+#: vanilla_first_setup/gtk/default-user.ui:51
 msgid "Username"
 msgstr ""
 
-#: vanilla_first_setup/gtk/default-user.ui:41
+#: vanilla_first_setup/gtk/default-user.ui:57
 msgid "Password"
 msgstr ""
 
-#: vanilla_first_setup/gtk/default-user.ui:47
+#: vanilla_first_setup/gtk/default-user.ui:63
 msgid "Confirm Password"
 msgstr ""
 
@@ -145,23 +142,27 @@ msgid "Showing Information"
 msgstr "نمایش اطلاعات"
 
 #: vanilla_first_setup/gtk/done.ui:12
-msgid "All done!"
-msgstr "تمام شد!"
+msgid "Finished!"
+msgstr ""
 
 #: vanilla_first_setup/gtk/done.ui:13
-msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr ""
+#, fuzzy
+#| msgid "Restart your device to enjoy your {} experience."
+msgid "Restart your device to enjoy your Vanilla OS experience"
+msgstr "افزارهٔ خود را شروع دوباره کنید تا از تجربهٔ {} خود لذت ببرید."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
-msgid "Yes, enable it"
-msgstr "بله، به کار بیفتد"
-
-#: vanilla_first_setup/gtk/post-script.ui:11
-msgid "Finalizing"
+msgid "Enable"
 msgstr ""
 
+#: vanilla_first_setup/gtk/post-script.ui:11
+#, fuzzy
+#| msgid "Installing..."
+msgid "Finalizing..."
+msgstr "در حال نصب…"
+
 #: vanilla_first_setup/gtk/post-script.ui:12
-msgid "Your device will be ready soon."
+msgid "Your device will be ready soon"
 msgstr ""
 
 #: vanilla_first_setup/gtk/progress.ui:70
@@ -169,7 +170,9 @@ msgid "Installing..."
 msgstr "در حال نصب…"
 
 #: vanilla_first_setup/gtk/progress.ui:91
-msgid "Show Console output"
+#, fuzzy
+#| msgid "Show Console output"
+msgid "Show Console Output"
 msgstr "نمایش خروجی کنسول"
 
 #: vanilla_first_setup/gtk/progress.ui:106
@@ -180,12 +183,12 @@ msgstr "نمایش نمابرگ"
 msgid "Read More"
 msgstr ""
 
-#: vanilla_first_setup/gtk/window.ui:25
+#: vanilla_first_setup/gtk/window.ui:36
 msgid "Back"
 msgstr "بازگشت"
 
 #: vanilla_first_setup/gtk/wireless-row.ui:33
-#: vanilla_first_setup/defaults/network.py:371
+#: vanilla_first_setup/defaults/network.py:373
 msgid "Connected"
 msgstr ""
 
@@ -195,6 +198,10 @@ msgstr ""
 
 #: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:116
+msgid "Please wait until the connection check is done."
 msgstr ""
 
 #: vanilla_first_setup/defaults/network.py:38
@@ -213,39 +220,43 @@ msgstr ""
 msgid "Secure network (WPA3)"
 msgstr ""
 
-#: vanilla_first_setup/defaults/network.py:374
+#: vanilla_first_setup/defaults/network.py:376
 msgid "Authentication required"
 msgstr ""
 
-#: vanilla_first_setup/defaults/network.py:382
+#: vanilla_first_setup/defaults/network.py:384
 msgid "Connecting"
 msgstr ""
 
-#: vanilla_first_setup/defaults/network.py:384
+#: vanilla_first_setup/defaults/network.py:386
 msgid "Disconnected"
 msgstr ""
 
-#: vanilla_first_setup/defaults/network.py:386
+#: vanilla_first_setup/defaults/network.py:388
 msgid "Disconnecting"
 msgstr ""
 
-#: vanilla_first_setup/defaults/network.py:388
+#: vanilla_first_setup/defaults/network.py:390
 msgid "Connection Failed"
 msgstr ""
 
-#: vanilla_first_setup/defaults/network.py:390
+#: vanilla_first_setup/defaults/network.py:392
 msgid "Status Unknown"
 msgstr ""
 
-#: vanilla_first_setup/defaults/network.py:392
+#: vanilla_first_setup/defaults/network.py:394
 msgid "Unmanaged"
 msgstr ""
 
-#: vanilla_first_setup/defaults/network.py:394
+#: vanilla_first_setup/defaults/network.py:396
 msgid "Unavailable"
 msgstr ""
 
-#: vanilla_first_setup/defaults/network.py:408
+#: vanilla_first_setup/defaults/network.py:398
+msgid "Unknown"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
 msgstr ""
 
@@ -253,38 +264,44 @@ msgstr ""
 msgid "Please select at least one option."
 msgstr "لطفاً حداقل یک گزینه را برگزینید."
 
-#: vanilla_first_setup/views/done.py:51
+#: vanilla_first_setup/views/done.py:55
 msgid "Restart your device to enjoy your {} experience."
 msgstr "افزارهٔ خود را شروع دوباره کنید تا از تجربهٔ {} خود لذت ببرید."
 
-#: vanilla_first_setup/views/done.py:73
+#: vanilla_first_setup/views/done.py:77
 msgid "Something went wrong"
 msgstr "اشتباهی پیش آمد"
 
-#: vanilla_first_setup/views/done.py:75
+#: vanilla_first_setup/views/done.py:79
 msgid "Please contact the distribution developers."
 msgstr "لطفاً با توسعه‌دهندگان توزیع تماس بگیرید."
 
-#: vanilla_first_setup/main.py:56
+#: vanilla_first_setup/main.py:62
 msgid "Run a post script"
 msgstr ""
 
-#: vanilla_first_setup/main.py:64
+#: vanilla_first_setup/main.py:70
 msgid "Run as a new user"
 msgstr ""
 
-#: vanilla_first_setup/window.py:69
+#: vanilla_first_setup/window.py:70
 msgid "Done!"
 msgstr ""
 
-#: vanilla_first_setup/window.py:70
+#: vanilla_first_setup/window.py:71
 msgid "Your device is ready to use."
 msgstr ""
 
-#: vanilla_first_setup/window.py:71
+#: vanilla_first_setup/window.py:72
 msgid "Error!"
 msgstr ""
 
-#: vanilla_first_setup/window.py:72
+#: vanilla_first_setup/window.py:73
 msgid "Something went wrong."
 msgstr ""
+
+#~ msgid "All done!"
+#~ msgstr "تمام شد!"
+
+#~ msgid "Yes, enable it"
+#~ msgstr "بله، به کار بیفتد"

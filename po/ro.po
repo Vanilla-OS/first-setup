@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-29 00:39+0530\n"
+"POT-Creation-Date: 2024-01-18 16:40+0530\n"
 "PO-Revision-Date: 2023-09-30 01:38+0000\n"
 "Last-Translator: supernova <driedpampas@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/vanilla-os/"
@@ -45,37 +45,42 @@ msgid "Checking Connection…"
 msgstr "Se verifică conexiunea…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#: vanilla_first_setup/defaults/conn_check.py:116
-msgid "Please wait until the connection check is done."
+#, fuzzy
+#| msgid "Please wait until the connection check is done."
+msgid "Please wait until the connection check is done"
 msgstr "Te rog așteaptă până verificarea conexiunii este gata."
 
-#: vanilla_first_setup/gtk/default-hostname.ui:14
-msgid "Device Details"
-msgstr "Detalii dispozitiv"
-
-#: vanilla_first_setup/gtk/default-hostname.ui:15
-msgid "Provide details about your device"
-msgstr "Furnizați detalii despre dispozitivul dvs"
-
-#: vanilla_first_setup/gtk/default-hostname.ui:22
-msgid "Device Name"
-msgstr "Numele dispozitivului"
-
-#: vanilla_first_setup/gtk/default-hostname.ui:35
+#: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
-#: vanilla_first_setup/gtk/default-theme.ui:49
-#: vanilla_first_setup/gtk/default-user.ui:60
+#: vanilla_first_setup/gtk/default-theme.ui:18
+#: vanilla_first_setup/gtk/default-user.ui:17
+#: vanilla_first_setup/gtk/layout-applications.ui:17
 msgid "Next"
 msgstr "Următorul"
 
+#: vanilla_first_setup/gtk/default-hostname.ui:27
+#: vanilla_first_setup/gtk/default-hostname.ui:35
+msgid "Device Name"
+msgstr "Numele dispozitivului"
+
+#: vanilla_first_setup/gtk/default-hostname.ui:28
+#, fuzzy
+#| msgid "Provide details about your device"
+msgid "Provide your device name"
+msgstr "Furnizați detalii despre dispozitivul dvs"
+
 #: vanilla_first_setup/gtk/default-network.ui:18
-msgid "Connect to the Internet"
-msgstr "Conectează-te la internet"
+msgid "Internet"
+msgstr ""
 
 #: vanilla_first_setup/gtk/default-network.ui:19
+#, fuzzy
+#| msgid ""
+#| "An active internet connection is required to make sure your system is up-"
+#| "to-date and download your favorite applications."
 msgid ""
-"An active internet connection is required to make sure your system is up-to-"
-"date and download your favorite applications."
+"An active internet connection is required to download your favorite apps and "
+"to keep your system up-to-date"
 msgstr ""
 "O conexiune de internet activă este necesară pentru a vă asigura că sistemul "
 "este actualizat si pentru a descărca aplicațiile dvs. preferate."
@@ -100,43 +105,45 @@ msgstr "Conectează-te la o rețea ascunsă..."
 msgid "Open Proxy Settings..."
 msgstr "Deschideți setările proxy..."
 
-#: vanilla_first_setup/gtk/default-theme.ui:17
-msgid "Default"
-msgstr "Implicit"
-
-#: vanilla_first_setup/gtk/default-theme.ui:29
-msgid "Dark"
-msgstr "Întunecat"
-
-#: vanilla_first_setup/gtk/default-theme.ui:42
+#: vanilla_first_setup/gtk/default-theme.ui:27
 msgid "Color Scheme"
 msgstr "Schema de culoare"
 
-#: vanilla_first_setup/gtk/default-theme.ui:43
-msgid "Choose a color scheme for your system."
+#: vanilla_first_setup/gtk/default-theme.ui:28
+#, fuzzy
+#| msgid "Choose a color scheme for your system."
+msgid "Choose a color scheme for your system"
 msgstr "Selectează schema de culoare pentru sistemul tău."
 
-#: vanilla_first_setup/gtk/default-user.ui:21
+#: vanilla_first_setup/gtk/default-theme.ui:92
+msgid "Default"
+msgstr "Implicit"
+
+#: vanilla_first_setup/gtk/default-theme.ui:139
+msgid "Dark"
+msgstr "Întunecat"
+
+#: vanilla_first_setup/gtk/default-user.ui:37
 msgid "Create User"
 msgstr "Crează utilizator"
 
-#: vanilla_first_setup/gtk/default-user.ui:22
+#: vanilla_first_setup/gtk/default-user.ui:38
 msgid "Provide details for your user account"
 msgstr "Specifică detalii pentru contul tău de utilizator"
 
-#: vanilla_first_setup/gtk/default-user.ui:29
+#: vanilla_first_setup/gtk/default-user.ui:45
 msgid "Name"
 msgstr "Nume"
 
-#: vanilla_first_setup/gtk/default-user.ui:35
+#: vanilla_first_setup/gtk/default-user.ui:51
 msgid "Username"
 msgstr "Nume de utilizator"
 
-#: vanilla_first_setup/gtk/default-user.ui:41
+#: vanilla_first_setup/gtk/default-user.ui:57
 msgid "Password"
 msgstr "Parolă"
 
-#: vanilla_first_setup/gtk/default-user.ui:47
+#: vanilla_first_setup/gtk/default-user.ui:63
 msgid "Confirm Password"
 msgstr "Confirmă parola"
 
@@ -150,24 +157,30 @@ msgid "Showing Information"
 msgstr "Se arată informații"
 
 #: vanilla_first_setup/gtk/done.ui:12
-msgid "All done!"
-msgstr "Totul este gata!"
+msgid "Finished!"
+msgstr ""
 
 #: vanilla_first_setup/gtk/done.ui:13
-msgid "Restart your device to enjoy your Vanilla OS experience."
+#, fuzzy
+#| msgid "Restart your device to enjoy your Vanilla OS experience."
+msgid "Restart your device to enjoy your Vanilla OS experience"
 msgstr ""
 "Repornește-ți dispozitivul pentru a te bucura de experiența Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
-msgid "Yes, enable it"
-msgstr "Da, activează opțiunea"
+msgid "Enable"
+msgstr ""
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-msgid "Finalizing"
+#, fuzzy
+#| msgid "Finalizing"
+msgid "Finalizing..."
 msgstr "Se finalizează"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-msgid "Your device will be ready soon."
+#, fuzzy
+#| msgid "Your device will be ready soon."
+msgid "Your device will be ready soon"
 msgstr "Dispozitivul tău va fi pregătit curând."
 
 #: vanilla_first_setup/gtk/progress.ui:70
@@ -175,7 +188,9 @@ msgid "Installing..."
 msgstr "Se instalează..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
-msgid "Show Console output"
+#, fuzzy
+#| msgid "Show Console output"
+msgid "Show Console Output"
 msgstr "Arată datele de ieșire ale consolei"
 
 #: vanilla_first_setup/gtk/progress.ui:106
@@ -186,12 +201,12 @@ msgstr "Arată prezentarea"
 msgid "Read More"
 msgstr "Citește mai mult"
 
-#: vanilla_first_setup/gtk/window.ui:25
+#: vanilla_first_setup/gtk/window.ui:36
 msgid "Back"
 msgstr "Înapoi"
 
 #: vanilla_first_setup/gtk/wireless-row.ui:33
-#: vanilla_first_setup/defaults/network.py:371
+#: vanilla_first_setup/defaults/network.py:373
 msgid "Connected"
 msgstr "Conectat"
 
@@ -202,6 +217,10 @@ msgstr "Fară conexiune la internet!"
 #: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
 msgstr "Prima parte a configurării necesită o conexiune de internet activă"
+
+#: vanilla_first_setup/defaults/conn_check.py:116
+msgid "Please wait until the connection check is done."
+msgstr "Te rog așteaptă până verificarea conexiunii este gata."
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
@@ -219,39 +238,45 @@ msgstr "Rețea sigură (WPA2)"
 msgid "Secure network (WPA3)"
 msgstr "Rețea sigură (WPA3)"
 
-#: vanilla_first_setup/defaults/network.py:374
+#: vanilla_first_setup/defaults/network.py:376
 msgid "Authentication required"
 msgstr "Autentificare necesară"
 
-#: vanilla_first_setup/defaults/network.py:382
+#: vanilla_first_setup/defaults/network.py:384
 msgid "Connecting"
 msgstr "Conectare"
 
-#: vanilla_first_setup/defaults/network.py:384
+#: vanilla_first_setup/defaults/network.py:386
 msgid "Disconnected"
 msgstr "Deconectat"
 
-#: vanilla_first_setup/defaults/network.py:386
+#: vanilla_first_setup/defaults/network.py:388
 msgid "Disconnecting"
 msgstr "Deconectare"
 
-#: vanilla_first_setup/defaults/network.py:388
+#: vanilla_first_setup/defaults/network.py:390
 msgid "Connection Failed"
 msgstr "Conectare eșuată"
 
-#: vanilla_first_setup/defaults/network.py:390
+#: vanilla_first_setup/defaults/network.py:392
 msgid "Status Unknown"
 msgstr "Statut necunoscut"
 
-#: vanilla_first_setup/defaults/network.py:392
+#: vanilla_first_setup/defaults/network.py:394
 msgid "Unmanaged"
 msgstr "Negestionat"
 
-#: vanilla_first_setup/defaults/network.py:394
+#: vanilla_first_setup/defaults/network.py:396
 msgid "Unavailable"
 msgstr "Indisponibil"
 
-#: vanilla_first_setup/defaults/network.py:408
+#: vanilla_first_setup/defaults/network.py:398
+#, fuzzy
+#| msgid "Status Unknown"
+msgid "Unknown"
+msgstr "Statut necunoscut"
+
+#: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
 msgstr "Cablu deconectat"
 
@@ -259,41 +284,53 @@ msgstr "Cablu deconectat"
 msgid "Please select at least one option."
 msgstr "Alege te rog cel puțin o opțiune."
 
-#: vanilla_first_setup/views/done.py:51
+#: vanilla_first_setup/views/done.py:55
 msgid "Restart your device to enjoy your {} experience."
 msgstr "Repornește-ți dispozitivul pentru a te bucura de experiența {}."
 
-#: vanilla_first_setup/views/done.py:73
+#: vanilla_first_setup/views/done.py:77
 msgid "Something went wrong"
 msgstr "Ceva a dat greș"
 
-#: vanilla_first_setup/views/done.py:75
+#: vanilla_first_setup/views/done.py:79
 msgid "Please contact the distribution developers."
 msgstr "Te rog contactează dezvoltatorii distribuției."
 
-#: vanilla_first_setup/main.py:56
+#: vanilla_first_setup/main.py:62
 msgid "Run a post script"
 msgstr "Rulează un script de după instalare"
 
-#: vanilla_first_setup/main.py:64
+#: vanilla_first_setup/main.py:70
 msgid "Run as a new user"
 msgstr "Rulați ca utilizator nou"
 
-#: vanilla_first_setup/window.py:69
+#: vanilla_first_setup/window.py:70
 msgid "Done!"
 msgstr "Gata!"
 
-#: vanilla_first_setup/window.py:70
+#: vanilla_first_setup/window.py:71
 msgid "Your device is ready to use."
 msgstr "Dispozitivul tău este gata de folosință."
 
-#: vanilla_first_setup/window.py:71
+#: vanilla_first_setup/window.py:72
 msgid "Error!"
 msgstr "Eroare!"
 
-#: vanilla_first_setup/window.py:72
+#: vanilla_first_setup/window.py:73
 msgid "Something went wrong."
 msgstr "Ceva a dat greș."
+
+#~ msgid "Device Details"
+#~ msgstr "Detalii dispozitiv"
+
+#~ msgid "Connect to the Internet"
+#~ msgstr "Conectează-te la internet"
+
+#~ msgid "All done!"
+#~ msgstr "Totul este gata!"
+
+#~ msgid "Yes, enable it"
+#~ msgstr "Da, activează opțiunea"
 
 #~ msgid "Make your choices, this wizard will take care of everything."
 #~ msgstr ""
