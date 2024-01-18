@@ -5,13 +5,14 @@
 # Anatoly <pandorinpan@gmail.com>, 2023.
 # Alexey <aleksejfedorov963@gmail.com>, 2023.
 # Fedorov Alexei <aleksejfedorov963@gmail.com>, 2023.
+# Vin <k3kelm4vw@mozmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-12-15 22:17+0000\n"
-"Last-Translator: Fedorov Alexei <aleksejfedorov963@gmail.com>\n"
+"PO-Revision-Date: 2024-01-09 00:26+0000\n"
+"Last-Translator: Vin <k3kelm4vw@mozmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ru/>\n"
 "Language: ru\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.3\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -54,7 +55,7 @@ msgstr "Информация об устройстве"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:15
 msgid "Provide details about your device"
-msgstr "Предоставьте информацию о своем устройстве"
+msgstr "Предоставьте информацию о вашем устройстве"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:22
 msgid "Device Name"
@@ -69,14 +70,14 @@ msgstr "Далее"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Connect to the Internet"
-msgstr "Подключение к интернету"
+msgstr "Подключение к Интернету"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
 "An active internet connection is required to make sure your system is up-to-"
 "date and download your favorite applications."
 msgstr ""
-"Соединение с интернетом необходимо для обновления Вашей системы и установки "
+"Соединение с Интернетом необходимо для обновления вашей системы и установки "
 "любимых приложений."
 
 #: vanilla_first_setup/gtk/default-network.ui:29
@@ -97,7 +98,7 @@ msgstr "Подключится к скрытой сети…"
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr "Открыть настройки Прокси…"
+msgstr "Открыть настройки прокси…"
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -113,15 +114,15 @@ msgstr "Цветовая схема"
 
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
-msgstr "Выберите цветовую схему для Вашей системы."
+msgstr "Выберите цветовую схему для вашей системы."
 
 #: vanilla_first_setup/gtk/default-user.ui:21
 msgid "Create User"
-msgstr "Создание пользователя"
+msgstr "Создать пользователя"
 
 #: vanilla_first_setup/gtk/default-user.ui:22
 msgid "Provide details for your user account"
-msgstr "Предоставьте информацию для Вашей учётной записи пользователя"
+msgstr "Предоставьте информацию для вашей учётной записи пользователя"
 
 #: vanilla_first_setup/gtk/default-user.ui:29
 msgid "Name"
@@ -272,11 +273,11 @@ msgstr "Пожалуйста, обратитесь к разработчикам
 
 #: vanilla_first_setup/main.py:56
 msgid "Run a post script"
-msgstr "Запуск post-скрипта"
+msgstr "Запустить post-скрипт"
 
 #: vanilla_first_setup/main.py:64
 msgid "Run as a new user"
-msgstr "Запуск от имени нового пользователя"
+msgstr "Запустить от имени нового пользователя"
 
 #: vanilla_first_setup/window.py:69
 msgid "Done!"

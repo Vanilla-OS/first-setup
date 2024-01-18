@@ -3,29 +3,31 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Gabriel Girouard <ggirouard@bungeetaco.com>, 2023.
 # Jumpy Game <jumpy634@gmail.com>, 2023.
+# Michaël Tremblay <Tichael@users.noreply.hosted.weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-06-10 20:50+0000\n"
-"Last-Translator: Jumpy Game <jumpy634@gmail.com>\n"
-"Language-Team: French (Canada) <https://hosted.weblate.org/projects/vanilla-"
-"os/first-setup/fr_CA/>\n"
+"PO-Revision-Date: 2024-01-12 11:51+0000\n"
+"Last-Translator: Michaël Tremblay <Tichael@users.noreply.hosted.weblate.org>"
+"\n"
+"Language-Team: French (Canada) <https://hosted.weblate.org/projects/"
+"vanilla-os/first-setup/fr_CA/>\n"
 "Language: fr_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr "Première configuration"
+msgstr "Configuration initiale de Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
-msgstr "Personnalisez votre installation de Vanilla OS"
+msgstr "Personnalisez votre installation de Vanilla OS."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -38,12 +40,12 @@ msgstr "Première version"
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
-msgstr "Verification de la connection…"
+msgstr "Vérification de la connexion…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 #: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
-msgstr "Merci d'attendre que la verification de la connection soit terminé."
+msgstr "Veuillez patienter pendant la vérification de la connexion."
 
 #: vanilla_first_setup/gtk/default-hostname.ui:14
 msgid "Device Details"
@@ -76,23 +78,23 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
-msgstr ""
+msgstr "Filaire"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
-msgstr ""
+msgstr "Réseaux sans fil"
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
-msgstr ""
+msgstr "Avancé"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
 msgid "Connect to Hidden Network..."
-msgstr ""
+msgstr "Se connecter à un réseau caché..."
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr ""
+msgstr "Ouvrir les paramètres proxy..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -104,7 +106,7 @@ msgstr "Sombre"
 
 #: vanilla_first_setup/gtk/default-theme.ui:42
 msgid "Color Scheme"
-msgstr "Schéma de couleurs"
+msgstr "Palette de couleurs"
 
 #: vanilla_first_setup/gtk/default-theme.ui:43
 msgid "Choose a color scheme for your system."
@@ -112,13 +114,11 @@ msgstr "Choisissez un schéma de couleur pour votre système."
 
 #: vanilla_first_setup/gtk/default-user.ui:21
 msgid "Create User"
-msgstr ""
+msgstr "Créer un utilisateur"
 
 #: vanilla_first_setup/gtk/default-user.ui:22
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide details for your user account"
-msgstr "appareil"
+msgstr "Fournissez les détails de votre compte d'utilisateur"
 
 #: vanilla_first_setup/gtk/default-user.ui:29
 msgid "Name"
@@ -126,15 +126,15 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/default-user.ui:35
 msgid "Username"
-msgstr ""
+msgstr "Nom d'utilisateur"
 
 #: vanilla_first_setup/gtk/default-user.ui:41
 msgid "Password"
-msgstr ""
+msgstr "Mot de passe"
 
 #: vanilla_first_setup/gtk/default-user.ui:47
 msgid "Confirm Password"
-msgstr ""
+msgstr "Confirmer le mot de passe"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
@@ -167,7 +167,7 @@ msgstr "Votre appareil sera bientôt prêt."
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
-msgstr "Installer..."
+msgstr "Installation..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
@@ -188,7 +188,7 @@ msgstr "Retour"
 #: vanilla_first_setup/gtk/wireless-row.ui:33
 #: vanilla_first_setup/defaults/network.py:371
 msgid "Connected"
-msgstr ""
+msgstr "Connecté"
 
 #: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
@@ -200,55 +200,55 @@ msgstr "La première installation nécessite une connexion internet active"
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
-msgstr ""
+msgstr "Réseau non sécurisé (WEP)"
 
 #: vanilla_first_setup/defaults/network.py:39
 msgid "Secure network (WPA)"
-msgstr ""
+msgstr "Réseau sécurisé (WPA)"
 
 #: vanilla_first_setup/defaults/network.py:40
 msgid "Secure network (WPA2)"
-msgstr ""
+msgstr "Réseau sécurisé (WPA2)"
 
 #: vanilla_first_setup/defaults/network.py:41
 msgid "Secure network (WPA3)"
-msgstr ""
+msgstr "Réseau sécurisé (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:374
 msgid "Authentication required"
-msgstr ""
+msgstr "Authentification requise"
 
 #: vanilla_first_setup/defaults/network.py:382
 msgid "Connecting"
-msgstr ""
+msgstr "Connexion"
 
 #: vanilla_first_setup/defaults/network.py:384
 msgid "Disconnected"
-msgstr ""
+msgstr "Déconnecté"
 
 #: vanilla_first_setup/defaults/network.py:386
 msgid "Disconnecting"
-msgstr ""
+msgstr "Déconnexion"
 
 #: vanilla_first_setup/defaults/network.py:388
 msgid "Connection Failed"
-msgstr ""
+msgstr "La connexion a échoué"
 
 #: vanilla_first_setup/defaults/network.py:390
 msgid "Status Unknown"
-msgstr ""
+msgstr "Statut inconnu"
 
 #: vanilla_first_setup/defaults/network.py:392
 msgid "Unmanaged"
-msgstr ""
+msgstr "Non géré"
 
 #: vanilla_first_setup/defaults/network.py:394
 msgid "Unavailable"
-msgstr ""
+msgstr "Indisponible"
 
 #: vanilla_first_setup/defaults/network.py:408
 msgid "Cable Unplugged"
-msgstr ""
+msgstr "Câble débranché"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."

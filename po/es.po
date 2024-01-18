@@ -5,13 +5,15 @@
 # Juan Benites <benitesjn@gmail.com>, 2023.
 # gallegonovato <fran-carro@hotmail.es>, 2023.
 # ramon ledesma <rmon.led@gmail.com>, 2023.
+# Nacho Colorado <nachocolorado04@gmail.com>, 2024.
+# Aghaeles <sebas.hfa@pm.me>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-11-23 11:04+0000\n"
-"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"PO-Revision-Date: 2024-01-16 01:29+0000\n"
+"Last-Translator: Aghaeles <sebas.hfa@pm.me>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/es/>\n"
 "Language: es\n"
@@ -19,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.2.1-rc\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -40,7 +42,7 @@ msgstr "Primer lanzamiento"
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
-msgstr "Comprobando la conexión…"
+msgstr "Revisando la conexión…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 #: vanilla_first_setup/defaults/conn_check.py:116
@@ -75,12 +77,12 @@ msgid ""
 "An active internet connection is required to make sure your system is up-to-"
 "date and download your favorite applications."
 msgstr ""
-"Se requiere una conexión activa al Internet para asegurarse de que tu "
-"sistema está actualizado y para descargar tus aplicaciones favoritas."
+"Se requiere una conexión a Internet activa para asegurarse de que su sistema "
+"esté actualizado y para descargar sus aplicaciones favoritas."
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
-msgstr "Cableado"
+msgstr "Cenexión por cable"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
@@ -88,7 +90,7 @@ msgstr "Redes inalámbricas"
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
-msgstr "Avanzado"
+msgstr "Redes Wifi"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
 msgid "Connect to Hidden Network..."
@@ -96,7 +98,7 @@ msgstr "Conectarse a una red oculta..."
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr "Abrir la Configuración del proxy..."
+msgstr "Abrir configuraciones de proxy..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"
@@ -120,7 +122,7 @@ msgstr "Crear un usuario"
 
 #: vanilla_first_setup/gtk/default-user.ui:22
 msgid "Provide details for your user account"
-msgstr "Indica los datos de tu cuenta de usuario"
+msgstr "Proporcione detalles para su cuenta de usuario"
 
 #: vanilla_first_setup/gtk/default-user.ui:29
 msgid "Name"
@@ -136,7 +138,7 @@ msgstr "Contraseña"
 
 #: vanilla_first_setup/gtk/default-user.ui:47
 msgid "Confirm Password"
-msgstr "Confirmar la contraseña"
+msgstr "Confirmar contraseña"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
@@ -153,7 +155,8 @@ msgstr "¡Todo listo!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your device to enjoy your Vanilla OS experience."
-msgstr "Reinicie su dispositivo para disfrutar su experiencia en Vanilla OS."
+msgstr ""
+"Reinicie su dispositivo para disfrutar de su experiencia con Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Yes, enable it"
@@ -165,7 +168,7 @@ msgstr "Finalizando"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon."
-msgstr "Su dispositivo estará listo en breve."
+msgstr "Su dispositivo estará listo pronto."
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
@@ -173,11 +176,11 @@ msgstr "Instalando..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console output"
-msgstr "Mostrar la salida de la consola"
+msgstr "Mostrar salida de la consola"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr "Ver las presentación de las diapositivas"
+msgstr "Mostrar presentación de diapositivas"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
@@ -218,7 +221,7 @@ msgstr "Red segura (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:374
 msgid "Authentication required"
-msgstr "Autenticación necesaria"
+msgstr "Se requiere autenticación"
 
 #: vanilla_first_setup/defaults/network.py:382
 msgid "Connecting"
@@ -266,8 +269,7 @@ msgstr "Algo salió mal"
 
 #: vanilla_first_setup/views/done.py:75
 msgid "Please contact the distribution developers."
-msgstr ""
-"Por favor, póngase en contacto con los desarrolladores de la distribución."
+msgstr "Por favor, contacte a los desarrolladores de la distribución."
 
 #: vanilla_first_setup/main.py:56
 msgid "Run a post script"
@@ -275,7 +277,7 @@ msgstr "Ejecutar un script posterior"
 
 #: vanilla_first_setup/main.py:64
 msgid "Run as a new user"
-msgstr "Ejecutar como nuevo usuario"
+msgstr "Ejecutar como un nuevo usuario"
 
 #: vanilla_first_setup/window.py:69
 msgid "Done!"

@@ -5,13 +5,14 @@
 # Fernando Lopes <118869201+plasmus777@users.noreply.github.com>, 2023.
 # Davi de Oliveira Barbosa <davioliveira.java@gmail.com>, 2023.
 # Império Linux <kevendoria86@gmail.com>, 2023.
+# Cassio H <neargplay@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-09-20 20:28+0000\n"
-"Last-Translator: Império Linux <kevendoria86@gmail.com>\n"
+"PO-Revision-Date: 2024-01-06 14:03+0000\n"
+"Last-Translator: Cassio H <neargplay@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "vanilla-os/first-setup/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.1-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -40,7 +41,7 @@ msgstr "Primeira versão"
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
-msgstr "Verificando conexão…"
+msgstr "Verificando a conexão…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 #: vanilla_first_setup/defaults/conn_check.py:116
@@ -79,8 +80,9 @@ msgstr ""
 "permaneça atualizado e para baixar os seus aplicativos favoritos."
 
 #: vanilla_first_setup/gtk/default-network.ui:29
+#, fuzzy
 msgid "Wired"
-msgstr "Redes cabeadas"
+msgstr "Com fio"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
@@ -92,11 +94,11 @@ msgstr "Avançado"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
 msgid "Connect to Hidden Network..."
-msgstr "Conectar-se a uma Rede Oculta..."
+msgstr "Conecte-se à uma rede oculta..."
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr "Abrir Configurações de Proxy..."
+msgstr "Abrir configurações de Proxy..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:17
 msgid "Default"

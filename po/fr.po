@@ -5,25 +5,26 @@
 # "Alexandre BOYER (Alex)" <alexandre.boyer29@gmail.com>, 2023.
 # Lucas_Strafe <Lucas-Strafe@protonmail.com>, 2023.
 # tachyglossues <tachyglossues@gmail.com>, 2023.
+# Gabin <quagligabin.praud@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 00:39+0530\n"
-"PO-Revision-Date: 2023-08-31 13:54+0000\n"
-"Last-Translator: tachyglossues <tachyglossues@gmail.com>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/fr/>\n"
+"PO-Revision-Date: 2024-01-02 15:28+0000\n"
+"Last-Translator: Gabin <quagligabin.praud@gmail.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.0.1-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr "Première configuration de Vanilla OS"
+msgstr "Configuration initial de Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
@@ -40,7 +41,7 @@ msgstr "Première version"
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
-msgstr "Vérification de la connexion…"
+msgstr "Vérification de la connexion …"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 #: vanilla_first_setup/defaults/conn_check.py:116
@@ -80,7 +81,7 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
-msgstr "Câblé"
+msgstr "Filaire"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
