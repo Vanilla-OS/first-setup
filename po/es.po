@@ -14,10 +14,10 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-01-26 23:21+0000\n"
+"PO-Revision-Date: 2024-01-29 00:02+0000\n"
 "Last-Translator: David González <iwisp360@hotmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/es/>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,7 +35,7 @@ msgstr "Modifique su instalación de Vanilla OS."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr "Sin Descripción"
+msgstr "Sin descripción"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
@@ -224,7 +224,7 @@ msgstr "Red segura (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:376
 msgid "Authentication required"
-msgstr "Se Requiere Autenticación"
+msgstr "Se requiere autenticación"
 
 #: vanilla_first_setup/defaults/network.py:384
 msgid "Connecting"
