@@ -7,15 +7,16 @@
 # ramon ledesma <rmon.led@gmail.com>, 2023.
 # Nacho Colorado <nachocolorado04@gmail.com>, 2024.
 # Aghaeles <sebas.hfa@pm.me>, 2024.
+# Alexis Fleitas Klisch <unbosquense@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-01-16 01:29+0000\n"
-"Last-Translator: Aghaeles <sebas.hfa@pm.me>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/es/>\n"
+"PO-Revision-Date: 2024-01-19 07:01+0000\n"
+"Last-Translator: Alexis Fleitas Klisch <unbosquense@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -45,10 +46,8 @@ msgid "Checking Connection…"
 msgstr "Revisando la conexión…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
-#| msgid "Please wait until the connection check is done."
 msgid "Please wait until the connection check is done"
-msgstr "Espere a que finalice la comprobación de la conexión."
+msgstr "Espere a que finalice la comprobación de la conexión"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -64,26 +63,20 @@ msgid "Device Name"
 msgstr "Nombre del dispositivo"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "Proporcione detalles sobre su dispositivo"
+msgstr "Proporciona el nombre de tu dispositivo"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
-#, fuzzy
-#| msgid ""
-#| "An active internet connection is required to make sure your system is up-"
-#| "to-date and download your favorite applications."
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
-"Se requiere una conexión a Internet activa para asegurarse de que su sistema "
-"esté actualizado y para descargar sus aplicaciones favoritas."
+"Se requiere una conexión a Internet activa para descargar tus aplicaciones "
+"favoritas y mantener tu sistema actualizado"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
@@ -110,10 +103,8 @@ msgid "Color Scheme"
 msgstr "Paleta de colores"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "Seleccione una paleta de colores para el sistema."
+msgstr "Seleccione una paleta de colores para el sistema"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
@@ -158,40 +149,31 @@ msgstr "Mostrando detalles"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "¡Finalizado!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
-#| msgid "Restart your device to enjoy your Vanilla OS experience."
 msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr ""
-"Reinicie su dispositivo para disfrutar de su experiencia con Vanilla OS."
+msgstr "Reinicia tu dispositivo para disfrutar de tu experiencia Vanilla OS"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "Permitir"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-#, fuzzy
-#| msgid "Finalizing"
 msgid "Finalizing..."
-msgstr "Finalizando"
+msgstr "Finalizando..."
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-#, fuzzy
-#| msgid "Your device will be ready soon."
 msgid "Your device will be ready soon"
-msgstr "Su dispositivo estará listo pronto."
+msgstr "Su dispositivo estará listo pronto"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
 msgstr "Instalando..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
-#, fuzzy
-#| msgid "Show Console output"
 msgid "Show Console Output"
-msgstr "Mostrar salida de la consola"
+msgstr "Mostrar la salida de la consola"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
@@ -271,10 +253,8 @@ msgid "Unavailable"
 msgstr "No está disponible"
 
 #: vanilla_first_setup/defaults/network.py:398
-#, fuzzy
-#| msgid "Status Unknown"
 msgid "Unknown"
-msgstr "Estado desconocido"
+msgstr "Desconocido"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
