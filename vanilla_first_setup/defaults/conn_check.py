@@ -14,17 +14,15 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from requests import Session
-from collections import OrderedDict
-
 import logging
 import os
-
-from gi.repository import Gtk, Adw
-
-from vanilla_first_setup.utils.run_async import RunAsync
+from collections import OrderedDict
 from gettext import gettext as _
 
+from gi.repository import Adw, Gtk
+from requests import Session
+
+from vanilla_first_setup.utils.run_async import RunAsync
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("FirstSetup::Conn_Check")
