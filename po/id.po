@@ -6,13 +6,14 @@
 # Arif Budiman <arifpedia@gmail.com>, 2023.
 # Sultan Iskandar Maulana <nattadasu@nattadasu.my.id>, 2023.
 # Reza Almanda <rezaalmanda27@gmail.com>, 2023.
+# proficiency <anggiar.rachman@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2023-12-30 08:05+0000\n"
-"Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
+"PO-Revision-Date: 2024-01-19 07:01+0000\n"
+"Last-Translator: proficiency <anggiar.rachman@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/id/>\n"
 "Language: id\n"
@@ -44,10 +45,8 @@ msgid "Checking Connection…"
 msgstr "Memeriksa koneksi…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
-#| msgid "Please wait until the connection check is done."
 msgid "Please wait until the connection check is done"
-msgstr "Harap tunggu hingga pemeriksaan koneksi selesai."
+msgstr "Harap tunggu hingga pemeriksaan koneksi selesai"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -63,26 +62,20 @@ msgid "Device Name"
 msgstr "Nama Perangkat"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "Berikan detail tentang perangkat Anda"
+msgstr "Berikan nama perangkat anda"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
-#, fuzzy
-#| msgid ""
-#| "An active internet connection is required to make sure your system is up-"
-#| "to-date and download your favorite applications."
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
-"Koneksi internet aktif diperlukan untuk memastikan sistem Anda selalu "
-"diperbarui dan untuk mengunduh aplikasi favorit Anda."
+"Koneksi internet aktif diperlukan untuk mengunduh aplikasi favorit Anda dan "
+"memastikan sistem Anda selalu diperbarui"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
@@ -109,10 +102,8 @@ msgid "Color Scheme"
 msgstr "Skema Warna"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "Pilih skema warna untuk sistem Anda."
+msgstr "Pilih skema warna untuk sistem Anda"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
@@ -157,39 +148,31 @@ msgstr "Menampilkan Informasi"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "Selesai!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
-#| msgid "Restart your device to enjoy your Vanilla OS experience."
 msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr "Mulai ulang perangkat anda untuk meninkmati pengalaman Vanilla OS."
+msgstr "Mulai ulang perangkat anda untuk meninkmati pengalaman Vanilla OS"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "Aktifkan"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-#, fuzzy
-#| msgid "Finalizing"
 msgid "Finalizing..."
-msgstr "Finalisasi"
+msgstr "Finalisasi..."
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-#, fuzzy
-#| msgid "Your device will be ready soon."
 msgid "Your device will be ready soon"
-msgstr "Perangkat anda akan segera siap digunakan."
+msgstr "Perangkat anda akan segera siap digunakan"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
 msgstr "Menginstal..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
-#, fuzzy
-#| msgid "Show Console output"
 msgid "Show Console Output"
-msgstr "Tampilkan keluaran Konsol"
+msgstr "Tampilkan Keluaran Konsol"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
@@ -269,10 +252,8 @@ msgid "Unavailable"
 msgstr "Tidak Tersedia"
 
 #: vanilla_first_setup/defaults/network.py:398
-#, fuzzy
-#| msgid "Status Unknown"
 msgid "Unknown"
-msgstr "Status Tidak Diketahui"
+msgstr "Tidak Diketahui"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"

@@ -7,15 +7,17 @@
 # ramon ledesma <rmon.led@gmail.com>, 2023.
 # Nacho Colorado <nachocolorado04@gmail.com>, 2024.
 # Aghaeles <sebas.hfa@pm.me>, 2024.
+# Alexis Fleitas Klisch <unbosquense@gmail.com>, 2024.
+# David González <iwisp360@hotmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-01-16 01:29+0000\n"
-"Last-Translator: Aghaeles <sebas.hfa@pm.me>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/es/>\n"
+"PO-Revision-Date: 2024-01-29 00:02+0000\n"
+"Last-Translator: David González <iwisp360@hotmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,18 +39,16 @@ msgstr "Sin descripción"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr "Primer lanzamiento"
+msgstr "Primera versión"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
-msgstr "Revisando la conexión…"
+msgstr "Verificando conexión…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
-#| msgid "Please wait until the connection check is done."
 msgid "Please wait until the connection check is done"
-msgstr "Espere a que finalice la comprobación de la conexión."
+msgstr "Por favor, espere mientras se verifica su conexión a Internet"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -64,26 +64,20 @@ msgid "Device Name"
 msgstr "Nombre del dispositivo"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "Proporcione detalles sobre su dispositivo"
+msgstr "Proporciona el nombre de tu dispositivo"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
-#, fuzzy
-#| msgid ""
-#| "An active internet connection is required to make sure your system is up-"
-#| "to-date and download your favorite applications."
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
-"Se requiere una conexión a Internet activa para asegurarse de que su sistema "
-"esté actualizado y para descargar sus aplicaciones favoritas."
+"Se requiere una conexión a Internet activa para descargar tus aplicaciones "
+"favoritas y mantener tu sistema actualizado"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
@@ -95,7 +89,7 @@ msgstr "Redes inalámbricas"
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
-msgstr "Redes Wifi"
+msgstr "Avanzado"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
 msgid "Connect to Hidden Network..."
@@ -110,10 +104,8 @@ msgid "Color Scheme"
 msgstr "Paleta de colores"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "Seleccione una paleta de colores para el sistema."
+msgstr "Selecciona una paleta de colores para tu sistema"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
@@ -125,7 +117,7 @@ msgstr "Oscuro"
 
 #: vanilla_first_setup/gtk/default-user.ui:37
 msgid "Create User"
-msgstr "Crear un usuario"
+msgstr "Crear cuenta de usuario"
 
 #: vanilla_first_setup/gtk/default-user.ui:38
 msgid "Provide details for your user account"
@@ -154,44 +146,36 @@ msgstr "¡Bienvenido/a!"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
-msgstr "Mostrando detalles"
+msgstr "Mostrando información"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "¡Terminado!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
-#| msgid "Restart your device to enjoy your Vanilla OS experience."
 msgid "Restart your device to enjoy your Vanilla OS experience"
 msgstr ""
-"Reinicie su dispositivo para disfrutar de su experiencia con Vanilla OS."
+"Reinicia tu dispositivo para disfrutar de tu experiencia con Vanilla OS"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "Activar"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-#, fuzzy
-#| msgid "Finalizing"
 msgid "Finalizing..."
-msgstr "Finalizando"
+msgstr "Terminando..."
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-#, fuzzy
-#| msgid "Your device will be ready soon."
 msgid "Your device will be ready soon"
-msgstr "Su dispositivo estará listo pronto."
+msgstr "Su dispositivo estará listo pronto"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
 msgstr "Instalando..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
-#, fuzzy
-#| msgid "Show Console output"
 msgid "Show Console Output"
-msgstr "Mostrar salida de la consola"
+msgstr "Mostrar la salida de la consola"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
@@ -216,11 +200,11 @@ msgstr "¡Sin conexión a Internet!"
 
 #: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
-msgstr "La primera configuración requiere una conexión a Internet"
+msgstr "La configuración inicial requiere de una conexión a Internet"
 
 #: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
-msgstr "Espere a que finalice la comprobación de la conexión."
+msgstr "Por favor, espera mientras se comprueba tu conexión a Internet."
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
@@ -268,13 +252,11 @@ msgstr "No gestionado"
 
 #: vanilla_first_setup/defaults/network.py:396
 msgid "Unavailable"
-msgstr "No está disponible"
+msgstr "No Disponible"
 
 #: vanilla_first_setup/defaults/network.py:398
-#, fuzzy
-#| msgid "Status Unknown"
 msgid "Unknown"
-msgstr "Estado desconocido"
+msgstr "Desconocido"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
@@ -290,7 +272,7 @@ msgstr "Reinicie su dispositivo para disfrutar su experiencia en {}."
 
 #: vanilla_first_setup/views/done.py:77
 msgid "Something went wrong"
-msgstr "Algo salió mal"
+msgstr "Algo Ha Fallado"
 
 #: vanilla_first_setup/views/done.py:79
 msgid "Please contact the distribution developers."
@@ -298,7 +280,7 @@ msgstr "Por favor, contacte a los desarrolladores de la distribución."
 
 #: vanilla_first_setup/main.py:62
 msgid "Run a post script"
-msgstr "Ejecutar un script posterior"
+msgstr "Ejecutar un post script"
 
 #: vanilla_first_setup/main.py:70
 msgid "Run as a new user"
@@ -318,7 +300,7 @@ msgstr "¡Error!"
 
 #: vanilla_first_setup/window.py:73
 msgid "Something went wrong."
-msgstr "Algo salió mal."
+msgstr "Algo Ha Fallado."
 
 #~ msgid "Device Details"
 #~ msgstr "Información del dispositivo"

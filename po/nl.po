@@ -7,10 +7,10 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-01-05 13:07+0000\n"
+"PO-Revision-Date: 2024-01-20 18:19+0000\n"
 "Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
-"Language-Team: Dutch <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/nl/>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,10 +40,8 @@ msgid "Checking Connection…"
 msgstr "Verbinding controleren…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
-#| msgid "Please wait until the connection check is done."
 msgid "Please wait until the connection check is done"
-msgstr "Wacht tot de verbindingscontrole is afgerond"
+msgstr "Wacht tot de verbindings­controle is afgerond"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -59,26 +57,20 @@ msgid "Device Name"
 msgstr "Apparaatnaam"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "Geef details over uw apparaat up"
+msgstr "Geef uw apparaat­naam op"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
-#, fuzzy
-#| msgid ""
-#| "An active internet connection is required to make sure your system is up-"
-#| "to-date and download your favorite applications."
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
-"Een actieve internetverbinding is vereist om ervoor te zorgen dat uw systeem "
-"up-to-date is en om uw favoriete apps te downloaden."
+"Een actieve internet­verbinding is vereist om uw favoriete apps te "
+"downloaden en uw systeem up-to-date te houden"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
@@ -105,10 +97,8 @@ msgid "Color Scheme"
 msgstr "Kleurenschema"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "Kies een kleurenschema voor uw systeem."
+msgstr "Kies een kleuren­schema voor uw systeem"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
@@ -153,38 +143,30 @@ msgstr "Informatie wordt weergegeven"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "Klaar!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
-#| msgid "Restart your device to enjoy your Vanilla OS experience."
 msgid "Restart your device to enjoy your Vanilla OS experience"
 msgstr ""
-"Start uw apparaat opnieuw op om te genieten van uw ervaring met Vanilla OS."
+"Start uw apparaat opnieuw op om te genieten van uw ervaring met Vanilla OS"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "Inschakelen"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-#, fuzzy
-#| msgid "Finalizing"
 msgid "Finalizing..."
-msgstr "Afronden"
+msgstr "Afronden…"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-#, fuzzy
-#| msgid "Your device will be ready soon."
 msgid "Your device will be ready soon"
-msgstr "Uw apparaat zal binnenkort gereed zijn."
+msgstr "Uw apparaat zal binnenkort gereed zijn"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
 msgstr "Installeren…"
 
 #: vanilla_first_setup/gtk/progress.ui:91
-#, fuzzy
-#| msgid "Show Console output"
 msgid "Show Console Output"
 msgstr "Console-uitvoer tonen"
 
@@ -266,10 +248,8 @@ msgid "Unavailable"
 msgstr "Niet beschikbaar"
 
 #: vanilla_first_setup/defaults/network.py:398
-#, fuzzy
-#| msgid "Status Unknown"
 msgid "Unknown"
-msgstr "Status onbekend"
+msgstr "Onbekend"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"

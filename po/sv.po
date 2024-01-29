@@ -2,17 +2,17 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Luna Jernberg <droidbittin@gmail.com>, 2023.
-# bittin1ddc447d824349b2 <bittin@reimu.nl>, 2023.
+# bittin1ddc447d824349b2 <bittin@reimu.nl>, 2023, 2024.
 # majjejjam <miro.allard@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2023-12-29 15:10+0000\n"
+"PO-Revision-Date: 2024-01-19 20:24+0000\n"
 "Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
-"Language-Team: Swedish <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/sv/>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,10 +42,8 @@ msgid "Checking Connection…"
 msgstr "Kontrollerar anslutning…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
-#| msgid "Please wait until the connection check is done."
 msgid "Please wait until the connection check is done"
-msgstr "Vänta tills anslutningskontrollen är klar."
+msgstr "Vänta tills anslutningskontrollen är klar"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -61,26 +59,20 @@ msgid "Device Name"
 msgstr "Enhetsnamn"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "Ange information om din enhet"
+msgstr "Ange ditt enhetsnamn"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
-#, fuzzy
-#| msgid ""
-#| "An active internet connection is required to make sure your system is up-"
-#| "to-date and download your favorite applications."
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
-"En aktiv internetanslutning krävs för att se till att ditt system är "
-"uppdaterat och ladda ner dina favoritprogram."
+"En aktiv internetanslutning krävs för att ladda ner dina favoritappar och "
+"för att hålla ditt system uppdaterat"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
@@ -107,10 +99,8 @@ msgid "Color Scheme"
 msgstr "Färgschema"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "Välj ett färgschema för ditt system."
+msgstr "Välj ett färgschema för ditt system"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
@@ -155,39 +145,31 @@ msgstr "Visar information"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "Färdigt!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
-#| msgid "Restart your device to enjoy your Vanilla OS experience."
 msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr "Starta om din enhet för att njuta av din Vanilla OS-upplevelse."
+msgstr "Starta om din enhet för att njuta av din Vanilla OS-upplevelse"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "Aktivera"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-#, fuzzy
-#| msgid "Finalizing"
 msgid "Finalizing..."
-msgstr "Slutför"
+msgstr "Slutför..."
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-#, fuzzy
-#| msgid "Your device will be ready soon."
 msgid "Your device will be ready soon"
-msgstr "Din enhet är snart redo."
+msgstr "Din enhet är redo snart"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
 msgstr "Installerar..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
-#, fuzzy
-#| msgid "Show Console output"
 msgid "Show Console Output"
-msgstr "Visa konsolutdata"
+msgstr "Visa Konsolutdata"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
@@ -267,10 +249,8 @@ msgid "Unavailable"
 msgstr "Inte tillgänglig"
 
 #: vanilla_first_setup/defaults/network.py:398
-#, fuzzy
-#| msgid "Status Unknown"
 msgid "Unknown"
-msgstr "Status okänd"
+msgstr "Okänd"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
