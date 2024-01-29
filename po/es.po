@@ -39,12 +39,12 @@ msgstr "Sin Descripción"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr "Primer lanzamiento"
+msgstr "Primera versión"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
-msgstr "Revisando la conexión…"
+msgstr "Verificando conexión…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 msgid "Please wait until the connection check is done"
@@ -146,7 +146,7 @@ msgstr "¡Bienvenido/a!"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
-msgstr "Mostrando detalles"
+msgstr "Mostrando información"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
