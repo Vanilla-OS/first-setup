@@ -4,13 +4,13 @@
 # Automatically generated, 2022.
 #
 # Jen Kung-chih <Kaitul@outlook.com>, 2023.
-# lakejason0 <sunliyuan200402@outlook.com>, 2023.
+# lakejason0 <sunliyuan200402@outlook.com>, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2023-09-01 07:15+0000\n"
+"PO-Revision-Date: 2024-01-25 16:01+0000\n"
 "Last-Translator: lakejason0 <sunliyuan200402@outlook.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "vanilla-os/first-setup/zh_Hant/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.0.1-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -43,10 +43,8 @@ msgid "Checking Connection…"
 msgstr "正在檢查連線…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
-#| msgid "Please wait until the connection check is done."
 msgid "Please wait until the connection check is done"
-msgstr "請等候連線檢查完成。"
+msgstr "請等候連線檢查完成"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -62,24 +60,18 @@ msgid "Device Name"
 msgstr "裝置名稱"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "提供有關裝置的詳細資訊"
+msgstr "提供您裝置的名稱"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "網際網路"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
-#, fuzzy
-#| msgid ""
-#| "An active internet connection is required to make sure your system is up-"
-#| "to-date and download your favorite applications."
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
-msgstr "需要有效的網際網路連線以確保系統保持最新及下載您所需要的應用程式。"
+msgstr "需要有效的網際網路連線以下載您所需要的應用程式及確保系統保持最新"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
@@ -106,10 +98,8 @@ msgid "Color Scheme"
 msgstr "色彩配置"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "為您的系統選擇配色。"
+msgstr "為您的系統選擇配色"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
@@ -154,37 +144,29 @@ msgstr "顯示資訊"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "大功告成！"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
-#| msgid "Restart your device to enjoy your Vanilla OS experience."
 msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr "裝置重新開機，開始您的 Vanilla OS 之旅。"
+msgstr "裝置重新開機，開始您的 Vanilla OS 之旅"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "啟用"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-#, fuzzy
-#| msgid "Finalizing"
 msgid "Finalizing..."
-msgstr "最終處理"
+msgstr "最終處理…"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-#, fuzzy
-#| msgid "Your device will be ready soon."
 msgid "Your device will be ready soon"
-msgstr "您的裝置將很快準備就緒。"
+msgstr "您的裝置將很快準備就緒"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
 msgstr "正在安裝…"
 
 #: vanilla_first_setup/gtk/progress.ui:91
-#, fuzzy
-#| msgid "Show Console output"
 msgid "Show Console Output"
 msgstr "顯示主控台輸出"
 
@@ -266,10 +248,8 @@ msgid "Unavailable"
 msgstr "無法使用"
 
 #: vanilla_first_setup/defaults/network.py:398
-#, fuzzy
-#| msgid "Status Unknown"
 msgid "Unknown"
-msgstr "狀態未知"
+msgstr "未知"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
