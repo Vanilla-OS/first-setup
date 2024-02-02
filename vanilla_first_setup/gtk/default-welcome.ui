@@ -36,7 +36,7 @@
                         </child>
                         <child>
                           <object class="GtkLabel">
-                            <property name="label">Make your choices, this wizard will take care of everything.</property>
+                            <property name="label">Make your choices, this wizard will take care of everything</property>
                             <property name="justify">2</property>
                           </object>
                         </child>
