@@ -7,13 +7,14 @@
 # tachyglossues <tachyglossues@gmail.com>, 2023.
 # Gabin <quagligabin.praud@gmail.com>, 2024.
 # TRNEEDANAME <trneedname@duck.com>, 2024.
+# Silvan De La Rosa <lvllaby@pm.me>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-01-31 05:01+0000\n"
-"Last-Translator: TRNEEDANAME <trneedname@duck.com>\n"
+"PO-Revision-Date: 2024-02-03 17:01+0000\n"
+"Last-Translator: Silvan De La Rosa <lvllaby@pm.me>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/fr/>\n"
 "Language: fr\n"
@@ -25,7 +26,7 @@ msgstr ""
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr "Configuration initial de Vanilla OS"
+msgstr "Configuration initiale de Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
@@ -46,7 +47,7 @@ msgstr "Vérification de la connexion …"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 msgid "Please wait until the connection check is done"
-msgstr "Veuillez attendre que la connexion soit confirmée"
+msgstr "Veuillez attendre que la vérification de la connexion soit terminée"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -75,7 +76,7 @@ msgid ""
 "to keep your system up-to-date"
 msgstr ""
 "Une connexion internet active est nécessaire pour télécharger vos "
-"applications préférées."
+"applications préférées et pour maintenir votre système à jour"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
@@ -156,7 +157,7 @@ msgstr "Redémarrez votre appareil pour profiter de votre expérience Vanilla OS
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "Activer"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing..."
