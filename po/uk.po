@@ -4,22 +4,23 @@
 # Serhii Chebanenko <4e6anenk0@gmail.com>, 2023.
 # Dan <denqwerta@gmail.com>, 2023.
 # Dan <jonweblin2205@protonmail.com>, 2023.
+# andrij <Kalenskuja@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2023-09-17 18:01+0000\n"
-"Last-Translator: Dan <jonweblin2205@protonmail.com>\n"
+"PO-Revision-Date: 2024-01-31 16:42+0000\n"
+"Last-Translator: andrij <Kalenskuja@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.0.2\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -43,10 +44,8 @@ msgid "Checking Connection…"
 msgstr "Перевірка з'єднання…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
-#| msgid "Please wait until the connection check is done."
 msgid "Please wait until the connection check is done"
-msgstr "Будь ласка, зачекайте, поки завершиться перевірка з'єднання."
+msgstr "Будь ласка, зачекайте, поки завершиться перевірка з'єднання"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -62,26 +61,20 @@ msgid "Device Name"
 msgstr "Назва пристрою"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "Надайте детальну інформацію про свій пристрій"
+msgstr "Вкажіть назву вашого пристрою"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "Інтернет"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
-#, fuzzy
-#| msgid ""
-#| "An active internet connection is required to make sure your system is up-"
-#| "to-date and download your favorite applications."
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
-"Потрібне активне з'єднання з Інтернетом, щоб переконатися, що ваша система "
-"оновлена і завантажити ваші улюблені застосунки."
+"Потрібне активне з'єднання з Інтернетом, для завантаження ваших улюблених "
+"програм та оновлення системи"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
@@ -108,10 +101,8 @@ msgid "Color Scheme"
 msgstr "Колірна схема"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "Виберіть колірну схему для вашої системи."
+msgstr "Виберіть колірну схему для вашої системи"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
@@ -156,39 +147,31 @@ msgstr "Відображення інформації"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "Завершено!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
-#| msgid "Restart your device to enjoy your Vanilla OS experience."
 msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr "Перезапустіть свій пристрій, щоб насолодитися роботою Vanilla OS."
+msgstr "Перезавантажте свій пристрій, щоб насолодитися роботою з Vanilla OS"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "Увімкнути"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-#, fuzzy
-#| msgid "Finalizing"
 msgid "Finalizing..."
-msgstr "Доопрацювання"
+msgstr "Завершуємо…"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-#, fuzzy
-#| msgid "Your device will be ready soon."
 msgid "Your device will be ready soon"
-msgstr "Ваш пристрій незабаром буде готовий."
+msgstr "Ваш пристрій незабаром буде готовий"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
 msgstr "Встановлення..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
-#, fuzzy
-#| msgid "Show Console output"
 msgid "Show Console Output"
-msgstr "Показати вихід консолі"
+msgstr "Показати вивід консолі"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
@@ -237,7 +220,7 @@ msgstr "Безпечна мережа (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:376
 msgid "Authentication required"
-msgstr "Потрібна автентифікація"
+msgstr "Необхідна авторизація"
 
 #: vanilla_first_setup/defaults/network.py:384
 msgid "Connecting"
@@ -253,7 +236,7 @@ msgstr "Від'єднання"
 
 #: vanilla_first_setup/defaults/network.py:390
 msgid "Connection Failed"
-msgstr "Не вдалося з'єднання"
+msgstr "Не вдалося з'єднатись"
 
 #: vanilla_first_setup/defaults/network.py:392
 msgid "Status Unknown"
@@ -268,10 +251,8 @@ msgid "Unavailable"
 msgstr "Недоступно"
 
 #: vanilla_first_setup/defaults/network.py:398
-#, fuzzy
-#| msgid "Status Unknown"
 msgid "Unknown"
-msgstr "Статус невідомий"
+msgstr "Невідомо"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
