@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Felipe Nogueira <contato.fnog@gmail.com>, 2023.
-# Fernando Lopes <118869201+plasmus777@users.noreply.github.com>, 2023.
+# Fernando Lopes <118869201+plasmus777@users.noreply.github.com>, 2023, 2024.
 # Davi de Oliveira Barbosa <davioliveira.java@gmail.com>, 2023.
 # Império Linux <kevendoria86@gmail.com>, 2023.
 # Cassio H <neargplay@gmail.com>, 2024.
@@ -11,8 +11,9 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-01-06 14:03+0000\n"
-"Last-Translator: Cassio H <neargplay@gmail.com>\n"
+"PO-Revision-Date: 2024-02-09 13:01+0000\n"
+"Last-Translator: Fernando Lopes <118869201+plasmus777@users.noreply.github."
+"com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "vanilla-os/first-setup/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -44,10 +45,8 @@ msgid "Checking Connection…"
 msgstr "Verificando a conexão…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
-#| msgid "Please wait until the connection check is done."
 msgid "Please wait until the connection check is done"
-msgstr "Por favor, aguarde até que a verificação da conexão seja concluída."
+msgstr "Por favor, aguarde até que a verificação da conexão seja concluída"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -63,29 +62,22 @@ msgid "Device Name"
 msgstr "Nome do Dispositivo"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "Forneça detalhes sobre o seu dispositivo"
+msgstr "Forneça o nome de seu dispositivo"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
-#, fuzzy
-#| msgid ""
-#| "An active internet connection is required to make sure your system is up-"
-#| "to-date and download your favorite applications."
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
-"Uma conexão de internet estável é necessária para garantir que o seu sistema "
-"permaneça atualizado e para baixar os seus aplicativos favoritos."
+"Uma conexão de internet estável é necessária para baixar os seus aplicativos "
+"favoritos e para manter seu sistema atualizado"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
-#, fuzzy
 msgid "Wired"
 msgstr "Com fio"
 
@@ -110,10 +102,8 @@ msgid "Color Scheme"
 msgstr "Esquema de Cores"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "Escolha um esquema de cores para seu sistema."
+msgstr "Escolha um esquema de cores para seu sistema"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
@@ -158,39 +148,32 @@ msgstr "Exibindo Informações"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "Concluído!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
-#| msgid "Restart your device to enjoy your Vanilla OS experience."
 msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr "Reinicie seu PC para aproveitar a sua experiência no Vanilla OS."
+msgstr ""
+"Reinicie seu dispositivo para aproveitar a sua experiência no Vanilla OS"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "Habilitar"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-#, fuzzy
-#| msgid "Finalizing"
 msgid "Finalizing..."
-msgstr "Finalizando"
+msgstr "Finalizando..."
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-#, fuzzy
-#| msgid "Your device will be ready soon."
 msgid "Your device will be ready soon"
-msgstr "Seu dispositivo estará pronto em breve."
+msgstr "Seu dispositivo estará pronto em breve"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
 msgstr "Instalando..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
-#, fuzzy
-#| msgid "Show Console output"
 msgid "Show Console Output"
-msgstr "Mostrar saída do Terminal"
+msgstr "Mostrar Saída do Terminal"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
@@ -270,10 +253,8 @@ msgid "Unavailable"
 msgstr "Indisponível"
 
 #: vanilla_first_setup/defaults/network.py:398
-#, fuzzy
-#| msgid "Status Unknown"
 msgid "Unknown"
-msgstr "Status Desconhecido"
+msgstr "Desconhecido"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
