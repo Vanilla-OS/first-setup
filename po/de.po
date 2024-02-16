@@ -11,13 +11,14 @@
 # Ettore Atalan <atalanttore@googlemail.com>, 2023, 2024.
 # Rene Regensbogen <smartpower0105@gmail.com>, 2023.
 # Neo <neobihli@gmail.com>, 2024.
+# Matthias Langwieser <langi4888@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
 "PO-Revision-Date: 2024-02-07 19:01+0000\n"
-"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"Last-Translator: Matthias Langwieser <langi4888@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/de/>\n"
 "Language: de\n"
@@ -33,7 +34,7 @@ msgstr "Vanilla OS Ersteinrichtung"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
-msgstr "Passe die Vanilla OS-Installation an."
+msgstr "Optimieren Sie ihre Vanilla OS Installation."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -74,17 +75,12 @@ msgid "Internet"
 msgstr "Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
-#, fuzzy
-#| msgid ""
-#| "An active internet connection is required to make sure your system is up-"
-#| "to-date and download your favorite applications."
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
-"Eine aktive Internetverbindung ist erforderlich, um sicherzustellen, dass "
-"Ihr System auf dem neuesten Stand ist, und um Ihre gewünschten Anwendungen "
-"herunterzuladen."
+"Eine aktive Internetverbindung ist erforderlich, um Ihre Lieblings-Apps "
+"herunterzuladen und das System aktuell zu halten"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
@@ -160,10 +156,8 @@ msgid "Finished!"
 msgstr "Fertig!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
-#| msgid "Restart your device to enjoy your Vanilla OS experience."
 msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr "Starten Sie Ihren PC neu, um Ihr Vanilla OS Erlebnis zu genießen."
+msgstr "Starten Sie Ihren PC neu, um Ihr Vanilla OS Erlebnis zu genießen"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
@@ -212,7 +206,7 @@ msgstr "Die Ersteinrichtung erfordert eine aktive Internetverbindung"
 
 #: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
-msgstr "Bitte warten Sie, bis die Verbindungsprüfung abgeschlossen ist."
+msgstr "Bitte warten Sie, bis die Verbindung überprüft wurde."
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
