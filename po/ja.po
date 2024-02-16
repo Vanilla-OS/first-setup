@@ -5,13 +5,14 @@
 #
 # Ryo Nakano <ryonakaknock3@gmail.com>, 2023.
 # "Shuuji TAKAHASHI (shuuji3)" <shuuji3@gmail.com>, 2023.
+# Gnuey56 <gnuey56@proton.me>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2023-09-19 16:59+0000\n"
-"Last-Translator: \"Shuuji TAKAHASHI (shuuji3)\" <shuuji3@gmail.com>\n"
+"PO-Revision-Date: 2024-02-07 19:01+0000\n"
+"Last-Translator: Gnuey56 <gnuey56@proton.me>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ja/>\n"
 "Language: ja\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.1-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -43,10 +44,8 @@ msgid "Checking Connection…"
 msgstr "接続を確認しています…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
-#| msgid "Please wait until the connection check is done."
 msgid "Please wait until the connection check is done"
-msgstr "接続の確認が終わるまでお待ちください。"
+msgstr "接続の確認が終わるまでお待ちください"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -62,50 +61,47 @@ msgid "Device Name"
 msgstr "デバイス名"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "お使いのデバイスについての詳細を設定します"
+msgstr "お使いのデバイスの名前を設定します"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "インターネット"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
-msgstr ""
+msgstr "お気に入りのアプリをダウンロードしたり、システムを最新の状態に保つには有効な"
+"インターネット接続が必要です"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
-msgstr ""
+msgstr "有線"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
-msgstr ""
+msgstr "無線ネットワーク"
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
-msgstr ""
+msgstr "高度な設定"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
 msgid "Connect to Hidden Network..."
-msgstr ""
+msgstr "非表示のネットワークに接続..."
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr ""
+msgstr "プロキシ設定を開く..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:27
 msgid "Color Scheme"
 msgstr "カラースキーム"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "システムのカラースキームを選択してください。"
+msgstr "システムのカラースキームを選択してください"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
@@ -117,12 +113,11 @@ msgstr "ダーク"
 
 #: vanilla_first_setup/gtk/default-user.ui:37
 msgid "Create User"
-msgstr ""
+msgstr "ユーザーを作成"
 
 #: vanilla_first_setup/gtk/default-user.ui:38
-#, fuzzy
 msgid "Provide details for your user account"
-msgstr "お使いのデバイスについての詳細を設定します"
+msgstr "ユーザーアカウントを設定します"
 
 #: vanilla_first_setup/gtk/default-user.ui:45
 msgid "Name"
@@ -151,37 +146,29 @@ msgstr "情報を表示しています"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "完了しました！"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
-#| msgid "Restart your device to enjoy your Vanilla OS experience."
 msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr "デバイスを再起動して、Vanilla OS をお楽しみください。"
+msgstr "デバイスを再起動して、Vanilla OS をお楽しみください"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "有効"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-#, fuzzy
-#| msgid "Finalizing"
 msgid "Finalizing..."
-msgstr "最終処理をしています"
+msgstr "最終処理をしています..."
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-#, fuzzy
-#| msgid "Your device will be ready soon."
 msgid "Your device will be ready soon"
-msgstr "デバイスの準備がまもなく整います。"
+msgstr "デバイスの準備がまもなく整います"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
 msgstr "インストールしています…"
 
 #: vanilla_first_setup/gtk/progress.ui:91
-#, fuzzy
-#| msgid "Show Console output"
 msgid "Show Console Output"
 msgstr "コンソールの出力を表示"
 
@@ -232,43 +219,43 @@ msgstr "安全なネットワーク (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:376
 msgid "Authentication required"
-msgstr ""
+msgstr "認証が必要です"
 
 #: vanilla_first_setup/defaults/network.py:384
 msgid "Connecting"
-msgstr ""
+msgstr "接続中"
 
 #: vanilla_first_setup/defaults/network.py:386
 msgid "Disconnected"
-msgstr ""
+msgstr "切断されました"
 
 #: vanilla_first_setup/defaults/network.py:388
 msgid "Disconnecting"
-msgstr ""
+msgstr "切断中"
 
 #: vanilla_first_setup/defaults/network.py:390
 msgid "Connection Failed"
-msgstr ""
+msgstr "接続に失敗しました"
 
 #: vanilla_first_setup/defaults/network.py:392
 msgid "Status Unknown"
-msgstr ""
+msgstr "ステータス不明"
 
 #: vanilla_first_setup/defaults/network.py:394
 msgid "Unmanaged"
-msgstr ""
+msgstr "管理されていない"
 
 #: vanilla_first_setup/defaults/network.py:396
 msgid "Unavailable"
-msgstr ""
+msgstr "利用不可"
 
 #: vanilla_first_setup/defaults/network.py:398
 msgid "Unknown"
-msgstr ""
+msgstr "不明"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
-msgstr ""
+msgstr "ケーブルが未接続"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
