@@ -8,18 +8,19 @@
 # Jörn Weigend <das.jott@gmail.com>, 2023.
 # juzac001 <julian.zachmann001@stud.fh-dortmund.de>, 2023.
 # Experiencing A Significant Gravitas Shortfall <bedeb1@pm.me>, 2023.
-# Ettore Atalan <atalanttore@googlemail.com>, 2023.
+# Ettore Atalan <atalanttore@googlemail.com>, 2023, 2024.
 # Rene Regensbogen <smartpower0105@gmail.com>, 2023.
 # Neo <neobihli@gmail.com>, 2024.
+# Matthias Langwieser <langi4888@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-01-04 13:09+0000\n"
-"Last-Translator: Neo <neobihli@gmail.com>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/de/>\n"
+"PO-Revision-Date: 2024-02-07 19:01+0000\n"
+"Last-Translator: Matthias Langwieser <langi4888@gmail.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,7 +34,7 @@ msgstr "Vanilla OS Ersteinrichtung"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
-msgstr "Passe die Vanilla OS-Installation an."
+msgstr "Optimieren Sie ihre Vanilla OS Installation."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -49,10 +50,8 @@ msgid "Checking Connection…"
 msgstr "Überprüfe Verbindung…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
-#| msgid "Please wait until the connection check is done."
 msgid "Please wait until the connection check is done"
-msgstr "Bitte warten Sie, bis die Verbindungsprüfung abgeschlossen ist."
+msgstr "Bitte warten Sie, bis die Verbindungsprüfung abgeschlossen ist"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -68,27 +67,20 @@ msgid "Device Name"
 msgstr "Gerätename"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "Geben Sie Details zu Ihrem Gerät an"
+msgstr "Geben Sie Ihren Gerätenamen an"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
-#, fuzzy
-#| msgid ""
-#| "An active internet connection is required to make sure your system is up-"
-#| "to-date and download your favorite applications."
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
-"Eine aktive Internetverbindung ist erforderlich, um sicherzustellen, dass "
-"Ihr System auf dem neuesten Stand ist, und um Ihre gewünschten Anwendungen "
-"herunterzuladen."
+"Eine aktive Internetverbindung ist erforderlich, um Ihre Lieblings-Apps "
+"herunterzuladen und das System aktuell zu halten"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
@@ -115,10 +107,8 @@ msgid "Color Scheme"
 msgstr "Farbschema"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "Wählen Sie ein Farbschema für Ihr System."
+msgstr "Wählen Sie ein Farbschema für Ihr System aus"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
@@ -163,37 +153,29 @@ msgstr "Informationen anzeigen"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "Fertig!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
-#| msgid "Restart your device to enjoy your Vanilla OS experience."
 msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr "Starten Sie Ihren PC neu, um Ihr Vanilla OS Erlebnis zu genießen."
+msgstr "Starten Sie Ihren PC neu, um Ihr Vanilla OS Erlebnis zu genießen"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "Aktivieren"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-#, fuzzy
-#| msgid "Finalizing"
 msgid "Finalizing..."
-msgstr "Fertigstellen"
+msgstr "Wird fertiggestellt..."
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-#, fuzzy
-#| msgid "Your device will be ready soon."
 msgid "Your device will be ready soon"
-msgstr "Ihr Gerät ist bald bereit."
+msgstr "Ihr Gerät ist bald bereit"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
 msgstr "Installiere..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
-#, fuzzy
-#| msgid "Show Console output"
 msgid "Show Console Output"
 msgstr "Konsolenausgabe anzeigen"
 
@@ -224,7 +206,7 @@ msgstr "Die Ersteinrichtung erfordert eine aktive Internetverbindung"
 
 #: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
-msgstr "Bitte warten Sie, bis die Verbindungsprüfung abgeschlossen ist."
+msgstr "Bitte warten Sie, bis die Verbindung überprüft wurde."
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
@@ -275,10 +257,8 @@ msgid "Unavailable"
 msgstr "Nicht verfügbar"
 
 #: vanilla_first_setup/defaults/network.py:398
-#, fuzzy
-#| msgid "Status Unknown"
 msgid "Unknown"
-msgstr "Status unbekannt"
+msgstr "Unbekannt"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
