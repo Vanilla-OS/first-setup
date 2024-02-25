@@ -4,21 +4,22 @@
 # Automatically generated, 2022.
 #
 # MohammadSaleh Kamyab <mskf1383@envs.net>, 2023.
+# Alone Crow <Analonecrow@users.noreply.hosted.weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2023-06-28 11:51+0000\n"
-"Last-Translator: MohammadSaleh Kamyab <mskf1383@envs.net>\n"
-"Language-Team: Persian <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/fa/>\n"
+"PO-Revision-Date: 2024-02-18 10:01+0000\n"
+"Last-Translator: Alone Crow <Analonecrow@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Persian <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/fa/>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 5.4\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -26,7 +27,7 @@ msgstr "برپاسازی اولیهٔ سیستم‌عامل وانیلا"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
-msgstr "نصب سیستم‌عامل وانیلای خود را سیخونک بزنید."
+msgstr "نصب سیستم‌عامل وانیلای خود را شخصی‌سازی کنید."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -39,11 +40,11 @@ msgstr "اولین انتشار"
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
-msgstr ""
+msgstr "در حال بررسی اتصال…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 msgid "Please wait until the connection check is done"
-msgstr ""
+msgstr "لطفا تا اتمام بررسی اتصال منتظر بمانید"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -56,21 +57,23 @@ msgstr "بعدی"
 #: vanilla_first_setup/gtk/default-hostname.ui:27
 #: vanilla_first_setup/gtk/default-hostname.ui:35
 msgid "Device Name"
-msgstr ""
+msgstr "نام دستگاه"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
 msgid "Provide your device name"
-msgstr ""
+msgstr "نام دستگاه خود را فراهم کنید"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "اینترنت"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
+"برای دانلود برنامه‌های محبوب خود و بروزرسانی سیستم، اتصال اینترنت مورد نیاز "
+"است."
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
@@ -78,31 +81,31 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
-msgstr ""
+msgstr "شبکه‌های بی‌سیم"
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
-msgstr ""
+msgstr "پیشرفته"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
 msgid "Connect to Hidden Network..."
-msgstr ""
+msgstr "اتصال به یک شبکه پنهان..."
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr ""
+msgstr "بازکردن تنظیمات پروکسی..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:27
 msgid "Color Scheme"
-msgstr "طرح رنگی"
+msgstr "رنگبندی"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
 msgid "Choose a color scheme for your system"
-msgstr ""
+msgstr "برای سیستم خود یک رنگبندی انتخاب کنید"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
-msgstr "پیش‌گزیده"
+msgstr "پیش‌فرض"
 
 #: vanilla_first_setup/gtk/default-theme.ui:139
 msgid "Dark"
@@ -110,32 +113,32 @@ msgstr "تاریک"
 
 #: vanilla_first_setup/gtk/default-user.ui:37
 msgid "Create User"
-msgstr ""
+msgstr "ایجاد کاربر"
 
 #: vanilla_first_setup/gtk/default-user.ui:38
 msgid "Provide details for your user account"
-msgstr ""
+msgstr "برای حساب کاربری خود جزئیات فراهم کنید"
 
 #: vanilla_first_setup/gtk/default-user.ui:45
 msgid "Name"
-msgstr ""
+msgstr "نام"
 
 #: vanilla_first_setup/gtk/default-user.ui:51
 msgid "Username"
-msgstr ""
+msgstr "نام کاربری"
 
 #: vanilla_first_setup/gtk/default-user.ui:57
 msgid "Password"
-msgstr ""
+msgstr "رمزعبور"
 
 #: vanilla_first_setup/gtk/default-user.ui:63
 msgid "Confirm Password"
-msgstr ""
+msgstr "رمزعبور خود را تأیید کنید"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
 msgid "Welcome!"
-msgstr ""
+msgstr "خوش‌آمدید!"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
@@ -156,14 +159,12 @@ msgid "Enable"
 msgstr ""
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-#, fuzzy
-#| msgid "Installing..."
 msgid "Finalizing..."
-msgstr "در حال نصب…"
+msgstr "در حال نهائی کردن نصب…"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon"
-msgstr ""
+msgstr "دستگاه شما بزودی آماده استفاده خواهد شد"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
@@ -176,12 +177,13 @@ msgid "Show Console Output"
 msgstr "نمایش خروجی کنسول"
 
 #: vanilla_first_setup/gtk/progress.ui:106
+#, fuzzy
 msgid "Show Slideshow"
 msgstr "نمایش نمابرگ"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
-msgstr ""
+msgstr "بیش‌تر بخوانید"
 
 #: vanilla_first_setup/gtk/window.ui:36
 msgid "Back"
@@ -189,68 +191,75 @@ msgstr "بازگشت"
 
 #: vanilla_first_setup/gtk/wireless-row.ui:33
 #: vanilla_first_setup/defaults/network.py:373
+#, fuzzy
 msgid "Connected"
-msgstr ""
+msgstr "متصل"
 
 #: vanilla_first_setup/defaults/conn_check.py:103
+#, fuzzy
 msgid "No Internet Connection!"
-msgstr ""
+msgstr "اتصال به اینترنت برقرار نیست!"
 
 #: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
-msgstr ""
+msgstr "برپایی اولیه نیازمند اتصال اینترنت می‌باشد"
 
 #: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
-msgstr ""
+msgstr "لطفا تا اتمام بررسی اتصال اینترنت منتظر بمانید."
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
-msgstr ""
+msgstr "شبکه ناامن (WEP)"
 
 #: vanilla_first_setup/defaults/network.py:39
+#, fuzzy
 msgid "Secure network (WPA)"
-msgstr ""
+msgstr "شبکه امن (WPA)"
 
 #: vanilla_first_setup/defaults/network.py:40
+#, fuzzy
 msgid "Secure network (WPA2)"
-msgstr ""
+msgstr "شبکه امن (WPA2)"
 
 #: vanilla_first_setup/defaults/network.py:41
+#, fuzzy
 msgid "Secure network (WPA3)"
-msgstr ""
+msgstr "شبکه امن (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:376
 msgid "Authentication required"
-msgstr ""
+msgstr "نیازمند احراز خویت"
 
 #: vanilla_first_setup/defaults/network.py:384
 msgid "Connecting"
-msgstr ""
+msgstr "در حال اتصال"
 
 #: vanilla_first_setup/defaults/network.py:386
+#, fuzzy
 msgid "Disconnected"
-msgstr ""
+msgstr "اتصال قطع شده‌ است"
 
 #: vanilla_first_setup/defaults/network.py:388
 msgid "Disconnecting"
-msgstr ""
+msgstr "در حال قطع اتصال"
 
 #: vanilla_first_setup/defaults/network.py:390
 msgid "Connection Failed"
-msgstr ""
+msgstr "برقراری اتصال ناموفق بود"
 
 #: vanilla_first_setup/defaults/network.py:392
 msgid "Status Unknown"
 msgstr ""
 
 #: vanilla_first_setup/defaults/network.py:394
+#, fuzzy
 msgid "Unmanaged"
-msgstr ""
+msgstr "مدیریت نشده"
 
 #: vanilla_first_setup/defaults/network.py:396
 msgid "Unavailable"
-msgstr ""
+msgstr "در دسترس نمی‌باشد"
 
 #: vanilla_first_setup/defaults/network.py:398
 msgid "Unknown"
@@ -262,19 +271,21 @@ msgstr ""
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
-msgstr "لطفاً حداقل یک گزینه را برگزینید."
+msgstr "لطفا حداقل یک گزینه را انتخاب کنید."
 
 #: vanilla_first_setup/views/done.py:55
 msgid "Restart your device to enjoy your {} experience."
 msgstr "افزارهٔ خود را شروع دوباره کنید تا از تجربهٔ {} خود لذت ببرید."
 
 #: vanilla_first_setup/views/done.py:77
+#, fuzzy
 msgid "Something went wrong"
-msgstr "اشتباهی پیش آمد"
+msgstr "اشتباهی پیش‌آمد"
 
 #: vanilla_first_setup/views/done.py:79
+#, fuzzy
 msgid "Please contact the distribution developers."
-msgstr "لطفاً با توسعه‌دهندگان توزیع تماس بگیرید."
+msgstr "لطفاً با توسعه‌دهندگان سیستم‌عامل وانیلا تماس بگیرید."
 
 #: vanilla_first_setup/main.py:62
 msgid "Run a post script"
