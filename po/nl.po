@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-01-31 16:42+0000\n"
+"PO-Revision-Date: 2024-02-25 09:41+0000\n"
 "Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/nl/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -54,7 +54,7 @@ msgstr "Volgende"
 #: vanilla_first_setup/gtk/default-hostname.ui:27
 #: vanilla_first_setup/gtk/default-hostname.ui:35
 msgid "Device Name"
-msgstr "Apparaatnaam"
+msgstr "Apparaat­naam"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
 msgid "Provide your device name"
@@ -78,7 +78,7 @@ msgstr "Bedraad"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
-msgstr "Draadloze netwerken"
+msgstr "Draad­loze net­werken"
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
@@ -94,7 +94,7 @@ msgstr "Proxy-instellingen openen…"
 
 #: vanilla_first_setup/gtk/default-theme.ui:27
 msgid "Color Scheme"
-msgstr "Kleurenschema"
+msgstr "Kleuren­schema"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
 msgid "Choose a color scheme for your system"
@@ -122,15 +122,15 @@ msgstr "Naam"
 
 #: vanilla_first_setup/gtk/default-user.ui:51
 msgid "Username"
-msgstr "Gebruikersnaam"
+msgstr "Gebruikers­naam"
 
 #: vanilla_first_setup/gtk/default-user.ui:57
 msgid "Password"
-msgstr "Wachtwoord"
+msgstr "Wacht­woord"
 
 #: vanilla_first_setup/gtk/default-user.ui:63
 msgid "Confirm Password"
-msgstr "Bevestiging wachtwoord"
+msgstr "Bevestiging wacht­woord"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
@@ -139,7 +139,7 @@ msgstr "Welkom!"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
-msgstr "Informatie wordt weergegeven"
+msgstr "Informatie wordt weer­gegeven"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
@@ -148,7 +148,7 @@ msgstr "Klaar!"
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your device to enjoy your Vanilla OS experience"
 msgstr ""
-"Start uw apparaat opnieuw op om te genieten van uw ervaring met Vanilla OS"
+"Start uw apparaat opnieuw op om te genieten van uw ervaring met Vanilla OS"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
@@ -172,7 +172,7 @@ msgstr "Console-uitvoer tonen"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr "Diavoorstelling tonen"
+msgstr "Dia­voorstelling tonen"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
@@ -189,15 +189,15 @@ msgstr "Verbonden"
 
 #: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
-msgstr "Geen internetverbinding!"
+msgstr "Geen internet­verbinding!"
 
 #: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
-msgstr "Configuratie vereist een actieve internetverbinding"
+msgstr "Configuratie vereist een actieve internet­verbinding"
 
 #: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
-msgstr "Wacht tot de verbindingscontrole is afgerond"
+msgstr "Wacht tot de verbindings­controle is afgerond."
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
@@ -269,7 +269,7 @@ msgstr "Er is iets fout gegaan"
 
 #: vanilla_first_setup/views/done.py:79
 msgid "Please contact the distribution developers."
-msgstr "Neem contact op met de distributieontwikkelaars."
+msgstr "Neem contact op met de distributie­ontwikkelaars."
 
 #: vanilla_first_setup/main.py:62
 msgid "Run a post script"
