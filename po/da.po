@@ -4,21 +4,22 @@
 # Automatically generated, 2022.
 #
 # Michael Millet <mikevlet@protonmail.com>, 2023.
+# Cornelius Andreas Rosenaa <macrosedk@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2023-06-01 08:52+0000\n"
-"Last-Translator: Michael Millet <mikevlet@protonmail.com>\n"
-"Language-Team: Danish <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/da/>\n"
+"PO-Revision-Date: 2024-02-18 10:01+0000\n"
+"Last-Translator: Cornelius Andreas Rosenaa <macrosedk@gmail.com>\n"
+"Language-Team: Danish <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.4\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -42,10 +43,8 @@ msgid "Checking Connection…"
 msgstr "Kontrollerer Forbindelse…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
-#| msgid "Please wait until the connection check is done."
 msgid "Please wait until the connection check is done"
-msgstr "Vent venligst til forbindelseskontrollen er færdig."
+msgstr "Vent venligst til forbindelseskontrollen er færdig"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -61,50 +60,48 @@ msgid "Device Name"
 msgstr "Enhedsnavn"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "Giv oplysninger om din enhed"
+msgstr "Giv dit enheds navn"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
+"En aktiv internet forbindelse er påkrævet for at hente dine favorit apps og "
+"at holde dit system opdateret"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
-msgstr ""
+msgstr "Kablet netværk"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
-msgstr ""
+msgstr "Trådløse netværk"
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
-msgstr ""
+msgstr "Advanceret"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
 msgid "Connect to Hidden Network..."
-msgstr ""
+msgstr "Forbind til skjult netværk..."
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr ""
+msgstr "Åben Proxy Indstillinger..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:27
 msgid "Color Scheme"
 msgstr "Farveskema"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "Vælg et farveskema til dit system."
+msgstr "Vælg et farveskema til dit system"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
@@ -116,29 +113,27 @@ msgstr "Mørkt"
 
 #: vanilla_first_setup/gtk/default-user.ui:37
 msgid "Create User"
-msgstr ""
+msgstr "Opret Bruger"
 
 #: vanilla_first_setup/gtk/default-user.ui:38
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide details for your user account"
-msgstr "Giv oplysninger om din enhed"
+msgstr "Tilføj information til dit bruger konto"
 
 #: vanilla_first_setup/gtk/default-user.ui:45
 msgid "Name"
-msgstr ""
+msgstr "Navn"
 
 #: vanilla_first_setup/gtk/default-user.ui:51
 msgid "Username"
-msgstr ""
+msgstr "Brugernavn"
 
 #: vanilla_first_setup/gtk/default-user.ui:57
 msgid "Password"
-msgstr ""
+msgstr "Adgangskode"
 
 #: vanilla_first_setup/gtk/default-user.ui:63
 msgid "Confirm Password"
-msgstr ""
+msgstr "Bekræft Adgangskode"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
@@ -151,37 +146,29 @@ msgstr "Viser Information"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "Færdig!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
-#| msgid "Restart your device to enjoy your Vanilla OS experience."
 msgid "Restart your device to enjoy your Vanilla OS experience"
 msgstr "Genstart din enhed, for at nyde din Vanilla OS-oplevelse."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "Slå til"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-#, fuzzy
-#| msgid "Finalizing"
 msgid "Finalizing..."
-msgstr "Færdiggør"
+msgstr "Afslutter..."
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-#, fuzzy
-#| msgid "Your device will be ready soon."
 msgid "Your device will be ready soon"
-msgstr "Din enhed vil snart være klar."
+msgstr "Din enhed vil snart være klar"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
 msgstr "Installerer..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
-#, fuzzy
-#| msgid "Show Console output"
 msgid "Show Console Output"
 msgstr "Vis Konsoludtog"
 
@@ -200,7 +187,7 @@ msgstr "Tilbage"
 #: vanilla_first_setup/gtk/wireless-row.ui:33
 #: vanilla_first_setup/defaults/network.py:373
 msgid "Connected"
-msgstr ""
+msgstr "Forbundet"
 
 #: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
@@ -216,59 +203,59 @@ msgstr "Vent venligst til forbindelseskontrollen er færdig."
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
-msgstr ""
+msgstr "Usikkert netværk (WEP)"
 
 #: vanilla_first_setup/defaults/network.py:39
 msgid "Secure network (WPA)"
-msgstr ""
+msgstr "Sikkert netværk (WPA)"
 
 #: vanilla_first_setup/defaults/network.py:40
 msgid "Secure network (WPA2)"
-msgstr ""
+msgstr "Sikkert netværk (WPA2)"
 
 #: vanilla_first_setup/defaults/network.py:41
 msgid "Secure network (WPA3)"
-msgstr ""
+msgstr "Sikkert netværk (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:376
 msgid "Authentication required"
-msgstr ""
+msgstr "Godkendelse påkrævet"
 
 #: vanilla_first_setup/defaults/network.py:384
 msgid "Connecting"
-msgstr ""
+msgstr "Forbinder"
 
 #: vanilla_first_setup/defaults/network.py:386
 msgid "Disconnected"
-msgstr ""
+msgstr "Forbindelse afbrudt"
 
 #: vanilla_first_setup/defaults/network.py:388
 msgid "Disconnecting"
-msgstr ""
+msgstr "Afbryder forbindelsen"
 
 #: vanilla_first_setup/defaults/network.py:390
 msgid "Connection Failed"
-msgstr ""
+msgstr "Forbindelsen mislykkedes"
 
 #: vanilla_first_setup/defaults/network.py:392
 msgid "Status Unknown"
-msgstr ""
+msgstr "Ukendt Status"
 
 #: vanilla_first_setup/defaults/network.py:394
 msgid "Unmanaged"
-msgstr ""
+msgstr "Uadministreret"
 
 #: vanilla_first_setup/defaults/network.py:396
 msgid "Unavailable"
-msgstr ""
+msgstr "Utilgængelig"
 
 #: vanilla_first_setup/defaults/network.py:398
 msgid "Unknown"
-msgstr ""
+msgstr "Ukendt"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
-msgstr ""
+msgstr "Kabel frakoblet"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."

@@ -1,47 +1,49 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
-# Philip Goto <philip.goto@gmail.com>, 2023, 2024.
+# Markella's <mark.al.misuk@gmail.com>, 2024.
+# Markella's <vierokalolo@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-02-25 09:41+0000\n"
-"Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
-"Language-Team: Dutch <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/nl/>\n"
-"Language: nl\n"
+"PO-Revision-Date: 2024-02-25 08:53+0000\n"
+"Last-Translator: Markella's <vierokalolo@gmail.com>\n"
+"Language-Team: Belarusian <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/be/>\n"
+"Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.5-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr "Configuratie van Vanilla OS"
+msgstr "Першапачатковая ўстаноўка Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
-msgstr "Pas uw installatie van Vanilla OS aan"
+msgstr "Наладзьце сваю ўстаноўку Vanilla OS."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr "Geen omschrijving"
+msgstr "Няма апісання"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr "Eerste uitgave"
+msgstr "Першы выпуск"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
-msgstr "Verbinding controleren…"
+msgstr "Праверка злучэння…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 msgid "Please wait until the connection check is done"
-msgstr "Wacht tot de verbindings­controle is afgerond"
+msgstr "Калі ласка, пачакайце, пакуль не будзе выканана праверка злучэння"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -49,266 +51,247 @@ msgstr "Wacht tot de verbindings­controle is afgerond"
 #: vanilla_first_setup/gtk/default-user.ui:17
 #: vanilla_first_setup/gtk/layout-applications.ui:17
 msgid "Next"
-msgstr "Volgende"
+msgstr "Далей"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:27
 #: vanilla_first_setup/gtk/default-hostname.ui:35
 msgid "Device Name"
-msgstr "Apparaat­naam"
+msgstr "Назва прылады"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
 msgid "Provide your device name"
-msgstr "Geef uw apparaat­naam op"
+msgstr "Укажыце імя вашай прылады"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr "Internet"
+msgstr "Інтэрнэт"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
-"Een actieve internet­verbinding is vereist om uw favoriete apps te "
-"downloaden en uw systeem up-to-date te houden"
+"Для загрузкі любімых прыкладанняў і падтрымання сістэмы ў актуальным стане "
+"патрабуецца актыўнае падлучэнне да Інтэрнэту"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
-msgstr "Bedraad"
+msgstr "Правадное"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
-msgstr "Draad­loze net­werken"
+msgstr "Бесправадныя сеткі"
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
-msgstr "Geavanceerd"
+msgstr "Дадаткова"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
 msgid "Connect to Hidden Network..."
-msgstr "Verbinden met verborgen netwerk…"
+msgstr "Падключыцца да схаванай сеткі..."
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr "Proxy-instellingen openen…"
+msgstr "Адкрыць налады проксі..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:27
 msgid "Color Scheme"
-msgstr "Kleuren­schema"
+msgstr "Колеравая схема"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
 msgid "Choose a color scheme for your system"
-msgstr "Kies een kleuren­schema voor uw systeem"
+msgstr "Выберыце каляровую схему для вашай сістэмы"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
-msgstr "Standaard"
+msgstr "Па змаўчанні"
 
 #: vanilla_first_setup/gtk/default-theme.ui:139
 msgid "Dark"
-msgstr "Donker"
+msgstr "Цёмная"
 
 #: vanilla_first_setup/gtk/default-user.ui:37
 msgid "Create User"
-msgstr "Gebruiker aanmaken"
+msgstr "Стварыць карыстальніка"
 
 #: vanilla_first_setup/gtk/default-user.ui:38
 msgid "Provide details for your user account"
-msgstr "Geef details voor uw gebruikers­account op"
+msgstr "Пакажыце дадзеныя вашага ўліковага запісу карыстальніка"
 
 #: vanilla_first_setup/gtk/default-user.ui:45
 msgid "Name"
-msgstr "Naam"
+msgstr "Імя"
 
 #: vanilla_first_setup/gtk/default-user.ui:51
 msgid "Username"
-msgstr "Gebruikers­naam"
+msgstr "Імя карыстальніка"
 
 #: vanilla_first_setup/gtk/default-user.ui:57
 msgid "Password"
-msgstr "Wacht­woord"
+msgstr "Пароль"
 
 #: vanilla_first_setup/gtk/default-user.ui:63
 msgid "Confirm Password"
-msgstr "Bevestiging wacht­woord"
+msgstr "Пацвердзіць пароль"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
 msgid "Welcome!"
-msgstr "Welkom!"
+msgstr "Сардэчна запрашаем!"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
-msgstr "Informatie wordt weer­gegeven"
+msgstr "Паказваем інфармацыю"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr "Klaar!"
+msgstr "Завершана!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr ""
-"Start uw apparaat opnieuw op om te genieten van uw ervaring met Vanilla OS"
+msgstr "Перазагрузіце прыладу, каб атрымаць асалоду ад выкарыстання Vanilla OS"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr "Inschakelen"
+msgstr "Уключыць"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing..."
-msgstr "Afronden…"
+msgstr "Завяршэнне работ..."
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon"
-msgstr "Uw apparaat zal binnenkort gereed zijn"
+msgstr "Ваша прылада хутка будзе гатова"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
-msgstr "Installeren…"
+msgstr "Устаноўка..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console Output"
-msgstr "Console-uitvoer tonen"
+msgstr "Паказаць выснову кансолі"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr "Dia­voorstelling tonen"
+msgstr "Паказаць слайд-шоў"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
-msgstr "Meer lezen"
+msgstr "Прачытаць больш"
 
 #: vanilla_first_setup/gtk/window.ui:36
 msgid "Back"
-msgstr "Terug"
+msgstr "Назад"
 
 #: vanilla_first_setup/gtk/wireless-row.ui:33
 #: vanilla_first_setup/defaults/network.py:373
 msgid "Connected"
-msgstr "Verbonden"
+msgstr "Падключана"
 
 #: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
-msgstr "Geen internet­verbinding!"
+msgstr "Няма падлучэння да Інтэрнэту!"
 
 #: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
-msgstr "Configuratie vereist een actieve internet­verbinding"
+msgstr "Першая ўстаноўка патрабуе актыўнае падлучэнне да Інтэрнэту"
 
 #: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
-msgstr "Wacht tot de verbindings­controle is afgerond."
+msgstr "Калі ласка, пачакайце, пакуль не будзе завершана праверка падключэння."
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
-msgstr "Onveilig netwerk (WEP)"
+msgstr "Небяспечная сетка (WEP)"
 
 #: vanilla_first_setup/defaults/network.py:39
 msgid "Secure network (WPA)"
-msgstr "Onveilig netwerk (WPA)"
+msgstr "Бяспечная сетка (WPA)"
 
 #: vanilla_first_setup/defaults/network.py:40
 msgid "Secure network (WPA2)"
-msgstr "Veilig netwerk (WPA2)"
+msgstr "Бяспечная сетка (WPA2)"
 
 #: vanilla_first_setup/defaults/network.py:41
 msgid "Secure network (WPA3)"
-msgstr "Veilig netwerk (WPA3)"
+msgstr "Бяспечная сетка (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:376
 msgid "Authentication required"
-msgstr "Authenticatie vereist"
+msgstr "Патрабуецца аўтэнтыфікацыя"
 
 #: vanilla_first_setup/defaults/network.py:384
 msgid "Connecting"
-msgstr "Verbinden"
+msgstr "Падлучэнне"
 
 #: vanilla_first_setup/defaults/network.py:386
 msgid "Disconnected"
-msgstr "Niet verbonden"
+msgstr "Адключана"
 
 #: vanilla_first_setup/defaults/network.py:388
 msgid "Disconnecting"
-msgstr "Verbinding verbreken"
+msgstr "Адключэнне"
 
 #: vanilla_first_setup/defaults/network.py:390
 msgid "Connection Failed"
-msgstr "Verbinden mislukt"
+msgstr "Збой падлучэння"
 
 #: vanilla_first_setup/defaults/network.py:392
 msgid "Status Unknown"
-msgstr "Status onbekend"
+msgstr "Статус невядомы"
 
 #: vanilla_first_setup/defaults/network.py:394
 msgid "Unmanaged"
-msgstr "Onbeheerd"
+msgstr "Некіравальны"
 
 #: vanilla_first_setup/defaults/network.py:396
 msgid "Unavailable"
-msgstr "Niet beschikbaar"
+msgstr "Недаступна"
 
 #: vanilla_first_setup/defaults/network.py:398
 msgid "Unknown"
-msgstr "Onbekend"
+msgstr "Невядомы"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
-msgstr "Kabel niet verbonden"
+msgstr "Кабель адключаны"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
-msgstr "Selecteer ten minste één optie."
+msgstr "Калі ласка, абярыце хаця б адзін варыянт."
 
 #: vanilla_first_setup/views/done.py:55
 msgid "Restart your device to enjoy your {} experience."
-msgstr "Start uw apparaat opnieuw op om te genieten van uw ervaring met {}."
+msgstr "Перазагрузіце прыладу, каб атрымаць асалоду ад вопыта {}."
 
 #: vanilla_first_setup/views/done.py:77
 msgid "Something went wrong"
-msgstr "Er is iets fout gegaan"
+msgstr "Нешта пайшло не так"
 
 #: vanilla_first_setup/views/done.py:79
 msgid "Please contact the distribution developers."
-msgstr "Neem contact op met de distributie­ontwikkelaars."
+msgstr "Калі ласка, звяжыцеся з распрацоўшчыкамі дыстрыбутыва."
 
 #: vanilla_first_setup/main.py:62
 msgid "Run a post script"
-msgstr "Een post-script uitvoeren"
+msgstr "Запусціце post-скрыпт"
 
 #: vanilla_first_setup/main.py:70
 msgid "Run as a new user"
-msgstr "Uitvoeren als nieuwe gebruiker"
+msgstr "Запуск ад імя новага карыстальніка"
 
 #: vanilla_first_setup/window.py:70
 msgid "Done!"
-msgstr "Klaar!"
+msgstr "Зроблена!"
 
 #: vanilla_first_setup/window.py:71
 msgid "Your device is ready to use."
-msgstr "Uw apparaat is klaar om gebruikt te worden."
+msgstr "Ваша прылада гатова да выкарыстання."
 
 #: vanilla_first_setup/window.py:72
 msgid "Error!"
-msgstr "Fout!"
+msgstr "Памылка!"
 
 #: vanilla_first_setup/window.py:73
 msgid "Something went wrong."
-msgstr "Er is iets fout gegaan."
-
-#~ msgid "Device Details"
-#~ msgstr "Apparaatdetails"
-
-#~ msgid "Connect to the Internet"
-#~ msgstr "Verbinden met internet"
-
-#~ msgid "All done!"
-#~ msgstr "Helemaal klaar!"
-
-#~ msgid "Yes, enable it"
-#~ msgstr "Ja, inschakelen"
-
-#~ msgid "Make your choices, this wizard will take care of everything."
-#~ msgstr "Maak uw keuzes, deze wizard regelt alles."
-
-#~ msgid "The changes are being applied. Please Wait…"
-#~ msgstr "Wijzigingen worden toegepast. Even geduld…"
+msgstr "Нешта пайшло не так."
