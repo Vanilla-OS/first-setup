@@ -3,30 +3,30 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Automatically generated, 2022.
 #
+# Amsyar <amsyarminer555@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2022-11-11 12:36+0000\n"
-"Last-Translator: Keviindran Ramachandran <keviinx@yahoo.com>\n"
-"Language-Team: Malay <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/ms/>\n"
+"PO-Revision-Date: 2024-02-18 10:01+0000\n"
+"Last-Translator: Amsyar <amsyarminer555@gmail.com>\n"
+"Language-Team: Malay <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/ms/>\n"
 "Language: ms\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 5.4\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
 msgstr "Persediaan Pertama Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
-#, fuzzy
 msgid "Tweak your Vanilla OS installation."
-msgstr "Tweak pemasangan Ubuntu Vanilla GNOME anda."
+msgstr "Ubah suai pemasangan Vanilla OS anda."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -39,11 +39,11 @@ msgstr "Keluaran pertama"
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
-msgstr ""
+msgstr "Menyemak Sambungan…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 msgid "Please wait until the connection check is done"
-msgstr ""
+msgstr "Sila tunggu sehingga semakan sambungan tamat"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -56,51 +56,51 @@ msgstr "Seterusnya"
 #: vanilla_first_setup/gtk/default-hostname.ui:27
 #: vanilla_first_setup/gtk/default-hostname.ui:35
 msgid "Device Name"
-msgstr ""
+msgstr "Nama Peranti"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
 msgid "Provide your device name"
-msgstr ""
+msgstr "Berikan nama peranti anda"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
+"Sambungan internet yang aktif diperlukan untuk memuat turun aplikasi-"
+"aplikasi kegemaran anda dan memastikan sistem anda sentiasa dikemas kini"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
-msgstr ""
+msgstr "Berwayar"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
-msgstr ""
+msgstr "Rangkaian Nirwayar"
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
-msgstr ""
+msgstr "Lanjutan"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
 msgid "Connect to Hidden Network..."
-msgstr ""
+msgstr "Sambung ke Rangkaian Tersembunyi..."
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr ""
+msgstr "Buka Tetapan Proksi..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:27
 msgid "Color Scheme"
 msgstr "Skema Warna"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "Pilih skema warna untuk sistem anda."
+msgstr "Pilih skema warna untuk sistem anda"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
@@ -112,27 +112,27 @@ msgstr "Gelap"
 
 #: vanilla_first_setup/gtk/default-user.ui:37
 msgid "Create User"
-msgstr ""
+msgstr "Cipta Pengguna"
 
 #: vanilla_first_setup/gtk/default-user.ui:38
 msgid "Provide details for your user account"
-msgstr ""
+msgstr "Berikan maklumat untuk akaun pengguna anda"
 
 #: vanilla_first_setup/gtk/default-user.ui:45
 msgid "Name"
-msgstr ""
+msgstr "Nama"
 
 #: vanilla_first_setup/gtk/default-user.ui:51
 msgid "Username"
-msgstr ""
+msgstr "Nama pengguna"
 
 #: vanilla_first_setup/gtk/default-user.ui:57
 msgid "Password"
-msgstr ""
+msgstr "Kata Laluan"
 
 #: vanilla_first_setup/gtk/default-user.ui:63
 msgid "Confirm Password"
-msgstr ""
+msgstr "Sahkan Kata Laluan"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
@@ -140,46 +140,44 @@ msgid "Welcome!"
 msgstr "Selamat datang!"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
-#, fuzzy
 msgid "Showing Information"
 msgstr "Menunjukkan Maklumat"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "Tamat!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr "Mulakan semula PC anda untuk menikmati pengalaman Vanila OS anda."
+msgstr "Mulakan semula peranti untuk menikmati pengalaman Vanilla OS anda"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "Izinkan"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing..."
-msgstr ""
+msgstr "Memuktamadkan..."
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon"
-msgstr ""
+msgstr "Peranti anda akan sedia sebentar lagi"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
-msgstr ""
+msgstr "Memasang..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console Output"
-msgstr ""
+msgstr "Tunjukkan Hasil Konsol"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr ""
+msgstr "Tunjukkan Tayangan Slaid"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
-msgstr "Baca Lagi"
+msgstr "Baca Lebih"
 
 #: vanilla_first_setup/gtk/window.ui:36
 msgid "Back"
@@ -188,71 +186,71 @@ msgstr "Kembali"
 #: vanilla_first_setup/gtk/wireless-row.ui:33
 #: vanilla_first_setup/defaults/network.py:373
 msgid "Connected"
-msgstr ""
+msgstr "Bersambung"
 
 #: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
-msgstr ""
+msgstr "Tiada Sambungan Internet!"
 
 #: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
-msgstr ""
+msgstr "Persediaan Pertama memerlukan sambungan internet yang aktif"
 
 #: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
-msgstr ""
+msgstr "Sila tunggu sehingga semakan sambungan selesai."
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
-msgstr ""
+msgstr "Rangkaian (WEP) tidak selamat"
 
 #: vanilla_first_setup/defaults/network.py:39
 msgid "Secure network (WPA)"
-msgstr ""
+msgstr "Rangkaian (WPA) selamat"
 
 #: vanilla_first_setup/defaults/network.py:40
 msgid "Secure network (WPA2)"
-msgstr ""
+msgstr "Rangkaian (WPA2) selamat"
 
 #: vanilla_first_setup/defaults/network.py:41
 msgid "Secure network (WPA3)"
-msgstr ""
+msgstr "Rangkaian (WPA3) selamat"
 
 #: vanilla_first_setup/defaults/network.py:376
 msgid "Authentication required"
-msgstr ""
+msgstr "Pengesahan diperlukan"
 
 #: vanilla_first_setup/defaults/network.py:384
 msgid "Connecting"
-msgstr ""
+msgstr "Menyambung"
 
 #: vanilla_first_setup/defaults/network.py:386
 msgid "Disconnected"
-msgstr ""
+msgstr "Terputus"
 
 #: vanilla_first_setup/defaults/network.py:388
 msgid "Disconnecting"
-msgstr ""
+msgstr "Memutus"
 
 #: vanilla_first_setup/defaults/network.py:390
 msgid "Connection Failed"
-msgstr ""
+msgstr "Sambungan Gagal"
 
 #: vanilla_first_setup/defaults/network.py:392
 msgid "Status Unknown"
-msgstr ""
+msgstr "Status Tidak Diketahui"
 
 #: vanilla_first_setup/defaults/network.py:394
 msgid "Unmanaged"
-msgstr ""
+msgstr "Tidak Terurus"
 
 #: vanilla_first_setup/defaults/network.py:396
 msgid "Unavailable"
-msgstr ""
+msgstr "Tiada"
 
 #: vanilla_first_setup/defaults/network.py:398
 msgid "Unknown"
-msgstr ""
+msgstr "Tidak Diketahui"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
@@ -263,17 +261,16 @@ msgid "Please select at least one option."
 msgstr "Sila pilih sekurang-kurangnya satu pilihan."
 
 #: vanilla_first_setup/views/done.py:55
-#, fuzzy
 msgid "Restart your device to enjoy your {} experience."
-msgstr "Mulakan semula PC anda untuk menikmati pengalaman {} anda."
+msgstr "Mulakan semula peranti untuk menikmati pengalaman {} anda."
 
 #: vanilla_first_setup/views/done.py:77
 msgid "Something went wrong"
-msgstr "Sesuatu yang tidak kena telah berlaku"
+msgstr "Perkara yang tidak kena telah berlaku"
 
 #: vanilla_first_setup/views/done.py:79
 msgid "Please contact the distribution developers."
-msgstr "Sila hubungi pembangun pengedaran."
+msgstr "Sila hubungi jurubina-jurubina pengedaran."
 
 #: vanilla_first_setup/main.py:62
 msgid "Run a post script"
@@ -285,15 +282,15 @@ msgstr ""
 
 #: vanilla_first_setup/window.py:70
 msgid "Done!"
-msgstr ""
+msgstr "Siap!"
 
 #: vanilla_first_setup/window.py:71
 msgid "Your device is ready to use."
-msgstr ""
+msgstr "Peranti anda sedia untuk digunakan."
 
 #: vanilla_first_setup/window.py:72
 msgid "Error!"
-msgstr ""
+msgstr "Ralat!"
 
 #: vanilla_first_setup/window.py:73
 #, fuzzy
