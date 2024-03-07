@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Krishnawa <nadhkrishna@gmail.com>, 2023.
+# Azadirachta Indica <neem@tutamail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2023-05-29 19:23+0000\n"
-"Last-Translator: Krishnawa <nadhkrishna@gmail.com>\n"
+"PO-Revision-Date: 2024-02-29 07:02+0000\n"
+"Last-Translator: Azadirachta Indica <neem@tutamail.com>\n"
 "Language-Team: Malayalam <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ml/>\n"
 "Language: ml\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 #, fuzzy
@@ -60,10 +61,8 @@ msgid "Device Name"
 msgstr "ഉപകരണത്തിന്റെ പേര്"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "നിങ്ങളുടെ ഉപകരണത്തെക്കുറിച്ചുള്ള വിശദാംശങ്ങൾ നൽകുക"
+msgstr "നിങ്ങളുടെ ഉപകരണത്തിൻ്റെ പേര് നൽകുക"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
