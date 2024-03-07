@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Manjur Muammar Rashidi <mhasanmuammar2@gmail.com>, 2023.
 # Ibrahim Kaikaa <ibrahimkaikaa@protonmail.com>, 2023.
-# Muhammad Bahaa <muhammad.bahaa1@gmail.com>, 2023.
+# Muhammad Bahaa <muhammad.bahaa1@gmail.com>, 2023, 2024.
 # Moumn Almunawy <moumnalmunawy2006@gmail.com>, 2023.
 # bob lock <sidkia447@gmail.com>, 2023.
 # Yassin Mohamed <bursledon_backwaters@aleeas.com>, 2023.
@@ -12,17 +12,17 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2023-11-29 10:55+0000\n"
-"Last-Translator: Yassin Mohamed <bursledon_backwaters@aleeas.com>\n"
-"Language-Team: Arabic <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/ar/>\n"
+"PO-Revision-Date: 2024-03-07 08:32+0000\n"
+"Last-Translator: Muhammad Bahaa <muhammad.bahaa1@gmail.com>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.3-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -46,10 +46,8 @@ msgid "Checking Connection…"
 msgstr "يتحقق من الإتصال…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
-#| msgid "Please wait until the connection check is done."
 msgid "Please wait until the connection check is done"
-msgstr "الرجاء الإنتظار لحين الإنتهاء من التحقق بالإتصال."
+msgstr "الرجاء الانتظار لحين الانتهاء من التحقق بالاتصال."
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -65,25 +63,18 @@ msgid "Device Name"
 msgstr "اسم الجهاز"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "قدم تفاصيل جهازك"
+msgstr "أدخل اسم جهازك"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "إنترنت"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
-#, fuzzy
-#| msgid ""
-#| "An active internet connection is required to make sure your system is up-"
-#| "to-date and download your favorite applications."
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
-msgstr ""
-"يلزم وجود اتصال نشط بالإنترنت للتأكد من تحديث نظامك وتنزيل تطبيقاتك المفضلة."
+msgstr "يلزم وجود اتصال نشط بالإنترنت لتنزيل تطبيقاتك المفضلة ابقاء نظامك محدث"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
@@ -110,10 +101,8 @@ msgid "Color Scheme"
 msgstr "سمة النظام"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "اختر سمة لنظامك."
+msgstr "اختر سمة اللون لنظامك."
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
@@ -158,39 +147,31 @@ msgstr "عرض المعلومات"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "انتهى!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
-#| msgid "Restart your device to enjoy your Vanilla OS experience."
 msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr "أعد تشغيل الحاسوب للاستمتاع بتجربتك لنظام التشغيل فانيلا."
+msgstr "أعد تشغيل جهازك للاستمتاع بتجربة Vanilla OS"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "تمكين"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-#, fuzzy
-#| msgid "Finalizing"
 msgid "Finalizing..."
-msgstr "جاري التحضير"
+msgstr "جارٍ الانتهاء..."
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-#, fuzzy
-#| msgid "Your device will be ready soon."
 msgid "Your device will be ready soon"
-msgstr "سيصبح جهازك جاهز قريبا."
+msgstr "سيكون جهازك جاهزًا قريبًا"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
 msgstr "جارٍ التثبيت ..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
-#, fuzzy
-#| msgid "Show Console output"
 msgid "Show Console Output"
-msgstr "اعرض مخرجات وحدة التحكم"
+msgstr "إظهار إخراج وحدة التحكم"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
@@ -270,10 +251,8 @@ msgid "Unavailable"
 msgstr "غير متوفره"
 
 #: vanilla_first_setup/defaults/network.py:398
-#, fuzzy
-#| msgid "Status Unknown"
 msgid "Unknown"
-msgstr "الحالة غير معروفة"
+msgstr "غير معروف"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
