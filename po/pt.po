@@ -8,13 +8,14 @@
 # Ricardo <ricardo.btupy@gmail.com>, 2023.
 # Wagner Costa Gottschald <wagnercostag@gmail.com>, 2023.
 # Vinícius <vinicius.cgobbi2004@gmail.com>, 2024.
+# Matheus Silverio Silva <drchaos820@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-01-09 00:26+0000\n"
-"Last-Translator: Vinícius <vinicius.cgobbi2004@gmail.com>\n"
+"PO-Revision-Date: 2024-03-14 03:01+0000\n"
+"Last-Translator: Matheus Silverio Silva <drchaos820@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/pt/>\n"
 "Language: pt\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -46,10 +47,8 @@ msgid "Checking Connection…"
 msgstr "A verificar ligação…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
-#| msgid "Please wait until the connection check is done."
 msgid "Please wait until the connection check is done"
-msgstr "Aguarde até a verificação da ligação estar concluída."
+msgstr "Aguarde até a verificação da ligação estar concluída"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -72,18 +71,14 @@ msgstr "Forneça detalhes sobre o seu dispositivo"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
-#, fuzzy
-#| msgid ""
-#| "An active internet connection is required to make sure your system is up-"
-#| "to-date and download your favorite applications."
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
-"Uma conexão activa há Internet é obrigatória para ter certeza que o sistema "
+"Uma conexão ativa há Internet é obrigatória para ter certeza que o sistema "
 "está atualizado e para transferir as suas aplicações favoritas."
 
 #: vanilla_first_setup/gtk/default-network.ui:29
@@ -159,7 +154,7 @@ msgstr "Mostrar informação"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "Terminado!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 #, fuzzy
@@ -171,7 +166,7 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "Ativar"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 #, fuzzy
