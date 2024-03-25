@@ -2,19 +2,20 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Hugo Carvalho <hugokarvalho@hotmail.com>, 2023.
-# ssantos <ssantos@web.de>, 2023.
+# ssantos <ssantos@web.de>, 2023, 2024.
 # Felipe Nogueira <contato.fnog@gmail.com>, 2023.
 # Afonso Coutinho <afonsopcastro@gmail.com>, 2023.
 # Ricardo <ricardo.btupy@gmail.com>, 2023.
 # Wagner Costa Gottschald <wagnercostag@gmail.com>, 2023.
 # Vinícius <vinicius.cgobbi2004@gmail.com>, 2024.
+# Matheus Silverio Silva <drchaos820@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-01-09 00:26+0000\n"
-"Last-Translator: Vinícius <vinicius.cgobbi2004@gmail.com>\n"
+"PO-Revision-Date: 2024-03-23 18:27+0000\n"
+"Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/pt/>\n"
 "Language: pt\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -46,10 +47,8 @@ msgid "Checking Connection…"
 msgstr "A verificar ligação…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
-#| msgid "Please wait until the connection check is done."
 msgid "Please wait until the connection check is done"
-msgstr "Aguarde até a verificação da ligação estar concluída."
+msgstr "Aguarde até a verificação da ligação estar concluída"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -65,25 +64,19 @@ msgid "Device Name"
 msgstr "Nome do Dispositivo"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "Forneça detalhes sobre o seu dispositivo"
+msgstr "Forneça o nome do seu aparelho"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
-#, fuzzy
-#| msgid ""
-#| "An active internet connection is required to make sure your system is up-"
-#| "to-date and download your favorite applications."
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
-"Uma conexão activa há Internet é obrigatória para ter certeza que o sistema "
+"Uma conexão ativa há Internet é obrigatória para ter certeza que o sistema "
 "está atualizado e para transferir as suas aplicações favoritas."
 
 #: vanilla_first_setup/gtk/default-network.ui:29
@@ -111,10 +104,8 @@ msgid "Color Scheme"
 msgstr "Esquema de cores"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "Escolha um esquema de cores para o seu sistema."
+msgstr "Escolha um esquema de cores para o seu sistema"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
@@ -159,41 +150,32 @@ msgstr "Mostrar informação"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "Terminado!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
-#| msgid "Restart your device to enjoy your Vanilla OS experience."
 msgid "Restart your device to enjoy your Vanilla OS experience"
 msgstr ""
-"Reinicie o seu dispositivo para desfrutar da sua experiência com o Vanilla "
-"OS."
+"Reinicie o seu aparelho para desfrutar da sua experiência com o Vanilla OS"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "Ativar"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-#, fuzzy
-#| msgid "Finalizing"
 msgid "Finalizing..."
-msgstr "A finalizar"
+msgstr "A finalizar…"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-#, fuzzy
-#| msgid "Your device will be ready soon."
 msgid "Your device will be ready soon"
-msgstr "O seu dispositivo estará pronto em breve."
+msgstr "O seu aparelho estará pronto em breve"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
 msgstr "Instalando..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
-#, fuzzy
-#| msgid "Show Console output"
 msgid "Show Console Output"
-msgstr "Mostrar saída no console"
+msgstr "Mostrar Saída do Terminal"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
@@ -273,10 +255,8 @@ msgid "Unavailable"
 msgstr "Indisponível"
 
 #: vanilla_first_setup/defaults/network.py:398
-#, fuzzy
-#| msgid "Status Unknown"
 msgid "Unknown"
-msgstr "Estado Desconhecido"
+msgstr "Desconhecido"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
