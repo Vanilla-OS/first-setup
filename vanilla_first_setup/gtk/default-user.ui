@@ -52,18 +52,6 @@
                             <property name="input-purpose">name</property>
                           </object>
                         </child>
-                        <child>
-                          <object class="AdwPasswordEntryRow" id="password_entry">
-                            <property name="title" translatable="yes">Password</property>
-                            <property name="input-purpose">password</property>
-                          </object>
-                        </child>
-                        <child>
-                          <object class="AdwPasswordEntryRow" id="password_confirmation">
-                            <property name="title" translatable="yes">Confirm Password</property>
-                            <property name="input-purpose">password</property>
-                          </object>
-                        </child>
                       </object>
                     </child>
                   </object>

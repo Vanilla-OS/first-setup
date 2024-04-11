@@ -29,14 +29,11 @@ class VanillaDefaultUser(Adw.Bin):
     btn_next = Gtk.Template.Child()
     fullname_entry = Gtk.Template.Child()
     username_entry = Gtk.Template.Child()
-    password_entry = Gtk.Template.Child()
-    password_confirmation = Gtk.Template.Child()
 
     fullname = ""
     fullname_filled = False
     username = ""
     username_filled = False
-    password_filled = False
 
     existing_users = []
 
@@ -52,8 +49,6 @@ class VanillaDefaultUser(Adw.Bin):
         self.btn_next.connect("clicked", self.__on_btn_next_clicked)
         self.fullname_entry.connect("changed", self.__on_fullname_entry_changed)
         self.username_entry.connect("changed", self.__on_username_entry_changed)
-        self.password_entry.connect("changed", self.__on_password_changed)
-        self.password_confirmation.connect("changed", self.__on_password_changed)
 
         # get existing users
         self.existing_users = subprocess.Popen("getent passwd | cut -d: -f1", shell=True,
@@ -76,7 +71,7 @@ class VanillaDefaultUser(Adw.Bin):
                     "type": "command",
                     "commands": [
                         f'adduser --quiet --disabled-password --shell /bin/bash --gecos "{self.fullname}" {self.username}',
-                        f'echo "{self.username}:{self.password_entry.get_text()}" | chpasswd',
+                        f'passwd --delete --expire "{self.username}"',
                         f"usermod -a -G sudo,adm,lpadmin {self.username}",
                     ],
                 }
@@ -148,26 +143,7 @@ class VanillaDefaultUser(Adw.Bin):
             self.__verify_continue()
             self.username = _input
 
-    def __on_password_changed(self, *args):
-        password = self.password_entry.get_text()
-        if password == self.password_confirmation.get_text() and password.strip():
-            self.password_filled = True
-            self.password_confirmation.remove_css_class("error")
-            self.password = self.__encrypt_password(password)
-        else:
-            self.password_filled = False
-            self.password_confirmation.add_css_class("error")
-
-        self.__verify_continue()
-
     def __verify_continue(self):
         self.btn_next.set_sensitive(
-            self.fullname_filled and self.password_filled and self.username_filled
+            self.fullname_filled and self.username_filled
         )
-
-    def __encrypt_password(self, password):
-        command = subprocess.run(
-            [shutil.which("openssl"), "passwd", "-crypt", password], capture_output=True
-        )
-        password_encrypted = command.stdout.decode("utf-8").strip("\n")
-        return password_encrypted
