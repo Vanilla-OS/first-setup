@@ -9,7 +9,6 @@
         "sh -c /usr/bin/__first_setup_reset_session",
         "!nextBoot sh -c /usr/bin/__first_setup_cleanup",
         "!nextBoot !noRoot vso pico-init",
-        "!nextBoot !noRoot systemctl --user enable apx-vso-pico.service",
         "rm -f /etc/vanilla-first-setup-done"
     ],
     "tour_app": "vanilla-tour",
