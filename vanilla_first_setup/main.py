@@ -32,6 +32,7 @@ import sys
 import logging
 from gettext import gettext as _
 from vanilla_first_setup.window import VanillaWindow
+import subprocess
 
 
 logging.basicConfig(level=logging.INFO)
@@ -52,6 +53,11 @@ class FirstSetupApplication(Adw.Application):
 
         self.create_action("quit", self.close, ["<primary>q"])
         self.__register_arguments()
+
+        # disable the lock screen and password for the default user
+        if self.user == "vanilla":
+            subprocess.run(["/usr/bin/gsettings", "set", "org.gnome.desktop.lockdown", "disable-lock-screen", "true"])
+            subprocess.run(["/usr/bin/gsettings", "set", "org.gnome.desktop.screensaver", "lock-enabled", "false"])
 
     def __register_arguments(self):
         """Register the command line arguments."""
