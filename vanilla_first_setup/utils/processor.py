@@ -90,14 +90,6 @@ class Processor:
                 for command in next_boot:
                     f.write(f"echo '{command}' >> " + next_boot_script_path + "\n")
 
-                f.write(f"echo 'echo \"[Desktop Entry]\" > {user_fs_desktop_path}' >> {next_boot_script_path}\n")
-                f.write(f"echo 'echo \"Name=FirstSetup\" >> {user_fs_desktop_path}' >> {next_boot_script_path}\n")
-                f.write(f"echo 'echo \"Comment=FirstSetup\" >> {user_fs_desktop_path}' >> {next_boot_script_path}\n")
-                f.write(f"echo 'echo \"Exec=vanilla-first-setup\" >> {user_fs_desktop_path}' >> {next_boot_script_path}\n")
-                f.write(f"echo 'echo \"Terminal=false\" >> {user_fs_desktop_path}' >> {next_boot_script_path}\n")
-                f.write(f"echo 'echo \"Type=Application\" >> {user_fs_desktop_path}' >> {next_boot_script_path}\n")
-                f.write(f"echo 'echo \"NoDisplay=true\" >> {user_fs_desktop_path}' >> {next_boot_script_path}\n")
-
                 f.write(f"echo '[Desktop Entry]' > {next_boot_autostart_path}\n")
                 f.write(f"echo 'Name=FirstSetup Next Boot' >> {next_boot_autostart_path}\n")
                 f.write(f"echo 'Comment=Run FirstSetup commands at the next boot' >> {next_boot_autostart_path}\n")
