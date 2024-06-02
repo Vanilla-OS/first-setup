@@ -87,6 +87,12 @@ class Processor:
                 f.write("echo '# This file was created by the Vanilla First Setup' >> " + next_boot_script_path + "\n")
                 f.write("echo '# do not edit its content manually' >> " + next_boot_script_path + "\n")
 
+                # wait for connection
+                f.write(f"echo 'while [ \"$(wget -q --spider cloudflare.com; echo $?)\" != \"0\" ]; do' >> {next_boot_script_path}\n")
+                f.write(f"echo 'echo Waiting for internet connection...' >> {next_boot_script_path}\n")
+                f.write(f"echo 'sleep 5' >> {next_boot_script_path}\n")
+                f.write(f"echo 'done' >> {next_boot_script_path}\n")
+
                 for command in next_boot:
                     f.write(f"echo '{command}' >> " + next_boot_script_path + "\n")
 
