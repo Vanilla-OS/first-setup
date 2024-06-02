@@ -54,7 +54,7 @@ class Processor:
                 command = command.replace("!noRoot", "")
                 command = command.replace('"', '\\"')
                 command = command.replace("'", "\\'")
-                command = 'su - $REAL_USER -c "%s"' % command
+                command = "systemd-run --user --machine=\"$REAL_USER@.host\" -P -q /usr/bin/bash -c \"%s\"" % command
 
             next_boot.append(command)
 
@@ -115,7 +115,7 @@ class Processor:
                     command = command.replace("!noRoot", "")
                     command = command.replace('"', '\\"')
                     command = command.replace("'", "\\'")
-                    command = "su - $USER -c '%s'" % command
+                    command = "systemd-run --user --machine=\"$USER@.host\" -P -q /usr/bin/bash -c \"%s\"" % command
 
                 # outRun bang is used to run a command outside of the main
                 # shell script.
