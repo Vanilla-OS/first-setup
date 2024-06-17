@@ -185,11 +185,6 @@
                             "name": "Weather",
                             "icon": "org.gnome.Weather",
                             "flatpak": true
-                        },
-                        {
-                            "name": "Web",
-                            "icon": "org.gnome.Epiphany",
-                            "flatpak": true
                         }
                     ]
                 },
@@ -265,6 +260,44 @@
                         {
                             "name": "Sound Recorder",
                             "icon": "org.gnome.SoundRecorder",
+                            "flatpak": true
+                        }
+                    ]
+                },
+                {
+                    "id": "browsers",
+                    "title": "Browsers",
+                    "subtitle": "Applications that you can use to browse the internet. Traditionally, you only need one.",
+                    "default": true,
+                    "applications": [
+                        {
+                            "name": "Firefox",
+                            "icon": "org.mozilla.firefox",
+                            "flatpak": true
+                        },
+                        {
+                            "name": "Google Chrome",
+                            "icon": "com.google.Chrome",
+                            "flatpak": true
+                        },
+                        {
+                            "name": "Chromium",
+                            "icon": "org.chromium.Chromium",
+                            "flatpak": true
+                        },
+                        {
+                            "name": "Brave Browser",
+                            "icon": "com.brave.Browser",
+                            "flatpak": true
+                        },
+                        {
+                            "name": "Microsoft Edge",
+                            "icon": "com.microsoft.Edge",
+                            "flatpak": true
+                        },
+                        {
+                            "name": "Web",
+                            "icon": "org.gnome.Epiphany",
                             "flatpak": true
                         }
                     ]
@@ -500,6 +533,41 @@
                     "type": "command",
                     "commands": [
                         "!nextBoot !noRoot flatpak install -y org.gnome.SoundRecorder"
+                    ]
+                },
+                {
+                    "if": "Firefox",
+                    "type": "command",
+                    "commands": [
+                        "!nextBoot !noRoot flatpak install -y org.mozilla.firefox"
+                    ]
+                },
+                {
+                    "if": "Google Chrome",
+                    "type": "command",
+                    "commands": [
+                        "!nextBoot !noRoot flatpak install -y com.google.Chrome"
+                    ]
+                },
+                {
+                    "if": "Chromium",
+                    "type": "command",
+                    "commands": [
+                        "!nextBoot !noRoot flatpak install -y org.chromium.Chromium"
+                    ]
+                },
+                {
+                    "if": "Brave Browser",
+                    "type": "command",
+                    "commands": [
+                        "!nextBoot !noRoot flatpak install -y com.brave.Browser"
+                    ]
+                },
+                {
+                    "if": "Microsoft Edge",
+                    "type": "command",
+                    "commands": [
+                        "!nextBoot !noRoot flatpak install -y com.microsoft.Edge"
                     ]
                 }
             ]

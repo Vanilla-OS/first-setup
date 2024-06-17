@@ -71,5 +71,10 @@
     <file>assets/bundle-app-icons/net.lutris.Lutris.png</file>
     <file>assets/bundle-app-icons/com.heroicgameslauncher.hgl.png</file>
     <file>assets/bundle-app-icons/org.gnome.DejaDup.png</file>
+    <file>assets/bundle-app-icons/com.brave.Browser.png</file>
+    <file>assets/bundle-app-icons/com.google.Chrome.png</file>
+    <file>assets/bundle-app-icons/org.chromium.Chromium.png</file>
+    <file>assets/bundle-app-icons/org.mozilla.firefox.png</file>
+    <file>assets/bundle-app-icons/com.microsoft.Edge.png</file>
   </gresource>
 </gresources>
