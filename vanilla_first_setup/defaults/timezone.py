@@ -164,7 +164,7 @@ class VanillaDefaultTimezone(Adw.Bin):
         search_entry = self.entry_search_timezone.get_text().lower()
         keywords = remove_accents(search_entry)
 
-        if len(keywords) == 0:
+        if len(keywords) <= 1:
             for expander in self.__expanders:
                 expander.set_visible(True)
                 expander.set_expanded(False)
