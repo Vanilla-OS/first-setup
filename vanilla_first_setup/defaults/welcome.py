@@ -16,6 +16,7 @@
 
 import time
 from gi.repository import Gtk, GLib, Adw
+from vanilla_first_setup.utils.recipe import RecipeLoader
 
 from vanilla_first_setup.utils.run_async import RunAsync
 
@@ -66,12 +67,24 @@ class VanillaDefaultWelcome(Adw.Bin):
         "സ്വാഗതം",
     ]
 
+    def validate_advanced(self):
+        recipeLoader = RecipeLoader()
+        for i in recipeLoader.raw["steps"].items():
+            try:
+                if i[1]["is-advanced"] == True:
+                    return
+            except:
+                pass
+
+        self.btn_advanced.set_sensitive(False)
+
     def __init__(self, window, distro_info, key, step, **kwargs):
         super().__init__(**kwargs)
         self.__window = window
         self.__distro_info = distro_info
         self.__key = key
         self.__step = step
+        self.validate_advanced()
 
         # animation start
         self.__start_welcome_animation()
