@@ -1,22 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
-# "K.B.Dharun Krishna" <kbdharunkrishna@gmail.com>, 2023.
+# "K.B.Dharun Krishna" <kbdharunkrishna@gmail.com>, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2023-12-29 15:10+0000\n"
+"PO-Revision-Date: 2024-06-01 21:52+0000\n"
 "Last-Translator: \"K.B.Dharun Krishna\" <kbdharunkrishna@gmail.com>\n"
-"Language-Team: Tamil <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/ta/>\n"
+"Language-Team: Tamil <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/ta/>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -40,10 +40,8 @@ msgid "Checking Connection…"
 msgstr "இணைப்பைச் சரிபார்க்கிறது…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
-#| msgid "Please wait until the connection check is done."
 msgid "Please wait until the connection check is done"
-msgstr "இணைப்புச் சரிபார்ப்பு முடியும் வரை காத்திருக்கவும்."
+msgstr "இணைப்புச் சரிபார்ப்பு முடியும் வரை காத்திருக்கவும்"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -59,26 +57,20 @@ msgid "Device Name"
 msgstr "சாதனத்தின் பெயர்"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "உங்கள் சாதனத்தைப் பற்றிய விவரங்களை வழங்கவும்"
+msgstr "உங்கள் சாதனத்தின் பெயரை வழங்கவும்"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "இணையதளம்"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
-#, fuzzy
-#| msgid ""
-#| "An active internet connection is required to make sure your system is up-"
-#| "to-date and download your favorite applications."
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
-"உங்கள் அமைப்பு புதுப்பித்த நிலையில் இருப்பதை உறுதிசெய்து, உங்களுக்குப் பிடித்தமான "
-"பயன்பாடுகளை பதிவிறக்க, செயலில் உள்ள இணைய இணைப்பு தேவை."
+"உங்களுக்குப் பிடித்த பயன்பாடுகளை பதிவிறக்கவும், உங்கள் அமைப்பை புதுப்பித்த "
+"நிலையில் வைத்திருக்கவும் செயலில் உள்ள இணைய இணைப்பு தேவை"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
@@ -105,10 +97,8 @@ msgid "Color Scheme"
 msgstr "வண்ண திட்டம்"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "உங்கள் கணினிக்கான வண்ணத் திட்டத்தைத் தேர்ந்தெடுக்கவும்."
+msgstr "உங்கள் கணினிக்கான வண்ணத் திட்டத்தைத் தேர்ந்தெடுக்கவும்"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
@@ -153,37 +143,30 @@ msgstr "தகவலைக் காட்டுகிறது"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "முடிந்துவிட்டது!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
-#| msgid "Restart your device to enjoy your Vanilla OS experience."
 msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr "உங்கள் வெண்ணிலா OS அனுபவத்தை அனுபவிக்க உங்கள் சாதனத்தை மறுதொடக்கம் செய்யவும்."
+msgstr ""
+"உங்கள் வெண்ணிலா OS அனுபவத்தை அனுபவிக்க உங்கள் சாதனத்தை மறுதொடக்கம் செய்யவும்"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "இயக்கு"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-#, fuzzy
-#| msgid "Finalizing"
 msgid "Finalizing..."
-msgstr "இறுதிப்படுத்துதல்"
+msgstr "இறுதி செய்கிறது..."
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-#, fuzzy
-#| msgid "Your device will be ready soon."
 msgid "Your device will be ready soon"
-msgstr "உங்கள் சாதனம் விரைவில் தயாராகிவிடும்."
+msgstr "உங்கள் சாதனம் விரைவில் தயாராகிவிடும்"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
 msgstr "நிறுவுகிறது…"
 
 #: vanilla_first_setup/gtk/progress.ui:91
-#, fuzzy
-#| msgid "Show Console output"
 msgid "Show Console Output"
 msgstr "கன்சோல் வெளியீட்டைக் காட்டு"
 
@@ -265,10 +248,8 @@ msgid "Unavailable"
 msgstr "கிடைக்கவில்லை"
 
 #: vanilla_first_setup/defaults/network.py:398
-#, fuzzy
-#| msgid "Status Unknown"
 msgid "Unknown"
-msgstr "நிலை தெரியவில்லை"
+msgstr "தெரியவில்லை"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
