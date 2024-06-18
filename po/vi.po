@@ -5,13 +5,14 @@
 #
 # Rubic Useless <cuongvutrong364@gmail.com>, 2024.
 # Thanh Minh Mai <thanhminh.mr@gmail.com>, 2024.
+# Notch Apple <Gapple1703@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-05-19 07:56+0000\n"
-"Last-Translator: Thanh Minh Mai <thanhminh.mr@gmail.com>\n"
+"PO-Revision-Date: 2024-05-22 13:32+0000\n"
+"Last-Translator: Notch Apple <Gapple1703@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/vi/>\n"
 "Language: vi\n"
@@ -23,15 +24,15 @@ msgstr ""
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr "Thiết lập ban đầu cho hệ điều hành Vanilla"
+msgstr "Thiết lập ban đầu cho Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
-msgstr "Chỉnh sửa cài đặt Vanilla OS của bạn."
+msgstr "Tùy biến cài đặt Vanilla OS của bạn."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr "Không có thông tin mô tả"
+msgstr "Không có mô tả"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
@@ -61,7 +62,7 @@ msgstr "Tên thiết bị"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
 msgid "Provide your device name"
-msgstr "Chọn tên cho máy tính của bạn"
+msgstr "Đặt tên cho máy tính của bạn"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
