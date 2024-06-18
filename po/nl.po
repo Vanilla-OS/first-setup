@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-02-25 09:41+0000\n"
+"PO-Revision-Date: 2024-05-30 05:44+0000\n"
 "Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/nl/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -28,7 +28,7 @@ msgstr "Pas uw installatie van Vanilla OS aan"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr "Geen omschrijving"
+msgstr "Geen omschrĳving"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
@@ -160,7 +160,7 @@ msgstr "Afronden…"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon"
-msgstr "Uw apparaat zal binnenkort gereed zijn"
+msgstr "Uw apparaat zal binnenkort gereed zĳn"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
