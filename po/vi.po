@@ -4,13 +4,14 @@
 # Automatically generated, 2022.
 #
 # Rubic Useless <cuongvutrong364@gmail.com>, 2024.
+# Thanh Minh Mai <thanhminh.mr@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-05-13 17:00+0000\n"
-"Last-Translator: Rubic Useless <cuongvutrong364@gmail.com>\n"
+"PO-Revision-Date: 2024-05-19 07:56+0000\n"
+"Last-Translator: Thanh Minh Mai <thanhminh.mr@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/vi/>\n"
 "Language: vi\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -39,7 +40,7 @@ msgstr "Bản phát hành đầu tiên"
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
-msgstr "Kiểm tra Kết nối mạng…"
+msgstr "Đang kiểm tra kết nối…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 msgid "Please wait until the connection check is done"
@@ -59,13 +60,12 @@ msgid "Device Name"
 msgstr "Tên thiết bị"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
 msgid "Provide your device name"
-msgstr "Cung cấp tên thiết bị"
+msgstr "Chọn tên cho máy tính của bạn"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
@@ -88,9 +88,8 @@ msgid "Advanced"
 msgstr "Nâng cao"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
-#, fuzzy
 msgid "Connect to Hidden Network..."
-msgstr "Kết nối tới mạng ẩn"
+msgstr "Kết nối tới mạng ẩn..."
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
@@ -101,10 +100,8 @@ msgid "Color Scheme"
 msgstr "Bảng Màu"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "Chọn một bảng màu cho hệ thống của bạn."
+msgstr "Chọn màu sắc cho hệ thống của bạn"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
@@ -120,23 +117,23 @@ msgstr "Tạo người dùng"
 
 #: vanilla_first_setup/gtk/default-user.ui:38
 msgid "Provide details for your user account"
-msgstr ""
+msgstr "Thiết lập tài khoản của bạn"
 
 #: vanilla_first_setup/gtk/default-user.ui:45
 msgid "Name"
-msgstr ""
+msgstr "Tên"
 
 #: vanilla_first_setup/gtk/default-user.ui:51
 msgid "Username"
-msgstr ""
+msgstr "Tên tài khoản"
 
 #: vanilla_first_setup/gtk/default-user.ui:57
 msgid "Password"
-msgstr ""
+msgstr "Mật khẩu"
 
 #: vanilla_first_setup/gtk/default-user.ui:63
 msgid "Confirm Password"
-msgstr ""
+msgstr "Xác nhận mật khẩu"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
@@ -144,44 +141,40 @@ msgid "Welcome!"
 msgstr "Chào mừng!"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
-#, fuzzy
 msgid "Showing Information"
-msgstr "Hiển thị các thông tin"
+msgstr "Hiển thị thông tin"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "Hoàn thành!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr ""
-"Khởi động lại máy tính của bạn để tận hưởng các trải nghiệm của bạn trên "
-"Vanilla OS."
+msgstr "Khởi động lại máy tính của bạn để trải nghiệm Vanilla OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "Bật"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing..."
-msgstr ""
+msgstr "Đang hoàn thiện..."
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon"
-msgstr ""
+msgstr "Máy tính của bạn sẽ sẵn sàng trong chốc lát"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
-msgstr ""
+msgstr "Đang cài đặt..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console Output"
-msgstr ""
+msgstr "Hiển thị đầu ra Console"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr ""
+msgstr "Hiển thị trình chiếu"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
@@ -194,84 +187,83 @@ msgstr "Trở về"
 #: vanilla_first_setup/gtk/wireless-row.ui:33
 #: vanilla_first_setup/defaults/network.py:373
 msgid "Connected"
-msgstr ""
+msgstr "Đã kết nối"
 
 #: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
-msgstr ""
+msgstr "Không có kết nối Internet!"
 
 #: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
-msgstr ""
+msgstr "Cài đặt lần đầu cần có kết nối Internet"
 
 #: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
-msgstr ""
+msgstr "Vui lòng đợi cho đến khi quá trình kiểm tra kết nối hoàn tất."
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
-msgstr ""
+msgstr "Mạng không an toàn (WEP)"
 
 #: vanilla_first_setup/defaults/network.py:39
 msgid "Secure network (WPA)"
-msgstr ""
+msgstr "Mạng an toàn (WPA)"
 
 #: vanilla_first_setup/defaults/network.py:40
 msgid "Secure network (WPA2)"
-msgstr ""
+msgstr "Mạng an toàn (WPA2)"
 
 #: vanilla_first_setup/defaults/network.py:41
 msgid "Secure network (WPA3)"
-msgstr ""
+msgstr "Mạng an toàn (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:376
 msgid "Authentication required"
-msgstr ""
+msgstr "Yêu cầu xác thực"
 
 #: vanilla_first_setup/defaults/network.py:384
 msgid "Connecting"
-msgstr ""
+msgstr "Đang kết nối"
 
 #: vanilla_first_setup/defaults/network.py:386
 msgid "Disconnected"
-msgstr ""
+msgstr "Đã ngắt kết nối"
 
 #: vanilla_first_setup/defaults/network.py:388
 msgid "Disconnecting"
-msgstr ""
+msgstr "Đang ngắt kết nối"
 
 #: vanilla_first_setup/defaults/network.py:390
 msgid "Connection Failed"
-msgstr ""
+msgstr "Kết nối thất bại"
 
 #: vanilla_first_setup/defaults/network.py:392
 msgid "Status Unknown"
-msgstr ""
+msgstr "Trạng thái không xác định"
 
 #: vanilla_first_setup/defaults/network.py:394
 msgid "Unmanaged"
-msgstr ""
+msgstr "Không được quản lý"
 
 #: vanilla_first_setup/defaults/network.py:396
 msgid "Unavailable"
-msgstr ""
+msgstr "Không có sẵn"
 
 #: vanilla_first_setup/defaults/network.py:398
 msgid "Unknown"
-msgstr ""
+msgstr "Không xác định"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
-msgstr ""
+msgstr "Đã rút cáp"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
 msgstr "Xin hãy chọn ít nhất một tùy chọn."
 
 #: vanilla_first_setup/views/done.py:55
-#, fuzzy
 msgid "Restart your device to enjoy your {} experience."
-msgstr "Khởi động lại máy tính của bạn để tận hưởng trải nghiệm của bạn."
+msgstr "Khởi động lại máy tính của bạn để trải nghiệm {}."
 
 #: vanilla_first_setup/views/done.py:77
 msgid "Something went wrong"
@@ -283,28 +275,27 @@ msgstr "Xin hãy liên hệ tới các nhà phát triển bản phân phối."
 
 #: vanilla_first_setup/main.py:62
 msgid "Run a post script"
-msgstr ""
+msgstr "Thực thi một tập lệnh"
 
 #: vanilla_first_setup/main.py:70
 msgid "Run as a new user"
-msgstr ""
+msgstr "Thực thi với tư cách người dùng mới"
 
 #: vanilla_first_setup/window.py:70
 msgid "Done!"
-msgstr ""
+msgstr "Đã xong!"
 
 #: vanilla_first_setup/window.py:71
 msgid "Your device is ready to use."
-msgstr ""
+msgstr "Máy tính của bạn đã sẵn sàng để sử dụng."
 
 #: vanilla_first_setup/window.py:72
 msgid "Error!"
-msgstr ""
+msgstr "Lỗi!"
 
 #: vanilla_first_setup/window.py:73
-#, fuzzy
 msgid "Something went wrong."
-msgstr "Có gì đó không đúng đã xảy ra"
+msgstr "Có gì đó không đúng đã xảy ra."
 
 #~ msgid "All done!"
 #~ msgstr "Tất cả đã xong!"
