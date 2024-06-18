@@ -2,40 +2,40 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Daniel Toubul <molder@toubul.eu>, 2023.
+# guylamar2006 <guychronister@outlook.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2023-08-22 05:19+0000\n"
-"Last-Translator: Daniel Toubul <molder@toubul.eu>\n"
-"Language-Team: Hebrew <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/he/>\n"
+"PO-Revision-Date: 2024-05-08 20:05+0000\n"
+"Last-Translator: guylamar2006 <guychronister@outlook.com>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.5.4-rc\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr "הגדרה ראשונית של מערכת ונילה"
+msgstr "התקנה ראשונה של Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 #, fuzzy
 msgid "Tweak your Vanilla OS installation."
-msgstr "הגדר את ההתקנה של מערכת ונילה."
+msgstr "כוונן את התקנת ה-Vanilla OS שלך."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
 msgstr "אין תיאור"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
-#, fuzzy
 msgid "First release"
-msgstr "הוצאה ראשונה"
+msgstr "הגרסה הראשונה"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:114
@@ -43,8 +43,6 @@ msgid "Checking Connection…"
 msgstr "בודק חיבור…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
-#| msgid "Please wait until the connection check is done."
 msgid "Please wait until the connection check is done"
 msgstr "אנא המתן עד שבדיקת החיבור תסתיים."
 
@@ -59,53 +57,51 @@ msgstr "הבא"
 #: vanilla_first_setup/gtk/default-hostname.ui:27
 #: vanilla_first_setup/gtk/default-hostname.ui:35
 msgid "Device Name"
-msgstr "שם מערכת"
+msgstr "שם התקן"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "ספק פרטים אודות המערכת שלך"
+msgstr "ספק את שם המכשיר שלך"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "לַאִינטֶרנֶט"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
+"נדרש חיבור אינטרנט פעיל כדי להוריד את האפליקציות המועדפות עליך וכדי לשמור על "
+"עדכניות המערכת שלך"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
-msgstr ""
+msgstr "חוטי"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
-msgstr ""
+msgstr "רשתות Wireless"
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
-msgstr ""
+msgstr "מִתקַדֵם"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
 msgid "Connect to Hidden Network..."
-msgstr ""
+msgstr "התחבר לרשת נסתרת..."
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr ""
+msgstr "פתח את הגדרות פרוקסי..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:27
 msgid "Color Scheme"
-msgstr "ערכת נושא"
+msgstr "סכמת צבעים"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "בחר ערכת נושא עבור המערכת שלך."
+msgstr "בחר ערכת צבעים עבור המערכת שלך."
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
@@ -117,7 +113,7 @@ msgstr "כהה"
 
 #: vanilla_first_setup/gtk/default-user.ui:37
 msgid "Create User"
-msgstr ""
+msgstr "צור משתמש"
 
 #: vanilla_first_setup/gtk/default-user.ui:38
 #, fuzzy
@@ -126,25 +122,26 @@ msgid "Provide details for your user account"
 msgstr "ספק פרטים אודות המערכת שלך"
 
 #: vanilla_first_setup/gtk/default-user.ui:45
+#, fuzzy
 msgid "Name"
-msgstr ""
+msgstr "שם השם"
 
 #: vanilla_first_setup/gtk/default-user.ui:51
 msgid "Username"
-msgstr ""
+msgstr "שם המשתמש"
 
 #: vanilla_first_setup/gtk/default-user.ui:57
 msgid "Password"
-msgstr ""
+msgstr "סיסמה"
 
 #: vanilla_first_setup/gtk/default-user.ui:63
 msgid "Confirm Password"
-msgstr ""
+msgstr "אישור סיסמה"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
 msgid "Welcome!"
-msgstr "ברוכים הבאים!"
+msgstr "ברוך הבא!"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
@@ -152,7 +149,7 @@ msgstr "מציג מידע"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "נגמר!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 #, fuzzy
@@ -162,7 +159,7 @@ msgstr "אתחל את המערכת על מנת שתוכל להנות מחווי�
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "לאפשר"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 #, fuzzy
@@ -182,7 +179,7 @@ msgstr "מתקין..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console Output"
-msgstr ""
+msgstr "הצג פלט מסוף"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
@@ -194,120 +191,128 @@ msgstr "קרא עוד"
 
 #: vanilla_first_setup/gtk/window.ui:36
 msgid "Back"
-msgstr ""
+msgstr "חזור"
 
 #: vanilla_first_setup/gtk/wireless-row.ui:33
 #: vanilla_first_setup/defaults/network.py:373
 msgid "Connected"
-msgstr ""
+msgstr "מחובר"
 
 #: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
-msgstr ""
+msgstr "אין חיבור אינטרנט!"
 
 #: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
-msgstr ""
+msgstr "ההגדרה הראשונה דורשת חיבור אינטרנט פעיל"
 
 #: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
-msgstr "אנא המתן עד שבדיקת החיבור תסתיים."
+msgstr "אנא המתן עד לסיום בדיקת החיבור."
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
-msgstr ""
+msgstr "רשת לא בטוחה (WEP)"
 
 #: vanilla_first_setup/defaults/network.py:39
 msgid "Secure network (WPA)"
-msgstr ""
+msgstr "רשת מאובטחת (WPA)"
 
 #: vanilla_first_setup/defaults/network.py:40
 msgid "Secure network (WPA2)"
-msgstr ""
+msgstr "רשת מאובטחת (WPA2)"
 
 #: vanilla_first_setup/defaults/network.py:41
+#, fuzzy
 msgid "Secure network (WPA3)"
-msgstr ""
+msgstr "רשת מאובטחת (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:376
+#, fuzzy
 msgid "Authentication required"
-msgstr ""
+msgstr "אישור נדרש"
 
 #: vanilla_first_setup/defaults/network.py:384
+#, fuzzy
 msgid "Connecting"
-msgstr ""
+msgstr "חיבור"
 
 #: vanilla_first_setup/defaults/network.py:386
+#, fuzzy
 msgid "Disconnected"
-msgstr ""
+msgstr "מחובר"
 
 #: vanilla_first_setup/defaults/network.py:388
+#, fuzzy
 msgid "Disconnecting"
-msgstr ""
+msgstr "חיבור"
 
 #: vanilla_first_setup/defaults/network.py:390
+#, fuzzy
 msgid "Connection Failed"
-msgstr ""
+msgstr "הקשר נכשל"
 
 #: vanilla_first_setup/defaults/network.py:392
+#, fuzzy
 msgid "Status Unknown"
-msgstr ""
+msgstr "סטטוס לא ידוע"
 
 #: vanilla_first_setup/defaults/network.py:394
 msgid "Unmanaged"
-msgstr ""
+msgstr "לא"
 
 #: vanilla_first_setup/defaults/network.py:396
+#, fuzzy
 msgid "Unavailable"
-msgstr ""
+msgstr "בלתי זמין"
 
 #: vanilla_first_setup/defaults/network.py:398
 msgid "Unknown"
-msgstr ""
+msgstr "לא ידוע"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
-msgstr ""
+msgstr "כבל ללא כבל"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
-msgstr ""
+msgstr "אנא בחר באפשרות אחת לפחות."
 
 #: vanilla_first_setup/views/done.py:55
 msgid "Restart your device to enjoy your {} experience."
-msgstr ""
+msgstr "הפעל מחדש את המכשיר כדי ליהנות מחוויית {} שלך."
 
 #: vanilla_first_setup/views/done.py:77
 msgid "Something went wrong"
-msgstr ""
+msgstr "משהו השתבש"
 
 #: vanilla_first_setup/views/done.py:79
 msgid "Please contact the distribution developers."
-msgstr ""
+msgstr "נא ליצור קשר עם מפתחי ההפצה."
 
 #: vanilla_first_setup/main.py:62
 msgid "Run a post script"
-msgstr ""
+msgstr "הפעל סקריפט פוסט"
 
 #: vanilla_first_setup/main.py:70
 msgid "Run as a new user"
-msgstr ""
+msgstr "הפעל כמשתמש חדש"
 
 #: vanilla_first_setup/window.py:70
 msgid "Done!"
-msgstr ""
+msgstr "בוצע!"
 
 #: vanilla_first_setup/window.py:71
 msgid "Your device is ready to use."
-msgstr ""
+msgstr "המכשיר שלך מוכן לשימוש."
 
 #: vanilla_first_setup/window.py:72
 msgid "Error!"
-msgstr ""
+msgstr "שְׁגִיאָה!"
 
 #: vanilla_first_setup/window.py:73
 msgid "Something went wrong."
-msgstr ""
+msgstr "משהו השתבש."
 
 #~ msgid "Device Details"
 #~ msgstr "פרטי מערכת"
