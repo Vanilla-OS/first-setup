@@ -296,6 +296,11 @@
                             "flatpak": true
                         },
                         {
+                            "name": "Vivaldi",
+                            "icon": "com.vivaldi.Vivaldi",
+                            "flatpak": true
+                        },
+                        {
                             "name": "Web",
                             "icon": "org.gnome.Epiphany",
                             "flatpak": true
