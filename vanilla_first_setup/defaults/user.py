@@ -34,6 +34,7 @@ class VanillaDefaultUser(Adw.Bin):
     fullname_filled = False
     username = ""
     username_filled = False
+    username_set = False
 
     existing_users = []
 
@@ -86,11 +87,28 @@ class VanillaDefaultUser(Adw.Bin):
             self.fullname_entry.set_position(-1)
             _fullname = self.fullname_entry.get_text()
 
+        if not self.username_set:
+            self.username_entry.set_text(self.generate_username(_fullname))
+
         self.fullname_filled = True
         self.__verify_continue()
         self.fullname = _fullname
 
+    def generate_username(self, string, *args):
+        result = ""
+        if string != "":
+            string = string.split()
+            first_word = string[0]
+            result = first_word
+
+            for word in string:
+                if not word == first_word:
+                    result = result + word[0]
+
+        return result.lower()
+
     def __on_username_entry_changed(self, *args):
+        _fullname = self.fullname_entry.get_text()
         _input = self.username_entry.get_text()
         _status = True
 
@@ -100,6 +118,12 @@ class VanillaDefaultUser(Adw.Bin):
             self.username_entry.set_position(-1)
             _input = self.username_entry.get_text()
 
+        # is not fullname autocomplete
+        if _input != self.generate_username(_fullname):
+            self.username_set == True
+        else:
+            self.username_set == False
+
         # cannot contain special characters
         if re.search(r"[^a-z0-9_-]", _input):
             _status = False
@@ -108,7 +132,7 @@ class VanillaDefaultUser(Adw.Bin):
             )
 
         # cannot be empty
-        elif not _input:
+        elif not _input and self.username_set:
             _status = False
             self.__window.toast("Username cannot be empty. Please type a username.")
 
