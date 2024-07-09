@@ -1,0 +1,295 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the vanilla-first-setup package.
+# Niila Magga <niila@runbox.com>, 2024.
+msgid ""
+msgstr ""
+"Project-Id-Version: vanilla-first-setup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-18 16:40+0530\n"
+"PO-Revision-Date: 2024-07-03 21:12+0000\n"
+"Last-Translator: Niila Magga <niila@runbox.com>\n"
+"Language-Team: Finnish <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/fi/>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.7-dev\n"
+
+#: data/org.vanillaos.FirstSetup.desktop.in:3
+msgid "Vanilla OS First Setup"
+msgstr "Vanilla OS ensiasennus"
+
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:7
+msgid "Tweak your Vanilla OS installation."
+msgstr "Tee Vanilla OS -asennuksestasi mieleisesi."
+
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:10
+msgid "No description"
+msgstr "Ei kuvausta"
+
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:26
+msgid "First release"
+msgstr "Ensimmäinen julkaisu"
+
+#: vanilla_first_setup/gtk/default-conn-check.ui:12
+#: vanilla_first_setup/defaults/conn_check.py:114
+msgid "Checking Connection…"
+msgstr "Tarkistetaan yhteyttä…"
+
+#: vanilla_first_setup/gtk/default-conn-check.ui:13
+msgid "Please wait until the connection check is done"
+msgstr "Ole hyvä ja odota kunnes yhteyden tarkistus on valmis"
+
+#: vanilla_first_setup/gtk/default-hostname.ui:17
+#: vanilla_first_setup/gtk/default-network.ui:95
+#: vanilla_first_setup/gtk/default-theme.ui:18
+#: vanilla_first_setup/gtk/default-user.ui:17
+#: vanilla_first_setup/gtk/layout-applications.ui:17
+msgid "Next"
+msgstr "Seuraava"
+
+#: vanilla_first_setup/gtk/default-hostname.ui:27
+#: vanilla_first_setup/gtk/default-hostname.ui:35
+msgid "Device Name"
+msgstr "Laitteen nimi"
+
+#: vanilla_first_setup/gtk/default-hostname.ui:28
+msgid "Provide your device name"
+msgstr "Määritä laitteen nimi"
+
+#: vanilla_first_setup/gtk/default-network.ui:18
+msgid "Internet"
+msgstr "Internet"
+
+#: vanilla_first_setup/gtk/default-network.ui:19
+msgid ""
+"An active internet connection is required to download your favorite apps and "
+"to keep your system up-to-date"
+msgstr ""
+"Toimivaa internet-yhteyttä tarvitaan suosikkisovellustesi lataamiseen ja "
+"järjestelmän ajan tasalla pitämiseen."
+
+#: vanilla_first_setup/gtk/default-network.ui:29
+msgid "Wired"
+msgstr "Langallinen yhteys"
+
+#: vanilla_first_setup/gtk/default-network.ui:34
+msgid "Wireless Networks"
+msgstr "Langattomat verkot"
+
+#: vanilla_first_setup/gtk/default-network.ui:39
+msgid "Advanced"
+msgstr "Lisäasetukset"
+
+#: vanilla_first_setup/gtk/default-network.ui:42
+msgid "Connect to Hidden Network..."
+msgstr "Yhdistä piilotettuun verkkoon…"
+
+#: vanilla_first_setup/gtk/default-network.ui:69
+msgid "Open Proxy Settings..."
+msgstr "Avaa välityspalvelimen asetukset…"
+
+#: vanilla_first_setup/gtk/default-theme.ui:27
+msgid "Color Scheme"
+msgstr "Ulkoasu"
+
+#: vanilla_first_setup/gtk/default-theme.ui:28
+msgid "Choose a color scheme for your system"
+msgstr "Valitse järjestelmäsi ulkoasu"
+
+#: vanilla_first_setup/gtk/default-theme.ui:92
+msgid "Default"
+msgstr "Oletus"
+
+#: vanilla_first_setup/gtk/default-theme.ui:139
+msgid "Dark"
+msgstr "Tumma"
+
+#: vanilla_first_setup/gtk/default-user.ui:37
+msgid "Create User"
+msgstr "Luo käyttäjätili"
+
+#: vanilla_first_setup/gtk/default-user.ui:38
+msgid "Provide details for your user account"
+msgstr "Määritä käyttäjätilisi yksityiskohdat"
+
+#: vanilla_first_setup/gtk/default-user.ui:45
+msgid "Name"
+msgstr "Nimi"
+
+#: vanilla_first_setup/gtk/default-user.ui:51
+msgid "Username"
+msgstr "Käyttäjänimi"
+
+#: vanilla_first_setup/gtk/default-user.ui:57
+msgid "Password"
+msgstr "Salasana"
+
+#: vanilla_first_setup/gtk/default-user.ui:63
+msgid "Confirm Password"
+msgstr "Vahvista salasana"
+
+#: vanilla_first_setup/gtk/default-welcome.ui:20
+#: vanilla_first_setup/gtk/default-welcome.ui:29
+msgid "Welcome!"
+msgstr "Tervetuloa!"
+
+#: vanilla_first_setup/gtk/dialog.ui:6
+msgid "Showing Information"
+msgstr "Näytetään tietoja"
+
+#: vanilla_first_setup/gtk/done.ui:12
+msgid "Finished!"
+msgstr "Valmista!"
+
+#: vanilla_first_setup/gtk/done.ui:13
+msgid "Restart your device to enjoy your Vanilla OS experience"
+msgstr "Käynnistä laitteesi uudelleen nauttiaksesi Vanilla OS -kokemuksesta"
+
+#: vanilla_first_setup/gtk/layout-yes-no.ui:36
+msgid "Enable"
+msgstr "Aktivoi"
+
+#: vanilla_first_setup/gtk/post-script.ui:11
+msgid "Finalizing..."
+msgstr "Viimeistellään…"
+
+#: vanilla_first_setup/gtk/post-script.ui:12
+msgid "Your device will be ready soon"
+msgstr "Laitteesi on pian valmis"
+
+#: vanilla_first_setup/gtk/progress.ui:70
+msgid "Installing..."
+msgstr "Asennetaan…"
+
+#: vanilla_first_setup/gtk/progress.ui:91
+msgid "Show Console Output"
+msgstr "Näytä komentorivin tiedot"
+
+#: vanilla_first_setup/gtk/progress.ui:106
+msgid "Show Slideshow"
+msgstr "Näytä diaesitys"
+
+#: vanilla_first_setup/gtk/tour.ui:27
+msgid "Read More"
+msgstr "Lue lisää"
+
+#: vanilla_first_setup/gtk/window.ui:36
+msgid "Back"
+msgstr "Takaisin"
+
+#: vanilla_first_setup/gtk/wireless-row.ui:33
+#: vanilla_first_setup/defaults/network.py:373
+msgid "Connected"
+msgstr "Yhteys muodostettu"
+
+#: vanilla_first_setup/defaults/conn_check.py:103
+msgid "No Internet Connection!"
+msgstr "Ei internet-yhteyttä!"
+
+#: vanilla_first_setup/defaults/conn_check.py:105
+msgid "First Setup requires an active internet connection"
+msgstr "Ensiasennusta varten tarvitset toimivan internet-yhteyden"
+
+#: vanilla_first_setup/defaults/conn_check.py:116
+msgid "Please wait until the connection check is done."
+msgstr "Ole hyvä ja odota kunnes yhteyden tarkistus on valmis."
+
+#: vanilla_first_setup/defaults/network.py:38
+msgid "Insecure network (WEP)"
+msgstr "Heikon suojauksen verkko (WEP)"
+
+#: vanilla_first_setup/defaults/network.py:39
+msgid "Secure network (WPA)"
+msgstr "Suojattu verkko (WPA)"
+
+#: vanilla_first_setup/defaults/network.py:40
+msgid "Secure network (WPA2)"
+msgstr "Suojattu verkko (WPA2)"
+
+#: vanilla_first_setup/defaults/network.py:41
+msgid "Secure network (WPA3)"
+msgstr "Suojattu verkko  (WPA3)"
+
+#: vanilla_first_setup/defaults/network.py:376
+msgid "Authentication required"
+msgstr "Todentaminen vaaditaan"
+
+#: vanilla_first_setup/defaults/network.py:384
+msgid "Connecting"
+msgstr "Muodostetaan yhteyttä"
+
+#: vanilla_first_setup/defaults/network.py:386
+msgid "Disconnected"
+msgstr "Yhteys katkaistu"
+
+#: vanilla_first_setup/defaults/network.py:388
+msgid "Disconnecting"
+msgstr "Katkaistaan yhteyttä"
+
+#: vanilla_first_setup/defaults/network.py:390
+msgid "Connection Failed"
+msgstr "Yhteyden muodostus epäonnistui"
+
+#: vanilla_first_setup/defaults/network.py:392
+msgid "Status Unknown"
+msgstr "Yhteyden tila ei tiedossa"
+
+#: vanilla_first_setup/defaults/network.py:394
+msgid "Unmanaged"
+msgstr "Hallinnoimaton"
+
+#: vanilla_first_setup/defaults/network.py:396
+msgid "Unavailable"
+msgstr "Ei saatavilla"
+
+#: vanilla_first_setup/defaults/network.py:398
+msgid "Unknown"
+msgstr "Tuntematon"
+
+#: vanilla_first_setup/defaults/network.py:412
+msgid "Cable Unplugged"
+msgstr "Kaapeli irroitettu"
+
+#: vanilla_first_setup/layouts/preferences.py:75
+msgid "Please select at least one option."
+msgstr "Valitse vähintään yksi vaihtoehto"
+
+#: vanilla_first_setup/views/done.py:55
+msgid "Restart your device to enjoy your {} experience."
+msgstr "Käynnistä laitteesi uudelleen nauttiaksesi {} -kokemuksesta."
+
+#: vanilla_first_setup/views/done.py:77
+msgid "Something went wrong"
+msgstr "Jokin meni vikaan"
+
+#: vanilla_first_setup/views/done.py:79
+msgid "Please contact the distribution developers."
+msgstr "Ota yhteyttä Vanilla OS:n kehittäjiin."
+
+#: vanilla_first_setup/main.py:62
+msgid "Run a post script"
+msgstr "Suorita jälkikäsittelyskripti"
+
+#: vanilla_first_setup/main.py:70
+msgid "Run as a new user"
+msgstr "Suorita uutena käyttäjänä"
+
+#: vanilla_first_setup/window.py:70
+msgid "Done!"
+msgstr "Valmista!"
+
+#: vanilla_first_setup/window.py:71
+msgid "Your device is ready to use."
+msgstr "Laitteesi on valmis käytettäväksi."
+
+#: vanilla_first_setup/window.py:72
+msgid "Error!"
+msgstr "Virhe!"
+
+#: vanilla_first_setup/window.py:73
+msgid "Something went wrong."
+msgstr "Jokin meni vikaan."
