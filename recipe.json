@@ -278,32 +278,38 @@
                         {
                             "name": "Google Chrome",
                             "icon": "com.google.Chrome",
-                            "flatpak": true
+                            "flatpak": true,
+                            "active": false
                         },
                         {
                             "name": "Chromium",
                             "icon": "org.chromium.Chromium",
-                            "flatpak": true
+                            "flatpak": true,
+                            "active": false
                         },
                         {
                             "name": "Brave Browser",
                             "icon": "com.brave.Browser",
-                            "flatpak": true
+                            "flatpak": true,
+                            "active": false
                         },
                         {
                             "name": "Microsoft Edge",
                             "icon": "com.microsoft.Edge",
-                            "flatpak": true
+                            "flatpak": true,
+                            "active": false
                         },
                         {
                             "name": "Vivaldi",
                             "icon": "com.vivaldi.Vivaldi",
-                            "flatpak": true
+                            "flatpak": true,
+                            "active": false
                         },
                         {
                             "name": "Web",
                             "icon": "org.gnome.Epiphany",
-                            "flatpak": true
+                            "flatpak": true,
+                            "active": false
                         }
                     ]
                 }
