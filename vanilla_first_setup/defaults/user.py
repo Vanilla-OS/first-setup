@@ -158,7 +158,7 @@ class VanillaDefaultUser(Adw.Bin):
 
         username = self.fullname_entry.get_text()
 
-        if re.findall('[^ ]+', username) == []: # i.e. just spaces and nothing else (causes the app to crah)
+        if re.findall('[^ ]+', username) == []: # i.e. just spaces and nothing else (causes the app to crash)
             return
 
         username = re.sub(r' ', '_', username)
