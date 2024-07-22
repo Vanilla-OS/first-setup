@@ -50,6 +50,10 @@ class VanillaDefaultUser(Adw.Bin):
         self.fullname_entry.connect("changed", self.__on_fullname_entry_changed)
         self.username_entry.connect("changed", self.__on_username_entry_changed)
 
+        # some useful variables
+        self.automatic_username = ""
+        self.username_just_changed = False
+
         # get existing users
         self.existing_users = subprocess.Popen("getent passwd | cut -d: -f1", shell=True,
                                           stdout=subprocess.PIPE).stdout.read().decode().splitlines()
@@ -86,6 +90,8 @@ class VanillaDefaultUser(Adw.Bin):
             self.fullname_entry.set_position(-1)
             _fullname = self.fullname_entry.get_text()
 
+        self.__generate_username_from_fullname()
+
         self.fullname_filled = True
         self.__verify_continue()
         self.fullname = _fullname
@@ -110,6 +116,9 @@ class VanillaDefaultUser(Adw.Bin):
         # cannot be empty
         elif not _input:
             _status = False
+            if self.username_just_changed:
+                self.username_just_changed = False
+                return
             self.__window.toast("Username cannot be empty. Please type a username.")
 
         # cannot be root
@@ -142,6 +151,29 @@ class VanillaDefaultUser(Adw.Bin):
             self.username_filled = True
             self.__verify_continue()
             self.username = _input
+
+    def __generate_username_from_fullname(self):
+        if self.username_entry.get_text() != '' and self.username_entry.get_text() != self.automatic_username:
+            return
+
+        username = self.fullname_entry.get_text()
+
+        if re.findall('[^ ]+', username) == []: # i.e. just spaces and nothing else (causes the app to crah)
+            return
+
+        username = re.sub(r' ', '_', username)
+        username = re.sub(r'\W+', '', username)
+        username = username.lower()
+
+        current_position = 0
+        while '_' in username:
+            underscore_position = username.find('_')
+            username = username[:(current_position + 1)] + username[(underscore_position + 1):]
+            current_position += 1
+
+        self.username_just_changed = True
+        self.automatic_username = username
+        self.username_entry.set_text(username)
 
     def __verify_continue(self):
         self.btn_next.set_sensitive(
