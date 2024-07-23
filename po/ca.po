@@ -5,13 +5,14 @@
 #
 # jolupa <jolupameister@gmail.com>, 2023.
 # fobinasa i <starx700@gmail.com>, 2024.
+# Christian P <christian00cp@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-06-01 21:52+0000\n"
-"Last-Translator: fobinasa i <starx700@gmail.com>\n"
+"PO-Revision-Date: 2024-07-11 07:09+0000\n"
+"Last-Translator: Christian P <christian00cp@gmail.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ca/>\n"
 "Language: ca\n"
@@ -19,11 +20,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr "Primera configuració de Vanilla OS"
+msgstr "Configuració inicial de Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
@@ -60,14 +61,12 @@ msgid "Device Name"
 msgstr "Nom del dispositiu"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "Proporcioneu detalls sobre el vostre dispositiu"
+msgstr "Poseu un nom al vostre dispositiu"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
@@ -171,8 +170,6 @@ msgid "Installing..."
 msgstr "Instal·lant..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
-#, fuzzy
-#| msgid "Show Console output"
 msgid "Show Console Output"
 msgstr "Mostra la sortida de Consola"
 
@@ -231,7 +228,7 @@ msgstr "Conectant"
 
 #: vanilla_first_setup/defaults/network.py:386
 msgid "Disconnected"
-msgstr "Desconectat"
+msgstr "Desconnectat"
 
 #: vanilla_first_setup/defaults/network.py:388
 msgid "Disconnecting"
