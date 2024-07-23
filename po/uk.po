@@ -6,13 +6,14 @@
 # Dan <jonweblin2205@protonmail.com>, 2023.
 # andrij <Kalenskuja@gmail.com>, 2024.
 # Ian Kazantzidis <saddam.h1488@proton.me>, 2024.
+# "K.B.Dharun Krishna" <kbdharunkrishna@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-07-22 20:30+0000\n"
-"Last-Translator: Ian Kazantzidis <saddam.h1488@proton.me>\n"
+"PO-Revision-Date: 2024-07-23 11:45+0000\n"
+"Last-Translator: \"K.B.Dharun Krishna\" <kbdharunkrishna@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/uk/>\n"
 "Language: uk\n"
@@ -33,9 +34,7 @@ msgstr "Оформіть комфортний їбочет."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr ""
-"Без опису, поширеного композиційно-стилістичного способу викладу матеріалу в "
-"художньому, передусім епічному творі"
+msgstr "Без опису"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
