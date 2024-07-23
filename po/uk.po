@@ -5,13 +5,14 @@
 # Dan <denqwerta@gmail.com>, 2023.
 # Dan <jonweblin2205@protonmail.com>, 2023.
 # andrij <Kalenskuja@gmail.com>, 2024.
+# Ian Kazantzidis <saddam.h1488@proton.me>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-01-31 16:42+0000\n"
-"Last-Translator: andrij <Kalenskuja@gmail.com>\n"
+"PO-Revision-Date: 2024-07-22 20:30+0000\n"
+"Last-Translator: Ian Kazantzidis <saddam.h1488@proton.me>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/uk/>\n"
 "Language: uk\n"
@@ -20,32 +21,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr "Перше налаштування Vanilla OS"
+msgstr "ПідриллаУстрій ваш перший досвід в гомосексуальних стосунках"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
-msgstr "Налаштуйте встановлення Vanilla OS."
+msgstr "Оформіть комфортний їбочет."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr "Без опису"
+msgstr ""
+"Без опису, поширеного композиційно-стилістичного способу викладу матеріалу в "
+"художньому, передусім епічному творі"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr "Перший реліз"
+msgstr "Перший висер"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
-msgstr "Перевірка з'єднання…"
+msgstr "Перевірка злучення…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 msgid "Please wait until the connection check is done"
-msgstr "Будь ласка, зачекайте, поки завершиться перевірка з'єднання"
+msgstr "Будь ласка, зачекайте поки завершиться перевірка з'єднання"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -53,250 +56,256 @@ msgstr "Будь ласка, зачекайте, поки завершиться
 #: vanilla_first_setup/gtk/default-user.ui:17
 #: vanilla_first_setup/gtk/layout-applications.ui:17
 msgid "Next"
-msgstr "Далі"
+msgstr "До біса"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:27
 #: vanilla_first_setup/gtk/default-hostname.ui:35
 msgid "Device Name"
-msgstr "Назва пристрою"
+msgstr "Назвисько апарата"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
 msgid "Provide your device name"
-msgstr "Вкажіть назву вашого пристрою"
+msgstr "Вкажіть назвисько вашого апарата"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr "Інтернет"
+msgstr "Унтернет"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
-"Потрібне активне з'єднання з Інтернетом, для завантаження ваших улюблених "
-"програм та оновлення системи"
+"Потрібне активне злучення з Унтернетом для завантаження вашої улюбленої "
+"педерастичної порнографії та утримання вашого устрою в правильних умовах"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
-msgstr "Дротовий"
+msgstr "Бездротовий"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
-msgstr "Бездротові мережі"
+msgstr "Дротові Всемережжя"
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
-msgstr "Розширені"
+msgstr "Широкедупло"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
 msgid "Connect to Hidden Network..."
-msgstr "З'єднання з прихованою мережою..."
+msgstr "Злучення з хитроприхованою євреями мережою..."
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr "Відкрити налаштування проксі..."
+msgstr "Ой бля мені хуйово..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:27
 msgid "Color Scheme"
-msgstr "Колірна схема"
+msgstr "Рентген вашої ракової пухлини"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
 msgid "Choose a color scheme for your system"
-msgstr "Виберіть колірну схему для вашої системи"
+msgstr "Оберіть отруту для випробування вашого тіла"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
-msgstr "Стандартна"
+msgstr "Шляпа"
 
 #: vanilla_first_setup/gtk/default-theme.ui:139
 msgid "Dark"
-msgstr "Темна"
+msgstr "Отак, таточку"
 
 #: vanilla_first_setup/gtk/default-user.ui:37
 msgid "Create User"
-msgstr "Створити користувача"
+msgstr "Скасувати"
 
 #: vanilla_first_setup/gtk/default-user.ui:38
 msgid "Provide details for your user account"
-msgstr "Надайте відомості про свій обліковий запис користувача"
+msgstr "Поділитися подробицями вашого інтимного життя"
 
 #: vanilla_first_setup/gtk/default-user.ui:45
 msgid "Name"
-msgstr "Назва"
+msgstr "Пароль"
 
 #: vanilla_first_setup/gtk/default-user.ui:51
 msgid "Username"
-msgstr "Ім'я користувача"
+msgstr "Повторити пароль"
 
 #: vanilla_first_setup/gtk/default-user.ui:57
 msgid "Password"
-msgstr "Пароль"
+msgstr "Ім'я"
 
 #: vanilla_first_setup/gtk/default-user.ui:63
 msgid "Confirm Password"
-msgstr "Підтвердити пароль"
+msgstr "Ім'я користувача"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
 msgid "Welcome!"
-msgstr "Ласкаво просимо!"
+msgstr "Їбати мене в сраку!"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
-msgstr "Відображення інформації"
+msgstr "Показ спідозних геніталій"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr "Завершено!"
+msgstr "Сталася помилка, переустановіть устрій!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr "Перезавантажте свій пристрій, щоб насолодитися роботою з Vanilla OS"
+msgstr ""
+"Будь ласка не вимикайте ваш апарат на протязі тижня для коректної установки "
+"устрою"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr "Увімкнути"
+msgstr "Вимкнути"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing..."
-msgstr "Завершуємо…"
+msgstr "Підведення підсумків життя…"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon"
-msgstr "Ваш пристрій незабаром буде готовий"
+msgstr "Терміново вимкніть ваш апарат"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
-msgstr "Встановлення..."
+msgstr "Проникнення метастаз у мозок..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console Output"
-msgstr "Показати вивід консолі"
+msgstr "Форматувати жорсткий диск"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr "Показ слайдів"
+msgstr "Форматувати жорсткий диск"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
-msgstr "Докладніше"
+msgstr "Читати Мою Боротьбу"
 
 #: vanilla_first_setup/gtk/window.ui:36
 msgid "Back"
-msgstr "Назад"
+msgstr "Далі"
 
 #: vanilla_first_setup/gtk/wireless-row.ui:33
 #: vanilla_first_setup/defaults/network.py:373
 msgid "Connected"
-msgstr "З'єднано"
+msgstr "Розлучено"
 
 #: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
-msgstr "Немає підключення до Інтернету!"
+msgstr "Злучення з унтернетом просто заїбись!"
 
 #: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
-msgstr "Для першого налаштування потрібне активне підключення до Інтернету"
+msgstr "Якщо хочете зостатися в живих, то вам необхідно вимкнути унтернет"
 
 #: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
-msgstr "Будь ласка, зачекайте, поки завершиться перевірка з'єднання."
+msgstr "Вимикай, сука."
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
-msgstr "Небезпечна мережа (WEP)"
+msgstr "Максимально безпечне мережжя (WEP)"
 
 #: vanilla_first_setup/defaults/network.py:39
 msgid "Secure network (WPA)"
-msgstr "Безпечна мережа (WPA)"
+msgstr "Педерастичне мережжя (WPA)"
 
 #: vanilla_first_setup/defaults/network.py:40
 msgid "Secure network (WPA2)"
-msgstr "Безпечна мережа (WPA2)"
+msgstr "Педерастичне мережжя (WPA2)"
 
 #: vanilla_first_setup/defaults/network.py:41
 msgid "Secure network (WPA3)"
-msgstr "Безпечна мережа (WPA3)"
+msgstr "Педерастичне мережжя (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:376
 msgid "Authentication required"
-msgstr "Необхідна авторизація"
+msgstr "Відвідування синагоги обов'язкове"
 
 #: vanilla_first_setup/defaults/network.py:384
 msgid "Connecting"
-msgstr "З'єднання"
+msgstr "Розлучення"
 
 #: vanilla_first_setup/defaults/network.py:386
 msgid "Disconnected"
-msgstr "Від'єднано"
+msgstr "Випроваджено"
 
 #: vanilla_first_setup/defaults/network.py:388
 msgid "Disconnecting"
-msgstr "Від'єднання"
+msgstr "Відцюцюрювання"
 
 #: vanilla_first_setup/defaults/network.py:390
 msgid "Connection Failed"
-msgstr "Не вдалося з'єднатись"
+msgstr "Все братику, прицюцюрив"
 
 #: vanilla_first_setup/defaults/network.py:392
 msgid "Status Unknown"
-msgstr "Статус невідомий"
+msgstr "Хуй його зна"
 
 #: vanilla_first_setup/defaults/network.py:394
 msgid "Unmanaged"
-msgstr "Не керується"
+msgstr "Крах"
 
 #: vanilla_first_setup/defaults/network.py:396
 msgid "Unavailable"
-msgstr "Недоступно"
+msgstr "Непевний"
 
 #: vanilla_first_setup/defaults/network.py:398
 msgid "Unknown"
-msgstr "Невідомо"
+msgstr "Нечуваний"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
-msgstr "Кабель від'єднано"
+msgstr "Все, гаплик!"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
-msgstr "Виберіть принаймні один варіант."
+msgstr "Відправте, ну хоч щось!"
 
 #: vanilla_first_setup/views/done.py:55
 msgid "Restart your device to enjoy your {} experience."
-msgstr "Перезапустіть пристрій, щоб насолоджуватися {}."
+msgstr ""
+"Будь ласка не вимикайте ваш апарат на протязі тижня для справності вашого "
+"апарату."
 
 #: vanilla_first_setup/views/done.py:77
 msgid "Something went wrong"
-msgstr "Щось пішло не так"
+msgstr "Установка пройшла на відмінно. Братику, все заїбись!"
 
 #: vanilla_first_setup/views/done.py:79
 msgid "Please contact the distribution developers."
-msgstr "Будь ласка, зверніться до розробників дистрибутива."
+msgstr "Зв'яжіться з приматами, що висрали це устроєподібне лайно."
 
 #: vanilla_first_setup/main.py:62
 msgid "Run a post script"
-msgstr "Запустити пост-сценарій"
+msgstr "Завершити установку за чечнярськими традиціями"
 
 #: vanilla_first_setup/main.py:70
 msgid "Run as a new user"
-msgstr "Запустити від імені нового користувача"
+msgstr "Вимкнути від імені нового користувача"
 
 #: vanilla_first_setup/window.py:70
 msgid "Done!"
-msgstr "Готово!"
+msgstr "Лихо!"
 
 #: vanilla_first_setup/window.py:71
 msgid "Your device is ready to use."
-msgstr "Ваш пристрій готовий до використання."
+msgstr ""
+"Ваш апарат потребує негайного ремонту, оскільки від нього несе сильним "
+"духманом сцяків"
 
 #: vanilla_first_setup/window.py:72
 msgid "Error!"
-msgstr "Помилка!"
+msgstr "Все так гарно проходить, очманіти!"
 
 #: vanilla_first_setup/window.py:73
 msgid "Something went wrong."
-msgstr "Щось пішло не так."
+msgstr "Так приємно ще ніколи не було."
 
 #~ msgid "Device Details"
 #~ msgstr "Інформація про пристрій"
