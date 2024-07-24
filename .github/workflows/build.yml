@@ -1,38 +1,54 @@
-name: Build release packages
-on:
-  release:
-    types: [published]
-  workflow_dispatch:
-jobs:
-  build-packages:
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v2
+name: Build
 
-      # Misc
-      # --------------------------------------
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/vanilla-os/pico:main
+      volumes:
+        - /proc:/proc
+        - /:/run/host
+      options: --privileged -it
+
+    steps:
+      - uses: actions/checkout@v4
+
       - name: Get the version
         id: get_version
-        run: echo ::set-output name=VERSION::$(cat VERSION)
+        run: echo "{VERSION}={$(cat VERSION)}" >> $GITHUB_OUTPUT
 
-      # Dependencies
-      # --------------------------------------
       - name: Install build dependencies
         run: |
-          sudo apt install -y debhelper python3 gettext build-essential desktop-file-utils ninja-build meson libadwaita-1-dev make
+          apt install -y debhelper python3 gettext build-essential desktop-file-utils ninja-build meson libadwaita-1-dev make libnm-dev libnma-dev libnma-gtk4-dev
 
-      # Deb Build
-      # --------------------------------------
       - name: Build .deb package
-        run: dpkg-buildpackage
+        run: |
+            dpkg-buildpackage
+            mv ../vanilla-first-setup_*.deb .
 
-      # Release packages
-      # --------------------------------------        
-      - uses: "marvinpinto/action-automatic-releases@latest"
+      - name: Calculate and Save Checksums
+        run: |
+          sha256sum vanilla-first-setup_*.deb >> checksums.txt
+
+      - uses: actions/upload-artifact@v4
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          draft: false
-          prerelease: false
-          automatic_release_tag: ${{ steps.get_version.outputs.VERSION }}
-          title: ${{ steps.get_version.outputs.VERSION }}
-          files: ../vanilla-first-setup_*.deb
+          name: first-setup
+          path: |
+              checksums.txt
+              vanilla-first-setup_*.deb
+
+      - uses: softprops/action-gh-release@v2
+        if: github.ref == 'refs/heads/main'
+        with:
+            token: "${{ secrets.GITHUB_TOKEN }}"
+            tag_name: "continuous"
+            prerelease: true
+            name: "Continuous Build"
+            files: |
+              checksums.txt
+              vanilla-first-setup_*.deb
