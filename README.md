@@ -12,7 +12,6 @@
     <img src="data/screenshot-1.png">
 </div>
 
-
 ## Build
 
 ### Dependencies
