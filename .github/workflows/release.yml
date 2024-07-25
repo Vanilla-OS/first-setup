@@ -18,29 +18,31 @@ jobs:
       contents: read
 
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Get the version
-        id: get_version
-        run: echo ::set-output name=VERSION::$(cat VERSION)
-
-      - name: Install build dependencies
-        run: |
-          apt install -y debhelper python3 gettext build-essential desktop-file-utils ninja-build meson libadwaita-1-dev make libnm-dev libnma-dev libnma-gtk4-dev
-
-      - name: Build .deb package
-        run: dpkg-buildpackage
-
-      - name: Calculate and Save Checksums
-        run: |
-          sha256sum vanilla-first-setup_2.2.0_amd64.deb >> checksums.txt
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: first-setup
-          path: |
-              checksums.txt
-              vanilla-first-setup_2.2.0_amd64.deb
+        - uses: actions/checkout@v4
+  
+        - name: Get the version
+          id: get_version
+          run: echo "{VERSION}={$(cat VERSION)}" >> $GITHUB_OUTPUT
+  
+        - name: Install build dependencies
+          run: |
+            apt install -y debhelper python3 gettext build-essential desktop-file-utils ninja-build meson libadwaita-1-dev make libnm-dev libnma-dev libnma-gtk4-dev
+  
+        - name: Build .deb package
+          run: |
+              dpkg-buildpackage
+              mv ../vanilla-first-setup_*.deb .
+  
+        - name: Calculate and Save Checksums
+          run: |
+            sha256sum vanilla-first-setup_*.deb >> checksums.txt
+  
+        - uses: actions/upload-artifact@v4
+          with:
+            name: first-setup
+            path: |
+                checksums.txt
+                vanilla-first-setup_*.deb
 
   release:
     runs-on: ubuntu-latest
