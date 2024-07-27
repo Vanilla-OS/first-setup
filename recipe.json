@@ -306,7 +306,7 @@
                             "active": false
                         },
                         {
-                            "name": "Web",
+                            "name": "GNOME Web",
                             "icon": "org.gnome.Epiphany",
                             "flatpak": true,
                             "active": false
