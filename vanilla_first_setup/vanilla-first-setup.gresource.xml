@@ -76,5 +76,6 @@
     <file>assets/bundle-app-icons/org.chromium.Chromium.png</file>
     <file>assets/bundle-app-icons/org.mozilla.firefox.png</file>
     <file>assets/bundle-app-icons/com.microsoft.Edge.png</file>
+    <file>assets/bundle-app-icons/com.vivaldi.Vivaldi.png</file>
   </gresource>
 </gresources>
