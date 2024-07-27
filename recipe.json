@@ -463,7 +463,7 @@
                     ]
                 },
                 {
-                    "if": "Web",
+                    "if": "GNOME Web",
                     "type": "command",
                     "commands": [
                         "!nextBoot !noRoot flatpak install -y org.gnome.Epiphany"
