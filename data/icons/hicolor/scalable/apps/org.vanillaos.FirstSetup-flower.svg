@@ -1,6 +1,5 @@
 <svg width="330" height="307" viewBox="0 0 330 307" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_4_44)">
-<g filter="url(#filter0_d_4_44)">
 <path d="M163.692 3.4235C125.441 22.2975 71.6512 83.0745 162.492 175.193C164.787 159.341 168.412 140.897 172.406 122.605C182.425 76.7219 194.766 31.8027 194.267 31.1846C186.669 21.759 176.622 12.4492 163.692 3.4235Z" fill="url(#paint0_linear_4_44)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M194.268 31.1849C194.654 31.6646 195.409 32.6248 195.409 32.6248C195.409 32.6248 174.186 144.005 162.492 175.193C159.496 171.507 155.071 166.444 150.713 157.944C144.585 145.992 133.712 113.954 144.918 80.5059C155.601 48.6185 176.285 36.0775 194.268 31.1849Z" fill="#FFFB64"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M195.408 32.6244C238.351 87.7585 198.466 146.534 162.492 175.193C146.887 158.49 133.104 120.881 146.628 81.1437C157.465 49.3031 177.593 37.9348 195.408 32.6244Z" fill="url(#paint1_linear_4_44)"/>
@@ -17,18 +16,7 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M42.8512 88.9732C43.4449 88.808 44.6254 88.4957 44.6254 88.4957C44.6254 88.4957 138.488 152.102 162.493 175.193C157.922 176.484 151.52 178.542 141.989 179.176C128.588 180.068 94.8633 177.361 68.5898 153.823C43.5425 131.382 40.2206 107.423 42.8512 88.9732Z" fill="#FFFB64"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M44.6226 88.4956C112.257 70.9047 150.425 130.81 162.49 175.193C140.972 182.905 100.98 180.663 69.8505 152.505C44.9071 129.942 42.4414 106.958 44.6226 88.4956Z" fill="url(#paint9_linear_4_44)"/>
 </g>
-</g>
 <defs>
-<filter id="filter0_d_4_44" x="-88.7527" y="-90.5765" width="503.479" height="489.914" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset/>
-<feGaussianBlur stdDeviation="47"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_44"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_44" result="shape"/>
-</filter>
 <linearGradient id="paint0_linear_4_44" x1="163.896" y1="3.42495" x2="162.697" y2="175.194" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FFFB64"/>
 <stop offset="1" stop-color="#FFBF48"/>
