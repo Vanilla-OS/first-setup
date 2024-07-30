@@ -15,6 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
+import getpass
 import gi
 
 gi.require_version("Gtk", "4.0")
@@ -56,8 +57,24 @@ class FirstSetupApplication(Adw.Application):
 
         # disable the lock screen and password for the default user
         if self.user == "vanilla":
-            subprocess.run(["/usr/bin/gsettings", "set", "org.gnome.desktop.lockdown", "disable-lock-screen", "true"])
-            subprocess.run(["/usr/bin/gsettings", "set", "org.gnome.desktop.screensaver", "lock-enabled", "false"])
+            subprocess.run(
+                [
+                    "/usr/bin/gsettings",
+                    "set",
+                    "org.gnome.desktop.lockdown",
+                    "disable-lock-screen",
+                    "true",
+                ]
+            )
+            subprocess.run(
+                [
+                    "/usr/bin/gsettings",
+                    "set",
+                    "org.gnome.desktop.screensaver",
+                    "lock-enabled",
+                    "false",
+                ]
+            )
 
     def __register_arguments(self):
         """Register the command line arguments."""
@@ -87,9 +104,19 @@ class FirstSetupApplication(Adw.Application):
             self.post_script = options.lookup_value("run-post-script").get_string()
 
         if options.contains("new-user"):
-            logger.info("Running as a new user")
             self.user = None
             self.new_user = True
+
+            # FIXME: this is a workaround to avoid running as a new user when the user is not vanilla
+            # this should simply never happen. Anyway we are already working on a new backend for the
+            # first setup, so this is just a temporary fix
+            if getpass.getuser() != "vanilla":
+                self.new_user = False
+                logger.warning(
+                    "Asked to run as a new user, but the current user is not vanilla, meaning a new user was already created, turning off the new user mode"
+                )
+            else:
+                logger.info("Running as a new user")
 
         self.activate()
 

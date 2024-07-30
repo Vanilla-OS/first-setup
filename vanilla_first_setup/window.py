@@ -18,6 +18,7 @@ from gettext import gettext as _
 from gi.repository import Gtk, GObject, Adw
 
 import contextlib
+import getpass
 
 from vanilla_first_setup.utils.builder import Builder
 from vanilla_first_setup.utils.parser import Parser
@@ -55,6 +56,10 @@ class VanillaWindow(Adw.ApplicationWindow):
         # None = no managed result
         # True/False = managed result
         self.__last_result = None
+
+        self.__user = user
+        if user is None:
+            self.__user = getpass.getuser()
 
         # if a post_script is provided, we are in the post setup
         # so we can skip the builder and just run the post script

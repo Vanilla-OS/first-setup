@@ -96,9 +96,7 @@ class Builder:
                             output.decode("utf-8") == ""
                             or output.decode("utf-8") == "1"
                         ):
-                            logger.info(
-                                "Step {key} skipped due to display-conditions"
-                            )
+                            logger.info("Step {key} skipped due to display-conditions")
                             break
                     except subprocess.CalledProcessError:
                         logger.info(f"Step {key} skipped due to display-conditions")
@@ -109,8 +107,8 @@ class Builder:
                 if not _condition_met:
                     continue
 
-                if step.get("new-user-only") and not self.__new_user:
-                    continue
+            if step.get("new-user-only") and not self.__new_user:
+                continue
 
             _status = not step.get("is-advanced", False)
             _protected = step.get("protected", False)
