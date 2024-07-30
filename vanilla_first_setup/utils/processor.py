@@ -17,6 +17,7 @@
 import os
 import shutil
 import subprocess
+import getpass
 import logging
 
 
@@ -54,11 +55,14 @@ class Processor:
                 command = command.replace("!noRoot", "")
                 command = command.replace('"', '\\"')
                 command = command.replace("'", "\\'")
-                command = "systemd-run --user --machine=\"$REAL_USER@.host\" -P -q /usr/bin/bash -c \"%s\"" % command
+                command = (
+                    'systemd-run --user --machine="$REAL_USER@.host" -P -q /usr/bin/bash -c "%s"'
+                    % command
+                )
 
             next_boot.append(command)
 
-        subprocess.run([pkexec_bin, "/usr/bin/vanilla-first-setup-prepare-files"])
+        subprocess.run([pkexec_bin, "/usr/bin/vanilla-first-setup-prepare-files", getpass.getuser()])  # type: ignore
 
         # generating the commannds and writing them to a file to run them all at once
         with open(commands_script_path, "w") as f:
@@ -113,7 +117,10 @@ class Processor:
                     command = command.replace("!noRoot", "")
                     command = command.replace('"', '\\"')
                     command = command.replace("'", "\\'")
-                    command = "systemd-run --user --machine=\"$USER@.host\" -P -q /usr/bin/bash -c \"%s\"" % command
+                    command = (
+                        'systemd-run --user --machine="$USER@.host" -P -q /usr/bin/bash -c "%s"'
+                        % command
+                    )
 
                 # outRun bang is used to run a command outside of the main
                 # shell script.
