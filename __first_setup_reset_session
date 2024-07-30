@@ -1,43 +1,14 @@
 #!/bin/bash
 
-LOGIN_USERS=$(getent passwd | awk -F ':' "\$3 >= $(grep UID_MIN /etc/login.defs | cut -d " " -f 2) { print \$1 }" | uniq | sed '/^nobody$/d')
-if [ "$(echo "${LOGIN_USERS}" | wc -l)" -gt 1 ]; then
-    echo -e '[User]\nLanguage=\nXSession=gnome\nSystemAccount=true' > /var/lib/AccountsService/users/vanilla
-fi
-
+echo -e '[User]\nLanguage=\nXSession=gnome\nSystemAccount=true' > /var/lib/AccountsService/users/vanilla
 echo '[daemon]' > /etc/gdm3/daemon.conf
 
-export highest_uid=$(grep -E "^UID_MIN" /etc/login.defs | awk '{$1=$1};1' | cut -d$' ' -f2)
-export REAL_USER=""
+REAL_USER=""
 
-# Check if the file /etc/vos-user-1000-busy exists
-if [ -f /etc/vos-user-1000-busy ]; then
-    # File exists, find the user with the highest UID
-    while read entry; do
-        uid=$(echo "$entry" | awk 'BEGIN {FS=":"}; {print $3}')
-        name=$(echo "$entry" | awk 'BEGIN {FS=":"}; {print $1}')
-        if [[ $((uid)) -gt $((highest_uid)) && $name != "nobody" ]]; then
-            export highest_uid=$uid
-            export REAL_USER=$name
-        fi
-    done < <(getent passwd)
+if [ -f "/tmp/new-user-name" ]; then
+    REAL_USER=$(cat "/tmp/new-user-name")
 else
-    # File does not exist, check if UID 1000 exists
-    if id -u 1000 >/dev/null 2>&1; then
-        # UID 1000 exists, create the /etc/vos-user-1000-busy file and set REAL_USER to the user with UID 1000
-        touch /etc/vos-user-1000-busy
-        REAL_USER=$(getent passwd 1000 | cut -d: -f1)
-    else
-        # UID 1000 does not exist, find the user with the highest UID
-        while read entry; do
-            uid=$(echo "$entry" | awk 'BEGIN {FS=":"}; {print $3}')
-            name=$(echo "$entry" | awk 'BEGIN {FS=":"}; {print $1}')
-            if [[ $((uid)) -gt $((highest_uid)) && $name != "nobody" ]]; then
-                export highest_uid=$uid
-                export REAL_USER=$name
-            fi
-        done < <(getent passwd)
-    fi
+    REAL_USER=$(getent passwd $PKEXEC_UID | sed 's/:.*//')
 fi
 
 echo -e '[User]\nSession=gnome' > /var/lib/AccountsService/users/$REAL_USER
