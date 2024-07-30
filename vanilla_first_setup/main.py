@@ -15,7 +15,6 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-import getpass
 import gi
 
 gi.require_version("Gtk", "4.0")
@@ -103,20 +102,15 @@ class FirstSetupApplication(Adw.Application):
             logger.info("Running post script")
             self.post_script = options.lookup_value("run-post-script").get_string()
 
-        if options.contains("new-user"):
-            self.user = None
+        # FIXME: this is a workaround to avoid running as a new user when the user is not vanilla
+        # this should simply never happen. Anyway we are already working on a new backend for the
+        # first setup, so this is just a temporary fix
+        if self.user == "vanilla":
             self.new_user = True
-
-            # FIXME: this is a workaround to avoid running as a new user when the user is not vanilla
-            # this should simply never happen. Anyway we are already working on a new backend for the
-            # first setup, so this is just a temporary fix
-            if getpass.getuser() != "vanilla":
-                self.new_user = False
-                logger.warning(
-                    "Asked to run as a new user, but the current user is not vanilla, meaning a new user was already created, turning off the new user mode"
-                )
-            else:
-                logger.info("Running as a new user")
+            logger.warning("Detected user vanilla, creating new user")
+        else:
+            self.new_user = False
+            logger.info("Detected new user, not creating new one")
 
         self.activate()
 
