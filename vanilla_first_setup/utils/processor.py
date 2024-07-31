@@ -129,6 +129,9 @@ class Processor:
 
                 f.write(f"{command}\n")
 
+            # prevent privilege escalation
+            f.write(f"chown root:root {commands_script_path}\n")
+
             # run the outRun commands
             if out_run:
                 f.write("if [ $? -eq 0 ]; then")
