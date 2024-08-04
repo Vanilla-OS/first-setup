@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-03-07 08:32+0000\n"
+"PO-Revision-Date: 2024-07-27 17:09+0000\n"
 "Last-Translator: Muhammad Bahaa <muhammad.bahaa1@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ar/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -171,7 +171,7 @@ msgstr "جارٍ التثبيت ..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console Output"
-msgstr "إظهار إخراج وحدة التحكم"
+msgstr "إظهار مخرجات وحدة التحكم"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
