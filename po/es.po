@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Juan <benitesjn@gmail.com>, 2023.
 # Juan Benites <benitesjn@gmail.com>, 2023, 2024.
-# gallegonovato <fran-carro@hotmail.es>, 2023.
+# gallegonovato <fran-carro@hotmail.es>, 2023, 2024.
 # ramon ledesma <rmon.led@gmail.com>, 2023.
 # Nacho Colorado <nachocolorado04@gmail.com>, 2024.
 # Aghaeles <sebas.hfa@pm.me>, 2024.
@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-08-03 21:36+0000\n"
-"Last-Translator: Eraorahan <eraorahan@gmail.com>\n"
+"PO-Revision-Date: 2024-08-04 11:33+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/es/>\n"
 "Language: es\n"
@@ -40,7 +40,7 @@ msgstr "Sin descripción"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr "Primer lanzamiento"
+msgstr "Primera versión"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:114
