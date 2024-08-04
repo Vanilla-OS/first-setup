@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Automatically generated, 2022.
 #
-# phlostically <phlostically@mailinator.com>, 2023.
+# phlostically <phlostically@mailinator.com>, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2023-12-02 18:17+0000\n"
+"PO-Revision-Date: 2024-07-31 05:49+0000\n"
 "Last-Translator: phlostically <phlostically@mailinator.com>\n"
 "Language-Team: Esperanto <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/eo/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.3-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -43,7 +43,7 @@ msgstr "Kontrolante konekton…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 msgid "Please wait until the connection check is done"
-msgstr ""
+msgstr "Bonvolu atendi ĝis la fino de la konektokontrolo"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -60,17 +60,19 @@ msgstr "Nomo de aparato"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
 msgid "Provide your device name"
-msgstr ""
+msgstr "Nomu vian aparaton"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "Interreto"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
+"Ni postulas aktivan Interretan konekton por elŝuti viajn preferatajn "
+"programojn kaj teni vian sistemon ĝisdata"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
@@ -90,17 +92,15 @@ msgstr "Konekti al kaŝita reto…"
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr ""
+msgstr "Malfermi agordojn pri retperado…"
 
 #: vanilla_first_setup/gtk/default-theme.ui:27
 msgid "Color Scheme"
 msgstr "Kolorskemo"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "Elektu kolorskemon por via sistemo."
+msgstr "Elektu kolorskemon por via sistemo"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
@@ -116,7 +116,7 @@ msgstr "Krei konton"
 
 #: vanilla_first_setup/gtk/default-user.ui:38
 msgid "Provide details for your user account"
-msgstr ""
+msgstr "Provizu detalojn por via uzantkonto"
 
 #: vanilla_first_setup/gtk/default-user.ui:45
 msgid "Name"
@@ -145,29 +145,23 @@ msgstr "Montrante informojn"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "Finite!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
-#| msgid "Restart your device to enjoy your Vanilla OS experience."
 msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr "Restartigu vian aparaton por ĝui vian sperton pri Vanilla OS."
+msgstr "Restartigu vian aparaton por ĝui vian sperton pri Vanilla OS"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "Ŝalti"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-#, fuzzy
-#| msgid "Installing..."
 msgid "Finalizing..."
-msgstr "Instalante…"
+msgstr "Kompletigante…"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-#, fuzzy
-#| msgid "Your device will be ready soon."
 msgid "Your device will be ready soon"
-msgstr "Via aparato baldaŭ pretiĝos."
+msgstr "Via aparato baldaŭ pretiĝos"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
@@ -175,11 +169,11 @@ msgstr "Instalante…"
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console Output"
-msgstr ""
+msgstr "Montri terminalan eliraĵon"
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr ""
+msgstr "Montri bildaron"
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
@@ -200,11 +194,11 @@ msgstr "Sen Interreta konekto!"
 
 #: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
-msgstr ""
+msgstr "Unua agordado postulas aktivan Interretan konekton"
 
 #: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
-msgstr ""
+msgstr "Bonvolu atendi ĝis la fino de la konektokontrolo."
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
@@ -224,7 +218,7 @@ msgstr "Sekura reto (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:376
 msgid "Authentication required"
-msgstr ""
+msgstr "Aŭtentikigo estas postulata"
 
 #: vanilla_first_setup/defaults/network.py:384
 msgid "Connecting"
@@ -240,7 +234,7 @@ msgstr "Malkonektanta"
 
 #: vanilla_first_setup/defaults/network.py:390
 msgid "Connection Failed"
-msgstr ""
+msgstr "Konektado malsukcesis"
 
 #: vanilla_first_setup/defaults/network.py:392
 msgid "Status Unknown"
@@ -255,14 +249,12 @@ msgid "Unavailable"
 msgstr "Ne havebla"
 
 #: vanilla_first_setup/defaults/network.py:398
-#, fuzzy
-#| msgid "Status Unknown"
 msgid "Unknown"
-msgstr "Nekonata stato"
+msgstr "Nekonata"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
-msgstr ""
+msgstr "Drato malkonektiĝis"
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
@@ -282,7 +274,7 @@ msgstr "Bonvolu kontakti la programistojn de la distribuaĵo."
 
 #: vanilla_first_setup/main.py:62
 msgid "Run a post script"
-msgstr ""
+msgstr "Ruli postan programeton"
 
 #: vanilla_first_setup/main.py:70
 msgid "Run as a new user"
