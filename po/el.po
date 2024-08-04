@@ -5,13 +5,14 @@
 #
 # Andrew Geo <andrewgeo@outlook.com>, 2023.
 # Eccl3s <Elliott.Killner@protonmail.com>, 2024.
+# ugaugag <ugaugag@users.noreply.hosted.weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-06-18 19:09+0000\n"
-"Last-Translator: Eccl3s <Elliott.Killner@protonmail.com>\n"
+"PO-Revision-Date: 2024-07-29 14:09+0000\n"
+"Last-Translator: ugaugag <ugaugag@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/el/>\n"
 "Language: el\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -43,10 +44,8 @@ msgid "Checking Connection…"
 msgstr "Έλεγχος σύνδεσης…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
-#| msgid "Please wait until the connection check is done."
 msgid "Please wait until the connection check is done"
-msgstr "Παρακαλώ περιμένετε έως ότου τελειώσει ο έλεγχος σύνδεσης."
+msgstr "Παρακαλώ περιμένετε έως ότου ολοκληρωθεί ο έλεγχος σύνδεσης"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -65,21 +64,26 @@ msgstr "Όνομα συσκευής"
 #, fuzzy
 #| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "Παραθέστε λεπτομέρειες σχετικά με τη συσκευή σας"
+msgstr "Συμπληρώστε το όνομα της συσκευής σας"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
+#, fuzzy
 msgid "Internet"
-msgstr ""
+msgstr "Διαδίκτυο"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
+#, fuzzy
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
+"Μία ενεργή σύνδεση στο διαδίκτυο απαιτείται, προκειμένου να κατεβάσετε τις "
+"αγαπημένες σας εφαρμογές και να διατηρήσετε το σύστημά σας ενημερωμένο"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
+#, fuzzy
 msgid "Wired"
-msgstr ""
+msgstr "Ενσύρματη"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
@@ -87,15 +91,17 @@ msgstr "Ασύρματα δίκτυα"
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
-msgstr "προχωρημένες επιλογές"
+msgstr "Προχωρημένες επιλογές"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
+#, fuzzy
 msgid "Connect to Hidden Network..."
-msgstr ""
+msgstr "Σύνδεση σε κρυφό δίκτυο..."
 
 #: vanilla_first_setup/gtk/default-network.ui:69
+#, fuzzy
 msgid "Open Proxy Settings..."
-msgstr ""
+msgstr "Άνοιγμα Ρυθμίσεων Proxy..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:27
 msgid "Color Scheme"
@@ -123,9 +129,10 @@ msgstr "Δημιουργία Χρήστη"
 #, fuzzy
 #| msgid "Provide details about your device"
 msgid "Provide details for your user account"
-msgstr "Παραθέστε λεπτομέρειες σχετικά με τη συσκευή σας"
+msgstr "Συμπληρώστε λεπτομέρειες για το λογαριασμό χρήστη σας"
 
 #: vanilla_first_setup/gtk/default-user.ui:45
+#, fuzzy
 msgid "Name"
 msgstr "Όνομα"
 
@@ -151,8 +158,9 @@ msgid "Showing Information"
 msgstr "Προβολή πληροφοριών"
 
 #: vanilla_first_setup/gtk/done.ui:12
+#, fuzzy
 msgid "Finished!"
-msgstr ""
+msgstr "Ολοκληρώθηκε!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 #, fuzzy
@@ -169,7 +177,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Finalizing"
 msgid "Finalizing..."
-msgstr "Οριστικοποίηση"
+msgstr "Οριστικοποίηση..."
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 #, fuzzy
@@ -201,8 +209,9 @@ msgstr "Πίσω"
 
 #: vanilla_first_setup/gtk/wireless-row.ui:33
 #: vanilla_first_setup/defaults/network.py:373
+#, fuzzy
 msgid "Connected"
-msgstr ""
+msgstr "Συνδεδεμένο"
 
 #: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
@@ -213,28 +222,34 @@ msgid "First Setup requires an active internet connection"
 msgstr "Οι Αρχικές Ρυθμίσεις χρειάζονται μια ενεργή σύνδεση δικτύου"
 
 #: vanilla_first_setup/defaults/conn_check.py:116
+#, fuzzy
 msgid "Please wait until the connection check is done."
-msgstr "Παρακαλώ περιμένετε έως ότου τελειώσει ο έλεγχος σύνδεσης."
+msgstr "Παρακαλώ περιμένετε έως ότου ολοκληρωθεί ο έλεγχος σύνδεσης."
 
 #: vanilla_first_setup/defaults/network.py:38
+#, fuzzy
 msgid "Insecure network (WEP)"
-msgstr ""
+msgstr "Μη ασφαλές δίκτυο (WEP)"
 
 #: vanilla_first_setup/defaults/network.py:39
+#, fuzzy
 msgid "Secure network (WPA)"
-msgstr ""
+msgstr "Ασφαλές δίκτυο (WPA)"
 
 #: vanilla_first_setup/defaults/network.py:40
+#, fuzzy
 msgid "Secure network (WPA2)"
-msgstr ""
+msgstr "Ασφαλές δίκτυο (WPA2)"
 
 #: vanilla_first_setup/defaults/network.py:41
+#, fuzzy
 msgid "Secure network (WPA3)"
-msgstr ""
+msgstr "Ασφαλές δίκτυο (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:376
+#, fuzzy
 msgid "Authentication required"
-msgstr ""
+msgstr "Απαιτείται authentication"
 
 #: vanilla_first_setup/defaults/network.py:384
 msgid "Connecting"
