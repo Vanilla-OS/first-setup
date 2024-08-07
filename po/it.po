@@ -7,13 +7,14 @@
 # boblaspugna4f1ee5d391024b4c <boblaspugna@null.net>, 2024.
 # simo fiore <clgsilentfred@gmail.com>, 2024.
 # Guy Chronister <guylovesbritt@gmail.com>, 2024.
+# Edoardo Piccolotto <edoardo.piccolotto.services@proton.me>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-04-26 16:07+0000\n"
-"Last-Translator: Guy Chronister <guylovesbritt@gmail.com>\n"
+"PO-Revision-Date: 2024-08-07 18:04+0000\n"
+"Last-Translator: Edoardo Piccolotto <edoardo.piccolotto.services@proton.me>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/it/>\n"
 "Language: it\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.1\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -37,12 +38,12 @@ msgstr "Nessuna descrizione"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr "Prima release"
+msgstr "Primo Rilascio"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
-msgstr "Controllo Connessione…"
+msgstr "Controllo della Connessione…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 #, fuzzy
@@ -65,14 +66,12 @@ msgid "Device Name"
 msgstr "Nome del dispositivo"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "Fornisci informazioni sul tuo dispositivo"
+msgstr "Fornisci il nome del dispositivo"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
@@ -95,14 +94,12 @@ msgid "Advanced"
 msgstr "Avanzato"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
-#, fuzzy
 msgid "Connect to Hidden Network..."
-msgstr "Connettiti ad una Rete nascosta..."
+msgstr "Connettiti ad una Rete Nascosta..."
 
 #: vanilla_first_setup/gtk/default-network.ui:69
-#, fuzzy
 msgid "Open Proxy Settings..."
-msgstr "Apri le impostazioni per i Proxy..."
+msgstr "Apri le impostazioni del Proxy..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:27
 #, fuzzy
@@ -170,16 +167,12 @@ msgid "Enable"
 msgstr "Abilita"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-#, fuzzy
-#| msgid "Finalizing"
 msgid "Finalizing..."
-msgstr "Finalizzando"
+msgstr "Finalizzando..."
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-#, fuzzy
-#| msgid "Your device will be ready soon."
 msgid "Your device will be ready soon"
-msgstr "Il tuo dispositivo sarà pronto a breve."
+msgstr "Il tuo dispositivo sarà pronto a breve"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
@@ -209,9 +202,8 @@ msgid "Connected"
 msgstr "Connesso"
 
 #: vanilla_first_setup/defaults/conn_check.py:103
-#, fuzzy
 msgid "No Internet Connection!"
-msgstr "Nessuna Connessione Internet!"
+msgstr "Connessione Internet Assente!"
 
 #: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
@@ -272,10 +264,8 @@ msgid "Unavailable"
 msgstr "Non disponibile"
 
 #: vanilla_first_setup/defaults/network.py:398
-#, fuzzy
-#| msgid "Status Unknown"
 msgid "Unknown"
-msgstr "Stato Sconosciuto"
+msgstr "Sconosciuto"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
