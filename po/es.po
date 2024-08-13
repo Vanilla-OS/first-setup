@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-08-04 11:33+0000\n"
+"PO-Revision-Date: 2024-08-12 09:22+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/es/>\n"
@@ -98,15 +98,15 @@ msgstr "Conectarse a una red oculta..."
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr "Abrir configuraciones de proxy..."
+msgstr "Abrir los ajustes del proxy..."
 
 #: vanilla_first_setup/gtk/default-theme.ui:27
 msgid "Color Scheme"
-msgstr "Paleta de colores"
+msgstr "Combinación de colores"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
 msgid "Choose a color scheme for your system"
-msgstr "Selecciona una paleta de colores para tu sistema"
+msgstr "Elige un esquema de colores para tu sistema"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
