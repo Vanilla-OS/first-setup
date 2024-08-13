@@ -1,0 +1,296 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the vanilla-first-setup package.
+# Aindriú Mac Giolla Eoin <aindriu80@gmail.com>, 2024.
+msgid ""
+msgstr ""
+"Project-Id-Version: vanilla-first-setup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-18 16:40+0530\n"
+"PO-Revision-Date: 2024-08-13 10:09+0000\n"
+"Last-Translator: Aindriú Mac Giolla Eoin <aindriu80@gmail.com>\n"
+"Language-Team: Irish <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/ga/>\n"
+"Language: ga\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :("
+"n>6 && n<11) ? 3 : 4;\n"
+"X-Generator: Weblate 5.7-dev\n"
+
+#: data/org.vanillaos.FirstSetup.desktop.in:3
+msgid "Vanilla OS First Setup"
+msgstr "Vanilla OS An Chéad Socrú"
+
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:7
+msgid "Tweak your Vanilla OS installation."
+msgstr "Tweak do shuiteáil Vanilla OS."
+
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:10
+msgid "No description"
+msgstr "Gan tuairisc"
+
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:26
+msgid "First release"
+msgstr "An chéad eisiúint"
+
+#: vanilla_first_setup/gtk/default-conn-check.ui:12
+#: vanilla_first_setup/defaults/conn_check.py:114
+msgid "Checking Connection…"
+msgstr "Ceangal á Seiceáil…"
+
+#: vanilla_first_setup/gtk/default-conn-check.ui:13
+msgid "Please wait until the connection check is done"
+msgstr "Fan go dtí go mbeidh an tseiceáil ceangail déanta"
+
+#: vanilla_first_setup/gtk/default-hostname.ui:17
+#: vanilla_first_setup/gtk/default-network.ui:95
+#: vanilla_first_setup/gtk/default-theme.ui:18
+#: vanilla_first_setup/gtk/default-user.ui:17
+#: vanilla_first_setup/gtk/layout-applications.ui:17
+msgid "Next"
+msgstr "Ar aghaidh"
+
+#: vanilla_first_setup/gtk/default-hostname.ui:27
+#: vanilla_first_setup/gtk/default-hostname.ui:35
+msgid "Device Name"
+msgstr "Ainm an Ghléis"
+
+#: vanilla_first_setup/gtk/default-hostname.ui:28
+msgid "Provide your device name"
+msgstr "Tabhair ainm do ghléis"
+
+#: vanilla_first_setup/gtk/default-network.ui:18
+msgid "Internet"
+msgstr "Idirlíon"
+
+#: vanilla_first_setup/gtk/default-network.ui:19
+msgid ""
+"An active internet connection is required to download your favorite apps and "
+"to keep your system up-to-date"
+msgstr ""
+"Tá nasc gníomhach idirlín ag teastáil chun na haipeanna is fearr leat a "
+"íoslódáil agus chun do chóras a choinneáil cothrom le dáta"
+
+#: vanilla_first_setup/gtk/default-network.ui:29
+msgid "Wired"
+msgstr "Sreangaithe"
+
+#: vanilla_first_setup/gtk/default-network.ui:34
+msgid "Wireless Networks"
+msgstr "Líonraí Gan Sreang"
+
+#: vanilla_first_setup/gtk/default-network.ui:39
+msgid "Advanced"
+msgstr "Casta"
+
+#: vanilla_first_setup/gtk/default-network.ui:42
+msgid "Connect to Hidden Network..."
+msgstr "Ceangail le Líonra Hidden..."
+
+#: vanilla_first_setup/gtk/default-network.ui:69
+msgid "Open Proxy Settings..."
+msgstr "Oscail Socruithe Seachfhreastalaí..."
+
+#: vanilla_first_setup/gtk/default-theme.ui:27
+msgid "Color Scheme"
+msgstr "Scéim Dathanna"
+
+#: vanilla_first_setup/gtk/default-theme.ui:28
+msgid "Choose a color scheme for your system"
+msgstr "Roghnaigh scéim dathanna le do chóras"
+
+#: vanilla_first_setup/gtk/default-theme.ui:92
+msgid "Default"
+msgstr "Réamhshocrú"
+
+#: vanilla_first_setup/gtk/default-theme.ui:139
+msgid "Dark"
+msgstr "Dorcha"
+
+#: vanilla_first_setup/gtk/default-user.ui:37
+msgid "Create User"
+msgstr "Cruthaigh Úsáideoir"
+
+#: vanilla_first_setup/gtk/default-user.ui:38
+msgid "Provide details for your user account"
+msgstr "Tabhair sonraí do chuntas úsáideora"
+
+#: vanilla_first_setup/gtk/default-user.ui:45
+msgid "Name"
+msgstr "Ainm"
+
+#: vanilla_first_setup/gtk/default-user.ui:51
+msgid "Username"
+msgstr "Ainm úsáideora"
+
+#: vanilla_first_setup/gtk/default-user.ui:57
+msgid "Password"
+msgstr "Pasfhocal"
+
+#: vanilla_first_setup/gtk/default-user.ui:63
+msgid "Confirm Password"
+msgstr "Deimhnigh Pasfhocal"
+
+#: vanilla_first_setup/gtk/default-welcome.ui:20
+#: vanilla_first_setup/gtk/default-welcome.ui:29
+msgid "Welcome!"
+msgstr "Fáilte romhat!"
+
+#: vanilla_first_setup/gtk/dialog.ui:6
+msgid "Showing Information"
+msgstr "Eolas á Léiriú"
+
+#: vanilla_first_setup/gtk/done.ui:12
+msgid "Finished!"
+msgstr "Críochnaithe!"
+
+#: vanilla_first_setup/gtk/done.ui:13
+msgid "Restart your device to enjoy your Vanilla OS experience"
+msgstr "Atosaigh do ghléas chun taitneamh a bhaint as d'eispéireas Vanilla OS"
+
+#: vanilla_first_setup/gtk/layout-yes-no.ui:36
+msgid "Enable"
+msgstr "Cumasaigh"
+
+#: vanilla_first_setup/gtk/post-script.ui:11
+msgid "Finalizing..."
+msgstr "Ag críochnú..."
+
+#: vanilla_first_setup/gtk/post-script.ui:12
+msgid "Your device will be ready soon"
+msgstr "Beidh do ghléas réidh go luath"
+
+#: vanilla_first_setup/gtk/progress.ui:70
+msgid "Installing..."
+msgstr "Suiteáil..."
+
+#: vanilla_first_setup/gtk/progress.ui:91
+msgid "Show Console Output"
+msgstr "Taispeáin Aschur Consóil"
+
+#: vanilla_first_setup/gtk/progress.ui:106
+msgid "Show Slideshow"
+msgstr "Taispeáin Taispeántas Sleamhnán"
+
+#: vanilla_first_setup/gtk/tour.ui:27
+msgid "Read More"
+msgstr "Léigh Tuilleadh"
+
+#: vanilla_first_setup/gtk/window.ui:36
+msgid "Back"
+msgstr "Ar ais"
+
+#: vanilla_first_setup/gtk/wireless-row.ui:33
+#: vanilla_first_setup/defaults/network.py:373
+msgid "Connected"
+msgstr "Ceangailte"
+
+#: vanilla_first_setup/defaults/conn_check.py:103
+msgid "No Internet Connection!"
+msgstr "Gan nasc Idirlín!"
+
+#: vanilla_first_setup/defaults/conn_check.py:105
+msgid "First Setup requires an active internet connection"
+msgstr "Éilíonn an Chéad Shuiteáil nasc gníomhach idirlín"
+
+#: vanilla_first_setup/defaults/conn_check.py:116
+msgid "Please wait until the connection check is done."
+msgstr "Fan go dtí go mbeidh an tseiceáil ceangail déanta."
+
+#: vanilla_first_setup/defaults/network.py:38
+msgid "Insecure network (WEP)"
+msgstr "Líonra neamhdhaingean (WEP)"
+
+#: vanilla_first_setup/defaults/network.py:39
+msgid "Secure network (WPA)"
+msgstr "Líonra slán (WPA)"
+
+#: vanilla_first_setup/defaults/network.py:40
+msgid "Secure network (WPA2)"
+msgstr "Líonra slán (WPA2)"
+
+#: vanilla_first_setup/defaults/network.py:41
+msgid "Secure network (WPA3)"
+msgstr "Líonra slán (WPA3)"
+
+#: vanilla_first_setup/defaults/network.py:376
+msgid "Authentication required"
+msgstr "Fíordheimhniú ag teastáil"
+
+#: vanilla_first_setup/defaults/network.py:384
+msgid "Connecting"
+msgstr "Ag nascadh"
+
+#: vanilla_first_setup/defaults/network.py:386
+msgid "Disconnected"
+msgstr "Dícheangailte"
+
+#: vanilla_first_setup/defaults/network.py:388
+msgid "Disconnecting"
+msgstr "Ag dícheangal"
+
+#: vanilla_first_setup/defaults/network.py:390
+msgid "Connection Failed"
+msgstr "Theip ar an gceangal"
+
+#: vanilla_first_setup/defaults/network.py:392
+msgid "Status Unknown"
+msgstr "Stádas Anaithnid"
+
+#: vanilla_first_setup/defaults/network.py:394
+msgid "Unmanaged"
+msgstr "Gan bhainistiú"
+
+#: vanilla_first_setup/defaults/network.py:396
+msgid "Unavailable"
+msgstr "Níl fáil air"
+
+#: vanilla_first_setup/defaults/network.py:398
+msgid "Unknown"
+msgstr "Anaithnid"
+
+#: vanilla_first_setup/defaults/network.py:412
+msgid "Cable Unplugged"
+msgstr "Cábla Díphlugáilte"
+
+#: vanilla_first_setup/layouts/preferences.py:75
+msgid "Please select at least one option."
+msgstr "Roghnaigh rogha amháin ar a laghad."
+
+#: vanilla_first_setup/views/done.py:55
+msgid "Restart your device to enjoy your {} experience."
+msgstr "Atosaigh do ghléas chun taitneamh a bhaint as d'eispéireas {}."
+
+#: vanilla_first_setup/views/done.py:77
+msgid "Something went wrong"
+msgstr "Chuaigh rud éigin mícheart"
+
+#: vanilla_first_setup/views/done.py:79
+msgid "Please contact the distribution developers."
+msgstr "Déan teagmháil leis na forbróirí dáileacháin."
+
+#: vanilla_first_setup/main.py:62
+msgid "Run a post script"
+msgstr "Rith script postála"
+
+#: vanilla_first_setup/main.py:70
+msgid "Run as a new user"
+msgstr "Rith mar úsáideoir nua"
+
+#: vanilla_first_setup/window.py:70
+msgid "Done!"
+msgstr "Déanta!"
+
+#: vanilla_first_setup/window.py:71
+msgid "Your device is ready to use."
+msgstr "Tá do ghléas réidh le húsáid."
+
+#: vanilla_first_setup/window.py:72
+msgid "Error!"
+msgstr "Earráid!"
+
+#: vanilla_first_setup/window.py:73
+msgid "Something went wrong."
+msgstr "Chuaigh rud éigin mícheart."
