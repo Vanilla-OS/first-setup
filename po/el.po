@@ -6,13 +6,14 @@
 # Andrew Geo <andrewgeo@outlook.com>, 2023.
 # Eccl3s <Elliott.Killner@protonmail.com>, 2024.
 # ugaugag <ugaugag@users.noreply.hosted.weblate.org>, 2024.
+# EfremK <konstantinosefremgiannakou@protonmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-07-29 14:09+0000\n"
-"Last-Translator: ugaugag <ugaugag@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2024-09-16 18:09+0000\n"
+"Last-Translator: EfremK <konstantinosefremgiannakou@protonmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/el/>\n"
 "Language: el\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -171,7 +172,7 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "Ενεργοποιήστε"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 #, fuzzy
@@ -253,7 +254,7 @@ msgstr "Απαιτείται authentication"
 
 #: vanilla_first_setup/defaults/network.py:384
 msgid "Connecting"
-msgstr ""
+msgstr "Σύνδεση"
 
 #: vanilla_first_setup/defaults/network.py:386
 msgid "Disconnected"
