@@ -5,13 +5,14 @@
 #
 # jolupa <jolupameister@gmail.com>, 2023.
 # fobinasa i <starx700@gmail.com>, 2024.
+# Albert Farreras <albertfarrerasaleu30@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-06-01 21:52+0000\n"
-"Last-Translator: fobinasa i <starx700@gmail.com>\n"
+"PO-Revision-Date: 2024-09-04 12:59+0000\n"
+"Last-Translator: Albert Farreras <albertfarrerasaleu30@gmail.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ca/>\n"
 "Language: ca\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6-dev\n"
+"X-Generator: Weblate 5.7.2-rc\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -67,7 +68,7 @@ msgstr "Proporcioneu detalls sobre el vostre dispositiu"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
 msgid ""
@@ -148,7 +149,7 @@ msgstr "Mostrant informació"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "Finalitzat!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your device to enjoy your Vanilla OS experience"
@@ -156,7 +157,7 @@ msgstr "Reinicia el dispositiu per gaudir de l'experiència Vanilla OS"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "Activat"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing..."
