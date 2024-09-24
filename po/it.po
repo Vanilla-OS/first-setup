@@ -8,13 +8,14 @@
 # simo fiore <clgsilentfred@gmail.com>, 2024.
 # Guy Chronister <guylovesbritt@gmail.com>, 2024.
 # Edoardo Piccolotto <edoardo.piccolotto.services@proton.me>, 2024.
+# Mauro Remondi <re.mauro@live.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-08-07 18:04+0000\n"
-"Last-Translator: Edoardo Piccolotto <edoardo.piccolotto.services@proton.me>\n"
+"PO-Revision-Date: 2024-09-24 12:24+0000\n"
+"Last-Translator: Mauro Remondi <re.mauro@live.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/it/>\n"
 "Language: it\n"
@@ -22,11 +23,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr "Prima Configurazione di Vanilla OS"
+msgstr "Configurazione iniziali di Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
@@ -46,11 +47,9 @@ msgid "Checking Connection…"
 msgstr "Controllo della Connessione…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
-#| msgid "Please wait until the connection check is done."
 msgid "Please wait until the connection check is done"
 msgstr ""
-"Si prega di aspettare fin quando il controllo della connessione sia finito."
+"Si prega di aspettare fin quando il controllo della connessione sia finito"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -107,10 +106,8 @@ msgid "Color Scheme"
 msgstr "Schema Colori"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "Scegli una combinazione di colori per il tuo sistema."
+msgstr "Scegli una combinazione di colori per il tuo sistema"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
