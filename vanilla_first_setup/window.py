@@ -71,7 +71,6 @@ class VanillaWindow(Adw.ApplicationWindow):
             # system views
             self.__view_done = VanillaDone(
                 self,
-                reboot=False,
                 title=_("Done!"),
                 description=_("Your device is ready to use."),
                 fail_title=_("Error!"),
@@ -167,6 +166,7 @@ class VanillaWindow(Adw.ApplicationWindow):
 
         # keep the btn_back button locked if this is the last page
         if page == self.__view_done:
+            self.__view_done.set_reboot()
             return
 
         # collect all the finals

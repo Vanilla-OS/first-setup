@@ -583,5 +583,6 @@
                 }
             ]
         }
-    }
+    },
+    "reboot_condition": "false"
 }

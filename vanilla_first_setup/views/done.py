@@ -36,7 +36,6 @@ class VanillaDone(Adw.Bin):
     def __init__(
         self,
         window,
-        reboot: bool = True,
         title: str = "",
         description: str = "",
         fail_title: str = "",
@@ -52,7 +51,7 @@ class VanillaDone(Adw.Bin):
 
         if not title and not description:
             self.status_page.set_description(
-                _("Restart your device to enjoy your {} experience.").format(
+                _("You're ready to start experiencing {}.").format(
                     self.__window.recipe["distro_name"]
                 )
             )
@@ -60,14 +59,28 @@ class VanillaDone(Adw.Bin):
             self.status_page.set_title(title)
             self.status_page.set_description(description)
 
-        if reboot:
-            self.btn_reboot.connect("clicked", self.__on_reboot_clicked)
-        else:
-            self.btn_reboot.set_visible(False)
-            self.btn_close.set_visible(True)
+        self.btn_reboot.set_visible(False)
+        self.btn_close.set_visible(True)
 
         self.btn_close.connect("clicked", self.__on_close_clicked)
         self.btn_retry.connect("clicked", self.__on_retry_clicked)
+        self.btn_reboot.connect("clicked", self.__on_reboot_clicked)
+
+    def set_reboot(self):
+        recipe = RecipeLoader()
+        if recipe.raw.get("reboot_condition"):
+            condition = subprocess.run(recipe.raw["reboot_condition"].split())
+            if condition.returncode == 0:
+                self.status_page.set_description(
+                    ("Restart your device to enjoy your {} experience.").format(
+                        self.__window.recipe["distro_name"]
+                    )
+                )
+                self.btn_reboot.set_visible(True)
+                self.btn_close.set_visible(False)
+            else:
+                self.btn_reboot.set_visible(False)
+                self.btn_close.set_visible(True)
 
     def set_result(self, result, terminal=None):
         out = terminal.get_text()[0] if terminal else ""
@@ -95,6 +108,8 @@ class VanillaDone(Adw.Bin):
                     [recipe.raw["tour_app"]],
                     flags=GLib.SpawnFlags.SEARCH_PATH,
                 )
+        else:
+            subprocess.run(["gnome-session-quit", "--no-prompt"])
 
         self.__window.close()
 
