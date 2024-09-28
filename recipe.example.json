@@ -614,5 +614,6 @@
                 }
             ]
         }
-    }
+    },
+    "reboot_condition": "false"
 }
