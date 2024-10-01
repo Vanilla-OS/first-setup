@@ -26,6 +26,7 @@ from threading import Lock, Timer
 from gi.repository import NM, NMA4, Adw, GLib, Gtk
 
 from vanilla_first_setup.utils.run_async import RunAsync
+from vanilla_first_setup.utils.network import check_connection
 
 logger = logging.getLogger("FirstSetup::Network")
 
@@ -286,7 +287,7 @@ class VanillaDefaultNetwork(Adw.Bin):
 
     def __try_skip_page(self, data):
         # Skip page if already connected to the internet
-        if self.has_eth_connection or self.has_wifi_connection:
+        if check_connection():
             self.__window.next()
 
     @property

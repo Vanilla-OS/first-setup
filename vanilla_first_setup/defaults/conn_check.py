@@ -23,6 +23,7 @@ from gi.repository import Adw, Gtk
 from requests import Session
 
 from vanilla_first_setup.utils.run_async import RunAsync
+from vanilla_first_setup.utils.network import check_connection
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("FirstSetup::Conn_Check")
@@ -72,21 +73,7 @@ class VanillaDefaultConnCheck(Adw.Bin):
             if "VANILLA_SKIP_CONN_CHECK" in os.environ:
                 return True
 
-            try:
-                s = Session()
-                headers = OrderedDict(
-                    {
-                        "Accept-Encoding": "gzip, deflate, br",
-                        "Host": "vanillaos.org",
-                        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:77.0) Gecko/20100101 Firefox/77.0",
-                    }
-                )
-                s.headers = headers
-                s.get("https://vanillaos.org/", headers=headers, verify=True)
-                return True
-            except Exception as e:
-                logger.error(f"Connection check failed: {str(e)}")
-                return False
+            return check_connection()
 
         def callback(res, *args):
             if self.__ignore_callback:
