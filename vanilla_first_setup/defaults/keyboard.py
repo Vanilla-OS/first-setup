@@ -32,7 +32,7 @@ class KeyboardRow(Adw.ActionRow):
     suffix_bin = Gtk.Template.Child()
 
     def __init__(
-        self, title, subtitle, layout, variant, key, selected_keyboard, **kwargs
+        self, title, subtitle, layout, variant, key, selected_keyboard, toggled_callback, **kwargs
     ):
         super().__init__(**kwargs)
         self.__title = title
@@ -46,11 +46,7 @@ class KeyboardRow(Adw.ActionRow):
         self.set_subtitle(subtitle)
         self.suffix_bin.set_label(key)
 
-        self.select_button.connect("toggled", self.__on_check_button_toggled)
-
-    def __on_check_button_toggled(self, widget):
-        self.__selected_keyboard["layout"] = self.__layout
-        self.__selected_keyboard["variant"] = self.__variant
+        self.select_button.connect("toggled", toggled_callback, self)
 
 
 @Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/default-keyboard.ui")
@@ -177,6 +173,7 @@ class VanillaDefaultKeyboard(Adw.Bin):
                 keyboard_variant,
                 keyboard_key,
                 selected_keyboard,
+                self.__on_check_button_toggled,
             )
 
             if len(keyboard_widgets) > 0:
@@ -260,3 +257,8 @@ class VanillaDefaultKeyboard(Adw.Bin):
     @property
     def step_id(self):
         return self.__key
+
+    def __on_check_button_toggled(self, __radio_button, widget):
+        self.selected_keyboard["layout"] = widget._KeyboardRow__layout
+        self.selected_keyboard["variant"] = widget._KeyboardRow__variant
+        self.btn_next.set_sensitive(True)
