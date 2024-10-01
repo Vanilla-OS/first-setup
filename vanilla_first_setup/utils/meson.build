@@ -8,6 +8,7 @@ sources = [
   'recipe.py',
   'builder.py',
   'parser.py',
+  'network.py',
 ]
 
 install_data(sources, install_dir: utilsdir)
