@@ -15,10 +15,13 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import time
+import sys
 from gi.repository import Gtk, GLib, Adw
+from gettext import translation
 from vanilla_first_setup.utils.recipe import RecipeLoader
 
 from vanilla_first_setup.utils.run_async import RunAsync
+from vanilla_first_setup.core.languages import all_locale
 
 
 @Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/default-welcome.ui")
@@ -29,43 +32,7 @@ class VanillaDefaultWelcome(Adw.Bin):
     btn_next = Gtk.Template.Child()
     status_page = Gtk.Template.Child()
     title_label = Gtk.Template.Child()
-
-    welcome = [
-        "Welcome",
-        "Benvenuto",
-        "Bienvenido",
-        "Bienvenue",
-        "Willkommen",
-        "Bem-vindo",
-        "Добро пожаловать",
-        "欢迎",
-        "ようこそ",
-        "환영합니다",
-        "أهلا بك",
-        "ברוך הבא",
-        "Καλώς ήρθατε",
-        "Hoşgeldiniz",
-        "Welkom",
-        "Witamy",
-        "Välkommen",
-        "Tervetuloa",
-        "Vítejte",
-        "Üdvözöljük",
-        "Bun venit",
-        "Vitajte",
-        "Tere tulemast",
-        "Sveiki atvykę",
-        "Dobrodošli",
-        "خوش آمدید",
-        "आपका स्वागत है",
-        "স্বাগতম",
-        "வரவேற்கிறோம்",
-        "స్వాగతం",
-        "मुबारक हो",
-        "સુસ્વાગત છે",
-        "ಸುಸ್ವಾಗತ",
-        "സ്വാഗതം",
-    ]
+    welcome_message = Gtk.Template.Child()
 
     def validate_advanced(self):
         recipeLoader = RecipeLoader()
@@ -103,9 +70,14 @@ class VanillaDefaultWelcome(Adw.Bin):
     def __start_welcome_animation(self):
         def change_langs():
             while True:
-                for lang in self.welcome:
-                    GLib.idle_add(self.title_label.set_text, lang)
-                    time.sleep(1.2)
+                for locale in all_locale:
+                    translator = translation('vanilla-first-setup', localedir=f"{sys.base_prefix}/share/locale", languages=[locale], fallback=True)
+                    _ = translator.gettext
+                    GLib.idle_add(self.title_label.set_text, _("Welcome!"))
+                    GLib.idle_add(self.btn_next.set_label, _("Next"))
+                    GLib.idle_add(self.btn_advanced.set_label, _("Advanced"))
+                    GLib.idle_add(self.welcome_message.set_label, _("Make your choices, this wizard will take care of everything."))
+                    time.sleep(2.0)
 
         RunAsync(change_langs, None)
 
