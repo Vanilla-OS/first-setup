@@ -31,5 +31,6 @@ Depends: python3,
          gir1.2-vte-3.91,
          libnm0,
          libnma0,
+	 network-manager,
          libnma-gtk4-0
 Description: This utility is meant to be used in Vanilla GNOME as a first-setup wizard.
