@@ -169,7 +169,8 @@ all_locale = [
 all_languages = {}
 
 for _locale in all_locale:
-    all_languages[_locale] = GnomeDesktop.get_language_from_locale(_locale, None)
+    lang = GnomeDesktop.get_language_from_locale(_locale, _locale)
+    all_languages[_locale] = lang if lang else GnomeDesktop.get_language_from_locale(_locale, None)
 
 all_languages = dict(sorted(all_languages.items(), key=lambda item: item[1]))
 current_language = "{}.{}".format(
