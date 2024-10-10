@@ -1,56 +1,47 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
-# Juan <benitesjn@gmail.com>, 2023.
-# Juan Benites <benitesjn@gmail.com>, 2023, 2024.
-# gallegonovato <fran-carro@hotmail.es>, 2023, 2024.
-# ramon ledesma <rmon.led@gmail.com>, 2023.
-# Nacho Colorado <nachocolorado04@gmail.com>, 2024.
-# Aghaeles <sebas.hfa@pm.me>, 2024.
-# Alexis Fleitas Klisch <unbosquense@gmail.com>, 2024.
-# David González <iwisp360@hotmail.com>, 2024.
-# Eraorahan <eraorahan@gmail.com>, 2024.
-# Alberto García Fernández <algarcia@gmail.com>, 2024.
+# ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-10-01 21:16+0000\n"
-"Last-Translator: Alberto García Fernández <algarcia@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/es/>\n"
-"Language: es\n"
+"PO-Revision-Date: 2024-10-10 19:34+0000\n"
+"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Kabyle <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/kab/>\n"
+"Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 5.8-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
-msgstr "Configuración inicial de Vanilla OS"
+msgstr ""
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
 msgid "Tweak your Vanilla OS installation."
-msgstr "Modifique su instalación de Vanilla OS."
+msgstr ""
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
-msgstr "Sin descripción"
+msgstr ""
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr "Primera versión"
+msgstr ""
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:114
 msgid "Checking Connection…"
-msgstr "Verificando conexión…"
+msgstr ""
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
 msgid "Please wait until the connection check is done"
-msgstr "Espere, mientras se verifica su conexión a Internet"
+msgstr ""
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -58,16 +49,16 @@ msgstr "Espere, mientras se verifica su conexión a Internet"
 #: vanilla_first_setup/gtk/default-user.ui:17
 #: vanilla_first_setup/gtk/layout-applications.ui:17
 msgid "Next"
-msgstr "Siguiente"
+msgstr "Uḍfir"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:27
 #: vanilla_first_setup/gtk/default-hostname.ui:35
 msgid "Device Name"
-msgstr "Nombre del dispositivo"
+msgstr "Isem n yibenk"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
 msgid "Provide your device name"
-msgstr "Proporcione el nombre de su dispositivo"
+msgstr ""
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
@@ -78,246 +69,225 @@ msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
-"Se requiere una conexión a Internet activa para descargar tus aplicaciones "
-"favoritas y mantener tu sistema actualizado"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
-msgstr "Cenexión por cable"
+msgstr "S ugatu"
 
 #: vanilla_first_setup/gtk/default-network.ui:34
 msgid "Wireless Networks"
-msgstr "Redes inalámbricas"
+msgstr ""
 
 #: vanilla_first_setup/gtk/default-network.ui:39
 msgid "Advanced"
-msgstr "Avanzado"
+msgstr "Talqayt"
 
 #: vanilla_first_setup/gtk/default-network.ui:42
 msgid "Connect to Hidden Network..."
-msgstr "Conectarse a una red oculta..."
+msgstr ""
 
 #: vanilla_first_setup/gtk/default-network.ui:69
 msgid "Open Proxy Settings..."
-msgstr "Abrir los ajustes del proxy..."
+msgstr ""
 
 #: vanilla_first_setup/gtk/default-theme.ui:27
 msgid "Color Scheme"
-msgstr "Combinación de colores"
+msgstr ""
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
 msgid "Choose a color scheme for your system"
-msgstr "Elige un esquema de colores para tu sistema"
+msgstr ""
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
-msgstr "Predeterminado"
+msgstr "Amezwer"
 
 #: vanilla_first_setup/gtk/default-theme.ui:139
 msgid "Dark"
-msgstr "Oscuro"
+msgstr "Ubrik"
 
 #: vanilla_first_setup/gtk/default-user.ui:37
 msgid "Create User"
-msgstr "Crear cuenta de usuario"
+msgstr "Rnu aseqdac"
 
 #: vanilla_first_setup/gtk/default-user.ui:38
 msgid "Provide details for your user account"
-msgstr "Proporcione detalles para su cuenta de usuario"
+msgstr ""
 
 #: vanilla_first_setup/gtk/default-user.ui:45
 msgid "Name"
-msgstr "Nombre"
+msgstr "Isem"
 
 #: vanilla_first_setup/gtk/default-user.ui:51
 msgid "Username"
-msgstr "Nombre de usuario"
+msgstr "Isem n useqdac"
 
 #: vanilla_first_setup/gtk/default-user.ui:57
 msgid "Password"
-msgstr "Contraseña"
+msgstr "Awal n uεeddi"
 
 #: vanilla_first_setup/gtk/default-user.ui:63
 msgid "Confirm Password"
-msgstr "Confirmar contraseña"
+msgstr "Sentem awal n uɛeddi"
 
 #: vanilla_first_setup/gtk/default-welcome.ui:20
 #: vanilla_first_setup/gtk/default-welcome.ui:29
 msgid "Welcome!"
-msgstr "¡Bienvenido/a!"
+msgstr "Ansuf!"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
-msgstr "Mostrando información"
+msgstr ""
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr "¡Terminado!"
+msgstr "Ifukk!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your device to enjoy your Vanilla OS experience"
 msgstr ""
-"Reinicia tu dispositivo para disfrutar de tu experiencia con Vanilla OS"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr "Activar"
+msgstr "Sermed"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 msgid "Finalizing..."
-msgstr "Terminando..."
+msgstr ""
 
 #: vanilla_first_setup/gtk/post-script.ui:12
 msgid "Your device will be ready soon"
-msgstr "Su dispositivo estará listo pronto"
+msgstr ""
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
-msgstr "Instalando..."
+msgstr "Asbeddi..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
 msgid "Show Console Output"
-msgstr "Mostrar la salida de la consola"
+msgstr ""
 
 #: vanilla_first_setup/gtk/progress.ui:106
 msgid "Show Slideshow"
-msgstr "Mostrar presentación de diapositivas"
+msgstr ""
 
 #: vanilla_first_setup/gtk/tour.ui:27
 msgid "Read More"
-msgstr "Leer más"
+msgstr "Issin ugar"
 
 #: vanilla_first_setup/gtk/window.ui:36
 msgid "Back"
-msgstr "Regresar"
+msgstr "Uɣal"
 
 #: vanilla_first_setup/gtk/wireless-row.ui:33
 #: vanilla_first_setup/defaults/network.py:373
 msgid "Connected"
-msgstr "Conectado"
+msgstr "Yeqqen"
 
 #: vanilla_first_setup/defaults/conn_check.py:103
 msgid "No Internet Connection!"
-msgstr "¡Sin conexión a Internet!"
+msgstr ""
 
 #: vanilla_first_setup/defaults/conn_check.py:105
 msgid "First Setup requires an active internet connection"
-msgstr "La configuración inicial requiere de una conexión a Internet"
+msgstr ""
 
 #: vanilla_first_setup/defaults/conn_check.py:116
 msgid "Please wait until the connection check is done."
-msgstr "Por favor, espera mientras se comprueba tu conexión a Internet."
+msgstr ""
 
 #: vanilla_first_setup/defaults/network.py:38
 msgid "Insecure network (WEP)"
-msgstr "Red insegura (WEP)"
+msgstr ""
 
 #: vanilla_first_setup/defaults/network.py:39
 msgid "Secure network (WPA)"
-msgstr "Red segura (WPA)"
+msgstr ""
 
 #: vanilla_first_setup/defaults/network.py:40
 msgid "Secure network (WPA2)"
-msgstr "Red segura (WPA2)"
+msgstr ""
 
 #: vanilla_first_setup/defaults/network.py:41
 msgid "Secure network (WPA3)"
-msgstr "Red segura (WPA3)"
+msgstr "Aẓeṭṭa aɣellsan (WPA3)"
 
 #: vanilla_first_setup/defaults/network.py:376
 msgid "Authentication required"
-msgstr "Se requiere autenticación"
+msgstr "Asesteb yettwasra"
 
 #: vanilla_first_setup/defaults/network.py:384
 msgid "Connecting"
-msgstr "Conectando"
+msgstr "Yetteqqen"
 
 #: vanilla_first_setup/defaults/network.py:386
 msgid "Disconnected"
-msgstr "Desconectado"
+msgstr ""
 
 #: vanilla_first_setup/defaults/network.py:388
 msgid "Disconnecting"
-msgstr "Desconectando"
+msgstr ""
 
 #: vanilla_first_setup/defaults/network.py:390
 msgid "Connection Failed"
-msgstr "Conexión fallida"
+msgstr ""
 
 #: vanilla_first_setup/defaults/network.py:392
 msgid "Status Unknown"
-msgstr "Estado desconocido"
+msgstr ""
 
 #: vanilla_first_setup/defaults/network.py:394
 msgid "Unmanaged"
-msgstr "No gestionado"
+msgstr ""
 
 #: vanilla_first_setup/defaults/network.py:396
 msgid "Unavailable"
-msgstr "No Disponible"
+msgstr ""
 
 #: vanilla_first_setup/defaults/network.py:398
 msgid "Unknown"
-msgstr "Desconocido"
+msgstr "Arussin"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
-msgstr "Cable desconectado"
+msgstr ""
 
 #: vanilla_first_setup/layouts/preferences.py:75
 msgid "Please select at least one option."
-msgstr "Por favor, seleccione al menos una opción."
+msgstr ""
 
 #: vanilla_first_setup/views/done.py:55
 msgid "Restart your device to enjoy your {} experience."
-msgstr "Reinicie su dispositivo para disfrutar su experiencia en {}."
+msgstr ""
 
 #: vanilla_first_setup/views/done.py:77
 msgid "Something went wrong"
-msgstr "Algo Ha Fallado"
+msgstr ""
 
 #: vanilla_first_setup/views/done.py:79
 msgid "Please contact the distribution developers."
-msgstr "Por favor, contacte a los desarrolladores de la distribución."
+msgstr ""
 
 #: vanilla_first_setup/main.py:62
 msgid "Run a post script"
-msgstr "Ejecutar un post script"
+msgstr ""
 
 #: vanilla_first_setup/main.py:70
 msgid "Run as a new user"
-msgstr "Ejecutar como un nuevo usuario"
+msgstr ""
 
 #: vanilla_first_setup/window.py:70
 msgid "Done!"
-msgstr "¡Listo!"
+msgstr ""
 
 #: vanilla_first_setup/window.py:71
 msgid "Your device is ready to use."
-msgstr "Su dispositivo está listo para usarse."
+msgstr ""
 
 #: vanilla_first_setup/window.py:72
 msgid "Error!"
-msgstr "¡Error!"
+msgstr "Tuccḍa!"
 
 #: vanilla_first_setup/window.py:73
 msgid "Something went wrong."
-msgstr "Algo Ha Fallado."
-
-#~ msgid "Device Details"
-#~ msgstr "Información del dispositivo"
-
-#~ msgid "Connect to the Internet"
-#~ msgstr "Conéctese al Internet"
-
-#~ msgid "All done!"
-#~ msgstr "¡Todo listo!"
-
-#~ msgid "Yes, enable it"
-#~ msgstr "Sí, activar"
-
-#~ msgid "Make your choices, this wizard will take care of everything."
-#~ msgstr "Marque sus opciones, el asistente se encargará de todo."
-
-#~ msgid "The changes are being applied. Please Wait…"
-#~ msgstr "Los cambios se están aplicando. Por favor espere…"
+msgstr ""
