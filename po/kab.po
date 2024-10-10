@@ -1,0 +1,293 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the vanilla-first-setup package.
+# ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>, 2024.
+msgid ""
+msgstr ""
+"Project-Id-Version: vanilla-first-setup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-18 16:40+0530\n"
+"PO-Revision-Date: 2024-10-10 19:34+0000\n"
+"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Kabyle <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/kab/>\n"
+"Language: kab\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.8-dev\n"
+
+#: data/org.vanillaos.FirstSetup.desktop.in:3
+msgid "Vanilla OS First Setup"
+msgstr ""
+
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:7
+msgid "Tweak your Vanilla OS installation."
+msgstr ""
+
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:10
+msgid "No description"
+msgstr ""
+
+#: data/org.vanillaos.FirstSetup.appdata.xml.in:26
+msgid "First release"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-conn-check.ui:12
+#: vanilla_first_setup/defaults/conn_check.py:114
+msgid "Checking Connection…"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-conn-check.ui:13
+msgid "Please wait until the connection check is done"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-hostname.ui:17
+#: vanilla_first_setup/gtk/default-network.ui:95
+#: vanilla_first_setup/gtk/default-theme.ui:18
+#: vanilla_first_setup/gtk/default-user.ui:17
+#: vanilla_first_setup/gtk/layout-applications.ui:17
+msgid "Next"
+msgstr "Uḍfir"
+
+#: vanilla_first_setup/gtk/default-hostname.ui:27
+#: vanilla_first_setup/gtk/default-hostname.ui:35
+msgid "Device Name"
+msgstr "Isem n yibenk"
+
+#: vanilla_first_setup/gtk/default-hostname.ui:28
+msgid "Provide your device name"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:18
+msgid "Internet"
+msgstr "Internet"
+
+#: vanilla_first_setup/gtk/default-network.ui:19
+msgid ""
+"An active internet connection is required to download your favorite apps and "
+"to keep your system up-to-date"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:29
+msgid "Wired"
+msgstr "S ugatu"
+
+#: vanilla_first_setup/gtk/default-network.ui:34
+msgid "Wireless Networks"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:39
+msgid "Advanced"
+msgstr "Talqayt"
+
+#: vanilla_first_setup/gtk/default-network.ui:42
+msgid "Connect to Hidden Network..."
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-network.ui:69
+msgid "Open Proxy Settings..."
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-theme.ui:27
+msgid "Color Scheme"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-theme.ui:28
+msgid "Choose a color scheme for your system"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-theme.ui:92
+msgid "Default"
+msgstr "Amezwer"
+
+#: vanilla_first_setup/gtk/default-theme.ui:139
+msgid "Dark"
+msgstr "Ubrik"
+
+#: vanilla_first_setup/gtk/default-user.ui:37
+msgid "Create User"
+msgstr "Rnu aseqdac"
+
+#: vanilla_first_setup/gtk/default-user.ui:38
+msgid "Provide details for your user account"
+msgstr ""
+
+#: vanilla_first_setup/gtk/default-user.ui:45
+msgid "Name"
+msgstr "Isem"
+
+#: vanilla_first_setup/gtk/default-user.ui:51
+msgid "Username"
+msgstr "Isem n useqdac"
+
+#: vanilla_first_setup/gtk/default-user.ui:57
+msgid "Password"
+msgstr "Awal n uεeddi"
+
+#: vanilla_first_setup/gtk/default-user.ui:63
+msgid "Confirm Password"
+msgstr "Sentem awal n uɛeddi"
+
+#: vanilla_first_setup/gtk/default-welcome.ui:20
+#: vanilla_first_setup/gtk/default-welcome.ui:29
+msgid "Welcome!"
+msgstr "Ansuf!"
+
+#: vanilla_first_setup/gtk/dialog.ui:6
+msgid "Showing Information"
+msgstr ""
+
+#: vanilla_first_setup/gtk/done.ui:12
+msgid "Finished!"
+msgstr "Ifukk!"
+
+#: vanilla_first_setup/gtk/done.ui:13
+msgid "Restart your device to enjoy your Vanilla OS experience"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-yes-no.ui:36
+msgid "Enable"
+msgstr "Sermed"
+
+#: vanilla_first_setup/gtk/post-script.ui:11
+msgid "Finalizing..."
+msgstr ""
+
+#: vanilla_first_setup/gtk/post-script.ui:12
+msgid "Your device will be ready soon"
+msgstr ""
+
+#: vanilla_first_setup/gtk/progress.ui:70
+msgid "Installing..."
+msgstr "Asbeddi..."
+
+#: vanilla_first_setup/gtk/progress.ui:91
+msgid "Show Console Output"
+msgstr ""
+
+#: vanilla_first_setup/gtk/progress.ui:106
+msgid "Show Slideshow"
+msgstr ""
+
+#: vanilla_first_setup/gtk/tour.ui:27
+msgid "Read More"
+msgstr "Issin ugar"
+
+#: vanilla_first_setup/gtk/window.ui:36
+msgid "Back"
+msgstr "Uɣal"
+
+#: vanilla_first_setup/gtk/wireless-row.ui:33
+#: vanilla_first_setup/defaults/network.py:373
+msgid "Connected"
+msgstr "Yeqqen"
+
+#: vanilla_first_setup/defaults/conn_check.py:103
+msgid "No Internet Connection!"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:105
+msgid "First Setup requires an active internet connection"
+msgstr ""
+
+#: vanilla_first_setup/defaults/conn_check.py:116
+msgid "Please wait until the connection check is done."
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:38
+msgid "Insecure network (WEP)"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:39
+msgid "Secure network (WPA)"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:40
+msgid "Secure network (WPA2)"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:41
+msgid "Secure network (WPA3)"
+msgstr "Aẓeṭṭa aɣellsan (WPA3)"
+
+#: vanilla_first_setup/defaults/network.py:376
+msgid "Authentication required"
+msgstr "Asesteb yettwasra"
+
+#: vanilla_first_setup/defaults/network.py:384
+msgid "Connecting"
+msgstr "Yetteqqen"
+
+#: vanilla_first_setup/defaults/network.py:386
+msgid "Disconnected"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:388
+msgid "Disconnecting"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:390
+msgid "Connection Failed"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:392
+msgid "Status Unknown"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:394
+msgid "Unmanaged"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:396
+msgid "Unavailable"
+msgstr ""
+
+#: vanilla_first_setup/defaults/network.py:398
+msgid "Unknown"
+msgstr "Arussin"
+
+#: vanilla_first_setup/defaults/network.py:412
+msgid "Cable Unplugged"
+msgstr ""
+
+#: vanilla_first_setup/layouts/preferences.py:75
+msgid "Please select at least one option."
+msgstr ""
+
+#: vanilla_first_setup/views/done.py:55
+msgid "Restart your device to enjoy your {} experience."
+msgstr ""
+
+#: vanilla_first_setup/views/done.py:77
+msgid "Something went wrong"
+msgstr ""
+
+#: vanilla_first_setup/views/done.py:79
+msgid "Please contact the distribution developers."
+msgstr ""
+
+#: vanilla_first_setup/main.py:62
+msgid "Run a post script"
+msgstr ""
+
+#: vanilla_first_setup/main.py:70
+msgid "Run as a new user"
+msgstr ""
+
+#: vanilla_first_setup/window.py:70
+msgid "Done!"
+msgstr ""
+
+#: vanilla_first_setup/window.py:71
+msgid "Your device is ready to use."
+msgstr ""
+
+#: vanilla_first_setup/window.py:72
+msgid "Error!"
+msgstr "Tuccḍa!"
+
+#: vanilla_first_setup/window.py:73
+msgid "Something went wrong."
+msgstr ""
