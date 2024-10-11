@@ -4,30 +4,30 @@
 # Automatically generated, 2022.
 #
 # lmj0927 <lmjj0927@naver.com>, 2023.
+# Giljae Joo <giljae@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2023-12-21 19:36+0000\n"
-"Last-Translator: lmj0927 <lmjj0927@naver.com>\n"
-"Language-Team: Korean <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/ko/>\n"
+"PO-Revision-Date: 2024-10-11 19:28+0000\n"
+"Last-Translator: Giljae Joo <giljae@gmail.com>\n"
+"Language-Team: Korean <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
 msgstr "바닐라 OS 첫 번째 설정"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
-#, fuzzy
 msgid "Tweak your Vanilla OS installation."
-msgstr "우분투 바닐라 GNOME 설치를 수정합니다."
+msgstr "바닐라 OS 설치를 조정합니다."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -43,10 +43,8 @@ msgid "Checking Connection…"
 msgstr "연결 확인중…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
-#| msgid "Please wait until the connection check is done."
 msgid "Please wait until the connection check is done"
-msgstr "연결 확인이 완료될 때까지 기다려 주세요."
+msgstr "연결 확인이 완료될 때까지 기다려주세요"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -62,26 +60,19 @@ msgid "Device Name"
 msgstr "장치 이름"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "장치에 대한 세부 정보를 제공하세요"
+msgstr "장치 이름을 입력하세요"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "인터넷"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
-#, fuzzy
-#| msgid ""
-#| "An active internet connection is required to make sure your system is up-"
-#| "to-date and download your favorite applications."
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
-msgstr ""
-"시스템이 최신 상태로 유지되고 즐겨 사용하는 애플리케이션을 다운로드하려면 활"
-"성 인터넷 연결이 필요합니다."
+msgstr "즐겨 찾는 앱을 다운로드하고 시스템을 최신 상태로 유지하려면 인터넷 연결이 "
+"활성화되어 있어야 합니다"
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
@@ -108,10 +99,8 @@ msgid "Color Scheme"
 msgstr "색 구성표"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "사용자 시스템의 색 구성표를 고릅니다."
+msgstr "시스템에 맞는 색 구성표 선택"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
@@ -157,16 +146,15 @@ msgstr "정보 표시"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "완료!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr "사용자의 PC를 다시 시작하여 바닐라 OS 환경을 즐기십시오."
+msgstr "장치를 재시작하여 바닐라 OS 환경을 즐기세요"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "사용"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
 #, fuzzy
@@ -175,10 +163,8 @@ msgid "Finalizing..."
 msgstr "완료 중"
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-#, fuzzy
-#| msgid "Your device will be ready soon."
 msgid "Your device will be ready soon"
-msgstr "장치가 곧 준비될 것 입니다."
+msgstr "장치가 곧 준비됩니다."
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
