@@ -76,7 +76,7 @@ class Processor:
                 f.write("exit 0\n")
 
             # connection test
-            f.write("wget -q --spider cloudflare.com\n")
+            f.write("wget -q --spider flathub.org\n")
             f.write("if [ $? != 0 ]; then\n")
             f.write("echo 'No internet connection!'\n")
             f.write("exit 1\n")
@@ -92,7 +92,7 @@ class Processor:
                 f.write("echo '# do not edit its content manually' >> " + next_boot_script_path + "\n")
 
                 # wait for connection
-                f.write(f"echo 'while [ \"$(wget -q --spider cloudflare.com; echo $?)\" != \"0\" ]; do' >> {next_boot_script_path}\n")
+                f.write(f"echo 'while [ \"$(wget -q --spider flathub.org; echo $?)\" != \"0\" ]; do' >> {next_boot_script_path}\n")
                 f.write(f"echo 'echo Waiting for internet connection...' >> {next_boot_script_path}\n")
                 f.write(f"echo 'sleep 5' >> {next_boot_script_path}\n")
                 f.write(f"echo 'done' >> {next_boot_script_path}\n")
