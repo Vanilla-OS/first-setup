@@ -22,22 +22,18 @@ import json
 
 logger = logging.getLogger("FirstSetup::RecipeLoader")
 
+recipe_path = os.environ["VANILLA_CUSTOM_RECIPE"] if "VANILLA_CUSTOM_RECIPE" in os.environ else "/usr/share/org.vanillaos.FirstSetup/recipe.json"
 
 class RecipeLoader:
-    recipe_path = "/usr/share/org.vanillaos.FirstSetup/recipe.json"
-
     def __init__(self):
         self.__recipe = {}
         self.__load()
 
     def __load(self):
-        if "VANILLA_CUSTOM_RECIPE" in os.environ:
-            self.recipe_path = os.environ["VANILLA_CUSTOM_RECIPE"]
+        logger.info(f"Loading recipe from {recipe_path}")
 
-        logger.info(f"Loading recipe from {self.recipe_path}")
-
-        if os.path.exists(self.recipe_path):
-            with open(self.recipe_path, "r") as f:
+        if os.path.exists(recipe_path):
+            with open(recipe_path, "r") as f:
                 self.__recipe = json.load(f)
                 return
 
@@ -45,7 +41,7 @@ class RecipeLoader:
             logger.error("Invalid recipe file")
             sys.exit(1)
 
-        logger.error(f"Recipe not found at {self.recipe_path}")
+        logger.error(f"Recipe not found at {recipe_path}")
         sys.exit(1)
 
     def __validate(self):

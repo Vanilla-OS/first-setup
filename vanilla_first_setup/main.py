@@ -26,19 +26,42 @@ from gi.repository import Gtk, Gdk, Gio, GLib, Adw
 import os
 import sys
 import logging
+import json
 from gettext import gettext as _
 from vanilla_first_setup.window import VanillaWindow
+from vanilla_first_setup.utils.recipe import recipe_path
 import subprocess
 
-
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("FirstSetup::Main")
-
 
 class FirstSetupApplication(Adw.Application):
     """The main application singleton class."""
 
     def __init__(self):
+        # here we create a temporary file to store the output of the commands
+        # the log path is defined in the recipe
+        with open(recipe_path, 'r') as file:
+            recipe = json.load(file)
+
+        if "log_file" not in recipe:
+            logger.critical("Missing 'log_file' in the recipe.")
+            sys.exit(1)
+
+        log_path = recipe["log_file"]
+
+        if not os.path.exists(log_path):
+            try:
+                open(log_path, "a").close()
+                os.chmod(log_path, 0o666)
+                logging.basicConfig(level=logging.DEBUG,
+                            filename=log_path,
+                            filemode='a',
+                            )
+            except OSError as e:
+                logger.warning(f"failed to create log file: {log_path}: {e}")
+                logging.warning("No log will be stored.")
+
+
         super().__init__(
             application_id="org.vanillaos.FirstSetup",
             flags=Gio.ApplicationFlags.HANDLES_COMMAND_LINE,

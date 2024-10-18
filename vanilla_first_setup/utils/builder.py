@@ -65,21 +65,6 @@ class Builder:
         self.__load()
 
     def __load(self):
-        # here we create a temporary file to store the output of the commands
-        # the log path is defined in the recipe
-        if "log_file" not in self.__recipe.raw:
-            logger.critical("Missing 'log_file' in the recipe.")
-            sys.exit(1)
-
-        log_path = self.__recipe.raw["log_file"]
-
-        if not os.path.exists(log_path):
-            try:
-                open(log_path, "a").close()
-            except OSError as e:
-                logger.warning(f"failed to create log file: {log_path}: {e}")
-                logging.warning("No log will be stored.")
-
         for i, (key, step) in enumerate(self.__recipe.raw["steps"].items()):
             _status = True
             _protected = False

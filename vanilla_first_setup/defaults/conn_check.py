@@ -25,7 +25,6 @@ from requests import Session
 from vanilla_first_setup.utils.run_async import RunAsync
 from vanilla_first_setup.utils.network import check_connection
 
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("FirstSetup::Conn_Check")
 
 
