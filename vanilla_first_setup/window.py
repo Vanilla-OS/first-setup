@@ -178,7 +178,7 @@ class VanillaWindow(Adw.ApplicationWindow):
 
         # process the commands
         res = Processor.get_setup_commands(
-            self.recipe.get("log_file", "/tmp/vanilla_first_setup.log"),
+            self.recipe.get("log_file"),
             self.recipe.get("pre_run", []),
             self.recipe.get("post_run"),
             commands,

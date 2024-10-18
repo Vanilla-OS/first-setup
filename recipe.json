@@ -1,5 +1,5 @@
 {
-    "log_file": "/etc/vanilla/first-setup.log",
+    "log_file": "/tmp/first-setup.log",
     "distro_name": "Vanilla OS",
     "distro_logo": "org.vanillaos.FirstSetup-flower",
     "pre_run": [
