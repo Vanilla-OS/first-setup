@@ -14,7 +14,8 @@ Build-Depends:
             libjpeg-dev,
             libnm-dev,
             libnma-dev,
-            libnma-gtk4-dev
+            libnma-gtk4-dev,
+            ninja-build
 Homepage: https://github.com/mirkobrombin/vanilla-first-setup/
 Vcs-Browser: hhttps://github.com/mirkobrombin/vanilla-first-setup
 Vcs-Git: https://github.com/mirkobrombin/vanilla-first-setup.git
@@ -31,6 +32,11 @@ Depends: python3,
          gir1.2-vte-3.91,
          libnm0,
          libnma0,
-	 network-manager,
          libnma-gtk4-0
+Suggests: network-manager,
+         python-requests,
+         gir1.2-gweather-4.0,
+         gir1.2-gnomedesktop-4.0,
+         gir1.2-nma4-1.0,
+         gir1.2-nm-1.0
 Description: This utility is meant to be used in Vanilla GNOME as a first-setup wizard.

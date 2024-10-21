@@ -14,16 +14,34 @@
 
 ## Build
 
-### Dependencies
+### Build Dependencies
+```bash
+sudo apt install -y build-essential debhelper \
+                    python3 meson \
+                    libadwaita-1-dev gettext \
+                    desktop-file-utils \
+                    libjpeg-dev libnm-dev \
+                    libnma-dev libnma-gtk4-dev \
+                    ninja-build
+```
 
-- build-essential
-- meson
-- libadwaita-1-dev
-- gettext
-- desktop-file-utils
-- libnm-dev
-- libnma-dev
-- libnma-gtk4-dev
+### Runtime Dependencies
+```bash
+sudo apt install -y python3 python3-gi \
+                    python3-tz libadwaita-1-0 \
+                    gir1.2-gtk-4.0 gir1.2-adw-1 \
+                    gir1.2-vte-3.91 libnm0 \
+                    libnma0 libnma-gtk4-0
+```
+
+#### Optional Dependencies
+```bash
+sudo apt install python-requests # required for conn_check
+sudo apt install gir1.2-gweather-4.0 # required for timezones
+sudo apt install gir1.2-gnomedesktop-4.0 # required for languages, keyboard
+sudo apt install gir1.2-nma4-1.0 # required for network
+sudo apt install gir1.2-nm-1.0 # required for network
+```
 
 ### Build
 

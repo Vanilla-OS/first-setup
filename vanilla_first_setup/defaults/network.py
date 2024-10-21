@@ -15,6 +15,10 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+import gi
+
+gi.require_version("NM", "1.0")
+gi.require_version("NMA4", "1.0")
 
 import html
 import logging

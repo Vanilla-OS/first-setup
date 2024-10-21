@@ -1,3 +1,7 @@
+import gi
+
+gi.require_version("GWeather", "4.0")
+
 import datetime
 import logging
 
