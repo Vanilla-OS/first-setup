@@ -1,5 +1,9 @@
 import locale
 
+import gi
+
+gi.require_version("GnomeDesktop", "4.0")
+
 from gi.repository import GnomeDesktop
 
 all_locale = [
