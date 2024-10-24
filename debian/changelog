@@ -1,20 +1,28 @@
+vanilla-first-setup (2.2.4) unstable; urgency=critical
+
+  * Improved network and connection checks
+  * Fix logging in recipe
+  * New translation updates
+
+ -- Dharun Krishna <mail@kbdharun.dev>  Thu, 24 Oct 2024 10:52:00 -0300
+
 vanilla-first-setup (2.2.3) unstable; urgency=critical
 
   * Fixed multi-user support
 
- -- Tau <info@vanillaos.org>  Mon, 31 Jul 2023 10:52:00 -0300
+ -- Tau <info@vanillaos.org>  Wed, 31 Jul 2024 10:52:00 -0300
 
 vanilla-first-setup (2.2.0) unstable; urgency=critical
 
   * Fine tune permissions
 
- -- Mateus Melchiades <matbme@duck.com>  Mon, 26 Jul 2023 10:52:00 -0300
+ -- Mateus Melchiades <matbme@duck.com>  Fri, 26 Jul 2023 10:52:00 -0300
 
 vanilla-first-setup (2.1.0) unstable; urgency=critical
 
   * Add network step
 
- -- Mateus Melchiades <matbme@duck.com>  Mon, 26 Jul 2023 10:52:00 -0300
+ -- Mateus Melchiades <matbme@duck.com>  Fri, 26 Jul 2023 10:52:00 -0300
 
 vanilla-first-setup (2.0.7) unstable; urgency=critical
 
