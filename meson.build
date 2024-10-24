@@ -1,5 +1,5 @@
 project('org.vanillaos.FirstSetup',
-          version: '2.2.0',
+          version: '2.2.4',
     meson_version: '>= 0.59.0',
   default_options: [ 'warning_level=2',
                      'werror=false',
