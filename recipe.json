@@ -584,5 +584,7 @@
             ]
         }
     },
+    "close_command": "gnome-session-quit --no-prompt",
+    "reboot_command": "gnome-session-quit --reboot",
     "reboot_condition": "false"
 }
