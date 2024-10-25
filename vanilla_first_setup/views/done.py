@@ -98,7 +98,7 @@ class VanillaDone(Adw.Bin):
             self.btn_close.set_visible(True)
 
     def __on_reboot_clicked(self, *args):
-        subprocess.run(["gnome-session-quit", "--reboot"])
+        subprocess.run(self.__window.recipe["reboot_command"].split())
 
     def __on_close_clicked(self, *args):
         if self.__init_mode == 1:
@@ -109,7 +109,7 @@ class VanillaDone(Adw.Bin):
                     flags=GLib.SpawnFlags.SEARCH_PATH,
                 )
         else:
-            subprocess.run(["gnome-session-quit", "--no-prompt"])
+            subprocess.run(self.__window.recipe["close_command"].split())
 
         self.__window.close()
 
