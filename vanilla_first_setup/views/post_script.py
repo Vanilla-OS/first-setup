@@ -22,6 +22,7 @@ class VanillaPostScript(Adw.Bin):
     __gtype_name__ = "VanillaPostScript"
 
     console_output = Gtk.Template.Child()
+    btn_next = Gtk.Template.Child()
 
     def __init__(self, window, post_script: str, **kwargs):
         super().__init__(**kwargs)
@@ -34,6 +35,8 @@ class VanillaPostScript(Adw.Bin):
         self.__font.set_weight(Pango.Weight.NORMAL)
         self.__font.set_stretch(Pango.Stretch.NORMAL)
         self.__style_manager = self.__window.style_manager
+
+        self.btn_next.connect("clicked", self.__on_next_clicked)
 
         self.__build_ui()
 
@@ -104,4 +107,8 @@ class VanillaPostScript(Adw.Bin):
 
     def on_vte_child_exited(self, terminal, status, *args):
         status = not bool(status)
-        self.__window.next(result=status)
+        self.btn_next.set_visible(True)
+        self.__window.set_installation_result(status, self.__terminal)
+
+    def __on_next_clicked(self, *args):
+        self.__window.next()
