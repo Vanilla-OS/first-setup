@@ -5,13 +5,14 @@
 # Tomasz Dyńka <gramyteraz12@gmail.com>, 2023.
 # Marek <uroda.mar@gmail.com>, 2024.
 # Dawid Harwig <dawidharwig@gmail.com>, 2024.
+# Piotr Wieczorek <wieczorek.piotr.praga@protonmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-05-13 17:00+0000\n"
-"Last-Translator: Dawid Harwig <dawidharwig@gmail.com>\n"
+"PO-Revision-Date: 2024-11-13 07:06+0000\n"
+"Last-Translator: Piotr Wieczorek <wieczorek.piotr.praga@protonmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/pl/>\n"
 "Language: pl\n"
@@ -20,17 +21,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
-#, fuzzy
 msgid "Vanilla OS First Setup"
-msgstr "Pierwsza konfiguracja systemu Vanilla OS"
+msgstr "Pierwsze uruchomienie systemu Vanilla OS"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:7
-#, fuzzy
 msgid "Tweak your Vanilla OS installation."
-msgstr "Dostosuj swoją instalację systemu Vanilla OS."
+msgstr "Dostosuj swoją instalację Vanilla OS."
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:10
 msgid "No description"
@@ -42,14 +41,12 @@ msgstr "Pierwsze wydanie"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:114
-#, fuzzy
 msgid "Checking Connection…"
 msgstr "Sprawdzanie połączenia…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
 msgid "Please wait until the connection check is done"
-msgstr "Zaczekaj, aż sprawdzanie połączenia zostanie zakończone"
+msgstr "Proszę poczekać, aż sprawdzanie połączenia zostanie zakończone"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -61,14 +58,12 @@ msgstr "Dalej"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:27
 #: vanilla_first_setup/gtk/default-hostname.ui:35
-#, fuzzy
 msgid "Device Name"
-msgstr "Nazwa urządzenia"
+msgstr "Nazwa Urządzenia"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
 msgid "Provide your device name"
-msgstr "Podaj nazwę swojego urządzenia"
+msgstr "Nazwij swoje urządzenie"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
@@ -119,14 +114,12 @@ msgid "Dark"
 msgstr "Ciemny"
 
 #: vanilla_first_setup/gtk/default-user.ui:37
-#, fuzzy
 msgid "Create User"
-msgstr "Utwórz użytkownika"
+msgstr "Stwórz Użytkownika"
 
 #: vanilla_first_setup/gtk/default-user.ui:38
-#, fuzzy
 msgid "Provide details for your user account"
-msgstr "Podaj szczegóły konta użytkownika"
+msgstr "Podaj szczegóły dotyczące konta użytkownika"
 
 #: vanilla_first_setup/gtk/default-user.ui:45
 #, fuzzy
@@ -159,11 +152,8 @@ msgid "Finished!"
 msgstr "Zakończono!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr ""
-"Uruchom ponownie urządzenie, aby cieszyć się korzystaniem z systemu Vanilla "
-"OS"
+msgstr "Uruchom ponownie komputer, aby zacząć cieszyć się z Vanilla OS"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
@@ -182,24 +172,20 @@ msgid "Installing..."
 msgstr "Instalowanie..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
-#, fuzzy
 msgid "Show Console Output"
-msgstr "Pokaż wyjście konsoli"
+msgstr "Pokaż Wyjście Konsoli"
 
 #: vanilla_first_setup/gtk/progress.ui:106
-#, fuzzy
 msgid "Show Slideshow"
-msgstr "Pokaz slajdów"
+msgstr "Pokaż Pokaz Slajdów"
 
 #: vanilla_first_setup/gtk/tour.ui:27
-#, fuzzy
 msgid "Read More"
-msgstr "Dowiedz się więcej"
+msgstr "Czytaj Więcej"
 
 #: vanilla_first_setup/gtk/window.ui:36
-#, fuzzy
 msgid "Back"
-msgstr "Powrót"
+msgstr "Wstecz"
 
 #: vanilla_first_setup/gtk/wireless-row.ui:33
 #: vanilla_first_setup/defaults/network.py:373
@@ -207,14 +193,12 @@ msgid "Connected"
 msgstr "Połączono"
 
 #: vanilla_first_setup/defaults/conn_check.py:103
-#, fuzzy
 msgid "No Internet Connection!"
-msgstr "Brak połączenia z internetem!"
+msgstr "Brak Połączenia z Internetem!"
 
 #: vanilla_first_setup/defaults/conn_check.py:105
-#, fuzzy
 msgid "First Setup requires an active internet connection"
-msgstr "Pierwsza konfiguracja wymaga aktywnego połączenia z internetem"
+msgstr "Pierwsza konfiguracja wymaga aktywnego połączenia internetetowego"
 
 #: vanilla_first_setup/defaults/conn_check.py:116
 #, fuzzy
