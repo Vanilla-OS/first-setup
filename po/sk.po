@@ -3,21 +3,22 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Filip Čudek <cudek.filip9494@gmail.com>, 2023.
 # Martin <stefanic.martin@gmail.com>, 2023.
+# Julia Forgac <marek.forgi@protonmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2023-11-26 16:57+0000\n"
-"Last-Translator: Martin <stefanic.martin@gmail.com>\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/sk/>\n"
+"PO-Revision-Date: 2024-11-15 02:59+0000\n"
+"Last-Translator: Julia Forgac <marek.forgi@protonmail.com>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.2.1-rc\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -41,10 +42,8 @@ msgid "Checking Connection…"
 msgstr "Overuje sa pripojenie…"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:13
-#, fuzzy
-#| msgid "Please wait until the connection check is done."
 msgid "Please wait until the connection check is done"
-msgstr "Prosím počkajte, než sa dokončí kontrola pripojenia."
+msgstr "Prosím počkajte, než sa dokončí kontrola pripojenia"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:17
 #: vanilla_first_setup/gtk/default-network.ui:95
@@ -60,26 +59,20 @@ msgid "Device Name"
 msgstr "Meno zariadenia"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
-msgstr "Zadajte podrobnosti o Vašom zariadení"
+msgstr "Zadajte meno vášho zariadenia"
 
 #: vanilla_first_setup/gtk/default-network.ui:18
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: vanilla_first_setup/gtk/default-network.ui:19
-#, fuzzy
-#| msgid ""
-#| "An active internet connection is required to make sure your system is up-"
-#| "to-date and download your favorite applications."
 msgid ""
 "An active internet connection is required to download your favorite apps and "
 "to keep your system up-to-date"
 msgstr ""
-"Internetové pripojenie je potrebné, aby bolo zaručené, že Váš systém je "
-"aktualizovaný, a aby ste si mohli stiahnuť Vaše obľúbené aplikácie."
+"Internetové pripojenie je potrebné, aby bol Váš systém je aktualizovaný, a "
+"aby ste si mohli stiahnuť Vaše obľúbené aplikácie."
 
 #: vanilla_first_setup/gtk/default-network.ui:29
 msgid "Wired"
@@ -106,10 +99,8 @@ msgid "Color Scheme"
 msgstr "Vzhľad"
 
 #: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
 msgid "Choose a color scheme for your system"
-msgstr "Zvoľte si vzhľad systému."
+msgstr "Zvoľte si vzhľad systému"
 
 #: vanilla_first_setup/gtk/default-theme.ui:92
 msgid "Default"
@@ -154,37 +145,29 @@ msgstr "Zobraziť informácie"
 
 #: vanilla_first_setup/gtk/done.ui:12
 msgid "Finished!"
-msgstr ""
+msgstr "Hotovo!"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
-#| msgid "Restart your device to enjoy your Vanilla OS experience."
 msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr "Reštartujte zariadenie a vychutnajte si zážitok z Vanilla OS."
+msgstr "Reštartujte zariadenie a vychutnajte si zážitok z Vanilla OS"
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 msgid "Enable"
-msgstr ""
+msgstr "Povoliť"
 
 #: vanilla_first_setup/gtk/post-script.ui:11
-#, fuzzy
-#| msgid "Finalizing"
 msgid "Finalizing..."
-msgstr "Dokončenie"
+msgstr "Dokončovanie..."
 
 #: vanilla_first_setup/gtk/post-script.ui:12
-#, fuzzy
-#| msgid "Your device will be ready soon."
 msgid "Your device will be ready soon"
-msgstr "Vaše zariadenie bude čoskoro pripravené."
+msgstr "Vaše zariadenie bude čoskoro pripravené"
 
 #: vanilla_first_setup/gtk/progress.ui:70
 msgid "Installing..."
 msgstr "Inštalácia..."
 
 #: vanilla_first_setup/gtk/progress.ui:91
-#, fuzzy
-#| msgid "Show Console output"
 msgid "Show Console Output"
 msgstr "Ukázať výstup konzoly"
 
@@ -266,10 +249,8 @@ msgid "Unavailable"
 msgstr "Nedostupné"
 
 #: vanilla_first_setup/defaults/network.py:398
-#, fuzzy
-#| msgid "Status Unknown"
 msgid "Unknown"
-msgstr "Neznámy stav"
+msgstr "Neznáme"
 
 #: vanilla_first_setup/defaults/network.py:412
 msgid "Cable Unplugged"
