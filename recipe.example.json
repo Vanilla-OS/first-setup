@@ -530,6 +530,13 @@
                     "commands": [
                         "!nextBoot !noRoot flatpak install -y org.gnome.SoundRecorder"
                     ]
+                },
+                {
+                    "if": "Warehouse",
+                    "type": "command",
+                    "commands": [
+                        "!nextBoot !noRoot flatpak install -y io.github.flattool.Warehouse"
+                    ]
                 }
             ]
         },

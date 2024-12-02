@@ -262,6 +262,11 @@
                             "name": "Sound Recorder",
                             "icon": "org.gnome.SoundRecorder",
                             "flatpak": true
+                        },
+                        {
+                            "name": "Warehouse",
+                            "icon": "io.github.flattool.Warehouse",
+                            "flatpak": true
                         }
                     ]
                 },
