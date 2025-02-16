@@ -5,13 +5,13 @@
 #
 # Rubic Useless <cuongvutrong364@gmail.com>, 2024.
 # Thanh Minh Mai <thanhminh.mr@gmail.com>, 2024.
-# Notch Apple <Gapple1703@gmail.com>, 2024.
+# Notch Apple <Gapple1703@gmail.com>, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-05-22 13:32+0000\n"
+"PO-Revision-Date: 2025-02-16 20:59+0000\n"
 "Last-Translator: Notch Apple <Gapple1703@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/vi/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.6-dev\n"
+"X-Generator: Weblate 5.10\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -53,7 +53,7 @@ msgstr "Vui lòng đợi cho đến khi kiểm tra kết nối hoàn tất"
 #: vanilla_first_setup/gtk/default-user.ui:17
 #: vanilla_first_setup/gtk/layout-applications.ui:17
 msgid "Next"
-msgstr "Tiếp theo"
+msgstr "Tiếp tục"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:27
 #: vanilla_first_setup/gtk/default-hostname.ui:35
