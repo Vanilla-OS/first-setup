@@ -9,13 +9,14 @@
 # Guy Chronister <guylovesbritt@gmail.com>, 2024.
 # Edoardo Piccolotto <edoardo.piccolotto.services@proton.me>, 2024.
 # Mauro Remondi <re.mauro@live.com>, 2024.
+# Giacomo Pinizzotto <giacomopinizzotto@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-09-24 12:24+0000\n"
-"Last-Translator: Mauro Remondi <re.mauro@live.com>\n"
+"PO-Revision-Date: 2025-03-04 18:09+0000\n"
+"Last-Translator: Giacomo Pinizzotto <giacomopinizzotto@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/it/>\n"
 "Language: it\n"
@@ -23,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.10.3-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -156,7 +157,7 @@ msgstr "Finito!"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr "Riavvia il tuo PC per goderti la tua esperienza con Vanila OS."
+msgstr "Riavvia il tuo dispositivo per goderti la tua esperienza con Vanila OS."
 
 #: vanilla_first_setup/gtk/layout-yes-no.ui:36
 #, fuzzy

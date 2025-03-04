@@ -8,15 +8,15 @@
 # supernova <driedpampas@users.noreply.hosted.weblate.org>, 2023, 2024.
 # Alex Pascu <salutcristi@gmail.com>, 2024.
 # Cristi Rus <salutcristi@gmail.com>, 2024.
-# supernova <76390419+driedpampas@users.noreply.github.com>, 2024.
+# supernova <76390419+driedpampas@users.noreply.github.com>, 2024, 2025.
 # Andrea Andre <andrea.tsg19@slmail.me>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-10-25 13:15+0000\n"
-"Last-Translator: Andrea Andre <andrea.tsg19@slmail.me>\n"
+"PO-Revision-Date: 2025-03-01 18:21+0000\n"
+"Last-Translator: supernova <76390419+driedpampas@users.noreply.github.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ro/>\n"
 "Language: ro\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 5.8.2-dev\n"
+"X-Generator: Weblate 5.10.3-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -41,7 +41,7 @@ msgstr "Fără descriere"
 
 #: data/org.vanillaos.FirstSetup.appdata.xml.in:26
 msgid "First release"
-msgstr "Prima versiune"
+msgstr "Prima lansare"
 
 #: vanilla_first_setup/gtk/default-conn-check.ui:12
 #: vanilla_first_setup/defaults/conn_check.py:114
