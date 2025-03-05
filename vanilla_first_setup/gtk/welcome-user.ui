@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk" version="4.0"/>
+    <requires lib="libadwaita" version="1.0" />
+    <template class="VanillaWelcomeUser" parent="AdwBin">
+        <property name="halign">fill</property>
+        <property name="valign">fill</property>
+        <property name="hexpand">true</property>
+        <child>
+            <object class="AdwStatusPage" id="status_page">
+                <property name="icon-name">org.vanillaos.FirstSetup-flower</property>
+                <property name="title">Welcome!</property>
+                <property name="description" translatable="yes">Let's set up your user account</property>
+                <child>
+                    <object class="GtkBox">
+                        <property name="spacing">10</property>
+                        <property name="halign">center</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                            <object class="GtkButton" id="btn_next">
+                                <property name="label" translatable="yes">Start</property>
+                                <property name="hexpand">true</property>
+                                <style>
+                                    <class name="pill" />
+                                    <class name="suggested-action" />
+                                </style>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkButton" id="btn_access">
+                                <property name="label" translatable="yes">Accessibility</property>
+                                <property name="hexpand">true</property>
+                                <style>
+                                    <class name="pill" />
+                                </style>
+                            </object>
+                        </child>
+                    </object>
+                </child>
+            </object>
+        </child>
+    </template>
+</interface>

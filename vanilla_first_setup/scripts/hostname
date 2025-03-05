@@ -1,0 +1,13 @@
+#!/bin/bash
+if [ -z "$1" ]; then
+    echo "usage:"
+    echo "hostname <hostname>"
+    exit 5
+fi
+
+if ! [ "$UID" == "0" ]; then
+    echo "this script must be run with super user privileges"
+    exit 6
+fi
+
+echo "$1" > /etc/hostname

@@ -5,41 +5,70 @@
 
 <policyconfig>
 
-  <action id="org.vanillaos.FirstSetup.commands">
-    <description>Run Vanilla OS First Setup Commands</description>
-    <message>Run the Vanilla OS First Setup with privileges</message>
+  <action id="org.vanillaos.FirstSetup.scripts.hostname">
+    <description>FirstSetup hostname script</description>
+    <message>Set the hostname of the system</message>
     <defaults>
-      <allow_any>yes</allow_any>
-      <allow_inactive>yes</allow_inactive>
-      <allow_active>yes</allow_active>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin</allow_active>
     </defaults>
-    <annotate key="org.freedesktop.policykit.exec.path">/etc/org.vanillaos.FirstSetup.commands</annotate>
-    <annotate key="org.freedesktop.policykit.exec.allow_gui">TRUE</annotate>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/share/org.vanillaos.FirstSetup/vanilla_first_setup/scripts/hostname</annotate>
   </action>
 
-  <action id="org.vanillaos.FirstSetup.nextBoot">
-    <description>Run Vanilla OS First Setup Next Boot</description>
-    <message>Run the Vanilla OS First Setup Boot commands with privileges</message>
+  <action id="org.vanillaos.FirstSetup.scripts.keyboard">
+    <description>FirstSetup keyboard script</description>
+    <message>Set the keyboard of the system</message>
     <defaults>
-      <allow_any>yes</allow_any>
-      <allow_inactive>yes</allow_inactive>
-      <allow_active>yes</allow_active>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin</allow_active>
     </defaults>
-    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/env</annotate>
-    <annotate key="org.freedesktop.policykit.exec.argv1">/etc/org.vanillaos.FirstSetup.nextBoot</annotate>
-    <annotate key="org.freedesktop.policykit.exec.allow_gui">TRUE</annotate>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/share/org.vanillaos.FirstSetup/vanilla_first_setup/scripts/keyboard</annotate>
   </action>
 
-  <action id="org.vanillaos.FirstSetup.prepare">
-    <description>Run Vanilla OS First Setup Prepare</description>
-    <message>Run the Vanilla OS First Setup Prepare with privileges</message>
+  <action id="org.vanillaos.FirstSetup.scripts.locale">
+    <description>FirstSetup locale script</description>
+    <message>Set the locale of the system</message>
     <defaults>
-      <allow_any>yes</allow_any>
-      <allow_inactive>yes</allow_inactive>
-      <allow_active>yes</allow_active>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin</allow_active>
     </defaults>
-    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/vanilla-first-setup-prepare-files</annotate>
-    <annotate key="org.freedesktop.policykit.exec.allow_gui">TRUE</annotate>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/share/org.vanillaos.FirstSetup/vanilla_first_setup/scripts/locale</annotate>
+  </action>
+
+  <action id="org.vanillaos.FirstSetup.scripts.timezone">
+    <description>FirstSetup timezone script</description>
+    <message>Set the timezone of the system</message>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/share/org.vanillaos.FirstSetup/vanilla_first_setup/scripts/timezone</annotate>
+  </action>
+
+  <action id="org.vanillaos.FirstSetup.scripts.user">
+    <description>FirstSetup user script</description>
+    <message>Add a user to the system</message>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/share/org.vanillaos.FirstSetup/vanilla_first_setup/scripts/user</annotate>
+  </action>
+
+  <action id="org.vanillaos.FirstSetup.scripts.removeFirstSetupUser">
+    <description>FirstSetup remove FirstSetup user script</description>
+    <message>Remove FirstSetup user from the system</message>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/share/org.vanillaos.FirstSetup/vanilla_first_setup/scripts/remove-first-setup-user</annotate>
   </action>
 
 </policyconfig>

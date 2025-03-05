@@ -7,25 +7,14 @@
     <child>
       <object class="GtkOverlay">
         <property name="valign">center</property>
-        <child type="overlay">
-          <object class="GtkButton" id="btn_next">
-            <property name="margin-end">12</property>
-            <property name="margin-start">12</property>
-            <property name="icon-name">go-next-symbolic</property>
-            <property name="halign">end</property>
-            <property name="valign">center</property>
-            <property name="tooltip-text" translatable="yes">Next</property>
-            <style>
-              <class name="circular" />
-              <class name="suggested-action" />
-            </style>
-          </object>
-        </child>
         <child>
-          <object class="AdwStatusPage" id="status_page">
+          <object class="AdwStatusPage">
             <property name="halign">fill</property>
             <property name="valign">fill</property>
             <property name="hexpand">true</property>
+            <property name="title" translatable="yes">Applications</property>
+            <property name="description" translatable="yes">Choose which applications to install.</property>
+            <property name="icon-name">org.gnome.Software-symbolic</property>
             <child>
               <object class="GtkBox">
                 <property name="orientation">vertical</property>
@@ -35,7 +24,108 @@
                 <child>
                   <object class="AdwPreferencesPage">
                     <child>
-                      <object class="AdwPreferencesGroup" id="bundles_list"></object>
+                      <object class="AdwPreferencesGroup" id="bundles_list">
+                        <child>
+                          <object class="AdwActionRow">
+                            <property name="title" translatable="yes">Core Applications</property>
+                            <property name="subtitle" translatable="yes">Essential GNOME apps like Calendar or Document Viewer</property>
+                            <property name="activatable-widget">core_switch</property>
+                            <child type="suffix">
+                              <object class="GtkSwitch" id="core_switch">
+                                <property name="valign">3</property>
+                                <property name="active">true</property>
+                                <property name="focusable">false</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkButton" id="core_button">
+                                <property name="valign">3</property>
+                                <property name="icon-name">go-next-symbolic</property>
+                                <property name="sensitive">true</property>
+                                <property name="tooltip-text" translatable="yes">Customize Core Applications</property>
+                                <style>
+                                  <class name="flat"/>
+                                </style>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="AdwActionRow">
+                            <property name="title" translatable="yes">Browsers</property>
+                            <property name="subtitle" translatable="yes">Essential GNOME apps like Calendar or Document Viewer</property>
+                            <property name="activatable-widget">browsers_switch</property>
+                            <child type="suffix">
+                              <object class="GtkSwitch" id="browsers_switch">
+                                <property name="valign">3</property>
+                                <property name="active">true</property>
+                                <property name="focusable">false</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkButton" id="browsers_button">
+                                <property name="valign">3</property>
+                                <property name="icon-name">go-next-symbolic</property>
+                                <property name="sensitive">true</property>
+                                <property name="tooltip-text" translatable="yes">Customize Browsers</property>
+                                <style>
+                                  <class name="flat"/>
+                                </style>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="AdwActionRow">
+                            <property name="title" translatable="yes">Common Utilities</property>
+                            <property name="subtitle" translatable="yes">Useful utilities to enhance your desktop experience</property>
+                            <property name="activatable-widget">utilities_switch</property>
+                            <child type="suffix">
+                              <object class="GtkSwitch" id="utilities_switch">
+                                <property name="valign">3</property>
+                                <property name="active">false</property>
+                                <property name="focusable">false</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkButton" id="utilities_button">
+                                <property name="valign">3</property>
+                                <property name="icon-name">go-next-symbolic</property>
+                                <property name="sensitive">false</property>
+                                <property name="tooltip-text" translatable="yes">Customize Utilities</property>
+                                <style>
+                                  <class name="flat"/>
+                                </style>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="AdwActionRow">
+                            <property name="title" translatable="yes">Office</property>
+                            <property name="subtitle" translatable="yes">The LibreOffice suite</property>
+                            <property name="activatable-widget">office_switch</property>
+                            <child type="suffix">
+                              <object class="GtkSwitch" id="office_switch">
+                                <property name="valign">3</property>
+                                <property name="active">false</property>
+                                <property name="focusable">false</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkButton" id="office_button">
+                                <property name="valign">3</property>
+                                <property name="icon-name">go-next-symbolic</property>
+                                <property name="sensitive">false</property>
+                                <property name="tooltip-text" translatable="yes">Customize Office Applications</property>
+                                <style>
+                                  <class name="flat"/>
+                                </style>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
                     </child>
                   </object>
                 </child>

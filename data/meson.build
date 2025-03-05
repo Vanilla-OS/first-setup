@@ -1,31 +1,35 @@
 install_data(
-    'firstsetup.desktop',
+    'firstsetup-session.desktop',
+    rename: 'firstsetup.desktop',
     install_dir: join_paths(get_option('datadir'), 'xsessions')
 )
 
 install_data(
-     'firstsetup.desktop',
-     install_dir: join_paths(get_option('datadir'), 'wayland-sessions')
+    'firstsetup-session.desktop',
+    rename: 'firstsetup.desktop',
+    install_dir: join_paths(get_option('datadir'), 'wayland-sessions')
 )
 
 install_data(
-    'org.vanillaos.FirstSetup.NewUser.desktop',
-    install_dir: join_paths(get_option('datadir'), 'applications')
-)
-
-install_data(
-    'firstsetup.json',
-    install_dir: join_paths(get_option('datadir'), 'gnome-shell', 'modes')
-)
-
-install_data(
-    'firstsetup.session',
+    'firstsetup-session.desktop',
+    rename: 'firstsetup.desktop',
     install_dir: join_paths(get_option('datadir'), 'gnome-session', 'sessions')
 )
 
 install_data(
-    'firstsetup.session.conf',
-    install_dir: join_paths(get_option('datadir'), '..', 'lib', 'systemd', 'user', 'gnome-session@firstsetup.target.d')
+    'firstsetup-session-mode.json',
+    rename: 'firstsetup.json',
+    install_dir: join_paths(get_option('datadir'), 'gnome-shell', 'modes')
+)
+
+install_data(
+    'org.vanillaos.FirstSetup.policy',
+    install_dir: join_paths(get_option('prefix'), get_option('datadir'), 'polkit-1', 'actions')
+)
+
+install_data(
+    'org.vanillaos.FirstSetup.rules',
+    install_dir: join_paths(get_option('prefix'), get_option('datadir'), 'polkit-1', 'rules.d')
 )
 
 desktop_file = i18n.merge_file(
@@ -34,7 +38,17 @@ desktop_file = i18n.merge_file(
   type: 'desktop',
   po_dir: '../po',
   install: true,
-  install_dir: join_paths(get_option('datadir'), 'applications')
+  install_dir: join_paths(get_option('datadir'), 'applications'),
+)
+
+custom_target(
+  'install-autostart-desktop',
+  input: desktop_file,
+  output: 'org.vanillaos.FirstSetup.autostart.desktop',
+  command: ['cp', '@INPUT@', '@OUTPUT@'],
+  install_dir: join_paths(get_option('sysconfdir'), 'skel', '.config', 'autostart'),
+  build_by_default: true,
+  install : true,
 )
 
 desktop_utils = find_program('desktop-file-validate', required: false)
@@ -44,30 +58,14 @@ if desktop_utils.found()
   )
 endif
 
-appstream_file = i18n.merge_file(
-  input: 'org.vanillaos.FirstSetup.appdata.xml.in',
-  output: 'org.vanillaos.FirstSetup.appdata.xml',
-  po_dir: '../po',
-  install: true,
-  install_dir: join_paths(get_option('datadir'), 'appdata')
+install_data(
+  'remove-first-setup-user.service',
+  install_dir: join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
 )
 
-appstream_util = find_program('appstream-util', required: false)
-if appstream_util.found()
-  test('Validate appstream file', appstream_util,
-    args: ['validate', appstream_file]
-  )
-endif
-
-install_data('org.vanillaos.FirstSetup.gschema.xml',
-  install_dir: join_paths(get_option('datadir'), 'glib-2.0/schemas')
+install_data(
+  'remove-first-setup-user',
+  install_dir: join_paths(get_option('prefix'), 'libexec')
 )
-
-compile_schemas = find_program('glib-compile-schemas', required: false)
-if compile_schemas.found()
-  test('Validate schema file', compile_schemas,
-    args: ['--strict', '--dry-run', meson.current_source_dir()]
-  )
-endif
 
 subdir('icons')

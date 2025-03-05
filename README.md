@@ -3,67 +3,128 @@
     <h1>Vanilla OS First Setup</h1>
     <p>This utility is meant to be used in <a href="https://github.com/vanilla-os">Vanilla OS</a>
     as a first-setup wizard. Its purpose is to help the user to configure the
-    system to their needs, e.g. by configuring snap, flatpak, flathub, etc.</p>
+    system to their needs, e.g. by configuring hostname, theme, flatpak apps, etc.</p>
     <hr />
-    <a href="https://hosted.weblate.org/engage/vanilla-os/">
+    <a href="https://hosted.weblate.org/projects/vanilla-os/first-setup/#information">
 <img src="https://hosted.weblate.org/widgets/vanilla-os/-/first-setup/svg-badge.svg" alt="Translation status" />
 </a>
     <br />
-    <img src="data/screenshot-1.png">
+    <img src="data/screenshots/welcome-page.png">
 </div>
+
+## Run without building for Testing
+
+> [!IMPORTANT]  
+> You need to install all build and run dependencies first
+
+```bash
+python3 test.py -d
+```
+
+The "-d" option is the dry-run mode, without it, first-setup will make changes to your system.
+
+Pass the "-c" flag to force the configure system mode.
+
+### Test translations:
+
+You can change the used language like this:
+```bash
+LANGUAGE=de python3 test.py -d
+```
 
 ## Build
 
-### Build Dependencies
+### Installing build dependencies
 ```bash
-sudo apt install -y build-essential debhelper \
-                    python3 meson \
-                    libadwaita-1-dev gettext \
-                    desktop-file-utils \
-                    libjpeg-dev libnm-dev \
-                    libnma-dev libnma-gtk4-dev \
-                    ninja-build
+sudo apt-get update
+sudo apt-get build-dep .
 ```
 
-### Runtime Dependencies
+If you want to install the build dependencies manually, have a look in:
+[debian/control](https://github.com/Vanilla-OS/first-setup/blob/main/debian/control)
+
+### Building
+
+> [!WARNING]  
+> dpkg-buildpackage places it's output files (Like the .deb file) into the parent folder.
+
 ```bash
-sudo apt install -y python3 python3-gi \
-                    python3-tz libadwaita-1-0 \
-                    gir1.2-gtk-4.0 gir1.2-adw-1 \
-                    gir1.2-vte-3.91 libnm0 \
-                    libnma0 libnma-gtk4-0
+dpkg-buildpackage
 ```
 
-#### Optional Dependencies
+or manually with meson:
+
 ```bash
-sudo apt install python-requests # required for conn_check
-sudo apt install gir1.2-gweather-4.0 # required for timezones
-sudo apt install gir1.2-gnomedesktop-4.0 # required for languages, keyboard
-sudo apt install gir1.2-nma4-1.0 # required for network
-sudo apt install gir1.2-nm-1.0 # required for network
+meson setup build
+meson compile -C build
 ```
 
-### Build
-
+Here you can change the install folder (default is /usr/local), for example:
 ```bash
-meson build
-ninja -C build
+meson setup --prefix="$(pwd)/install" build
 ```
 
-### Install
+## Install
+
+### Installing runtime dependencies
+These can be found here:
+[debian/control](https://github.com/Vanilla-OS/first-setup/blob/main/debian/control)
+
+> [!TIP]   
+> If you use apt-get to install the .deb file it will automatically install the dependencies.
+
+### Installing
 
 ```bash
-sudo ninja -C build install
+sudo apt-get install ./vanilla-first-setup*.deb
+```
+
+or manually with meson:
+
+```bash
+meson install -C build
 ```
 
 ## Run
 
+### Creating initial user
+
+A special user is needed to run the initial setup for hostname, user-creation, locale, etc.
+
+1. Create a user
+2. Create the group vanilla-first-setup (Changing the gid is recommended to avoid messing with user groups)
+3. Add the user to group vanilla-first-setup
+4. Create the file `/var/lib/AccountsService/users/your_user`
+```ini
+[User]
+Session=firstsetup
+```
+5. Create the file `/etc/gdm3/daemon.conf` (replace your_user)
+```ini
+[daemon]
+AutomaticLogin=your_user
+AutomaticLoginEnable=True
+```
+
+> [!WARNING]  
+> All users in this group will be deleted on the first reboot after a successful first setup.
+
+### Running
 ```bash
 vanilla-first-setup
 ```
 
-### Using custom recipes
+#### Flags:
 
-Place a new recipe in `/etc/vanilla-first-setup/recipe.json` or launch the
-utility with the `VANILLA_CUSTOM_RECIPE` environment variable set to the path
-of the recipe.
+- --dry-run (-d): Don't make any changes to the system.
+- --force-configure-mode (-c): Force the configure system mode, independant of group.
+- --force-regular-mode (-r): Force the regular mode, independant of group.
+- --oem-mode (-o): Use the original equipment manufacturer mode with language, keyboard and timezone selection.
+
+## Update translation file
+
+To update the .pot file with newly added translation strings, run:
+
+```bash
+meson compile -C build vanilla-first-setup-pot
+```

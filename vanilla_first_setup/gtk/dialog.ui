@@ -17,13 +17,19 @@
                     </object>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label_text">
-                    <property name="margin-top">10</property>
-                    <property name="margin-start">10</property>
-                    <property name="margin-end">10</property>
-                    <property name="margin-bottom">20</property>
-                    <property name="wrap">True</property>
-                  </object>
+                    <object class="GtkScrolledWindow" id="scrolled_window">
+                        <property name="propagate-natural-height">true</property>
+                        <property name="max-content-height">500</property>
+                        <child>
+                            <object class="GtkLabel" id="label_text">
+                                <property name="margin-top">10</property>
+                                <property name="margin-start">10</property>
+                                <property name="margin-end">10</property>
+                                <property name="margin-bottom">20</property>
+                                <property name="wrap">True</property>
+                            </object>
+                        </child>
+                    </object>
                 </child>
             </object>
         </child>

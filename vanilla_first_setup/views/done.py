@@ -1,6 +1,6 @@
 # done.py
 #
-# Copyright 2023 mirkobrombin
+# Copyright 2024 mirkobrombin
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -14,108 +14,53 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from gettext import gettext as _
-from gi.repository import Gtk, Adw, GLib
-
 import subprocess
 
-from vanilla_first_setup.utils.recipe import RecipeLoader
+_ = __builtins__["_"]
+from gi.repository import Gtk, Adw
 
+import vanilla_first_setup.core.backend as backend
 
 @Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/done.ui")
 class VanillaDone(Adw.Bin):
     __gtype_name__ = "VanillaDone"
 
     status_page = Gtk.Template.Child()
-    btn_reboot = Gtk.Template.Child()
+    btn_tour = Gtk.Template.Child()
+    btn_exit = Gtk.Template.Child()
     btn_logs = Gtk.Template.Child()
-    btn_close = Gtk.Template.Child()
     log_box = Gtk.Template.Child()
     log_output = Gtk.Template.Child()
 
     def __init__(
         self,
         window,
-        title: str = "",
-        description: str = "",
-        fail_title: str = "",
-        fail_description: str = "",
-        init_mode: int = 0,
         **kwargs,
     ):
         super().__init__(**kwargs)
         self.__window = window
-        self.__fail_title = fail_title
-        self.__fail_description = fail_description
-        self.__init_mode = init_mode
 
-        if not title and not description:
-            self.status_page.set_description(
-                _("You're ready to start experiencing {}.").format(
-                    self.__window.recipe["distro_name"]
-                )
-            )
-        else:
-            self.status_page.set_title(title)
-            self.status_page.set_description(description)
-
-        self.btn_reboot.set_visible(False)
-        self.btn_close.set_visible(True)
-        
-        # hide when progress is previous step
-        if self.__init_mode != 1:
-            self.btn_logs.set_visible(False)
-
-        self.btn_close.connect("clicked", self.__on_close_clicked)
         self.btn_logs.connect("clicked", self.__on_logs_clicked)
-        self.btn_reboot.connect("clicked", self.__on_reboot_clicked)
+        self.btn_exit.connect("clicked", self.__on_exit_clicked)
+        self.btn_tour.connect("clicked", self.__on_tour_clicked)
 
-    def set_reboot(self):
-        recipe = RecipeLoader()
-        if recipe.raw.get("reboot_condition"):
-            condition = subprocess.run(recipe.raw["reboot_condition"].split())
-            if condition.returncode == 0:
-                self.status_page.set_description(
-                    ("Restart your device to enjoy your {} experience.").format(
-                        self.__window.recipe["distro_name"]
-                    )
-                )
-                self.btn_reboot.set_visible(True)
-                self.btn_close.set_visible(False)
-            else:
-                self.btn_reboot.set_visible(False)
-                self.btn_close.set_visible(True)
+    def set_page_active(self):
+        has_errors = len(backend.errors) > 0
+        self.btn_logs.set_visible(has_errors)
+        self.btn_tour.grab_focus()
+    
+    def set_page_inactive(self):
+        return
 
-    def set_result(self, result, terminal=None):
-        out = terminal.get_text()[0] if terminal else ""
+    def __on_tour_clicked(self, *args):
+        subprocess.Popen(["/usr/bin/vanilla-tour"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, stdin=subprocess.DEVNULL, start_new_session=True)
+        self.__window.close()
 
-        if not result:
-            self.status_page.set_icon_name("dialog-error-symbolic")
-            self.status_page.set_title(_("Something went wrong"))
-            self.status_page.set_description(
-                _("Please contact the distribution developers.")
-            )
-            if len(out) > 0:
-                self.log_output.set_text(out)
-                self.log_box.set_visible(True)
-            self.btn_reboot.set_visible(False)
-            self.btn_close.set_visible(True)
-
-    def __on_reboot_clicked(self, *args):
-        subprocess.run(self.__window.recipe["reboot_command"].split())
-
-    def __on_close_clicked(self, *args):
-        if self.__init_mode == 1:
-            recipe = RecipeLoader()
-            if recipe.raw.get("tour_app"):
-                GLib.spawn_async(
-                    [recipe.raw["tour_app"]],
-                    flags=GLib.SpawnFlags.SEARCH_PATH,
-                )
-        else:
-            subprocess.run(self.__window.recipe["close_command"].split())
-
+    def __on_exit_clicked(self, *args):
         self.__window.close()
 
     def __on_logs_clicked(self, *args):
-        self.__window.back()
+        self.btn_logs.set_visible(False)
+        self.log_box.set_visible(True)
+        logs_text = "\n\n".join(backend.errors)
+        self.log_output.set_label(logs_text)

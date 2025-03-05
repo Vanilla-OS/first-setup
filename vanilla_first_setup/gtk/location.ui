@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="VanillaLocation" parent="AdwBin">
+    <child>
+      <object class="AdwClamp">
+        <property name="maximum-size">600</property>
+        <property name="width-request">600</property>
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">1</property>
+            <child>
+              <object class="GtkSearchEntry" id="entry_search">
+                <property name="hexpand">true</property>
+                <property name="placeholder-text" translatable="yes">Search keyboard layouts</property>
+                <property name="search-delay">250</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwNavigationView" id="navigation"></object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="search_warning_label">
+                <property name="label" translatable="yes">The search results are incomplete. Try refining your query.</property>
+                <property name="wrap">true</property>
+                <property name="wrap-mode">2</property>
+                <property name="visible">false</property>
+                <style>
+                  <class name="warning"/>
+                </style>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

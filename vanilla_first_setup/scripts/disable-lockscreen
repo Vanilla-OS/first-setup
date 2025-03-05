@@ -1,0 +1,14 @@
+#!/bin/bash
+if ! [ -z "$1" ]; then
+    echo "usage:"
+    echo "disable-lockscreen"
+    exit 5
+fi
+
+if [ "$UID" == "0" ]; then
+    echo "this script must be run as a regular user"
+    exit 7
+fi
+
+/usr/bin/gsettings set "org.gnome.desktop.lockdown" "disable-lock-screen" "true"
+/usr/bin/gsettings set "org.gnome.desktop.screensaver" "lock-enabled" "false"

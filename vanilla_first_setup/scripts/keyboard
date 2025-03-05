@@ -1,0 +1,16 @@
+#!/bin/bash
+if [ -z "$1" ] || [ -z "$2" ]; then
+    echo "usage:"
+    echo "keyboard <model> <layout> [variant]"
+    exit 5
+fi
+
+if ! [ "$UID" == "0" ]; then
+    echo "this script must be run with super user privileges"
+    exit 6
+fi
+
+echo "XKBMODEL=$1" > /etc/vconsole.conf
+echo "XKBLAYOUT=$2" >> /etc/vconsole.conf
+echo "XKBVARIANT=$3" >> /etc/vconsole.conf
+echo "BACKSPACE=guess" >> /etc/vconsole.conf

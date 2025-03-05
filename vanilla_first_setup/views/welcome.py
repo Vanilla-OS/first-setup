@@ -15,20 +15,22 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import time
+import threading
+import random
+
 from gi.repository import Gtk, GLib, Adw
-from vanilla_first_setup.utils.recipe import RecipeLoader
 
-from vanilla_first_setup.utils.run_async import RunAsync
+import vanilla_first_setup.core.backend as backend
 
+@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/welcome.ui")
+class VanillaWelcome(Adw.Bin):
+    __gtype_name__ = "VanillaWelcome"
 
-@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/default-welcome.ui")
-class VanillaDefaultWelcome(Adw.Bin):
-    __gtype_name__ = "VanillaDefaultWelcome"
-
-    btn_advanced = Gtk.Template.Child()
     btn_next = Gtk.Template.Child()
-    status_page = Gtk.Template.Child()
+    btn_access = Gtk.Template.Child()
     title_label = Gtk.Template.Child()
+
+    __stop_animation = True
 
     welcome = [
         "Welcome",
@@ -66,54 +68,47 @@ class VanillaDefaultWelcome(Adw.Bin):
         "ಸುಸ್ವಾಗತ",
         "സ്വാഗതം",
     ]
+    current_welcome_text = 0
 
-    def validate_advanced(self):
-        recipeLoader = RecipeLoader()
-        for i in recipeLoader.raw["steps"].items():
-            try:
-                if i[1]["is-advanced"] == True:
-                    return
-            except:
-                pass
-
-        self.btn_advanced.set_sensitive(False)
-
-    def __init__(self, window, distro_info, key, step, **kwargs):
+    def __init__(self, window, **kwargs):
         super().__init__(**kwargs)
         self.__window = window
-        self.__distro_info = distro_info
-        self.__key = key
-        self.__step = step
-        self.validate_advanced()
 
-        # animation start
+        random.shuffle(self.welcome)
+
+        self.btn_next.connect("clicked", self.__on_btn_next_clicked)
+        self.btn_access.connect("clicked", self.__on_btn_access_clicked)
+
+    def set_page_active(self):
+        self.__window.set_ready(True)
+        self.btn_next.grab_focus()
+
+        self.__stop_animation = False
         self.__start_welcome_animation()
 
-        # signals
-        self.btn_advanced.connect("clicked", self.__advanced)
-        self.btn_next.connect("clicked", self.__next)
+    def set_page_inactive(self):
+        self.__stop_animation = True
 
-        # set distro logo
-        self.status_page.set_icon_name(self.__distro_info["logo"])
-
-    @property
-    def step_id(self):
-        return self.__key
+    def finish(self):
+        return True
 
     def __start_welcome_animation(self):
-        def change_langs():
-            while True:
-                for lang in self.welcome:
-                    GLib.idle_add(self.title_label.set_text, lang)
-                    time.sleep(1.2)
+        def change_langs_thread():
+            while not self.__stop_animation:
+                time.sleep(1.2)
+                lang = self.welcome[self.current_welcome_text]
+                GLib.idle_add(self.title_label.set_text, lang)
 
-        RunAsync(change_langs, None)
+                self.current_welcome_text += 1
+                if self.current_welcome_text > len(self.welcome)-1:
+                    self.current_welcome_text = 0
 
-    def __advanced(self, widget):
-        self.__window.next(rebuild=True, mode=1)
+        welcome_animation_thread = threading.Thread(target=change_langs_thread)
+        welcome_animation_thread.start()
 
-    def __next(self, widget):
-        self.__window.next(rebuild=True, mode=0)
+    def __on_btn_next_clicked(self, widget):
+        self.__window.finish_step()
 
-    def get_finals(self):
-        return {}
+    def __on_btn_access_clicked(self, widget):
+        thread = threading.Thread(target=backend.open_accessibility_settings)
+        thread.start()

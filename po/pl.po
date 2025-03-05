@@ -10,11 +10,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-18 16:40+0530\n"
+"POT-Creation-Date: 2025-03-05 02:32+0100\n"
 "PO-Revision-Date: 2024-11-13 07:06+0000\n"
 "Last-Translator: Piotr Wieczorek <wieczorek.piotr.praga@protonmail.com>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/pl/>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/vanilla-os/first-"
+"setup/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,290 +23,526 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 5.9-dev\n"
 
-#: data/org.vanillaos.FirstSetup.desktop.in:3
+#: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
 msgstr "Pierwsze uruchomienie systemu Vanilla OS"
 
-#: data/org.vanillaos.FirstSetup.appdata.xml.in:7
-msgid "Tweak your Vanilla OS installation."
-msgstr "Dostosuj swoją instalację Vanilla OS."
+#: vanilla_first_setup/gtk/window.ui:25
+msgid "Back"
+msgstr "Wstecz"
 
-#: data/org.vanillaos.FirstSetup.appdata.xml.in:10
-msgid "No description"
-msgstr "Brak opisu"
-
-#: data/org.vanillaos.FirstSetup.appdata.xml.in:26
-msgid "First release"
-msgstr "Pierwsze wydanie"
-
-#: vanilla_first_setup/gtk/default-conn-check.ui:12
-#: vanilla_first_setup/defaults/conn_check.py:114
-msgid "Checking Connection…"
-msgstr "Sprawdzanie połączenia…"
-
-#: vanilla_first_setup/gtk/default-conn-check.ui:13
-msgid "Please wait until the connection check is done"
-msgstr "Proszę poczekać, aż sprawdzanie połączenia zostanie zakończone"
-
-#: vanilla_first_setup/gtk/default-hostname.ui:17
-#: vanilla_first_setup/gtk/default-network.ui:95
-#: vanilla_first_setup/gtk/default-theme.ui:18
-#: vanilla_first_setup/gtk/default-user.ui:17
-#: vanilla_first_setup/gtk/layout-applications.ui:17
+#: vanilla_first_setup/gtk/window.ui:39 vanilla_first_setup/gtk/window.ui:55
 msgid "Next"
 msgstr "Dalej"
 
-#: vanilla_first_setup/gtk/default-hostname.ui:27
-#: vanilla_first_setup/gtk/default-hostname.ui:35
-msgid "Device Name"
-msgstr "Nazwa Urządzenia"
+#: vanilla_first_setup/gtk/logout.ui:12 vanilla_first_setup/gtk/done.ui:12
+msgid "Finished!"
+msgstr "Zakończono!"
 
-#: vanilla_first_setup/gtk/default-hostname.ui:28
-msgid "Provide your device name"
-msgstr "Nazwij swoje urządzenie"
-
-#: vanilla_first_setup/gtk/default-network.ui:18
-msgid "Internet"
-msgstr "Internet"
-
-#: vanilla_first_setup/gtk/default-network.ui:19
-msgid ""
-"An active internet connection is required to download your favorite apps and "
-"to keep your system up-to-date"
-msgstr ""
-"Połączenie z internetem jest wymagane, aby pobrać Twoje ulubione aplikacje i "
-"aby Twój system był aktualny"
-
-#: vanilla_first_setup/gtk/default-network.ui:29
-msgid "Wired"
-msgstr "Przewodowe"
-
-#: vanilla_first_setup/gtk/default-network.ui:34
-msgid "Wireless Networks"
-msgstr "Sieci bezprzewodowe"
-
-#: vanilla_first_setup/gtk/default-network.ui:39
-msgid "Advanced"
-msgstr "Zaawansowane"
-
-#: vanilla_first_setup/gtk/default-network.ui:42
-msgid "Connect to Hidden Network..."
-msgstr "Połącz z ukrytą siecią..."
-
-#: vanilla_first_setup/gtk/default-network.ui:69
-msgid "Open Proxy Settings..."
-msgstr "Otwórz ustawienia proxy..."
-
-#: vanilla_first_setup/gtk/default-theme.ui:27
-msgid "Color Scheme"
-msgstr "Schemat kolorów"
-
-#: vanilla_first_setup/gtk/default-theme.ui:28
-msgid "Choose a color scheme for your system"
-msgstr "Wybierz schemat kolorów dla swojego systemu"
-
-#: vanilla_first_setup/gtk/default-theme.ui:92
-msgid "Default"
-msgstr "Domyślny"
-
-#: vanilla_first_setup/gtk/default-theme.ui:139
-msgid "Dark"
-msgstr "Ciemny"
-
-#: vanilla_first_setup/gtk/default-user.ui:37
-msgid "Create User"
-msgstr "Stwórz Użytkownika"
-
-#: vanilla_first_setup/gtk/default-user.ui:38
-msgid "Provide details for your user account"
-msgstr "Podaj szczegóły dotyczące konta użytkownika"
-
-#: vanilla_first_setup/gtk/default-user.ui:45
+#: vanilla_first_setup/gtk/logout.ui:13
 #, fuzzy
-msgid "Name"
-msgstr "Nazwa konta"
+msgid "Login to your new user"
+msgstr "Uruchom jako nowy użytkownik"
 
-#: vanilla_first_setup/gtk/default-user.ui:51
-msgid "Username"
-msgstr "Nazwisko"
+#: vanilla_first_setup/gtk/logout.ui:23
+msgid "Login Now"
+msgstr ""
 
-#: vanilla_first_setup/gtk/default-user.ui:57
-msgid "Password"
-msgstr "Hasło"
+#: vanilla_first_setup/gtk/done.ui:13
+#, fuzzy
+msgid "Your user account is ready to use"
+msgstr "Twoje urządzenie jest gotowe do używania."
 
-#: vanilla_first_setup/gtk/default-user.ui:63
-msgid "Confirm Password"
-msgstr "Potwierdź hasło"
+#: vanilla_first_setup/gtk/done.ui:29
+msgid "Take a tour"
+msgstr ""
 
-#: vanilla_first_setup/gtk/default-welcome.ui:20
-#: vanilla_first_setup/gtk/default-welcome.ui:29
-msgid "Welcome!"
-msgstr "Witamy!"
+#: vanilla_first_setup/gtk/done.ui:40
+msgid "Exit"
+msgstr ""
+
+#: vanilla_first_setup/gtk/progress.ui:9
+msgid "Progress"
+msgstr ""
+
+#: vanilla_first_setup/gtk/progress.ui:10
+msgid "Some steps still take some time"
+msgstr ""
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
 msgstr "Wyświetlanie informacji"
 
-#: vanilla_first_setup/gtk/done.ui:12
-msgid "Finished!"
-msgstr "Zakończono!"
+#: vanilla_first_setup/gtk/conn-check.ui:12
+#, fuzzy
+msgid "Checking Connection"
+msgstr "Sprawdzanie połączenia…"
 
-#: vanilla_first_setup/gtk/done.ui:13
-msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr "Uruchom ponownie komputer, aby zacząć cieszyć się z Vanilla OS"
+#: vanilla_first_setup/gtk/conn-check.ui:13
+msgid "Please wait until the connection check is done"
+msgstr "Proszę poczekać, aż sprawdzanie połączenia zostanie zakończone"
 
-#: vanilla_first_setup/gtk/layout-yes-no.ui:36
-msgid "Enable"
-msgstr "Włącz"
+#: vanilla_first_setup/gtk/conn-check.ui:16
+#, fuzzy
+msgid "Open Settings"
+msgstr "Otwórz ustawienia proxy..."
 
-#: vanilla_first_setup/gtk/post-script.ui:11
-msgid "Finalizing..."
-msgstr "Finalizacja..."
+#: vanilla_first_setup/gtk/theme.ui:13
+msgid "Color Scheme"
+msgstr "Schemat kolorów"
 
-#: vanilla_first_setup/gtk/post-script.ui:12
-msgid "Your device will be ready soon"
-msgstr "Twoje urządzenie będzie wkrótce gotowe"
+#: vanilla_first_setup/gtk/theme.ui:14
+msgid "Choose a color scheme for your system"
+msgstr "Wybierz schemat kolorów dla swojego systemu"
 
-#: vanilla_first_setup/gtk/progress.ui:70
-msgid "Installing..."
-msgstr "Instalowanie..."
+#: vanilla_first_setup/gtk/theme.ui:41
+msgid "Light Mode"
+msgstr ""
 
-#: vanilla_first_setup/gtk/progress.ui:91
-msgid "Show Console Output"
-msgstr "Pokaż Wyjście Konsoli"
+#: vanilla_first_setup/gtk/theme.ui:79
+msgid "Light"
+msgstr ""
 
-#: vanilla_first_setup/gtk/progress.ui:106
-msgid "Show Slideshow"
-msgstr "Pokaż Pokaz Slajdów"
+#: vanilla_first_setup/gtk/theme.ui:88
+#, fuzzy
+msgid "Dark Mode"
+msgstr "Ciemny"
 
-#: vanilla_first_setup/gtk/tour.ui:27
-msgid "Read More"
-msgstr "Czytaj Więcej"
+#: vanilla_first_setup/gtk/theme.ui:127
+msgid "Dark"
+msgstr "Ciemny"
 
-#: vanilla_first_setup/gtk/window.ui:36
-msgid "Back"
-msgstr "Wstecz"
+#: vanilla_first_setup/gtk/welcome.ui:39
+#, fuzzy
+msgid "Make your choices, this wizard will take care of everything"
+msgstr "Dokonaj wyborów, a ten kreator zajmie się wszystkim."
 
-#: vanilla_first_setup/gtk/wireless-row.ui:33
-#: vanilla_first_setup/defaults/network.py:373
-msgid "Connected"
-msgstr "Połączono"
+#: vanilla_first_setup/gtk/welcome.ui:52
+#: vanilla_first_setup/gtk/welcome-user.ui:21
+msgid "Start"
+msgstr ""
 
-#: vanilla_first_setup/defaults/conn_check.py:103
+#: vanilla_first_setup/gtk/welcome.ui:62
+#: vanilla_first_setup/gtk/welcome-user.ui:31
+msgid "Accessibility"
+msgstr ""
+
+#: vanilla_first_setup/gtk/welcome-user.ui:13
+#, fuzzy
+msgid "Let's set up your user account"
+msgstr "Podaj szczegóły dotyczące konta użytkownika"
+
+#: vanilla_first_setup/gtk/user.ui:23
+msgid "Create User"
+msgstr "Stwórz Użytkownika"
+
+#: vanilla_first_setup/gtk/user.ui:24
+msgid "Provide details for your user account"
+msgstr "Podaj szczegóły dotyczące konta użytkownika"
+
+#: vanilla_first_setup/gtk/user.ui:31
+#, fuzzy
+msgid "Name"
+msgstr "Nazwa konta"
+
+#: vanilla_first_setup/gtk/user.ui:38
+msgid "Username"
+msgstr "Nazwisko"
+
+#: vanilla_first_setup/gtk/hostname.ui:13
+#: vanilla_first_setup/gtk/hostname.ui:21
+msgid "Device Name"
+msgstr "Nazwa Urządzenia"
+
+#: vanilla_first_setup/gtk/hostname.ui:14
+msgid "Provide your device name"
+msgstr "Nazwij swoje urządzenie"
+
+#: vanilla_first_setup/gtk/hostname.ui:31
+msgid ""
+"Hostname can only contain up to 64 English lowercase letters with hyphens in-"
+"between."
+msgstr ""
+
+#: vanilla_first_setup/gtk/language.ui:10
+#: vanilla_first_setup/views/language.py:36
+msgid "Language"
+msgstr ""
+
+#: vanilla_first_setup/gtk/language.ui:11
+msgid "Select your language"
+msgstr ""
+
+#: vanilla_first_setup/gtk/location.ui:15
+msgid "Search keyboard layouts"
+msgstr ""
+
+#: vanilla_first_setup/gtk/location.ui:24
+msgid "The search results are incomplete. Try refining your query."
+msgstr ""
+
+#: vanilla_first_setup/gtk/timezone.ui:11
+msgid "Date & Time"
+msgstr ""
+
+#: vanilla_first_setup/gtk/timezone.ui:12
+msgid "Select your preferred timezone"
+msgstr ""
+
+#: vanilla_first_setup/gtk/timezone.ui:29
+msgid "Current timezone:"
+msgstr ""
+
+#: vanilla_first_setup/gtk/timezone.ui:34
+msgid "not set"
+msgstr ""
+
+#: vanilla_first_setup/gtk/keyboard.ui:10
+msgid "Keyboard Layout"
+msgstr ""
+
+#: vanilla_first_setup/gtk/keyboard.ui:11
+msgid "Select all your preferred keyboard layouts"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:15
+msgid "Applications"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:16
+msgid "Choose which applications to install."
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:30
+msgid "Core Applications"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:31
+#: vanilla_first_setup/gtk/layout-applications.ui:56
+msgid "Essential GNOME apps like Calendar or Document Viewer"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:45
+msgid "Customize Core Applications"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:55
+msgid "Browsers"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:70
+msgid "Customize Browsers"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:80
+msgid "Common Utilities"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:81
+msgid "Useful utilities to enhance your desktop experience"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:95
+msgid "Customize Utilities"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:105
+msgid "Office"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:106
+msgid "The LibreOffice suite"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:120
+msgid "Customize Office Applications"
+msgstr ""
+
+#: vanilla_first_setup/gtk/applications-dialog.ui:8
+msgid "Select Applications"
+msgstr ""
+
+#: vanilla_first_setup/gtk/applications-dialog.ui:18
+msgid "Apply"
+msgstr ""
+
+#: vanilla_first_setup/gtk/applications-dialog.ui:30
+msgid "Select the applications you want to install"
+msgstr ""
+
+#: vanilla_first_setup/window.py:74
+msgid "Setup failed: "
+msgstr ""
+
+#: vanilla_first_setup/window.py:79
+#, fuzzy
+msgid "Details"
+msgstr "Szczegóły urządzenia"
+
+#: vanilla_first_setup/window.py:85
+#, fuzzy
+msgid "Error log"
+msgstr "Błąd!"
+
+#: vanilla_first_setup/application.py:76
+msgid "Don't make any changes to the system."
+msgstr ""
+
+#: vanilla_first_setup/application.py:84
+msgid "Force the configure system mode, independant of group."
+msgstr ""
+
+#: vanilla_first_setup/application.py:92
+msgid "Force the regular mode, independant of group."
+msgstr ""
+
+#: vanilla_first_setup/application.py:100
+msgid ""
+"Use the original equipment manufacturer mode with language, keyboard and "
+"timezone selection."
+msgstr ""
+
+#: vanilla_first_setup/views/conn_check.py:72
 msgid "No Internet Connection!"
 msgstr "Brak Połączenia z Internetem!"
 
-#: vanilla_first_setup/defaults/conn_check.py:105
+#: vanilla_first_setup/views/conn_check.py:73
 msgid "First Setup requires an active internet connection"
 msgstr "Pierwsza konfiguracja wymaga aktywnego połączenia internetetowego"
 
-#: vanilla_first_setup/defaults/conn_check.py:116
+#: vanilla_first_setup/views/conn_check.py:79
 #, fuzzy
-msgid "Please wait until the connection check is done."
-msgstr "Zaczekaj, aż sprawdzanie połączenia zostanie zakończone."
-
-#: vanilla_first_setup/defaults/network.py:38
-msgid "Insecure network (WEP)"
-msgstr "Niezabezpieczona sieć (WEP)"
-
-#: vanilla_first_setup/defaults/network.py:39
-msgid "Secure network (WPA)"
-msgstr "Zabezpieczona sieć (WPA)"
-
-#: vanilla_first_setup/defaults/network.py:40
-msgid "Secure network (WPA2)"
-msgstr "Zabezpieczona sieć (WPA2)"
-
-#: vanilla_first_setup/defaults/network.py:41
-msgid "Secure network (WPA3)"
-msgstr "Zabezpieczona sieć (WPA3)"
-
-#: vanilla_first_setup/defaults/network.py:376
-msgid "Authentication required"
-msgstr "Wymagane uwierzytelnienie"
-
-#: vanilla_first_setup/defaults/network.py:384
-msgid "Connecting"
-msgstr "Łączenie"
-
-#: vanilla_first_setup/defaults/network.py:386
-msgid "Disconnected"
-msgstr "Rozłączono"
-
-#: vanilla_first_setup/defaults/network.py:388
-msgid "Disconnecting"
-msgstr "Rozłączanie"
-
-#: vanilla_first_setup/defaults/network.py:390
-#, fuzzy
-msgid "Connection Failed"
+msgid "Connection available"
 msgstr "Połączenie nieudane"
 
-#: vanilla_first_setup/defaults/network.py:392
+#: vanilla_first_setup/views/conn_check.py:80
 #, fuzzy
-msgid "Status Unknown"
-msgstr "Status nieznany"
+msgid "You have a working internet connection"
+msgstr "Brak Połączenia z Internetem!"
 
-#: vanilla_first_setup/defaults/network.py:394
-msgid "Unmanaged"
-msgstr "Niezarządzane"
-
-#: vanilla_first_setup/defaults/network.py:396
-msgid "Unavailable"
-msgstr "Niedostępne"
-
-#: vanilla_first_setup/defaults/network.py:398
-msgid "Unknown"
-msgstr "Nieznany"
-
-#: vanilla_first_setup/defaults/network.py:412
-#, fuzzy
-msgid "Cable Unplugged"
-msgstr "Kabel odłączony"
-
-#: vanilla_first_setup/layouts/preferences.py:75
-msgid "Please select at least one option."
-msgstr "Wybierz co najmniej jedną opcję."
-
-#: vanilla_first_setup/views/done.py:55
-msgid "Restart your device to enjoy your {} experience."
+#: vanilla_first_setup/views/keyboard.py:37
+msgid "Keyboard"
 msgstr ""
-"Uruchom ponownie urządzenie, aby cieszyć się doświadczeniami z Twoim {}."
 
-#: vanilla_first_setup/views/done.py:77
-msgid "Something went wrong"
-msgstr "Coś poszło nie tak"
+#: vanilla_first_setup/views/user.py:118
+msgid "Username cannot be empty."
+msgstr ""
 
-#: vanilla_first_setup/views/done.py:79
-msgid "Please contact the distribution developers."
-msgstr "Prosimy o kontakt z twórcami dystrybucji."
+#: vanilla_first_setup/views/user.py:121
+msgid "Username cannot be longer than 32 characters."
+msgstr ""
 
-#: vanilla_first_setup/main.py:62
-msgid "Run a post script"
-msgstr "Uruchom skrypt końcowy"
+#: vanilla_first_setup/views/user.py:124
+msgid "Username cannot contain special characters or uppercase letters."
+msgstr ""
 
-#: vanilla_first_setup/main.py:70
-msgid "Run as a new user"
-msgstr "Uruchom jako nowy użytkownik"
-
-#: vanilla_first_setup/window.py:70
-msgid "Done!"
-msgstr "Gotowe!"
-
-#: vanilla_first_setup/window.py:71
-msgid "Your device is ready to use."
+#: vanilla_first_setup/views/user.py:128
+#, fuzzy
+msgid "This username is already in use."
 msgstr "Twoje urządzenie jest gotowe do używania."
 
-#: vanilla_first_setup/window.py:72
-msgid "Error!"
-msgstr "Błąd!"
+#: vanilla_first_setup/views/locations.py:220
+msgid "Region"
+msgstr ""
 
-#: vanilla_first_setup/window.py:73
-msgid "Something went wrong."
-msgstr "Coś poszło nie tak."
+#: vanilla_first_setup/views/locations.py:238
+msgid "Country"
+msgstr ""
 
-#~ msgid "Device Details"
-#~ msgstr "Szczegóły urządzenia"
+#: vanilla_first_setup/views/locations.py:327
+msgid "Search results"
+msgstr ""
+
+#: vanilla_first_setup/views/timezone.py:39
+msgid "Timezone"
+msgstr ""
+
+#: vanilla_first_setup/views/welcome_user.py:45
+msgid "Hello {}!"
+msgstr ""
+
+#: vanilla_first_setup/views/progress.py:94
+msgid "Setting up the system"
+msgstr ""
+
+#: vanilla_first_setup/views/progress.py:97
+#, fuzzy
+msgid "Installing"
+msgstr "Instalowanie..."
+
+#: vanilla_first_setup/core/timezones.py:92
+msgid "Europe"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:93
+msgid "Asia"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:94
+msgid "America"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:95
+msgid "Africa"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:96
+msgid "Antarctica"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:97
+msgid "Pacific Ocean"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:98
+msgid "Australia"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:99
+msgid "Atlantic Ocean"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:100
+msgid "Indian Ocean"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:101
+msgid "Arctic"
+msgstr ""
+
+#~ msgid "Tweak your Vanilla OS installation."
+#~ msgstr "Dostosuj swoją instalację Vanilla OS."
+
+#~ msgid "No description"
+#~ msgstr "Brak opisu"
+
+#~ msgid "First release"
+#~ msgstr "Pierwsze wydanie"
+
+#~ msgid "Internet"
+#~ msgstr "Internet"
+
+#~ msgid ""
+#~ "An active internet connection is required to download your favorite apps "
+#~ "and to keep your system up-to-date"
+#~ msgstr ""
+#~ "Połączenie z internetem jest wymagane, aby pobrać Twoje ulubione "
+#~ "aplikacje i aby Twój system był aktualny"
+
+#~ msgid "Wired"
+#~ msgstr "Przewodowe"
+
+#~ msgid "Wireless Networks"
+#~ msgstr "Sieci bezprzewodowe"
+
+#~ msgid "Advanced"
+#~ msgstr "Zaawansowane"
+
+#~ msgid "Connect to Hidden Network..."
+#~ msgstr "Połącz z ukrytą siecią..."
+
+#~ msgid "Default"
+#~ msgstr "Domyślny"
+
+#~ msgid "Password"
+#~ msgstr "Hasło"
+
+#~ msgid "Confirm Password"
+#~ msgstr "Potwierdź hasło"
+
+#~ msgid "Welcome!"
+#~ msgstr "Witamy!"
+
+#~ msgid "Restart your device to enjoy your Vanilla OS experience"
+#~ msgstr "Uruchom ponownie komputer, aby zacząć cieszyć się z Vanilla OS"
+
+#~ msgid "Enable"
+#~ msgstr "Włącz"
+
+#~ msgid "Finalizing..."
+#~ msgstr "Finalizacja..."
+
+#~ msgid "Your device will be ready soon"
+#~ msgstr "Twoje urządzenie będzie wkrótce gotowe"
+
+#~ msgid "Show Console Output"
+#~ msgstr "Pokaż Wyjście Konsoli"
+
+#~ msgid "Show Slideshow"
+#~ msgstr "Pokaż Pokaz Slajdów"
+
+#~ msgid "Read More"
+#~ msgstr "Czytaj Więcej"
+
+#~ msgid "Connected"
+#~ msgstr "Połączono"
+
+#, fuzzy
+#~ msgid "Please wait until the connection check is done."
+#~ msgstr "Zaczekaj, aż sprawdzanie połączenia zostanie zakończone."
+
+#~ msgid "Insecure network (WEP)"
+#~ msgstr "Niezabezpieczona sieć (WEP)"
+
+#~ msgid "Secure network (WPA)"
+#~ msgstr "Zabezpieczona sieć (WPA)"
+
+#~ msgid "Secure network (WPA2)"
+#~ msgstr "Zabezpieczona sieć (WPA2)"
+
+#~ msgid "Secure network (WPA3)"
+#~ msgstr "Zabezpieczona sieć (WPA3)"
+
+#~ msgid "Authentication required"
+#~ msgstr "Wymagane uwierzytelnienie"
+
+#~ msgid "Connecting"
+#~ msgstr "Łączenie"
+
+#~ msgid "Disconnected"
+#~ msgstr "Rozłączono"
+
+#~ msgid "Disconnecting"
+#~ msgstr "Rozłączanie"
+
+#, fuzzy
+#~ msgid "Status Unknown"
+#~ msgstr "Status nieznany"
+
+#~ msgid "Unmanaged"
+#~ msgstr "Niezarządzane"
+
+#~ msgid "Unavailable"
+#~ msgstr "Niedostępne"
+
+#~ msgid "Unknown"
+#~ msgstr "Nieznany"
+
+#, fuzzy
+#~ msgid "Cable Unplugged"
+#~ msgstr "Kabel odłączony"
+
+#~ msgid "Please select at least one option."
+#~ msgstr "Wybierz co najmniej jedną opcję."
+
+#~ msgid "Restart your device to enjoy your {} experience."
+#~ msgstr ""
+#~ "Uruchom ponownie urządzenie, aby cieszyć się doświadczeniami z Twoim {}."
+
+#~ msgid "Something went wrong"
+#~ msgstr "Coś poszło nie tak"
+
+#~ msgid "Please contact the distribution developers."
+#~ msgstr "Prosimy o kontakt z twórcami dystrybucji."
+
+#~ msgid "Run a post script"
+#~ msgstr "Uruchom skrypt końcowy"
+
+#~ msgid "Done!"
+#~ msgstr "Gotowe!"
+
+#~ msgid "Something went wrong."
+#~ msgstr "Coś poszło nie tak."
 
 #~ msgid "Connect to the Internet"
 #~ msgstr "Połącz się z internetem"
@@ -316,9 +552,6 @@ msgstr "Coś poszło nie tak."
 
 #~ msgid "Yes, enable it"
 #~ msgstr "Tak, włącz to"
-
-#~ msgid "Make your choices, this wizard will take care of everything."
-#~ msgstr "Dokonaj wyborów, a ten kreator zajmie się wszystkim."
 
 #~ msgid "The changes are being applied. Please Wait…"
 #~ msgstr "Zmiany są wprowadzane. Proszę czekać…"

@@ -16,28 +16,15 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import os
 import sys
-import signal
-import locale
-import gettext
 
 VERSION = '@VERSION@'
 pkgdatadir = '@pkgdatadir@'
 localedir = '@localedir@'
+moduledir = '@moduledir@'
 
 sys.path.insert(1, pkgdatadir)
-signal.signal(signal.SIGINT, signal.SIG_DFL)
-locale.bindtextdomain('vanilla_first_setup', localedir)
-locale.textdomain('vanilla_first_setup')
-gettext.install('vanilla_first_setup', localedir)
 
 if __name__ == '__main__':
-    import gi
-
-    from gi.repository import Gio
-    resource = Gio.Resource.load(os.path.join(pkgdatadir, 'vanilla-first-setup.gresource'))
-    resource._register()
-
     from vanilla_first_setup import main
-    sys.exit(main.main(VERSION))
+    sys.exit(main.main(VERSION, moduledir, localedir))

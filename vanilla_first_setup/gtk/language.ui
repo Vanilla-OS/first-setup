@@ -1,62 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-    <requires lib="gtk" version="4.0"/>
-    <requires lib="libadwaita" version="1.0" />
-    <template class="VanillaDefaultLanguage" parent="AdwBin">
-        <property name="hexpand">true</property>
-        <child>
-            <object class="GtkOverlay">
-                <property name="valign">center</property>
-                <child type="overlay">
-                    <object class="GtkButton" id="btn_next">
-                        <property name="sensitive">False</property>
-                        <property name="margin-end">12</property>
-                        <property name="margin-start">12</property>
-                        <property name="icon-name">go-next-symbolic</property>
-                        <property name="halign">end</property>
-                        <property name="valign">center</property>
-                        <property name="tooltip-text" translatable="yes">Next</property>
-                        <style>
-                            <class name="circular" />
-                            <class name="suggested-action" />
-                        </style>
-                    </object>
-                </child>
-                <child>
-                    <object class="AdwStatusPage" id="status_page">
-                        <property name="icon-name">preferences-desktop-locale-symbolic</property>
-                        <property name="title" translatable="yes">Language</property>
-                        <property name="description" translatable="yes">Select your language</property>
-                        <child>
-                            <object class="AdwClamp">
-                                <property name="maximum-size">600</property>
-                                <child>
-                                    <object class="GtkBox">
-                                        <property name="orientation">vertical</property>
-                                        <child>
-                                            <object class="GtkSearchEntry" id="entry_search_language">
-                                                <property name="hexpand">true</property>
-                                                <property name="placeholder-text" translatable="yes">Search languages</property>
-                                            </object>
-                                        </child>
-                                        <child>
-                                            <object class="AdwPreferencesGroup">
-                                                <child>
-                                                    <object class="GtkListBox" id="all_languages_group">
-                                                        <style>
-                                                            <class name="boxed-list" />
-                                                        </style>
-                                                    </object>
-                                                </child>
-                                            </object>
-                                        </child>
-                                    </object>
-                                </child>
-                            </object>
-                        </child>
-                    </object>
-                </child>
-            </object>
-        </child>
-    </template>
+  <requires lib="gtk" version="4.0"/>
+  <template class="VanillaLanguage" parent="AdwBin">
+    <child>
+      <object class="AdwToolbarView">
+        <property name="content">
+          <object class="AdwStatusPage" id="status_page">
+            <property name="icon-name">preferences-desktop-locale-symbolic</property>
+            <property name="title" translatable="yes">Language</property>
+            <property name="description" translatable="yes">Select your language</property>
+          </object>
+        </property>
+      </object>
+    </child>
+  </template>
 </interface>

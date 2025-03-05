@@ -3,8 +3,9 @@ coredir = join_paths(pkgdatadir, 'vanilla_first_setup/core')
 
 sources = [
   '__init__.py',
+  'backend.py',
+  'keyboard.py',
   'languages.py',
-  'keymaps.py',
   'timezones.py',
 ]
 

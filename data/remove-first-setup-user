@@ -1,0 +1,18 @@
+#!/bin/bash
+USERS_IN_FIRST_SETUP_GROUP=$(getent group "vanilla-first-setup" | awk -F: '{print $4}' | tr ',' ' ')
+
+for USER in $USERS_IN_FIRST_SETUP_GROUP; do
+    if id "$USER" &>/dev/null; then
+        echo "Deleting first-setup user: $USER"
+        userdel -r "$USER"
+        if ! [ "$?" == 0 ]; then
+            exit 1
+        fi
+        rm "/var/lib/AccountsService/users/$USER"
+    else
+        echo "User $USER does not exist."
+    fi
+done
+
+rm /etc/systemd/system/multi-user.target.wants/remove-first-setup-user.service
+exit 0

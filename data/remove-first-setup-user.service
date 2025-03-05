@@ -1,0 +1,10 @@
+[Unit]
+Description=Remove the first-setup user from the system
+
+[Service]
+ExecStart=/usr/libexec/remove-first-setup-user
+Type=oneshot
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

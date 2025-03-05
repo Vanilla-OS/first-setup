@@ -1,5 +1,5 @@
 polkit.addRule(function(action, subject) {
-    if (action.id == "org.vanillaos.FirstSetup.commands" || action.id == "org.vanillaos.FirstSetup.nextBoot" || action.id == "org.vanillaos.FirstSetup.prepare") {
+    if (action.id.startsWith("org.vanillaos.FirstSetup.scripts") && subject.isInGroup("vanilla-first-setup")) {
         polkit.log("action=" + action);
         polkit.log("subject=" + subject);
         return polkit.Result.YES;

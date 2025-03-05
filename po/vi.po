@@ -5,13 +5,13 @@
 #
 # Rubic Useless <cuongvutrong364@gmail.com>, 2024.
 # Thanh Minh Mai <thanhminh.mr@gmail.com>, 2024.
-# Notch Apple <Gapple1703@gmail.com>, 2024, 2025.
+# Notch Apple <Gapple1703@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2025-02-16 20:59+0000\n"
+"POT-Creation-Date: 2025-03-05 02:32+0100\n"
+"PO-Revision-Date: 2024-05-22 13:32+0000\n"
 "Last-Translator: Notch Apple <Gapple1703@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/vi/>\n"
@@ -20,293 +20,528 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.10\n"
+"X-Generator: Weblate 5.6-dev\n"
 
-#: data/org.vanillaos.FirstSetup.desktop.in:3
+#: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
 msgstr "Thiết lập ban đầu cho Vanilla OS"
 
-#: data/org.vanillaos.FirstSetup.appdata.xml.in:7
-msgid "Tweak your Vanilla OS installation."
-msgstr "Tùy biến cài đặt Vanilla OS của bạn."
+#: vanilla_first_setup/gtk/window.ui:25
+msgid "Back"
+msgstr "Trở về"
 
-#: data/org.vanillaos.FirstSetup.appdata.xml.in:10
-msgid "No description"
-msgstr "Không có mô tả"
-
-#: data/org.vanillaos.FirstSetup.appdata.xml.in:26
-msgid "First release"
-msgstr "Bản phát hành đầu tiên"
-
-#: vanilla_first_setup/gtk/default-conn-check.ui:12
-#: vanilla_first_setup/defaults/conn_check.py:114
-msgid "Checking Connection…"
-msgstr "Đang kiểm tra kết nối…"
-
-#: vanilla_first_setup/gtk/default-conn-check.ui:13
-msgid "Please wait until the connection check is done"
-msgstr "Vui lòng đợi cho đến khi kiểm tra kết nối hoàn tất"
-
-#: vanilla_first_setup/gtk/default-hostname.ui:17
-#: vanilla_first_setup/gtk/default-network.ui:95
-#: vanilla_first_setup/gtk/default-theme.ui:18
-#: vanilla_first_setup/gtk/default-user.ui:17
-#: vanilla_first_setup/gtk/layout-applications.ui:17
+#: vanilla_first_setup/gtk/window.ui:39 vanilla_first_setup/gtk/window.ui:55
 msgid "Next"
-msgstr "Tiếp tục"
+msgstr "Tiếp theo"
 
-#: vanilla_first_setup/gtk/default-hostname.ui:27
-#: vanilla_first_setup/gtk/default-hostname.ui:35
-msgid "Device Name"
-msgstr "Tên thiết bị"
+#: vanilla_first_setup/gtk/logout.ui:12 vanilla_first_setup/gtk/done.ui:12
+msgid "Finished!"
+msgstr "Hoàn thành!"
 
-#: vanilla_first_setup/gtk/default-hostname.ui:28
-msgid "Provide your device name"
-msgstr "Đặt tên cho máy tính của bạn"
+#: vanilla_first_setup/gtk/logout.ui:13
+#, fuzzy
+msgid "Login to your new user"
+msgstr "Thực thi với tư cách người dùng mới"
 
-#: vanilla_first_setup/gtk/default-network.ui:18
-msgid "Internet"
-msgstr "Internet"
-
-#: vanilla_first_setup/gtk/default-network.ui:19
-msgid ""
-"An active internet connection is required to download your favorite apps and "
-"to keep your system up-to-date"
+#: vanilla_first_setup/gtk/logout.ui:23
+msgid "Login Now"
 msgstr ""
-"Một đường truyền internet hoạt động là cần thiết để tải xuống phần mềm và "
-"giữ cho hệ thống được cập nhật"
 
-#: vanilla_first_setup/gtk/default-network.ui:29
-msgid "Wired"
-msgstr "Mạng có dây"
+#: vanilla_first_setup/gtk/done.ui:13
+#, fuzzy
+msgid "Your user account is ready to use"
+msgstr "Máy tính của bạn đã sẵn sàng để sử dụng."
 
-#: vanilla_first_setup/gtk/default-network.ui:34
-msgid "Wireless Networks"
-msgstr "Mạng không dây"
+#: vanilla_first_setup/gtk/done.ui:29
+msgid "Take a tour"
+msgstr ""
 
-#: vanilla_first_setup/gtk/default-network.ui:39
-msgid "Advanced"
-msgstr "Nâng cao"
+#: vanilla_first_setup/gtk/done.ui:40
+msgid "Exit"
+msgstr ""
 
-#: vanilla_first_setup/gtk/default-network.ui:42
-msgid "Connect to Hidden Network..."
-msgstr "Kết nối tới mạng ẩn..."
+#: vanilla_first_setup/gtk/progress.ui:9
+msgid "Progress"
+msgstr ""
 
-#: vanilla_first_setup/gtk/default-network.ui:69
-msgid "Open Proxy Settings..."
-msgstr "Mở Cài đặt Proxy..."
-
-#: vanilla_first_setup/gtk/default-theme.ui:27
-msgid "Color Scheme"
-msgstr "Bảng Màu"
-
-#: vanilla_first_setup/gtk/default-theme.ui:28
-msgid "Choose a color scheme for your system"
-msgstr "Chọn màu sắc cho hệ thống của bạn"
-
-#: vanilla_first_setup/gtk/default-theme.ui:92
-msgid "Default"
-msgstr "Mặc định"
-
-#: vanilla_first_setup/gtk/default-theme.ui:139
-msgid "Dark"
-msgstr "Tối"
-
-#: vanilla_first_setup/gtk/default-user.ui:37
-msgid "Create User"
-msgstr "Tạo người dùng"
-
-#: vanilla_first_setup/gtk/default-user.ui:38
-msgid "Provide details for your user account"
-msgstr "Thiết lập tài khoản của bạn"
-
-#: vanilla_first_setup/gtk/default-user.ui:45
-msgid "Name"
-msgstr "Tên"
-
-#: vanilla_first_setup/gtk/default-user.ui:51
-msgid "Username"
-msgstr "Tên tài khoản"
-
-#: vanilla_first_setup/gtk/default-user.ui:57
-msgid "Password"
-msgstr "Mật khẩu"
-
-#: vanilla_first_setup/gtk/default-user.ui:63
-msgid "Confirm Password"
-msgstr "Xác nhận mật khẩu"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:20
-#: vanilla_first_setup/gtk/default-welcome.ui:29
-msgid "Welcome!"
-msgstr "Chào mừng!"
+#: vanilla_first_setup/gtk/progress.ui:10
+msgid "Some steps still take some time"
+msgstr ""
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
 msgstr "Hiển thị thông tin"
 
-#: vanilla_first_setup/gtk/done.ui:12
-msgid "Finished!"
-msgstr "Hoàn thành!"
+#: vanilla_first_setup/gtk/conn-check.ui:12
+#, fuzzy
+msgid "Checking Connection"
+msgstr "Đang kiểm tra kết nối…"
 
-#: vanilla_first_setup/gtk/done.ui:13
-msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr "Khởi động lại máy tính của bạn để trải nghiệm Vanilla OS."
+#: vanilla_first_setup/gtk/conn-check.ui:13
+msgid "Please wait until the connection check is done"
+msgstr "Vui lòng đợi cho đến khi kiểm tra kết nối hoàn tất"
 
-#: vanilla_first_setup/gtk/layout-yes-no.ui:36
-msgid "Enable"
-msgstr "Bật"
+#: vanilla_first_setup/gtk/conn-check.ui:16
+#, fuzzy
+msgid "Open Settings"
+msgstr "Mở Cài đặt Proxy..."
 
-#: vanilla_first_setup/gtk/post-script.ui:11
-msgid "Finalizing..."
-msgstr "Đang hoàn thiện..."
+#: vanilla_first_setup/gtk/theme.ui:13
+msgid "Color Scheme"
+msgstr "Bảng Màu"
 
-#: vanilla_first_setup/gtk/post-script.ui:12
-msgid "Your device will be ready soon"
-msgstr "Máy tính của bạn sẽ sẵn sàng trong chốc lát"
+#: vanilla_first_setup/gtk/theme.ui:14
+msgid "Choose a color scheme for your system"
+msgstr "Chọn màu sắc cho hệ thống của bạn"
 
-#: vanilla_first_setup/gtk/progress.ui:70
-msgid "Installing..."
-msgstr "Đang cài đặt..."
+#: vanilla_first_setup/gtk/theme.ui:41
+msgid "Light Mode"
+msgstr ""
 
-#: vanilla_first_setup/gtk/progress.ui:91
-msgid "Show Console Output"
-msgstr "Hiển thị đầu ra Console"
+#: vanilla_first_setup/gtk/theme.ui:79
+msgid "Light"
+msgstr ""
 
-#: vanilla_first_setup/gtk/progress.ui:106
-msgid "Show Slideshow"
-msgstr "Hiển thị trình chiếu"
+#: vanilla_first_setup/gtk/theme.ui:88
+#, fuzzy
+msgid "Dark Mode"
+msgstr "Tối"
 
-#: vanilla_first_setup/gtk/tour.ui:27
-msgid "Read More"
-msgstr "Đọc thêm"
+#: vanilla_first_setup/gtk/theme.ui:127
+msgid "Dark"
+msgstr "Tối"
 
-#: vanilla_first_setup/gtk/window.ui:36
-msgid "Back"
-msgstr "Trở về"
+#: vanilla_first_setup/gtk/welcome.ui:39
+#, fuzzy
+msgid "Make your choices, this wizard will take care of everything"
+msgstr "Hãy đưa ra lựa chọn của bạn, trình hướng dẫn này sẽ chăm lo mọi thứ."
 
-#: vanilla_first_setup/gtk/wireless-row.ui:33
-#: vanilla_first_setup/defaults/network.py:373
-msgid "Connected"
-msgstr "Đã kết nối"
+#: vanilla_first_setup/gtk/welcome.ui:52
+#: vanilla_first_setup/gtk/welcome-user.ui:21
+msgid "Start"
+msgstr ""
 
-#: vanilla_first_setup/defaults/conn_check.py:103
+#: vanilla_first_setup/gtk/welcome.ui:62
+#: vanilla_first_setup/gtk/welcome-user.ui:31
+msgid "Accessibility"
+msgstr ""
+
+#: vanilla_first_setup/gtk/welcome-user.ui:13
+#, fuzzy
+msgid "Let's set up your user account"
+msgstr "Thiết lập tài khoản của bạn"
+
+#: vanilla_first_setup/gtk/user.ui:23
+msgid "Create User"
+msgstr "Tạo người dùng"
+
+#: vanilla_first_setup/gtk/user.ui:24
+msgid "Provide details for your user account"
+msgstr "Thiết lập tài khoản của bạn"
+
+#: vanilla_first_setup/gtk/user.ui:31
+msgid "Name"
+msgstr "Tên"
+
+#: vanilla_first_setup/gtk/user.ui:38
+msgid "Username"
+msgstr "Tên tài khoản"
+
+#: vanilla_first_setup/gtk/hostname.ui:13
+#: vanilla_first_setup/gtk/hostname.ui:21
+msgid "Device Name"
+msgstr "Tên thiết bị"
+
+#: vanilla_first_setup/gtk/hostname.ui:14
+msgid "Provide your device name"
+msgstr "Đặt tên cho máy tính của bạn"
+
+#: vanilla_first_setup/gtk/hostname.ui:31
+msgid ""
+"Hostname can only contain up to 64 English lowercase letters with hyphens in-"
+"between."
+msgstr ""
+
+#: vanilla_first_setup/gtk/language.ui:10
+#: vanilla_first_setup/views/language.py:36
+msgid "Language"
+msgstr ""
+
+#: vanilla_first_setup/gtk/language.ui:11
+msgid "Select your language"
+msgstr ""
+
+#: vanilla_first_setup/gtk/location.ui:15
+msgid "Search keyboard layouts"
+msgstr ""
+
+#: vanilla_first_setup/gtk/location.ui:24
+msgid "The search results are incomplete. Try refining your query."
+msgstr ""
+
+#: vanilla_first_setup/gtk/timezone.ui:11
+msgid "Date & Time"
+msgstr ""
+
+#: vanilla_first_setup/gtk/timezone.ui:12
+msgid "Select your preferred timezone"
+msgstr ""
+
+#: vanilla_first_setup/gtk/timezone.ui:29
+msgid "Current timezone:"
+msgstr ""
+
+#: vanilla_first_setup/gtk/timezone.ui:34
+msgid "not set"
+msgstr ""
+
+#: vanilla_first_setup/gtk/keyboard.ui:10
+msgid "Keyboard Layout"
+msgstr ""
+
+#: vanilla_first_setup/gtk/keyboard.ui:11
+msgid "Select all your preferred keyboard layouts"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:15
+msgid "Applications"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:16
+msgid "Choose which applications to install."
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:30
+msgid "Core Applications"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:31
+#: vanilla_first_setup/gtk/layout-applications.ui:56
+msgid "Essential GNOME apps like Calendar or Document Viewer"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:45
+msgid "Customize Core Applications"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:55
+msgid "Browsers"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:70
+msgid "Customize Browsers"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:80
+msgid "Common Utilities"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:81
+msgid "Useful utilities to enhance your desktop experience"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:95
+msgid "Customize Utilities"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:105
+msgid "Office"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:106
+msgid "The LibreOffice suite"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:120
+msgid "Customize Office Applications"
+msgstr ""
+
+#: vanilla_first_setup/gtk/applications-dialog.ui:8
+msgid "Select Applications"
+msgstr ""
+
+#: vanilla_first_setup/gtk/applications-dialog.ui:18
+msgid "Apply"
+msgstr ""
+
+#: vanilla_first_setup/gtk/applications-dialog.ui:30
+msgid "Select the applications you want to install"
+msgstr ""
+
+#: vanilla_first_setup/window.py:74
+msgid "Setup failed: "
+msgstr ""
+
+#: vanilla_first_setup/window.py:79
+msgid "Details"
+msgstr ""
+
+#: vanilla_first_setup/window.py:85
+#, fuzzy
+msgid "Error log"
+msgstr "Lỗi!"
+
+#: vanilla_first_setup/application.py:76
+msgid "Don't make any changes to the system."
+msgstr ""
+
+#: vanilla_first_setup/application.py:84
+msgid "Force the configure system mode, independant of group."
+msgstr ""
+
+#: vanilla_first_setup/application.py:92
+msgid "Force the regular mode, independant of group."
+msgstr ""
+
+#: vanilla_first_setup/application.py:100
+msgid ""
+"Use the original equipment manufacturer mode with language, keyboard and "
+"timezone selection."
+msgstr ""
+
+#: vanilla_first_setup/views/conn_check.py:72
 msgid "No Internet Connection!"
 msgstr "Không có kết nối Internet!"
 
-#: vanilla_first_setup/defaults/conn_check.py:105
+#: vanilla_first_setup/views/conn_check.py:73
 msgid "First Setup requires an active internet connection"
 msgstr "Cài đặt lần đầu cần có kết nối Internet"
 
-#: vanilla_first_setup/defaults/conn_check.py:116
-msgid "Please wait until the connection check is done."
-msgstr "Vui lòng đợi cho đến khi quá trình kiểm tra kết nối hoàn tất."
-
-#: vanilla_first_setup/defaults/network.py:38
-msgid "Insecure network (WEP)"
-msgstr "Mạng không an toàn (WEP)"
-
-#: vanilla_first_setup/defaults/network.py:39
-msgid "Secure network (WPA)"
-msgstr "Mạng an toàn (WPA)"
-
-#: vanilla_first_setup/defaults/network.py:40
-msgid "Secure network (WPA2)"
-msgstr "Mạng an toàn (WPA2)"
-
-#: vanilla_first_setup/defaults/network.py:41
-msgid "Secure network (WPA3)"
-msgstr "Mạng an toàn (WPA3)"
-
-#: vanilla_first_setup/defaults/network.py:376
-msgid "Authentication required"
-msgstr "Yêu cầu xác thực"
-
-#: vanilla_first_setup/defaults/network.py:384
-msgid "Connecting"
-msgstr "Đang kết nối"
-
-#: vanilla_first_setup/defaults/network.py:386
-msgid "Disconnected"
-msgstr "Đã ngắt kết nối"
-
-#: vanilla_first_setup/defaults/network.py:388
-msgid "Disconnecting"
-msgstr "Đang ngắt kết nối"
-
-#: vanilla_first_setup/defaults/network.py:390
-msgid "Connection Failed"
+#: vanilla_first_setup/views/conn_check.py:79
+#, fuzzy
+msgid "Connection available"
 msgstr "Kết nối thất bại"
 
-#: vanilla_first_setup/defaults/network.py:392
-msgid "Status Unknown"
-msgstr "Trạng thái không xác định"
+#: vanilla_first_setup/views/conn_check.py:80
+#, fuzzy
+msgid "You have a working internet connection"
+msgstr "Không có kết nối Internet!"
 
-#: vanilla_first_setup/defaults/network.py:394
-msgid "Unmanaged"
-msgstr "Không được quản lý"
+#: vanilla_first_setup/views/keyboard.py:37
+msgid "Keyboard"
+msgstr ""
 
-#: vanilla_first_setup/defaults/network.py:396
-msgid "Unavailable"
-msgstr "Không có sẵn"
+#: vanilla_first_setup/views/user.py:118
+msgid "Username cannot be empty."
+msgstr ""
 
-#: vanilla_first_setup/defaults/network.py:398
-msgid "Unknown"
-msgstr "Không xác định"
+#: vanilla_first_setup/views/user.py:121
+msgid "Username cannot be longer than 32 characters."
+msgstr ""
 
-#: vanilla_first_setup/defaults/network.py:412
-msgid "Cable Unplugged"
-msgstr "Đã rút cáp"
+#: vanilla_first_setup/views/user.py:124
+msgid "Username cannot contain special characters or uppercase letters."
+msgstr ""
 
-#: vanilla_first_setup/layouts/preferences.py:75
-msgid "Please select at least one option."
-msgstr "Xin hãy chọn ít nhất một tùy chọn."
-
-#: vanilla_first_setup/views/done.py:55
-msgid "Restart your device to enjoy your {} experience."
-msgstr "Khởi động lại máy tính của bạn để trải nghiệm {}."
-
-#: vanilla_first_setup/views/done.py:77
-msgid "Something went wrong"
-msgstr "Có gì đó không đúng đã xảy ra"
-
-#: vanilla_first_setup/views/done.py:79
-msgid "Please contact the distribution developers."
-msgstr "Xin hãy liên hệ tới các nhà phát triển bản phân phối."
-
-#: vanilla_first_setup/main.py:62
-msgid "Run a post script"
-msgstr "Thực thi một tập lệnh"
-
-#: vanilla_first_setup/main.py:70
-msgid "Run as a new user"
-msgstr "Thực thi với tư cách người dùng mới"
-
-#: vanilla_first_setup/window.py:70
-msgid "Done!"
-msgstr "Đã xong!"
-
-#: vanilla_first_setup/window.py:71
-msgid "Your device is ready to use."
+#: vanilla_first_setup/views/user.py:128
+#, fuzzy
+msgid "This username is already in use."
 msgstr "Máy tính của bạn đã sẵn sàng để sử dụng."
 
-#: vanilla_first_setup/window.py:72
-msgid "Error!"
-msgstr "Lỗi!"
+#: vanilla_first_setup/views/locations.py:220
+msgid "Region"
+msgstr ""
 
-#: vanilla_first_setup/window.py:73
-msgid "Something went wrong."
-msgstr "Có gì đó không đúng đã xảy ra."
+#: vanilla_first_setup/views/locations.py:238
+msgid "Country"
+msgstr ""
+
+#: vanilla_first_setup/views/locations.py:327
+msgid "Search results"
+msgstr ""
+
+#: vanilla_first_setup/views/timezone.py:39
+msgid "Timezone"
+msgstr ""
+
+#: vanilla_first_setup/views/welcome_user.py:45
+msgid "Hello {}!"
+msgstr ""
+
+#: vanilla_first_setup/views/progress.py:94
+msgid "Setting up the system"
+msgstr ""
+
+#: vanilla_first_setup/views/progress.py:97
+#, fuzzy
+msgid "Installing"
+msgstr "Đang cài đặt..."
+
+#: vanilla_first_setup/core/timezones.py:92
+msgid "Europe"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:93
+msgid "Asia"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:94
+msgid "America"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:95
+msgid "Africa"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:96
+msgid "Antarctica"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:97
+msgid "Pacific Ocean"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:98
+msgid "Australia"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:99
+msgid "Atlantic Ocean"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:100
+msgid "Indian Ocean"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:101
+msgid "Arctic"
+msgstr ""
+
+#~ msgid "Tweak your Vanilla OS installation."
+#~ msgstr "Tùy biến cài đặt Vanilla OS của bạn."
+
+#~ msgid "No description"
+#~ msgstr "Không có mô tả"
+
+#~ msgid "First release"
+#~ msgstr "Bản phát hành đầu tiên"
+
+#~ msgid "Internet"
+#~ msgstr "Internet"
+
+#~ msgid ""
+#~ "An active internet connection is required to download your favorite apps "
+#~ "and to keep your system up-to-date"
+#~ msgstr ""
+#~ "Một đường truyền internet hoạt động là cần thiết để tải xuống phần mềm và "
+#~ "giữ cho hệ thống được cập nhật"
+
+#~ msgid "Wired"
+#~ msgstr "Mạng có dây"
+
+#~ msgid "Wireless Networks"
+#~ msgstr "Mạng không dây"
+
+#~ msgid "Advanced"
+#~ msgstr "Nâng cao"
+
+#~ msgid "Connect to Hidden Network..."
+#~ msgstr "Kết nối tới mạng ẩn..."
+
+#~ msgid "Default"
+#~ msgstr "Mặc định"
+
+#~ msgid "Password"
+#~ msgstr "Mật khẩu"
+
+#~ msgid "Confirm Password"
+#~ msgstr "Xác nhận mật khẩu"
+
+#~ msgid "Welcome!"
+#~ msgstr "Chào mừng!"
+
+#~ msgid "Restart your device to enjoy your Vanilla OS experience"
+#~ msgstr "Khởi động lại máy tính của bạn để trải nghiệm Vanilla OS."
+
+#~ msgid "Enable"
+#~ msgstr "Bật"
+
+#~ msgid "Finalizing..."
+#~ msgstr "Đang hoàn thiện..."
+
+#~ msgid "Your device will be ready soon"
+#~ msgstr "Máy tính của bạn sẽ sẵn sàng trong chốc lát"
+
+#~ msgid "Show Console Output"
+#~ msgstr "Hiển thị đầu ra Console"
+
+#~ msgid "Show Slideshow"
+#~ msgstr "Hiển thị trình chiếu"
+
+#~ msgid "Read More"
+#~ msgstr "Đọc thêm"
+
+#~ msgid "Connected"
+#~ msgstr "Đã kết nối"
+
+#~ msgid "Please wait until the connection check is done."
+#~ msgstr "Vui lòng đợi cho đến khi quá trình kiểm tra kết nối hoàn tất."
+
+#~ msgid "Insecure network (WEP)"
+#~ msgstr "Mạng không an toàn (WEP)"
+
+#~ msgid "Secure network (WPA)"
+#~ msgstr "Mạng an toàn (WPA)"
+
+#~ msgid "Secure network (WPA2)"
+#~ msgstr "Mạng an toàn (WPA2)"
+
+#~ msgid "Secure network (WPA3)"
+#~ msgstr "Mạng an toàn (WPA3)"
+
+#~ msgid "Authentication required"
+#~ msgstr "Yêu cầu xác thực"
+
+#~ msgid "Connecting"
+#~ msgstr "Đang kết nối"
+
+#~ msgid "Disconnected"
+#~ msgstr "Đã ngắt kết nối"
+
+#~ msgid "Disconnecting"
+#~ msgstr "Đang ngắt kết nối"
+
+#~ msgid "Status Unknown"
+#~ msgstr "Trạng thái không xác định"
+
+#~ msgid "Unmanaged"
+#~ msgstr "Không được quản lý"
+
+#~ msgid "Unavailable"
+#~ msgstr "Không có sẵn"
+
+#~ msgid "Unknown"
+#~ msgstr "Không xác định"
+
+#~ msgid "Cable Unplugged"
+#~ msgstr "Đã rút cáp"
+
+#~ msgid "Please select at least one option."
+#~ msgstr "Xin hãy chọn ít nhất một tùy chọn."
+
+#~ msgid "Restart your device to enjoy your {} experience."
+#~ msgstr "Khởi động lại máy tính của bạn để trải nghiệm {}."
+
+#~ msgid "Something went wrong"
+#~ msgstr "Có gì đó không đúng đã xảy ra"
+
+#~ msgid "Please contact the distribution developers."
+#~ msgstr "Xin hãy liên hệ tới các nhà phát triển bản phân phối."
+
+#~ msgid "Run a post script"
+#~ msgstr "Thực thi một tập lệnh"
+
+#~ msgid "Done!"
+#~ msgstr "Đã xong!"
+
+#~ msgid "Something went wrong."
+#~ msgstr "Có gì đó không đúng đã xảy ra."
 
 #~ msgid "All done!"
 #~ msgstr "Tất cả đã xong!"
 
 #~ msgid "Yes, enable it"
 #~ msgstr "Được, hãy kích hoạt nó"
-
-#~ msgid "Make your choices, this wizard will take care of everything."
-#~ msgstr ""
-#~ "Hãy đưa ra lựa chọn của bạn, trình hướng dẫn này sẽ chăm lo mọi thứ."
 
 #~ msgid "The changes are being applied. Please Wait…"
 #~ msgstr "Các thay đổi đang được áp dụng. Xin hãy chờ trong giây lát…"
