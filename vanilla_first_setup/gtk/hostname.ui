@@ -1,26 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <requires lib="gtk" version="4.0"/>
-  <template class="VanillaDefaultHostname" parent="AdwBin">
+  <template class="VanillaHostname" parent="AdwBin">
     <property name="hexpand">1</property>
     <property name="vexpand">1</property>
     <child>
       <object class="GtkOverlay">
         <property name="valign">center</property>
-        <child type="overlay">
-          <object class="GtkButton" id="btn_next">
-            <property name="margin-end">12</property>
-            <property name="margin-start">12</property>
-            <property name="icon-name">go-next-symbolic</property>
-            <property name="halign">end</property>
-            <property name="valign">center</property>
-            <property name="tooltip-text" translatable="yes">Next</property>
-            <style>
-              <class name="circular" />
-              <class name="suggested-action" />
-            </style>
-          </object>
-        </child>
         <child>
           <object class="AdwStatusPage" id="status_page">
             <property name="icon-name">computer-symbolic</property>
@@ -34,6 +20,16 @@
                       <object class="AdwEntryRow" id="hostname_entry">
                         <property name="title" translatable="yes">Device Name</property>
                         <property name="input-purpose">name</property>
+                        <property name="max-length">64</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="hostname_error">
+                        <style>
+                          <class name="error"/>
+                        </style>
+                        <property name="label" translatable="yes">Hostname can only contain up to 64 English lowercase letters with hyphens in-between.</property>
+                        <property name="opacity">0</property>
                       </object>
                     </child>
                   </object>

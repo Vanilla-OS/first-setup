@@ -1,2 +1,2 @@
-misc:Depends=dconf-gsettings-backend | gsettings-backend
+misc:Depends=
 misc:Pre-Depends=

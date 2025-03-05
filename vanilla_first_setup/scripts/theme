@@ -1,0 +1,21 @@
+#!/bin/bash
+if [ "$UID" == "0" ]; then
+    echo "this script must be run as a regular user"
+    exit 7
+fi
+
+if [ "$1" == "dark" ]; then
+
+    gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
+    gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
+
+elif [ "$1" == "light" ]; then
+
+    gsettings set org.gnome.desktop.interface color-scheme "prefer-light"
+    gsettings set org.gnome.desktop.interface gtk-theme "Adwaita"
+
+else
+    echo "usage:"
+    echo "theme <dark|light>"
+    exit 5
+fi

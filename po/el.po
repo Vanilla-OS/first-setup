@@ -7,334 +7,542 @@
 # Eccl3s <Elliott.Killner@protonmail.com>, 2024.
 # ugaugag <ugaugag@users.noreply.hosted.weblate.org>, 2024.
 # EfremK <konstantinosefremgiannakou@protonmail.com>, 2024.
-# ManolisG <emgeorgat11@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2025-02-01 18:22+0000\n"
-"Last-Translator: ManolisG <emgeorgat11@gmail.com>\n"
-"Language-Team: Greek <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/el/>\n"
+"POT-Creation-Date: 2025-03-05 02:32+0100\n"
+"PO-Revision-Date: 2024-09-16 18:09+0000\n"
+"Last-Translator: EfremK <konstantinosefremgiannakou@protonmail.com>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/vanilla-os/first-"
+"setup/el/>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.8-dev\n"
 
-#: data/org.vanillaos.FirstSetup.desktop.in:3
+#: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
 msgstr "Αρχικές Ρυθμίσεις του Vanilla OS"
 
-#: data/org.vanillaos.FirstSetup.appdata.xml.in:7
-msgid "Tweak your Vanilla OS installation."
-msgstr "Τροποποιήστε την εγκατάσταση του Vanilla OS."
+#: vanilla_first_setup/gtk/window.ui:25
+msgid "Back"
+msgstr "Πίσω"
 
-#: data/org.vanillaos.FirstSetup.appdata.xml.in:10
-msgid "No description"
-msgstr "Χωρίς περιγραφή"
-
-#: data/org.vanillaos.FirstSetup.appdata.xml.in:26
-msgid "First release"
-msgstr "Πρώτη έκδοση"
-
-#: vanilla_first_setup/gtk/default-conn-check.ui:12
-#: vanilla_first_setup/defaults/conn_check.py:114
-msgid "Checking Connection…"
-msgstr "Έλεγχος σύνδεσης…"
-
-#: vanilla_first_setup/gtk/default-conn-check.ui:13
-msgid "Please wait until the connection check is done"
-msgstr "Παρακαλώ περιμένετε έως ότου ολοκληρωθεί ο έλεγχος σύνδεσης"
-
-#: vanilla_first_setup/gtk/default-hostname.ui:17
-#: vanilla_first_setup/gtk/default-network.ui:95
-#: vanilla_first_setup/gtk/default-theme.ui:18
-#: vanilla_first_setup/gtk/default-user.ui:17
-#: vanilla_first_setup/gtk/layout-applications.ui:17
+#: vanilla_first_setup/gtk/window.ui:39 vanilla_first_setup/gtk/window.ui:55
 msgid "Next"
 msgstr "Επόμενο"
 
-#: vanilla_first_setup/gtk/default-hostname.ui:27
-#: vanilla_first_setup/gtk/default-hostname.ui:35
-msgid "Device Name"
-msgstr "Όνομα συσκευής"
-
-#: vanilla_first_setup/gtk/default-hostname.ui:28
-msgid "Provide your device name"
-msgstr "Συμπληρώστε το όνομα της συσκευής σας"
-
-#: vanilla_first_setup/gtk/default-network.ui:18
+#: vanilla_first_setup/gtk/logout.ui:12 vanilla_first_setup/gtk/done.ui:12
 #, fuzzy
-msgid "Internet"
-msgstr "Διαδίκτυο"
+msgid "Finished!"
+msgstr "Ολοκληρώθηκε!"
 
-#: vanilla_first_setup/gtk/default-network.ui:19
+#: vanilla_first_setup/gtk/logout.ui:13
 #, fuzzy
-msgid ""
-"An active internet connection is required to download your favorite apps and "
-"to keep your system up-to-date"
+msgid "Login to your new user"
+msgstr "Εκτέλεση ως νέος χρήστης"
+
+#: vanilla_first_setup/gtk/logout.ui:23
+msgid "Login Now"
 msgstr ""
-"Μία ενεργή σύνδεση στο διαδίκτυο απαιτείται, προκειμένου να κατεβάσετε τις "
-"αγαπημένες σας εφαρμογές και να διατηρήσετε το σύστημά σας ενημερωμένο"
 
-#: vanilla_first_setup/gtk/default-network.ui:29
+#: vanilla_first_setup/gtk/done.ui:13
 #, fuzzy
-msgid "Wired"
-msgstr "Ενσύρματη"
+msgid "Your user account is ready to use"
+msgstr "Η συσκευή σας είναι έτοιμη για χρήση."
 
-#: vanilla_first_setup/gtk/default-network.ui:34
-msgid "Wireless Networks"
-msgstr "Ασύρματα δίκτυα"
+#: vanilla_first_setup/gtk/done.ui:29
+msgid "Take a tour"
+msgstr ""
 
-#: vanilla_first_setup/gtk/default-network.ui:39
-msgid "Advanced"
-msgstr "Προχωρημένες επιλογές"
+#: vanilla_first_setup/gtk/done.ui:40
+msgid "Exit"
+msgstr ""
 
-#: vanilla_first_setup/gtk/default-network.ui:42
-#, fuzzy
-msgid "Connect to Hidden Network..."
-msgstr "Σύνδεση σε κρυφό δίκτυο..."
+#: vanilla_first_setup/gtk/progress.ui:9
+msgid "Progress"
+msgstr ""
 
-#: vanilla_first_setup/gtk/default-network.ui:69
-#, fuzzy
-msgid "Open Proxy Settings..."
-msgstr "Άνοιγμα Ρυθμίσεων Proxy..."
-
-#: vanilla_first_setup/gtk/default-theme.ui:27
-msgid "Color Scheme"
-msgstr "Συνδυασμός Χρωμάτων"
-
-#: vanilla_first_setup/gtk/default-theme.ui:28
-#, fuzzy
-#| msgid "Choose a color scheme for your system."
-msgid "Choose a color scheme for your system"
-msgstr "Επιλέξτε έναν συνδυασμό χρωμάτων για το σύστημά σας."
-
-#: vanilla_first_setup/gtk/default-theme.ui:92
-msgid "Default"
-msgstr "Προεπιλογή"
-
-#: vanilla_first_setup/gtk/default-theme.ui:139
-msgid "Dark"
-msgstr "Σκοτεινό"
-
-#: vanilla_first_setup/gtk/default-user.ui:37
-msgid "Create User"
-msgstr "Δημιουργία Χρήστη"
-
-#: vanilla_first_setup/gtk/default-user.ui:38
-#, fuzzy
-#| msgid "Provide details about your device"
-msgid "Provide details for your user account"
-msgstr "Συμπληρώστε λεπτομέρειες για το λογαριασμό χρήστη σας"
-
-#: vanilla_first_setup/gtk/default-user.ui:45
-#, fuzzy
-msgid "Name"
-msgstr "Όνομα"
-
-#: vanilla_first_setup/gtk/default-user.ui:51
-msgid "Username"
-msgstr "Όνομα Χρήστη"
-
-#: vanilla_first_setup/gtk/default-user.ui:57
-msgid "Password"
-msgstr "Κωδικός"
-
-#: vanilla_first_setup/gtk/default-user.ui:63
-msgid "Confirm Password"
-msgstr "Επιβεβαίωση Κωδικού"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:20
-#: vanilla_first_setup/gtk/default-welcome.ui:29
-msgid "Welcome!"
-msgstr "Καλωσορίσατε!"
+#: vanilla_first_setup/gtk/progress.ui:10
+msgid "Some steps still take some time"
+msgstr ""
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
 msgstr "Προβολή πληροφοριών"
 
-#: vanilla_first_setup/gtk/done.ui:12
+#: vanilla_first_setup/gtk/conn-check.ui:12
 #, fuzzy
-msgid "Finished!"
-msgstr "Ολοκληρώθηκε!"
+msgid "Checking Connection"
+msgstr "Έλεγχος σύνδεσης…"
 
-#: vanilla_first_setup/gtk/done.ui:13
+#: vanilla_first_setup/gtk/conn-check.ui:13
+msgid "Please wait until the connection check is done"
+msgstr "Παρακαλώ περιμένετε έως ότου ολοκληρωθεί ο έλεγχος σύνδεσης"
+
+#: vanilla_first_setup/gtk/conn-check.ui:16
 #, fuzzy
-#| msgid "Restart your device to enjoy your Vanilla OS experience."
-msgid "Restart your device to enjoy your Vanilla OS experience"
+msgid "Open Settings"
+msgstr "Άνοιγμα Ρυθμίσεων Proxy..."
+
+#: vanilla_first_setup/gtk/theme.ui:13
+msgid "Color Scheme"
+msgstr "Συνδυασμός Χρωμάτων"
+
+#: vanilla_first_setup/gtk/theme.ui:14
+#, fuzzy
+msgid "Choose a color scheme for your system"
+msgstr "Επιλέξτε έναν συνδυασμό χρωμάτων για το σύστημά σας."
+
+#: vanilla_first_setup/gtk/theme.ui:41
+msgid "Light Mode"
 msgstr ""
-"Επανεκκινήστε τη συσκεύη σας για να απολαύσετε την εμπειρία του Vanilla OS."
 
-#: vanilla_first_setup/gtk/layout-yes-no.ui:36
-msgid "Enable"
-msgstr "Ενεργοποιήστε"
+#: vanilla_first_setup/gtk/theme.ui:79
+msgid "Light"
+msgstr ""
 
-#: vanilla_first_setup/gtk/post-script.ui:11
+#: vanilla_first_setup/gtk/theme.ui:88
 #, fuzzy
-#| msgid "Finalizing"
-msgid "Finalizing..."
-msgstr "Οριστικοποίηση..."
+msgid "Dark Mode"
+msgstr "Σκοτεινό"
 
-#: vanilla_first_setup/gtk/post-script.ui:12
+#: vanilla_first_setup/gtk/theme.ui:127
+msgid "Dark"
+msgstr "Σκοτεινό"
+
+#: vanilla_first_setup/gtk/welcome.ui:39
 #, fuzzy
-#| msgid "Your device will be ready soon."
-msgid "Your device will be ready soon"
-msgstr "Η συσκευή σας θα είναι σύντομα έτοιμη."
+msgid "Make your choices, this wizard will take care of everything"
+msgstr "Κάντε τις επιλογές σας, ο οδηγός θα αναλάβει τα πάντα."
 
-#: vanilla_first_setup/gtk/progress.ui:70
-msgid "Installing..."
-msgstr "Γίνεται εγκατάσταση..."
+#: vanilla_first_setup/gtk/welcome.ui:52
+#: vanilla_first_setup/gtk/welcome-user.ui:21
+msgid "Start"
+msgstr ""
 
-#: vanilla_first_setup/gtk/progress.ui:91
+#: vanilla_first_setup/gtk/welcome.ui:62
+#: vanilla_first_setup/gtk/welcome-user.ui:31
+msgid "Accessibility"
+msgstr ""
+
+#: vanilla_first_setup/gtk/welcome-user.ui:13
 #, fuzzy
-#| msgid "Show Console output"
-msgid "Show Console Output"
-msgstr "Προβολή εξόδου κονσόλας"
+msgid "Let's set up your user account"
+msgstr "Συμπληρώστε λεπτομέρειες για το λογαριασμό χρήστη σας"
 
-#: vanilla_first_setup/gtk/progress.ui:106
-msgid "Show Slideshow"
-msgstr "Προβολή Παρουσίασης"
+#: vanilla_first_setup/gtk/user.ui:23
+msgid "Create User"
+msgstr "Δημιουργία Χρήστη"
 
-#: vanilla_first_setup/gtk/tour.ui:27
-msgid "Read More"
-msgstr "Διαβάστε Περισσότερα"
-
-#: vanilla_first_setup/gtk/window.ui:36
-msgid "Back"
-msgstr "Πίσω"
-
-#: vanilla_first_setup/gtk/wireless-row.ui:33
-#: vanilla_first_setup/defaults/network.py:373
+#: vanilla_first_setup/gtk/user.ui:24
 #, fuzzy
-msgid "Connected"
-msgstr "Συνδεδεμένο"
+msgid "Provide details for your user account"
+msgstr "Συμπληρώστε λεπτομέρειες για το λογαριασμό χρήστη σας"
 
-#: vanilla_first_setup/defaults/conn_check.py:103
+#: vanilla_first_setup/gtk/user.ui:31
+#, fuzzy
+msgid "Name"
+msgstr "Όνομα"
+
+#: vanilla_first_setup/gtk/user.ui:38
+msgid "Username"
+msgstr "Όνομα Χρήστη"
+
+#: vanilla_first_setup/gtk/hostname.ui:13
+#: vanilla_first_setup/gtk/hostname.ui:21
+msgid "Device Name"
+msgstr "Όνομα συσκευής"
+
+#: vanilla_first_setup/gtk/hostname.ui:14
+#, fuzzy
+msgid "Provide your device name"
+msgstr "Συμπληρώστε το όνομα της συσκευής σας"
+
+#: vanilla_first_setup/gtk/hostname.ui:31
+msgid ""
+"Hostname can only contain up to 64 English lowercase letters with hyphens in-"
+"between."
+msgstr ""
+
+#: vanilla_first_setup/gtk/language.ui:10
+#: vanilla_first_setup/views/language.py:36
+msgid "Language"
+msgstr ""
+
+#: vanilla_first_setup/gtk/language.ui:11
+msgid "Select your language"
+msgstr ""
+
+#: vanilla_first_setup/gtk/location.ui:15
+msgid "Search keyboard layouts"
+msgstr ""
+
+#: vanilla_first_setup/gtk/location.ui:24
+msgid "The search results are incomplete. Try refining your query."
+msgstr ""
+
+#: vanilla_first_setup/gtk/timezone.ui:11
+msgid "Date & Time"
+msgstr ""
+
+#: vanilla_first_setup/gtk/timezone.ui:12
+msgid "Select your preferred timezone"
+msgstr ""
+
+#: vanilla_first_setup/gtk/timezone.ui:29
+msgid "Current timezone:"
+msgstr ""
+
+#: vanilla_first_setup/gtk/timezone.ui:34
+msgid "not set"
+msgstr ""
+
+#: vanilla_first_setup/gtk/keyboard.ui:10
+msgid "Keyboard Layout"
+msgstr ""
+
+#: vanilla_first_setup/gtk/keyboard.ui:11
+msgid "Select all your preferred keyboard layouts"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:15
+msgid "Applications"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:16
+msgid "Choose which applications to install."
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:30
+msgid "Core Applications"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:31
+#: vanilla_first_setup/gtk/layout-applications.ui:56
+msgid "Essential GNOME apps like Calendar or Document Viewer"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:45
+msgid "Customize Core Applications"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:55
+msgid "Browsers"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:70
+msgid "Customize Browsers"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:80
+msgid "Common Utilities"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:81
+msgid "Useful utilities to enhance your desktop experience"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:95
+msgid "Customize Utilities"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:105
+msgid "Office"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:106
+msgid "The LibreOffice suite"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:120
+msgid "Customize Office Applications"
+msgstr ""
+
+#: vanilla_first_setup/gtk/applications-dialog.ui:8
+msgid "Select Applications"
+msgstr ""
+
+#: vanilla_first_setup/gtk/applications-dialog.ui:18
+msgid "Apply"
+msgstr ""
+
+#: vanilla_first_setup/gtk/applications-dialog.ui:30
+msgid "Select the applications you want to install"
+msgstr ""
+
+#: vanilla_first_setup/window.py:74
+msgid "Setup failed: "
+msgstr ""
+
+#: vanilla_first_setup/window.py:79
+#, fuzzy
+msgid "Details"
+msgstr "Λεπτομέρειες συσκευής"
+
+#: vanilla_first_setup/window.py:85
+#, fuzzy
+msgid "Error log"
+msgstr "Σφάλμα!"
+
+#: vanilla_first_setup/application.py:76
+msgid "Don't make any changes to the system."
+msgstr ""
+
+#: vanilla_first_setup/application.py:84
+msgid "Force the configure system mode, independant of group."
+msgstr ""
+
+#: vanilla_first_setup/application.py:92
+msgid "Force the regular mode, independant of group."
+msgstr ""
+
+#: vanilla_first_setup/application.py:100
+msgid ""
+"Use the original equipment manufacturer mode with language, keyboard and "
+"timezone selection."
+msgstr ""
+
+#: vanilla_first_setup/views/conn_check.py:72
 msgid "No Internet Connection!"
 msgstr "Δεν υπάρχει σύνδεση δικτύου!"
 
-#: vanilla_first_setup/defaults/conn_check.py:105
+#: vanilla_first_setup/views/conn_check.py:73
 msgid "First Setup requires an active internet connection"
 msgstr "Οι Αρχικές Ρυθμίσεις χρειάζονται μια ενεργή σύνδεση δικτύου"
 
-#: vanilla_first_setup/defaults/conn_check.py:116
+#: vanilla_first_setup/views/conn_check.py:79
 #, fuzzy
-msgid "Please wait until the connection check is done."
-msgstr "Παρακαλώ περιμένετε έως ότου ολοκληρωθεί ο έλεγχος σύνδεσης."
-
-#: vanilla_first_setup/defaults/network.py:38
-#, fuzzy
-msgid "Insecure network (WEP)"
-msgstr "Μη ασφαλές δίκτυο (WEP)"
-
-#: vanilla_first_setup/defaults/network.py:39
-#, fuzzy
-msgid "Secure network (WPA)"
-msgstr "Ασφαλές δίκτυο (WPA)"
-
-#: vanilla_first_setup/defaults/network.py:40
-#, fuzzy
-msgid "Secure network (WPA2)"
-msgstr "Ασφαλές δίκτυο (WPA2)"
-
-#: vanilla_first_setup/defaults/network.py:41
-#, fuzzy
-msgid "Secure network (WPA3)"
-msgstr "Ασφαλές δίκτυο (WPA3)"
-
-#: vanilla_first_setup/defaults/network.py:376
-#, fuzzy
-msgid "Authentication required"
-msgstr "Απαιτείται authentication"
-
-#: vanilla_first_setup/defaults/network.py:384
-msgid "Connecting"
+msgid "Connection available"
 msgstr "Σύνδεση"
 
-#: vanilla_first_setup/defaults/network.py:386
-msgid "Disconnected"
+#: vanilla_first_setup/views/conn_check.py:80
+#, fuzzy
+msgid "You have a working internet connection"
+msgstr "Δεν υπάρχει σύνδεση δικτύου!"
+
+#: vanilla_first_setup/views/keyboard.py:37
+msgid "Keyboard"
 msgstr ""
 
-#: vanilla_first_setup/defaults/network.py:388
-msgid "Disconnecting"
+#: vanilla_first_setup/views/user.py:118
+msgid "Username cannot be empty."
 msgstr ""
 
-#: vanilla_first_setup/defaults/network.py:390
-msgid "Connection Failed"
+#: vanilla_first_setup/views/user.py:121
+msgid "Username cannot be longer than 32 characters."
 msgstr ""
 
-#: vanilla_first_setup/defaults/network.py:392
-msgid "Status Unknown"
+#: vanilla_first_setup/views/user.py:124
+msgid "Username cannot contain special characters or uppercase letters."
 msgstr ""
 
-#: vanilla_first_setup/defaults/network.py:394
-msgid "Unmanaged"
-msgstr ""
-
-#: vanilla_first_setup/defaults/network.py:396
-msgid "Unavailable"
-msgstr ""
-
-#: vanilla_first_setup/defaults/network.py:398
-msgid "Unknown"
-msgstr ""
-
-#: vanilla_first_setup/defaults/network.py:412
-msgid "Cable Unplugged"
-msgstr ""
-
-#: vanilla_first_setup/layouts/preferences.py:75
-msgid "Please select at least one option."
-msgstr "Παρακαλώ επιλέξτε τουλάχιστον ένα στοιχείο."
-
-#: vanilla_first_setup/views/done.py:55
-msgid "Restart your device to enjoy your {} experience."
-msgstr "Επανεκκινήστε τη συσκεύη σας για να απολαύσετε την εμπειρία {}."
-
-#: vanilla_first_setup/views/done.py:77
-msgid "Something went wrong"
-msgstr "Κάτι πήγε στραβά"
-
-#: vanilla_first_setup/views/done.py:79
-msgid "Please contact the distribution developers."
-msgstr "Παρακαλώ επικοινωνήστε με τους δημιουργούς της διανομής."
-
-#: vanilla_first_setup/main.py:62
-msgid "Run a post script"
-msgstr "Εκτέλεση ενός PostScript"
-
-#: vanilla_first_setup/main.py:70
-msgid "Run as a new user"
-msgstr "Εκτέλεση ως νέος χρήστης"
-
-#: vanilla_first_setup/window.py:70
-msgid "Done!"
-msgstr "Έτοιμο!"
-
-#: vanilla_first_setup/window.py:71
-msgid "Your device is ready to use."
+#: vanilla_first_setup/views/user.py:128
+#, fuzzy
+msgid "This username is already in use."
 msgstr "Η συσκευή σας είναι έτοιμη για χρήση."
 
-#: vanilla_first_setup/window.py:72
-msgid "Error!"
-msgstr "Σφάλμα!"
+#: vanilla_first_setup/views/locations.py:220
+msgid "Region"
+msgstr ""
 
-#: vanilla_first_setup/window.py:73
-msgid "Something went wrong."
-msgstr "Κάτι πήγε στραβά."
+#: vanilla_first_setup/views/locations.py:238
+msgid "Country"
+msgstr ""
 
-#~ msgid "Device Details"
-#~ msgstr "Λεπτομέρειες συσκευής"
+#: vanilla_first_setup/views/locations.py:327
+msgid "Search results"
+msgstr ""
+
+#: vanilla_first_setup/views/timezone.py:39
+msgid "Timezone"
+msgstr ""
+
+#: vanilla_first_setup/views/welcome_user.py:45
+msgid "Hello {}!"
+msgstr ""
+
+#: vanilla_first_setup/views/progress.py:94
+msgid "Setting up the system"
+msgstr ""
+
+#: vanilla_first_setup/views/progress.py:97
+#, fuzzy
+msgid "Installing"
+msgstr "Γίνεται εγκατάσταση..."
+
+#: vanilla_first_setup/core/timezones.py:92
+msgid "Europe"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:93
+msgid "Asia"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:94
+msgid "America"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:95
+msgid "Africa"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:96
+msgid "Antarctica"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:97
+msgid "Pacific Ocean"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:98
+msgid "Australia"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:99
+msgid "Atlantic Ocean"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:100
+msgid "Indian Ocean"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:101
+msgid "Arctic"
+msgstr ""
+
+#~ msgid "Tweak your Vanilla OS installation."
+#~ msgstr "Τροποποιήστε την εγκατάσταση του Vanilla OS."
+
+#~ msgid "No description"
+#~ msgstr "Χωρίς περιγραφή"
+
+#~ msgid "First release"
+#~ msgstr "Πρώτη έκδοση"
+
+#, fuzzy
+#~ msgid "Internet"
+#~ msgstr "Διαδίκτυο"
+
+#, fuzzy
+#~ msgid ""
+#~ "An active internet connection is required to download your favorite apps "
+#~ "and to keep your system up-to-date"
+#~ msgstr ""
+#~ "Μία ενεργή σύνδεση στο διαδίκτυο απαιτείται, προκειμένου να κατεβάσετε "
+#~ "τις αγαπημένες σας εφαρμογές και να διατηρήσετε το σύστημά σας ενημερωμένο"
+
+#, fuzzy
+#~ msgid "Wired"
+#~ msgstr "Ενσύρματη"
+
+#~ msgid "Wireless Networks"
+#~ msgstr "Ασύρματα δίκτυα"
+
+#~ msgid "Advanced"
+#~ msgstr "Προχωρημένες επιλογές"
+
+#, fuzzy
+#~ msgid "Connect to Hidden Network..."
+#~ msgstr "Σύνδεση σε κρυφό δίκτυο..."
+
+#~ msgid "Default"
+#~ msgstr "Προεπιλογή"
+
+#~ msgid "Password"
+#~ msgstr "Κωδικός"
+
+#~ msgid "Confirm Password"
+#~ msgstr "Επιβεβαίωση Κωδικού"
+
+#~ msgid "Welcome!"
+#~ msgstr "Καλωσορίσατε!"
+
+#, fuzzy
+#~| msgid "Restart your device to enjoy your Vanilla OS experience."
+#~ msgid "Restart your device to enjoy your Vanilla OS experience"
+#~ msgstr ""
+#~ "Επανεκκινήστε τη συσκεύη σας για να απολαύσετε την εμπειρία του Vanilla "
+#~ "OS."
+
+#~ msgid "Enable"
+#~ msgstr "Ενεργοποιήστε"
+
+#, fuzzy
+#~| msgid "Finalizing"
+#~ msgid "Finalizing..."
+#~ msgstr "Οριστικοποίηση..."
+
+#, fuzzy
+#~| msgid "Your device will be ready soon."
+#~ msgid "Your device will be ready soon"
+#~ msgstr "Η συσκευή σας θα είναι σύντομα έτοιμη."
+
+#, fuzzy
+#~| msgid "Show Console output"
+#~ msgid "Show Console Output"
+#~ msgstr "Προβολή εξόδου κονσόλας"
+
+#~ msgid "Show Slideshow"
+#~ msgstr "Προβολή Παρουσίασης"
+
+#~ msgid "Read More"
+#~ msgstr "Διαβάστε Περισσότερα"
+
+#, fuzzy
+#~ msgid "Connected"
+#~ msgstr "Συνδεδεμένο"
+
+#, fuzzy
+#~ msgid "Please wait until the connection check is done."
+#~ msgstr "Παρακαλώ περιμένετε έως ότου ολοκληρωθεί ο έλεγχος σύνδεσης."
+
+#, fuzzy
+#~ msgid "Insecure network (WEP)"
+#~ msgstr "Μη ασφαλές δίκτυο (WEP)"
+
+#, fuzzy
+#~ msgid "Secure network (WPA)"
+#~ msgstr "Ασφαλές δίκτυο (WPA)"
+
+#, fuzzy
+#~ msgid "Secure network (WPA2)"
+#~ msgstr "Ασφαλές δίκτυο (WPA2)"
+
+#, fuzzy
+#~ msgid "Secure network (WPA3)"
+#~ msgstr "Ασφαλές δίκτυο (WPA3)"
+
+#, fuzzy
+#~ msgid "Authentication required"
+#~ msgstr "Απαιτείται authentication"
+
+#~ msgid "Please select at least one option."
+#~ msgstr "Παρακαλώ επιλέξτε τουλάχιστον ένα στοιχείο."
+
+#~ msgid "Restart your device to enjoy your {} experience."
+#~ msgstr "Επανεκκινήστε τη συσκεύη σας για να απολαύσετε την εμπειρία {}."
+
+#~ msgid "Something went wrong"
+#~ msgstr "Κάτι πήγε στραβά"
+
+#~ msgid "Please contact the distribution developers."
+#~ msgstr "Παρακαλώ επικοινωνήστε με τους δημιουργούς της διανομής."
+
+#~ msgid "Run a post script"
+#~ msgstr "Εκτέλεση ενός PostScript"
+
+#~ msgid "Done!"
+#~ msgstr "Έτοιμο!"
+
+#~ msgid "Something went wrong."
+#~ msgstr "Κάτι πήγε στραβά."
 
 #~ msgid "All done!"
 #~ msgstr "Όλα έτοιμα!"
 
 #~ msgid "Yes, enable it"
 #~ msgstr "Ναι, να ενεργοποιηθεί"
-
-#~ msgid "Make your choices, this wizard will take care of everything."
-#~ msgstr "Κάντε τις επιλογές σας, ο οδηγός θα αναλάβει τα πάντα."

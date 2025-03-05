@@ -1,0 +1,14 @@
+#!/bin/bash
+if [ -z "$1" ]; then
+    echo "usage:"
+    echo "locale <locale>"
+    exit 5
+fi
+
+if ! [ "$UID" == "0" ]; then
+    echo "this script must be run with super user privileges"
+    exit 6
+fi
+
+echo "LC_ALL=$1" > /etc/locale.conf
+echo "LANG=$1" >> /etc/locale.conf

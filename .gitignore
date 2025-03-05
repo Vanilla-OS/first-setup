@@ -7,6 +7,7 @@ debian/vanilla-first-setup
 debian/.debhelper
 */__pycache__
 *.pyc
-/localbuild
+vanilla_first_setup/vanilla-first-setup.gresource
 .buildconfig
 install/
+localegen/

@@ -1,123 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-    <requires lib="gtk" version="4.0"/>
-    <requires lib="libadwaita" version="1.0" />
-    <template class="VanillaDefaultKeyboard" parent="AdwBin">
-        <property name="hexpand">true</property>
-        <property name="vexpand">true</property>
-        <child>
-            <object class="GtkBox">
-                <property name="vexpand">true</property>
-                <property name="hexpand">true</property>
-                <property name="orientation">vertical</property>
+  <requires lib="gtk" version="4.0"/>
+  <template class="VanillaKeyboard" parent="AdwBin">
+    <child>
+      <object class="AdwToolbarView">
+        <property name="content">
+          <object class="AdwStatusPage" id="status_page">
+            <property name="icon-name">input-keyboard-symbolic</property>
+            <property name="title" translatable="yes">Keyboard Layout</property>
+            <property name="description" translatable="yes">Select all your preferred keyboard layouts</property>
+          </object>
+        </property>
+        <child type="bottom">
+          <object class="GtkActionBar">
+            <style>
+              <class name="toolbar"/>
+            </style>
+            <child type="center">
+              <object class="AdwClamp">
+                <property name="maximum-size">600</property>
+                <property name="width-request">600</property>
                 <child>
-                    <object class="GtkBox" id="empty_box">
-                        <property name="visible">0</property>
-                    </object>
+                  <object class="AdwPreferencesGroup">
+                    <child>
+                      <object class="AdwEntryRow">
+                        <property name="title">Test your keyboard</property>
+                      </object>
+                    </child>
+                  </object>
                 </child>
-                <child>
-                    <object class="GtkOverlay">
-                        <property name="valign">center</property>
-                        <child type="overlay">
-                            <object class="GtkButton" id="btn_next">
-                                <property name="sensitive">False</property>
-                                <property name="margin-end">12</property>
-                                <property name="margin-start">12</property>
-                                <property name="margin-top">52</property>
-                                <property name="icon-name">go-next-symbolic</property>
-                                <property name="halign">end</property>
-                                <property name="valign">center</property>
-                                <property name="tooltip-text" translatable="yes">Next</property>
-                                <style>
-                                    <class name="circular" />
-                                    <class name="suggested-action" />
-                                </style>
-                            </object>
-                        </child>
-                        <child>
-                            <object class="AdwStatusPage" id="status_page">
-                                <property name="hexpand">true</property>
-                                <property name="vexpand">true</property>
-                                <property name="icon-name">input-keyboard-symbolic</property>
-                                <property name="title" translatable="yes">Keyboard Layout</property>
-                                <property name="description" translatable="yes">Select your preferred keyboard layout</property>
-                                <child>
-                                    <object class="AdwClamp">
-                                        <property name="maximum-size">600</property>
-                                        <child>
-                                            <object class="GtkBox">
-                                                <property name="orientation">vertical</property>
-                                                <child>
-                                                    <object class="GtkSearchEntry" id="entry_search_keyboard">
-                                                        <property name="hexpand">true</property>
-                                                        <property name="placeholder-text" translatable="yes">Search keyboard layouts</property>
-                                                    </object>
-                                                </child>
-                                                <child>
-                                                    <object class="AdwPreferencesGroup">
-                                                        <child>
-                                                            <object class="GtkListBox" id="all_keyboards_group">
-                                                                <style>
-                                                                    <class name="boxed-list" />
-                                                                </style>
-                                                            </object>
-                                                        </child>
-                                                    </object>
-                                                </child>
-                                            </object>
-                                        </child>
-                                    </object>
-                                </child>
-                            </object>
-                        </child>
-                    </object>
-                </child>
-                <child>
-                    <object class="GtkStack" id="keyboard_footer">
-                        <property name="vhomogeneous">False</property>
-                        <child>
-                            <object class="GtkStackPage">
-                                <property name="name">keyboard_footer</property>
-                                <property name="child">
-                                    <object class="GtkBox">
-                                        <property name="orientation">vertical</property>
-                                        <child>
-                                            <object class="GtkSeparator">
-                                                <property name="orientation">horizontal</property>
-                                            </object>
-                                        </child>
-                                        <child>
-                                            <object class="AdwClamp">
-                                                <property name="maximum-size">615</property>
-                                                <child>
-                                                    <object class="AdwPreferencesGroup">
-                                                        <property name="margin-top">6</property>
-                                                        <property name="margin-bottom">6</property>
-                                                        <property name="margin-start">6</property>
-                                                        <property name="margin-end">6</property>
-                                                        <child>
-                                                            <object class="AdwEntryRow" id="entry_test">
-                                                                <property name="title">Test your keyboard</property>
-                                                            </object>
-                                                        </child>
-                                                    </object>
-                                                </child>
-                                            </object>
-                                        </child>
-                                    </object>
-                                </property>
-                            </object>
-                        </child>
-                    </object>
-                </child>
-            </object>
+              </object>
+            </child>
+          </object>
         </child>
-    </template>
-    <object class="GtkSizeGroup">
-        <property name="mode">both</property>
-        <widgets>
-            <widget name="empty_box"/>
-            <widget name="keyboard_footer"/>
-        </widgets>
-    </object>
+      </object>
+    </child>
+  </template>
 </interface>

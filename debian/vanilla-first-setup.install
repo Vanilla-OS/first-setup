@@ -1,5 +1,0 @@
-recipe.json usr/share/org.vanillaos.FirstSetup/
-__first_setup_reset_session usr/bin/
-__first_setup_cleanup usr/bin/
-data/org.vanillaos.FirstSetup.policy usr/share/polkit-1/actions/
-data/org.vanillaos.FirstSetup.rules usr/share/polkit-1/rules.d/

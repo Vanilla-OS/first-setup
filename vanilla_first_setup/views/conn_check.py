@@ -14,89 +14,76 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import threading
 import logging
-import os
-from collections import OrderedDict
-from gettext import gettext as _
+_ = __builtins__["_"]
 
-from gi.repository import Adw, Gtk
-from requests import Session
+from gi.repository import Adw, Gtk, Gio, GLib
 
-from vanilla_first_setup.utils.run_async import RunAsync
-from vanilla_first_setup.utils.network import check_connection
+import vanilla_first_setup.core.backend as backend
 
 logger = logging.getLogger("FirstSetup::Conn_Check")
 
 
-@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/default-conn-check.ui")
-class VanillaDefaultConnCheck(Adw.Bin):
-    __gtype_name__ = "VanillaDefaultConnCheck"
+@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/conn-check.ui")
+class VanillaConnCheck(Adw.Bin):
+    __gtype_name__ = "VanillaConnCheck"
 
-    btn_recheck = Gtk.Template.Child()
     status_page = Gtk.Template.Child()
+    btn_settings = Gtk.Template.Child()
 
-    def __init__(self, window, distro_info, key, step, **kwargs):
+    __network_monitor = None
+    __active = False
+    __already_skipped = False
+
+    def __init__(self, window, **kwargs):
         super().__init__(**kwargs)
         self.__window = window
-        self.__distro_info = distro_info
-        self.__key = key
-        self.__step = step
-        self.__step_num = step["num"]
 
-        self.__ignore_callback = False
+        self.__network_monitor = Gio.NetworkMonitor.get_default()
 
-        # signals
-        self.btn_recheck.connect("clicked", self.__on_btn_recheck_clicked)
-        self.__window.carousel.connect("page-changed", self.__conn_check)
-        self.__window.btn_back.connect(
-            "clicked", self.__on_btn_back_clicked, self.__window.carousel.get_position()
-        )
+        self.__network_monitor.connect("network-changed", self.__check_network_status)
+        self.btn_settings.connect("clicked", self.__on_btn_settings_clicked)
 
-    @property
-    def step_id(self):
-        return self.__key
+    def set_page_active(self):
+        self.__active = True
+        self.__check_network_status()
 
-    def get_finals(self):
-        return {}
+    def set_page_inactive(self):
+        self.__active = False
 
-    def __on_btn_back_clicked(self, data, idx):
-        if idx + 1 != self.__step_num:
+    def finish(self):
+        return True
+
+    def __check_network_status(self, *args):
+        if not self.__active:
             return
-        self.__ignore_callback = True
+        
+        if self.__network_monitor.get_connectivity() == Gio.NetworkConnectivity.FULL:
+            self.__set_network_connected()
+            self.__window.set_ready(True)
+        else:
+            self.__set_network_disconnected()
+            self.__window.set_ready(False)
 
-    def __conn_check(self, carousel=None, idx=None):
-        if idx is not None and idx != self.__step_num:
-            return
+    def __set_network_disconnected(self):
+        logger.info("Internet connection available.")
+        self.status_page.set_icon_name("network-wired-disconnected-symbolic")
+        self.status_page.set_title(_("No Internet Connection!"))
+        self.status_page.set_description(_("First Setup requires an active internet connection"))
+        self.btn_settings.set_visible(True)
 
-        def async_fn():
-            if "VANILLA_SKIP_CONN_CHECK" in os.environ:
-                return True
+    def __set_network_connected(self):
+        logger.info("Internet connection not avaiable.")
+        self.status_page.set_icon_name("emblem-default-symbolic")
+        self.status_page.set_title(_("Connection available"))
+        self.status_page.set_description(_("You have a working internet connection"))
+        self.btn_settings.set_visible(False)
+        if not self.__already_skipped:
+            self.__already_skipped = True
+            GLib.idle_add(self.__window.finish_step)
 
-            return check_connection()
-
-        def callback(res, *args):
-            if self.__ignore_callback:
-                self.__ignore_callback = False
-                return
-
-            if res:
-                self.__window.next()
-                return
-
-            self.status_page.set_icon_name("network-wired-disconnected-symbolic")
-            self.status_page.set_title(_("No Internet Connection!"))
-            self.status_page.set_description(
-                _("First Setup requires an active internet connection")
-            )
-            self.btn_recheck.set_visible(True)
-
-        RunAsync(async_fn, callback)
-
-    def __on_btn_recheck_clicked(self, widget, *args):
-        widget.set_visible(False)
-        self.status_page.set_icon_name("content-loading-symbolic")
-        self.status_page.set_title(_("Checking Connection"))
-        self.status_page.set_description(
-            _("Please wait until the connection check is done")
-        )
-        self.__conn_check()
+    def __on_btn_settings_clicked(self, widget):
+        thread = threading.Thread(target=backend.open_network_settings)
+        thread.start()
+        return

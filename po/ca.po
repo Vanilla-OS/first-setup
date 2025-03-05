@@ -10,11 +10,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-18 16:40+0530\n"
+"POT-Creation-Date: 2025-03-05 02:32+0100\n"
 "PO-Revision-Date: 2024-09-04 12:59+0000\n"
 "Last-Translator: Albert Farreras <albertfarrerasaleu30@gmail.com>\n"
-"Language-Team: Catalan <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/ca/>\n"
+"Language-Team: Catalan <https://hosted.weblate.org/projects/vanilla-os/first-"
+"setup/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,290 +22,529 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.7.2-rc\n"
 
-#: data/org.vanillaos.FirstSetup.desktop.in:3
+#: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
 msgstr "Primera configuració de Vanilla OS"
 
-#: data/org.vanillaos.FirstSetup.appdata.xml.in:7
-msgid "Tweak your Vanilla OS installation."
-msgstr "Modifica la teva instal·lació de Vanilla OS."
+#: vanilla_first_setup/gtk/window.ui:25
+msgid "Back"
+msgstr "Enrere"
 
-#: data/org.vanillaos.FirstSetup.appdata.xml.in:10
-msgid "No description"
-msgstr "Sense descripció"
-
-#: data/org.vanillaos.FirstSetup.appdata.xml.in:26
-msgid "First release"
-msgstr "Primer llançament"
-
-#: vanilla_first_setup/gtk/default-conn-check.ui:12
-#: vanilla_first_setup/defaults/conn_check.py:114
-msgid "Checking Connection…"
-msgstr "Comprovant conexió…"
-
-#: vanilla_first_setup/gtk/default-conn-check.ui:13
-msgid "Please wait until the connection check is done"
-msgstr "Espera fins que es comprovi la connexió"
-
-#: vanilla_first_setup/gtk/default-hostname.ui:17
-#: vanilla_first_setup/gtk/default-network.ui:95
-#: vanilla_first_setup/gtk/default-theme.ui:18
-#: vanilla_first_setup/gtk/default-user.ui:17
-#: vanilla_first_setup/gtk/layout-applications.ui:17
+#: vanilla_first_setup/gtk/window.ui:39 vanilla_first_setup/gtk/window.ui:55
 msgid "Next"
 msgstr "Següent"
 
-#: vanilla_first_setup/gtk/default-hostname.ui:27
-#: vanilla_first_setup/gtk/default-hostname.ui:35
-msgid "Device Name"
-msgstr "Nom del dispositiu"
+#: vanilla_first_setup/gtk/logout.ui:12 vanilla_first_setup/gtk/done.ui:12
+msgid "Finished!"
+msgstr "Finalitzat!"
 
-#: vanilla_first_setup/gtk/default-hostname.ui:28
+#: vanilla_first_setup/gtk/logout.ui:13
 #, fuzzy
-#| msgid "Provide details about your device"
-msgid "Provide your device name"
-msgstr "Proporcioneu detalls sobre el vostre dispositiu"
+msgid "Login to your new user"
+msgstr "Executar com usuari nou"
 
-#: vanilla_first_setup/gtk/default-network.ui:18
-msgid "Internet"
-msgstr "Internet"
-
-#: vanilla_first_setup/gtk/default-network.ui:19
-msgid ""
-"An active internet connection is required to download your favorite apps and "
-"to keep your system up-to-date"
+#: vanilla_first_setup/gtk/logout.ui:23
+msgid "Login Now"
 msgstr ""
-"És necessària una connexió a Internet activa per assegurar-se que el sistema "
-"es troba actualitzat i descarregar les teves aplicacions preferides"
 
-#: vanilla_first_setup/gtk/default-network.ui:29
-msgid "Wired"
-msgstr "Xarxes amb cable"
+#: vanilla_first_setup/gtk/done.ui:13
+#, fuzzy
+msgid "Your user account is ready to use"
+msgstr "El teu dispositiu està llest per fer-ho servir."
 
-#: vanilla_first_setup/gtk/default-network.ui:34
-msgid "Wireless Networks"
-msgstr "Xarxes inalàmbriques"
+#: vanilla_first_setup/gtk/done.ui:29
+msgid "Take a tour"
+msgstr ""
 
-#: vanilla_first_setup/gtk/default-network.ui:39
-msgid "Advanced"
-msgstr "Avançat"
+#: vanilla_first_setup/gtk/done.ui:40
+msgid "Exit"
+msgstr ""
 
-#: vanilla_first_setup/gtk/default-network.ui:42
-msgid "Connect to Hidden Network..."
-msgstr "Connectar-se a xarxes ocultes…"
+#: vanilla_first_setup/gtk/progress.ui:9
+msgid "Progress"
+msgstr ""
 
-#: vanilla_first_setup/gtk/default-network.ui:69
-msgid "Open Proxy Settings..."
-msgstr "Obrir la configuració del Proxy…"
-
-#: vanilla_first_setup/gtk/default-theme.ui:27
-msgid "Color Scheme"
-msgstr "Esquema de colors"
-
-#: vanilla_first_setup/gtk/default-theme.ui:28
-msgid "Choose a color scheme for your system"
-msgstr "Escull un esquema de colors per al teu sistema"
-
-#: vanilla_first_setup/gtk/default-theme.ui:92
-msgid "Default"
-msgstr "Per defecte"
-
-#: vanilla_first_setup/gtk/default-theme.ui:139
-msgid "Dark"
-msgstr "Fosc"
-
-#: vanilla_first_setup/gtk/default-user.ui:37
-msgid "Create User"
-msgstr "Crear Usuari"
-
-#: vanilla_first_setup/gtk/default-user.ui:38
-msgid "Provide details for your user account"
-msgstr "Proporciona detalls per al teu compte d'usuari"
-
-#: vanilla_first_setup/gtk/default-user.ui:45
-msgid "Name"
-msgstr "Nom"
-
-#: vanilla_first_setup/gtk/default-user.ui:51
-msgid "Username"
-msgstr "Nom d'usuari"
-
-#: vanilla_first_setup/gtk/default-user.ui:57
-msgid "Password"
-msgstr "Contrasenya"
-
-#: vanilla_first_setup/gtk/default-user.ui:63
-msgid "Confirm Password"
-msgstr "Confirmar la contrasenya"
-
-#: vanilla_first_setup/gtk/default-welcome.ui:20
-#: vanilla_first_setup/gtk/default-welcome.ui:29
-msgid "Welcome!"
-msgstr "Benvingut!"
+#: vanilla_first_setup/gtk/progress.ui:10
+msgid "Some steps still take some time"
+msgstr ""
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
 msgstr "Mostrant informació"
 
-#: vanilla_first_setup/gtk/done.ui:12
-msgid "Finished!"
-msgstr "Finalitzat!"
-
-#: vanilla_first_setup/gtk/done.ui:13
-msgid "Restart your device to enjoy your Vanilla OS experience"
-msgstr "Reinicia el dispositiu per gaudir de l'experiència Vanilla OS"
-
-#: vanilla_first_setup/gtk/layout-yes-no.ui:36
-msgid "Enable"
-msgstr "Activat"
-
-#: vanilla_first_setup/gtk/post-script.ui:11
-msgid "Finalizing..."
-msgstr "Finalitzant..."
-
-#: vanilla_first_setup/gtk/post-script.ui:12
-msgid "Your device will be ready soon"
-msgstr "El vostre dispositiu estarà llest aviat"
-
-#: vanilla_first_setup/gtk/progress.ui:70
-msgid "Installing..."
-msgstr "Instal·lant..."
-
-#: vanilla_first_setup/gtk/progress.ui:91
+#: vanilla_first_setup/gtk/conn-check.ui:12
 #, fuzzy
-#| msgid "Show Console output"
-msgid "Show Console Output"
-msgstr "Mostra la sortida de Consola"
+msgid "Checking Connection"
+msgstr "Comprovant conexió…"
 
-#: vanilla_first_setup/gtk/progress.ui:106
-msgid "Show Slideshow"
-msgstr "Mostra la presentació"
+#: vanilla_first_setup/gtk/conn-check.ui:13
+msgid "Please wait until the connection check is done"
+msgstr "Espera fins que es comprovi la connexió"
 
-#: vanilla_first_setup/gtk/tour.ui:27
-msgid "Read More"
-msgstr "Llegeix més"
+#: vanilla_first_setup/gtk/conn-check.ui:16
+#, fuzzy
+msgid "Open Settings"
+msgstr "Obrir la configuració del Proxy…"
 
-#: vanilla_first_setup/gtk/window.ui:36
-msgid "Back"
-msgstr "Enrere"
+#: vanilla_first_setup/gtk/theme.ui:13
+msgid "Color Scheme"
+msgstr "Esquema de colors"
 
-#: vanilla_first_setup/gtk/wireless-row.ui:33
-#: vanilla_first_setup/defaults/network.py:373
-msgid "Connected"
-msgstr "Connectat"
+#: vanilla_first_setup/gtk/theme.ui:14
+msgid "Choose a color scheme for your system"
+msgstr "Escull un esquema de colors per al teu sistema"
 
-#: vanilla_first_setup/defaults/conn_check.py:103
+#: vanilla_first_setup/gtk/theme.ui:41
+msgid "Light Mode"
+msgstr ""
+
+#: vanilla_first_setup/gtk/theme.ui:79
+msgid "Light"
+msgstr ""
+
+#: vanilla_first_setup/gtk/theme.ui:88
+#, fuzzy
+msgid "Dark Mode"
+msgstr "Fosc"
+
+#: vanilla_first_setup/gtk/theme.ui:127
+msgid "Dark"
+msgstr "Fosc"
+
+#: vanilla_first_setup/gtk/welcome.ui:39
+#, fuzzy
+msgid "Make your choices, this wizard will take care of everything"
+msgstr ""
+"Fes les teves eleccions, aquest assistent d'instal·lació s'encarregarà de "
+"tot."
+
+#: vanilla_first_setup/gtk/welcome.ui:52
+#: vanilla_first_setup/gtk/welcome-user.ui:21
+msgid "Start"
+msgstr ""
+
+#: vanilla_first_setup/gtk/welcome.ui:62
+#: vanilla_first_setup/gtk/welcome-user.ui:31
+msgid "Accessibility"
+msgstr ""
+
+#: vanilla_first_setup/gtk/welcome-user.ui:13
+#, fuzzy
+msgid "Let's set up your user account"
+msgstr "Proporciona detalls per al teu compte d'usuari"
+
+#: vanilla_first_setup/gtk/user.ui:23
+msgid "Create User"
+msgstr "Crear Usuari"
+
+#: vanilla_first_setup/gtk/user.ui:24
+msgid "Provide details for your user account"
+msgstr "Proporciona detalls per al teu compte d'usuari"
+
+#: vanilla_first_setup/gtk/user.ui:31
+msgid "Name"
+msgstr "Nom"
+
+#: vanilla_first_setup/gtk/user.ui:38
+msgid "Username"
+msgstr "Nom d'usuari"
+
+#: vanilla_first_setup/gtk/hostname.ui:13
+#: vanilla_first_setup/gtk/hostname.ui:21
+msgid "Device Name"
+msgstr "Nom del dispositiu"
+
+#: vanilla_first_setup/gtk/hostname.ui:14
+#, fuzzy
+msgid "Provide your device name"
+msgstr "Proporcioneu detalls sobre el vostre dispositiu"
+
+#: vanilla_first_setup/gtk/hostname.ui:31
+msgid ""
+"Hostname can only contain up to 64 English lowercase letters with hyphens in-"
+"between."
+msgstr ""
+
+#: vanilla_first_setup/gtk/language.ui:10
+#: vanilla_first_setup/views/language.py:36
+msgid "Language"
+msgstr ""
+
+#: vanilla_first_setup/gtk/language.ui:11
+msgid "Select your language"
+msgstr ""
+
+#: vanilla_first_setup/gtk/location.ui:15
+msgid "Search keyboard layouts"
+msgstr ""
+
+#: vanilla_first_setup/gtk/location.ui:24
+msgid "The search results are incomplete. Try refining your query."
+msgstr ""
+
+#: vanilla_first_setup/gtk/timezone.ui:11
+msgid "Date & Time"
+msgstr ""
+
+#: vanilla_first_setup/gtk/timezone.ui:12
+msgid "Select your preferred timezone"
+msgstr ""
+
+#: vanilla_first_setup/gtk/timezone.ui:29
+msgid "Current timezone:"
+msgstr ""
+
+#: vanilla_first_setup/gtk/timezone.ui:34
+msgid "not set"
+msgstr ""
+
+#: vanilla_first_setup/gtk/keyboard.ui:10
+msgid "Keyboard Layout"
+msgstr ""
+
+#: vanilla_first_setup/gtk/keyboard.ui:11
+msgid "Select all your preferred keyboard layouts"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:15
+msgid "Applications"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:16
+msgid "Choose which applications to install."
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:30
+msgid "Core Applications"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:31
+#: vanilla_first_setup/gtk/layout-applications.ui:56
+msgid "Essential GNOME apps like Calendar or Document Viewer"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:45
+msgid "Customize Core Applications"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:55
+msgid "Browsers"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:70
+msgid "Customize Browsers"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:80
+msgid "Common Utilities"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:81
+msgid "Useful utilities to enhance your desktop experience"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:95
+msgid "Customize Utilities"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:105
+msgid "Office"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:106
+msgid "The LibreOffice suite"
+msgstr ""
+
+#: vanilla_first_setup/gtk/layout-applications.ui:120
+msgid "Customize Office Applications"
+msgstr ""
+
+#: vanilla_first_setup/gtk/applications-dialog.ui:8
+msgid "Select Applications"
+msgstr ""
+
+#: vanilla_first_setup/gtk/applications-dialog.ui:18
+msgid "Apply"
+msgstr ""
+
+#: vanilla_first_setup/gtk/applications-dialog.ui:30
+msgid "Select the applications you want to install"
+msgstr ""
+
+#: vanilla_first_setup/window.py:74
+msgid "Setup failed: "
+msgstr ""
+
+#: vanilla_first_setup/window.py:79
+#, fuzzy
+msgid "Details"
+msgstr "Detalls del dispositiu"
+
+#: vanilla_first_setup/window.py:85
+#, fuzzy
+msgid "Error log"
+msgstr "Error!"
+
+#: vanilla_first_setup/application.py:76
+msgid "Don't make any changes to the system."
+msgstr ""
+
+#: vanilla_first_setup/application.py:84
+msgid "Force the configure system mode, independant of group."
+msgstr ""
+
+#: vanilla_first_setup/application.py:92
+msgid "Force the regular mode, independant of group."
+msgstr ""
+
+#: vanilla_first_setup/application.py:100
+msgid ""
+"Use the original equipment manufacturer mode with language, keyboard and "
+"timezone selection."
+msgstr ""
+
+#: vanilla_first_setup/views/conn_check.py:72
 msgid "No Internet Connection!"
 msgstr "Sense connexió a Internet!"
 
-#: vanilla_first_setup/defaults/conn_check.py:105
+#: vanilla_first_setup/views/conn_check.py:73
 msgid "First Setup requires an active internet connection"
 msgstr "La primera configuració requereix una connexió a Internet activa"
 
-#: vanilla_first_setup/defaults/conn_check.py:116
-msgid "Please wait until the connection check is done."
-msgstr "Espera fins que es comprovi la connexió."
-
-#: vanilla_first_setup/defaults/network.py:38
-msgid "Insecure network (WEP)"
-msgstr "Xarxa no segura (WEP)"
-
-#: vanilla_first_setup/defaults/network.py:39
-msgid "Secure network (WPA)"
-msgstr "Xarxa segura (WPA)"
-
-#: vanilla_first_setup/defaults/network.py:40
-msgid "Secure network (WPA2)"
-msgstr "Xarxa segura (WPA2)"
-
-#: vanilla_first_setup/defaults/network.py:41
-msgid "Secure network (WPA3)"
-msgstr "Xarxa segura (WPA3)"
-
-#: vanilla_first_setup/defaults/network.py:376
-msgid "Authentication required"
-msgstr "Es necessita autenticació"
-
-#: vanilla_first_setup/defaults/network.py:384
-msgid "Connecting"
-msgstr "Conectant"
-
-#: vanilla_first_setup/defaults/network.py:386
-msgid "Disconnected"
-msgstr "Desconectat"
-
-#: vanilla_first_setup/defaults/network.py:388
-msgid "Disconnecting"
-msgstr "Desconectant"
-
-#: vanilla_first_setup/defaults/network.py:390
-msgid "Connection Failed"
+#: vanilla_first_setup/views/conn_check.py:79
+#, fuzzy
+msgid "Connection available"
 msgstr "La conexió a fallat"
 
-#: vanilla_first_setup/defaults/network.py:392
-msgid "Status Unknown"
-msgstr "Estat desconegut"
-
-#: vanilla_first_setup/defaults/network.py:394
-msgid "Unmanaged"
-msgstr "No administrat"
-
-#: vanilla_first_setup/defaults/network.py:396
-msgid "Unavailable"
-msgstr "No disponible"
-
-#: vanilla_first_setup/defaults/network.py:398
+#: vanilla_first_setup/views/conn_check.py:80
 #, fuzzy
-#| msgid "Status Unknown"
-msgid "Unknown"
-msgstr "Estat desconegut"
+msgid "You have a working internet connection"
+msgstr "Sense connexió a Internet!"
 
-#: vanilla_first_setup/defaults/network.py:412
-msgid "Cable Unplugged"
-msgstr "Cable Desconectat"
+#: vanilla_first_setup/views/keyboard.py:37
+msgid "Keyboard"
+msgstr ""
 
-#: vanilla_first_setup/layouts/preferences.py:75
-msgid "Please select at least one option."
-msgstr "Siusplau, escull com a mínim una opció."
+#: vanilla_first_setup/views/user.py:118
+msgid "Username cannot be empty."
+msgstr ""
 
-#: vanilla_first_setup/views/done.py:55
-msgid "Restart your device to enjoy your {} experience."
-msgstr "Reinicia el teu dispositiu per gaudir la teva experiència {}."
+#: vanilla_first_setup/views/user.py:121
+msgid "Username cannot be longer than 32 characters."
+msgstr ""
 
-#: vanilla_first_setup/views/done.py:77
-msgid "Something went wrong"
-msgstr "Alguna cosa ha anat malament"
+#: vanilla_first_setup/views/user.py:124
+msgid "Username cannot contain special characters or uppercase letters."
+msgstr ""
 
-#: vanilla_first_setup/views/done.py:79
-msgid "Please contact the distribution developers."
-msgstr "Siusplau, contacta amb els desenvolupadors de la distribució."
-
-#: vanilla_first_setup/main.py:62
-msgid "Run a post script"
-msgstr "Executar un post script"
-
-#: vanilla_first_setup/main.py:70
-msgid "Run as a new user"
-msgstr "Executar com usuari nou"
-
-#: vanilla_first_setup/window.py:70
-msgid "Done!"
-msgstr "Fet!"
-
-#: vanilla_first_setup/window.py:71
-msgid "Your device is ready to use."
+#: vanilla_first_setup/views/user.py:128
+#, fuzzy
+msgid "This username is already in use."
 msgstr "El teu dispositiu està llest per fer-ho servir."
 
-#: vanilla_first_setup/window.py:72
-msgid "Error!"
-msgstr "Error!"
+#: vanilla_first_setup/views/locations.py:220
+msgid "Region"
+msgstr ""
 
-#: vanilla_first_setup/window.py:73
-msgid "Something went wrong."
-msgstr "Alguna cosa ha anat malament."
+#: vanilla_first_setup/views/locations.py:238
+msgid "Country"
+msgstr ""
 
-#~ msgid "Device Details"
-#~ msgstr "Detalls del dispositiu"
+#: vanilla_first_setup/views/locations.py:327
+msgid "Search results"
+msgstr ""
+
+#: vanilla_first_setup/views/timezone.py:39
+msgid "Timezone"
+msgstr ""
+
+#: vanilla_first_setup/views/welcome_user.py:45
+msgid "Hello {}!"
+msgstr ""
+
+#: vanilla_first_setup/views/progress.py:94
+msgid "Setting up the system"
+msgstr ""
+
+#: vanilla_first_setup/views/progress.py:97
+#, fuzzy
+msgid "Installing"
+msgstr "Instal·lant..."
+
+#: vanilla_first_setup/core/timezones.py:92
+msgid "Europe"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:93
+msgid "Asia"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:94
+msgid "America"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:95
+msgid "Africa"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:96
+msgid "Antarctica"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:97
+msgid "Pacific Ocean"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:98
+msgid "Australia"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:99
+msgid "Atlantic Ocean"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:100
+msgid "Indian Ocean"
+msgstr ""
+
+#: vanilla_first_setup/core/timezones.py:101
+msgid "Arctic"
+msgstr ""
+
+#~ msgid "Tweak your Vanilla OS installation."
+#~ msgstr "Modifica la teva instal·lació de Vanilla OS."
+
+#~ msgid "No description"
+#~ msgstr "Sense descripció"
+
+#~ msgid "First release"
+#~ msgstr "Primer llançament"
+
+#~ msgid "Internet"
+#~ msgstr "Internet"
+
+#~ msgid ""
+#~ "An active internet connection is required to download your favorite apps "
+#~ "and to keep your system up-to-date"
+#~ msgstr ""
+#~ "És necessària una connexió a Internet activa per assegurar-se que el "
+#~ "sistema es troba actualitzat i descarregar les teves aplicacions "
+#~ "preferides"
+
+#~ msgid "Wired"
+#~ msgstr "Xarxes amb cable"
+
+#~ msgid "Wireless Networks"
+#~ msgstr "Xarxes inalàmbriques"
+
+#~ msgid "Advanced"
+#~ msgstr "Avançat"
+
+#~ msgid "Connect to Hidden Network..."
+#~ msgstr "Connectar-se a xarxes ocultes…"
+
+#~ msgid "Default"
+#~ msgstr "Per defecte"
+
+#~ msgid "Password"
+#~ msgstr "Contrasenya"
+
+#~ msgid "Confirm Password"
+#~ msgstr "Confirmar la contrasenya"
+
+#~ msgid "Welcome!"
+#~ msgstr "Benvingut!"
+
+#~ msgid "Restart your device to enjoy your Vanilla OS experience"
+#~ msgstr "Reinicia el dispositiu per gaudir de l'experiència Vanilla OS"
+
+#~ msgid "Enable"
+#~ msgstr "Activat"
+
+#~ msgid "Finalizing..."
+#~ msgstr "Finalitzant..."
+
+#~ msgid "Your device will be ready soon"
+#~ msgstr "El vostre dispositiu estarà llest aviat"
+
+#, fuzzy
+#~| msgid "Show Console output"
+#~ msgid "Show Console Output"
+#~ msgstr "Mostra la sortida de Consola"
+
+#~ msgid "Show Slideshow"
+#~ msgstr "Mostra la presentació"
+
+#~ msgid "Read More"
+#~ msgstr "Llegeix més"
+
+#~ msgid "Connected"
+#~ msgstr "Connectat"
+
+#~ msgid "Please wait until the connection check is done."
+#~ msgstr "Espera fins que es comprovi la connexió."
+
+#~ msgid "Insecure network (WEP)"
+#~ msgstr "Xarxa no segura (WEP)"
+
+#~ msgid "Secure network (WPA)"
+#~ msgstr "Xarxa segura (WPA)"
+
+#~ msgid "Secure network (WPA2)"
+#~ msgstr "Xarxa segura (WPA2)"
+
+#~ msgid "Secure network (WPA3)"
+#~ msgstr "Xarxa segura (WPA3)"
+
+#~ msgid "Authentication required"
+#~ msgstr "Es necessita autenticació"
+
+#~ msgid "Connecting"
+#~ msgstr "Conectant"
+
+#~ msgid "Disconnected"
+#~ msgstr "Desconectat"
+
+#~ msgid "Disconnecting"
+#~ msgstr "Desconectant"
+
+#~ msgid "Status Unknown"
+#~ msgstr "Estat desconegut"
+
+#~ msgid "Unmanaged"
+#~ msgstr "No administrat"
+
+#~ msgid "Unavailable"
+#~ msgstr "No disponible"
+
+#, fuzzy
+#~| msgid "Status Unknown"
+#~ msgid "Unknown"
+#~ msgstr "Estat desconegut"
+
+#~ msgid "Cable Unplugged"
+#~ msgstr "Cable Desconectat"
+
+#~ msgid "Please select at least one option."
+#~ msgstr "Siusplau, escull com a mínim una opció."
+
+#~ msgid "Restart your device to enjoy your {} experience."
+#~ msgstr "Reinicia el teu dispositiu per gaudir la teva experiència {}."
+
+#~ msgid "Something went wrong"
+#~ msgstr "Alguna cosa ha anat malament"
+
+#~ msgid "Please contact the distribution developers."
+#~ msgstr "Siusplau, contacta amb els desenvolupadors de la distribució."
+
+#~ msgid "Run a post script"
+#~ msgstr "Executar un post script"
+
+#~ msgid "Done!"
+#~ msgstr "Fet!"
+
+#~ msgid "Something went wrong."
+#~ msgstr "Alguna cosa ha anat malament."
 
 #~ msgid "Connect to the Internet"
 #~ msgstr "Conectat a Internet"
@@ -315,11 +554,6 @@ msgstr "Alguna cosa ha anat malament."
 
 #~ msgid "Yes, enable it"
 #~ msgstr "Sí, habilita-ho"
-
-#~ msgid "Make your choices, this wizard will take care of everything."
-#~ msgstr ""
-#~ "Fes les teves eleccions, aquest assistent d'instal·lació s'encarregarà de "
-#~ "tot."
 
 #~ msgid "The changes are being applied. Please Wait…"
 #~ msgstr "Els canvis s'estan aplicant. Siusplau, espera…"

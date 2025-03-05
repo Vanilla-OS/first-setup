@@ -1,0 +1,13 @@
+#!/bin/bash
+if ! [ -z "$1" ]; then
+    echo "usage:"
+    echo "open-accessibility-settings"
+    exit 5
+fi
+
+if [ "$UID" == "0" ]; then
+    echo "this script must be run as a regular user"
+    exit 7
+fi
+
+gnome-control-center universal-access

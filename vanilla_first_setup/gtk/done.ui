@@ -1,81 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-    <requires lib="gtk" version="4.0"/>
-    <requires lib="libadwaita" version="1.0" />
-    <template class="VanillaDone" parent="AdwBin">
+  <requires lib="gtk" version="4.0"/>
+  <requires lib="libadwaita" version="1.0"/>
+  <template class="VanillaDone" parent="AdwBin">
+    <property name="halign">fill</property>
+    <property name="valign">fill</property>
+    <property name="hexpand">true</property>
+    <child>
+      <object class="AdwStatusPage" id="status_page">
+        <property name="icon-name">emblem-default-symbolic</property>
+        <property name="title" translatable="yes">Finished!</property>
+        <property name="description" translatable="yes">Your user account is ready to use</property>
         <property name="halign">fill</property>
         <property name="valign">fill</property>
         <property name="hexpand">true</property>
         <child>
-            <object class="AdwStatusPage" id="status_page">
-                <property name="icon-name">emblem-default-symbolic</property>
-                <property name="title" translatable="yes">Finished!</property>
-                <property name="description" translatable="yes">You're ready to start experiencing Vanilla OS.</property>
-                <property name="halign">fill</property>
-                <property name="valign">fill</property>
-                <property name="hexpand">true</property>
-                <child>
-                    <object class="GtkBox">
-                        <property name="halign">center</property>
-                        <property name="orientation">vertical</property>
-                        <child>
-                            <object class="GtkBox" id="log_box">
-                                <property name="visible">false</property>
-                                <property name="margin-start">40</property>
-                                <property name="margin-end">40</property>
-                                <property name="margin-top">1</property>
-                                <property name="margin-bottom">18</property>
-                                <property name="width-request">500</property>
-                                <property name="height-request">200</property>
-                                <property name="orientation">vertical</property>
-                                <child>
-                                    <object class="GtkLabel" id="log_output">
-                                        <property name="margin-top">12</property>
-                                        <property name="margin-start">12</property>
-                                        <property name="margin-end">12</property>
-                                    </object>
-                                </child>
-                                <style>
-                                    <class name="card"/>
-                                </style>
-                            </object>
-                        </child>
-                        <child>
-                            <object class="GtkButton" id="btn_reboot">
-                                <property name="label">Reboot Now</property>
-                                <property name="halign">center</property>
-                                <property name="valign">center</property>
-                                <style>
-                                    <class name="pill"/>
-                                    <class name="suggested-action"/>
-                                </style>
-                            </object>
-                        </child>
-                        <child>
-                            <object class="GtkButton" id="btn_close">
-                                <property name="label">Get Started</property>
-                                <property name="halign">center</property>
-                                <property name="visible">false</property>
-                                <style>
-                                    <class name="pill"/>
-                                    <class name="suggested-action"/>
-                                </style>
-                            </object>
-                        </child>
-                        <child>
-                            <object class="GtkButton" id="btn_logs">
-                                <property name="label">View Logs</property>
-                                <property name="halign">center</property>
-                                <property name="visible">true</property>
-                                <property name="margin-top">20</property>
-                                <style>
-                                    <class name="pill"/>
-                                </style>
-                            </object>
-                        </child>
+          <object class="GtkBox">
+            <property name="halign">center</property>
+            <property name="orientation">vertical</property>
+            <property name="spacing">12</property>
+            <child>
+              <object class="GtkBox">
+                <property name="halign">center</property>
+                <property name="orientation">vertical</property>
+                <property name="spacing">12</property>
+                  <child>
+                    <object class="GtkButton" id="btn_tour">
+                      <property name="label" translatable="yes">Take a tour</property>
+                      <property name="hexpand">true</property>
+                      <property name="valign">center</property>
+                      <style>
+                        <class name="pill"/>
+                        <class name="suggested-action"/>
+                      </style>
                     </object>
+                  </child>
+                  <child>
+                    <object class="GtkButton" id="btn_exit">
+                      <property name="label" translatable="yes">Exit</property>
+                      <property name="hexpand">true</property>
+                      <property name="valign">center</property>
+                      <style>
+                        <class name="pill"/>
+                      </style>
+                    </object>
+                  </child>
+                  <child>
+                    <object class="GtkButton" id="btn_logs">
+                      <property name="label">View Logs</property>
+                      <property name="hexpand">true</property>
+                      <property name="visible">true</property>
+                      <style>
+                        <class name="pill"/>
+                      </style>
+                    </object>
+                  </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox" id="log_box">
+                <property name="visible">false</property>
+                <property name="margin-start">40</property>
+                <property name="margin-end">40</property>
+                <property name="margin-top">18</property>
+                <property name="margin-bottom">1</property>
+                <property name="width-request">500</property>
+                <property name="height-request">200</property>
+                <property name="orientation">vertical</property>
+                <child>
+                  <object class="GtkLabel" id="log_output">
+                    <property name="margin-top">12</property>
+                    <property name="margin-start">12</property>
+                    <property name="margin-end">12</property>
+                    <property name="wrap">true</property>
+                    <property name="wrap-mode">word-char</property>
+                    <property name="halign">start</property>
+                    <property name="valign">start</property>
+                  </object>
                 </child>
-            </object>
+                <style>
+                  <class name="card"/>
+                </style>
+              </object>
+            </child>
+          </object>
         </child>
-    </template>
+      </object>
+    </child>
+  </template>
 </interface>

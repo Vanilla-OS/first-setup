@@ -3,10 +3,20 @@ viewsdir = join_paths(pkgdatadir, 'vanilla_first_setup/views')
 
 sources = [
   '__init__.py',
+  'applications.py',
+  'conn_check.py',
   'done.py',
+  'hostname.py',
+  'keyboard.py',
+  'language.py',
+  'locations.py',
+  'logout.py',
   'progress.py',
-  'tour.py',
-  'post_script.py',
+  'theme.py',
+  'timezone.py',
+  'user.py',
+  'welcome_user.py',
+  'welcome.py',
 ]
 
 install_data(sources, install_dir: viewsdir)

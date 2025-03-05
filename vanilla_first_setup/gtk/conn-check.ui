@@ -2,19 +2,20 @@
 <interface>
     <requires lib="gtk" version="4.0"/>
     <requires lib="libadwaita" version="1.0" />
-    <template class="VanillaDefaultConnCheck" parent="AdwBin">
+    <template class="VanillaConnCheck" parent="AdwBin">
         <property name="halign">fill</property>
         <property name="valign">fill</property>
         <property name="hexpand">true</property>
         <child>
             <object class="AdwStatusPage" id="status_page">
-                <property name="icon-name">content-loading-symbolic</property>
+                <property name="icon-name">network-wired-acquiring-symbolic</property>
                 <property name="title" translatable="yes">Checking Connection</property>
                 <property name="description" translatable="yes">Please wait until the connection check is done</property>
                 <child>
-                    <object class="GtkButton" id="btn_recheck">
-                        <property name="label">Check Again</property>
+                    <object class="GtkButton" id="btn_settings">
+                        <property name="label" translatable="yes">Open Settings</property>
                         <property name="halign">center</property>
+                        <property name="visible">false</property>
                         <style>
                             <class name="pill" />
                         </style>

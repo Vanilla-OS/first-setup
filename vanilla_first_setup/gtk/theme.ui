@@ -2,26 +2,12 @@
 <interface>
   <requires lib="gtk" version="4.0"/>
   <requires lib="libadwaita" version="1.0" />
-  <template class="VanillaDefaultTheme" parent="AdwBin">
+  <template class="VanillaTheme" parent="AdwBin">
     <property name="hexpand">1</property>
     <property name="vexpand">1</property>
     <child>
       <object class="GtkOverlay">
         <property name="valign">center</property>
-        <child type="overlay">
-          <object class="GtkButton" id="btn_next">
-            <property name="margin-end">12</property>
-            <property name="margin-start">12</property>
-            <property name="icon-name">go-next-symbolic</property>
-            <property name="halign">end</property>
-            <property name="valign">center</property>
-            <property name="tooltip-text" translatable="yes">Next</property>
-            <style>
-              <class name="circular" />
-              <class name="suggested-action" />
-            </style>
-          </object>
-        </child>
         <child>
           <object class="AdwStatusPage">
             <property name="title" translatable="yes">Color Scheme</property>
@@ -52,6 +38,7 @@
                                 <property name="hexpand">True</property>
                                 <child>
                                   <object class="GtkToggleButton" id="btn_default">
+                                    <property name="tooltip-text" translatable="yes">Light Mode</property>
                                     <child>
                                       <object class="GtkOverlay">
                                         <child>
@@ -89,7 +76,7 @@
                                 </child>
                                 <child>
                                   <object class="GtkLabel" id="default_label">
-                                    <property name="label" translatable="yes">Default</property>
+                                    <property name="label" translatable="yes">Light</property>
                                     <layout>
                                       <property name="column">0</property>
                                       <property name="row">1</property>
@@ -98,6 +85,7 @@
                                 </child>
                                 <child>
                                   <object class="GtkToggleButton" id="btn_dark">
+                                    <property name="tooltip-text" translatable="yes">Dark Mode</property>
                                     <property name="group">btn_default</property>
                                     <child>
                                       <object class="GtkOverlay">

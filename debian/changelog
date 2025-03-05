@@ -1,3 +1,10 @@
+vanilla-first-setup (3.0.0) unstable; urgency=high
+
+  * Completely reworked all components
+  * Severily improved accessibility
+
+ -- Tau <info@vanillaos.org>  Tue, 18 Feb 2025 03:28:00 +0000
+
 vanilla-first-setup (2.2.4) unstable; urgency=critical
 
   * Improved network and connection checks

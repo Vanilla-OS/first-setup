@@ -1,9 +1,0 @@
-#!/bin/bash
-_user=$1
-
-touch /etc/org.vanillaos.FirstSetup.commands
-touch /etc/org.vanillaos.FirstSetup.nextBoot
-
-chmod +wx /etc/org.vanillaos.FirstSetup.commands
-chown $_user:$_user /etc/org.vanillaos.FirstSetup.commands
-chmod +wx /etc/org.vanillaos.FirstSetup.nextBoot

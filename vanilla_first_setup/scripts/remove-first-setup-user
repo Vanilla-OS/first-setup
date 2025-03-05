@@ -1,0 +1,16 @@
+#!/bin/bash
+if ! [ -z "$1" ]; then
+    echo "usage:"
+    echo "remove-first-setup-user"
+    exit 5
+fi
+
+if ! [ "$UID" == "0" ]; then
+    echo "this script must be run with super user privileges"
+    exit 6
+fi
+
+echo -e '[User]\nSession=firstsetup\nSystemAccount=true' > /var/lib/AccountsService/users/$(id -nu $PKEXEC_UID || echo invaliduser)
+systemctl restart accounts-daemon.service
+cp /usr/share/org.vanillaos.FirstSetup/remove-first-setup-user.service /etc/systemd/system/remove-first-setup-user.service
+systemctl enable remove-first-setup-user.service

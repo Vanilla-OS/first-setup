@@ -2,12 +2,12 @@
 <interface>
     <requires lib="gtk" version="4.0"/>
     <requires lib="libadwaita" version="1.0" />
-    <template class="VanillaDefaultWelcome" parent="AdwBin">
+    <template class="VanillaWelcome" parent="AdwBin">
         <property name="halign">fill</property>
         <property name="valign">fill</property>
         <property name="hexpand">true</property>
         <child>
-            <object class="AdwStatusPage" id="status_page">
+            <object class="AdwStatusPage">
                 <property name="icon-name">org.vanillaos.FirstSetup-flower</property>
                 <child>
                     <object class="GtkBox">
@@ -17,7 +17,7 @@
                             <object class="GtkOverlay">
                                 <child>
                                     <object class="GtkLabel">
-                                        <property name="label" translatable="yes">Welcome!</property>
+                                        <property name="label">Welcome!</property>
                                         <property name="opacity">0</property>
                                         <style>
                                             <class name="title-1"/>
@@ -26,7 +26,7 @@
                                 </child>
                                 <child type="overlay">
                                     <object class="GtkLabel" id="title_label">
-                                        <property name="label" translatable="yes">Welcome!</property>
+                                        <property name="label">Welcome!</property>
                                         <style>
                                             <class name="title-1"/>
                                         </style>
@@ -36,32 +36,33 @@
                         </child>
                         <child>
                           <object class="GtkLabel">
-                            <property name="label">Make your choices, this wizard will take care of everything</property>
+                            <property name="label" translatable="yes">Make your choices, this wizard will take care of everything</property>
                             <property name="justify">2</property>
                           </object>
                         </child>
 
                         <child>
                             <object class="GtkBox">
-                                <property name="spacing">8</property>
+                                <property name="spacing">10</property>
                                 <property name="halign">center</property>
-                                <property name="margin-top">8</property>
+                                <property name="orientation">vertical</property>
+                                <property name="margin-top">20</property>
                                 <child>
-                                    <object class="GtkButton" id="btn_advanced">
-                                        <property name="label">Advanced</property>
-                                        <property name="halign">center</property>
+                                    <object class="GtkButton" id="btn_next">
+                                        <property name="label" translatable="yes">Start</property>
+                                        <property name="hexpand">true</property>
                                         <style>
                                             <class name="pill" />
+                                            <class name="suggested-action" />
                                         </style>
                                     </object>
                                 </child>
                                 <child>
-                                    <object class="GtkButton" id="btn_next">
-                                        <property name="label">Start</property>
-                                        <property name="halign">center</property>
+                                    <object class="GtkButton" id="btn_access">
+                                        <property name="label" translatable="yes">Accessibility</property>
+                                        <property name="hexpand">true</property>
                                         <style>
                                             <class name="pill" />
-                                            <class name="suggested-action" />
                                         </style>
                                     </object>
                                 </child>

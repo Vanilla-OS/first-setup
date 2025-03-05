@@ -1,4 +1,4 @@
-# keyboard.py
+# language.py
 #
 # Copyright 2023 mirkobrombin
 #
@@ -14,128 +14,37 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import re
+_ = __builtins__["_"]
+
 from gi.repository import Adw, Gtk
-from vanilla_first_setup.core.languages import all_languages, current_language
 
+from vanilla_first_setup.views.locations import VanillaLocation
 
-@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/widget-language.ui")
-class LanguageRow(Adw.ActionRow):
-    __gtype_name__ = "LanguageRow"
+import vanilla_first_setup.core.languages as lang
+import vanilla_first_setup.core.backend as backend
 
-    select_button = Gtk.Template.Child()
-    suffix_bin = Gtk.Template.Child()
+@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/language.ui")
+class VanillaLanguage(Adw.Bin):
+    __gtype_name__ = "VanillaLanguage"
 
-    def __init__(self, title, subtitle, selected_language, **kwargs):
-        super().__init__(**kwargs)
-        self.__title = title
-        self.__subtitle = subtitle
-        self.__selected_language = selected_language
+    status_page = Gtk.Template.Child()
 
-        self.set_title(title)
-        self.suffix_bin.set_label(subtitle)
-
-        self.select_button.connect("toggled", self.__on_check_button_toggled)
-
-    def __on_check_button_toggled(self, widget):
-        self.__selected_language["language_title"] = self.__title
-        self.__selected_language["language_subtitle"] = self.__subtitle
-
-
-@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/default-language.ui")
-class VanillaDefaultLanguage(Adw.Bin):
-    __gtype_name__ = "VanillaDefaultLanguage"
-
-    btn_next = Gtk.Template.Child()
-    entry_search_language = Gtk.Template.Child()
-    search_controller = Gtk.EventControllerKey.new()
-    all_languages_group = Gtk.Template.Child()
-
-    selected_language = {"language_title": None, "language_subtitle": None}
-
-    def __init__(self, window, distro_info, key, step, **kwargs):
+    def __init__(self, window, **kwargs):
         super().__init__(**kwargs)
         self.__window = window
-        self.__distro_info = distro_info
-        self.__key = key
-        self.__step = step
-        self.__language_rows = []
 
-        self.__generate_language_list_widgets()
-        for widget in self.__language_rows:
-            self.all_languages_group.append(widget)
+        self.__location_page = VanillaLocation(window, _("Language"), lang.LanguagesDataSource())
+        self.status_page.set_child(self.__location_page)
 
-        # signals
-        self.btn_next.connect("clicked", self.__window.next)
-        self.all_languages_group.connect(
-            "selected-rows-changed", self.__language_verify
-        )
-        self.all_languages_group.connect("row-selected", self.__language_verify)
-        self.all_languages_group.connect("row-activated", self.__language_verify)
-        self.__window.carousel.connect("page-changed", self.__language_verify)
+    def set_page_active(self):
+        self.__location_page.set_page_active()
+        return
 
-        self.search_controller.connect("key-released", self.__on_search_key_pressed)
-        self.entry_search_language.add_controller(self.search_controller)
+    def set_page_inactive(self):
+        self.__location_page.set_page_inactive()
+        return
 
-    def __language_verify(self, *args):
-        if self.selected_language["language_subtitle"] is not None:
-            self.btn_next.set_sensitive(True)
-        else:
-            self.btn_next.set_sensitive(False)
-
-    def __generate_language_list_widgets(self):
-        for language_code, language_title in all_languages.items():
-            language_row = LanguageRow(
-                language_title, language_code, self.selected_language
-            )
-
-            if len(self.__language_rows) > 0:
-                language_row.select_button.set_group(
-                    self.__language_rows[0].select_button
-                )
-
-            self.__language_rows.append(language_row)
-
-            if current_language == language_code:
-                language_row.select_button.set_active(True)
-                self.selected_language["language_title"] = language_title
-                self.selected_language["language_subtitle"] = language_code
-
-    def get_finals(self):
-        return {
-            "vars": {"setLanguage": True},
-            "funcs": [
-                {
-                    "if": "setLanguage",
-                    "type": "command",
-                    "commands": [
-                        f'echo LC_NUMERIC="{self.selected_language["language_subtitle"]}" >> /etc/default/locale',
-                        f'echo LC_TIME="{self.selected_language["language_subtitle"]}" >> /etc/default/locale',
-                        f'echo LC_MONETARY="{self.selected_language["language_subtitle"]}" >> /etc/default/locale',
-                        f'echo LC_PAPER="{self.selected_language["language_subtitle"]}" >> /etc/default/locale',
-                        f'echo LC_NAME="{self.selected_language["language_subtitle"]}" >> /etc/default/locale',
-                        f'echo LC_ADDRESS="{self.selected_language["language_subtitle"]}" >> /etc/default/locale',
-                        f'echo LC_TELEPHONE="{self.selected_language["language_subtitle"]}" >> /etc/default/locale',
-                        f'echo LC_MEASUREMENT="{self.selected_language["language_subtitle"]}" >> /etc/default/locale',
-                        f'echo LC_IDENTIFICATION="{self.selected_language["language_subtitle"]}" >> /etc/default/locale',
-                    ],
-                }
-            ],
-        }
-
-    def __on_search_key_pressed(self, *args):
-        keywords = re.sub(
-            r"[^a-zA-Z0-9 ]", "", self.entry_search_language.get_text().lower()
-        )
-
-        for row in self.all_languages_group:
-            row_title = re.sub(r"[^a-zA-Z0-9 ]", "", row.get_title().lower())
-            row_subtitle = re.sub(
-                r"[^a-zA-Z0-9 ]", "", row.suffix_bin.get_label().lower()
-            )
-            search_text = row_title + " " + row_subtitle
-            row.set_visible(re.search(keywords, search_text, re.IGNORECASE) is not None)
-
-    @property
-    def step_id(self):
-        return self.__key
+    def finish(self):
+        self.__location_page.finish()
+        language = self.__location_page.selected_special
+        return backend.set_locale(language)
