@@ -12,22 +12,22 @@
 # Rene Regensbogen <smartpower0105@gmail.com>, 2023.
 # Neo <neobihli@gmail.com>, 2024.
 # Matthias Langwieser <langi4888@gmail.com>, 2024.
+# Jonas Haberkorn <j.bohne.13@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-05 02:32+0100\n"
-"PO-Revision-Date: 2024-06-02 16:07+0000\n"
-"Last-Translator: Experiencing A Significant Gravitas Shortfall <bedeb1@pm."
-"me>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/de/>\n"
+"PO-Revision-Date: 2025-03-05 21:37+0000\n"
+"Last-Translator: Jonas Haberkorn <j.bohne.13@gmail.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6-dev\n"
+"X-Generator: Weblate 5.10.3-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -47,15 +47,15 @@ msgstr "Fertig!"
 
 #: vanilla_first_setup/gtk/logout.ui:13
 msgid "Login to your new user"
-msgstr "In neuen Nutzer einloggen"
+msgstr "Mit neuem Benutzer anmelden"
 
 #: vanilla_first_setup/gtk/logout.ui:23
 msgid "Login Now"
-msgstr ""
+msgstr "Jetzt Anmelden"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Your user account is ready to use"
-msgstr "Ihr Nutzeraccount ist bereit."
+msgstr "Ihr Benutzeraccount ist bereit zur Nutzung"
 
 #: vanilla_first_setup/gtk/done.ui:29
 msgid "Take a tour"
@@ -71,7 +71,7 @@ msgstr "Fortschritt"
 
 #: vanilla_first_setup/gtk/progress.ui:10
 msgid "Some steps still take some time"
-msgstr "Einige Operationen brauchen noch Zeit"
+msgstr "Einige Schritte brauchen noch Zeit"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
@@ -79,7 +79,7 @@ msgstr "Informationen anzeigen"
 
 #: vanilla_first_setup/gtk/conn-check.ui:12
 msgid "Checking Connection"
-msgstr "Überprüfe Verbindung…"
+msgstr "Verbindung wird geprüft"
 
 #: vanilla_first_setup/gtk/conn-check.ui:13
 msgid "Please wait until the connection check is done"
