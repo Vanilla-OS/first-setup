@@ -4,22 +4,22 @@
 # Gabriel Girouard <ggirouard@bungeetaco.com>, 2023.
 # Jumpy Game <jumpy634@gmail.com>, 2023.
 # Michaël Tremblay <Tichael@users.noreply.hosted.weblate.org>, 2024.
+# Maxim Therrien <maxim@veryloud.ca>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-05 02:32+0100\n"
-"PO-Revision-Date: 2024-02-01 06:13+0000\n"
-"Last-Translator: Michaël Tremblay <Tichael@users.noreply.hosted.weblate."
-"org>\n"
-"Language-Team: French (Canada) <https://hosted.weblate.org/projects/vanilla-"
-"os/first-setup/fr_CA/>\n"
+"PO-Revision-Date: 2025-03-06 08:31+0000\n"
+"Last-Translator: Maxim Therrien <maxim@veryloud.ca>\n"
+"Language-Team: French (Canada) <https://hosted.weblate.org/projects/"
+"vanilla-os/first-setup/fr_CA/>\n"
 "Language: fr_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.10.3-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -38,73 +38,70 @@ msgid "Finished!"
 msgstr "Terminé!"
 
 #: vanilla_first_setup/gtk/logout.ui:13
-#, fuzzy
 msgid "Login to your new user"
-msgstr "Exécuter en tant que nouvel utilisateur"
+msgstr "Ouvrir une session avec votre nouvel utilisateur"
 
 #: vanilla_first_setup/gtk/logout.ui:23
 msgid "Login Now"
-msgstr ""
+msgstr "Ouvrir une session maintenant"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Your user account is ready to use"
-msgstr "Votre appareil est prêt à l'emploi."
+msgstr "Votre compte d'utilisateur est prêt à être utilisé"
 
 #: vanilla_first_setup/gtk/done.ui:29
 msgid "Take a tour"
-msgstr ""
+msgstr "Faire une visite guidée"
 
 #: vanilla_first_setup/gtk/done.ui:40
 msgid "Exit"
-msgstr ""
+msgstr "Sortir"
 
 #: vanilla_first_setup/gtk/progress.ui:9
 msgid "Progress"
-msgstr ""
+msgstr "Progrès"
 
 #: vanilla_first_setup/gtk/progress.ui:10
+#, fuzzy
 msgid "Some steps still take some time"
-msgstr ""
+msgstr "Certaines étapes peuvent prendre plus de temps"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
+#, fuzzy
 msgid "Showing Information"
-msgstr "Montrer l'information"
+msgstr "???"
 
 #: vanilla_first_setup/gtk/conn-check.ui:12
-#, fuzzy
 msgid "Checking Connection"
-msgstr "Vérification de la connexion…"
+msgstr "Vérification de la connexion"
 
 #: vanilla_first_setup/gtk/conn-check.ui:13
 msgid "Please wait until the connection check is done"
-msgstr "Veuillez patienter pendant la vérification de la connexion"
+msgstr "Vérification de la connexion en cours, veuillez patienter"
 
 #: vanilla_first_setup/gtk/conn-check.ui:16
-#, fuzzy
 msgid "Open Settings"
-msgstr "Ouvrir les paramètres proxy..."
+msgstr "Ouvrir les paramètres"
 
 #: vanilla_first_setup/gtk/theme.ui:13
 msgid "Color Scheme"
-msgstr "Palette de couleurs"
+msgstr "Thème de couleurs"
 
 #: vanilla_first_setup/gtk/theme.ui:14
 msgid "Choose a color scheme for your system"
-msgstr "Choisissez une palette de couleur pour votre système"
+msgstr "Choisissez un thème de couleur pour votre système"
 
 #: vanilla_first_setup/gtk/theme.ui:41
 msgid "Light Mode"
-msgstr ""
+msgstr "Mode clair"
 
 #: vanilla_first_setup/gtk/theme.ui:79
 msgid "Light"
-msgstr ""
+msgstr "Clair"
 
 #: vanilla_first_setup/gtk/theme.ui:88
-#, fuzzy
 msgid "Dark Mode"
-msgstr "Sombre"
+msgstr "Mode sombre"
 
 #: vanilla_first_setup/gtk/theme.ui:127
 msgid "Dark"
@@ -113,22 +110,21 @@ msgstr "Sombre"
 #: vanilla_first_setup/gtk/welcome.ui:39
 #, fuzzy
 msgid "Make your choices, this wizard will take care of everything"
-msgstr "Faites vos choix, cet assistant s'occupe de tout."
+msgstr "L'assistant configurera votre système selon vos choix"
 
 #: vanilla_first_setup/gtk/welcome.ui:52
 #: vanilla_first_setup/gtk/welcome-user.ui:21
 msgid "Start"
-msgstr ""
+msgstr "Démarrer"
 
 #: vanilla_first_setup/gtk/welcome.ui:62
 #: vanilla_first_setup/gtk/welcome-user.ui:31
 msgid "Accessibility"
-msgstr ""
+msgstr "Accessibilité"
 
 #: vanilla_first_setup/gtk/welcome-user.ui:13
-#, fuzzy
 msgid "Let's set up your user account"
-msgstr "Fournissez les détails de votre compte d'utilisateur"
+msgstr "Configurons votre compte utilisateur"
 
 #: vanilla_first_setup/gtk/user.ui:23
 msgid "Create User"
@@ -136,7 +132,7 @@ msgstr "Créer un utilisateur"
 
 #: vanilla_first_setup/gtk/user.ui:24
 msgid "Provide details for your user account"
-msgstr "Fournissez les détails de votre compte d'utilisateur"
+msgstr "Fournissez les détails de votre compte utilisateur"
 
 #: vanilla_first_setup/gtk/user.ui:31
 msgid "Name"
@@ -160,15 +156,17 @@ msgid ""
 "Hostname can only contain up to 64 English lowercase letters with hyphens in-"
 "between."
 msgstr ""
+"Le nom d'hôte ne peut contenir que des caractères alphabétiques latins "
+"minuscules (a-z) et des traits d'union, jusqu'à un maximum de 64 caractères."
 
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
 msgid "Language"
-msgstr ""
+msgstr "Langue"
 
 #: vanilla_first_setup/gtk/language.ui:11
 msgid "Select your language"
-msgstr ""
+msgstr "Choisissez votre langue"
 
 #: vanilla_first_setup/gtk/location.ui:15
 msgid "Search keyboard layouts"
