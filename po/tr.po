@@ -6,15 +6,15 @@
 # Muhammed Dalgalı <muhammedalgali2@gmail.com>, 2023.
 # Mustafa <mustafa.cgdm1@gmail.com>, 2024.
 # Hindu Papanreu <hintlijapon@gmail.com>, 2024.
-# Emin Tufan Çetin <etcetin@gmail.com>, 2024.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2024, 2025.
 # Sinan <sozanozel@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-05 02:32+0100\n"
-"PO-Revision-Date: 2025-03-05 21:37+0000\n"
-"Last-Translator: Sinan <sozanozel@gmail.com>\n"
+"PO-Revision-Date: 2025-03-06 01:57+0000\n"
+"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/tr/>\n"
 "Language: tr\n"
@@ -41,21 +41,20 @@ msgid "Finished!"
 msgstr "Bitti!"
 
 #: vanilla_first_setup/gtk/logout.ui:13
-#, fuzzy
 msgid "Login to your new user"
-msgstr "Yeni kullanıcı olarak çalıştır"
+msgstr "Yeni kullanıcınıza giriş yapın"
 
 #: vanilla_first_setup/gtk/logout.ui:23
 msgid "Login Now"
-msgstr "Giriş Yap"
+msgstr "Şimdi Giriş Yap"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Your user account is ready to use"
-msgstr "Kullanıcı hesabınız kullanıma hazır."
+msgstr "Kullanıcı hesabınız kullanıma hazır"
 
 #: vanilla_first_setup/gtk/done.ui:29
 msgid "Take a tour"
-msgstr ""
+msgstr "Gezintiye çık"
 
 #: vanilla_first_setup/gtk/done.ui:40
 msgid "Exit"
@@ -63,11 +62,11 @@ msgstr "Çıkış"
 
 #: vanilla_first_setup/gtk/progress.ui:9
 msgid "Progress"
-msgstr "İlerle"
+msgstr "Süreç"
 
 #: vanilla_first_setup/gtk/progress.ui:10
 msgid "Some steps still take some time"
-msgstr ""
+msgstr "Kimi basamaklar zaman alabilir"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
@@ -83,7 +82,7 @@ msgstr "Lütfen bağlantı denetimi bitene dek bekleyin"
 
 #: vanilla_first_setup/gtk/conn-check.ui:16
 msgid "Open Settings"
-msgstr "Vekil Ayarlarını Aç"
+msgstr "Ayarları Aç"
 
 #: vanilla_first_setup/gtk/theme.ui:13
 msgid "Color Scheme"
@@ -95,40 +94,37 @@ msgstr "Sisteminiz için renk şeması seçin"
 
 #: vanilla_first_setup/gtk/theme.ui:41
 msgid "Light Mode"
-msgstr "Gündüz Modu"
+msgstr "Aydınlık Kip"
 
 #: vanilla_first_setup/gtk/theme.ui:79
 msgid "Light"
-msgstr ""
+msgstr "Aydınlık"
 
 #: vanilla_first_setup/gtk/theme.ui:88
-#, fuzzy
 msgid "Dark Mode"
-msgstr "Koyu"
+msgstr "Koyu Kip"
 
 #: vanilla_first_setup/gtk/theme.ui:127
 msgid "Dark"
 msgstr "Koyu"
 
 #: vanilla_first_setup/gtk/welcome.ui:39
-#, fuzzy
 msgid "Make your choices, this wizard will take care of everything"
-msgstr "Seçimlerinizi yapın, bu sihirbaz sizin için her şeyi halledecektir."
+msgstr "Seçimlerinizi yapın, bu sihirbaz her şeyi yoluna koyacaktır"
 
 #: vanilla_first_setup/gtk/welcome.ui:52
 #: vanilla_first_setup/gtk/welcome-user.ui:21
 msgid "Start"
-msgstr ""
+msgstr "Başla"
 
 #: vanilla_first_setup/gtk/welcome.ui:62
 #: vanilla_first_setup/gtk/welcome-user.ui:31
 msgid "Accessibility"
-msgstr ""
+msgstr "Erişebilirlik"
 
 #: vanilla_first_setup/gtk/welcome-user.ui:13
-#, fuzzy
 msgid "Let's set up your user account"
-msgstr "Kullanıcı hesabınız için ayrıntıları girin"
+msgstr "Haydi kullanıcı hesabınızı ayarlayalım"
 
 #: vanilla_first_setup/gtk/user.ui:23
 msgid "Create User"
@@ -160,144 +156,144 @@ msgid ""
 "Hostname can only contain up to 64 English lowercase letters with hyphens in-"
 "between."
 msgstr ""
+"Ana makine adı yalnızca 64 küçük İngilizce harf ve aralarında tireler "
+"barındırabilir."
 
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
 msgid "Language"
-msgstr ""
+msgstr "Dil"
 
 #: vanilla_first_setup/gtk/language.ui:11
 msgid "Select your language"
-msgstr ""
+msgstr "Dilinizi seçin"
 
 #: vanilla_first_setup/gtk/location.ui:15
 msgid "Search keyboard layouts"
-msgstr ""
+msgstr "Klavye düzeni ara"
 
 #: vanilla_first_setup/gtk/location.ui:24
 msgid "The search results are incomplete. Try refining your query."
-msgstr ""
+msgstr "Arama sonuçları eksik. Sorgunuzu daraltmayı deneyin."
 
 #: vanilla_first_setup/gtk/timezone.ui:11
 msgid "Date & Time"
-msgstr ""
+msgstr "Tarih ve Saat"
 
 #: vanilla_first_setup/gtk/timezone.ui:12
 msgid "Select your preferred timezone"
-msgstr ""
+msgstr "Yeğlediğiniz saat dilimini seçin"
 
 #: vanilla_first_setup/gtk/timezone.ui:29
 msgid "Current timezone:"
-msgstr ""
+msgstr "Geçerli saat dilimi:"
 
 #: vanilla_first_setup/gtk/timezone.ui:34
 msgid "not set"
-msgstr ""
+msgstr "belirsiz"
 
 #: vanilla_first_setup/gtk/keyboard.ui:10
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "Klavye Düzeni"
 
 #: vanilla_first_setup/gtk/keyboard.ui:11
 msgid "Select all your preferred keyboard layouts"
-msgstr ""
+msgstr "Yeğlediğiniz tüm klavye düzenlerini seçin"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:15
 msgid "Applications"
-msgstr ""
+msgstr "Uygulamalar"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:16
 msgid "Choose which applications to install."
-msgstr ""
+msgstr "Hangi uygulamaların kurulacağını seçin."
 
 #: vanilla_first_setup/gtk/layout-applications.ui:30
 msgid "Core Applications"
-msgstr ""
+msgstr "Çekirdek Uygulamalar"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:31
 #: vanilla_first_setup/gtk/layout-applications.ui:56
 msgid "Essential GNOME apps like Calendar or Document Viewer"
-msgstr ""
+msgstr "Takvim ya da Belge Görüntüleyici gibi temel GNOME uygulamaları"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:45
 msgid "Customize Core Applications"
-msgstr ""
+msgstr "Çekirdek Uygulamaları Özelleştir"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:55
 msgid "Browsers"
-msgstr ""
+msgstr "Tarayıcılar"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:70
 msgid "Customize Browsers"
-msgstr ""
+msgstr "Tarayıcıları Özelleştir"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:80
 msgid "Common Utilities"
-msgstr ""
+msgstr "Yaygın Araçlar"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:81
 msgid "Useful utilities to enhance your desktop experience"
-msgstr ""
+msgstr "Masaüstü deneyiminizi geliştirecek kullanışlı araçlar"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:95
 msgid "Customize Utilities"
-msgstr ""
+msgstr "Araçları Özelleştir"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:105
 msgid "Office"
-msgstr ""
+msgstr "Ofis"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:106
 msgid "The LibreOffice suite"
-msgstr ""
+msgstr "LibreOffice takımı"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:120
 msgid "Customize Office Applications"
-msgstr ""
+msgstr "Ofis Uygulamalarını Özelleştir"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:8
 msgid "Select Applications"
-msgstr ""
+msgstr "Uygulama Seç"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:18
 msgid "Apply"
-msgstr ""
+msgstr "Uygula"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:30
 msgid "Select the applications you want to install"
-msgstr ""
+msgstr "Kurmak istediğiniz uygulamaları seçin"
 
 #: vanilla_first_setup/window.py:74
 msgid "Setup failed: "
-msgstr ""
+msgstr "Kurulum başarısız: "
 
 #: vanilla_first_setup/window.py:79
-#, fuzzy
 msgid "Details"
-msgstr "Cihaz Detayları"
+msgstr "Ayrıntılar"
 
 #: vanilla_first_setup/window.py:85
-#, fuzzy
 msgid "Error log"
-msgstr "Hata!"
+msgstr "Hata günlüğü"
 
 #: vanilla_first_setup/application.py:76
 msgid "Don't make any changes to the system."
-msgstr ""
+msgstr "Sistemde herhangi bir değişiklik yapma."
 
 #: vanilla_first_setup/application.py:84
 msgid "Force the configure system mode, independant of group."
-msgstr ""
+msgstr "Kümeden bağımsız olarak sistem yapılandırma kipini zorla."
 
 #: vanilla_first_setup/application.py:92
 msgid "Force the regular mode, independant of group."
-msgstr ""
+msgstr "Kümeden bağımsız olarak sıradan kipi zorla."
 
 #: vanilla_first_setup/application.py:100
 msgid ""
 "Use the original equipment manufacturer mode with language, keyboard and "
 "timezone selection."
-msgstr ""
+msgstr "Özgün ekipman üretici kipini dil, klavye ve saat dili seçimiyle kullan."
 
 #: vanilla_first_setup/views/conn_check.py:72
 msgid "No Internet Connection!"
@@ -305,107 +301,103 @@ msgstr "İnternet Bağlantısı Yok!"
 
 #: vanilla_first_setup/views/conn_check.py:73
 msgid "First Setup requires an active internet connection"
-msgstr "İlk kurulum internet bağlantısı gerektirir"
+msgstr "İlk Kurulum etkin internet bağlantısı gerektirir"
 
 #: vanilla_first_setup/views/conn_check.py:79
-#, fuzzy
 msgid "Connection available"
-msgstr "Bağlantı başarısız oldu"
+msgstr "Bağlantı kullanılabilir"
 
 #: vanilla_first_setup/views/conn_check.py:80
-#, fuzzy
 msgid "You have a working internet connection"
-msgstr "İnternet Bağlantısı Yok!"
+msgstr "Çalışan internet bağlantınız var"
 
 #: vanilla_first_setup/views/keyboard.py:37
 msgid "Keyboard"
-msgstr ""
+msgstr "Klavye"
 
 #: vanilla_first_setup/views/user.py:118
 msgid "Username cannot be empty."
-msgstr ""
+msgstr "Kullanıcı adı boş olamaz."
 
 #: vanilla_first_setup/views/user.py:121
 msgid "Username cannot be longer than 32 characters."
-msgstr ""
+msgstr "Kullanıcı adı 32 karakterden uzun olamaz."
 
 #: vanilla_first_setup/views/user.py:124
 msgid "Username cannot contain special characters or uppercase letters."
-msgstr ""
+msgstr "Kullanıcı adı özel karakterler ya da büyük harfler içeremez."
 
 #: vanilla_first_setup/views/user.py:128
-#, fuzzy
 msgid "This username is already in use."
-msgstr "Aygıtınız kullanıma hazır."
+msgstr "Bu kullanıcı adı halihazırda kullanılıyor."
 
 #: vanilla_first_setup/views/locations.py:220
 msgid "Region"
-msgstr ""
+msgstr "Bölge"
 
 #: vanilla_first_setup/views/locations.py:238
 msgid "Country"
-msgstr ""
+msgstr "Ülke"
 
 #: vanilla_first_setup/views/locations.py:327
 msgid "Search results"
-msgstr ""
+msgstr "Arama sonuçları"
 
 #: vanilla_first_setup/views/timezone.py:39
 msgid "Timezone"
-msgstr ""
+msgstr "Saat dilimi"
 
 #: vanilla_first_setup/views/welcome_user.py:45
 msgid "Hello {}!"
-msgstr ""
+msgstr "Esenlikler {}!"
 
 #: vanilla_first_setup/views/progress.py:94
 msgid "Setting up the system"
-msgstr ""
+msgstr "Sistem ayarlanıyor"
 
 #: vanilla_first_setup/views/progress.py:97
-#, fuzzy
 msgid "Installing"
-msgstr "Kuruluyor..."
+msgstr "Kuruluyor"
 
 #: vanilla_first_setup/core/timezones.py:92
 msgid "Europe"
-msgstr ""
+msgstr "Avrupa"
 
 #: vanilla_first_setup/core/timezones.py:93
 msgid "Asia"
-msgstr ""
+msgstr "Asya"
 
 #: vanilla_first_setup/core/timezones.py:94
 msgid "America"
-msgstr ""
+msgstr "Amerika"
 
 #: vanilla_first_setup/core/timezones.py:95
 msgid "Africa"
-msgstr ""
+msgstr "Afrika"
 
 #: vanilla_first_setup/core/timezones.py:96
 msgid "Antarctica"
-msgstr ""
+msgstr "Antarktika"
 
 #: vanilla_first_setup/core/timezones.py:97
 msgid "Pacific Ocean"
-msgstr ""
+msgstr "Pasifik Okyanusu"
 
 #: vanilla_first_setup/core/timezones.py:98
 msgid "Australia"
-msgstr ""
+msgstr "Avustralya"
 
 #: vanilla_first_setup/core/timezones.py:99
 msgid "Atlantic Ocean"
-msgstr ""
+msgstr "Atlantik Okyanusu"
 
 #: vanilla_first_setup/core/timezones.py:100
 msgid "Indian Ocean"
-msgstr ""
+msgstr "Hint Okyanusu"
 
 #: vanilla_first_setup/core/timezones.py:101
 msgid "Arctic"
-msgstr ""
+msgstr "Arktik"
 
 #~ msgid "Tweak your Vanilla OS installation."
 #~ msgstr "Vanilla OS kurulumunuzda ince ayar yapın."
