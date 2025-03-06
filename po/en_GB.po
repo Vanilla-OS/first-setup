@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
-# Andi Chandler <andi@gowling.com>, 2023, 2024.
+# Andi Chandler <andi@gowling.com>, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-05 02:32+0100\n"
-"PO-Revision-Date: 2024-01-27 17:59+0000\n"
+"PO-Revision-Date: 2025-03-05 21:37+0000\n"
 "Last-Translator: Andi Chandler <andi@gowling.com>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
 "vanilla-os/first-setup/en_GB/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.10.3-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -35,18 +35,16 @@ msgid "Finished!"
 msgstr "Finished!"
 
 #: vanilla_first_setup/gtk/logout.ui:13
-#, fuzzy
 msgid "Login to your new user"
-msgstr "Run as a new user"
+msgstr "Login to your new user"
 
 #: vanilla_first_setup/gtk/logout.ui:23
 msgid "Login Now"
-msgstr ""
+msgstr "Login Now"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Your user account is ready to use"
-msgstr "Your device is ready to use."
+msgstr "Your user account is ready to use"
 
 #: vanilla_first_setup/gtk/done.ui:29
 msgid "Take a tour"
@@ -62,16 +60,15 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/progress.ui:10
 msgid "Some steps still take some time"
-msgstr ""
+msgstr "Some steps still take some time"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
 msgstr "Showing Information"
 
 #: vanilla_first_setup/gtk/conn-check.ui:12
-#, fuzzy
 msgid "Checking Connection"
-msgstr "Checking Connection…"
+msgstr "Checking Connection"
 
 #: vanilla_first_setup/gtk/conn-check.ui:13
 msgid "Please wait until the connection check is done"
