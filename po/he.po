@@ -3,22 +3,23 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Daniel Toubul <molder@toubul.eu>, 2023.
 # guylamar2006 <guychronister@outlook.com>, 2024.
+# aharon don <aronrefael@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-05 02:32+0100\n"
-"PO-Revision-Date: 2024-05-08 20:05+0000\n"
-"Last-Translator: guylamar2006 <guychronister@outlook.com>\n"
-"Language-Team: Hebrew <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/he/>\n"
+"PO-Revision-Date: 2025-03-05 21:37+0000\n"
+"Last-Translator: aharon don <aronrefael@gmail.com>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 5.5.4-rc\n"
+"X-Generator: Weblate 5.10.3-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -46,191 +47,183 @@ msgid "Login Now"
 msgstr ""
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Your user account is ready to use"
-msgstr "המכשיר שלך מוכן לשימוש."
+msgstr "חשבון המשתמש שלך מוכן לשימוש."
 
 #: vanilla_first_setup/gtk/done.ui:29
 msgid "Take a tour"
-msgstr ""
+msgstr "סיור היכרות"
 
 #: vanilla_first_setup/gtk/done.ui:40
 msgid "Exit"
-msgstr ""
+msgstr "יציאה"
 
 #: vanilla_first_setup/gtk/progress.ui:9
 msgid "Progress"
-msgstr ""
+msgstr "התקדמות"
 
 #: vanilla_first_setup/gtk/progress.ui:10
 msgid "Some steps still take some time"
-msgstr ""
+msgstr "כמה שלבים עדיין מתבצעים ייקח עוד זמן להשלמתם"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
 msgstr "מציג מידע"
 
 #: vanilla_first_setup/gtk/conn-check.ui:12
-#, fuzzy
 msgid "Checking Connection"
-msgstr "בודק חיבור…"
+msgstr "בודק חיבור"
 
 #: vanilla_first_setup/gtk/conn-check.ui:13
 msgid "Please wait until the connection check is done"
-msgstr "אנא המתן עד שבדיקת החיבור תסתיים."
+msgstr "אנא המתן עד שבדיקת החיבור תסתיים"
 
 #: vanilla_first_setup/gtk/conn-check.ui:16
-#, fuzzy
 msgid "Open Settings"
-msgstr "פתח את הגדרות פרוקסי..."
+msgstr "פתח הגדרות"
 
 #: vanilla_first_setup/gtk/theme.ui:13
 msgid "Color Scheme"
-msgstr "סכמת צבעים"
+msgstr "ערכת צבעים"
 
 #: vanilla_first_setup/gtk/theme.ui:14
 msgid "Choose a color scheme for your system"
-msgstr "בחר ערכת צבעים עבור המערכת שלך."
+msgstr "בחר ערכת צבעים עבור המערכת שלך"
 
 #: vanilla_first_setup/gtk/theme.ui:41
 msgid "Light Mode"
-msgstr ""
+msgstr "מצב בהיר"
 
 #: vanilla_first_setup/gtk/theme.ui:79
 msgid "Light"
-msgstr ""
+msgstr "בהיר"
 
 #: vanilla_first_setup/gtk/theme.ui:88
-#, fuzzy
 msgid "Dark Mode"
-msgstr "כהה"
+msgstr "מצב כהה"
 
 #: vanilla_first_setup/gtk/theme.ui:127
 msgid "Dark"
 msgstr "כהה"
 
 #: vanilla_first_setup/gtk/welcome.ui:39
-#, fuzzy
 msgid "Make your choices, this wizard will take care of everything"
-msgstr "עשה את בחירותייך, אשף זה יטפל בהכל."
+msgstr "הגדר את הבחירה שלך, אשף זה יטפל בכל ההגדרות"
 
 #: vanilla_first_setup/gtk/welcome.ui:52
 #: vanilla_first_setup/gtk/welcome-user.ui:21
 msgid "Start"
-msgstr ""
+msgstr "התחל"
 
 #: vanilla_first_setup/gtk/welcome.ui:62
 #: vanilla_first_setup/gtk/welcome-user.ui:31
 msgid "Accessibility"
-msgstr ""
+msgstr "נגישות"
 
 #: vanilla_first_setup/gtk/welcome-user.ui:13
-#, fuzzy
 msgid "Let's set up your user account"
-msgstr "ספק פרטים אודות המערכת שלך"
+msgstr "אנא מלא את הפרטים עבור חשבון המשתמש שלך"
 
 #: vanilla_first_setup/gtk/user.ui:23
 msgid "Create User"
 msgstr "צור משתמש"
 
 #: vanilla_first_setup/gtk/user.ui:24
-#, fuzzy
 msgid "Provide details for your user account"
-msgstr "ספק פרטים אודות המערכת שלך"
+msgstr "נא מלא פרטים עבור חשבון המשתמש שלך"
 
 #: vanilla_first_setup/gtk/user.ui:31
-#, fuzzy
 msgid "Name"
-msgstr "שם השם"
+msgstr "שם"
 
 #: vanilla_first_setup/gtk/user.ui:38
 msgid "Username"
-msgstr "שם המשתמש"
+msgstr "שם משתמש"
 
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
-msgstr "שם התקן"
+msgstr "שם Device"
 
 #: vanilla_first_setup/gtk/hostname.ui:14
 msgid "Provide your device name"
-msgstr "ספק את שם המכשיר שלך"
+msgstr "נא ספק את שם הdevice שלך"
 
 #: vanilla_first_setup/gtk/hostname.ui:31
 msgid ""
 "Hostname can only contain up to 64 English lowercase letters with hyphens in-"
 "between."
-msgstr ""
+msgstr "שם המארח ‏יכול להכיל רק עד 64 אותיות קטנות באנגלית עם מקפים באמצע."
 
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
 msgid "Language"
-msgstr ""
+msgstr "שפה"
 
 #: vanilla_first_setup/gtk/language.ui:11
 msgid "Select your language"
-msgstr ""
+msgstr "בחר את השפה שלך"
 
 #: vanilla_first_setup/gtk/location.ui:15
 msgid "Search keyboard layouts"
-msgstr ""
+msgstr "חפש פריסת מקשים"
 
 #: vanilla_first_setup/gtk/location.ui:24
 msgid "The search results are incomplete. Try refining your query."
-msgstr ""
+msgstr "תוצאות החיפוש לא הושלמו. נסה להגדיר את השאילתא."
 
 #: vanilla_first_setup/gtk/timezone.ui:11
 msgid "Date & Time"
-msgstr ""
+msgstr "תאריך & וזמן"
 
 #: vanilla_first_setup/gtk/timezone.ui:12
 msgid "Select your preferred timezone"
-msgstr ""
+msgstr "בחר את האיזור שלך"
 
 #: vanilla_first_setup/gtk/timezone.ui:29
 msgid "Current timezone:"
-msgstr ""
+msgstr "איזור נוכחי:"
 
 #: vanilla_first_setup/gtk/timezone.ui:34
 msgid "not set"
-msgstr ""
+msgstr "לא הוגדר"
 
 #: vanilla_first_setup/gtk/keyboard.ui:10
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "פריסת מקשים"
 
 #: vanilla_first_setup/gtk/keyboard.ui:11
 msgid "Select all your preferred keyboard layouts"
-msgstr ""
+msgstr "בחר את כל פריסות המקשים המועדפים עליך"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:15
 msgid "Applications"
-msgstr ""
+msgstr "Applications"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:16
 msgid "Choose which applications to install."
-msgstr ""
+msgstr "בחר את הapplications להתקנה."
 
 #: vanilla_first_setup/gtk/layout-applications.ui:30
 msgid "Core Applications"
-msgstr ""
+msgstr "Applications נחוצים"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:31
 #: vanilla_first_setup/gtk/layout-applications.ui:56
 msgid "Essential GNOME apps like Calendar or Document Viewer"
-msgstr ""
+msgstr "יישומי GNOME נחוצים כמו לוח שנה או מציג מסמכים"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:45
 msgid "Customize Core Applications"
-msgstr ""
+msgstr "התאם אישית את הApplications הנחוצים"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:55
 msgid "Browsers"
-msgstr ""
+msgstr "דפדפנים"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:70
 msgid "Customize Browsers"
-msgstr ""
+msgstr "התאם אישית את הדפדפנים"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:80
 msgid "Common Utilities"
