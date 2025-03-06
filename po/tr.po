@@ -7,21 +7,22 @@
 # Mustafa <mustafa.cgdm1@gmail.com>, 2024.
 # Hindu Papanreu <hintlijapon@gmail.com>, 2024.
 # Emin Tufan Çetin <etcetin@gmail.com>, 2024.
+# Sinan <sozanozel@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-05 02:32+0100\n"
-"PO-Revision-Date: 2024-02-19 11:01+0000\n"
-"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
-"Language-Team: Turkish <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/tr/>\n"
+"PO-Revision-Date: 2025-03-05 21:37+0000\n"
+"Last-Translator: Sinan <sozanozel@gmail.com>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4\n"
+"X-Generator: Weblate 5.10.3-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -46,12 +47,11 @@ msgstr "Yeni kullanıcı olarak çalıştır"
 
 #: vanilla_first_setup/gtk/logout.ui:23
 msgid "Login Now"
-msgstr ""
+msgstr "Giriş Yap"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Your user account is ready to use"
-msgstr "Aygıtınız kullanıma hazır."
+msgstr "Kullanıcı hesabınız kullanıma hazır."
 
 #: vanilla_first_setup/gtk/done.ui:29
 msgid "Take a tour"
@@ -59,11 +59,11 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/done.ui:40
 msgid "Exit"
-msgstr ""
+msgstr "Çıkış"
 
 #: vanilla_first_setup/gtk/progress.ui:9
 msgid "Progress"
-msgstr ""
+msgstr "İlerle"
 
 #: vanilla_first_setup/gtk/progress.ui:10
 msgid "Some steps still take some time"
@@ -74,18 +74,16 @@ msgid "Showing Information"
 msgstr "Bilgiler Gösteriliyor"
 
 #: vanilla_first_setup/gtk/conn-check.ui:12
-#, fuzzy
 msgid "Checking Connection"
-msgstr "Bağlantı Denetleniyor…"
+msgstr "Bağlantı Denetleniyor"
 
 #: vanilla_first_setup/gtk/conn-check.ui:13
 msgid "Please wait until the connection check is done"
 msgstr "Lütfen bağlantı denetimi bitene dek bekleyin"
 
 #: vanilla_first_setup/gtk/conn-check.ui:16
-#, fuzzy
 msgid "Open Settings"
-msgstr "Vekil Ayarlarını Aç..."
+msgstr "Vekil Ayarlarını Aç"
 
 #: vanilla_first_setup/gtk/theme.ui:13
 msgid "Color Scheme"
@@ -97,7 +95,7 @@ msgstr "Sisteminiz için renk şeması seçin"
 
 #: vanilla_first_setup/gtk/theme.ui:41
 msgid "Light Mode"
-msgstr ""
+msgstr "Gündüz Modu"
 
 #: vanilla_first_setup/gtk/theme.ui:79
 msgid "Light"
