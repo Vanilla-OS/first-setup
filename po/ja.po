@@ -5,13 +5,13 @@
 #
 # Ryo Nakano <ryonakaknock3@gmail.com>, 2023.
 # "Shuuji TAKAHASHI (shuuji3)" <shuuji3@gmail.com>, 2023.
-# Gnuey56 <gnuey56@proton.me>, 2024.
+# Gnuey56 <gnuey56@proton.me>, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-05 02:32+0100\n"
-"PO-Revision-Date: 2024-02-07 19:01+0000\n"
+"PO-Revision-Date: 2025-03-06 08:31+0000\n"
 "Last-Translator: Gnuey56 <gnuey56@proton.me>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ja/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.10.3-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -39,52 +39,48 @@ msgid "Finished!"
 msgstr "完了しました！"
 
 #: vanilla_first_setup/gtk/logout.ui:13
-#, fuzzy
 msgid "Login to your new user"
-msgstr "新しいユーザーとして実行"
+msgstr "新しいユーザーでログイン"
 
 #: vanilla_first_setup/gtk/logout.ui:23
 msgid "Login Now"
-msgstr ""
+msgstr "ログインする"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Your user account is ready to use"
-msgstr "デバイスを使用する準備が整いました。"
+msgstr "アカウントを使用するための準備が整いました"
 
 #: vanilla_first_setup/gtk/done.ui:29
 msgid "Take a tour"
-msgstr ""
+msgstr "ツアーをする"
 
 #: vanilla_first_setup/gtk/done.ui:40
 msgid "Exit"
-msgstr ""
+msgstr "終了"
 
 #: vanilla_first_setup/gtk/progress.ui:9
 msgid "Progress"
-msgstr ""
+msgstr "進行"
 
 #: vanilla_first_setup/gtk/progress.ui:10
 msgid "Some steps still take some time"
-msgstr ""
+msgstr "いくつかのステップは時間がかかるかもしれません"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
 msgstr "情報を表示しています"
 
 #: vanilla_first_setup/gtk/conn-check.ui:12
-#, fuzzy
 msgid "Checking Connection"
-msgstr "接続を確認しています…"
+msgstr "接続を確認しています"
 
 #: vanilla_first_setup/gtk/conn-check.ui:13
 msgid "Please wait until the connection check is done"
 msgstr "接続の確認が終わるまでお待ちください"
 
 #: vanilla_first_setup/gtk/conn-check.ui:16
-#, fuzzy
 msgid "Open Settings"
-msgstr "プロキシ設定を開く..."
+msgstr "設定を開く"
 
 #: vanilla_first_setup/gtk/theme.ui:13
 msgid "Color Scheme"
@@ -96,40 +92,37 @@ msgstr "システムのカラースキームを選択してください"
 
 #: vanilla_first_setup/gtk/theme.ui:41
 msgid "Light Mode"
-msgstr ""
+msgstr "ライトモード"
 
 #: vanilla_first_setup/gtk/theme.ui:79
 msgid "Light"
-msgstr ""
+msgstr "ライト"
 
 #: vanilla_first_setup/gtk/theme.ui:88
-#, fuzzy
 msgid "Dark Mode"
-msgstr "ダーク"
+msgstr "ダークモード"
 
 #: vanilla_first_setup/gtk/theme.ui:127
 msgid "Dark"
 msgstr "ダーク"
 
 #: vanilla_first_setup/gtk/welcome.ui:39
-#, fuzzy
 msgid "Make your choices, this wizard will take care of everything"
-msgstr "ウィザードのガイドに従って、設定を選択してください。"
+msgstr "ウィザードのガイドに従って、設定を選択してください"
 
 #: vanilla_first_setup/gtk/welcome.ui:52
 #: vanilla_first_setup/gtk/welcome-user.ui:21
 msgid "Start"
-msgstr ""
+msgstr "始める"
 
 #: vanilla_first_setup/gtk/welcome.ui:62
 #: vanilla_first_setup/gtk/welcome-user.ui:31
 msgid "Accessibility"
-msgstr ""
+msgstr "アクセシビリティ"
 
 #: vanilla_first_setup/gtk/welcome-user.ui:13
-#, fuzzy
 msgid "Let's set up your user account"
-msgstr "ユーザーアカウントを設定します"
+msgstr "ユーザーアカウントを設定しましょう"
 
 #: vanilla_first_setup/gtk/user.ui:23
 msgid "Create User"
@@ -160,24 +153,24 @@ msgstr "お使いのデバイスの名前を設定します"
 msgid ""
 "Hostname can only contain up to 64 English lowercase letters with hyphens in-"
 "between."
-msgstr ""
+msgstr "ホスト名は、最大 64 文字の英語小文字（間にハイフン可）のみを入力可能です。"
 
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
 msgid "Language"
-msgstr ""
+msgstr "言語"
 
 #: vanilla_first_setup/gtk/language.ui:11
 msgid "Select your language"
-msgstr ""
+msgstr "言語を選択してください"
 
 #: vanilla_first_setup/gtk/location.ui:15
 msgid "Search keyboard layouts"
-msgstr ""
+msgstr "キーボードレイアウトを検索"
 
 #: vanilla_first_setup/gtk/location.ui:24
 msgid "The search results are incomplete. Try refining your query."
-msgstr ""
+msgstr "検索結果が不完全です。クエリを変えてみてください。"
 
 #: vanilla_first_setup/gtk/timezone.ui:11
 msgid "Date & Time"
