@@ -2,21 +2,22 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
 # "K.B.Dharun Krishna" <kbdharunkrishna@gmail.com>, 2023, 2024.
+# தமிழ்நேரம் <anishprabu.t@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-05 02:32+0100\n"
-"PO-Revision-Date: 2024-06-01 21:52+0000\n"
-"Last-Translator: \"K.B.Dharun Krishna\" <kbdharunkrishna@gmail.com>\n"
-"Language-Team: Tamil <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/ta/>\n"
+"PO-Revision-Date: 2025-03-06 03:46+0000\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
+"Language-Team: Tamil <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/ta/>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6-dev\n"
+"X-Generator: Weblate 5.10.3-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -35,52 +36,48 @@ msgid "Finished!"
 msgstr "முடிந்துவிட்டது!"
 
 #: vanilla_first_setup/gtk/logout.ui:13
-#, fuzzy
 msgid "Login to your new user"
-msgstr "புதிய பயனராக இயக்கவும்"
+msgstr "உங்கள் புதிய பயனருக்கு உள்நுழைக"
 
 #: vanilla_first_setup/gtk/logout.ui:23
 msgid "Login Now"
-msgstr ""
+msgstr "இப்போது உள்நுழைக"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Your user account is ready to use"
-msgstr "உங்கள் சாதனம் பயன்படுத்த தயாராக உள்ளது."
+msgstr "உங்கள் பயனர் கணக்கு பயன்படுத்த தயாராக உள்ளது"
 
 #: vanilla_first_setup/gtk/done.ui:29
 msgid "Take a tour"
-msgstr ""
+msgstr "ஒரு சுற்றுப்பயணம் மேற்கொள்ளுங்கள்"
 
 #: vanilla_first_setup/gtk/done.ui:40
 msgid "Exit"
-msgstr ""
+msgstr "வெளியேறு"
 
 #: vanilla_first_setup/gtk/progress.ui:9
 msgid "Progress"
-msgstr ""
+msgstr "முன்னேற்றம்"
 
 #: vanilla_first_setup/gtk/progress.ui:10
 msgid "Some steps still take some time"
-msgstr ""
+msgstr "சில படிகள் இன்னும் சிறிது நேரம் ஆகும்"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
 msgstr "தகவலைக் காட்டுகிறது"
 
 #: vanilla_first_setup/gtk/conn-check.ui:12
-#, fuzzy
 msgid "Checking Connection"
-msgstr "இணைப்பைச் சரிபார்க்கிறது…"
+msgstr "இணைப்பைச் சரிபார்க்கிறது"
 
 #: vanilla_first_setup/gtk/conn-check.ui:13
 msgid "Please wait until the connection check is done"
 msgstr "இணைப்புச் சரிபார்ப்பு முடியும் வரை காத்திருக்கவும்"
 
 #: vanilla_first_setup/gtk/conn-check.ui:16
-#, fuzzy
 msgid "Open Settings"
-msgstr "ப்ராக்ஸி அமைப்புகளைத் திறக்கவும்..."
+msgstr "திறந்த அமைப்புகள்"
 
 #: vanilla_first_setup/gtk/theme.ui:13
 msgid "Color Scheme"
@@ -92,40 +89,38 @@ msgstr "உங்கள் கணினிக்கான வண்ணத் த
 
 #: vanilla_first_setup/gtk/theme.ui:41
 msgid "Light Mode"
-msgstr ""
+msgstr "ஒளி பயன்முறை"
 
 #: vanilla_first_setup/gtk/theme.ui:79
 msgid "Light"
-msgstr ""
+msgstr "ஒளி"
 
 #: vanilla_first_setup/gtk/theme.ui:88
-#, fuzzy
 msgid "Dark Mode"
-msgstr "இருள்"
+msgstr "இருண்ட முறை"
 
 #: vanilla_first_setup/gtk/theme.ui:127
 msgid "Dark"
 msgstr "இருள்"
 
 #: vanilla_first_setup/gtk/welcome.ui:39
-#, fuzzy
 msgid "Make your choices, this wizard will take care of everything"
-msgstr "உங்கள் தேர்வுகளை செய்யுங்கள், இந்த வழிகாட்டி எல்லாவற்றையும் கவனித்துக்கொள்ளும்."
+msgstr ""
+"உங்கள் தேர்வுகளைச் செய்யுங்கள், இந்த வழிகாட்டி எல்லாவற்றையும் கவனித்துக்கொள்வார்"
 
 #: vanilla_first_setup/gtk/welcome.ui:52
 #: vanilla_first_setup/gtk/welcome-user.ui:21
 msgid "Start"
-msgstr ""
+msgstr "தொடங்கு"
 
 #: vanilla_first_setup/gtk/welcome.ui:62
 #: vanilla_first_setup/gtk/welcome-user.ui:31
 msgid "Accessibility"
-msgstr ""
+msgstr "அணுகல்"
 
 #: vanilla_first_setup/gtk/welcome-user.ui:13
-#, fuzzy
 msgid "Let's set up your user account"
-msgstr "உங்கள் பயனர் கணக்கிற்கான விவரங்களை வழங்கவும்"
+msgstr "உங்கள் பயனர் கணக்கை அமைப்போம்"
 
 #: vanilla_first_setup/gtk/user.ui:23
 msgid "Create User"
@@ -157,144 +152,147 @@ msgid ""
 "Hostname can only contain up to 64 English lowercase letters with hyphens in-"
 "between."
 msgstr ""
+"ஓச்ட்பெயரில் 64 ஆங்கில சிறிய எழுத்துக்கள் வரை மட்டுமே ஐஃபன்ச் வரை இருக்க முடியும்."
 
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
 msgid "Language"
-msgstr ""
+msgstr "மொழி"
 
 #: vanilla_first_setup/gtk/language.ui:11
 msgid "Select your language"
-msgstr ""
+msgstr "உங்கள் மொழியைத் தேர்ந்தெடுக்கவும்"
 
 #: vanilla_first_setup/gtk/location.ui:15
 msgid "Search keyboard layouts"
-msgstr ""
+msgstr "விசைப்பலகை தளவமைப்புகளைத் தேடுங்கள்"
 
 #: vanilla_first_setup/gtk/location.ui:24
 msgid "The search results are incomplete. Try refining your query."
 msgstr ""
+"தேடல் முடிவுகள் முழுமையடையாது. உங்கள் வினவலைச் செம்மைப்படுத்த முயற்சிக்கவும்."
 
 #: vanilla_first_setup/gtk/timezone.ui:11
 msgid "Date & Time"
-msgstr ""
+msgstr "தேதி & நேரம்"
 
 #: vanilla_first_setup/gtk/timezone.ui:12
 msgid "Select your preferred timezone"
-msgstr ""
+msgstr "உங்களுக்கு விருப்பமான நேர மண்டலத்தைத் தேர்ந்தெடுக்கவும்"
 
 #: vanilla_first_setup/gtk/timezone.ui:29
 msgid "Current timezone:"
-msgstr ""
+msgstr "தற்போதைய நேர மண்டலம்:"
 
 #: vanilla_first_setup/gtk/timezone.ui:34
 msgid "not set"
-msgstr ""
+msgstr "அமைக்கப்படவில்லை"
 
 #: vanilla_first_setup/gtk/keyboard.ui:10
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "விசைப்பலகை தளவமைப்பு"
 
 #: vanilla_first_setup/gtk/keyboard.ui:11
 msgid "Select all your preferred keyboard layouts"
 msgstr ""
+"நீங்கள் விரும்பும் அனைத்து விசைப்பலகை தளவமைப்புகளையும் தேர்ந்தெடுக்கவும்"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:15
 msgid "Applications"
-msgstr ""
+msgstr "பயன்பாடுகள்"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:16
 msgid "Choose which applications to install."
-msgstr ""
+msgstr "எந்த பயன்பாடுகளை நிறுவ வேண்டும் என்பதைத் தேர்வுசெய்க."
 
 #: vanilla_first_setup/gtk/layout-applications.ui:30
 msgid "Core Applications"
-msgstr ""
+msgstr "முக்கிய பயன்பாடுகள்"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:31
 #: vanilla_first_setup/gtk/layout-applications.ui:56
 msgid "Essential GNOME apps like Calendar or Document Viewer"
-msgstr ""
+msgstr "காலண்டர் அல்லது ஆவண பார்வையாளர் போன்ற அத்தியாவசிய சினோம் பயன்பாடுகள்"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:45
 msgid "Customize Core Applications"
-msgstr ""
+msgstr "முக்கிய பயன்பாடுகளைத் தனிப்பயனாக்குங்கள்"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:55
 msgid "Browsers"
-msgstr ""
+msgstr "உலாவிகள்"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:70
 msgid "Customize Browsers"
-msgstr ""
+msgstr "உலாவிகளைத் தனிப்பயனாக்குங்கள்"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:80
 msgid "Common Utilities"
-msgstr ""
+msgstr "பொதுவான பயன்பாடுகள்"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:81
 msgid "Useful utilities to enhance your desktop experience"
-msgstr ""
+msgstr "உங்கள் டெச்க்டாப் அனுபவத்தை மேம்படுத்த பயனுள்ள பயன்பாடுகள்"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:95
 msgid "Customize Utilities"
-msgstr ""
+msgstr "பயன்பாடுகளைத் தனிப்பயனாக்குங்கள்"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:105
 msgid "Office"
-msgstr ""
+msgstr "அலுவலகம்"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:106
 msgid "The LibreOffice suite"
-msgstr ""
+msgstr "லிப்ரேஃபிச் சூட்"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:120
 msgid "Customize Office Applications"
-msgstr ""
+msgstr "அலுவலக விண்ணப்பங்களைத் தனிப்பயனாக்குங்கள்"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:8
 msgid "Select Applications"
-msgstr ""
+msgstr "பயன்பாடுகளைத் தேர்ந்தெடுக்கவும்"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:18
 msgid "Apply"
-msgstr ""
+msgstr "இடு"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:30
 msgid "Select the applications you want to install"
-msgstr ""
+msgstr "நீங்கள் நிறுவ விரும்பும் பயன்பாடுகளைத் தேர்ந்தெடுக்கவும்"
 
 #: vanilla_first_setup/window.py:74
 msgid "Setup failed: "
-msgstr ""
+msgstr "அமைப்பு தோல்வியுற்றது: "
 
 #: vanilla_first_setup/window.py:79
-#, fuzzy
 msgid "Details"
-msgstr "சாதன விவரங்கள்"
+msgstr "விவரங்கள்"
 
 #: vanilla_first_setup/window.py:85
-#, fuzzy
 msgid "Error log"
-msgstr "பிழை!"
+msgstr "பிழை பதிவு"
 
 #: vanilla_first_setup/application.py:76
 msgid "Don't make any changes to the system."
-msgstr ""
+msgstr "கணினியில் எந்த மாற்றமும் செய்ய வேண்டாம்."
 
 #: vanilla_first_setup/application.py:84
 msgid "Force the configure system mode, independant of group."
-msgstr ""
+msgstr "குழுவின் சுயாதீனமான கணினி பயன்முறையை உள்ளமைக்க கட்டாயப்படுத்துங்கள்."
 
 #: vanilla_first_setup/application.py:92
 msgid "Force the regular mode, independant of group."
-msgstr ""
+msgstr "குழுவிலிருந்து சுயாதீனமான வழக்கமான பயன்முறையை கட்டாயப்படுத்துங்கள்."
 
 #: vanilla_first_setup/application.py:100
 msgid ""
 "Use the original equipment manufacturer mode with language, keyboard and "
 "timezone selection."
 msgstr ""
+"மொழி, விசைப்பலகை மற்றும் நேர மண்டல தேர்வுடன் அசல் உபகரண உற்பத்தியாளர் பயன்முறையைப் "
+"பயன்படுத்தவும்."
 
 #: vanilla_first_setup/views/conn_check.py:72
 msgid "No Internet Connection!"
@@ -305,104 +303,101 @@ msgid "First Setup requires an active internet connection"
 msgstr "முதல் அமைப்பிற்கு செயலில் உள்ள இணைய இணைப்பு தேவை"
 
 #: vanilla_first_setup/views/conn_check.py:79
-#, fuzzy
 msgid "Connection available"
-msgstr "இணைப்பு தோல்வியடைந்தது"
+msgstr "இணைப்பு கிடைக்கிறது"
 
 #: vanilla_first_setup/views/conn_check.py:80
-#, fuzzy
 msgid "You have a working internet connection"
-msgstr "இணைய இணைப்பு இல்லை!"
+msgstr "உங்களிடம் வேலை செய்யும் இணைய இணைப்பு உள்ளது"
 
 #: vanilla_first_setup/views/keyboard.py:37
 msgid "Keyboard"
-msgstr ""
+msgstr "விசைப்பலகை"
 
 #: vanilla_first_setup/views/user.py:118
 msgid "Username cannot be empty."
-msgstr ""
+msgstr "பயனர்பெயர் காலியாக இருக்க முடியாது."
 
 #: vanilla_first_setup/views/user.py:121
 msgid "Username cannot be longer than 32 characters."
-msgstr ""
+msgstr "பயனர்பெயர் 32 எழுத்துக்களை விட நீளமாக இருக்க முடியாது."
 
 #: vanilla_first_setup/views/user.py:124
 msgid "Username cannot contain special characters or uppercase letters."
 msgstr ""
+"பயனர்பெயரில் சிறப்பு எழுத்துக்கள் அல்லது பெரிய எழுத்துக்கள் இருக்க முடியாது."
 
 #: vanilla_first_setup/views/user.py:128
-#, fuzzy
 msgid "This username is already in use."
-msgstr "உங்கள் சாதனம் பயன்படுத்த தயாராக உள்ளது."
+msgstr "இந்த பயனர்பெயர் ஏற்கனவே பயன்பாட்டில் உள்ளது."
 
 #: vanilla_first_setup/views/locations.py:220
 msgid "Region"
-msgstr ""
+msgstr "பகுதி"
 
 #: vanilla_first_setup/views/locations.py:238
 msgid "Country"
-msgstr ""
+msgstr "நாடு"
 
 #: vanilla_first_setup/views/locations.py:327
 msgid "Search results"
-msgstr ""
+msgstr "தேடல் முடிவுகள்"
 
 #: vanilla_first_setup/views/timezone.py:39
 msgid "Timezone"
-msgstr ""
+msgstr "நேர மண்டலம்"
 
 #: vanilla_first_setup/views/welcome_user.py:45
 msgid "Hello {}!"
-msgstr ""
+msgstr "வணக்கம் {}!"
 
 #: vanilla_first_setup/views/progress.py:94
 msgid "Setting up the system"
-msgstr ""
+msgstr "கணினியை அமைத்தல்"
 
 #: vanilla_first_setup/views/progress.py:97
-#, fuzzy
 msgid "Installing"
-msgstr "நிறுவுகிறது…"
+msgstr "நிறுவுகிறது"
 
 #: vanilla_first_setup/core/timezones.py:92
 msgid "Europe"
-msgstr ""
+msgstr "ஐரோப்பா"
 
 #: vanilla_first_setup/core/timezones.py:93
 msgid "Asia"
-msgstr ""
+msgstr "ஆசியா"
 
 #: vanilla_first_setup/core/timezones.py:94
 msgid "America"
-msgstr ""
+msgstr "அமெரிக்கா"
 
 #: vanilla_first_setup/core/timezones.py:95
 msgid "Africa"
-msgstr ""
+msgstr "ஆப்பிரிக்கா"
 
 #: vanilla_first_setup/core/timezones.py:96
 msgid "Antarctica"
-msgstr ""
+msgstr "அண்டார்ட்டிக்கா"
 
 #: vanilla_first_setup/core/timezones.py:97
 msgid "Pacific Ocean"
-msgstr ""
+msgstr "பசிபிக் பெருங்கடல்"
 
 #: vanilla_first_setup/core/timezones.py:98
 msgid "Australia"
-msgstr ""
+msgstr "ஆச்திரேலியா"
 
 #: vanilla_first_setup/core/timezones.py:99
 msgid "Atlantic Ocean"
-msgstr ""
+msgstr "அட்லாண்டிக் பெருங்கடல்"
 
 #: vanilla_first_setup/core/timezones.py:100
 msgid "Indian Ocean"
-msgstr ""
+msgstr "இந்தியப் பெருங்கடல்"
 
 #: vanilla_first_setup/core/timezones.py:101
 msgid "Arctic"
-msgstr ""
+msgstr "ஆர்க்டிக்"
 
 #~ msgid "Tweak your Vanilla OS installation."
 #~ msgstr "உங்கள் வெண்ணிலா OS நிறுவலை மாற்றி அமையுங்கள்."
