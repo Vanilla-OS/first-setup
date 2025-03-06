@@ -7,13 +7,14 @@
 # Império Linux <kevendoria86@gmail.com>, 2023.
 # Cassio H <neargplay@gmail.com>, 2024.
 # Jose Delvani <jsdelvani@users.noreply.hosted.weblate.org>, 2024.
+# Vinícius <vinicius.cgobbi2004@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-05 02:32+0100\n"
-"PO-Revision-Date: 2024-07-29 14:09+0000\n"
-"Last-Translator: Jose Delvani <jsdelvani@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2025-03-05 21:37+0000\n"
+"Last-Translator: Vinícius <vinicius.cgobbi2004@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "vanilla-os/first-setup/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.10.3-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -46,12 +47,11 @@ msgstr "Executar como um novo usuário"
 
 #: vanilla_first_setup/gtk/logout.ui:23
 msgid "Login Now"
-msgstr ""
+msgstr "Faça Login Agora"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Your user account is ready to use"
-msgstr "Seu dispositivo está pronto para uso."
+msgstr "Sua conta está pronta para uso"
 
 #: vanilla_first_setup/gtk/done.ui:29
 msgid "Take a tour"
