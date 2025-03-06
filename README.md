@@ -116,10 +116,10 @@ vanilla-first-setup
 
 #### Flags:
 
-- --dry-run (-d): Don't make any changes to the system.
-- --force-configure-mode (-c): Force the configure system mode, independant of group.
-- --force-regular-mode (-r): Force the regular mode, independant of group.
-- --oem-mode (-o): Use the original equipment manufacturer mode with language, keyboard and timezone selection.
+- `--dry-run (-d)`: Don't make any changes to the system.
+- `--force-configure-mode (-c)`: Force the configure system mode, independant of group.
+- `--force-regular-mode (-r)`: Force the regular mode, independant of group.
+- `--oem-mode (-o)`: Use the original equipment manufacturer mode with language, keyboard and timezone selection.
 
 ## Update translation file
 
