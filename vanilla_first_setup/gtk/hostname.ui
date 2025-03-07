@@ -11,7 +11,7 @@
           <object class="AdwStatusPage" id="status_page">
             <property name="icon-name">computer-symbolic</property>
             <property name="title" translatable="yes">Device Name</property>
-            <property name="description" translatable="yes">Provide your device name</property>
+            <property name="description" translatable="yes">Name your device</property>
             <child>
               <object class="AdwPreferencesPage">
                 <child>
@@ -28,7 +28,7 @@
                         <style>
                           <class name="error"/>
                         </style>
-                        <property name="label" translatable="yes">Hostname can only contain up to 64 English lowercase letters with hyphens in-between.</property>
+                        <property name="label" translatable="yes">Hostname can only contain lowercase alphanumeric characters (a-z), periods and hyphens, up to a maximum of 64 characters.</property>
                         <property name="opacity">0</property>
                       </object>
                     </child>
