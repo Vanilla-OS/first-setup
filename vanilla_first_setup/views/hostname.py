@@ -69,7 +69,7 @@ class VanillaHostname(Adw.Bin):
         if len(hostname) > 64:
             return False
 
-        lower_ascii = re.compile(r"[a-z]+$")
+        lower_ascii = re.compile(r"[a-z0-9]+$")
 
         dot_parts = hostname.split(".")
         for dot_part in dot_parts:
