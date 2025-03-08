@@ -71,12 +71,10 @@ class VanillaHostname(Adw.Bin):
 
         lower_ascii = re.compile(r"[a-z0-9]+$")
 
-        dot_parts = hostname.split(".")
-        for dot_part in dot_parts:
-            hyphen_parts = dot_part.split("-")
-            for hyphen_part in hyphen_parts:
-                if not lower_ascii.match(hyphen_part):
-                    return False
+        hyphen_parts = hostname.split("-")
+        for hyphen_part in hyphen_parts:
+            if not lower_ascii.match(hyphen_part):
+                return False
 
         return True
 
