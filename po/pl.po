@@ -5,15 +5,15 @@
 # Tomasz Dyńka <gramyteraz12@gmail.com>, 2023.
 # Marek <uroda.mar@gmail.com>, 2024.
 # Dawid Harwig <dawidharwig@gmail.com>, 2024.
-# Piotr Wieczorek <wieczorek.piotr.praga@protonmail.com>, 2024.
+# Piotr Wieczorek <wieczorek.piotr.praga@protonmail.com>, 2024, 2025.
 # Eryk Michalak <gnu.ewm@protonmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-05 02:32+0100\n"
-"PO-Revision-Date: 2025-03-06 14:51+0000\n"
-"Last-Translator: Eryk Michalak <gnu.ewm@protonmail.com>\n"
+"POT-Creation-Date: 2025-03-07 10:11+0100\n"
+"PO-Revision-Date: 2025-03-09 13:19+0000\n"
+"Last-Translator: Piotr Wieczorek <wieczorek.piotr.praga@protonmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/pl/>\n"
 "Language: pl\n"
@@ -148,13 +148,13 @@ msgid "Device Name"
 msgstr "Nazwa Urządzenia"
 
 #: vanilla_first_setup/gtk/hostname.ui:14
-msgid "Provide your device name"
+msgid "Name your device"
 msgstr "Nazwij swoje urządzenie"
 
 #: vanilla_first_setup/gtk/hostname.ui:31
 msgid ""
-"Hostname can only contain up to 64 English lowercase letters with hyphens in-"
-"between."
+"Hostname can only contain lowercase alphanumeric characters (a-z), periods "
+"and hyphens, up to a maximum of 64 characters."
 msgstr ""
 
 #: vanilla_first_setup/gtk/language.ui:10
@@ -196,7 +196,7 @@ msgstr "Układ klawiatury"
 
 #: vanilla_first_setup/gtk/keyboard.ui:11
 msgid "Select all your preferred keyboard layouts"
-msgstr ""
+msgstr "Wybierz wszystkie preferowane przez ciebie układy klawiatury"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:15
 msgid "Applications"
