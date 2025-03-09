@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-05 02:32+0100\n"
+"POT-Creation-Date: 2025-03-07 10:11+0100\n"
 "PO-Revision-Date: 2024-01-25 16:01+0000\n"
 "Last-Translator: lakejason0 <sunliyuan200402@outlook.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
@@ -152,13 +152,15 @@ msgid "Device Name"
 msgstr "裝置名稱"
 
 #: vanilla_first_setup/gtk/hostname.ui:14
-msgid "Provide your device name"
+#, fuzzy
+#| msgid "Provide your device name"
+msgid "Name your device"
 msgstr "提供您裝置的名稱"
 
 #: vanilla_first_setup/gtk/hostname.ui:31
 msgid ""
-"Hostname can only contain up to 64 English lowercase letters with hyphens in-"
-"between."
+"Hostname can only contain lowercase alphanumeric characters (a-z), periods "
+"and hyphens, up to a maximum of 64 characters."
 msgstr ""
 
 #: vanilla_first_setup/gtk/language.ui:10
