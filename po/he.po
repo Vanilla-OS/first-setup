@@ -8,11 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-05 02:32+0100\n"
+"POT-Creation-Date: 2025-03-07 10:11+0100\n"
 "PO-Revision-Date: 2025-03-05 21:37+0000\n"
 "Last-Translator: aharon don <aronrefael@gmail.com>\n"
-"Language-Team: Hebrew <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/he/>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/vanilla-os/first-"
+"setup/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -146,14 +146,16 @@ msgid "Device Name"
 msgstr "שם Device"
 
 #: vanilla_first_setup/gtk/hostname.ui:14
-msgid "Provide your device name"
+#, fuzzy
+#| msgid "Provide your device name"
+msgid "Name your device"
 msgstr "נא ספק את שם הdevice שלך"
 
 #: vanilla_first_setup/gtk/hostname.ui:31
 msgid ""
-"Hostname can only contain up to 64 English lowercase letters with hyphens in-"
-"between."
-msgstr "שם המארח ‏יכול להכיל רק עד 64 אותיות קטנות באנגלית עם מקפים באמצע."
+"Hostname can only contain lowercase alphanumeric characters (a-z), periods "
+"and hyphens, up to a maximum of 64 characters."
+msgstr ""
 
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
@@ -400,6 +402,11 @@ msgstr ""
 #: vanilla_first_setup/core/timezones.py:101
 msgid "Arctic"
 msgstr ""
+
+#~ msgid ""
+#~ "Hostname can only contain up to 64 English lowercase letters with hyphens "
+#~ "in-between."
+#~ msgstr "שם המארח ‏יכול להכיל רק עד 64 אותיות קטנות באנגלית עם מקפים באמצע."
 
 #, fuzzy
 #~ msgid "Tweak your Vanilla OS installation."
