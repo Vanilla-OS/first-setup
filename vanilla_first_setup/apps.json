@@ -1,6 +1,10 @@
 {
     "core": [
         {
+            "name": "Audio Player",
+            "id": "org.gnome.Decibels"
+        },
+        {
             "name": "Calculator",
             "id": "org.gnome.Calculator"
         },
