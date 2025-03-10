@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-05 02:32+0100\n"
+"POT-Creation-Date: 2025-03-07 10:11+0100\n"
 "PO-Revision-Date: 2025-03-07 10:17+0000\n"
 "Last-Translator: Gnuey56 <gnuey56@proton.me>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/vanilla-os/"
@@ -146,14 +146,16 @@ msgid "Device Name"
 msgstr "デバイス名"
 
 #: vanilla_first_setup/gtk/hostname.ui:14
-msgid "Provide your device name"
+#, fuzzy
+#| msgid "Provide your device name"
+msgid "Name your device"
 msgstr "お使いのデバイスの名前を設定します"
 
 #: vanilla_first_setup/gtk/hostname.ui:31
 msgid ""
-"Hostname can only contain up to 64 English lowercase letters with hyphens in-"
-"between."
-msgstr "ホスト名は、最大 64 文字の英語小文字（間にハイフン可）のみを入力可能です。"
+"Hostname can only contain lowercase alphanumeric characters (a-z), periods "
+"and hyphens, up to a maximum of 64 characters."
+msgstr ""
 
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
@@ -395,6 +397,12 @@ msgstr ""
 #: vanilla_first_setup/core/timezones.py:101
 msgid "Arctic"
 msgstr ""
+
+#~ msgid ""
+#~ "Hostname can only contain up to 64 English lowercase letters with hyphens "
+#~ "in-between."
+#~ msgstr ""
+#~ "ホスト名は、最大 64 文字の英語小文字（間にハイフン可）のみを入力可能です。"
 
 #~ msgid "Tweak your Vanilla OS installation."
 #~ msgstr "お使いのVanilla OSを調整します。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-05 02:32+0100\n"
+"POT-Creation-Date: 2025-03-07 10:11+0100\n"
 "PO-Revision-Date: 2023-06-10 20:50+0000\n"
 "Last-Translator: Plamen Stanchev <sommersbynobodyev@gmail.com>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/vanilla-os/"
@@ -154,13 +154,13 @@ msgstr "Име на устройството"
 
 #: vanilla_first_setup/gtk/hostname.ui:14
 #, fuzzy
-msgid "Provide your device name"
+msgid "Name your device"
 msgstr "Предоставяне на подробна информация за вашето устройство"
 
 #: vanilla_first_setup/gtk/hostname.ui:31
 msgid ""
-"Hostname can only contain up to 64 English lowercase letters with hyphens in-"
-"between."
+"Hostname can only contain lowercase alphanumeric characters (a-z), periods "
+"and hyphens, up to a maximum of 64 characters."
 msgstr ""
 
 #: vanilla_first_setup/gtk/language.ui:10
