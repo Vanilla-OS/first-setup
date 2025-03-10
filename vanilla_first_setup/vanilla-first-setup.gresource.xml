@@ -51,7 +51,6 @@
     <file alias="org.gnome.Logs.png">assets/bundle-app-icons/org.gnome.Logs.png</file>
     <file alias="org.gnome.Loupe.png">assets/bundle-app-icons/org.gnome.Loupe.png</file>
     <file alias="org.gnome.Maps.png">assets/bundle-app-icons/org.gnome.Maps.png</file>
-    <file alias="org.gnome.Music.png">assets/bundle-app-icons/org.gnome.Music.png</file>
     <file alias="org.gnome.Photos.png">assets/bundle-app-icons/org.gnome.Photos.png</file>
     <file alias="org.gnome.SimpleScan.png">assets/bundle-app-icons/org.gnome.SimpleScan.png</file>
     <file alias="org.gnome.Snapshot.png">assets/bundle-app-icons/org.gnome.Snapshot.png</file>

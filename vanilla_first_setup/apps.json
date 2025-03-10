@@ -61,10 +61,6 @@
             "id": "org.gnome.Maps"
         },
         {
-            "name": "Music",
-            "id": "org.gnome.Music"
-        },
-        {
             "name": "Photos",
             "id": "org.gnome.Photos"
         },
