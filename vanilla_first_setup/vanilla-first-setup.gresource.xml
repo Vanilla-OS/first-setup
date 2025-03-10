@@ -29,6 +29,7 @@
   </gresource>
   <gresource prefix="/org/vanillaos/FirstSetup/icons/symbolic/apps/">
     <file preprocess="xml-stripblanks" alias="org.gnome.Software-symbolic.svg">assets/symbolic/apps/org.gnome.Software-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="org.gnome.Decibels.png">assets/bundle-app-icons/org.gnome.Decibels.svg</file>
 
     <file alias="com.github.flxzt.rnote.png">assets/bundle-app-icons/com.github.flxzt.rnote.png</file>
     <file alias="com.github.tchx84.Flatseal.png">assets/bundle-app-icons/com.github.tchx84.Flatseal.png</file>
