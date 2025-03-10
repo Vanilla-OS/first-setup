@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-05 02:32+0100\n"
-"PO-Revision-Date: 2025-03-06 08:31+0000\n"
+"PO-Revision-Date: 2025-03-07 10:17+0000\n"
 "Last-Translator: Gnuey56 <gnuey56@proton.me>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/ja/>\n"
@@ -174,110 +174,108 @@ msgstr "検索結果が不完全です。クエリを変えてみてください
 
 #: vanilla_first_setup/gtk/timezone.ui:11
 msgid "Date & Time"
-msgstr ""
+msgstr "日付と時間"
 
 #: vanilla_first_setup/gtk/timezone.ui:12
 msgid "Select your preferred timezone"
-msgstr ""
+msgstr "タイムゾーンを選択してください"
 
 #: vanilla_first_setup/gtk/timezone.ui:29
 msgid "Current timezone:"
-msgstr ""
+msgstr "現在のタイムゾーン:"
 
 #: vanilla_first_setup/gtk/timezone.ui:34
 msgid "not set"
-msgstr ""
+msgstr "未設定"
 
 #: vanilla_first_setup/gtk/keyboard.ui:10
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "キーボードレイアウト"
 
 #: vanilla_first_setup/gtk/keyboard.ui:11
 msgid "Select all your preferred keyboard layouts"
-msgstr ""
+msgstr "使用するキーボードレイアウトをすべて選択してください"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:15
 msgid "Applications"
-msgstr ""
+msgstr "アプリケーション"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:16
 msgid "Choose which applications to install."
-msgstr ""
+msgstr "インストールするアプリケーション選択してください。"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:30
 msgid "Core Applications"
-msgstr ""
+msgstr "基本的なアプリケーション"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:31
 #: vanilla_first_setup/gtk/layout-applications.ui:56
 msgid "Essential GNOME apps like Calendar or Document Viewer"
-msgstr ""
+msgstr "カレンダーやドキュメントビューアーなどの基本的なアプリケーション"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:45
 msgid "Customize Core Applications"
-msgstr ""
+msgstr "基本的なアプリケーションをカスタマイズ"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:55
 msgid "Browsers"
-msgstr ""
+msgstr "ブラウザ"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:70
 msgid "Customize Browsers"
-msgstr ""
+msgstr "ブラウザをカスタマイズ"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:80
 msgid "Common Utilities"
-msgstr ""
+msgstr "基本的なユーティリティ"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:81
 msgid "Useful utilities to enhance your desktop experience"
-msgstr ""
+msgstr "デスクトップ体験を向上させる便利なユーティリティ"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:95
 msgid "Customize Utilities"
-msgstr ""
+msgstr "ユーティリティをカスタマイズ"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:105
 msgid "Office"
-msgstr ""
+msgstr "オフィス"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:106
 msgid "The LibreOffice suite"
-msgstr ""
+msgstr "LibreOffice スイート"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:120
 msgid "Customize Office Applications"
-msgstr ""
+msgstr "オフィスアプリケーションをカスタマイズ"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:8
 msgid "Select Applications"
-msgstr ""
+msgstr "アプリケーションを選択"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:18
 msgid "Apply"
-msgstr ""
+msgstr "適用"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:30
 msgid "Select the applications you want to install"
-msgstr ""
+msgstr "インストールするご希望のアプリケーションを選択"
 
 #: vanilla_first_setup/window.py:74
 msgid "Setup failed: "
-msgstr ""
+msgstr "セットアップ失敗: "
 
 #: vanilla_first_setup/window.py:79
-#, fuzzy
 msgid "Details"
-msgstr "デバイスの詳細"
+msgstr "詳細"
 
 #: vanilla_first_setup/window.py:85
-#, fuzzy
 msgid "Error log"
-msgstr "エラー！"
+msgstr "エラーログ"
 
 #: vanilla_first_setup/application.py:76
 msgid "Don't make any changes to the system."
-msgstr ""
+msgstr "システムに変更を加えないでください。"
 
 #: vanilla_first_setup/application.py:84
 msgid "Force the configure system mode, independant of group."
@@ -302,35 +300,32 @@ msgid "First Setup requires an active internet connection"
 msgstr "初期設定には有効なインターネット接続が必要です"
 
 #: vanilla_first_setup/views/conn_check.py:79
-#, fuzzy
 msgid "Connection available"
-msgstr "接続に失敗しました"
+msgstr "接続が利用できます"
 
 #: vanilla_first_setup/views/conn_check.py:80
-#, fuzzy
 msgid "You have a working internet connection"
-msgstr "インターネット接続がありません！"
+msgstr "利用可能なインターネット接続があります"
 
 #: vanilla_first_setup/views/keyboard.py:37
 msgid "Keyboard"
-msgstr ""
+msgstr "キーボード"
 
 #: vanilla_first_setup/views/user.py:118
 msgid "Username cannot be empty."
-msgstr ""
+msgstr "ユーザー名は空にできません。"
 
 #: vanilla_first_setup/views/user.py:121
 msgid "Username cannot be longer than 32 characters."
-msgstr ""
+msgstr "ユーザー名は 32 文字を超えることはできません。"
 
 #: vanilla_first_setup/views/user.py:124
 msgid "Username cannot contain special characters or uppercase letters."
-msgstr ""
+msgstr "ユーザー名に特別な文字や大文字を含めることはできません。"
 
 #: vanilla_first_setup/views/user.py:128
-#, fuzzy
 msgid "This username is already in use."
-msgstr "デバイスを使用する準備が整いました。"
+msgstr "このユーザー名はすでに使用されています。"
 
 #: vanilla_first_setup/views/locations.py:220
 msgid "Region"
