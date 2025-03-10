@@ -16,9 +16,9 @@ Build-Depends:
             libgio-2.0-dev-bin,
             libxml2-utils,
             gtk-update-icon-cache
-Homepage: https://github.com/mirkobrombin/vanilla-first-setup/
-Vcs-Browser: hhttps://github.com/mirkobrombin/vanilla-first-setup
-Vcs-Git: https://github.com/mirkobrombin/vanilla-first-setup.git
+Homepage: https://github.com/Vanilla-OS/first-setup/
+Vcs-Browser: https://github.com/Vanilla-OS/first-setup
+Vcs-Git: https://github.com/Vanilla-OS/first-setup.git
 Rules-Requires-Root: no
 
 Package: vanilla-first-setup
