@@ -17,6 +17,7 @@
 
 import re
 from gi.repository import Gtk, Adw
+_ = __builtins__["_"]
 
 import vanilla_first_setup.core.backend as backend
 
@@ -53,30 +54,35 @@ class VanillaHostname(Adw.Bin):
     def __on_hostname_entry_changed(self, *args):
         _hostname = self.hostname_entry.get_text()
 
-        if self.__validate_hostname(_hostname):
+        ok, err = self.__validate_hostname(_hostname)
+        if ok:
             self.hostname = _hostname
             self.hostname_entry.remove_css_class("error")
             self.hostname_error.set_opacity(0.0)
             self.__verify_continue()
             return
 
+        self.hostname_error.set_label(err)
         self.hostname_entry.add_css_class("error")
         self.hostname = ""
         self.hostname_error.set_opacity(1.0)
         self.__verify_continue()
 
-    def __validate_hostname(self, hostname):
+    def __validate_hostname(self, hostname) -> tuple[bool, str]:
         if len(hostname) > 64:
-            return False
+            return (False, _("Hostname is too long"))
+        
+        if hostname.endswith('-'):
+            return (False, _("Hostname must not end with a dash"))
 
-        lower_ascii = re.compile(r"[a-z0-9]+$")
+        lower_alphanumeric = re.compile(r"^[a-z0-9]*$")
 
         hyphen_parts = hostname.split("-")
         for hyphen_part in hyphen_parts:
-            if not lower_ascii.match(hyphen_part):
-                return False
+            if not lower_alphanumeric.match(hyphen_part):
+                return (False, _("The hostname can only contain lowercase alphanumeric characters and dashes"))
 
-        return True
+        return (True, "")
 
     def __verify_continue(self):
         ready = self.hostname != ""

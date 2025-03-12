@@ -28,7 +28,7 @@
                         <style>
                           <class name="error"/>
                         </style>
-                        <property name="label" translatable="yes">Hostname can only contain lowercase alphanumeric characters (a-z), periods and hyphens, up to a maximum of 64 characters.</property>
+                        <property name="label">hostname invalid placeholder</property>
                         <property name="opacity">0</property>
                       </object>
                     </child>

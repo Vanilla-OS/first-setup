@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-07 10:11+0100\n"
+"POT-Creation-Date: 2025-03-12 18:07+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,12 +142,6 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/hostname.ui:14
 msgid "Name your device"
-msgstr ""
-
-#: vanilla_first_setup/gtk/hostname.ui:31
-msgid ""
-"Hostname can only contain lowercase alphanumeric characters (a-z), periods "
-"and hyphens, up to a maximum of 64 characters."
 msgstr ""
 
 #: vanilla_first_setup/gtk/language.ui:10
@@ -306,6 +300,19 @@ msgstr ""
 msgid "Keyboard"
 msgstr ""
 
+#: vanilla_first_setup/views/hostname.py:74
+msgid "Hostname is too long"
+msgstr ""
+
+#: vanilla_first_setup/views/hostname.py:77
+msgid "Hostname must not end with a dash"
+msgstr ""
+
+#: vanilla_first_setup/views/hostname.py:84
+msgid ""
+"The hostname can only contain lowercase alphanumeric characters and dashes"
+msgstr ""
+
 #: vanilla_first_setup/views/user.py:118
 msgid "Username cannot be empty."
 msgstr ""
@@ -342,11 +349,11 @@ msgstr ""
 msgid "Hello {}!"
 msgstr ""
 
-#: vanilla_first_setup/views/progress.py:94
+#: vanilla_first_setup/views/progress.py:95
 msgid "Setting up the system"
 msgstr ""
 
-#: vanilla_first_setup/views/progress.py:97
+#: vanilla_first_setup/views/progress.py:99
 msgid "Installing"
 msgstr ""
 
