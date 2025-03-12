@@ -140,6 +140,10 @@
         {
             "name": "Warehouse",
             "id": "io.github.flattool.Warehouse"
+        },
+        {
+            "name": "Thunderbird",
+            "id": "org.mozilla.Thunderbird"
         }
     ],
     "browsers": [
