@@ -85,6 +85,11 @@
         {
             "name": "LibreOffice",
             "id": "org.libreoffice.LibreOffice"
+        },
+        {
+            "name": "OnlyOffice",
+            "id": "org.onlyoffice.desktopeditors",
+            "active": false
         }
     ],
     "utilities": [
