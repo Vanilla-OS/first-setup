@@ -4,7 +4,7 @@
 # EncryptedEasty <c.zullo08@gmail.com>, 2023.
 # EncryptedEasty <95353984+EncryptedEasty@users.noreply.github.com>, 2023.
 # Adrian <adrian06.dev@gmail.com>, 2023.
-# boblaspugna4f1ee5d391024b4c <boblaspugna@null.net>, 2024.
+# boblaspugna4f1ee5d391024b4c <boblaspugna@null.net>, 2024, 2025.
 # simo fiore <clgsilentfred@gmail.com>, 2024.
 # Guy Chronister <guylovesbritt@gmail.com>, 2024.
 # Edoardo Piccolotto <edoardo.piccolotto.services@proton.me>, 2024.
@@ -15,10 +15,10 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2025-03-05 21:37+0000\n"
-"Last-Translator: Federico G <fefefico69@gmail.com>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/it/>\n"
+"PO-Revision-Date: 2025-03-12 13:22+0000\n"
+"Last-Translator: boblaspugna4f1ee5d391024b4c <boblaspugna@null.net>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -43,9 +43,8 @@ msgid "Finished!"
 msgstr "Finito!"
 
 #: vanilla_first_setup/gtk/logout.ui:13
-#, fuzzy
 msgid "Login to your new user"
-msgstr "Eseguire come nuovo utente"
+msgstr "Accesso al tuo nuovo utente"
 
 #: vanilla_first_setup/gtk/logout.ui:23
 msgid "Login Now"
@@ -53,7 +52,7 @@ msgstr "Accedi ora"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Your user account is ready to use"
-msgstr "Il tuo account utente è pronto all'uso."
+msgstr "Il tuo account utente è pronto all'uso"
 
 #: vanilla_first_setup/gtk/done.ui:29
 msgid "Take a tour"
@@ -89,7 +88,6 @@ msgid "Open Settings"
 msgstr "Apri le impostazioni"
 
 #: vanilla_first_setup/gtk/theme.ui:13
-#, fuzzy
 msgid "Color Scheme"
 msgstr "Schema Colori"
 
@@ -136,7 +134,6 @@ msgid "Create User"
 msgstr "Creazione Utente"
 
 #: vanilla_first_setup/gtk/user.ui:24
-#, fuzzy
 msgid "Provide details for your user account"
 msgstr "Fornisci le informazioni per il tuo account utente"
 
@@ -154,16 +151,16 @@ msgid "Device Name"
 msgstr "Nome del dispositivo"
 
 #: vanilla_first_setup/gtk/hostname.ui:14
-#, fuzzy
-#| msgid "Provide your device name"
 msgid "Name your device"
-msgstr "Fornisci il nome del dispositivo"
+msgstr "Dai un nome al tuo dispositivo"
 
 #: vanilla_first_setup/gtk/hostname.ui:31
 msgid ""
 "Hostname can only contain lowercase alphanumeric characters (a-z), periods "
 "and hyphens, up to a maximum of 64 characters."
 msgstr ""
+"L'Hostname può contenere solo caratteri alfanumerici minuscoli (a-z), "
+"virgole e trattini, fino a un massimo di 64 caratteri."
 
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
@@ -220,9 +217,8 @@ msgstr "Applicazioni principali"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:31
 #: vanilla_first_setup/gtk/layout-applications.ui:56
-#, fuzzy
 msgid "Essential GNOME apps like Calendar or Document Viewer"
-msgstr "App GNOME essenziali come Calendar o Document Viewer."
+msgstr "App essenziali di GNOME come Calendar o Document Viewer."
 
 #: vanilla_first_setup/gtk/layout-applications.ui:45
 msgid "Customize Core Applications"
@@ -269,23 +265,20 @@ msgid "Apply"
 msgstr "Applica"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:30
-#, fuzzy
 msgid "Select the applications you want to install"
-msgstr "Scegli quali applicazioni installare."
+msgstr "Scegli le applicazioni che vuoi installare."
 
 #: vanilla_first_setup/window.py:74
 msgid "Setup failed: "
 msgstr "Installazione fallita: "
 
 #: vanilla_first_setup/window.py:79
-#, fuzzy
 msgid "Details"
-msgstr "Informazioni sul dispositivo"
+msgstr "Dettagli"
 
 #: vanilla_first_setup/window.py:85
-#, fuzzy
 msgid "Error log"
-msgstr "Errore!"
+msgstr "Registro degli errori"
 
 #: vanilla_first_setup/application.py:76
 msgid "Don't make any changes to the system."
@@ -294,16 +287,20 @@ msgstr "Non apportare modifiche al sistema."
 #: vanilla_first_setup/application.py:84
 msgid "Force the configure system mode, independant of group."
 msgstr ""
+"Forza la modalità di configurazione del sistema, indipendentemente dal "
+"gruppo."
 
 #: vanilla_first_setup/application.py:92
 msgid "Force the regular mode, independant of group."
-msgstr ""
+msgstr "Forza la modalità regolare, indipendentemente dal gruppo."
 
 #: vanilla_first_setup/application.py:100
 msgid ""
 "Use the original equipment manufacturer mode with language, keyboard and "
 "timezone selection."
 msgstr ""
+"Utilizza la modalità del produttore di apparecchiature originali per "
+"selezionare: lingua, tastiera e fuso orario."
 
 #: vanilla_first_setup/views/conn_check.py:72
 msgid "No Internet Connection!"
