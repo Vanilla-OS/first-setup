@@ -22,6 +22,7 @@ from gi.repository import Gtk, Adw
 _ = __builtins__["_"]
 
 import vanilla_first_setup.core.backend as backend
+import vanilla_first_setup.core.applications as applications
 
 @Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/applications-dialog.ui")
 class VanillaApplicationsDialog(Adw.Window):
@@ -72,6 +73,7 @@ class VanillaApplicationsDialog(Adw.Window):
             app_icon = Gtk.Image.new_from_icon_name(app["id"])
             app_icon.set_icon_size(Gtk.IconSize.LARGE)
             app_icon.add_css_class("lowres-icon")
+            applications.set_app_icon_from_id_async(app_icon, app["id"])
 
             apps_action_row.add_prefix(app_icon)
 
