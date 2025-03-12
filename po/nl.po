@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-05 02:32+0100\n"
+"POT-Creation-Date: 2025-03-07 10:11+0100\n"
 "PO-Revision-Date: 2024-07-27 17:09+0000\n"
 "Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/vanilla-os/first-"
@@ -149,13 +149,15 @@ msgid "Device Name"
 msgstr "Apparaat­naam"
 
 #: vanilla_first_setup/gtk/hostname.ui:14
-msgid "Provide your device name"
+#, fuzzy
+#| msgid "Provide your device name"
+msgid "Name your device"
 msgstr "Geef uw apparaat­naam op"
 
 #: vanilla_first_setup/gtk/hostname.ui:31
 msgid ""
-"Hostname can only contain up to 64 English lowercase letters with hyphens in-"
-"between."
+"Hostname can only contain lowercase alphanumeric characters (a-z), periods "
+"and hyphens, up to a maximum of 64 characters."
 msgstr ""
 
 #: vanilla_first_setup/gtk/language.ui:10

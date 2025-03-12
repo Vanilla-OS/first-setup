@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-05 02:32+0100\n"
+"POT-Creation-Date: 2025-03-07 10:11+0100\n"
 "PO-Revision-Date: 2025-03-07 12:33+0000\n"
 "Last-Translator: Andi Chandler <andi@gowling.com>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
@@ -142,16 +142,16 @@ msgid "Device Name"
 msgstr "Device Name"
 
 #: vanilla_first_setup/gtk/hostname.ui:14
-msgid "Provide your device name"
+#, fuzzy
+#| msgid "Provide your device name"
+msgid "Name your device"
 msgstr "Provide your device name"
 
 #: vanilla_first_setup/gtk/hostname.ui:31
 msgid ""
-"Hostname can only contain up to 64 English lowercase letters with hyphens in-"
-"between."
+"Hostname can only contain lowercase alphanumeric characters (a-z), periods "
+"and hyphens, up to a maximum of 64 characters."
 msgstr ""
-"Hostname can only contain up to 64 English lowercase letters with hyphens in-"
-"between."
 
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
@@ -394,6 +394,13 @@ msgstr "Indian Ocean"
 #: vanilla_first_setup/core/timezones.py:101
 msgid "Arctic"
 msgstr "Arctic"
+
+#~ msgid ""
+#~ "Hostname can only contain up to 64 English lowercase letters with hyphens "
+#~ "in-between."
+#~ msgstr ""
+#~ "Hostname can only contain up to 64 English lowercase letters with hyphens "
+#~ "in-between."
 
 #~ msgid "Tweak your Vanilla OS installation."
 #~ msgstr "Tweak your Vanilla OS installation."
