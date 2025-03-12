@@ -128,3 +128,19 @@ To update the .pot file with newly added translation strings, run:
 ```bash
 meson compile -C build vanilla-first-setup-pot
 ```
+
+## Adjust for Custom Image
+
+### Adjusting the scripts
+
+The scripts which are used to modify the system can be found in `/usr/share/org.vanillaos.FirstSetup/vanilla_first_setup/scripts/`.
+
+Please adjust (overwrite) them to your needs in your image.
+
+### Non-GNOME desktops
+
+If you are using a different desktop than GNOME, you will have to adjust `/usr/share/xsessions/firstsetup.desktop` and `/usr/share/wayland-sessions/firstsetup.desktop`.
+
+This session is only used to create a new user account. It should be a restricted shell to prevent the user from making changes to the system that will be lost when logging into their own user account.
+
+If your Desktop doesn't offer this feature, just copy the session of your desktop to firstsetup.desktop.
