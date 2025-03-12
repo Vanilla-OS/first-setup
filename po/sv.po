@@ -9,10 +9,10 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2025-03-06 03:46+0000\n"
+"PO-Revision-Date: 2025-03-10 12:22+0000\n"
 "Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
-"Language-Team: Swedish <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/sv/>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -144,16 +144,16 @@ msgid "Device Name"
 msgstr "Enhetsnamn"
 
 #: vanilla_first_setup/gtk/hostname.ui:14
-#, fuzzy
-#| msgid "Provide your device name"
 msgid "Name your device"
-msgstr "Ange ditt enhetsnamn"
+msgstr "Namnge din enhet"
 
 #: vanilla_first_setup/gtk/hostname.ui:31
 msgid ""
 "Hostname can only contain lowercase alphanumeric characters (a-z), periods "
 "and hyphens, up to a maximum of 64 characters."
 msgstr ""
+"Värdnamn kan endast innehålla alfanumeriska gemener (a-z), punkter och "
+"bindestreck, upp till högst 64 tecken."
 
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
