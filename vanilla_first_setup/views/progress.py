@@ -16,6 +16,7 @@
 
 import threading
 import vanilla_first_setup.core.backend as backend
+import vanilla_first_setup.core.applications as applications
 
 from gi.repository import Gtk, Adw, GLib
 
@@ -94,6 +95,7 @@ class VanillaProgress(Adw.Bin):
             title = _("Setting up the system")
         elif id == "install_flatpak":
             icon = Gtk.Image.new_from_icon_name(info["app_id"])
+            applications.set_app_icon_from_id_async(icon, info["app_id"])
             title = _("Installing") + " " + info["app_name"]
     
         row = Adw.ActionRow()

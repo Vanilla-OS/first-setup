@@ -29,47 +29,6 @@
   </gresource>
   <gresource prefix="/org/vanillaos/FirstSetup/icons/symbolic/apps/">
     <file preprocess="xml-stripblanks" alias="org.gnome.Software-symbolic.svg">assets/symbolic/apps/org.gnome.Software-symbolic.svg</file>
-
-    <file preprocess="xml-stripblanks" alias="org.gnome.Decibels.svg">assets/bundle-app-icons/org.gnome.Decibels.svg</file>
-    <file alias="com.github.flxzt.rnote.png">assets/bundle-app-icons/com.github.flxzt.rnote.png</file>
-    <file alias="com.github.tchx84.Flatseal.png">assets/bundle-app-icons/com.github.tchx84.Flatseal.png</file>
-    <file alias="com.usebottles.bottles.png">assets/bundle-app-icons/com.usebottles.bottles.png</file>
-    <file alias="de.haeckerfelix.Shortwave.png">assets/bundle-app-icons/de.haeckerfelix.Shortwave.png</file>
-    <file alias="fr.romainvigier.MetadataCleaner.png">assets/bundle-app-icons/fr.romainvigier.MetadataCleaner.png</file>
-    <file alias="org.gnome.baobab.png">assets/bundle-app-icons/org.gnome.baobab.png</file>
-    <file alias="org.gnome.Boxes.png">assets/bundle-app-icons/org.gnome.Boxes.png</file>
-    <file alias="org.gnome.Calculator.png">assets/bundle-app-icons/org.gnome.Calculator.png</file>
-    <file alias="org.gnome.Calendar.png">assets/bundle-app-icons/org.gnome.Calendar.png</file>
-    <file alias="org.gnome.Characters.png">assets/bundle-app-icons/org.gnome.Characters.png</file>
-    <file alias="org.gnome.clocks.png">assets/bundle-app-icons/org.gnome.clocks.png</file>
-    <file alias="org.gnome.Connections.png">assets/bundle-app-icons/org.gnome.Connections.png</file>
-    <file alias="org.gnome.Contacts.png">assets/bundle-app-icons/org.gnome.Contacts.png</file>
-    <file alias="org.gnome.Epiphany.png">assets/bundle-app-icons/org.gnome.Epiphany.png</file>
-    <file alias="org.gnome.Evince.png">assets/bundle-app-icons/org.gnome.Evince.png</file>
-    <file alias="org.gnome.FileRoller.png">assets/bundle-app-icons/org.gnome.FileRoller.png</file>
-    <file alias="org.gnome.font-viewer.png">assets/bundle-app-icons/org.gnome.font-viewer.png</file>
-    <file alias="org.gnome.Logs.png">assets/bundle-app-icons/org.gnome.Logs.png</file>
-    <file alias="org.gnome.Loupe.png">assets/bundle-app-icons/org.gnome.Loupe.png</file>
-    <file alias="org.gnome.Maps.png">assets/bundle-app-icons/org.gnome.Maps.png</file>
-    <file alias="org.gnome.Photos.png">assets/bundle-app-icons/org.gnome.Photos.png</file>
-    <file alias="org.gnome.SimpleScan.png">assets/bundle-app-icons/org.gnome.SimpleScan.png</file>
-    <file alias="org.gnome.Snapshot.png">assets/bundle-app-icons/org.gnome.Snapshot.png</file>
-    <file alias="org.gnome.SoundRecorder.png">assets/bundle-app-icons/org.gnome.SoundRecorder.png</file>
-    <file alias="org.gnome.TextEditor.png">assets/bundle-app-icons/org.gnome.TextEditor.png</file>
-    <file alias="org.gnome.Totem.png">assets/bundle-app-icons/org.gnome.Totem.png</file>
-    <file alias="io.github.flattool.Warehouse.png">assets/bundle-app-icons/io.github.flattool.Warehouse.png</file>
-    <file alias="org.gnome.Weather.png">assets/bundle-app-icons/org.gnome.Weather.png</file>
-    <file alias="com.mattjakeman.ExtensionManager.png">assets/bundle-app-icons/com.mattjakeman.ExtensionManager.png</file>
-    <file alias="org.libreoffice.LibreOffice.png">assets/bundle-app-icons/org.libreoffice.LibreOffice.png</file>
-    <file alias="net.lutris.Lutris.png">assets/bundle-app-icons/net.lutris.Lutris.png</file>
-    <file alias="com.heroicgameslauncher.hgl.png">assets/bundle-app-icons/com.heroicgameslauncher.hgl.png</file>
-    <file alias="org.gnome.DejaDup.png">assets/bundle-app-icons/org.gnome.DejaDup.png</file>
-    <file alias="com.brave.Browser.png">assets/bundle-app-icons/com.brave.Browser.png</file>
-    <file alias="com.google.Chrome.png">assets/bundle-app-icons/com.google.Chrome.png</file>
-    <file alias="org.chromium.Chromium.png">assets/bundle-app-icons/org.chromium.Chromium.png</file>
-    <file alias="org.mozilla.firefox.png">assets/bundle-app-icons/org.mozilla.firefox.png</file>
-    <file alias="com.microsoft.Edge.png">assets/bundle-app-icons/com.microsoft.Edge.png</file>
-    <file alias="com.vivaldi.Vivaldi.png">assets/bundle-app-icons/com.vivaldi.Vivaldi.png</file>
   </gresource>
   <gresource prefix="/org/vanillaos/FirstSetup/icons/scalable/actions/">
     <file preprocess="xml-stripblanks" alias="emblem-default-symbolic.svg">assets/symbolic/actions/emblem-default-symbolic.svg</file>
