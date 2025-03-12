@@ -163,6 +163,21 @@
             "active": false
         },
         {
+            "name": "Floorp",
+            "id": "one.ablaze.floorp",
+            "active": false
+        },
+        {
+            "name": "LibreWolf",
+            "id": "io.gitlab.librewolf-community",
+            "active": false
+        },
+        {
+            "name": "Zen",
+            "id": "app.zen_browser.zen",
+            "active": false
+        },
+        {
             "name": "Microsoft Edge",
             "id": "com.microsoft.Edge",
             "active": false
