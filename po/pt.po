@@ -9,13 +9,14 @@
 # Wagner Costa Gottschald <wagnercostag@gmail.com>, 2023.
 # Vinícius <vinicius.cgobbi2004@gmail.com>, 2024.
 # Matheus Silverio Silva <drchaos820@gmail.com>, 2024.
+# Fabio Dev <fabiodev1123@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2024-03-23 18:27+0000\n"
-"Last-Translator: ssantos <ssantos@web.de>\n"
+"PO-Revision-Date: 2025-03-21 08:17+0000\n"
+"Last-Translator: Fabio Dev <fabiodev1123@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/pt/>\n"
 "Language: pt\n"
@@ -23,11 +24,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
-msgstr "Primeira configuração do Vanilla OS"
+msgstr "Configuração Inicial do Vanilla OS"
 
 #: vanilla_first_setup/gtk/window.ui:25
 msgid "Back"
@@ -42,52 +43,48 @@ msgid "Finished!"
 msgstr "Terminado!"
 
 #: vanilla_first_setup/gtk/logout.ui:13
-#, fuzzy
 msgid "Login to your new user"
-msgstr "Executar como um novo usuário"
+msgstr "Faz login com o teu novo utilizador"
 
 #: vanilla_first_setup/gtk/logout.ui:23
 msgid "Login Now"
-msgstr ""
+msgstr "Faça login agora"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Your user account is ready to use"
-msgstr "O seu dispositivo está pronto a ser utilizado."
+msgstr "O teu dispositivo está pronto a ser utilizado"
 
 #: vanilla_first_setup/gtk/done.ui:29
 msgid "Take a tour"
-msgstr ""
+msgstr "Faz um tour"
 
 #: vanilla_first_setup/gtk/done.ui:40
 msgid "Exit"
-msgstr ""
+msgstr "sair"
 
 #: vanilla_first_setup/gtk/progress.ui:9
 msgid "Progress"
-msgstr ""
+msgstr "Progresso"
 
 #: vanilla_first_setup/gtk/progress.ui:10
 msgid "Some steps still take some time"
-msgstr ""
+msgstr "Alguns passos podem levar algum tempo"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
 msgstr "Mostrar informação"
 
 #: vanilla_first_setup/gtk/conn-check.ui:12
-#, fuzzy
 msgid "Checking Connection"
-msgstr "A verificar ligação…"
+msgstr "A verificar ligação"
 
 #: vanilla_first_setup/gtk/conn-check.ui:13
 msgid "Please wait until the connection check is done"
-msgstr "Aguarde até a verificação da ligação estar concluída"
+msgstr "Aguarda que a verificação da ligacao seja concluída"
 
 #: vanilla_first_setup/gtk/conn-check.ui:16
-#, fuzzy
 msgid "Open Settings"
-msgstr "Abrir Definições de Proxy..."
+msgstr "Abrir Definições"
 
 #: vanilla_first_setup/gtk/theme.ui:13
 msgid "Color Scheme"
@@ -95,52 +92,49 @@ msgstr "Esquema de cores"
 
 #: vanilla_first_setup/gtk/theme.ui:14
 msgid "Choose a color scheme for your system"
-msgstr "Escolha um esquema de cores para o seu sistema"
+msgstr "Escolhe um esquema de cores para o teu sistema"
 
 #: vanilla_first_setup/gtk/theme.ui:41
 msgid "Light Mode"
-msgstr ""
+msgstr "Modo Claro"
 
 #: vanilla_first_setup/gtk/theme.ui:79
 msgid "Light"
-msgstr ""
+msgstr "Claro"
 
 #: vanilla_first_setup/gtk/theme.ui:88
-#, fuzzy
 msgid "Dark Mode"
-msgstr "Escuro"
+msgstr "Modo Escuro"
 
 #: vanilla_first_setup/gtk/theme.ui:127
 msgid "Dark"
 msgstr "Escuro"
 
 #: vanilla_first_setup/gtk/welcome.ui:39
-#, fuzzy
 msgid "Make your choices, this wizard will take care of everything"
-msgstr "Faça as suas escolhas, este assistente cuidará de tudo."
+msgstr "Faz as tuas escolhas, este assistente cuidará de tudo"
 
 #: vanilla_first_setup/gtk/welcome.ui:52
 #: vanilla_first_setup/gtk/welcome-user.ui:21
 msgid "Start"
-msgstr ""
+msgstr "Iniciar"
 
 #: vanilla_first_setup/gtk/welcome.ui:62
 #: vanilla_first_setup/gtk/welcome-user.ui:31
 msgid "Accessibility"
-msgstr ""
+msgstr "Acessibilidade"
 
 #: vanilla_first_setup/gtk/welcome-user.ui:13
-#, fuzzy
 msgid "Let's set up your user account"
-msgstr "Forneça detalhes para a sua conta de usuário"
+msgstr "Fornece detalhes para a tua conta de utilizador"
 
 #: vanilla_first_setup/gtk/user.ui:23
 msgid "Create User"
-msgstr "Criar usuário"
+msgstr "Criar Utilizador"
 
 #: vanilla_first_setup/gtk/user.ui:24
 msgid "Provide details for your user account"
-msgstr "Forneça detalhes para a sua conta de usuário"
+msgstr "Forneça detalhes para a sua conta de utlizador"
 
 #: vanilla_first_setup/gtk/user.ui:31
 msgid "Name"
@@ -148,7 +142,7 @@ msgstr "Nome"
 
 #: vanilla_first_setup/gtk/user.ui:38
 msgid "Username"
-msgstr "Nome de usuário"
+msgstr "Nome de utilizador"
 
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
@@ -156,126 +150,128 @@ msgid "Device Name"
 msgstr "Nome do Dispositivo"
 
 #: vanilla_first_setup/gtk/hostname.ui:14
-#, fuzzy
-#| msgid "Provide your device name"
 msgid "Name your device"
-msgstr "Forneça o nome do seu aparelho"
+msgstr "Dá um nome ao teu dispositivo"
 
 #: vanilla_first_setup/gtk/hostname.ui:31
 msgid ""
 "Hostname can only contain lowercase alphanumeric characters (a-z), periods "
 "and hyphens, up to a maximum of 64 characters."
 msgstr ""
+"O nome do host pode conter apenas caracteres alfanuméricos minúsculos (a-z), "
+"pontos e hifens, até um máximo de 64 caracteres."
 
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
 msgid "Language"
-msgstr ""
+msgstr "Idioma"
 
 #: vanilla_first_setup/gtk/language.ui:11
 msgid "Select your language"
-msgstr ""
+msgstr "Seleciona o teu idioma"
 
 #: vanilla_first_setup/gtk/location.ui:15
 msgid "Search keyboard layouts"
-msgstr ""
+msgstr "Procurar layouts de teclado"
 
 #: vanilla_first_setup/gtk/location.ui:24
 msgid "The search results are incomplete. Try refining your query."
 msgstr ""
+"Os resultados da pesquisa estão incompletos. Tente redefinir a sua consulta."
 
 #: vanilla_first_setup/gtk/timezone.ui:11
 msgid "Date & Time"
-msgstr ""
+msgstr "Data e Hora"
 
 #: vanilla_first_setup/gtk/timezone.ui:12
 msgid "Select your preferred timezone"
-msgstr ""
+msgstr "Selecione o seu fuso horário preferido"
 
 #: vanilla_first_setup/gtk/timezone.ui:29
 msgid "Current timezone:"
-msgstr ""
+msgstr "Fuso horário atual:"
 
 #: vanilla_first_setup/gtk/timezone.ui:34
 msgid "not set"
-msgstr ""
+msgstr "não definido"
 
 #: vanilla_first_setup/gtk/keyboard.ui:10
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "Layout do Teclado"
 
 #: vanilla_first_setup/gtk/keyboard.ui:11
 msgid "Select all your preferred keyboard layouts"
-msgstr ""
+msgstr "Selecione todos os seus layouts de teclado preferidos"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:15
 msgid "Applications"
-msgstr ""
+msgstr "Aplicações"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:16
 msgid "Choose which applications to install."
-msgstr ""
+msgstr "Escolha quais aplicações instalar."
 
 #: vanilla_first_setup/gtk/layout-applications.ui:30
 msgid "Core Applications"
-msgstr ""
+msgstr "Aplicações Principais"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:31
 #: vanilla_first_setup/gtk/layout-applications.ui:56
 msgid "Essential GNOME apps like Calendar or Document Viewer"
 msgstr ""
+"Aplicações essenciais do GNOME, como Calendário ou Visualizador de Documentos"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:45
 msgid "Customize Core Applications"
-msgstr ""
+msgstr "Personalize aplicações principais"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:55
 msgid "Browsers"
-msgstr ""
+msgstr "Navegadores"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:70
 msgid "Customize Browsers"
-msgstr ""
+msgstr "Personalize os Navegadores"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:80
 msgid "Common Utilities"
-msgstr ""
+msgstr "Utilitários Comuns"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:81
 msgid "Useful utilities to enhance your desktop experience"
-msgstr ""
+msgstr "Utilitários úteis para melhorar sua experiência na área de trabalho"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:95
 msgid "Customize Utilities"
-msgstr ""
+msgstr "Personalizar Utilitários"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:105
 msgid "Office"
-msgstr ""
+msgstr "Escritório"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:106
 msgid "The LibreOffice suite"
-msgstr ""
+msgstr "O pacote LibreOffice"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:120
 msgid "Customize Office Applications"
-msgstr ""
+msgstr "Personalize Aplicações do Office"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:8
 msgid "Select Applications"
-msgstr ""
+msgstr "Selecionar Aplicações"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:18
 msgid "Apply"
-msgstr ""
+msgstr "Aplicar"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:30
 msgid "Select the applications you want to install"
-msgstr ""
+msgstr "Selecione as aplicações que deseja instalar"
 
 #: vanilla_first_setup/window.py:74
 msgid "Setup failed: "
-msgstr ""
+msgstr "Falha na configuração: "
 
 #: vanilla_first_setup/window.py:79
 #, fuzzy
@@ -289,21 +285,23 @@ msgstr "Erro!"
 
 #: vanilla_first_setup/application.py:76
 msgid "Don't make any changes to the system."
-msgstr ""
+msgstr "Não faça nenhuma alteração no sistema."
 
 #: vanilla_first_setup/application.py:84
 msgid "Force the configure system mode, independant of group."
-msgstr ""
+msgstr "Força o modo de configuração do sistema, independente do grupo."
 
 #: vanilla_first_setup/application.py:92
 msgid "Force the regular mode, independant of group."
-msgstr ""
+msgstr "Força o modo regular, independente do grupo."
 
 #: vanilla_first_setup/application.py:100
 msgid ""
 "Use the original equipment manufacturer mode with language, keyboard and "
 "timezone selection."
 msgstr ""
+"Use o modo do fabricante do equipamento original com seleção de idioma, "
+"teclado e fuso horário."
 
 #: vanilla_first_setup/views/conn_check.py:72
 msgid "No Internet Connection!"
@@ -314,9 +312,8 @@ msgid "First Setup requires an active internet connection"
 msgstr "A primeira configuração requer uma ligação ativa à Internet"
 
 #: vanilla_first_setup/views/conn_check.py:79
-#, fuzzy
 msgid "Connection available"
-msgstr "Falha na Conexão"
+msgstr "Falha na Ligação"
 
 #: vanilla_first_setup/views/conn_check.py:80
 #, fuzzy
@@ -325,93 +322,93 @@ msgstr "Sem ligação à Internet!"
 
 #: vanilla_first_setup/views/keyboard.py:37
 msgid "Keyboard"
-msgstr ""
+msgstr "Teclado"
 
 #: vanilla_first_setup/views/user.py:118
 msgid "Username cannot be empty."
-msgstr ""
+msgstr "O nome de utilizador não pode estar vazio."
 
 #: vanilla_first_setup/views/user.py:121
 msgid "Username cannot be longer than 32 characters."
-msgstr ""
+msgstr "O nome de utilizador não pode ter mais de 32 caracteres."
 
 #: vanilla_first_setup/views/user.py:124
 msgid "Username cannot contain special characters or uppercase letters."
 msgstr ""
+"O nome de utilizador não pode conter caracteres especiais ou letras "
+"maiúsculas."
 
 #: vanilla_first_setup/views/user.py:128
-#, fuzzy
 msgid "This username is already in use."
-msgstr "O seu dispositivo está pronto a ser utilizado."
+msgstr "O seu dispositivo está pronto para ser utilizado."
 
 #: vanilla_first_setup/views/locations.py:220
 msgid "Region"
-msgstr ""
+msgstr "Região"
 
 #: vanilla_first_setup/views/locations.py:238
 msgid "Country"
-msgstr ""
+msgstr "País"
 
 #: vanilla_first_setup/views/locations.py:327
 msgid "Search results"
-msgstr ""
+msgstr "Resultados da pesquisa"
 
 #: vanilla_first_setup/views/timezone.py:39
 msgid "Timezone"
-msgstr ""
+msgstr "Fuso horário"
 
 #: vanilla_first_setup/views/welcome_user.py:45
 msgid "Hello {}!"
-msgstr ""
+msgstr "Olá {}!"
 
 #: vanilla_first_setup/views/progress.py:94
 msgid "Setting up the system"
-msgstr ""
+msgstr "Configurando o sistema"
 
 #: vanilla_first_setup/views/progress.py:97
-#, fuzzy
 msgid "Installing"
-msgstr "Instalando..."
+msgstr "A Instalar"
 
 #: vanilla_first_setup/core/timezones.py:92
 msgid "Europe"
-msgstr ""
+msgstr "Europa"
 
 #: vanilla_first_setup/core/timezones.py:93
 msgid "Asia"
-msgstr ""
+msgstr "Ásia"
 
 #: vanilla_first_setup/core/timezones.py:94
 msgid "America"
-msgstr ""
+msgstr "América"
 
 #: vanilla_first_setup/core/timezones.py:95
 msgid "Africa"
-msgstr ""
+msgstr "África"
 
 #: vanilla_first_setup/core/timezones.py:96
 msgid "Antarctica"
-msgstr ""
+msgstr "Antártica"
 
 #: vanilla_first_setup/core/timezones.py:97
 msgid "Pacific Ocean"
-msgstr ""
+msgstr "Oceano Pacífico"
 
 #: vanilla_first_setup/core/timezones.py:98
 msgid "Australia"
-msgstr ""
+msgstr "Austrália"
 
 #: vanilla_first_setup/core/timezones.py:99
 msgid "Atlantic Ocean"
-msgstr ""
+msgstr "Oceano Atlântico"
 
 #: vanilla_first_setup/core/timezones.py:100
 msgid "Indian Ocean"
-msgstr ""
+msgstr "Oceano Índico"
 
 #: vanilla_first_setup/core/timezones.py:101
 msgid "Arctic"
-msgstr ""
+msgstr "Ártico"
 
 #~ msgid "Tweak your Vanilla OS installation."
 #~ msgstr "Personalizar a sua instalação do Vanilla OS."
