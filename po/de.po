@@ -13,21 +13,22 @@
 # Neo <neobihli@gmail.com>, 2024.
 # Matthias Langwieser <langi4888@gmail.com>, 2024.
 # Jonas Haberkorn <j.bohne.13@gmail.com>, 2025.
+# Max Enrico Müller <kontakt.maxmueller@outlook.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2025-03-05 21:37+0000\n"
-"Last-Translator: Jonas Haberkorn <j.bohne.13@gmail.com>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/de/>\n"
+"PO-Revision-Date: 2025-03-16 09:00+0000\n"
+"Last-Translator: Max Enrico Müller <kontakt.maxmueller@outlook.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.3-dev\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -71,7 +72,7 @@ msgstr "Fortschritt"
 
 #: vanilla_first_setup/gtk/progress.ui:10
 msgid "Some steps still take some time"
-msgstr "Einige Schritte brauchen noch Zeit"
+msgstr "Einige Schritte dauern noch"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
@@ -153,8 +154,6 @@ msgid "Device Name"
 msgstr "Gerätename"
 
 #: vanilla_first_setup/gtk/hostname.ui:14
-#, fuzzy
-#| msgid "Provide your device name"
 msgid "Name your device"
 msgstr "Vergeben Sie einen Gerätenamen"
 
@@ -163,6 +162,8 @@ msgid ""
 "Hostname can only contain lowercase alphanumeric characters (a-z), periods "
 "and hyphens, up to a maximum of 64 characters."
 msgstr ""
+"Der Hostname darf nur alphanumerische Kleinbuchstaben (a-z), Punkte und "
+"Bindestriche enthalten, maximal 64 Zeichen."
 
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
