@@ -122,6 +122,10 @@
             "id": "com.github.tchx84.Flatseal"
         },
         {
+            "name": "Refine",
+            "id": "page.tesk.Refine"
+        },
+        {
             "name": "Metadata Cleaner",
             "id": "fr.romainvigier.MetadataCleaner"
         },
