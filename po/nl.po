@@ -1,22 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
-# Philip Goto <philip.goto@gmail.com>, 2023, 2024.
+# Philip Goto <philip.goto@gmail.com>, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2024-07-27 17:09+0000\n"
+"PO-Revision-Date: 2025-03-24 17:59+0000\n"
 "Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
-"Language-Team: Dutch <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/nl/>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -58,7 +58,7 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/progress.ui:9
 msgid "Progress"
-msgstr ""
+msgstr "Voortgang"
 
 #: vanilla_first_setup/gtk/progress.ui:10
 msgid "Some steps still take some time"
@@ -96,7 +96,7 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/theme.ui:79
 msgid "Light"
-msgstr ""
+msgstr "Licht"
 
 #: vanilla_first_setup/gtk/theme.ui:88
 #, fuzzy
@@ -120,7 +120,7 @@ msgstr ""
 #: vanilla_first_setup/gtk/welcome.ui:62
 #: vanilla_first_setup/gtk/welcome-user.ui:31
 msgid "Accessibility"
-msgstr ""
+msgstr "Toegankelĳkheid"
 
 #: vanilla_first_setup/gtk/welcome-user.ui:13
 #, fuzzy
@@ -163,7 +163,7 @@ msgstr ""
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
 msgid "Language"
-msgstr ""
+msgstr "Taal"
 
 #: vanilla_first_setup/gtk/language.ui:11
 msgid "Select your language"
@@ -203,7 +203,7 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/layout-applications.ui:15
 msgid "Applications"
-msgstr ""
+msgstr "Apps"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:16
 msgid "Choose which applications to install."
@@ -224,7 +224,7 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/layout-applications.ui:55
 msgid "Browsers"
-msgstr ""
+msgstr "Browsers"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:70
 msgid "Customize Browsers"
@@ -260,7 +260,7 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:18
 msgid "Apply"
-msgstr ""
+msgstr "Toe­passen"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:30
 msgid "Select the applications you want to install"
@@ -271,9 +271,8 @@ msgid "Setup failed: "
 msgstr ""
 
 #: vanilla_first_setup/window.py:79
-#, fuzzy
 msgid "Details"
-msgstr "Apparaatdetails"
+msgstr "Details"
 
 #: vanilla_first_setup/window.py:85
 #, fuzzy
@@ -318,7 +317,7 @@ msgstr "Geen internet­verbinding!"
 
 #: vanilla_first_setup/views/keyboard.py:37
 msgid "Keyboard"
-msgstr ""
+msgstr "Toetsen­bord"
 
 #: vanilla_first_setup/views/user.py:118
 msgid "Username cannot be empty."
@@ -339,11 +338,11 @@ msgstr "Uw apparaat is klaar om gebruikt te worden."
 
 #: vanilla_first_setup/views/locations.py:220
 msgid "Region"
-msgstr ""
+msgstr "Regio"
 
 #: vanilla_first_setup/views/locations.py:238
 msgid "Country"
-msgstr ""
+msgstr "Land"
 
 #: vanilla_first_setup/views/locations.py:327
 msgid "Search results"
@@ -351,7 +350,7 @@ msgstr ""
 
 #: vanilla_first_setup/views/timezone.py:39
 msgid "Timezone"
-msgstr ""
+msgstr "Tĳd­zone"
 
 #: vanilla_first_setup/views/welcome_user.py:45
 msgid "Hello {}!"
@@ -362,17 +361,16 @@ msgid "Setting up the system"
 msgstr ""
 
 #: vanilla_first_setup/views/progress.py:97
-#, fuzzy
 msgid "Installing"
-msgstr "Installeren…"
+msgstr "Bezig met installeren"
 
 #: vanilla_first_setup/core/timezones.py:92
 msgid "Europe"
-msgstr ""
+msgstr "Europa"
 
 #: vanilla_first_setup/core/timezones.py:93
 msgid "Asia"
-msgstr ""
+msgstr "Azië"
 
 #: vanilla_first_setup/core/timezones.py:94
 msgid "America"

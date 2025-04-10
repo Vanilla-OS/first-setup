@@ -3,22 +3,22 @@
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Automatically generated, 2022.
 #
-# lakejason0 <sunliyuan200402@outlook.com>, 2023, 2024.
+# lakejason0 <sunliyuan200402@outlook.com>, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2024-01-25 16:01+0000\n"
+"PO-Revision-Date: 2025-03-18 01:40+0000\n"
 "Last-Translator: lakejason0 <sunliyuan200402@outlook.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"vanilla-os/first-setup/zh_Hans/>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/vanilla-os/first-setup/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -37,13 +37,12 @@ msgid "Finished!"
 msgstr "大功告成！"
 
 #: vanilla_first_setup/gtk/logout.ui:13
-#, fuzzy
 msgid "Login to your new user"
-msgstr "以新用户身份运行"
+msgstr "登录到您的新用户"
 
 #: vanilla_first_setup/gtk/logout.ui:23
 msgid "Login Now"
-msgstr ""
+msgstr "立即登录"
 
 #: vanilla_first_setup/gtk/done.ui:13
 #, fuzzy
@@ -56,7 +55,7 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/done.ui:40
 msgid "Exit"
-msgstr ""
+msgstr "退出"
 
 #: vanilla_first_setup/gtk/progress.ui:9
 msgid "Progress"
@@ -71,18 +70,16 @@ msgid "Showing Information"
 msgstr "显示信息"
 
 #: vanilla_first_setup/gtk/conn-check.ui:12
-#, fuzzy
 msgid "Checking Connection"
-msgstr "正在检查连接…"
+msgstr "正在检查连接"
 
 #: vanilla_first_setup/gtk/conn-check.ui:13
 msgid "Please wait until the connection check is done"
 msgstr "请等待连接检查完成"
 
 #: vanilla_first_setup/gtk/conn-check.ui:16
-#, fuzzy
 msgid "Open Settings"
-msgstr "打开代理设置…"
+msgstr "打开设置"
 
 #: vanilla_first_setup/gtk/theme.ui:13
 msgid "Color Scheme"
@@ -94,40 +91,37 @@ msgstr "为您的系统选择配色方案"
 
 #: vanilla_first_setup/gtk/theme.ui:41
 msgid "Light Mode"
-msgstr ""
+msgstr "浅色模式"
 
 #: vanilla_first_setup/gtk/theme.ui:79
 msgid "Light"
-msgstr ""
+msgstr "浅色"
 
 #: vanilla_first_setup/gtk/theme.ui:88
-#, fuzzy
 msgid "Dark Mode"
-msgstr "暗色"
+msgstr "暗色模式"
 
 #: vanilla_first_setup/gtk/theme.ui:127
 msgid "Dark"
 msgstr "暗色"
 
 #: vanilla_first_setup/gtk/welcome.ui:39
-#, fuzzy
 msgid "Make your choices, this wizard will take care of everything"
-msgstr "只需做出选择，向导程序会帮您完成设置任务。"
+msgstr "只需做出选择，向导程序会帮您完成设置任务"
 
 #: vanilla_first_setup/gtk/welcome.ui:52
 #: vanilla_first_setup/gtk/welcome-user.ui:21
 msgid "Start"
-msgstr ""
+msgstr "开始"
 
 #: vanilla_first_setup/gtk/welcome.ui:62
 #: vanilla_first_setup/gtk/welcome-user.ui:31
 msgid "Accessibility"
-msgstr ""
+msgstr "辅助功能"
 
 #: vanilla_first_setup/gtk/welcome-user.ui:13
-#, fuzzy
 msgid "Let's set up your user account"
-msgstr "提供您用户账户的详细信息"
+msgstr "设置您的用户账户"
 
 #: vanilla_first_setup/gtk/user.ui:23
 msgid "Create User"
@@ -151,10 +145,8 @@ msgid "Device Name"
 msgstr "设备名称"
 
 #: vanilla_first_setup/gtk/hostname.ui:14
-#, fuzzy
-#| msgid "Provide your device name"
 msgid "Name your device"
-msgstr "提供您的设备名称"
+msgstr "为您的设备起名"
 
 #: vanilla_first_setup/gtk/hostname.ui:31
 msgid ""
@@ -165,15 +157,15 @@ msgstr ""
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
 msgid "Language"
-msgstr ""
+msgstr "语言"
 
 #: vanilla_first_setup/gtk/language.ui:11
 msgid "Select your language"
-msgstr ""
+msgstr "选择您的语言"
 
 #: vanilla_first_setup/gtk/location.ui:15
 msgid "Search keyboard layouts"
-msgstr ""
+msgstr "搜索键盘布局"
 
 #: vanilla_first_setup/gtk/location.ui:24
 msgid "The search results are incomplete. Try refining your query."
@@ -181,7 +173,7 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/timezone.ui:11
 msgid "Date & Time"
-msgstr ""
+msgstr "日期与时间"
 
 #: vanilla_first_setup/gtk/timezone.ui:12
 msgid "Select your preferred timezone"
@@ -273,14 +265,12 @@ msgid "Setup failed: "
 msgstr ""
 
 #: vanilla_first_setup/window.py:79
-#, fuzzy
 msgid "Details"
-msgstr "设备详情"
+msgstr "详情"
 
 #: vanilla_first_setup/window.py:85
-#, fuzzy
 msgid "Error log"
-msgstr "出错了！"
+msgstr "错误日志"
 
 #: vanilla_first_setup/application.py:76
 msgid "Don't make any changes to the system."
@@ -309,35 +299,32 @@ msgid "First Setup requires an active internet connection"
 msgstr "初始设置需要有效的互联网链接"
 
 #: vanilla_first_setup/views/conn_check.py:79
-#, fuzzy
 msgid "Connection available"
-msgstr "连接失败"
+msgstr "连接可用"
 
 #: vanilla_first_setup/views/conn_check.py:80
-#, fuzzy
 msgid "You have a working internet connection"
-msgstr "没有互联网连接！"
+msgstr "您有可用的互联网连接"
 
 #: vanilla_first_setup/views/keyboard.py:37
 msgid "Keyboard"
-msgstr ""
+msgstr "键盘"
 
 #: vanilla_first_setup/views/user.py:118
 msgid "Username cannot be empty."
-msgstr ""
+msgstr "用户名不能为空。"
 
 #: vanilla_first_setup/views/user.py:121
 msgid "Username cannot be longer than 32 characters."
-msgstr ""
+msgstr "用户名不能超过32个字符。"
 
 #: vanilla_first_setup/views/user.py:124
 msgid "Username cannot contain special characters or uppercase letters."
-msgstr ""
+msgstr "用户名不能包含特殊字符或大写字母。"
 
 #: vanilla_first_setup/views/user.py:128
-#, fuzzy
 msgid "This username is already in use."
-msgstr "您的设备已准备就绪。"
+msgstr "此用户名已被使用。"
 
 #: vanilla_first_setup/views/locations.py:220
 msgid "Region"
@@ -353,7 +340,7 @@ msgstr ""
 
 #: vanilla_first_setup/views/timezone.py:39
 msgid "Timezone"
-msgstr ""
+msgstr "时区"
 
 #: vanilla_first_setup/views/welcome_user.py:45
 msgid "Hello {}!"
@@ -364,9 +351,8 @@ msgid "Setting up the system"
 msgstr ""
 
 #: vanilla_first_setup/views/progress.py:97
-#, fuzzy
 msgid "Installing"
-msgstr "正在安装..."
+msgstr "正在安装"
 
 #: vanilla_first_setup/core/timezones.py:92
 msgid "Europe"

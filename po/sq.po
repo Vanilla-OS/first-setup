@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Frederik Pjetri <rikpjetri@gmail.com>, 2023.
+# Fabrice Collin <collinfabrice.private@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2023-03-19 23:38+0000\n"
-"Last-Translator: Frederik Pjetri <rikpjetri@gmail.com>\n"
+"PO-Revision-Date: 2025-03-29 18:02+0000\n"
+"Last-Translator: Fabrice Collin <collinfabrice.private@gmail.com>\n"
 "Language-Team: Albanian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/sq/>\n"
 "Language: sq\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16.2-dev\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -43,13 +44,12 @@ msgid "Login Now"
 msgstr ""
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Your user account is ready to use"
-msgstr "Pajisja juaj është gati për përdorim."
+msgstr "Llogaria juaj e përdoruesit është gati për t'u përdorur."
 
 #: vanilla_first_setup/gtk/done.ui:29
 msgid "Take a tour"
-msgstr ""
+msgstr "Bëni një tur"
 
 #: vanilla_first_setup/gtk/done.ui:40
 msgid "Exit"

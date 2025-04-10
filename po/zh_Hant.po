@@ -4,22 +4,22 @@
 # Automatically generated, 2022.
 #
 # Jen Kung-chih <Kaitul@outlook.com>, 2023.
-# lakejason0 <sunliyuan200402@outlook.com>, 2023, 2024.
+# lakejason0 <sunliyuan200402@outlook.com>, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2024-01-25 16:01+0000\n"
+"PO-Revision-Date: 2025-03-18 01:40+0000\n"
 "Last-Translator: lakejason0 <sunliyuan200402@outlook.com>\n"
-"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
-"vanilla-os/first-setup/zh_Hant/>\n"
+"Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
+"projects/vanilla-os/first-setup/zh_Hant/>\n"
 "Language: zh_Hant\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -274,9 +274,8 @@ msgid "Setup failed: "
 msgstr ""
 
 #: vanilla_first_setup/window.py:79
-#, fuzzy
 msgid "Details"
-msgstr "裝置詳細資訊"
+msgstr "詳細資訊"
 
 #: vanilla_first_setup/window.py:85
 #, fuzzy
