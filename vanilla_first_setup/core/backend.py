@@ -43,8 +43,8 @@ def set_hostname(hostname: str):
 def set_theme(theme: str) -> str|None:
     return run_script("theme", [theme])
 
-def _add_user(username: str, full_name: str):
-    return run_script("user", [username, full_name], root=True)
+def _add_user(username: str, full_name: str, password: str):
+    return run_script("user", [username, full_name], root=True, input_data=password)
 
 def logout():
     return run_script("logout", [])
@@ -74,7 +74,7 @@ def _install_flatpak(id: str):
     return run_script("flatpak", [id])
 
 
-def run_script(name: str, args: list[str], root: bool = False) -> bool:
+def run_script(name: str, args: list[str], root: bool = False, input_data: str = None) -> bool:
     if dry_run:
         print("dry-run", name, args)
         time.sleep(0.3)
@@ -90,12 +90,13 @@ def run_script(name: str, args: list[str], root: bool = False) -> bool:
         command,
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
-        text=True
+        text=True,
+        stdin=subprocess.PIPE
     )
 
     result = ""
     try:
-        result, _ = process.communicate(timeout=300)
+        result, _ = process.communicate(input=input_data, timeout=300)
     except subprocess.TimeoutExpired:
         process.kill()
         result, _ = process.communicate()
@@ -137,13 +138,13 @@ def setup_system_deferred():
     _deferred_actions[uid] = {"action_id": action_id, "uid": uid, "callback": setup_system}
     report_progress(action_id, uid, ProgressState.Initialized)
 
-def add_user_deferred(username: str, full_name: str):
+def add_user_deferred(username: str, full_name: str, password: str):
     global _deferred_actions
     action_id = "add_user"
     uid = action_id
     action_info = {"username": username, "full_name": full_name}
     def add_user():
-        _run_function_with_progress(action_id, uid, action_info, _add_user, username, full_name)
+        _run_function_with_progress(action_id, uid, action_info, _add_user, username, full_name, password)
     _deferred_actions[uid] = {"action_id": action_id, "callback": add_user, "info": action_info}
     report_progress(action_id, uid, ProgressState.Initialized, action_info)
 

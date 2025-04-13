@@ -11,5 +11,5 @@ if ! [ "$UID" == "0" ]; then
 fi
 
 adduser --quiet --disabled-password --shell /bin/bash --gecos "$2" "$1"
-passwd --delete --expire "$1"
+passwd --stdin "$1"
 usermod -a -G sudo,adm,lpadmin "$1"

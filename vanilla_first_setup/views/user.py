@@ -29,7 +29,9 @@ class VanillaUser(Adw.Bin):
 
     fullname_entry = Gtk.Template.Child()
     username_entry = Gtk.Template.Child()
-    username_error = Gtk.Template.Child()
+    error = Gtk.Template.Child()
+    password_entry = Gtk.Template.Child()
+    password_confirmation = Gtk.Template.Child()
 
     username = ""
     __user_changed_username = False
@@ -47,6 +49,8 @@ class VanillaUser(Adw.Bin):
         self.username_entry.connect("changed", self.__on_username_entry_changed)
         self.fullname_entry.connect("entry-activated", self.__on_activate)
         self.username_entry.connect("entry-activated", self.__on_activate)
+        self.password_entry.connect("changed", self.__on_password_entry_changed)
+        self.password_confirmation.connect("changed", self.__on_password_confirmation_changed)
 
         self.existing_users = subprocess.Popen("getent passwd | cut -d: -f1", shell=True,
                                           stdout=subprocess.PIPE).stdout.read().decode().splitlines()
@@ -59,7 +63,7 @@ class VanillaUser(Adw.Bin):
         return
 
     def finish(self):
-        backend.add_user_deferred(self.username, self.fullname)
+        backend.add_user_deferred(self.username, self.fullname, self.password)
         return True
 
     def __on_activate(self, widget):
@@ -83,14 +87,14 @@ class VanillaUser(Adw.Bin):
         if err != "":
             self.username = ""
             self.username_entry.add_css_class("error")
-            self.username_error.set_label(err)
-            self.username_error.set_opacity(1)
+            self.error.set_label(err)
+            self.error.set_opacity(1)
             self.__verify_continue()
             return
 
         self.username = entry_text
         self.username_entry.remove_css_class("error")
-        self.username_error.set_opacity(0)
+        self.error.set_opacity(0)
         self.__verify_continue()
 
     def __generate_username_from_fullname(self):
@@ -108,7 +112,8 @@ class VanillaUser(Adw.Bin):
         self.username_entry.set_text(username_lowercase)
 
     def __verify_continue(self):
-        ready = self.username != "" and self.fullname != ""
+        password_err = self.__verify_password()
+        ready = self.username != "" and self.fullname != "" and password_err == ""
         self.__window.set_ready(ready)
 
     def __verify_username(self) -> str:
@@ -128,3 +133,36 @@ class VanillaUser(Adw.Bin):
             return _("This username is already in use.")
         
         return ""
+
+    def __verify_password(self) -> str:
+        password = self.password_entry.get_text()
+        confirmation = self.password_confirmation.get_text()
+
+        if not password:
+            return _("Password cannot be empty.")
+
+        if password != confirmation:
+            return _("Passwords do not match.")
+
+        return ""
+
+    def __on_password_entry_changed(self, *args):
+        self.password = self.password_entry.get_text()
+        self.__update_password_styles()
+        self.__verify_continue()
+
+    def __on_password_confirmation_changed(self, *args):
+        self.__update_password_styles()
+        self.__verify_continue()
+
+    def __update_password_styles(self):
+        err = self.__verify_password()
+        if err != "":
+            self.password_entry.add_css_class("error")
+            self.password_confirmation.add_css_class("error")
+            self.error.set_text(err)
+            self.error.set_opacity(1)
+        else:
+            self.password_entry.remove_css_class("error")
+            self.password_confirmation.remove_css_class("error")
+            self.error.set_opacity(0)
