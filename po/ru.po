@@ -7,15 +7,16 @@
 # Fedorov Alexei <aleksejfedorov963@gmail.com>, 2023, 2024.
 # Vin <k3kelm4vw@mozmail.com>, 2024.
 # Fabio Dev <fabiodev1123@gmail.com>, 2025.
+# Зейки <nepan.8066@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2025-03-21 08:17+0000\n"
-"Last-Translator: Fabio Dev <fabiodev1123@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/ru/>\n"
+"PO-Revision-Date: 2025-04-15 17:39+0000\n"
+"Last-Translator: Зейки <nepan.8066@gmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,9 +42,8 @@ msgid "Finished!"
 msgstr "Завершено!"
 
 #: vanilla_first_setup/gtk/logout.ui:13
-#, fuzzy
 msgid "Login to your new user"
-msgstr "Запустить от имени нового пользователя"
+msgstr "Войдите в своего нового пользователя"
 
 #: vanilla_first_setup/gtk/logout.ui:23
 msgid "Login Now"
@@ -124,9 +124,8 @@ msgid "Accessibility"
 msgstr "Доступность"
 
 #: vanilla_first_setup/gtk/welcome-user.ui:13
-#, fuzzy
 msgid "Let's set up your user account"
-msgstr "Предоставьте информацию для вашей учётной записи пользователя"
+msgstr "Давайте настроим вашу учётную запись"
 
 #: vanilla_first_setup/gtk/user.ui:23
 msgid "Create User"
@@ -184,15 +183,15 @@ msgstr "Поиск раскладок клавиатуры"
 
 #: vanilla_first_setup/gtk/location.ui:24
 msgid "The search results are incomplete. Try refining your query."
-msgstr ""
+msgstr "Результаты поиска неполные. Попробуйте уточнить запрос."
 
 #: vanilla_first_setup/gtk/timezone.ui:11
 msgid "Date & Time"
-msgstr ""
+msgstr "Дата и время"
 
 #: vanilla_first_setup/gtk/timezone.ui:12
 msgid "Select your preferred timezone"
-msgstr ""
+msgstr "Выберите предпочитаемый часовой пояс"
 
 #: vanilla_first_setup/gtk/timezone.ui:29
 msgid "Current timezone:"
