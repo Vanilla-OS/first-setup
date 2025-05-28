@@ -4,22 +4,22 @@
 # Automatically generated, 2022.
 #
 # Jen Kung-chih <Kaitul@outlook.com>, 2023.
-# lakejason0 <sunliyuan200402@outlook.com>, 2023, 2024.
+# lakejason0 <sunliyuan200402@outlook.com>, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2024-01-25 16:01+0000\n"
+"PO-Revision-Date: 2025-05-15 06:42+0000\n"
 "Last-Translator: lakejason0 <sunliyuan200402@outlook.com>\n"
-"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
-"vanilla-os/first-setup/zh_Hant/>\n"
+"Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
+"projects/vanilla-os/first-setup/zh_Hant/>\n"
 "Language: zh_Hant\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -38,52 +38,48 @@ msgid "Finished!"
 msgstr "大功告成！"
 
 #: vanilla_first_setup/gtk/logout.ui:13
-#, fuzzy
 msgid "Login to your new user"
-msgstr "以新使用者身分執行"
+msgstr "登入到您的新帳號"
 
 #: vanilla_first_setup/gtk/logout.ui:23
 msgid "Login Now"
-msgstr ""
+msgstr "立即登入"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Your user account is ready to use"
-msgstr "您的裝置已可供使用。"
+msgstr "您的使用者帳號已準備就緒"
 
 #: vanilla_first_setup/gtk/done.ui:29
 msgid "Take a tour"
-msgstr ""
+msgstr "開始旅程"
 
 #: vanilla_first_setup/gtk/done.ui:40
 msgid "Exit"
-msgstr ""
+msgstr "退出"
 
 #: vanilla_first_setup/gtk/progress.ui:9
 msgid "Progress"
-msgstr ""
+msgstr "進度"
 
 #: vanilla_first_setup/gtk/progress.ui:10
 msgid "Some steps still take some time"
-msgstr ""
+msgstr "部分步驟可能需要花費一些時間"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
 msgstr "顯示資訊"
 
 #: vanilla_first_setup/gtk/conn-check.ui:12
-#, fuzzy
 msgid "Checking Connection"
-msgstr "正在檢查連線…"
+msgstr "正在檢查連線"
 
 #: vanilla_first_setup/gtk/conn-check.ui:13
 msgid "Please wait until the connection check is done"
 msgstr "請等候連線檢查完成"
 
 #: vanilla_first_setup/gtk/conn-check.ui:16
-#, fuzzy
 msgid "Open Settings"
-msgstr "開啟網路代理設定…"
+msgstr "開啟設定"
 
 #: vanilla_first_setup/gtk/theme.ui:13
 msgid "Color Scheme"
@@ -95,40 +91,37 @@ msgstr "為您的系統選擇配色"
 
 #: vanilla_first_setup/gtk/theme.ui:41
 msgid "Light Mode"
-msgstr ""
+msgstr "淺色模式"
 
 #: vanilla_first_setup/gtk/theme.ui:79
 msgid "Light"
-msgstr ""
+msgstr "淺色"
 
 #: vanilla_first_setup/gtk/theme.ui:88
-#, fuzzy
 msgid "Dark Mode"
-msgstr "深色"
+msgstr "深色模式"
 
 #: vanilla_first_setup/gtk/theme.ui:127
 msgid "Dark"
 msgstr "深色"
 
 #: vanilla_first_setup/gtk/welcome.ui:39
-#, fuzzy
 msgid "Make your choices, this wizard will take care of everything"
-msgstr "只需做出選擇，安裝精靈會處理一切。"
+msgstr "只需做出選擇，安裝精靈會處理一切"
 
 #: vanilla_first_setup/gtk/welcome.ui:52
 #: vanilla_first_setup/gtk/welcome-user.ui:21
 msgid "Start"
-msgstr ""
+msgstr "開始"
 
 #: vanilla_first_setup/gtk/welcome.ui:62
 #: vanilla_first_setup/gtk/welcome-user.ui:31
 msgid "Accessibility"
-msgstr ""
+msgstr "無障礙"
 
 #: vanilla_first_setup/gtk/welcome-user.ui:13
-#, fuzzy
 msgid "Let's set up your user account"
-msgstr "提供您使用者帳戶的詳細資訊"
+msgstr "設定您的使用者帳號"
 
 #: vanilla_first_setup/gtk/user.ui:23
 msgid "Create User"
@@ -152,154 +145,150 @@ msgid "Device Name"
 msgstr "裝置名稱"
 
 #: vanilla_first_setup/gtk/hostname.ui:14
-#, fuzzy
-#| msgid "Provide your device name"
 msgid "Name your device"
-msgstr "提供您裝置的名稱"
+msgstr "為您的裝置起名"
 
 #: vanilla_first_setup/gtk/hostname.ui:31
 msgid ""
 "Hostname can only contain lowercase alphanumeric characters (a-z), periods "
 "and hyphens, up to a maximum of 64 characters."
-msgstr ""
+msgstr "主機名稱只能包含小寫字母（a-z）、數字、英文句點、短橫線，最多64個字元。"
 
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
 msgid "Language"
-msgstr ""
+msgstr "語言"
 
 #: vanilla_first_setup/gtk/language.ui:11
 msgid "Select your language"
-msgstr ""
+msgstr "選取您的語言"
 
 #: vanilla_first_setup/gtk/location.ui:15
 msgid "Search keyboard layouts"
-msgstr ""
+msgstr "搜尋鍵盤配置"
 
 #: vanilla_first_setup/gtk/location.ui:24
 msgid "The search results are incomplete. Try refining your query."
-msgstr ""
+msgstr "搜尋結果不完整。請嘗試縮小查詢範圍。"
 
 #: vanilla_first_setup/gtk/timezone.ui:11
 msgid "Date & Time"
-msgstr ""
+msgstr "日期與時間"
 
 #: vanilla_first_setup/gtk/timezone.ui:12
 msgid "Select your preferred timezone"
-msgstr ""
+msgstr "選取您偏好的時區"
 
 #: vanilla_first_setup/gtk/timezone.ui:29
 msgid "Current timezone:"
-msgstr ""
+msgstr "目前的時區："
 
 #: vanilla_first_setup/gtk/timezone.ui:34
 msgid "not set"
-msgstr ""
+msgstr "未設定"
 
 #: vanilla_first_setup/gtk/keyboard.ui:10
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "鍵盤配置"
 
 #: vanilla_first_setup/gtk/keyboard.ui:11
 msgid "Select all your preferred keyboard layouts"
-msgstr ""
+msgstr "選取所有您偏好的鍵盤配置"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:15
 msgid "Applications"
-msgstr ""
+msgstr "應用程式"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:16
 msgid "Choose which applications to install."
-msgstr ""
+msgstr "選擇要安裝的應用程式。"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:30
 msgid "Core Applications"
-msgstr ""
+msgstr "核心應用程式"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:31
 #: vanilla_first_setup/gtk/layout-applications.ui:56
 msgid "Essential GNOME apps like Calendar or Document Viewer"
-msgstr ""
+msgstr "基礎的 GNOME 應用程式，如行事曆和文件檢視器"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:45
 msgid "Customize Core Applications"
-msgstr ""
+msgstr "自訂核心應用程式"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:55
 msgid "Browsers"
-msgstr ""
+msgstr "瀏覽器"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:70
 msgid "Customize Browsers"
-msgstr ""
+msgstr "自訂瀏覽器"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:80
 msgid "Common Utilities"
-msgstr ""
+msgstr "實用工具"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:81
 msgid "Useful utilities to enhance your desktop experience"
-msgstr ""
+msgstr "可以改善桌面體驗的實用程式"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:95
 msgid "Customize Utilities"
-msgstr ""
+msgstr "自訂實用程式"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:105
 msgid "Office"
-msgstr ""
+msgstr "辦公套件"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:106
 msgid "The LibreOffice suite"
-msgstr ""
+msgstr "LibreOffice 套件"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:120
 msgid "Customize Office Applications"
-msgstr ""
+msgstr "自訂辦公應用程式"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:8
 msgid "Select Applications"
-msgstr ""
+msgstr "選取應用程式"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:18
 msgid "Apply"
-msgstr ""
+msgstr "套用"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:30
 msgid "Select the applications you want to install"
-msgstr ""
+msgstr "選取您想要安裝的應用程式"
 
 #: vanilla_first_setup/window.py:74
 msgid "Setup failed: "
-msgstr ""
+msgstr "設定失敗： "
 
 #: vanilla_first_setup/window.py:79
-#, fuzzy
 msgid "Details"
-msgstr "裝置詳細資訊"
+msgstr "詳細資訊"
 
 #: vanilla_first_setup/window.py:85
-#, fuzzy
 msgid "Error log"
-msgstr "錯誤！"
+msgstr "錯誤紀錄"
 
 #: vanilla_first_setup/application.py:76
 msgid "Don't make any changes to the system."
-msgstr ""
+msgstr "不要對系統做出變更。"
 
 #: vanilla_first_setup/application.py:84
 msgid "Force the configure system mode, independant of group."
-msgstr ""
+msgstr "強制組態系統模式，不依賴群組。"
 
 #: vanilla_first_setup/application.py:92
 msgid "Force the regular mode, independant of group."
-msgstr ""
+msgstr "強制普通模式，不依賴群組。"
 
 #: vanilla_first_setup/application.py:100
 msgid ""
 "Use the original equipment manufacturer mode with language, keyboard and "
 "timezone selection."
-msgstr ""
+msgstr "使用原始設定的製造商模式，包括語言、鍵盤、時區選取。"
 
 #: vanilla_first_setup/views/conn_check.py:72
 msgid "No Internet Connection!"
@@ -310,104 +299,100 @@ msgid "First Setup requires an active internet connection"
 msgstr "初始設定需要有效的網際網路連線"
 
 #: vanilla_first_setup/views/conn_check.py:79
-#, fuzzy
 msgid "Connection available"
-msgstr "連線失敗"
+msgstr "連線可供使用"
 
 #: vanilla_first_setup/views/conn_check.py:80
-#, fuzzy
 msgid "You have a working internet connection"
-msgstr "沒有網際網路連線！"
+msgstr "您的網際網路連線可以使用"
 
 #: vanilla_first_setup/views/keyboard.py:37
 msgid "Keyboard"
-msgstr ""
+msgstr "鍵盤"
 
 #: vanilla_first_setup/views/user.py:118
 msgid "Username cannot be empty."
-msgstr ""
+msgstr "使用者名稱不能為空。"
 
 #: vanilla_first_setup/views/user.py:121
 msgid "Username cannot be longer than 32 characters."
-msgstr ""
+msgstr "使用者名稱不能超過 32 個字元。"
 
 #: vanilla_first_setup/views/user.py:124
 msgid "Username cannot contain special characters or uppercase letters."
-msgstr ""
+msgstr "使用者名稱不能包含特殊字元或大寫字母。"
 
 #: vanilla_first_setup/views/user.py:128
-#, fuzzy
 msgid "This username is already in use."
-msgstr "您的裝置已可供使用。"
+msgstr "這個使用者名稱已經在使用中。"
 
 #: vanilla_first_setup/views/locations.py:220
 msgid "Region"
-msgstr ""
+msgstr "區域"
 
 #: vanilla_first_setup/views/locations.py:238
 msgid "Country"
-msgstr ""
+msgstr "國家和地區"
 
 #: vanilla_first_setup/views/locations.py:327
 msgid "Search results"
-msgstr ""
+msgstr "搜尋結果"
 
 #: vanilla_first_setup/views/timezone.py:39
 msgid "Timezone"
-msgstr ""
+msgstr "時區"
 
 #: vanilla_first_setup/views/welcome_user.py:45
 msgid "Hello {}!"
-msgstr ""
+msgstr "您好 {}！"
 
 #: vanilla_first_setup/views/progress.py:94
 msgid "Setting up the system"
-msgstr ""
+msgstr "正在設定系統"
 
 #: vanilla_first_setup/views/progress.py:97
-#, fuzzy
 msgid "Installing"
-msgstr "正在安裝…"
+msgstr "正在安裝"
 
 #: vanilla_first_setup/core/timezones.py:92
 msgid "Europe"
-msgstr ""
+msgstr "歐洲"
 
 #: vanilla_first_setup/core/timezones.py:93
 msgid "Asia"
-msgstr ""
+msgstr "亞洲"
 
 #: vanilla_first_setup/core/timezones.py:94
 msgid "America"
-msgstr ""
+msgstr "美洲"
 
 #: vanilla_first_setup/core/timezones.py:95
 msgid "Africa"
-msgstr ""
+msgstr "非洲"
 
 #: vanilla_first_setup/core/timezones.py:96
 msgid "Antarctica"
-msgstr ""
+msgstr "南極洲"
 
 #: vanilla_first_setup/core/timezones.py:97
 msgid "Pacific Ocean"
-msgstr ""
+msgstr "太平洋"
 
 #: vanilla_first_setup/core/timezones.py:98
 msgid "Australia"
-msgstr ""
+msgstr "澳洲"
 
 #: vanilla_first_setup/core/timezones.py:99
 msgid "Atlantic Ocean"
-msgstr ""
+msgstr "大西洋"
 
 #: vanilla_first_setup/core/timezones.py:100
 msgid "Indian Ocean"
-msgstr ""
+msgstr "印度洋"
 
 #: vanilla_first_setup/core/timezones.py:101
 msgid "Arctic"
-msgstr ""
+msgstr "北極"
 
 #~ msgid "Tweak your Vanilla OS installation."
 #~ msgstr "自訂您的 Vanilla OS。"
