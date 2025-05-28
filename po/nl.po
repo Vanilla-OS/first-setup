@@ -2,15 +2,16 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
 # Philip Goto <philip.goto@gmail.com>, 2023, 2024, 2025.
+# Artzert <gamingmmail@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2025-05-09 15:02+0000\n"
-"Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
-"Language-Team: Dutch <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/nl/>\n"
+"PO-Revision-Date: 2025-05-28 16:06+0000\n"
+"Last-Translator: Artzert <gamingmmail@gmail.com>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,18 +36,16 @@ msgid "Finished!"
 msgstr "Klaar!"
 
 #: vanilla_first_setup/gtk/logout.ui:13
-#, fuzzy
 msgid "Login to your new user"
-msgstr "Uitvoeren als nieuwe gebruiker"
+msgstr "Inloggen als je nieuwe gebruiker"
 
 #: vanilla_first_setup/gtk/logout.ui:23
 msgid "Login Now"
 msgstr "Nu inloggen"
 
 #: vanilla_first_setup/gtk/done.ui:13
-#, fuzzy
 msgid "Your user account is ready to use"
-msgstr "Uw apparaat is klaar om gebruikt te worden."
+msgstr "Uw apparaat is klaar om gebruikt te worden"
 
 #: vanilla_first_setup/gtk/done.ui:29
 msgid "Take a tour"
@@ -62,7 +61,7 @@ msgstr "Voortgang"
 
 #: vanilla_first_setup/gtk/progress.ui:10
 msgid "Some steps still take some time"
-msgstr ""
+msgstr "Sommige stukken kunnen even duren"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
@@ -105,9 +104,8 @@ msgid "Dark"
 msgstr "Donker"
 
 #: vanilla_first_setup/gtk/welcome.ui:39
-#, fuzzy
 msgid "Make your choices, this wizard will take care of everything"
-msgstr "Maak uw keuzes, deze wizard regelt alles."
+msgstr "Maak uw keuzes, deze gids zal alles regelen"
 
 #: vanilla_first_setup/gtk/welcome.ui:52
 #: vanilla_first_setup/gtk/welcome-user.ui:21
@@ -120,9 +118,8 @@ msgid "Accessibility"
 msgstr "Toegankelĳkheid"
 
 #: vanilla_first_setup/gtk/welcome-user.ui:13
-#, fuzzy
 msgid "Let's set up your user account"
-msgstr "Geef details voor uw gebruikers­account op"
+msgstr "Geef details voor uw gebruikersaccount op"
 
 #: vanilla_first_setup/gtk/user.ui:23
 msgid "Create User"
@@ -138,20 +135,20 @@ msgstr "Naam"
 
 #: vanilla_first_setup/gtk/user.ui:38
 msgid "Username"
-msgstr "Gebruikers­naam"
+msgstr "Gebruikersnaam"
 
 #: vanilla_first_setup/gtk/user.ui:45
 msgid "Password"
-msgstr "Wacht­woord"
+msgstr "Wachtwoord"
 
 #: vanilla_first_setup/gtk/user.ui:51
 msgid "Confirm Password"
-msgstr "Bevestiging wacht­woord"
+msgstr "Bevestig wachtwoord"
 
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
-msgstr "Apparaat­naam"
+msgstr "Apparaatnaam"
 
 #: vanilla_first_setup/gtk/hostname.ui:14
 msgid "Name your device"
@@ -162,6 +159,8 @@ msgid ""
 "Hostname can only contain lowercase alphanumeric characters (a-z), periods "
 "and hyphens, up to a maximum of 64 characters."
 msgstr ""
+"De host-naam kan enkel kleine letters (a-z), punten, streepjes, en maximaal "
+"64 karakters bevatten."
 
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
@@ -179,6 +178,7 @@ msgstr "Zoek toetsenbord­indelingen"
 #: vanilla_first_setup/gtk/location.ui:24
 msgid "The search results are incomplete. Try refining your query."
 msgstr ""
+"De zoekresultaten zijn onvolledig. Probeer je zoekopdracht te verfijnen."
 
 #: vanilla_first_setup/gtk/timezone.ui:11
 msgid "Date & Time"
@@ -202,7 +202,7 @@ msgstr "Toetsenbord­indeling"
 
 #: vanilla_first_setup/gtk/keyboard.ui:11
 msgid "Select all your preferred keyboard layouts"
-msgstr ""
+msgstr "Kies je gewenste toetsenbordindelingen"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:15
 msgid "Applications"
@@ -210,7 +210,7 @@ msgstr "Apps"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:16
 msgid "Choose which applications to install."
-msgstr ""
+msgstr "Kies welke apps je wilt installeren."
 
 #: vanilla_first_setup/gtk/layout-applications.ui:30
 msgid "Core Applications"
@@ -219,7 +219,7 @@ msgstr "Kern-apps"
 #: vanilla_first_setup/gtk/layout-applications.ui:31
 #: vanilla_first_setup/gtk/layout-applications.ui:56
 msgid "Essential GNOME apps like Calendar or Document Viewer"
-msgstr ""
+msgstr "Essentiële GNOME apps zoals Kalender of Documentenviewer"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:45
 msgid "Customize Core Applications"
@@ -235,15 +235,15 @@ msgstr "Browsers aanpassen"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:80
 msgid "Common Utilities"
-msgstr ""
+msgstr "Veelgebruikte Tools"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:81
 msgid "Useful utilities to enhance your desktop experience"
-msgstr ""
+msgstr "Handige tools om je desktop ervaring te verhogen"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:95
 msgid "Customize Utilities"
-msgstr ""
+msgstr "Tools Aanpassen"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:105
 msgid "Office"
@@ -267,11 +267,11 @@ msgstr "Toe­passen"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:30
 msgid "Select the applications you want to install"
-msgstr ""
+msgstr "Kies de apps die je wilt installeren"
 
 #: vanilla_first_setup/window.py:74
 msgid "Setup failed: "
-msgstr ""
+msgstr "Instelling gefaald: "
 
 #: vanilla_first_setup/window.py:79
 msgid "Details"
@@ -283,21 +283,22 @@ msgstr "Fout­logboek"
 
 #: vanilla_first_setup/application.py:76
 msgid "Don't make any changes to the system."
-msgstr ""
+msgstr "Maak geen aanpassingen aan het systeem."
 
 #: vanilla_first_setup/application.py:84
 msgid "Force the configure system mode, independant of group."
-msgstr ""
+msgstr "Forceer de systeemconfiguatiemodus, onafhankelijk van de groep."
 
 #: vanilla_first_setup/application.py:92
 msgid "Force the regular mode, independant of group."
-msgstr ""
+msgstr "Forceer de standaardmodus, onafhankelijk van de groep."
 
 #: vanilla_first_setup/application.py:100
 msgid ""
 "Use the original equipment manufacturer mode with language, keyboard and "
 "timezone selection."
 msgstr ""
+"Gebruik de toestelfabrikantmodus met taal, toetsenbord en tijdszone keuze."
 
 #: vanilla_first_setup/views/conn_check.py:72
 msgid "No Internet Connection!"
@@ -312,9 +313,8 @@ msgid "Connection available"
 msgstr "Verbinding beschikbaar"
 
 #: vanilla_first_setup/views/conn_check.py:80
-#, fuzzy
 msgid "You have a working internet connection"
-msgstr "Geen internet­verbinding!"
+msgstr "U heeft geen werkende internetverbinding."
 
 #: vanilla_first_setup/views/keyboard.py:37
 msgid "Keyboard"
@@ -322,20 +322,19 @@ msgstr "Toetsen­bord"
 
 #: vanilla_first_setup/views/user.py:118
 msgid "Username cannot be empty."
-msgstr ""
+msgstr "Gebruikersnaam kan niet leeg zijn."
 
 #: vanilla_first_setup/views/user.py:121
 msgid "Username cannot be longer than 32 characters."
-msgstr ""
+msgstr "Gebruikersnaam kan niet langer dan 32 karakters zijn."
 
 #: vanilla_first_setup/views/user.py:124
 msgid "Username cannot contain special characters or uppercase letters."
-msgstr ""
+msgstr "Gebruikersnaam kan geen speciale karakters of hoofdletters bevatten."
 
 #: vanilla_first_setup/views/user.py:128
-#, fuzzy
 msgid "This username is already in use."
-msgstr "Uw apparaat is klaar om gebruikt te worden."
+msgstr "Deze naam is al in gebruik."
 
 #: vanilla_first_setup/views/locations.py:220
 msgid "Region"
@@ -359,7 +358,7 @@ msgstr "Hallo {}!"
 
 #: vanilla_first_setup/views/progress.py:94
 msgid "Setting up the system"
-msgstr ""
+msgstr "Systeeminstelling"
 
 #: vanilla_first_setup/views/progress.py:97
 msgid "Installing"
@@ -387,7 +386,7 @@ msgstr "Antarctica"
 
 #: vanilla_first_setup/core/timezones.py:97
 msgid "Pacific Ocean"
-msgstr ""
+msgstr "Grote Oceaan"
 
 #: vanilla_first_setup/core/timezones.py:98
 msgid "Australia"
@@ -395,15 +394,15 @@ msgstr "Australië"
 
 #: vanilla_first_setup/core/timezones.py:99
 msgid "Atlantic Ocean"
-msgstr ""
+msgstr "Atlantische Oceaan"
 
 #: vanilla_first_setup/core/timezones.py:100
 msgid "Indian Ocean"
-msgstr ""
+msgstr "Indische Oceaan"
 
 #: vanilla_first_setup/core/timezones.py:101
 msgid "Arctic"
-msgstr ""
+msgstr "Arctische"
 
 #~ msgid "Tweak your Vanilla OS installation."
 #~ msgstr "Pas uw installatie van Vanilla OS aan"
