@@ -5,21 +5,22 @@
 # Jumpy Game <jumpy634@gmail.com>, 2023.
 # Michaël Tremblay <Tichael@users.noreply.hosted.weblate.org>, 2024.
 # Maxim Therrien <maxim@veryloud.ca>, 2025.
+# Fabrice Collin <collinfabrice.private@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2025-03-07 05:45+0000\n"
-"Last-Translator: Maxim Therrien <maxim@veryloud.ca>\n"
-"Language-Team: French (Canada) <https://hosted.weblate.org/projects/vanilla-"
-"os/first-setup/fr_CA/>\n"
+"PO-Revision-Date: 2025-03-29 18:02+0000\n"
+"Last-Translator: Fabrice Collin <collinfabrice.private@gmail.com>\n"
+"Language-Team: French (Canada) <https://hosted.weblate.org/projects/"
+"vanilla-os/first-setup/fr_CA/>\n"
 "Language: fr_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10.3-dev\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -155,6 +156,9 @@ msgid ""
 "Hostname can only contain lowercase alphanumeric characters (a-z), periods "
 "and hyphens, up to a maximum of 64 characters."
 msgstr ""
+"Le nom d'hôte ne peut contenir que des caractères alphanumériques en "
+"minuscules (a-z), des points et des tirets, jusqu'à un maximum de 64 "
+"caractères."
 
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
@@ -282,11 +286,11 @@ msgstr "Ne pas modifier le système."
 
 #: vanilla_first_setup/application.py:84
 msgid "Force the configure system mode, independant of group."
-msgstr ""
+msgstr "Force le mode de configuration du système, indépendamment du groupe."
 
 #: vanilla_first_setup/application.py:92
 msgid "Force the regular mode, independant of group."
-msgstr ""
+msgstr "Force le mode normal, indépendamment du groupe."
 
 #: vanilla_first_setup/application.py:100
 msgid ""
