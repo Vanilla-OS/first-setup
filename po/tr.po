@@ -15,8 +15,8 @@ msgstr ""
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
 "PO-Revision-Date: 2025-03-23 13:40+0000\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
-"Language-Team: Turkish <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/tr/>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/vanilla-os/first-"
+"setup/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -141,6 +141,14 @@ msgstr "Ad"
 #: vanilla_first_setup/gtk/user.ui:38
 msgid "Username"
 msgstr "Kullanıcı Adı"
+
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "Şifre"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "Şifreyi Onayla"
 
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
@@ -440,12 +448,6 @@ msgstr "Arktik"
 
 #~ msgid "Default"
 #~ msgstr "Öntanımlı"
-
-#~ msgid "Password"
-#~ msgstr "Şifre"
-
-#~ msgid "Confirm Password"
-#~ msgstr "Şifreyi Onayla"
 
 #~ msgid "Welcome!"
 #~ msgstr "Hoş Geldiniz!"

@@ -140,6 +140,14 @@ msgstr "名前"
 msgid "Username"
 msgstr "ユーザー名"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "パスワード"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "パスワードの確認"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -437,12 +445,6 @@ msgstr ""
 
 #~ msgid "Default"
 #~ msgstr "デフォルト"
-
-#~ msgid "Password"
-#~ msgstr "パスワード"
-
-#~ msgid "Confirm Password"
-#~ msgstr "パスワードの確認"
 
 #~ msgid "Welcome!"
 #~ msgstr "ようこそ！"

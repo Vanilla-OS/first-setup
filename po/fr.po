@@ -17,8 +17,8 @@ msgstr ""
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
 "PO-Revision-Date: 2025-03-23 18:38+0000\n"
 "Last-Translator: Xabi GOITY <xabigoity@gmail.com>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/fr/>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/vanilla-os/first-"
+"setup/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -144,6 +144,14 @@ msgstr "Nom"
 msgid "Username"
 msgstr "Nom d'utilisateur"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "Mot de passe"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "Confirmer le mot de passe"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -158,9 +166,8 @@ msgid ""
 "Hostname can only contain lowercase alphanumeric characters (a-z), periods "
 "and hyphens, up to a maximum of 64 characters."
 msgstr ""
-"Le nom de la machine ne peut contenir que des caractères alphanumériques "
-"(a-z), des tirets et des points pour former un total de 64 caractères "
-"maximum."
+"Le nom de la machine ne peut contenir que des caractères alphanumériques (a-"
+"z), des tirets et des points pour former un total de 64 caractères maximum."
 
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
@@ -443,12 +450,6 @@ msgstr "Arctique"
 
 #~ msgid "Default"
 #~ msgstr "Par défaut"
-
-#~ msgid "Password"
-#~ msgstr "Mot de passe"
-
-#~ msgid "Confirm Password"
-#~ msgstr "Confirmer le mot de passe"
 
 #~ msgid "Welcome!"
 #~ msgstr "Bienvenue !"

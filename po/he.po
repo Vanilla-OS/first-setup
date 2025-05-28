@@ -140,6 +140,14 @@ msgstr "שם"
 msgid "Username"
 msgstr "שם משתמש"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "סיסמה"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "אישור סיסמה"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -442,12 +450,6 @@ msgstr ""
 
 #~ msgid "Default"
 #~ msgstr "ברירת מחדל"
-
-#~ msgid "Password"
-#~ msgstr "סיסמה"
-
-#~ msgid "Confirm Password"
-#~ msgstr "אישור סיסמה"
 
 #~ msgid "Welcome!"
 #~ msgstr "ברוך הבא!"

@@ -147,6 +147,14 @@ msgstr "jméno"
 msgid "Username"
 msgstr "Uživatelské jméno"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "Heslo"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "Potvrďte heslo"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -443,12 +451,6 @@ msgstr ""
 
 #~ msgid "Default"
 #~ msgstr "Výchozí"
-
-#~ msgid "Password"
-#~ msgstr "Heslo"
-
-#~ msgid "Confirm Password"
-#~ msgstr "Potvrďte heslo"
 
 #~ msgid "Welcome!"
 #~ msgstr "Vítejte!"

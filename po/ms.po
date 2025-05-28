@@ -144,6 +144,14 @@ msgstr "Nama"
 msgid "Username"
 msgstr "Nama pengguna"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "Kata Laluan"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "Sahkan Kata Laluan"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -439,12 +447,6 @@ msgstr ""
 
 #~ msgid "Default"
 #~ msgstr "Lalai"
-
-#~ msgid "Password"
-#~ msgstr "Kata Laluan"
-
-#~ msgid "Confirm Password"
-#~ msgstr "Sahkan Kata Laluan"
 
 #~ msgid "Welcome!"
 #~ msgstr "Selamat datang!"

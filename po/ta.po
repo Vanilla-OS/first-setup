@@ -137,6 +137,14 @@ msgstr "பெயர்"
 msgid "Username"
 msgstr "பயனர் பெயர்"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "கடவுச்சொல்"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "கடவுச்சொல்லை உறுதிப்படுத்தவும்"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -435,12 +443,6 @@ msgstr "ஆர்க்டிக்"
 
 #~ msgid "Default"
 #~ msgstr "இயல்புநிலை"
-
-#~ msgid "Password"
-#~ msgstr "கடவுச்சொல்"
-
-#~ msgid "Confirm Password"
-#~ msgstr "கடவுச்சொல்லை உறுதிப்படுத்தவும்"
 
 #~ msgid "Welcome!"
 #~ msgstr "வரவேற்கிறோம்!"

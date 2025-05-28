@@ -13,8 +13,8 @@ msgstr ""
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
 "PO-Revision-Date: 2025-03-29 18:02+0000\n"
 "Last-Translator: Fabrice Collin <collinfabrice.private@gmail.com>\n"
-"Language-Team: French (Canada) <https://hosted.weblate.org/projects/"
-"vanilla-os/first-setup/fr_CA/>\n"
+"Language-Team: French (Canada) <https://hosted.weblate.org/projects/vanilla-"
+"os/first-setup/fr_CA/>\n"
 "Language: fr_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -139,6 +139,14 @@ msgstr "Nom"
 #: vanilla_first_setup/gtk/user.ui:38
 msgid "Username"
 msgstr "Nom d'utilisateur"
+
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "Mot de passe"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "Confirmer le mot de passe"
 
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
@@ -447,12 +455,6 @@ msgstr "Arctique"
 
 #~ msgid "Default"
 #~ msgstr "Par défaut"
-
-#~ msgid "Password"
-#~ msgstr "Mot de passe"
-
-#~ msgid "Confirm Password"
-#~ msgstr "Confirmer le mot de passe"
 
 #~ msgid "Welcome!"
 #~ msgstr "Bienvenue !"

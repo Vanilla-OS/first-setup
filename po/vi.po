@@ -147,6 +147,14 @@ msgstr "Tên"
 msgid "Username"
 msgstr "Tên tài khoản"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "Mật khẩu"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "Xác nhận mật khẩu"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -442,12 +450,6 @@ msgstr ""
 
 #~ msgid "Default"
 #~ msgstr "Mặc định"
-
-#~ msgid "Password"
-#~ msgstr "Mật khẩu"
-
-#~ msgid "Confirm Password"
-#~ msgstr "Xác nhận mật khẩu"
 
 #~ msgid "Welcome!"
 #~ msgstr "Chào mừng!"

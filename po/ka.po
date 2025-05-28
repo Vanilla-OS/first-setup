@@ -145,6 +145,14 @@ msgstr "სახელი"
 msgid "Username"
 msgstr "მომხმარებლის სახელი"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "პაროლი"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "პაროლის დადასტურება"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -441,12 +449,6 @@ msgstr ""
 
 #~ msgid "Default"
 #~ msgstr "ნაგულისხმები"
-
-#~ msgid "Password"
-#~ msgstr "პაროლი"
-
-#~ msgid "Confirm Password"
-#~ msgstr "პაროლის დადასტურება"
 
 #~ msgid "Welcome!"
 #~ msgstr "მოგესალმებით!"

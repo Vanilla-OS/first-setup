@@ -147,6 +147,14 @@ msgstr "이름"
 msgid "Username"
 msgstr "사용자 이름"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "비밀번호"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "비밀번호 확인"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -443,12 +451,6 @@ msgstr ""
 
 #~ msgid "Default"
 #~ msgstr "기본값"
-
-#~ msgid "Password"
-#~ msgstr "비밀번호"
-
-#~ msgid "Confirm Password"
-#~ msgstr "비밀번호 확인"
 
 #~ msgid "Welcome!"
 #~ msgstr "환영합니다!"

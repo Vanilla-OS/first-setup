@@ -143,6 +143,14 @@ msgstr "نام"
 msgid "Username"
 msgstr "نام کاربری"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "رمزعبور"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "رمزعبور خود را تأیید کنید"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -434,12 +442,6 @@ msgstr ""
 
 #~ msgid "Default"
 #~ msgstr "پیش‌فرض"
-
-#~ msgid "Password"
-#~ msgstr "رمزعبور"
-
-#~ msgid "Confirm Password"
-#~ msgstr "رمزعبور خود را تأیید کنید"
 
 #~ msgid "Welcome!"
 #~ msgstr "خوش‌آمدید!"

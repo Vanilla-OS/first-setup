@@ -14,8 +14,8 @@ msgstr ""
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
 "PO-Revision-Date: 2025-03-21 08:17+0000\n"
 "Last-Translator: Fabio Dev <fabiodev1123@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/ru/>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/vanilla-os/first-"
+"setup/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -143,6 +143,14 @@ msgstr "Имя"
 #: vanilla_first_setup/gtk/user.ui:38
 msgid "Username"
 msgstr "Имя пользователя"
+
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "Пароль"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "Подтверждение пароля"
 
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
@@ -441,12 +449,6 @@ msgstr ""
 
 #~ msgid "Default"
 #~ msgstr "По умолчанию"
-
-#~ msgid "Password"
-#~ msgstr "Пароль"
-
-#~ msgid "Confirm Password"
-#~ msgstr "Подтверждение пароля"
 
 #~ msgid "Welcome!"
 #~ msgstr "Добро пожаловать!"

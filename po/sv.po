@@ -11,8 +11,8 @@ msgstr ""
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
 "PO-Revision-Date: 2025-03-10 12:22+0000\n"
 "Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
-"Language-Team: Swedish <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/sv/>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/vanilla-os/first-"
+"setup/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -137,6 +137,14 @@ msgstr "Namn"
 #: vanilla_first_setup/gtk/user.ui:38
 msgid "Username"
 msgstr "Användarnamn"
+
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "Lösenord"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "Bekräfta lösenord"
 
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
@@ -437,12 +445,6 @@ msgstr "Arktis"
 
 #~ msgid "Default"
 #~ msgstr "Standard"
-
-#~ msgid "Password"
-#~ msgstr "Lösenord"
-
-#~ msgid "Confirm Password"
-#~ msgstr "Bekräfta lösenord"
 
 #~ msgid "Welcome!"
 #~ msgstr "Välkommen!"

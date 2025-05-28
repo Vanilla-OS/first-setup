@@ -153,6 +153,14 @@ msgstr "Nume"
 msgid "Username"
 msgstr "Nume de utilizator"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "Parolă"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "Confirmă parola"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -449,12 +457,6 @@ msgstr ""
 
 #~ msgid "Default"
 #~ msgstr "Implicit"
-
-#~ msgid "Password"
-#~ msgstr "Parolă"
-
-#~ msgid "Confirm Password"
-#~ msgstr "Confirmă parola"
 
 #~ msgid "Welcome!"
 #~ msgstr "Bine ai venit!"

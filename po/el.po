@@ -152,6 +152,14 @@ msgstr "Όνομα"
 msgid "Username"
 msgstr "Όνομα Χρήστη"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "Κωδικός"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "Επιβεβαίωση Κωδικού"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -451,12 +459,6 @@ msgstr ""
 
 #~ msgid "Default"
 #~ msgstr "Προεπιλογή"
-
-#~ msgid "Password"
-#~ msgstr "Κωδικός"
-
-#~ msgid "Confirm Password"
-#~ msgstr "Επιβεβαίωση Κωδικού"
 
 #~ msgid "Welcome!"
 #~ msgstr "Καλωσορίσατε!"

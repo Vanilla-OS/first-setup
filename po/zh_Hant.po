@@ -139,6 +139,14 @@ msgstr "名稱"
 msgid "Username"
 msgstr "使用者名稱"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "密碼"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "確認密碼"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -425,12 +433,6 @@ msgstr "北極"
 
 #~ msgid "Default"
 #~ msgstr "預設"
-
-#~ msgid "Password"
-#~ msgstr "密碼"
-
-#~ msgid "Confirm Password"
-#~ msgstr "確認密碼"
 
 #~ msgid "Welcome!"
 #~ msgstr "歡迎！"

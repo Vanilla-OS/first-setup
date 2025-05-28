@@ -19,8 +19,8 @@ msgstr ""
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
 "PO-Revision-Date: 2025-04-11 19:05+0000\n"
 "Last-Translator: brandon galvis <krafairusbrandon104@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/es/>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/first-"
+"setup/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -150,6 +150,14 @@ msgstr "Nombre"
 #: vanilla_first_setup/gtk/user.ui:38
 msgid "Username"
 msgstr "Nombre de usuario"
+
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "Contraseña"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "Confirmar contraseña"
 
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
@@ -447,12 +455,6 @@ msgstr ""
 
 #~ msgid "Default"
 #~ msgstr "Predeterminado"
-
-#~ msgid "Password"
-#~ msgstr "Contraseña"
-
-#~ msgid "Confirm Password"
-#~ msgstr "Confirmar contraseña"
 
 #~ msgid "Welcome!"
 #~ msgstr "¡Bienvenido/a!"

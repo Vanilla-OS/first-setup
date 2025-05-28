@@ -140,6 +140,14 @@ msgstr "Назва"
 msgid "Username"
 msgstr "Ім'я користувача"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "Пароль"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "Підтвердити пароль"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -433,12 +441,6 @@ msgstr "Арктика"
 
 #~ msgid "Default"
 #~ msgstr "Стандартна"
-
-#~ msgid "Password"
-#~ msgstr "Пароль"
-
-#~ msgid "Confirm Password"
-#~ msgstr "Підтвердити пароль"
 
 #~ msgid "Welcome!"
 #~ msgstr "Ласкаво просимо!"

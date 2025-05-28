@@ -144,6 +144,14 @@ msgstr "Nome"
 msgid "Username"
 msgstr "Nome de utilizador"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "Senha"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "Confirme a senha"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -443,12 +451,6 @@ msgstr "Ártico"
 
 #~ msgid "Default"
 #~ msgstr "Padrão"
-
-#~ msgid "Password"
-#~ msgstr "Senha"
-
-#~ msgid "Confirm Password"
-#~ msgstr "Confirme a senha"
 
 #~ msgid "Welcome!"
 #~ msgstr "Bem-vindo!"

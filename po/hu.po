@@ -145,6 +145,14 @@ msgstr "Név"
 msgid "Username"
 msgstr "Felhasználónév"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "Jelszó"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "Jelszó megerősítése"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -448,12 +456,6 @@ msgstr ""
 
 #~ msgid "Default"
 #~ msgstr "Alapértelmezett"
-
-#~ msgid "Password"
-#~ msgstr "Jelszó"
-
-#~ msgid "Confirm Password"
-#~ msgstr "Jelszó megerősítése"
 
 #~ msgid "Welcome!"
 #~ msgstr "Üdv!"

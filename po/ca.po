@@ -149,6 +149,14 @@ msgstr "Nom"
 msgid "Username"
 msgstr "Nom d'usuari"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "Contrasenya"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "Confirmar la contrasenya"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -445,12 +453,6 @@ msgstr ""
 
 #~ msgid "Default"
 #~ msgstr "Per defecte"
-
-#~ msgid "Password"
-#~ msgstr "Contrasenya"
-
-#~ msgid "Confirm Password"
-#~ msgstr "Confirmar la contrasenya"
 
 #~ msgid "Welcome!"
 #~ msgstr "Benvingut!"

@@ -148,6 +148,14 @@ msgstr "ชื่อ"
 msgid "Username"
 msgstr "ชื่อผู้ใช้"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "รหัสผ่าน"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "ยืนยันรหัสผ่าน"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -442,12 +450,6 @@ msgstr ""
 
 #~ msgid "Default"
 #~ msgstr "ค่าเริ่มต้น"
-
-#~ msgid "Password"
-#~ msgstr "รหัสผ่าน"
-
-#~ msgid "Confirm Password"
-#~ msgstr "ยืนยันรหัสผ่าน"
 
 #~ msgid "Welcome!"
 #~ msgstr "ยินดีต้อนรับ!"

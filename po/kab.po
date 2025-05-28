@@ -138,6 +138,14 @@ msgstr "Isem"
 msgid "Username"
 msgstr "Isem n useqdac"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "Awal n uεeddi"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "Sentem awal n uɛeddi"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -407,12 +415,6 @@ msgstr ""
 
 #~ msgid "Default"
 #~ msgstr "Amezwer"
-
-#~ msgid "Password"
-#~ msgstr "Awal n uεeddi"
-
-#~ msgid "Confirm Password"
-#~ msgstr "Sentem awal n uɛeddi"
 
 #~ msgid "Welcome!"
 #~ msgstr "Ansuf!"

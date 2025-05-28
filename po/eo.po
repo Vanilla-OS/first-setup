@@ -145,6 +145,14 @@ msgstr "Nomo"
 msgid "Username"
 msgstr "Salutnomo"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "Pasvorto"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "Konfirmu pasvorton"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -441,12 +449,6 @@ msgstr ""
 
 #~ msgid "Default"
 #~ msgstr "Implicita"
-
-#~ msgid "Password"
-#~ msgstr "Pasvorto"
-
-#~ msgid "Confirm Password"
-#~ msgstr "Konfirmu pasvorton"
 
 #~ msgid "Welcome!"
 #~ msgstr "Bonvenon!"

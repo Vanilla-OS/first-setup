@@ -138,6 +138,14 @@ msgstr "名称"
 msgid "Username"
 msgstr "用户名"
 
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "密码"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "确认密码"
+
 #: vanilla_first_setup/gtk/hostname.ui:13
 #: vanilla_first_setup/gtk/hostname.ui:21
 msgid "Device Name"
@@ -424,12 +432,6 @@ msgstr "北极"
 
 #~ msgid "Default"
 #~ msgstr "默认"
-
-#~ msgid "Password"
-#~ msgstr "密码"
-
-#~ msgid "Confirm Password"
-#~ msgstr "确认密码"
 
 #~ msgid "Welcome!"
 #~ msgstr "欢迎！"
