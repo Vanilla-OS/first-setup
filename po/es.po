@@ -12,21 +12,22 @@
 # Eraorahan <eraorahan@gmail.com>, 2024.
 # Alberto García Fernández <algarcia@gmail.com>, 2024.
 # brandon galvis <krafairusbrandon104@gmail.com>, 2025.
+# Fran Pacheco <franpacheco.cpp@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2025-04-11 19:05+0000\n"
-"Last-Translator: brandon galvis <krafairusbrandon104@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/es/>\n"
+"PO-Revision-Date: 2025-06-01 01:01+0000\n"
+"Last-Translator: Fran Pacheco <franpacheco.cpp@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -62,33 +63,31 @@ msgstr "Inicia un recorrido"
 
 #: vanilla_first_setup/gtk/done.ui:40
 msgid "Exit"
-msgstr ""
+msgstr "Salir"
 
 #: vanilla_first_setup/gtk/progress.ui:9
 msgid "Progress"
-msgstr ""
+msgstr "Progreso"
 
 #: vanilla_first_setup/gtk/progress.ui:10
 msgid "Some steps still take some time"
-msgstr ""
+msgstr "Algunos pasos tomarán un tiempo"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
 msgstr "Mostrando información"
 
 #: vanilla_first_setup/gtk/conn-check.ui:12
-#, fuzzy
 msgid "Checking Connection"
-msgstr "Verificando conexión…"
+msgstr "Comprobando conexión"
 
 #: vanilla_first_setup/gtk/conn-check.ui:13
 msgid "Please wait until the connection check is done"
 msgstr "Espere, mientras se verifica su conexión a Internet"
 
 #: vanilla_first_setup/gtk/conn-check.ui:16
-#, fuzzy
 msgid "Open Settings"
-msgstr "Abrir los ajustes del proxy..."
+msgstr "Abrir Ajustes"
 
 #: vanilla_first_setup/gtk/theme.ui:13
 msgid "Color Scheme"
@@ -100,40 +99,37 @@ msgstr "Elige un esquema de colores para tu sistema"
 
 #: vanilla_first_setup/gtk/theme.ui:41
 msgid "Light Mode"
-msgstr ""
+msgstr "Modo Claro"
 
 #: vanilla_first_setup/gtk/theme.ui:79
 msgid "Light"
 msgstr ""
 
 #: vanilla_first_setup/gtk/theme.ui:88
-#, fuzzy
 msgid "Dark Mode"
-msgstr "Oscuro"
+msgstr "Modo Oscuro"
 
 #: vanilla_first_setup/gtk/theme.ui:127
 msgid "Dark"
 msgstr "Oscuro"
 
 #: vanilla_first_setup/gtk/welcome.ui:39
-#, fuzzy
 msgid "Make your choices, this wizard will take care of everything"
-msgstr "Marque sus opciones, el asistente se encargará de todo."
+msgstr "Marque sus opciones, el asistente se encargará de todo"
 
 #: vanilla_first_setup/gtk/welcome.ui:52
 #: vanilla_first_setup/gtk/welcome-user.ui:21
 msgid "Start"
-msgstr ""
+msgstr "Empezar"
 
 #: vanilla_first_setup/gtk/welcome.ui:62
 #: vanilla_first_setup/gtk/welcome-user.ui:31
 msgid "Accessibility"
-msgstr ""
+msgstr "Accesibilidad"
 
 #: vanilla_first_setup/gtk/welcome-user.ui:13
-#, fuzzy
 msgid "Let's set up your user account"
-msgstr "Proporcione detalles para su cuenta de usuario"
+msgstr "Vamos a configurar tu cuenta de usuario"
 
 #: vanilla_first_setup/gtk/user.ui:23
 msgid "Create User"
@@ -175,19 +171,21 @@ msgid ""
 "Hostname can only contain lowercase alphanumeric characters (a-z), periods "
 "and hyphens, up to a maximum of 64 characters."
 msgstr ""
+"El nombre de host solo puede tener caracteres alfanuméricos (a-z) en "
+"minúsculas, puntos y guiones, hasta un máximo de 64 caracteres."
 
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
 msgid "Language"
-msgstr ""
+msgstr "Idioma"
 
 #: vanilla_first_setup/gtk/language.ui:11
 msgid "Select your language"
-msgstr ""
+msgstr "Selecciona tu idioma"
 
 #: vanilla_first_setup/gtk/location.ui:15
 msgid "Search keyboard layouts"
-msgstr ""
+msgstr "Busca distribuciones de teclado"
 
 #: vanilla_first_setup/gtk/location.ui:24
 msgid "The search results are incomplete. Try refining your query."

@@ -4,13 +4,14 @@
 # Automatically generated, 2022.
 #
 # phlostically <phlostically@mailinator.com>, 2023, 2024.
+# Fran Pacheco <franpacheco.cpp@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2024-07-31 05:49+0000\n"
-"Last-Translator: phlostically <phlostically@mailinator.com>\n"
+"PO-Revision-Date: 2025-06-01 01:01+0000\n"
+"Last-Translator: Fran Pacheco <franpacheco.cpp@gmail.com>\n"
 "Language-Team: Esperanto <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/eo/>\n"
 "Language: eo\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -37,9 +38,8 @@ msgid "Finished!"
 msgstr "Finite!"
 
 #: vanilla_first_setup/gtk/logout.ui:13
-#, fuzzy
 msgid "Login to your new user"
-msgstr "Ruli kiel nova uzanto"
+msgstr "Ensalutu al via nova uzanto"
 
 #: vanilla_first_setup/gtk/logout.ui:23
 msgid "Login Now"
