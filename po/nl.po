@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2025-05-28 16:06+0000\n"
-"Last-Translator: Artzert <gamingmmail@gmail.com>\n"
+"PO-Revision-Date: 2025-09-20 08:02+0000\n"
+"Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/nl/>\n"
 "Language: nl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -178,7 +178,7 @@ msgstr "Zoek toetsenbord­indelingen"
 #: vanilla_first_setup/gtk/location.ui:24
 msgid "The search results are incomplete. Try refining your query."
 msgstr ""
-"De zoekresultaten zijn onvolledig. Probeer je zoekopdracht te verfijnen."
+"De zoek­resultaten zĳn onvolledig. Probeer uw zoek­opdracht te verfĳnen."
 
 #: vanilla_first_setup/gtk/timezone.ui:11
 msgid "Date & Time"
@@ -287,18 +287,19 @@ msgstr "Maak geen aanpassingen aan het systeem."
 
 #: vanilla_first_setup/application.py:84
 msgid "Force the configure system mode, independant of group."
-msgstr "Forceer de systeemconfiguatiemodus, onafhankelijk van de groep."
+msgstr "Forceer de systeemconfiguatie­modus, onafhankelĳk van de groep."
 
 #: vanilla_first_setup/application.py:92
 msgid "Force the regular mode, independant of group."
-msgstr "Forceer de standaardmodus, onafhankelijk van de groep."
+msgstr "Forceer de standaard­modus, onafhankelĳk van de groep."
 
 #: vanilla_first_setup/application.py:100
 msgid ""
 "Use the original equipment manufacturer mode with language, keyboard and "
 "timezone selection."
 msgstr ""
-"Gebruik de toestelfabrikantmodus met taal, toetsenbord en tijdszone keuze."
+"Gebruik de toestelfabrikant­modus met selectie van taal, toetsenbord en "
+"tĳdzone."
 
 #: vanilla_first_setup/views/conn_check.py:72
 msgid "No Internet Connection!"
@@ -314,7 +315,7 @@ msgstr "Verbinding beschikbaar"
 
 #: vanilla_first_setup/views/conn_check.py:80
 msgid "You have a working internet connection"
-msgstr "U heeft geen werkende internetverbinding."
+msgstr "U heeft een werkende internet­verbinding"
 
 #: vanilla_first_setup/views/keyboard.py:37
 msgid "Keyboard"
@@ -322,11 +323,11 @@ msgstr "Toetsen­bord"
 
 #: vanilla_first_setup/views/user.py:118
 msgid "Username cannot be empty."
-msgstr "Gebruikersnaam kan niet leeg zijn."
+msgstr "Gebruikers­naam kan niet leeg zĳn."
 
 #: vanilla_first_setup/views/user.py:121
 msgid "Username cannot be longer than 32 characters."
-msgstr "Gebruikersnaam kan niet langer dan 32 karakters zijn."
+msgstr "Gebruikers­naam kan niet langer dan 32 karakters zĳn."
 
 #: vanilla_first_setup/views/user.py:124
 msgid "Username cannot contain special characters or uppercase letters."
