@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2025-05-06 22:07+0000\n"
-"Last-Translator: Lúcia <lucia.hates.proton@proton.me>\n"
+"PO-Revision-Date: 2025-07-04 10:01+0000\n"
+"Last-Translator: Vinícius <vinicius.cgobbi2004@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "vanilla-os/first-setup/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -42,9 +42,8 @@ msgid "Finished!"
 msgstr "Concluído!"
 
 #: vanilla_first_setup/gtk/logout.ui:13
-#, fuzzy
 msgid "Login to your new user"
-msgstr "Executar como um novo usuário"
+msgstr "Entre com seu novo usuário"
 
 #: vanilla_first_setup/gtk/logout.ui:23
 msgid "Login Now"
@@ -75,9 +74,8 @@ msgid "Showing Information"
 msgstr "Exibindo Informações"
 
 #: vanilla_first_setup/gtk/conn-check.ui:12
-#, fuzzy
 msgid "Checking Connection"
-msgstr "Verificando a conexão…"
+msgstr "Verificando conexão com a internet"
 
 #: vanilla_first_setup/gtk/conn-check.ui:13
 msgid "Please wait until the connection check is done"
@@ -295,9 +293,8 @@ msgid "Error log"
 msgstr "Erro!"
 
 #: vanilla_first_setup/application.py:76
-#, fuzzy
 msgid "Don't make any changes to the system."
-msgstr "Não fazer nenhuma mudança ao sistema."
+msgstr "Não faça nenhuma mudança no sistema."
 
 #: vanilla_first_setup/application.py:84
 #, fuzzy
@@ -381,9 +378,8 @@ msgid "Setting up the system"
 msgstr "Configurando o sistema"
 
 #: vanilla_first_setup/views/progress.py:97
-#, fuzzy
 msgid "Installing"
-msgstr "Instalando..."
+msgstr "Instalando"
 
 #: vanilla_first_setup/core/timezones.py:92
 msgid "Europe"
@@ -423,7 +419,7 @@ msgstr "Oceano Índico"
 
 #: vanilla_first_setup/core/timezones.py:101
 msgid "Arctic"
-msgstr ""
+msgstr "Ártico"
 
 #~ msgid "Tweak your Vanilla OS installation."
 #~ msgstr "Customize sua instalação do Vanilla OS."
