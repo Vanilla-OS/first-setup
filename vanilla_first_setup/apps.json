@@ -38,7 +38,7 @@
         },
         {
             "name": "Document Viewer",
-            "id": "org.gnome.Evince"
+            "id": "org.gnome.Papers"
         },
         {
             "name": "File Roller",
