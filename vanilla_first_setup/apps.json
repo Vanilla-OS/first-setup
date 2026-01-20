@@ -13,6 +13,10 @@
             "id": "org.gnome.Calendar"
         },
         {
+            "name": "Camera",
+            "id": "org.gnome.Snapshot"
+        },
+        {
             "name": "Characters",
             "id": "org.gnome.Characters"
         },
@@ -41,10 +45,6 @@
             "id": "org.gnome.Papers"
         },
         {
-            "name": "File Roller",
-            "id": "org.gnome.FileRoller"
-        },
-        {
             "name": "Fonts",
             "id": "org.gnome.font-viewer"
         },
@@ -61,19 +61,11 @@
             "id": "org.gnome.Maps"
         },
         {
-            "name": "Photos",
-            "id": "org.gnome.Photos"
-        },
-        {
-            "name": "Snapshot",
-            "id": "org.gnome.Snapshot"
-        },
-        {
             "name": "Text Editor",
             "id": "org.gnome.TextEditor"
         },
         {
-            "name": "Videos",
+            "name": "Video Player",
             "id": "org.gnome.Showtime"
         },
         {
@@ -94,60 +86,82 @@
     ],
     "utilities": [
         {
+            "name": "Apx GUI",
+            "id": "org.vanillaos.ApxGUI"
+        },
+        {
+            "name": "Resources",
+            "id": "net.nokyan.Resources"
+        },
+        {
             "name": "Bottles",
-            "id": "com.usebottles.bottles"
+            "id": "com.usebottles.bottles",
+            "active": false
         },
         {
             "name": "Extension Manager",
-            "id": "com.mattjakeman.ExtensionManager"
+            "id": "com.mattjakeman.ExtensionManager",
+            "active": false
         },
         {
             "name": "Heroic Games Launcher",
-            "id": "com.heroicgameslauncher.hgl"
+            "id": "com.heroicgameslauncher.hgl",
+            "active": false
         },
         {
             "name": "Lutris",
-            "id": "net.lutris.Lutris"
+            "id": "net.lutris.Lutris",
+            "active": false
         },
         {
             "name": "Boxes",
-            "id": "org.gnome.Boxes"
+            "id": "org.gnome.Boxes",
+            "active": false
         },
         {
             "name": "D\u00e9j\u00e0 Dup Backups",
-            "id": "org.gnome.DejaDup"
+            "id": "org.gnome.DejaDup",
+            "active": false
         },
         {
             "name": "Flatseal",
-            "id": "com.github.tchx84.Flatseal"
+            "id": "com.github.tchx84.Flatseal",
+            "active": false
         },
         {
             "name": "Refine",
-            "id": "page.tesk.Refine"
+            "id": "page.tesk.Refine",
+            "active": false
         },
         {
             "name": "Metadata Cleaner",
-            "id": "fr.romainvigier.MetadataCleaner"
+            "id": "fr.romainvigier.MetadataCleaner",
+            "active": false
         },
         {
             "name": "Rnote",
-            "id": "com.github.flxzt.rnote"
+            "id": "com.github.flxzt.rnote",
+            "active": false
         },
         {
             "name": "Shortwave",
-            "id": "de.haeckerfelix.Shortwave"
+            "id": "de.haeckerfelix.Shortwave",
+            "active": false
         },
         {
             "name": "Sound Recorder",
-            "id": "org.gnome.SoundRecorder"
+            "id": "org.gnome.SoundRecorder",
+            "active": false
         },
         {
             "name": "Warehouse",
-            "id": "io.github.flattool.Warehouse"
+            "id": "io.github.flattool.Warehouse",
+            "active": false
         },
         {
             "name": "Thunderbird",
-            "id": "org.mozilla.Thunderbird"
+            "id": "org.mozilla.Thunderbird",
+            "active": false
         }
     ],
     "browsers": [

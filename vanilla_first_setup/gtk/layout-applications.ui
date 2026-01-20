@@ -83,7 +83,7 @@
                             <child type="suffix">
                               <object class="GtkSwitch" id="utilities_switch">
                                 <property name="valign">3</property>
-                                <property name="active">false</property>
+                                <property name="active">true</property>
                                 <property name="focusable">false</property>
                               </object>
                             </child>
@@ -91,7 +91,7 @@
                               <object class="GtkButton" id="utilities_button">
                                 <property name="valign">3</property>
                                 <property name="icon-name">go-next-symbolic</property>
-                                <property name="sensitive">false</property>
+                                <property name="sensitive">true</property>
                                 <property name="tooltip-text" translatable="yes">Customize Utilities</property>
                                 <style>
                                   <class name="flat"/>
