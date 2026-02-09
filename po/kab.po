@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
-# ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>, 2024, 2025.
+# ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>, 2024, 2025, 2026.
 # Amadɣas <massiin@proton.me>, 2026.
 msgid ""
 msgstr ""
@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
 "PO-Revision-Date: 2026-02-09 20:09+0000\n"
-"Last-Translator: Amadɣas <massiin@proton.me>\n"
+"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Kabyle <https://hosted.weblate.org/projects/vanilla-os/first-"
 "setup/kab/>\n"
 "Language: kab\n"
@@ -276,7 +276,7 @@ msgstr "Talqayt"
 
 #: vanilla_first_setup/window.py:85
 msgid "Error log"
-msgstr "Tuccḍa n uɣmis"
+msgstr "Talqayt n tuccḍa"
 
 #: vanilla_first_setup/application.py:76
 msgid "Don't make any changes to the system."
@@ -298,7 +298,7 @@ msgstr ""
 
 #: vanilla_first_setup/views/conn_check.py:72
 msgid "No Internet Connection!"
-msgstr ""
+msgstr "Ulac tuqqna ɣer internet!"
 
 #: vanilla_first_setup/views/conn_check.py:73
 msgid "First Setup requires an active internet connection"
@@ -314,11 +314,11 @@ msgstr "Ɣur-k·m tuqqna ɣer internet itteddun"
 
 #: vanilla_first_setup/views/keyboard.py:37
 msgid "Keyboard"
-msgstr ""
+msgstr "Anasiw"
 
 #: vanilla_first_setup/views/user.py:118
 msgid "Username cannot be empty."
-msgstr ""
+msgstr "Ur ilaq ara ad yili isem n useqdac d ilem."
 
 #: vanilla_first_setup/views/user.py:121
 msgid "Username cannot be longer than 32 characters."
@@ -335,27 +335,27 @@ msgstr "Isem-agi n useqdac yettuseqdac yakan."
 
 #: vanilla_first_setup/views/locations.py:220
 msgid "Region"
-msgstr ""
+msgstr "Tamnaḍt"
 
 #: vanilla_first_setup/views/locations.py:238
 msgid "Country"
-msgstr ""
+msgstr "Tamurt"
 
 #: vanilla_first_setup/views/locations.py:327
 msgid "Search results"
-msgstr ""
+msgstr "Igmaḍ n unadi"
 
 #: vanilla_first_setup/views/timezone.py:39
 msgid "Timezone"
-msgstr ""
+msgstr "Tamnaḍt tasragant"
 
 #: vanilla_first_setup/views/welcome_user.py:45
 msgid "Hello {}!"
-msgstr ""
+msgstr "Azul {}!"
 
 #: vanilla_first_setup/views/progress.py:94
 msgid "Setting up the system"
-msgstr ""
+msgstr "Tawila n unagraw"
 
 #: vanilla_first_setup/views/progress.py:97
 #, fuzzy
@@ -364,23 +364,23 @@ msgstr "Asbeddi..."
 
 #: vanilla_first_setup/core/timezones.py:92
 msgid "Europe"
-msgstr ""
+msgstr "Turuft"
 
 #: vanilla_first_setup/core/timezones.py:93
 msgid "Asia"
-msgstr ""
+msgstr "Asya"
 
 #: vanilla_first_setup/core/timezones.py:94
 msgid "America"
-msgstr ""
+msgstr "Tamrikt"
 
 #: vanilla_first_setup/core/timezones.py:95
 msgid "Africa"
-msgstr ""
+msgstr "Tafriqt"
 
 #: vanilla_first_setup/core/timezones.py:96
 msgid "Antarctica"
-msgstr ""
+msgstr "Antaṛktik"
 
 #: vanilla_first_setup/core/timezones.py:97
 msgid "Pacific Ocean"
@@ -388,7 +388,7 @@ msgstr "Agaraw amelwi"
 
 #: vanilla_first_setup/core/timezones.py:98
 msgid "Australia"
-msgstr ""
+msgstr "Ustṛalya"
 
 #: vanilla_first_setup/core/timezones.py:99
 msgid "Atlantic Ocean"
