@@ -10,13 +10,14 @@
 # Silvan De La Rosa <lvllaby@pm.me>, 2024.
 # Raphaël Denni <raphoro.d@gmail.com>, 2024.
 # Xabi GOITY <xabigoity@gmail.com>, 2024, 2025.
+# Arthur Papy <arthurpapy@outlook.fr>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2025-03-23 18:38+0000\n"
-"Last-Translator: Xabi GOITY <xabigoity@gmail.com>\n"
+"PO-Revision-Date: 2026-01-25 15:15+0000\n"
+"Last-Translator: Arthur Papy <arthurpapy@outlook.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/vanilla-os/first-"
 "setup/fr/>\n"
 "Language: fr\n"
@@ -24,11 +25,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.11-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
-msgstr "Configuration initiale de Vanilla OS"
+msgstr "Première configuration de Vanilla"
 
 #: vanilla_first_setup/gtk/window.ui:25
 msgid "Back"
