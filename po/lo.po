@@ -1,0 +1,403 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the vanilla-first-setup package.
+# BoneNI <bounkirdni@gmail.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: vanilla-first-setup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-07 10:11+0100\n"
+"PO-Revision-Date: 2026-01-25 06:53+0000\n"
+"Last-Translator: BoneNI <bounkirdni@gmail.com>\n"
+"Language-Team: Lao <https://hosted.weblate.org/projects/vanilla-os/first-"
+"setup/lo/>\n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.16-dev\n"
+
+#: data/org.vanillaos.FirstSetup.desktop.in:2
+msgid "Vanilla OS First Setup"
+msgstr "ການຕັ້ງຄ່າເບື້ອງຕົ້ນຂອງ Vanilla OS"
+
+#: vanilla_first_setup/gtk/window.ui:25
+msgid "Back"
+msgstr "ກັບຄືນ"
+
+#: vanilla_first_setup/gtk/window.ui:39 vanilla_first_setup/gtk/window.ui:55
+msgid "Next"
+msgstr "ຕໍ່ໄປ"
+
+#: vanilla_first_setup/gtk/logout.ui:12 vanilla_first_setup/gtk/done.ui:12
+msgid "Finished!"
+msgstr "ສຳເລັດແລ້ວ!"
+
+#: vanilla_first_setup/gtk/logout.ui:13
+msgid "Login to your new user"
+msgstr "ເຂົ້າສູ່ລະບົບດ້ວຍບັນຊີຜູ້ໃຊ້ໃໝ່ຂອງທ່ານ"
+
+#: vanilla_first_setup/gtk/logout.ui:23
+msgid "Login Now"
+msgstr "ເຂົ້າສູ່ລະບົບດຽວນີ້"
+
+#: vanilla_first_setup/gtk/done.ui:13
+msgid "Your user account is ready to use"
+msgstr "ບັນຊີຜູ້ໃຊ້ຂອງທ່ານພ້ອມໃຊ້ງານແລ້ວ"
+
+#: vanilla_first_setup/gtk/done.ui:29
+msgid "Take a tour"
+msgstr "ເບິ່ງການແນະນຳເບື້ອງຕົ້ນ"
+
+#: vanilla_first_setup/gtk/done.ui:40
+msgid "Exit"
+msgstr "ອອກ"
+
+#: vanilla_first_setup/gtk/progress.ui:9
+msgid "Progress"
+msgstr "ຄວາມຄືບໜ້າ"
+
+#: vanilla_first_setup/gtk/progress.ui:10
+msgid "Some steps still take some time"
+msgstr "ບາງຂັ້ນຕອນອາດໃຊ້ເວລາຈັກໜ້ອຍ"
+
+#: vanilla_first_setup/gtk/dialog.ui:6
+msgid "Showing Information"
+msgstr "ກຳລັງສະແດງຂໍ້ມູນ"
+
+#: vanilla_first_setup/gtk/conn-check.ui:12
+msgid "Checking Connection"
+msgstr "ກຳລັງກວດສອບການເຊື່ອມຕໍ່"
+
+#: vanilla_first_setup/gtk/conn-check.ui:13
+msgid "Please wait until the connection check is done"
+msgstr "ກະລຸນາລໍຖ້າຈົນກວ່າການກວດສອບການເຊື່ອມຕໍ່ຈະສຳເລັດ"
+
+#: vanilla_first_setup/gtk/conn-check.ui:16
+msgid "Open Settings"
+msgstr "ເປີດການຕັ້ງຄ່າ"
+
+#: vanilla_first_setup/gtk/theme.ui:13
+msgid "Color Scheme"
+msgstr "ໂທນສີ"
+
+#: vanilla_first_setup/gtk/theme.ui:14
+msgid "Choose a color scheme for your system"
+msgstr "ເລືອກໂທນສີສຳລັບລະບົບຂອງທ່ານ"
+
+#: vanilla_first_setup/gtk/theme.ui:41
+msgid "Light Mode"
+msgstr "ໂໝດສີແຈ້ງ"
+
+#: vanilla_first_setup/gtk/theme.ui:79
+msgid "Light"
+msgstr "ແຈ້ງ"
+
+#: vanilla_first_setup/gtk/theme.ui:88
+msgid "Dark Mode"
+msgstr "ໂໝດສີມືດ"
+
+#: vanilla_first_setup/gtk/theme.ui:127
+msgid "Dark"
+msgstr "ມືດ"
+
+#: vanilla_first_setup/gtk/welcome.ui:39
+msgid "Make your choices, this wizard will take care of everything"
+msgstr "ເລືອກສິ່ງທີ່ທ່ານຕ້ອງການ, ລະບົບຊ່ວຍເຫຼືອນີ້ຈະຈັດການທຸກຢ່າງໃຫ້ເອງ"
+
+#: vanilla_first_setup/gtk/welcome.ui:52
+#: vanilla_first_setup/gtk/welcome-user.ui:21
+msgid "Start"
+msgstr "ເລີ່ມຕົ້ນ"
+
+#: vanilla_first_setup/gtk/welcome.ui:62
+#: vanilla_first_setup/gtk/welcome-user.ui:31
+msgid "Accessibility"
+msgstr "ການເຂົ້າເຖິງ"
+
+#: vanilla_first_setup/gtk/welcome-user.ui:13
+msgid "Let's set up your user account"
+msgstr "ມາຕັ້ງຄ່າບັນຊີຜູ້ໃຊ້ຂອງທ່ານກັນ"
+
+#: vanilla_first_setup/gtk/user.ui:23
+msgid "Create User"
+msgstr "ສ້າງຜູ້ໃຊ້"
+
+#: vanilla_first_setup/gtk/user.ui:24
+msgid "Provide details for your user account"
+msgstr "ລະບຸລາຍລະອຽດສຳລັບບັນຊີຜູ້ໃຊ້ຂອງທ່ານ"
+
+#: vanilla_first_setup/gtk/user.ui:31
+msgid "Name"
+msgstr "ຊື່"
+
+#: vanilla_first_setup/gtk/user.ui:38
+msgid "Username"
+msgstr "ຊື່ຜູ້ໃຊ້"
+
+#: vanilla_first_setup/gtk/user.ui:45
+msgid "Password"
+msgstr "ລະຫັດຜ່ານ"
+
+#: vanilla_first_setup/gtk/user.ui:51
+msgid "Confirm Password"
+msgstr "ຢືນຢັນລະຫັດຜ່ານ"
+
+#: vanilla_first_setup/gtk/hostname.ui:13
+#: vanilla_first_setup/gtk/hostname.ui:21
+msgid "Device Name"
+msgstr "ຊື່ອຸປະກອນ"
+
+#: vanilla_first_setup/gtk/hostname.ui:14
+msgid "Name your device"
+msgstr "ຕັ້ງຊື່ອຸປະກອນຂອງທ່ານ"
+
+#: vanilla_first_setup/gtk/hostname.ui:31
+msgid ""
+"Hostname can only contain lowercase alphanumeric characters (a-z), periods "
+"and hyphens, up to a maximum of 64 characters."
+msgstr ""
+"ຊື່ໂຮສ (Hostname) ຕ້ອງປະກອບມີຕົວອັກສອນພາສາອັງກິດຕົວພິມນ້ອຍ (a-z), ເຄື່ອງໝາຍຈ້ຳ (.) ແລະ ຂີດຕໍ່ "
+"(-) ເທົ່ານັ້ນ, ໂດຍມີຄວາມຍາວສູງສຸດ 64 ຕົວອັກສອນ."
+
+#: vanilla_first_setup/gtk/language.ui:10
+#: vanilla_first_setup/views/language.py:36
+msgid "Language"
+msgstr "ພາສາ"
+
+#: vanilla_first_setup/gtk/language.ui:11
+msgid "Select your language"
+msgstr "ເລືອກພາສາຂອງທ່ານ"
+
+#: vanilla_first_setup/gtk/location.ui:15
+msgid "Search keyboard layouts"
+msgstr "ຄົ້ນຫາຜັງແປ້ນພິມ"
+
+#: vanilla_first_setup/gtk/location.ui:24
+msgid "The search results are incomplete. Try refining your query."
+msgstr "ຜົນການຄົ້ນຫາບໍ່ສົມບູນ. ລອງປັບປ່ຽນຄຳຄົ້ນຫາຂອງທ່ານ."
+
+#: vanilla_first_setup/gtk/timezone.ui:11
+msgid "Date & Time"
+msgstr "ວັນທີ & ເວລາ"
+
+#: vanilla_first_setup/gtk/timezone.ui:12
+msgid "Select your preferred timezone"
+msgstr "ເລືອກເຂດເວລາທີ່ທ່ານຕ້ອງການ"
+
+#: vanilla_first_setup/gtk/timezone.ui:29
+msgid "Current timezone:"
+msgstr "ເຂດເວລາປັດຈຸບັນ:"
+
+#: vanilla_first_setup/gtk/timezone.ui:34
+msgid "not set"
+msgstr "ຍັງບໍ່ໄດ້ຕັ້ງຄ່າ"
+
+#: vanilla_first_setup/gtk/keyboard.ui:10
+msgid "Keyboard Layout"
+msgstr "ຜັງແປ້ນພິມ"
+
+#: vanilla_first_setup/gtk/keyboard.ui:11
+msgid "Select all your preferred keyboard layouts"
+msgstr "ເລືອກຜັງແປ້ນພິມທັງໝົດທີ່ທ່ານຕ້ອງການ"
+
+#: vanilla_first_setup/gtk/layout-applications.ui:15
+msgid "Applications"
+msgstr "ແອັບພລິເຄຊັນ"
+
+#: vanilla_first_setup/gtk/layout-applications.ui:16
+msgid "Choose which applications to install."
+msgstr "ເລືອກແອັບພລິເຄຊັນທີ່ຈະຕິດຕັ້ງ."
+
+#: vanilla_first_setup/gtk/layout-applications.ui:30
+msgid "Core Applications"
+msgstr "ແອັບພລິເຄຊັນຫຼັກ"
+
+#: vanilla_first_setup/gtk/layout-applications.ui:31
+#: vanilla_first_setup/gtk/layout-applications.ui:56
+msgid "Essential GNOME apps like Calendar or Document Viewer"
+msgstr "ແອັບ GNOME ທີ່ຈຳເປັນ ເຊັ່ນ ປະຕິທິນ ຫຼື ໂປຣແກຣມເບິ່ງເອກະສານ"
+
+#: vanilla_first_setup/gtk/layout-applications.ui:45
+msgid "Customize Core Applications"
+msgstr "ປັບແຕ່ງແອັບພລິເຄຊັນຫຼັກ"
+
+#: vanilla_first_setup/gtk/layout-applications.ui:55
+msgid "Browsers"
+msgstr "ເບຣົາເຊີ"
+
+#: vanilla_first_setup/gtk/layout-applications.ui:70
+msgid "Customize Browsers"
+msgstr "ປັບແຕ່ງເບຣົາເຊີ"
+
+#: vanilla_first_setup/gtk/layout-applications.ui:80
+msgid "Common Utilities"
+msgstr "ເຄື່ອງມືອຳນວຍຄວາມສະດວກທົ່ວໄປ"
+
+#: vanilla_first_setup/gtk/layout-applications.ui:81
+msgid "Useful utilities to enhance your desktop experience"
+msgstr "ເຄື່ອງມືທີ່ມີປະໂຫຍດເພື່ອເພີ່ມປະສົບການການໃຊ້ງານເດັສທັອບຂອງທ່ານ"
+
+#: vanilla_first_setup/gtk/layout-applications.ui:95
+msgid "Customize Utilities"
+msgstr "ປັບແຕ່ງເຄື່ອງມືອຳນວຍຄວາມສະດວກ"
+
+#: vanilla_first_setup/gtk/layout-applications.ui:105
+msgid "Office"
+msgstr "ຫ້ອງການ"
+
+#: vanilla_first_setup/gtk/layout-applications.ui:106
+msgid "The LibreOffice suite"
+msgstr "ຊຸດໂປຣແກຣມ LibreOffice"
+
+#: vanilla_first_setup/gtk/layout-applications.ui:120
+msgid "Customize Office Applications"
+msgstr "ປັບແຕ່ງແອັບພລິເຄຊັນຫ້ອງການ"
+
+#: vanilla_first_setup/gtk/applications-dialog.ui:8
+msgid "Select Applications"
+msgstr "ເລືອກແອັບພລິເຄຊັນ"
+
+#: vanilla_first_setup/gtk/applications-dialog.ui:18
+msgid "Apply"
+msgstr "ນຳໃຊ້"
+
+#: vanilla_first_setup/gtk/applications-dialog.ui:30
+msgid "Select the applications you want to install"
+msgstr "ເລືອກແອັບພລິເຄຊັນທີ່ທ່ານຕ້ອງການຕິດຕັ້ງ"
+
+#: vanilla_first_setup/window.py:74
+msgid "Setup failed: "
+msgstr "ການຕັ້ງຄ່າລົ້ມເຫຼວ: "
+
+#: vanilla_first_setup/window.py:79
+msgid "Details"
+msgstr "ລາຍລະອຽດ"
+
+#: vanilla_first_setup/window.py:85
+msgid "Error log"
+msgstr "ບັນທຶກຂໍ້ຜິດພາດ"
+
+#: vanilla_first_setup/application.py:76
+msgid "Don't make any changes to the system."
+msgstr "ບໍ່ຕ້ອງປ່ຽນແປງຫຍັງຕໍ່ລະບົບ."
+
+#: vanilla_first_setup/application.py:84
+msgid "Force the configure system mode, independant of group."
+msgstr "ບັງຄັບໂໝດຕັ້ງຄ່າລະບົບ, ໂດຍບໍ່ຂຶ້ນກັບກຸ່ມ."
+
+#: vanilla_first_setup/application.py:92
+msgid "Force the regular mode, independant of group."
+msgstr "ບັງຄັບໂໝດປົກກະຕິ, ໂດຍບໍ່ຂຶ້ນກັບກຸ່ມ."
+
+#: vanilla_first_setup/application.py:100
+msgid ""
+"Use the original equipment manufacturer mode with language, keyboard and "
+"timezone selection."
+msgstr ""
+"ໃຊ້ໂໝດຜູ້ຜະລິດອຸປະກອນດັ້ງເດີມ (OEM) ພ້ອມກັບການເລືອກພາສາ, ແປ້ນພິມ ແລະ ເຂດເວລາ."
+
+#: vanilla_first_setup/views/conn_check.py:72
+msgid "No Internet Connection!"
+msgstr "ບໍ່ມີການເຊື່ອມຕໍ່ອິນເຕີເນັດ!"
+
+#: vanilla_first_setup/views/conn_check.py:73
+msgid "First Setup requires an active internet connection"
+msgstr "ການຕັ້ງຄ່າເບື້ອງຕົ້ນຕ້ອງການການເຊື່ອມຕໍ່ອິນເຕີເນັດ"
+
+#: vanilla_first_setup/views/conn_check.py:79
+msgid "Connection available"
+msgstr "ການເຊື່ອມຕໍ່ພ້ອມໃຊ້ງານ"
+
+#: vanilla_first_setup/views/conn_check.py:80
+msgid "You have a working internet connection"
+msgstr "ທ່ານມີການເຊື່ອມຕໍ່ອິນເຕີເນັດທີ່ໃຊ້ງານໄດ້"
+
+#: vanilla_first_setup/views/keyboard.py:37
+msgid "Keyboard"
+msgstr "ແປ້ນພິມ"
+
+#: vanilla_first_setup/views/user.py:118
+msgid "Username cannot be empty."
+msgstr "ຊື່ຜູ້ໃຊ້ບໍ່ສາມາດຫວ່າງເປົ່າໄດ້."
+
+#: vanilla_first_setup/views/user.py:121
+msgid "Username cannot be longer than 32 characters."
+msgstr "ຊື່ຜູ້ໃຊ້ຕ້ອງບໍ່ເກີນ 32 ຕົວອັກສອນ."
+
+#: vanilla_first_setup/views/user.py:124
+msgid "Username cannot contain special characters or uppercase letters."
+msgstr "ຊື່ຜູ້ໃຊ້ບໍ່ສາມາດມີຕົວອັກສອນພິເສດ ຫຼື ຕົວອັກສອນພິມໃຫຍ່ໄດ້."
+
+#: vanilla_first_setup/views/user.py:128
+msgid "This username is already in use."
+msgstr "ຊື່ຜູ້ໃຊ້ນີ້ຖືກໃຊ້ແລ້ວ."
+
+#: vanilla_first_setup/views/locations.py:220
+msgid "Region"
+msgstr "ພາກພື້ນ"
+
+#: vanilla_first_setup/views/locations.py:238
+msgid "Country"
+msgstr "ປະເທດ"
+
+#: vanilla_first_setup/views/locations.py:327
+msgid "Search results"
+msgstr "ຜົນການຄົ້ນຫາ"
+
+#: vanilla_first_setup/views/timezone.py:39
+msgid "Timezone"
+msgstr "ເຂດເວລາ"
+
+#: vanilla_first_setup/views/welcome_user.py:45
+msgid "Hello {}!"
+msgstr "ສະບາຍດີ {}!"
+
+#: vanilla_first_setup/views/progress.py:94
+msgid "Setting up the system"
+msgstr "ກຳລັງຕັ້ງຄ່າລະບົບ"
+
+#: vanilla_first_setup/views/progress.py:97
+msgid "Installing"
+msgstr "ກຳລັງຕິດຕັ້ງ"
+
+#: vanilla_first_setup/core/timezones.py:92
+msgid "Europe"
+msgstr "ເອີຣົບ"
+
+#: vanilla_first_setup/core/timezones.py:93
+msgid "Asia"
+msgstr "ອາຊີ"
+
+#: vanilla_first_setup/core/timezones.py:94
+msgid "America"
+msgstr "ອາເມລິກາ"
+
+#: vanilla_first_setup/core/timezones.py:95
+msgid "Africa"
+msgstr "ອາຟຣິກາ"
+
+#: vanilla_first_setup/core/timezones.py:96
+msgid "Antarctica"
+msgstr "ແອນຕາກຕິກາ"
+
+#: vanilla_first_setup/core/timezones.py:97
+msgid "Pacific Ocean"
+msgstr "ມະຫາສະໝຸດປາຊີຟິກ"
+
+#: vanilla_first_setup/core/timezones.py:98
+msgid "Australia"
+msgstr "ອົດສະຕຣາລີ"
+
+#: vanilla_first_setup/core/timezones.py:99
+msgid "Atlantic Ocean"
+msgstr "ມະຫາສະໝຸດອັດລັງຕິກ"
+
+#: vanilla_first_setup/core/timezones.py:100
+msgid "Indian Ocean"
+msgstr "ມະຫາສະໝຸດອິນເດຍ"
+
+#: vanilla_first_setup/core/timezones.py:101
+msgid "Arctic"
+msgstr "ອາກຕິກ"
