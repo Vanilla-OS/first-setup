@@ -4,21 +4,22 @@
 # Automatically generated, 2022.
 #
 # Abhijeet Singh <onlinepubglite@gmail.com>, 2024.
+# Saiansh <svn9205@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2024-04-09 18:01+0000\n"
-"Last-Translator: Abhijeet Singh <onlinepubglite@gmail.com>\n"
-"Language-Team: Hindi <https://hosted.weblate.org/projects/vanilla-os/first-"
-"setup/hi/>\n"
+"PO-Revision-Date: 2025-09-30 10:01+0000\n"
+"Last-Translator: Saiansh <svn9205@gmail.com>\n"
+"Language-Team: Hindi <https://hosted.weblate.org/projects/vanilla-os/"
+"first-setup/hi/>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -26,7 +27,7 @@ msgstr "पहला सेटअप"
 
 #: vanilla_first_setup/gtk/window.ui:25
 msgid "Back"
-msgstr ""
+msgstr "पिछला"
 
 #: vanilla_first_setup/gtk/window.ui:39 vanilla_first_setup/gtk/window.ui:55
 msgid "Next"
