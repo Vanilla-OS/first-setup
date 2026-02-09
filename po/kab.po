@@ -2,25 +2,26 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
 # ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>, 2024, 2025.
+# Amadɣas <massiin@proton.me>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2025-06-08 10:02+0000\n"
-"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
-"Language-Team: Kabyle <https://hosted.weblate.org/projects/vanilla-os/"
-"first-setup/kab/>\n"
+"PO-Revision-Date: 2026-02-09 20:09+0000\n"
+"Last-Translator: Amadɣas <massiin@proton.me>\n"
+"Language-Team: Kabyle <https://hosted.weblate.org/projects/vanilla-os/first-"
+"setup/kab/>\n"
 "Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
-msgstr ""
+msgstr "Asbeddi Amezwaru n Vanilla OS"
 
 #: vanilla_first_setup/gtk/window.ui:25
 msgid "Back"
@@ -36,69 +37,67 @@ msgstr "Ifukk!"
 
 #: vanilla_first_setup/gtk/logout.ui:13
 msgid "Login to your new user"
-msgstr ""
+msgstr "Qqen ɣer useqdac-ik·im amaynut"
 
 #: vanilla_first_setup/gtk/logout.ui:23
 msgid "Login Now"
-msgstr ""
+msgstr "Qqen Tura"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Your user account is ready to use"
-msgstr ""
+msgstr "Amiḍan-ik·im n useqdac ihegga i useqdec"
 
 #: vanilla_first_setup/gtk/done.ui:29
 msgid "Take a tour"
-msgstr ""
+msgstr "Egg yiwet n tirza"
 
 #: vanilla_first_setup/gtk/done.ui:40
 msgid "Exit"
-msgstr ""
+msgstr "Tuffɣa"
 
 #: vanilla_first_setup/gtk/progress.ui:9
 msgid "Progress"
-msgstr ""
+msgstr "Iteddu"
 
 #: vanilla_first_setup/gtk/progress.ui:10
 msgid "Some steps still take some time"
-msgstr ""
+msgstr "Kra n yisurifen ad ṭṭfen kra n wakud"
 
 #: vanilla_first_setup/gtk/dialog.ui:6
 msgid "Showing Information"
-msgstr ""
+msgstr "Askan n telɣut"
 
 #: vanilla_first_setup/gtk/conn-check.ui:12
-#, fuzzy
 msgid "Checking Connection"
-msgstr "Yetteqqen"
+msgstr "Asenqed n tuqqna"
 
 #: vanilla_first_setup/gtk/conn-check.ui:13
 msgid "Please wait until the connection check is done"
-msgstr ""
+msgstr "Ttxil-k·m arǧu alama yekfa usenqed n tuqqna"
 
 #: vanilla_first_setup/gtk/conn-check.ui:16
 msgid "Open Settings"
-msgstr ""
+msgstr "Ldi iɣewwaṛen"
 
 #: vanilla_first_setup/gtk/theme.ui:13
 msgid "Color Scheme"
-msgstr ""
+msgstr "Azenziɣ n yiniten"
 
 #: vanilla_first_setup/gtk/theme.ui:14
 msgid "Choose a color scheme for your system"
-msgstr ""
+msgstr "Fren azenziɣ n yiniten i unagraw-ik·im"
 
 #: vanilla_first_setup/gtk/theme.ui:41
 msgid "Light Mode"
-msgstr ""
+msgstr "Askar aceɛlal"
 
 #: vanilla_first_setup/gtk/theme.ui:79
 msgid "Light"
-msgstr ""
+msgstr "Aceɛlal"
 
 #: vanilla_first_setup/gtk/theme.ui:88
-#, fuzzy
 msgid "Dark Mode"
-msgstr "Ubrik"
+msgstr "Askar Ubrik"
 
 #: vanilla_first_setup/gtk/theme.ui:127
 msgid "Dark"
@@ -106,21 +105,21 @@ msgstr "Ubrik"
 
 #: vanilla_first_setup/gtk/welcome.ui:39
 msgid "Make your choices, this wizard will take care of everything"
-msgstr ""
+msgstr "Eg afran-ik·im, amallal-agi ad d-yelhu i kra yellan"
 
 #: vanilla_first_setup/gtk/welcome.ui:52
 #: vanilla_first_setup/gtk/welcome-user.ui:21
 msgid "Start"
-msgstr ""
+msgstr "Bdu"
 
 #: vanilla_first_setup/gtk/welcome.ui:62
 #: vanilla_first_setup/gtk/welcome-user.ui:31
 msgid "Accessibility"
-msgstr ""
+msgstr "Tuffart"
 
 #: vanilla_first_setup/gtk/welcome-user.ui:13
 msgid "Let's set up your user account"
-msgstr ""
+msgstr "Iyya ad nsbadu amiḍan-ik·im n useqdac"
 
 #: vanilla_first_setup/gtk/user.ui:23
 msgid "Create User"
@@ -128,7 +127,7 @@ msgstr "Rnu aseqdac"
 
 #: vanilla_first_setup/gtk/user.ui:24
 msgid "Provide details for your user account"
-msgstr ""
+msgstr "Mudd ifatusen i umiḍan-ik n useqdac"
 
 #: vanilla_first_setup/gtk/user.ui:31
 msgid "Name"
@@ -153,7 +152,7 @@ msgstr "Isem n yibenk"
 
 #: vanilla_first_setup/gtk/hostname.ui:14
 msgid "Name your device"
-msgstr ""
+msgstr "Semmi ibenk-ik·im"
 
 #: vanilla_first_setup/gtk/hostname.ui:31
 msgid ""
@@ -164,72 +163,72 @@ msgstr ""
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
 msgid "Language"
-msgstr ""
+msgstr "Tutlayt"
 
 #: vanilla_first_setup/gtk/language.ui:11
 msgid "Select your language"
-msgstr ""
+msgstr "Fren tutlayt-ik·im"
 
 #: vanilla_first_setup/gtk/location.ui:15
 msgid "Search keyboard layouts"
-msgstr ""
+msgstr "Nadi tineɣrufin n unasiw"
 
 #: vanilla_first_setup/gtk/location.ui:24
 msgid "The search results are incomplete. Try refining your query."
-msgstr ""
+msgstr "Igmaḍ n unadi ur nemmid ara. Ɛreḍ ad talseḍ awennez n tuttra-inek·inem."
 
 #: vanilla_first_setup/gtk/timezone.ui:11
 msgid "Date & Time"
-msgstr ""
+msgstr "Azemz & wakud"
 
 #: vanilla_first_setup/gtk/timezone.ui:12
 msgid "Select your preferred timezone"
-msgstr ""
+msgstr "Fren tamnaḍt tasragant-ik·im tamenyaft"
 
 #: vanilla_first_setup/gtk/timezone.ui:29
 msgid "Current timezone:"
-msgstr ""
+msgstr "Tamnaḍt tasragant tamirant:"
 
 #: vanilla_first_setup/gtk/timezone.ui:34
 msgid "not set"
-msgstr ""
+msgstr "ur ittusbadu ara"
 
 #: vanilla_first_setup/gtk/keyboard.ui:10
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "Taneɣruft n unasiw"
 
 #: vanilla_first_setup/gtk/keyboard.ui:11
 msgid "Select all your preferred keyboard layouts"
-msgstr ""
+msgstr "Fren akk tineɣrufin n unasiw-ik·im amenyaf"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:15
 msgid "Applications"
-msgstr ""
+msgstr "Isnasen"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:16
 msgid "Choose which applications to install."
-msgstr ""
+msgstr "Fren anwa isnasen ara tesbeddeḍ."
 
 #: vanilla_first_setup/gtk/layout-applications.ui:30
 msgid "Core Applications"
-msgstr ""
+msgstr "Isnasen Igejdanen"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:31
 #: vanilla_first_setup/gtk/layout-applications.ui:56
 msgid "Essential GNOME apps like Calendar or Document Viewer"
-msgstr ""
+msgstr "Isnasen n GNOME ilaqen am uwitay neɣ am tmeskant n yisemliyen"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:45
 msgid "Customize Core Applications"
-msgstr ""
+msgstr "Sagen Isnasen Igejdanen"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:55
 msgid "Browsers"
-msgstr ""
+msgstr "Iminigen"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:70
 msgid "Customize Browsers"
-msgstr ""
+msgstr "Sagen iminigen"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:80
 msgid "Common Utilities"
@@ -237,60 +236,59 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/layout-applications.ui:81
 msgid "Useful utilities to enhance your desktop experience"
-msgstr ""
+msgstr "Ifecka iwulmen i usnerni n termit n tnarit-ik·im"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:95
 msgid "Customize Utilities"
-msgstr ""
+msgstr "Sagen Ifecka"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:105
 msgid "Office"
-msgstr ""
+msgstr "Awurmahil"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:106
 msgid "The LibreOffice suite"
-msgstr ""
+msgstr "Agraw n wahilen LibreOffice"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:120
 msgid "Customize Office Applications"
-msgstr ""
+msgstr "Sagen Isnasen n Uwurmahil"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:8
 msgid "Select Applications"
-msgstr ""
+msgstr "Fren Isnasen"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:18
 msgid "Apply"
-msgstr ""
+msgstr "Snes"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:30
 msgid "Select the applications you want to install"
-msgstr ""
+msgstr "Fren isnasen i tebɣiḍ ad tesbeddeḍ"
 
 #: vanilla_first_setup/window.py:74
 msgid "Setup failed: "
-msgstr ""
+msgstr "Asebded ur yeddi ara: "
 
 #: vanilla_first_setup/window.py:79
 msgid "Details"
-msgstr ""
+msgstr "Talqayt"
 
 #: vanilla_first_setup/window.py:85
-#, fuzzy
 msgid "Error log"
-msgstr "Tuccḍa!"
+msgstr "Tuccḍa n uɣmis"
 
 #: vanilla_first_setup/application.py:76
 msgid "Don't make any changes to the system."
-msgstr ""
+msgstr "Ur tteg ara ibeddilen i unagraw."
 
 #: vanilla_first_setup/application.py:84
 msgid "Force the configure system mode, independant of group."
-msgstr ""
+msgstr "Ḥettem askar n uswel n unagraw, ur icudden ara ɣer ugraw."
 
 #: vanilla_first_setup/application.py:92
 msgid "Force the regular mode, independant of group."
-msgstr ""
+msgstr "Ḥettem askar amagnu, ur icudden ara ɣer uskar."
 
 #: vanilla_first_setup/application.py:100
 msgid ""
@@ -304,16 +302,15 @@ msgstr ""
 
 #: vanilla_first_setup/views/conn_check.py:73
 msgid "First Setup requires an active internet connection"
-msgstr ""
+msgstr "Asebded amezwaru yesra tuqqna Internet turmidt"
 
 #: vanilla_first_setup/views/conn_check.py:79
-#, fuzzy
 msgid "Connection available"
-msgstr "Yetteqqen"
+msgstr "Tuqqna tewjed"
 
 #: vanilla_first_setup/views/conn_check.py:80
 msgid "You have a working internet connection"
-msgstr ""
+msgstr "Ɣur-k·m tuqqna ɣer internet itteddun"
 
 #: vanilla_first_setup/views/keyboard.py:37
 msgid "Keyboard"
@@ -325,15 +322,16 @@ msgstr ""
 
 #: vanilla_first_setup/views/user.py:121
 msgid "Username cannot be longer than 32 characters."
-msgstr ""
+msgstr "Isem n useqdac ur yezmir ara ad iɛeddi nnig 32 n isekkilen."
 
 #: vanilla_first_setup/views/user.py:124
 msgid "Username cannot contain special characters or uppercase letters."
 msgstr ""
+"Isem n useqdac ur yezmir ara ad isɛu isekkilen uzzigen neɣ asekkil ameqran."
 
 #: vanilla_first_setup/views/user.py:128
 msgid "This username is already in use."
-msgstr ""
+msgstr "Isem-agi n useqdac yettuseqdac yakan."
 
 #: vanilla_first_setup/views/locations.py:220
 msgid "Region"
@@ -386,7 +384,7 @@ msgstr ""
 
 #: vanilla_first_setup/core/timezones.py:97
 msgid "Pacific Ocean"
-msgstr ""
+msgstr "Agaraw amelwi"
 
 #: vanilla_first_setup/core/timezones.py:98
 msgid "Australia"
@@ -394,15 +392,15 @@ msgstr ""
 
 #: vanilla_first_setup/core/timezones.py:99
 msgid "Atlantic Ocean"
-msgstr ""
+msgstr "Agaraw aṭlasi"
 
 #: vanilla_first_setup/core/timezones.py:100
 msgid "Indian Ocean"
-msgstr ""
+msgstr "Agaraw ahendi"
 
 #: vanilla_first_setup/core/timezones.py:101
 msgid "Arctic"
-msgstr ""
+msgstr "Arkti"
 
 #~ msgid "Internet"
 #~ msgstr "Internet"
