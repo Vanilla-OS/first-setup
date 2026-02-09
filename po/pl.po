@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vanilla-first-setup package.
 # gnu-ewm <gnu.ewm@protonmail.com>, 2023.
-# Tomasz Dyńka <gramyteraz12@gmail.com>, 2023.
+# Tomasz Dyńka <gramyteraz12@gmail.com>, 2023, 2025.
 # Marek <uroda.mar@gmail.com>, 2024.
 # Dawid Harwig <dawidharwig@gmail.com>, 2024.
 # Piotr Wieczorek <wieczorek.piotr.praga@protonmail.com>, 2024, 2025.
@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2025-03-09 13:19+0000\n"
-"Last-Translator: Piotr Wieczorek <wieczorek.piotr.praga@protonmail.com>\n"
+"PO-Revision-Date: 2025-12-23 09:00+0000\n"
+"Last-Translator: Tomasz Dyńka <gramyteraz12@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/vanilla-os/first-"
 "setup/pl/>\n"
 "Language: pl\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.10.3-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -78,7 +78,7 @@ msgstr "Sprawdzanie połączenia"
 
 #: vanilla_first_setup/gtk/conn-check.ui:13
 msgid "Please wait until the connection check is done"
-msgstr "Proszę poczekać, aż sprawdzanie połączenia zostanie zakończone"
+msgstr "Proszę zaczekać na zakończenie sprawdzania połączenia"
 
 #: vanilla_first_setup/gtk/conn-check.ui:16
 msgid "Open Settings"
@@ -140,7 +140,7 @@ msgstr "Nazwa"
 
 #: vanilla_first_setup/gtk/user.ui:38
 msgid "Username"
-msgstr "Nazwisko"
+msgstr "Nazwa użytkownika"
 
 #: vanilla_first_setup/gtk/user.ui:45
 msgid "Password"
@@ -164,6 +164,8 @@ msgid ""
 "Hostname can only contain lowercase alphanumeric characters (a-z), periods "
 "and hyphens, up to a maximum of 64 characters."
 msgstr ""
+"Nazwa komputera może zawierać tylko małe znaki alfanumeryczne (a-z), kropki "
+"i łączniki, oraz może mieć maksymalnie 64 znaki"
 
 #: vanilla_first_setup/gtk/language.ui:10
 #: vanilla_first_setup/views/language.py:36
