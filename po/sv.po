@@ -4,13 +4,14 @@
 # Luna Jernberg <droidbittin@gmail.com>, 2023.
 # bittin1ddc447d824349b2 <bittin@reimu.nl>, 2023, 2024, 2025.
 # majjejjam <miro.allard@gmail.com>, 2023.
+# Daniel Wiik <d.wiik@outlook.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2025-03-10 12:22+0000\n"
-"Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
+"PO-Revision-Date: 2026-01-20 23:02+0000\n"
+"Last-Translator: Daniel Wiik <d.wiik@outlook.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/vanilla-os/first-"
 "setup/sv/>\n"
 "Language: sv\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.3-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -46,7 +47,7 @@ msgstr "Logga in nu"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Your user account is ready to use"
-msgstr "Din användarkonto är redo att användas."
+msgstr "Din användarkonto är redo att användas"
 
 #: vanilla_first_setup/gtk/done.ui:29
 msgid "Take a tour"
