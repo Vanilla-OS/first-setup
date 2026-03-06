@@ -7,13 +7,14 @@
 # Sultan Iskandar Maulana <nattadasu@nattadasu.my.id>, 2023.
 # Reza Almanda <rezaalmanda27@gmail.com>, 2023.
 # proficiency <anggiar.rachman@gmail.com>, 2024.
+# Zahid Rizky Fakhri <zahidrizkyfakhri@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2025-09-02 03:02+0000\n"
-"Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
+"PO-Revision-Date: 2026-03-06 10:53+0000\n"
+"Last-Translator: Zahid Rizky Fakhri <zahidrizkyfakhri@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/id/>\n"
 "Language: id\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.13.1-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -321,7 +322,7 @@ msgstr "Anda memiliki koneksi internet yang berfungsi"
 
 #: vanilla_first_setup/views/keyboard.py:37
 msgid "Keyboard"
-msgstr "Keyboard"
+msgstr "Papan Ketik"
 
 #: vanilla_first_setup/views/user.py:118
 msgid "Username cannot be empty."
