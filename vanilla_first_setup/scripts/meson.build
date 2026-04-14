@@ -18,7 +18,6 @@ sources = [
   'setup-system',
   'user',
   'remove-first-setup-user',
-  'remove-autostart-file',
 ]
 
 install_data(sources, install_dir: scriptsdir)

@@ -65,9 +65,6 @@ def setup_flatpak_remote():
 def remove_first_setup_user():
     return run_script("remove-first-setup-user", [], root=True)
 
-def remove_autostart_file():
-    return run_script("remove-autostart-file", [])
-
 def _setup_system():
     return run_script("setup-system", [])
 
