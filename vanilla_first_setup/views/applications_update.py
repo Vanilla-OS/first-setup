@@ -19,6 +19,7 @@ import copy
 import json
 import os
 import hashlib
+import subprocess
 
 from gi.repository import Gtk, Adw
 _ = __builtins__["_"]
@@ -163,16 +164,21 @@ class VanillaLayoutApplicationsUpdate(Adw.Bin):
             "uninstall": seen_app_ids["uninstall"] if "uninstall" in seen_app_ids else []
         }
 
+        result = subprocess.run("flatpak list --user --app --columns=application | jq -R . | jq -s .", shell=True, capture_output=True, text=True)
+        installed_app_ids = json.loads(result.stdout)
+
         categories = ["core", "browsers", "utilities", "office"]
         for category in categories:
             for app in apps[category]:
                 if app["id"] not in self.__seen_app_ids["install"]:
-                    self.__apps["install"].append(app)
                     self.__seen_app_ids["install"].append(app["id"])
+                    if app["id"] not in installed_app_ids:
+                        self.__apps["install"].append(app)
         for app in apps["deprecated"]:
             if app["id"] not in self.__seen_app_ids["uninstall"]:
-                self.__apps["uninstall"].append(app)
                 self.__seen_app_ids["uninstall"].append(app["id"])
+                if app["id"] in installed_app_ids:
+                    self.__apps["uninstall"].append(app)
 
         self.install_switch.connect("state-set", self.__on_install_switch_state_change)
         self.uninstall_switch.connect("state-set", self.__on_uninstall_switch_state_change)
