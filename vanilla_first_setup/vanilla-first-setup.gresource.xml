@@ -12,6 +12,7 @@
     <file>gtk/theme.ui</file>
     <file>gtk/welcome.ui</file>
     <file>gtk/welcome-user.ui</file>
+    <file>gtk/welcome-update.ui</file>
     <file>gtk/user.ui</file>
     <file>gtk/hostname.ui</file>
     <file>gtk/language.ui</file>
@@ -21,8 +22,10 @@
     <file>gtk/widget-location-list-page.ui</file>
 
     <file>gtk/layout-applications.ui</file>
-    <file>gtk/applications-dialog.ui</file>
-    
+    <file>gtk/layout-applications-update.ui</file>
+    <file>gtk/applications-install-dialog.ui</file>
+    <file>gtk/applications-uninstall-dialog.ui</file>
+
     <file>assets/theme-default.svg</file>
     <file>assets/theme-dark.svg</file>
     <file>assets/background_replacement.png</file>

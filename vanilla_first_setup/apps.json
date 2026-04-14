@@ -214,5 +214,28 @@
             "id": "org.gnome.Epiphany",
             "active": false
         }
+    ],
+
+    "deprecated": [
+        {
+            "name": "Document Viewer",
+            "id": "org.gnome.Evince"
+        },
+        {
+            "name": "File Roller",
+            "id": "org.gnome.FileRoller"
+        },
+        {
+            "name": "Music",
+            "id": "org.gnome.Music"
+        },
+        {
+            "name": "Photos",
+            "id": "org.gnome.Photos"
+        },
+        {
+            "name": "Videos",
+            "id": "org.gnome.Totem"
+        }
     ]
 }

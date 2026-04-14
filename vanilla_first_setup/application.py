@@ -26,6 +26,7 @@ import os
 import sys
 import logging
 import grp
+import json
 _ = __builtins__["_"]
 from vanilla_first_setup.window import VanillaWindow
 import vanilla_first_setup.core.backend as backend
@@ -93,6 +94,14 @@ class FirstSetupApplication(Adw.Application):
             None,
         )
         self.add_main_option(
+            "force-update-mode",
+            ord("u"),
+            GLib.OptionFlags.NONE,
+            GLib.OptionArg.NONE,
+            _("Force the update mode."),
+            None,
+        )
+        self.add_main_option(
             "oem-mode",
             ord("o"),
             GLib.OptionFlags.NONE,
@@ -110,13 +119,14 @@ class FirstSetupApplication(Adw.Application):
             self.dry_run = True
         else:
             self.dry_run = False
-        
+
         self.force_configure = bool(options.lookup_value("force-configure-mode"))
         self.force_regular = bool(options.lookup_value("force-regular-mode"))
+        self.force_update = bool(options.lookup_value("force-update-mode"))
         self.oem_mode = bool(options.lookup_value("oem-mode"))
-        
+
         backend.set_dry_run(self.dry_run)
-            
+
         self.activate()
         return 0
 
@@ -126,19 +136,37 @@ class FirstSetupApplication(Adw.Application):
         We raise the application's main window, creating it if
         necessary.
         """
-        all_groups = [g.gr_name for g in grp.getgrall()]
         configure_system_mode = False
-        if "vanilla-first-setup" in all_groups and os.getlogin() in grp.getgrnam("vanilla-first-setup").gr_mem:
-            configure_system_mode = True
+        update_mode = False
 
         if self.force_configure:
             configure_system_mode = True
         elif self.force_regular:
             configure_system_mode = False
+            update_mode = False
+        elif self.force_update:
+            configure_system_mode = False
+            update_mode = True
+        else:
+            all_groups = [g.gr_name for g in grp.getgrall()]
+            if "vanilla-first-setup" in all_groups and os.getlogin() in grp.getgrnam("vanilla-first-setup").gr_mem:
+                configure_system_mode = True
+            else:
+                seen_app_ids_file_path = os.path.join(os.path.expanduser('~'), ".local", "share", "vanilla-first-setup", "seen_app_ids.json")
+                try:
+                    with open(seen_app_ids_file_path) as file:
+                        seen_app_ids = json.load(file)
+                except (FileNotFoundError, json.JSONDecodeError):
+                    pass
+                else:
+                    update_mode = True
 
         if configure_system_mode:
             print("Running in configure system mode.")
             backend.disable_lockscreen()
+        elif update_mode:
+            print("Running in update mode.")
+            backend.setup_system_deferred()
         else:
             print("Running in regular mode.")
             backend.setup_system_deferred()
@@ -156,6 +184,7 @@ class FirstSetupApplication(Adw.Application):
                 application=self,
                 moduledir=self.moduledir,
                 configure_system_mode=configure_system_mode,
+                update_mode=update_mode,
                 oem_mode=self.oem_mode,
             )
         win.present()
@@ -163,4 +192,3 @@ class FirstSetupApplication(Adw.Application):
     def close(self, *args):
         """Close the application."""
         self.quit()
-

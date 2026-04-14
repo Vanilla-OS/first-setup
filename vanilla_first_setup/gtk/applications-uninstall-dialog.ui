@@ -2,7 +2,7 @@
 <interface>
     <requires lib="gtk" version="4.0"/>
     <requires lib="libadwaita" version="1.0"/>
-    <template class="VanillaApplicationsDialog" parent="AdwWindow">
+    <template class="VanillaApplicationsUninstallDialog" parent="AdwWindow">
         <property name="default-width">500</property>
         <property name="default-height">600</property>
         <property name="title" translatable="yes">Select Applications</property>
@@ -27,7 +27,7 @@
                     <object class="AdwPreferencesPage">
                         <child>
                             <object class="AdwPreferencesGroup" id="applications_group">
-                                <property name="description" translatable="yes">Select the applications you want to install</property>
+                                <property name="description" translatable="yes">Select the applications you want to uninstall</property>
                             </object>
                         </child>
                     </object>

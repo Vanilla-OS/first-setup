@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="VanillaLayoutApplicationsUpdate" parent="AdwBin">
+    <property name="hexpand">1</property>
+    <property name="vexpand">1</property>
+    <child>
+      <object class="GtkOverlay">
+        <property name="valign">center</property>
+        <child>
+          <object class="AdwStatusPage">
+            <property name="halign">fill</property>
+            <property name="valign">fill</property>
+            <property name="hexpand">true</property>
+            <property name="title" translatable="yes">Applications</property>
+            <property name="description" translatable="yes">System defaults have been updated. Choose which applications to install/uninstall.</property>
+            <property name="icon-name">org.gnome.Software-symbolic</property>
+            <child>
+              <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <property name="vexpand">true</property>
+                <property name="hexpand">true</property>
+                <property name="valign">center</property>
+                <child>
+                  <object class="AdwPreferencesPage">
+                    <child>
+                      <object class="AdwPreferencesGroup" id="bundles_list">
+                        <child>
+                          <object class="AdwActionRow">
+                            <property name="title" translatable="yes">Install Applications</property>
+                            <property name="subtitle" translatable="yes">Install new default applications</property>
+                            <property name="activatable-widget">install_switch</property>
+                            <child type="suffix">
+                              <object class="GtkSwitch" id="install_switch">
+                                <property name="valign">3</property>
+                                <property name="active">true</property>
+                                <property name="focusable">false</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkButton" id="install_button">
+                                <property name="valign">3</property>
+                                <property name="icon-name">go-next-symbolic</property>
+                                <property name="sensitive">true</property>
+                                <property name="tooltip-text" translatable="yes">Customize Applications to Install</property>
+                                <style>
+                                  <class name="flat"/>
+                                </style>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="AdwActionRow">
+                            <property name="title" translatable="yes">Uninstall Applications</property>
+                            <property name="subtitle" translatable="yes">Uninstall deprecated applications</property>
+                            <property name="activatable-widget">uninstall_switch</property>
+                            <child type="suffix">
+                              <object class="GtkSwitch" id="uninstall_switch">
+                                <property name="valign">3</property>
+                                <property name="active">true</property>
+                                <property name="focusable">false</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkButton" id="uninstall_button">
+                                <property name="valign">3</property>
+                                <property name="icon-name">go-next-symbolic</property>
+                                <property name="sensitive">true</property>
+                                <property name="tooltip-text" translatable="yes">Customize Applications to Uninstall</property>
+                                <style>
+                                  <class name="flat"/>
+                                </style>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

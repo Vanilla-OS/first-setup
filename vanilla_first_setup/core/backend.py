@@ -3,6 +3,7 @@ from enum import Enum
 import time
 import os
 import subprocess
+import json
 
 script_base_path = None
 
@@ -71,7 +72,22 @@ def _setup_system():
     return run_script("setup-system", [])
 
 def _install_flatpak(id: str):
-    return run_script("flatpak", [id])
+    return run_script("flatpak-install", [id])
+
+def _uninstall_flatpak(id: str):
+    return run_script("flatpak-uninstall", [id])
+
+def _write_seen_app_ids(seen_app_ids):
+    if dry_run:
+        print("dry-run", "write_seen_app_ids")
+        time.sleep(0.3)
+        return True
+    app_data_dir = os.path.join(os.path.expanduser('~'), ".local", "share", "vanilla-first-setup")
+    os.makedirs(app_data_dir, exist_ok=True)
+    seen_app_ids_file_path = os.path.join(app_data_dir, "seen_app_ids.json")
+    with open(seen_app_ids_file_path, 'w') as file:
+        json.dump(seen_app_ids, file)
+    return True
 
 
 def run_script(name: str, args: list[str], root: bool = False, input_data: str = None) -> bool:
@@ -106,7 +122,7 @@ def run_script(name: str, args: list[str], root: bool = False, input_data: str =
         print(name, args, "returned an error:")
         print(result)
         return False
-    
+
     return True
 
 _error_count = 0
@@ -120,7 +136,7 @@ def report_error(script_name: str, command: list[str], message: str):
     _lock_error_count = True
 
     errors.append(message)
-    
+
     for callback in _error_subscribers:
         callback(script_name, command, _error_count)
 
@@ -158,6 +174,25 @@ def install_flatpak_deferred(id: str, name: str):
     _deferred_actions[uid] = {"action_id": action_id, "callback": install_flatpak, "info": action_info}
     report_progress(action_id, uid, ProgressState.Initialized, action_info)
 
+def uninstall_flatpak_deferred(id: str, name: str):
+    global _deferred_actions
+    action_id = "uninstall_flatpak"
+    uid = action_id+id
+    action_info = {"app_id": id, "app_name": name}
+    def uninstall_flatpak():
+        _run_function_with_progress(action_id, uid, action_info, _uninstall_flatpak, id)
+    _deferred_actions[uid] = {"action_id": action_id, "callback": uninstall_flatpak, "info": action_info}
+    report_progress(action_id, uid, ProgressState.Initialized, action_info)
+
+def write_seen_app_ids_deferred(seen_app_ids):
+    global _deferred_actions
+    action_id = "write_seen_app_ids"
+    uid = action_id
+    def write_seen_app_ids():
+        _run_function_with_progress(action_id, uid, None, _write_seen_app_ids, seen_app_ids)
+    _deferred_actions[uid] = {"action_id": action_id, "uid": uid, "callback": write_seen_app_ids}
+    report_progress(action_id, uid, ProgressState.Initialized)
+
 def _run_function_with_progress(action_id: str, uid: str, action_info: dict, function, *args):
     report_progress(action_id, uid, ProgressState.Running, action_info)
     success = function(*args)
@@ -170,7 +205,7 @@ def clear_flatpak_deferred():
     global _deferred_actions
     new_list = {}
     for uid, action in _deferred_actions.items():
-        if action["action_id"] != "install_flatpak":
+        if action["action_id"] != "install_flatpak" and action["action_id"] != "uninstall_flatpak":
             new_list[uid] = action
     _deferred_actions = new_list
 

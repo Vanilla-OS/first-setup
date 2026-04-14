@@ -4,6 +4,7 @@ viewsdir = join_paths(pkgdatadir, 'vanilla_first_setup/views')
 sources = [
   '__init__.py',
   'applications.py',
+  'applications_update.py',
   'conn_check.py',
   'done.py',
   'hostname.py',
@@ -16,6 +17,7 @@ sources = [
   'timezone.py',
   'user.py',
   'welcome_user.py',
+  'welcome_update.py',
   'welcome.py',
 ]
 

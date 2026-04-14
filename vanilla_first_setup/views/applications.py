@@ -24,9 +24,9 @@ _ = __builtins__["_"]
 import vanilla_first_setup.core.backend as backend
 import vanilla_first_setup.core.applications as applications
 
-@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/applications-dialog.ui")
-class VanillaApplicationsDialog(Adw.Window):
-    __gtype_name__ = "VanillaApplicationsDialog"
+@Gtk.Template(resource_path="/org/vanillaos/FirstSetup/gtk/applications-install-dialog.ui")
+class VanillaApplicationsInstallDialog(Adw.Window):
+    __gtype_name__ = "VanillaApplicationsInstallDialog"
 
     apply_button = Gtk.Template.Child()
     applications_group = Gtk.Template.Child()
@@ -39,7 +39,7 @@ class VanillaApplicationsDialog(Adw.Window):
     def __init__(self, window, apps, category: str, finish_callback, **kwargs):
         super().__init__(**kwargs)
         self.set_transient_for(window)
-        
+
         self.__apps = copy.deepcopy(apps)
         self.__category = category
         self.__finish_callback = finish_callback
@@ -64,7 +64,7 @@ class VanillaApplicationsDialog(Adw.Window):
     def __on_escape_key(self, action, callback=None):
         self.set_visible(False)
         self.__finish_callback(self.__apps)
-    
+
     def __build_apps(self):
         for app in self.__apps[self.__category]:
             apps_action_row = Adw.ActionRow(
@@ -89,7 +89,7 @@ class VanillaApplicationsDialog(Adw.Window):
             apps_action_row.set_activatable_widget(app_switch)
 
             self.applications_group.add(apps_action_row)
-    
+
     def __on_switch_state_change(self, widget, state, id):
         for app in self.__apps[self.__category]:
             if app["id"] == id:
@@ -121,6 +121,12 @@ class VanillaLayoutApplications(Adw.Bin):
         apps_file_path = os.path.join(window.moduledir, "apps.json")
         with open(apps_file_path) as file:
             self.__apps = json.load(file)
+
+        categories = ["core", "browsers", "utilities", "office"]
+        self.__seen_app_ids = {
+            "install": [app['id'] for category in categories for app in self.__apps[category]],
+            "uninstall": []
+        }
 
         self.core_switch.connect("state-set", self.__on_core_switch_state_change)
         self.browsers_switch.connect("state-set", self.__on_browsers_switch_state_change)
@@ -160,9 +166,11 @@ class VanillaLayoutApplications(Adw.Bin):
                     app_id = app["id"]
                     app_name = app["name"]
                     backend.install_flatpak_deferred(app_id, app_name)
+
+        backend.write_seen_app_ids_deferred(self.__seen_app_ids)
         return True
-        
-    
+
+
     def __on_core_switch_state_change(self, widget, state):
         self.core_button.set_sensitive(state)
 
@@ -183,4 +191,4 @@ class VanillaLayoutApplications(Adw.Bin):
             dialog.destroy()
             return
 
-        dialog = VanillaApplicationsDialog(self.__window, self.__apps, app_type, update_apps)
+        dialog = VanillaApplicationsInstallDialog(self.__window, self.__apps, app_type, update_apps)

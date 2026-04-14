@@ -55,10 +55,10 @@ class VanillaProgress(Adw.Bin):
         if not self.__already_removed_autostart_file:
             self.__already_removed_autostart_file = backend.remove_autostart_file()
         return True
-    
+
     def __on_items_changed_thread(self, id: str, uid: str, state: backend.ProgressState, info: dict):
         GLib.idle_add(self.__on_items_changed, id, uid, state, info)
-    
+
     def __on_items_changed(self, id: str, uid: str, state: backend.ProgressState, info: dict):
         if id == "all_actions":
             if state == backend.ProgressState.Finished:
@@ -69,6 +69,9 @@ class VanillaProgress(Adw.Bin):
 
         if state == backend.ProgressState.Initialized:
             self.__add_new_action(id, uid, info)
+            return
+
+        if uid not in self.actions:
             return
 
         status_suffix = None
@@ -97,7 +100,13 @@ class VanillaProgress(Adw.Bin):
             icon = Gtk.Image.new_from_icon_name(info["app_id"])
             applications.set_app_icon_from_id_async(icon, info["app_id"])
             title = _("Installing") + " " + info["app_name"]
-    
+        elif id == "uninstall_flatpak":
+            icon = Gtk.Image.new_from_icon_name(info["app_id"])
+            applications.set_app_icon_from_id_async(icon, info["app_id"])
+            title = _("Uninstalling") + " " + info["app_name"]
+        elif id == "write_seen_app_ids":
+            return
+
         row = Adw.ActionRow()
         row.set_title(title)
         icon.add_css_class("lowres-icon")

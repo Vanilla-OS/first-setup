@@ -42,14 +42,15 @@ class VanillaWindow(Adw.ApplicationWindow):
     pages = []
     __current_page_index = 0
 
-    def __init__(self, moduledir: str, configure_system_mode: bool, oem_mode: bool = False, **kwargs):
+    def __init__(self, moduledir: str, configure_system_mode: bool, update_mode: bool, oem_mode: bool = False, **kwargs):
         super().__init__(**kwargs)
 
         self.moduledir = moduledir
         self.configure_system_mode = configure_system_mode
+        self.update_mode = update_mode
         self.oem_mode = oem_mode
 
-        self.__build_ui(configure_system_mode)
+        self.__build_ui(configure_system_mode, update_mode)
         self.__connect_signals()
 
         backend.subscribe_errors(self.__error_received)
@@ -64,9 +65,9 @@ class VanillaWindow(Adw.ApplicationWindow):
             return
         self.can_continue = False
         self.__is_finishing_step = True
-        
+
         self.__loading_indicator()
-        
+
         thread = threading.Thread(target=self.__finish_step_thread)
         thread.start()
 
@@ -79,7 +80,7 @@ class VanillaWindow(Adw.ApplicationWindow):
         toast.props.button_label = _("Details")
         toast.connect("button-clicked", self.__error_toast_clicked, id)
         self.toasts.add_toast(toast)
-    
+
     def __error_toast_clicked(self, widget, id: int):
         message = backend.errors[id]
         dialog = VanillaDialog(self, _("Error log"), message)
@@ -93,7 +94,7 @@ class VanillaWindow(Adw.ApplicationWindow):
         self.btn_next.connect("clicked", self.__on_btn_next_clicked)
         return
 
-    def __build_ui(self, configure_system_mode: bool):
+    def __build_ui(self, configure_system_mode: bool, update_mode: bool):
 
         if configure_system_mode:
             from vanilla_first_setup.views.welcome import VanillaWelcome
@@ -129,6 +130,25 @@ class VanillaWindow(Adw.ApplicationWindow):
             self.pages.append(self.__view_hostname)
             self.pages.append(self.__view_user)
             self.pages.append(self.__view_logout)
+        elif update_mode:
+            from vanilla_first_setup.views.welcome_update import VanillaWelcomeUpdate
+            from vanilla_first_setup.views.applications_update import VanillaLayoutApplicationsUpdate
+            from vanilla_first_setup.views.progress import VanillaProgress
+            from vanilla_first_setup.views.done import VanillaDone
+
+            self.__view_welcome = VanillaWelcomeUpdate(self)
+            self.__view_welcome.no_next_button = True
+            self.__view_welcome.no_back_button = True
+            self.__view_apps = VanillaLayoutApplicationsUpdate(self)
+            self.__view_progress = VanillaProgress(self)
+            self.__view_progress.no_back_button = True
+            self.__view_done = VanillaDone(self)
+            self.__view_done.no_next_button = True
+
+            self.pages.append(self.__view_welcome)
+            self.pages.append(self.__view_apps)
+            self.pages.append(self.__view_progress)
+            self.pages.append(self.__view_done)
         else:
             from vanilla_first_setup.views.welcome_user import VanillaWelcomeUser
             from vanilla_first_setup.views.conn_check import VanillaConnCheck
@@ -227,4 +247,3 @@ class VanillaWindow(Adw.ApplicationWindow):
 
         self.btn_back.set_visible(not no_back)
         self.btn_next.set_visible(not no_next)
-
