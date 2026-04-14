@@ -26,6 +26,7 @@ import os
 import sys
 import logging
 import grp
+import hashlib
 import json
 _ = __builtins__["_"]
 from vanilla_first_setup.window import VanillaWindow
@@ -152,6 +153,10 @@ class FirstSetupApplication(Adw.Application):
             if "vanilla-first-setup" in all_groups and os.getlogin() in grp.getgrnam("vanilla-first-setup").gr_mem:
                 configure_system_mode = True
             else:
+                apps_file_path = os.path.join(self.moduledir, "apps.json")
+                with open(apps_file_path, "rb") as file:
+                    apps_file_digest = hashlib.file_digest(file, "sha256")
+
                 seen_app_ids_file_path = os.path.join(os.path.expanduser('~'), ".local", "share", "vanilla-first-setup", "seen_app_ids.json")
                 try:
                     with open(seen_app_ids_file_path) as file:
@@ -159,6 +164,9 @@ class FirstSetupApplication(Adw.Application):
                 except (FileNotFoundError, json.JSONDecodeError):
                     pass
                 else:
+                    if ("apps_file_digest" in seen_app_ids) and seen_app_ids["apps_file_digest"] == apps_file_digest.hexdigest():
+                        print("Everything is up to date. Exiting.")
+                        return
                     update_mode = True
 
         if configure_system_mode:

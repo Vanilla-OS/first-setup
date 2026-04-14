@@ -17,6 +17,7 @@
 import copy
 import json
 import os
+import hashlib
 
 from gi.repository import Gtk, Adw
 _ = __builtins__["_"]
@@ -121,9 +122,12 @@ class VanillaLayoutApplications(Adw.Bin):
         apps_file_path = os.path.join(window.moduledir, "apps.json")
         with open(apps_file_path) as file:
             self.__apps = json.load(file)
+        with open(apps_file_path, "rb") as file:
+            apps_file_digest = hashlib.file_digest(file, "sha256")
 
         categories = ["core", "browsers", "utilities", "office"]
         self.__seen_app_ids = {
+            "apps_file_digest": apps_file_digest.hexdigest(),
             "install": [app['id'] for category in categories for app in self.__apps[category]],
             "uninstall": []
         }
