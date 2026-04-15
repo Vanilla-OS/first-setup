@@ -46,7 +46,7 @@ custom_target(
   input: desktop_file,
   output: 'org.vanillaos.FirstSetup.autostart.desktop',
   command: ['cp', '@INPUT@', '@OUTPUT@'],
-  install_dir: join_paths(get_option('sysconfdir'), 'skel', '.config', 'autostart'),
+  install_dir: join_paths(get_option('sysconfdir'), 'xdg', 'autostart'),
   build_by_default: true,
   install : true,
 )
