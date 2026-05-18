@@ -10,5 +10,5 @@ if [ "$UID" == "0" ]; then
     exit 7
 fi
 
-vso pico-init
-vso run echo vso subsystem set up successfully
+vso native init
+vso native run echo vso subsystem set up successfully
