@@ -53,7 +53,7 @@
                         <child>
                           <object class="AdwActionRow">
                             <property name="title" translatable="yes">Browsers</property>
-                            <property name="subtitle" translatable="yes">Essential GNOME apps like Calendar or Document Viewer</property>
+                            <property name="subtitle" translatable="yes">Web browsers for surfing the Internet</property>
                             <property name="activatable-widget">browsers_switch</property>
                             <child type="suffix">
                               <object class="GtkSwitch" id="browsers_switch">
@@ -103,7 +103,7 @@
                         <child>
                           <object class="AdwActionRow">
                             <property name="title" translatable="yes">Office</property>
-                            <property name="subtitle" translatable="yes">The LibreOffice suite</property>
+                            <property name="subtitle" translatable="yes">Office suites for creating and editing documents</property>
                             <property name="activatable-widget">office_switch</property>
                             <child type="suffix">
                               <object class="GtkSwitch" id="office_switch">
