@@ -1,12 +1,6 @@
 install_data(
     'firstsetup-session.desktop',
     rename: 'firstsetup.desktop',
-    install_dir: join_paths(get_option('datadir'), 'xsessions')
-)
-
-install_data(
-    'firstsetup-session.desktop',
-    rename: 'firstsetup.desktop',
     install_dir: join_paths(get_option('datadir'), 'wayland-sessions')
 )
 
