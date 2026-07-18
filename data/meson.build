@@ -11,15 +11,19 @@ install_data(
 )
 
 install_data(
-    'firstsetup-session.desktop',
-    rename: 'firstsetup.desktop',
+    'firstsetup-session-mode.json',
+    rename: 'firstsetup.json',
+    install_dir: join_paths(get_option('datadir'), 'gnome-shell', 'modes')
+)
+
+install_data(
+    'firstsetup.session',
     install_dir: join_paths(get_option('datadir'), 'gnome-session', 'sessions')
 )
 
 install_data(
-    'firstsetup-session-mode.json',
-    rename: 'firstsetup.json',
-    install_dir: join_paths(get_option('datadir'), 'gnome-shell', 'modes')
+    'firstsetup.session.conf',
+    install_dir: join_paths(get_option('prefix'), 'lib', 'systemd', 'user', 'gnome-session@firstsetup.target.d')
 )
 
 install_data(
