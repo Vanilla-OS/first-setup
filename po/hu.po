@@ -215,7 +215,7 @@ msgstr "Alkalmazások"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:16
 msgid "Choose which applications to install."
-msgstr "Válassza ki a telepítendő alkalmazásokat."
+msgstr "Válassza ki a telepítendő alkalmazásokat. Azt is választhatja, hogy kihagyja ezt a lépést, és később telepíti őket egy konténeren belül."
 
 #: vanilla_first_setup/gtk/layout-applications.ui:30
 msgid "Core Applications"
