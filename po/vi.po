@@ -213,7 +213,7 @@ msgstr "Ứng dụng"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:16
 msgid "Choose which applications to install."
-msgstr "Chọn ứng dụng để cài đặt."
+msgstr "Chọn ứng dụng để cài đặt. Bạn cũng có thể bỏ qua bước này và cài đặt chúng sau trong container."
 
 #: vanilla_first_setup/gtk/layout-applications.ui:30
 msgid "Core Applications"
