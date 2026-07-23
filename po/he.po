@@ -4,13 +4,14 @@
 # Daniel Toubul <molder@toubul.eu>, 2023.
 # guylamar2006 <guychronister@outlook.com>, 2024.
 # aharon don <aronrefael@gmail.com>, 2025.
+# Yael abargil <abargilran2131213@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2025-03-05 21:37+0000\n"
-"Last-Translator: aharon don <aronrefael@gmail.com>\n"
+"PO-Revision-Date: 2026-07-23 01:01+0000\n"
+"Last-Translator: Yael abargil <abargilran2131213@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/vanilla-os/first-"
 "setup/he/>\n"
 "Language: he\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 5.10.3-dev\n"
+"X-Generator: Weblate 2026.8.dev0\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -44,11 +45,11 @@ msgstr "הפעל כמשתמש חדש"
 
 #: vanilla_first_setup/gtk/logout.ui:23
 msgid "Login Now"
-msgstr ""
+msgstr "התחבר"
 
 #: vanilla_first_setup/gtk/done.ui:13
 msgid "Your user account is ready to use"
-msgstr "חשבון המשתמש שלך מוכן לשימוש."
+msgstr "חשבונך שלך מוכן לשימוש."
 
 #: vanilla_first_setup/gtk/done.ui:29
 msgid "Take a tour"
