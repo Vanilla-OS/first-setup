@@ -7,13 +7,14 @@
 # Dawid Harwig <dawidharwig@gmail.com>, 2024.
 # Piotr Wieczorek <wieczorek.piotr.praga@protonmail.com>, 2024, 2025.
 # Eryk Michalak <gnu.ewm@protonmail.com>, 2025.
+# Wiktor Styczeń <wiktorek5033@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-07 10:11+0100\n"
-"PO-Revision-Date: 2025-12-23 09:00+0000\n"
-"Last-Translator: Tomasz Dyńka <gramyteraz12@gmail.com>\n"
+"PO-Revision-Date: 2026-09-15 12:51+0000\n"
+"Last-Translator: Wiktor Styczeń <wiktorek5033@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/vanilla-os/first-"
 "setup/pl/>\n"
 "Language: pl\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:2
 msgid "Vanilla OS First Setup"
@@ -198,7 +199,7 @@ msgstr "Obecna strefa czasowa:"
 
 #: vanilla_first_setup/gtk/timezone.ui:34
 msgid "not set"
-msgstr ""
+msgstr "Nieustawione"
 
 #: vanilla_first_setup/gtk/keyboard.ui:10
 msgid "Keyboard Layout"
@@ -227,7 +228,7 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/layout-applications.ui:45
 msgid "Customize Core Applications"
-msgstr ""
+msgstr "Dostosowywanie podstawowych aplikacji"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:55
 msgid "Browsers"
@@ -243,7 +244,7 @@ msgstr "Programy narzędziowe"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:81
 msgid "Useful utilities to enhance your desktop experience"
-msgstr ""
+msgstr "Przydatne narzędzia poprawiające komfort pracy z komputerem"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:95
 msgid "Customize Utilities"
@@ -255,11 +256,11 @@ msgstr "Aplikacje biurowe"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:106
 msgid "The LibreOffice suite"
-msgstr ""
+msgstr "Pakiet LibreOffice"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:120
 msgid "Customize Office Applications"
-msgstr ""
+msgstr "Dostosowywanie aplikacji pakietu Office"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:8
 msgid "Select Applications"
@@ -271,38 +272,37 @@ msgstr "Zatwierdź"
 
 #: vanilla_first_setup/gtk/applications-dialog.ui:30
 msgid "Select the applications you want to install"
-msgstr ""
+msgstr "Wybierz aplikacje, które chcesz zainstalować"
 
 #: vanilla_first_setup/window.py:74
 msgid "Setup failed: "
-msgstr ""
+msgstr "Konfiguracja nie powiodła się: "
 
 #: vanilla_first_setup/window.py:79
 msgid "Details"
 msgstr "Szczegóły"
 
 #: vanilla_first_setup/window.py:85
-#, fuzzy
 msgid "Error log"
-msgstr "Błąd!"
+msgstr "Log błędów"
 
 #: vanilla_first_setup/application.py:76
 msgid "Don't make any changes to the system."
-msgstr ""
+msgstr "Nie wprowadzaj żadnych zmian w systemie."
 
 #: vanilla_first_setup/application.py:84
 msgid "Force the configure system mode, independant of group."
-msgstr ""
+msgstr "Wymuś tryb konfiguracji systemowej, niezależnie od grupy."
 
 #: vanilla_first_setup/application.py:92
 msgid "Force the regular mode, independant of group."
-msgstr ""
+msgstr "Wymuś tryb standardowy, niezależnie od grupy."
 
 #: vanilla_first_setup/application.py:100
 msgid ""
 "Use the original equipment manufacturer mode with language, keyboard and "
 "timezone selection."
-msgstr ""
+msgstr "Użyj trybu OEM z wyborem języka, klawiatury i strefy czasowej."
 
 #: vanilla_first_setup/views/conn_check.py:72
 msgid "No Internet Connection!"
@@ -313,14 +313,12 @@ msgid "First Setup requires an active internet connection"
 msgstr "Pierwsza konfiguracja wymaga aktywnego połączenia internetetowego"
 
 #: vanilla_first_setup/views/conn_check.py:79
-#, fuzzy
 msgid "Connection available"
-msgstr "Połączenie nieudane"
+msgstr "Połączenie dostępne"
 
 #: vanilla_first_setup/views/conn_check.py:80
-#, fuzzy
 msgid "You have a working internet connection"
-msgstr "Brak Połączenia z Internetem!"
+msgstr "Masz działające połączenie z Internetem"
 
 #: vanilla_first_setup/views/keyboard.py:37
 msgid "Keyboard"
@@ -328,20 +326,20 @@ msgstr "Klawiatura"
 
 #: vanilla_first_setup/views/user.py:118
 msgid "Username cannot be empty."
-msgstr ""
+msgstr "Nazwa użytkownika nie może być pusta."
 
 #: vanilla_first_setup/views/user.py:121
 msgid "Username cannot be longer than 32 characters."
-msgstr ""
+msgstr "Nazwa użytkownika nie może przekraczać 32 znaków."
 
 #: vanilla_first_setup/views/user.py:124
 msgid "Username cannot contain special characters or uppercase letters."
 msgstr ""
+"Nazwa użytkownika nie może zawierać znaków specjalnych ani wielkich liter."
 
 #: vanilla_first_setup/views/user.py:128
-#, fuzzy
 msgid "This username is already in use."
-msgstr "Twoje urządzenie jest gotowe do używania."
+msgstr "Ta nazwa użytkownika jest już zajęta."
 
 #: vanilla_first_setup/views/locations.py:220
 msgid "Region"
@@ -353,7 +351,7 @@ msgstr "Kraj"
 
 #: vanilla_first_setup/views/locations.py:327
 msgid "Search results"
-msgstr ""
+msgstr "Wyniki wyszukiwania"
 
 #: vanilla_first_setup/views/timezone.py:39
 msgid "Timezone"
@@ -361,11 +359,11 @@ msgstr "Strefa czasowa"
 
 #: vanilla_first_setup/views/welcome_user.py:45
 msgid "Hello {}!"
-msgstr ""
+msgstr "Witaj {}!"
 
 #: vanilla_first_setup/views/progress.py:94
 msgid "Setting up the system"
-msgstr ""
+msgstr "Konfiguracja systemu"
 
 #: vanilla_first_setup/views/progress.py:97
 msgid "Installing"
@@ -393,7 +391,7 @@ msgstr "Antarktyda"
 
 #: vanilla_first_setup/core/timezones.py:97
 msgid "Pacific Ocean"
-msgstr ""
+msgstr "Ocean Spokojny"
 
 #: vanilla_first_setup/core/timezones.py:98
 msgid "Australia"
@@ -401,11 +399,11 @@ msgstr "Australia"
 
 #: vanilla_first_setup/core/timezones.py:99
 msgid "Atlantic Ocean"
-msgstr ""
+msgstr "Ocean Atlantycki"
 
 #: vanilla_first_setup/core/timezones.py:100
 msgid "Indian Ocean"
-msgstr ""
+msgstr "Ocean Indyjski"
 
 #: vanilla_first_setup/core/timezones.py:101
 msgid "Arctic"
