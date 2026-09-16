@@ -208,7 +208,7 @@ msgstr "ແອັບພລິເຄຊັນ"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:16
 msgid "Choose which applications to install."
-msgstr "ເລືອກແອັບພລິເຄຊັນທີ່ຈະຕິດຕັ້ງ."
+msgstr "ເລືອກແອັບພລິເຄຊັນທີ່ຈະຕິດຕັ້ງ. ທ່ານຍັງສາມາດເລືອກຂ້າມ ແລະ ຕິດຕັ້ງມັນໃນພາຍຫຼັງຢູ່ພາຍໃນຄອນເທນເນີໄດ້."
 
 #: vanilla_first_setup/gtk/layout-applications.ui:30
 msgid "Core Applications"

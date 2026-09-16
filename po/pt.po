@@ -217,7 +217,7 @@ msgstr "Aplicações"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:16
 msgid "Choose which applications to install."
-msgstr "Escolha quais aplicações instalar."
+msgstr "Escolha quais aplicações instalar. Também pode optar por saltar e instalar mais tarde no contentor."
 
 #: vanilla_first_setup/gtk/layout-applications.ui:30
 msgid "Core Applications"

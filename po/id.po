@@ -214,7 +214,7 @@ msgstr "Aplikasi"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:16
 msgid "Choose which applications to install."
-msgstr "Pilih aplikasi mana yang akan dipasang."
+msgstr "Pilih aplikasi mana yang akan dipasang. Anda juga dapat memilih untuk melewatinya dan memasangnya nanti di dalam kontainer."
 
 #: vanilla_first_setup/gtk/layout-applications.ui:30
 msgid "Core Applications"

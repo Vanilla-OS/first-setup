@@ -212,7 +212,7 @@ msgstr "アプリケーション"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:16
 msgid "Choose which applications to install."
-msgstr "インストールするアプリケーション選択してください。"
+msgstr "インストールするアプリケーション選択してください。スキップして、後からコンテナ内でインストールすることもできます。"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:30
 msgid "Core Applications"

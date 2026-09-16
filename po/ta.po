@@ -209,7 +209,7 @@ msgstr "பயன்பாடுகள்"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:16
 msgid "Choose which applications to install."
-msgstr "எந்த பயன்பாடுகளை நிறுவ வேண்டும் என்பதைத் தேர்வுசெய்க."
+msgstr "எந்த பயன்பாடுகளை நிறுவ வேண்டும் என்பதைத் தேர்வுசெய்க. நீங்கள் இதைத் தவிர்த்துவிட்டுப் பின்னர் கொள்கலனில் நிறுவவும் செய்யலாம்."
 
 #: vanilla_first_setup/gtk/layout-applications.ui:30
 msgid "Core Applications"
