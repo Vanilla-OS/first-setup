@@ -219,7 +219,8 @@ msgstr ""
 
 #: vanilla_first_setup/gtk/layout-applications.ui:16
 msgid "Choose which applications to install."
-msgstr ""
+msgstr "Můžete také tento krok přeskočit a nainstalovat je později v kontejneru."
+#需要添加或补充
 
 #: vanilla_first_setup/gtk/layout-applications.ui:30
 msgid "Core Applications"

@@ -208,7 +208,7 @@ msgstr "Appar"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:16
 msgid "Choose which applications to install."
-msgstr "Vel dei applikasjonane du vil installera."
+msgstr "Vel dei applikasjonane du vil installera. Du kan også velja å hoppa over og installera dei seinare i ein container."
 
 #: vanilla_first_setup/gtk/layout-applications.ui:30
 msgid "Core Applications"

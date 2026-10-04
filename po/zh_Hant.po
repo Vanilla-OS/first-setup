@@ -209,7 +209,7 @@ msgstr "應用程式"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:16
 msgid "Choose which applications to install."
-msgstr "選擇要安裝的應用程式。"
+msgstr "選擇要安裝的應用程式。您也可以選擇略過，稍後再於容器中安裝它們。"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:30
 msgid "Core Applications"

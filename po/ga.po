@@ -210,7 +210,7 @@ msgstr "Feidhmchláir"
 
 #: vanilla_first_setup/gtk/layout-applications.ui:16
 msgid "Choose which applications to install."
-msgstr "Roghnaigh cé na feidhmchláir atá le suiteáil."
+msgstr "Roghnaigh cé na feidhmchláir atá le suiteáil. Is féidir leat roghnú freisin an chéim seo a fhágáil agus iad a shuiteáil níos déanaí taobh istigh de choimeádán."
 
 #: vanilla_first_setup/gtk/layout-applications.ui:30
 msgid "Core Applications"
