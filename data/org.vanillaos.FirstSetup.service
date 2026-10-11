@@ -1,0 +1,13 @@
+[Unit]
+Description=Vanilla OS First Setup
+RefuseManualStart=true
+RefuseManualStop=true
+
+BindsTo=gnome-session.target
+After=gnome-session.target
+After=org.gnome.Shell@firstsetup.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/vanilla-first-setup
+Restart=no

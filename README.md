@@ -89,25 +89,15 @@ meson install -C build
 
 ### Creating initial user
 
-A special user is needed to run the initial setup for hostname, user-creation, locale, etc.
+A special user is needed to run the initial setup for hostname, user-creation, locale, etc. Configuration varies depending on your DE and DM.
 
-1. Create a user
-2. Create the group vanilla-first-setup (Changing the gid is recommended to avoid messing with user groups)
-3. Add the user to group vanilla-first-setup
-4. Create the file `/var/lib/AccountsService/users/your_user`
-```ini
-[User]
-Session=firstsetup
-```
-5. Create the file `/etc/gdm3/daemon.conf` (replace your_user)
-```ini
-[daemon]
-AutomaticLogin=your_user
-AutomaticLoginEnable=True
+1. Run `systemd-sysusers` to create the first-setup user.
+2. Run `systemd-tmpfiles --create` to create AccountService and GDM configuration.
+
 ```
 
 > [!WARNING]  
-> All users in this group will be deleted on the first reboot after a successful first setup.
+> All users in `vanilla-first-setup` group will be deleted on the first reboot after a successful first setup.
 
 ### Running
 ```bash
