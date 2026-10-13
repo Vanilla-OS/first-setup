@@ -1,5 +1,8 @@
 [Unit]
 Description=Remove the first-setup user from the system
+Documentation=https://github.com/Vanilla-OS/first-setup
+After=first-setup-bootutil.service
+Before=display-manager.service
 
 [Service]
 ExecStart=/usr/libexec/remove-first-setup-user
