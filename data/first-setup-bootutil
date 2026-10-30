@@ -1,0 +1,30 @@
+#!/bin/bash
+
+set -euo pipefail
+
+if [ -e /etc/vanilla-first-setup/finalized ]; then
+    echo "first setup already finalized, nothing to do."
+    exit 0
+fi
+
+if ! id vanilla &>/dev/null; then
+    echo "first-setup user 'vanilla' does not exist, nothing to do."
+    exit 0
+fi
+
+install -d -m 0700 /var/lib/AccountsService/users
+cat > /var/lib/AccountsService/users/vanilla <<EOF
+[User]
+Session=firstsetup
+EOF
+chmod 0600 /var/lib/AccountsService/users/vanilla
+
+install -d -m 0755 /etc/gdm3
+cat > /etc/gdm3/daemon.conf <<EOF
+[daemon]
+AutomaticLogin=vanilla
+AutomaticLoginEnable=True
+EOF
+chmod 0644 /etc/gdm3/daemon.conf
+
+echo "first-setup autologin configured for 'vanilla'."

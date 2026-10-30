@@ -1,0 +1,14 @@
+[Unit]
+Description=Vanilla OS First Setup Boot Utility
+Documentation=https://github.com/Vanilla-OS/first-setup
+Wants=systemd-sysusers.service
+After=systemd-sysusers.service
+Before=display-manager.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/libexec/first-setup-bootutil
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
